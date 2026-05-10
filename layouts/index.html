@@ -1,246 +1,221 @@
 {{- define "main" }}
-<div id="hero-canvas" style="width: 100%; height: 500px; position: relative; overflow: hidden; background: #0a0a0f;"></div>
+<style>
+#hero-wrap {
+  width: 100%;
+  height: 500px;
+  background: #080810;
+  position: relative;
+  overflow: hidden;
+}
+#hero-wrap canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+</style>
+<div id="hero-wrap"></div>
 
-<script>p5.disableFriendlyErrors = true;</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
 <script>
-// === Generative Network Visualization ===
-// Represents Xhuljano's homelab infrastructure as a living network
-
-const CONFIG = {
-  nodeCount: 7,
-  particleCount: 80,
-  connectionDistance: 250,
-  nodePulseSpeed: 0.02,
-  particleSpeed: 1.0,
-  mouseInfluence: 120,
-  trailLength: 6,
-};
-
-const PALETTE = {
-  bg: [10, 10, 15],
-  hermes: [0, 200, 255],
-  firecrawl: [255, 100, 50],
-  uptime: [0, 255, 150],
-  github: [150, 100, 255],
-  n8n: [255, 200, 0],
-  adguard: [255, 50, 100],
-  tailscale: [100, 255, 200],
-  connection: [40, 40, 60],
-  particle: [200, 200, 220],
-};
-
-let nodes = [];
-let particles = [];
-let canvasReady = false;
-
-class InfrastructureNode {
-  constructor(x, y, label, col, sz) {
-    this.pos = createVector(x, y);
-    this.vel = p5.Vector.random2D().mult(0.3);
-    this.label = label;
-    this.col = col;
-    this.sz = sz;
-    this.phase = random(TWO_PI);
-    this.glow = 0;
-  }
-
-  update() {
-    this.pos.add(this.vel);
-    const m = 60;
-    if (this.pos.x < m || this.pos.x > width - m) this.vel.x *= -1;
-    if (this.pos.y < m || this.pos.y > height - m) this.vel.y *= -1;
-    
-    for (let other of nodes) {
-      if (other === this) continue;
-      let d = p5.Vector.dist(this.pos, other.pos);
-      if (d < 100) {
-        let f = p5.Vector.sub(this.pos, other).normalize().mult(0.3);
-        this.vel.add(f);
-      }
-    }
-    
-    let md = dist(mouseX, mouseY, this.pos.x, this.pos.y);
-    if (md < CONFIG.mouseInfluence && mouseX > 0 && mouseY > 0) {
-      let a = p5.Vector.sub(createVector(mouseX, mouseY), this.pos);
-      a.normalize().mult(0.1);
-      this.vel.add(a);
-      this.glow = min(this.glow + 0.08, 1);
-    } else {
-      this.glow = max(this.glow - 0.015, 0);
-    }
-    
-    this.vel.limit(0.6);
-    this.phase += CONFIG.nodePulseSpeed;
-  }
-
-  draw() {
-    push();
-    translate(this.pos.x, this.pos.y);
-    let p = sin(this.phase) * 0.3 + 0.7;
-    let gs = this.sz * (1.8 + p + this.glow);
-    
-    // Glow
-    noStroke();
-    for (let i = 3; i > 0; i--) {
-      fill(this.col[0], this.col[1], this.col[2], 15 * i);
-      ellipse(0, 0, gs * i * 0.4, gs * i * 0.4);
-    }
-    
-    // Core
-    fill(this.col[0], this.col[1], this.col[2], 180 + this.glow * 75);
-    stroke(this.col[0], this.col[1], this.col[2], 80);
-    strokeWeight(1.2);
-    ellipse(0, 0, this.sz * p, this.sz * p);
-    
-    // Bright center
-    noStroke();
-    fill(255, 255, 255, 120 + this.glow * 135);
-    ellipse(0, 0, this.sz * 0.25, this.sz * 0.25);
-    
-    // Label
-    fill(this.col[0], this.col[1], this.col[2], 160);
-    noStroke();
-    textAlign(CENTER, CENTER);
-    textSize(9);
-    textFont('monospace');
-    text(this.label, 0, this.sz * 0.75);
-    pop();
-  }
-}
-
-class DataParticle {
-  constructor() {
-    this.trail = [];
-    this.reset();
-  }
-
-  reset() {
-    this.src = floor(random(CONFIG.nodeCount));
-    do { this.tgt = floor(random(CONFIG.nodeCount)); } while (this.tgt === this.src);
-    this.t = 0;
-    this.spd = random(0.006, 0.014) * CONFIG.particleSpeed;
-    this.sz = random(2, 4);
-    this.trail = [];
-  }
-
-  update() {
-    this.t += this.spd;
-    if (this.t >= 1) { this.reset(); return; }
-    
-    let s = nodes[this.src].pos;
-    let e = nodes[this.tgt].pos;
-    let mid = p5.Vector.add(s, e).mult(0.5);
-    let perp = p5.Vector.sub(e, s).rotate(HALF_PI).mult(0.15 * (this.src % 3 === 0 ? 1 : -1));
-    let c = p5.Vector.add(mid, perp);
-    
-    let x = (1-this.t)*(1-this.t)*s.x + 2*(1-this.t)*this.t*c.x + this.t*this.t*e.x;
-    let y = (1-this.t)*(1-this.t)*s.y + 2*(1-this.t)*this.t*c.y + this.t*this.t*e.y;
-    
-    this.pos = createVector(x, y);
-    this.trail.push({x, y});
-    if (this.trail.length > CONFIG.trailLength) this.trail.shift();
-  }
-
-  draw() {
-    if (!this.pos) return;
-    let col = nodes[this.src].col;
-    
-    // Trail
-    noStroke();
-    for (let i = 0; i < this.trail.length; i++) {
-      let a = map(i, 0, this.trail.length, 10, 120);
-      let s = map(i, 0, this.trail.length, 0.5, this.sz * 0.8);
-      fill(col[0], col[1], col[2], a);
-      ellipse(this.trail[i].x, this.trail[i].y, s, s);
-    }
-    
-    // Particle
-    fill(col[0], col[1], col[2], 200);
-    ellipse(this.pos.x, this.pos.y, this.sz, this.sz);
-    fill(255, 255, 255, 160);
-    ellipse(this.pos.x, this.pos.y, this.sz * 0.3, this.sz * 0.3);
-  }
-}
-
-function setup() {
-  let container = document.getElementById('hero-canvas');
-  let c = createCanvas(container.offsetWidth, 500);
-  c.parent('hero-canvas');
-  colorMode(RGB, 255);
-  background(PALETTE.bg[0], PALETTE.bg[1], PALETTE.bg[2]);
+new p5(function(p) {
+  let nodes = [];
+  let particles = [];
+  let W, H;
   
-  // Create nodes in a ring
-  let cx = width / 2;
-  let cy = height / 2;
-  let r = min(width, height) * 0.28;
-  
-  let nodeInfo = [
-    {l:'HERMES', c:PALETTE.hermes, s:30},
-    {l:'FIRECRAWL', c:PALETTE.firecrawl, s:24},
-    {l:'UPTIME KUMA', c:PALETTE.uptime, s:24},
-    {l:'GITHUB', c:PALETTE.github, s:26},
-    {l:'N8N', c:PALETTE.n8n, s:22},
-    {l:'ADGUARD', c:PALETTE.adguard, s:20},
-    {l:'TAILSCALE', c:PALETTE.tailscale, s:22}
+  const COLORS = [
+    [0, 200, 255],   // hermes - cyan
+    [255, 120, 60],  // firecrawl - orange
+    [0, 255, 150],   // uptime - green
+    [160, 110, 255], // github - purple
+    [255, 210, 50],  // n8n - yellow
+    [255, 70, 110],  // adguard - red
+    [110, 255, 210], // tailscale - teal
   ];
+  const LABELS = ['HERMES', 'FIRECRAWL', 'UPTIME KUMA', 'GITHUB', 'N8N', 'ADGUARD', 'TAILSCALE'];
   
-  for (let i = 0; i < CONFIG.nodeCount; i++) {
-    let a = (TWO_PI / CONFIG.nodeCount) * i - HALF_PI;
-    let rr = r * (0.8 + 0.2 * sin(i * 2.1));
-    nodes.push(new InfrastructureNode(
-      cx + cos(a) * rr,
-      cy + sin(a) * rr,
-      nodeInfo[i].l, nodeInfo[i].c, nodeInfo[i].s
-    ));
+  p.setup = function() {
+    let wrap = document.getElementById('hero-wrap');
+    W = wrap.offsetWidth;
+    H = 500;
+    let c = p.createCanvas(W, H);
+    c.parent('hero-wrap');
+    p.colorMode(p.RGB, 255);
+    
+    // Create nodes in a circle
+    let cx = W / 2, cy = H / 2, r = Math.min(W, H) * 0.3;
+    for (let i = 0; i < 7; i++) {
+      let a = (p.TWO_PI / 7) * i - p.HALF_PI;
+      nodes.push({
+        x: cx + Math.cos(a) * r,
+        y: cy + Math.sin(a) * r,
+        vx: 0, vy: 0,
+        col: COLORS[i],
+        label: LABELS[i],
+        size: 28 + (i === 0 ? 6 : 0),
+        phase: p.random(p.TWO_PI)
+      });
+    }
+    
+    // Create particles
+    for (let i = 0; i < 60; i++) {
+      particles.push(newParticle());
+    }
+  };
+  
+  function newParticle() {
+    let src = Math.floor(Math.random() * 7);
+    let tgt;
+    do { tgt = Math.floor(Math.random() * 7); } while (tgt === src);
+    return {
+      src: src, tgt: tgt,
+      t: Math.random(),
+      speed: 0.003 + Math.random() * 0.008,
+      size: 2 + Math.random() * 2,
+      trail: []
+    };
   }
   
-  for (let i = 0; i < CONFIG.particleCount; i++) {
-    let p = new DataParticle();
-    p.t = random(1);
-    particles.push(p);
-  }
-  
-  canvasReady = true;
-}
-
-function draw() {
-  if (!canvasReady) return;
-  
-  // Dark background with slight fade for trails
-  background(PALETTE.bg[0], PALETTE.bg[1], PALETTE.bg[2]);
-  
-  // Grid
-  stroke(25, 25, 40, 25);
-  strokeWeight(0.5);
-  for (let x = 0; x < width; x += 50) line(x, 0, x, height);
-  for (let y = 0; y < height; y += 50) line(0, y, width, y);
-  
-  // Connections
-  for (let i = 0; i < nodes.length; i++) {
-    for (let j = i + 1; j < nodes.length; j++) {
-      let d = p5.Vector.dist(nodes[i].pos, nodes[j].pos);
-      if (d < CONFIG.connectionDistance) {
-        let a = map(d, 0, CONFIG.connectionDistance, 50, 8);
-        stroke(50, 50, 70, a);
-        strokeWeight(0.8);
-        line(nodes[i].pos.x, nodes[i].pos.y, nodes[j].pos.x, nodes[j].pos.y);
+  p.draw = function() {
+    // Dark background
+    p.background(8, 8, 16);
+    
+    // Grid lines
+    p.stroke(20, 20, 35);
+    p.strokeWeight(0.5);
+    for (let x = 0; x < W; x += 50) p.line(x, 0, x, H);
+    for (let y = 0; y < H; y += 50) p.line(0, y, W, y);
+    
+    // Update node positions (gentle drift)
+    for (let n of nodes) {
+      // Drift toward center if too far
+      let dx = W/2 - n.x, dy = H/2 - n.y;
+      let dist = Math.sqrt(dx*dx + dy*dy);
+      let maxR = Math.min(W, H) * 0.4;
+      if (dist > maxR) {
+        n.vx += dx * 0.0003;
+        n.vy += dy * 0.0003;
+      }
+      
+      // Mouse repulsion
+      let mdx = p.mouseX - n.x, mdy = p.mouseY - n.y;
+      let md = Math.sqrt(mdx*mdx + mdy*mdy);
+      if (md < 150 && md > 0 && p.mouseX > 0 && p.mouseY > 0) {
+        n.vx += (mdx / md) * 0.08;
+        n.vy += (mdy / md) * 0.08;
+      }
+      
+      // Repulsion from other nodes
+      for (let o of nodes) {
+        if (o === n) continue;
+        let odx = n.x - o.x, ody = n.y - o.y;
+        let od = Math.sqrt(odx*odx + ody*ody);
+        if (od < 100 && od > 0) {
+          n.vx += (odx / od) * 0.2;
+          n.vy += (ody / od) * 0.2;
+        }
+      }
+      
+      n.vx *= 0.95; // friction
+      n.vy *= 0.95;
+      n.x += n.vx;
+      n.y += n.vy;
+      n.phase += 0.02;
+    }
+    
+    // Draw connection lines
+    for (let i = 0; i < nodes.length; i++) {
+      for (let j = i + 1; j < nodes.length; j++) {
+        let dx = nodes[j].x - nodes[i].x;
+        let dy = nodes[j].y - nodes[i].y;
+        let d = Math.sqrt(dx*dx + dy*dy);
+        if (d < 250) {
+          let a = p.map(d, 0, 250, 40, 5);
+          p.stroke(40, 40, 60, a);
+          p.strokeWeight(0.8);
+          p.line(nodes[i].x, nodes[i].y, nodes[j].x, nodes[j].y);
+        }
       }
     }
-  }
+    
+    // Update and draw particles
+    for (let pt of particles) {
+      pt.t += pt.speed;
+      if (pt.t >= 1) {
+        Object.assign(pt, newParticle());
+        pt.t = 0;
+        pt.trail = [];
+      }
+      
+      let s = nodes[pt.src], tgt = nodes[pt.tgt];
+      // Bezier path
+      let mx = (s.x + tgt.x) / 2, my = (s.y + tgt.y) / 2;
+      let perpX = -(tgt.y - s.y) * 0.15, perpY = (tgt.x - s.x) * 0.15;
+      if (pt.src % 2 === 0) { perpX *= -1; perpY *= -1; }
+      let cx = mx + perpX, cy = my + perpY;
+      
+      let t = pt.t;
+      let px = (1-t)*(1-t)*s.x + 2*(1-t)*t*cx + t*t*tgt.x;
+      let py = (1-t)*(1-t)*s.y + 2*(1-t)*t*cy + t*t*tgt.y;
+      
+      pt.trail.push({x: px, y: py});
+      if (pt.trail.length > 6) pt.trail.shift();
+      
+      // Draw trail
+      let col = COLORS[pt.src];
+      for (let i = 0; i < pt.trail.length; i++) {
+        let al = p.map(i, 0, pt.trail.length, 10, 100);
+        let sz = p.map(i, 0, pt.trail.length, 0.5, pt.size * 0.7);
+        p.noStroke();
+        p.fill(col[0], col[1], col[2], al);
+        p.ellipse(pt.trail[i].x, pt.trail[i].y, sz, sz);
+      }
+      
+      // Draw particle
+      p.fill(col[0], col[1], col[2], 200);
+      p.noStroke();
+      p.ellipse(px, py, pt.size, pt.size);
+      p.fill(255, 255, 255, 150);
+      p.ellipse(px, py, pt.size * 0.3, pt.size * 0.3);
+    }
+    
+    // Draw nodes (on top)
+    for (let n of nodes) {
+      let pulse = Math.sin(n.phase) * 0.2 + 0.8;
+      
+      // Glow
+      p.noStroke();
+      for (let i = 3; i > 0; i--) {
+        p.fill(n.col[0], n.col[1], n.col[2], 12 * i);
+        p.ellipse(n.x, n.y, n.size * 2 * i * pulse * 0.5, n.size * 2 * i * pulse * 0.5);
+      }
+      
+      // Core
+      p.fill(n.col[0], n.col[1], n.col[2], 180);
+      p.stroke(n.col[0], n.col[1], n.col[2], 60);
+      p.strokeWeight(1);
+      p.ellipse(n.x, n.y, n.size * pulse, n.size * pulse);
+      
+      // Center dot
+      p.noStroke();
+      p.fill(255, 255, 255, 120);
+      p.ellipse(n.x, n.y, n.size * 0.2, n.size * 0.2);
+      
+      // Label
+      p.fill(n.col[0], n.col[1], n.col[2], 140);
+      p.textAlign(p.CENTER, p.CENTER);
+      p.textSize(9);
+      p.textFont('monospace');
+      p.text(n.label, n.x, n.y + n.size * 0.7);
+    }
+  };
   
-  // Particles
-  for (let p of particles) { p.update(); p.draw(); }
-  
-  // Nodes (drawn last so they're on top)
-  for (let n of nodes) { n.update(); n.draw(); }
-}
-
-function windowResized() {
-  let container = document.getElementById('hero-canvas');
-  resizeCanvas(container.offsetWidth, 500);
-  background(PALETTE.bg[0], PALETTE.bg[1], PALETTE.bg[2]);
-}
+  p.windowResized = function() {
+    let wrap = document.getElementById('hero-wrap');
+    W = wrap.offsetWidth;
+    H = 500;
+    p.resizeCanvas(W, H);
+  };
+}, 'hero-wrap');
 </script>
 
 <section class="post-content">
