@@ -7,17 +7,16 @@ ShowToc: true
 
 ## Who I Am
 
-I'm Xhuljano Caushllari — an AI Platform Engineer building production infrastructure with AI agents, MCP servers, and container orchestration.
+I'm Xhuljano Caushllari — a cloud engineering student building real infrastructure with AI agents, MCP servers, and container orchestration.
 
-**Current Role:** Amazon Fulfillment (2022-present)
-**Target:** AI Platform Engineer
+**Current:** Amazon Fulfillment (2022-present)
 **Education:** WGU Cloud and Network Engineering (expected late 2027)
 **Certifications:** CompTIA A+ (May 2026)
 
 ## What I Build
 
 ### AI Agent Infrastructure
-Production-grade AI agents with custom MCP (Model Context Protocol) servers managing real infrastructure. 35+ tools across 4 MCP servers handling monitoring, web scraping, GitHub operations, and workflow automation.
+AI agents with custom MCP (Model Context Protocol) servers managing real infrastructure. 35+ tools across 4 MCP servers handling monitoring, web scraping, GitHub operations, and workflow automation.
 
 ### Homelab
 Two-node setup running 24/7:
