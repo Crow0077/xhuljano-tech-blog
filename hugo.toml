@@ -1,0 +1,59 @@
+baseURL = "https://crow0077.github.io/xhuljano-tech-blog/"
+languageCode = "en-us"
+title = "Building in Public — Xhuljano Caushllari"
+theme = "PaperMod"
+[pagination]
+  pagerSize = 10
+enableRobotsTXT = true
+buildDrafts = false
+
+[params]
+  env = "production"
+  description = "Homelab experiments, AI agents, MCP servers, and cloud engineering — documented in real time."
+  author = "Xhuljano Caushllari"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  
+  [params.homeInfoParams]
+    Title = "Building in Public"
+    Content = "I'm Xhuljano — an Amazon warehouse worker turned cloud engineer. This blog documents my real experiments: homelab infrastructure, AI agents, MCP servers, and everything I'm learning on the path to becoming an AI Platform Engineer."
+  
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Crow0077"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/xhuljanocaushllari"
+
+[markup]
+  [markup.highlight]
+    style = "dracula"
+    lineNos = true
+    codeFences = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 30
