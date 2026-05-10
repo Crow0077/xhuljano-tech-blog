@@ -91,7 +91,7 @@ ShowToc: false
     <p>MCP server that lets customers get instant flooring estimates and book appointments through ChatGPT. 4 tools, 3 HTML widgets, deployed globally on Cloudflare Workers for free.</p>
     <div class="links">
       <a href="https://kr-flooring-mcp.xcaushlari.workers.dev/mcp">Live Endpoint</a>
-      <a href="/posts/mcp-server-flooring-business/">Write-up</a>
+      <a href="/xhuljano-tech-blog/posts/mcp-server-flooring-business/">Write-up</a>
     </div>
   </div>
 </div>
@@ -108,7 +108,7 @@ ShowToc: false
     </div>
     <p>Production homelab managed by AI agents with 35 custom MCP tools. Two nodes running containers, monitoring, DNS filtering, and workflow automation 24/7.</p>
     <div class="links">
-      <a href="/posts/homelab-dell-optiplex/">Write-up</a>
+      <a href="/xhuljano-tech-blog/posts/homelab-dell-optiplex/">Write-up</a>
     </div>
   </div>
 </div>
@@ -125,7 +125,7 @@ ShowToc: false
     </div>
     <p>5 custom MCP servers bridging AI agents to real infrastructure — web scraping, service monitoring, repository management, and workflow automation.</p>
     <div class="links">
-      <a href="/posts/what-are-mcp-servers/">Write-up</a>
+      <a href="/xhuljano-tech-blog/posts/what-are-mcp-servers/">Write-up</a>
     </div>
   </div>
 </div>
