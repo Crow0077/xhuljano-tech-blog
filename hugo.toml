@@ -1,6 +1,6 @@
 baseURL = "https://crow0077.github.io/xhuljano-tech-blog/"
 languageCode = "en-us"
-title = "Building in Public — Xhuljano Caushllari"
+title = "Xhuljano Caushllari — AI Platform Engineer"
 theme = "PaperMod"
 [pagination]
   pagerSize = 10
@@ -9,11 +9,11 @@ buildDrafts = false
 
 [params]
   env = "production"
-  description = "Homelab experiments, AI agents, MCP servers, and cloud engineering — documented in real time."
+  description = "AI Platform Engineer building homelab infrastructure, AI agents, and MCP servers. WGU Cloud and Network Engineering student."
   author = "Xhuljano Caushllari"
-  defaultTheme = "auto"
+  defaultTheme = "dark"
   ShowReadingTime = true
-  ShowShareButtons = true
+  ShowShareButtons = false
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
@@ -21,8 +21,8 @@ buildDrafts = false
   TocOpen = false
   
   [params.homeInfoParams]
-    Title = "Building in Public"
-    Content = "I'm Xhuljano — an Amazon warehouse worker turned cloud engineer. This blog documents my real experiments: homelab infrastructure, AI agents, MCP servers, and everything I'm learning on the path to becoming an AI Platform Engineer."
+    Title = "Xhuljano Caushllari"
+    Content = "AI Platform Engineer building production infrastructure with AI agents, MCP servers, and container orchestration. Currently pursuing WGU Cloud and Network Engineering."
   
   [[params.socialIcons]]
     name = "github"
@@ -31,6 +31,10 @@ buildDrafts = false
   [[params.socialIcons]]
     name = "linkedin"
     url = "https://linkedin.com/in/xhuljanocaushllari"
+
+  [[params.socialIcons]]
+    name = "mail"
+    url = "mailto:xcaushlari@gmail.com"
 
 [markup]
   [markup.highlight]
@@ -43,8 +47,8 @@ buildDrafts = false
 
 [menu]
   [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
+    identifier = "projects"
+    name = "Projects"
     url = "/posts/"
     weight = 10
   [[menu.main]]
