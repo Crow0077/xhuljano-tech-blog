@@ -5,6 +5,7 @@ draft: false
 ShowToc: false
 ---
 
+{{< rawhtml >}}
 <style>
 .project-grid {
   display: grid;
@@ -75,7 +76,6 @@ ShowToc: false
   color: rgba(100,180,255,1);
 }
 </style>
-
 <div class="project-grid">
 
 <div class="project-card">
@@ -142,7 +142,6 @@ new p5(function(p) {
   let questionText = "How much for LVP in a 15x20 room?";
   let typedChars = 0;
   let dataParticles = [];
-  let estimateLines = [];
   let pulse = 0;
   
   p.setup = function() {
@@ -159,7 +158,6 @@ new p5(function(p) {
     timer++;
     pulse += 0.03;
     
-    // Draw subtle grid
     p.stroke(20, 20, 35);
     p.strokeWeight(0.5);
     for (let x = 0; x < W; x += 40) p.line(x, 0, x, H);
@@ -167,15 +165,12 @@ new p5(function(p) {
     
     let cx = W / 2, cy = H / 2;
     
-    // Stage 0: Customer question typing
     if (stage === 0) {
-      // Chat bubble
       p.fill(20, 30, 50);
       p.stroke(40, 60, 100);
       p.strokeWeight(1);
       p.rect(cx - 180, cy - 40, 360, 50, 8);
       
-      // Typed text
       if (timer % 3 === 0 && typedChars < questionText.length) typedChars++;
       p.fill(150, 200, 255);
       p.noStroke();
@@ -183,14 +178,12 @@ new p5(function(p) {
       p.textAlign(p.CENTER, p.CENTER);
       p.text(questionText.substring(0, typedChars), cx, cy - 15);
       
-      // Cursor blink
       if (typedChars < questionText.length && timer % 30 < 15) {
         let tw = p.textWidth(questionText.substring(0, typedChars));
         p.fill(150, 200, 255);
         p.rect(cx - tw/2 + 2, cy - 25, 2, 20);
       }
       
-      // Label
       p.fill(100, 120, 160);
       p.textSize(11);
       p.text("Customer via ChatGPT", cx, cy + 30);
@@ -201,9 +194,7 @@ new p5(function(p) {
       }
     }
     
-    // Stage 1: Data flows through MCP
     if (stage === 1) {
-      // Draw MCP server box
       p.fill(15, 20, 35);
       p.stroke(0, 200, 255, 60);
       p.strokeWeight(1);
@@ -217,7 +208,6 @@ new p5(function(p) {
       p.fill(0, 200, 255, 100);
       p.text("estimate tool", cx, cy + 8);
       
-      // Question on left
       p.fill(20, 30, 50);
       p.stroke(40, 60, 100);
       p.strokeWeight(1);
@@ -227,7 +217,6 @@ new p5(function(p) {
       p.textSize(11);
       p.text("LVP 15x20 room?", 120, cy);
       
-      // Data particles flowing left to right
       if (timer % 8 === 0) {
         dataParticles.push({x: 200, y: cy, vx: 3, life: 100, col: [0, 200, 255]});
       }
@@ -236,17 +225,14 @@ new p5(function(p) {
         let dp = dataParticles[i];
         dp.x += dp.vx;
         dp.life--;
-        
         p.noStroke();
         p.fill(dp.col[0], dp.col[1], dp.col[2], dp.life * 2);
         p.ellipse(dp.x, dp.y, 4, 4);
         p.fill(255, 255, 255, dp.life);
         p.ellipse(dp.x, dp.y, 1.5, 1.5);
-        
         if (dp.life <= 0 || dp.x > W) dataParticles.splice(i, 1);
       }
       
-      // Response building on right
       if (timer > 40) {
         p.fill(15, 25, 15);
         p.stroke(0, 255, 150, 40);
@@ -271,9 +257,7 @@ new p5(function(p) {
       }
     }
     
-    // Stage 2: Complete - show full flow
     if (stage === 2) {
-      // Full pipeline visualization
       let boxes = [
         {x: W*0.1, label: "Customer", col: [150, 200, 255]},
         {x: W*0.35, label: "ChatGPT", col: [100, 255, 100]},
@@ -281,14 +265,12 @@ new p5(function(p) {
         {x: W*0.85, label: "Response", col: [0, 255, 150]}
       ];
       
-      // Connection lines
       for (let i = 0; i < boxes.length - 1; i++) {
         let x1 = boxes[i].x, x2 = boxes[i+1].x;
         p.stroke(40, 50, 80, 80);
         p.strokeWeight(1);
         p.line(x1 + 30, cy, x2 - 30, cy);
         
-        // Flowing particles
         let t = ((timer * 2 + i * 50) % 200) / 200;
         let px = p.lerp(x1 + 30, x2 - 30, t);
         p.noStroke();
@@ -296,7 +278,6 @@ new p5(function(p) {
         p.ellipse(px, cy, 4, 4);
       }
       
-      // Boxes
       for (let b of boxes) {
         let glow = Math.sin(pulse + b.x * 0.01) * 0.2 + 0.8;
         p.fill(12, 15, 25);
@@ -311,12 +292,11 @@ new p5(function(p) {
         p.text(b.label, b.x, cy);
       }
       
-      // Status text
       p.fill(0, 255, 150, 150);
       p.textSize(12);
+      p.textAlign(p.CENTER, p.CENTER);
       p.text("Instant estimate delivered", cx, cy + 50);
       
-      // Restart
       if (timer > 200) {
         stage = 0;
         timer = 0;
@@ -375,13 +355,11 @@ new p5(function(p) {
     p.background(8, 8, 16);
     pulse += 0.02;
     
-    // Grid
     p.stroke(18, 18, 30);
     p.strokeWeight(0.5);
     for (let x = 0; x < W; x += 40) p.line(x, 0, x, H);
     for (let y = 0; y < H; y += 40) p.line(0, y, W, y);
     
-    // Update nodes
     for (let n of nodes) {
       n.vx += (W/2 - n.x) * 0.0002;
       n.vy += (H/2 - n.y) * 0.0002;
@@ -401,7 +379,6 @@ new p5(function(p) {
       n.phase += 0.02;
     }
     
-    // Connections
     for (let i = 0; i < nodes.length; i++) {
       for (let j = i+1; j < nodes.length; j++) {
         let d = Math.sqrt((nodes[j].x-nodes[i].x)**2 + (nodes[j].y-nodes[i].y)**2);
@@ -413,7 +390,6 @@ new p5(function(p) {
       }
     }
     
-    // Particles
     for (let pt of particles) {
       pt.t += pt.speed;
       if (pt.t >= 1) { pt.t = 0; pt.trail = []; let s = pt.src; do { pt.src = Math.floor(Math.random()*6); } while(pt.src === s); pt.tgt = Math.floor(Math.random()*6); while(pt.tgt === pt.src) pt.tgt = Math.floor(Math.random()*6); }
@@ -439,7 +415,6 @@ new p5(function(p) {
       p.ellipse(x, y, pt.size, pt.size);
     }
     
-    // Nodes
     for (let n of nodes) {
       let pulse = Math.sin(n.phase)*0.2+0.8;
       p.noStroke();
@@ -471,7 +446,6 @@ new p5(function(p) {
 // === MCP Ecosystem Visualizer ===
 new p5(function(p) {
   let W = 800, H = 300;
-  let agents = [];
   let tools = [];
   let callParticles = [];
   let pulse = 0;
@@ -484,10 +458,6 @@ new p5(function(p) {
     c.parent('canvas-agent');
     p.colorMode(p.RGB, 255);
     
-    // Agent on left
-    agents.push({x: W*0.15, y: H/2, col: [0, 200, 255], label: "HERMES"});
-    
-    // Tools on right
     let toolData = [
       {label: "scrape", col: [255, 120, 60]},
       {label: "monitor", col: [0, 255, 150]},
@@ -507,35 +477,32 @@ new p5(function(p) {
     pulse += 0.025;
     callTimer++;
     
-    // Grid
     p.stroke(18, 18, 30);
     p.strokeWeight(0.5);
     for (let x = 0; x < W; x += 40) p.line(x, 0, x, H);
     for (let y = 0; y < H; y += 40) p.line(0, y, W, y);
     
-    // Draw agent
-    let agent = agents[0];
+    let agentX = W*0.15, agentY = H/2;
     let aglow = Math.sin(pulse) * 0.2 + 0.8;
     p.noStroke();
     for (let i = 3; i > 0; i--) {
-      p.fill(agent.col[0], agent.col[1], agent.col[2], 10*i*aglow);
-      p.ellipse(agent.x, agent.y, 60*i*0.4, 60*i*0.4);
+      p.fill(0, 200, 255, 10*i*aglow);
+      p.ellipse(agentX, agentY, 60*i*0.4, 60*i*0.4);
     }
     p.fill(12, 15, 25);
-    p.stroke(agent.col[0], agent.col[1], agent.col[2], 60);
+    p.stroke(0, 200, 255, 60);
     p.strokeWeight(1.5);
-    p.ellipse(agent.x, agent.y, 50, 50);
-    p.fill(agent.col[0], agent.col[1], agent.col[2], 200);
+    p.ellipse(agentX, agentY, 50, 50);
+    p.fill(0, 200, 255, 200);
     p.noStroke();
     p.textSize(11);
     p.textFont('monospace');
     p.textAlign(p.CENTER, p.CENTER);
-    p.text(agent.label, agent.x, agent.y - 5);
+    p.text("HERMES", agentX, agentY - 5);
     p.textSize(8);
-    p.fill(agent.col[0], agent.col[1], agent.col[2], 100);
-    p.text("35 tools", agent.x, agent.y + 10);
+    p.fill(0, 200, 255, 100);
+    p.text("35 tools", agentX, agentY + 10);
     
-    // Draw tools
     for (let t of tools) {
       if (t.active) {
         t.activeTimer--;
@@ -555,20 +522,18 @@ new p5(function(p) {
       p.text(t.label, t.x, t.y);
     }
     
-    // Spawn tool calls
     if (callTimer % 40 === 0) {
       let tgt = Math.floor(Math.random() * tools.length);
       tools[tgt].active = true;
       tools[tgt].activeTimer = 60;
       callParticles.push({
-        srcX: agent.x + 25, srcY: agent.y,
+        srcX: agentX + 25, srcY: agentY,
         tgtX: tools[tgt].x - 35, tgtY: tools[tgt].y,
         t: 0, speed: 0.015 + Math.random() * 0.01,
         col: tools[tgt].col, returning: false
       });
     }
     
-    // Update call particles
     for (let i = callParticles.length - 1; i >= 0; i--) {
       let cp = callParticles[i];
       cp.t += cp.speed;
@@ -591,7 +556,6 @@ new p5(function(p) {
       p.fill(255, 255, 255, 150);
       p.ellipse(x, y, 2, 2);
       
-      // Trail
       for (let j = 1; j <= 3; j++) {
         let tt = Math.max(0, cp.t - j * 0.03);
         let tx = (1-tt)*(1-tt)*startX + 2*(1-tt)*tt*midX + tt*tt*endX;
@@ -610,12 +574,11 @@ new p5(function(p) {
       }
     }
     
-    // Labels
     p.fill(80, 90, 120);
     p.noStroke();
     p.textSize(10);
     p.textAlign(p.CENTER, p.CENTER);
-    p.text("Agent", agent.x, agent.y + 40);
+    p.text("Agent", agentX, agentY + 40);
     p.text("MCP Tools", tools[0].x, 15);
   };
   
@@ -626,3 +589,4 @@ new p5(function(p) {
   };
 }, 'canvas-agent');
 </script>
+{{< /rawhtml >}}
