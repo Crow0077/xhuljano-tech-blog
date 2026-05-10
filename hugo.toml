@@ -49,8 +49,13 @@ buildDrafts = false
   [[menu.main]]
     identifier = "projects"
     name = "Projects"
-    url = "/posts/"
+    url = "/projects/"
     weight = 10
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/"
+    weight = 15
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
