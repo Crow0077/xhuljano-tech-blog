@@ -7,29 +7,39 @@ ShowToc: true
 
 ## Who I Am
 
-I'm Xhuljano Caushllari. By day, I work at an Amazon fulfillment center. By night (and weekends), I'm building infrastructure, deploying AI agents, and documenting every experiment.
+I'm Xhuljano Caushllari — an AI Platform Engineer building production infrastructure with AI agents, MCP servers, and container orchestration.
 
-**The goal:** Become an AI Platform Engineer.
+**Current Role:** Amazon Fulfillment (2022-present)
+**Target:** AI Platform Engineer
+**Education:** WGU Cloud and Network Engineering (expected late 2027)
+**Certifications:** CompTIA A+ (May 2026)
 
-**The path:** A+ certified (May 2026), currently pursuing WGU Cloud & Network Engineering (expected late 2027). Every post on this blog is something I actually built, broke, and fixed.
+## What I Build
 
-## What This Blog Covers
+### AI Agent Infrastructure
+Production-grade AI agents with custom MCP (Model Context Protocol) servers managing real infrastructure. 35+ tools across 4 MCP servers handling monitoring, web scraping, GitHub operations, and workflow automation.
 
-- **Homelab Infrastructure** — Two-node setup running Fedora, Podman containers, Tailscale mesh VPN, AdGuard Home, Uptime Kuma, n8n
-- **AI Agents & MCP** — Running Hermes Agent with custom MCP servers, tool orchestration, autonomous workflows
-- **Cloud & DevOps** — Docker, Kubernetes (learning), CI/CD, infrastructure as code
-- **Career Journey** — From warehouse floor to cloud engineer — honest posts about what works and what doesn't
+### Homelab
+Two-node setup running 24/7:
+- **Node A:** Dell OptiPlex 7090 SFF, i5-10500, 32GB RAM — containers, agents, monitoring
+- **Node B:** ASUS Z690, RTX 4080 Super — GPU workloads, local LLM inference
 
-## The Homelab
+### Business Solutions
+Built an MCP server for KR Flooring that lets customers get instant estimates and book appointments through ChatGPT. Deployed on Cloudflare Workers for free.
 
-| Node | Hardware | Role |
-|------|----------|------|
-| Node A | Dell OptiPlex 7090 SFF, i5-10500, 32GB RAM | Primary infrastructure — containers, agents, monitoring |
-| Node B | ASUS Z690, RTX 4080 Super | GPU workloads — local LLMs, model inference |
+## Technical Skills
 
-Connected via Tailscale. Managed through SSH. Everything self-hosted.
+| Category | Technologies |
+|----------|-------------|
+| AI/ML | MCP servers, Hermes Agent, Ollama, local LLMs |
+| Containers | Podman, Docker, Quadlet systemd integration |
+| Cloud | Cloudflare Workers, GitHub Actions, Tailscale |
+| Monitoring | Uptime Kuma, Socket.IO, custom dashboards |
+| Automation | n8n workflows, cron jobs, API integrations |
+| Languages | Python, JavaScript, Bash |
+| Systems | Linux (Fedora), systemd, DNS (AdGuard Home) |
 
-## Get in Touch
+## Connect
 
 - [GitHub](https://github.com/Crow0077)
 - [LinkedIn](https://linkedin.com/in/xhuljanocaushllari)
