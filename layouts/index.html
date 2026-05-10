@@ -2,218 +2,263 @@
 <style>
 #hero-wrap {
   width: 100%;
-  height: 500px;
-  background: #080810;
+  height: 600px;
+  background: #06060c;
   position: relative;
   overflow: hidden;
+  cursor: crosshair;
 }
 #hero-wrap canvas {
   display: block;
-  width: 100% !important;
-  height: 100% !important;
+}
+#hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  pointer-events: none;
+}
+#hero-text h1 {
+  font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', monospace;
+  font-size: 2.8rem;
+  color: rgba(255,255,255,0.9);
+  margin: 0;
+  letter-spacing: -1px;
+  text-shadow: 0 0 40px rgba(0,180,255,0.3), 0 0 80px rgba(0,180,255,0.1);
+}
+#hero-text p {
+  font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: rgba(160,170,200,0.6);
+  margin-top: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 </style>
-<div id="hero-wrap"></div>
+<div id="hero-wrap">
+  <div id="hero-text">
+    <h1>Building in Public</h1>
+    <p>Homelab · AI Agents · MCP · Cloud</p>
+  </div>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
 <script>
 new p5(function(p) {
-  let nodes = [];
-  let particles = [];
   let W, H;
-  
-  const COLORS = [
-    [0, 200, 255],   // hermes - cyan
-    [255, 120, 60],  // firecrawl - orange
-    [0, 255, 150],   // uptime - green
-    [160, 110, 255], // github - purple
-    [255, 210, 50],  // n8n - yellow
-    [255, 70, 110],  // adguard - red
-    [110, 255, 210], // tailscale - teal
-  ];
-  const LABELS = ['HERMES', 'FIRECRAWL', 'UPTIME KUMA', 'GITHUB', 'N8N', 'ADGUARD', 'TAILSCALE'];
+  let flowField = [];
+  let particles = [];
+  let mouseTrail = [];
+  let geoShapes = [];
+  let time = 0;
+  let cols, rows;
+  const SCALE = 20;
+  const PARTICLE_COUNT = 400;
+  const GEO_COUNT = 12;
   
   p.setup = function() {
     let wrap = document.getElementById('hero-wrap');
     W = wrap.offsetWidth;
-    H = 500;
+    H = 600;
     let c = p.createCanvas(W, H);
     c.parent('hero-wrap');
-    p.colorMode(p.RGB, 255);
+    p.colorMode(p.HSB, 360, 100, 100, 100);
     
-    // Create nodes in a circle
-    let cx = W / 2, cy = H / 2, r = Math.min(W, H) * 0.3;
-    for (let i = 0; i < 7; i++) {
-      let a = (p.TWO_PI / 7) * i - p.HALF_PI;
-      nodes.push({
-        x: cx + Math.cos(a) * r,
-        y: cy + Math.sin(a) * r,
+    cols = Math.ceil(W / SCALE) + 1;
+    rows = Math.ceil(H / SCALE) + 1;
+    
+    // Flow particles
+    for (let i = 0; i < PARTICLE_COUNT; i++) {
+      particles.push({
+        x: p.random(W), y: p.random(H),
         vx: 0, vy: 0,
-        col: COLORS[i],
-        label: LABELS[i],
-        size: 28 + (i === 0 ? 6 : 0),
-        phase: p.random(p.TWO_PI)
+        life: p.random(100, 300),
+        maxLife: 300,
+        hue: p.random(180, 240),
+        size: p.random(1, 3)
       });
     }
     
-    // Create particles
-    for (let i = 0; i < 60; i++) {
-      particles.push(newParticle());
+    // Geometric shapes
+    for (let i = 0; i < GEO_COUNT; i++) {
+      geoShapes.push({
+        x: p.random(W), y: p.random(H),
+        size: p.random(30, 80),
+        rotation: p.random(p.TWO_PI),
+        rotSpeed: p.random(-0.005, 0.005),
+        sides: Math.floor(p.random(3, 8)),
+        hue: p.random(180, 260),
+        alpha: p.random(3, 10),
+        driftX: p.random(-0.2, 0.2),
+        driftY: p.random(-0.2, 0.2)
+      });
     }
   };
   
-  function newParticle() {
-    let src = Math.floor(Math.random() * 7);
-    let tgt;
-    do { tgt = Math.floor(Math.random() * 7); } while (tgt === src);
-    return {
-      src: src, tgt: tgt,
-      t: Math.random(),
-      speed: 0.003 + Math.random() * 0.008,
-      size: 2 + Math.random() * 2,
-      trail: []
-    };
-  }
-  
   p.draw = function() {
-    // Dark background
-    p.background(8, 8, 16);
+    time += 0.005;
     
-    // Grid lines
-    p.stroke(20, 20, 35);
-    p.strokeWeight(0.5);
-    for (let x = 0; x < W; x += 50) p.line(x, 0, x, H);
-    for (let y = 0; y < H; y += 50) p.line(0, y, W, y);
+    // Semi-transparent background for trails
+    p.noStroke();
+    p.fill(230, 80, 3, 100);
+    p.rect(0, 0, W, H);
     
-    // Update node positions (gentle drift)
-    for (let n of nodes) {
-      // Drift toward center if too far
-      let dx = W/2 - n.x, dy = H/2 - n.y;
-      let dist = Math.sqrt(dx*dx + dy*dy);
-      let maxR = Math.min(W, H) * 0.4;
-      if (dist > maxR) {
-        n.vx += dx * 0.0003;
-        n.vy += dy * 0.0003;
-      }
-      
-      // Mouse repulsion
-      let mdx = p.mouseX - n.x, mdy = p.mouseY - n.y;
-      let md = Math.sqrt(mdx*mdx + mdy*mdy);
-      if (md < 150 && md > 0 && p.mouseX > 0 && p.mouseY > 0) {
-        n.vx += (mdx / md) * 0.08;
-        n.vy += (mdy / md) * 0.08;
-      }
-      
-      // Repulsion from other nodes
-      for (let o of nodes) {
-        if (o === n) continue;
-        let odx = n.x - o.x, ody = n.y - o.y;
-        let od = Math.sqrt(odx*odx + ody*ody);
-        if (od < 100 && od > 0) {
-          n.vx += (odx / od) * 0.2;
-          n.vy += (ody / od) * 0.2;
+    // Update flow field
+    for (let y = 0; y < rows; y++) {
+      for (let x = 0; x < cols; x++) {
+        let angle = p.noise(x * 0.08, y * 0.08, time) * p.TWO_PI * 2;
+        
+        // Mouse influence
+        let mx = x * SCALE, my = y * SCALE;
+        let dx = p.mouseX - mx, dy = p.mouseY - my;
+        let dist = Math.sqrt(dx*dx + dy*dy);
+        if (dist < 200 && dist > 0) {
+          let influence = p.map(dist, 0, 200, 1, 0);
+          let mouseAngle = Math.atan2(dy, dx);
+          angle = p.lerp(angle, mouseAngle, influence * 0.6);
         }
+        
+        flowField[y * cols + x] = angle;
       }
-      
-      n.vx *= 0.95; // friction
-      n.vy *= 0.95;
-      n.x += n.vx;
-      n.y += n.vy;
-      n.phase += 0.02;
     }
     
-    // Draw connection lines
-    for (let i = 0; i < nodes.length; i++) {
-      for (let j = i + 1; j < nodes.length; j++) {
-        let dx = nodes[j].x - nodes[i].x;
-        let dy = nodes[j].y - nodes[i].y;
-        let d = Math.sqrt(dx*dx + dy*dy);
-        if (d < 250) {
-          let a = p.map(d, 0, 250, 40, 5);
-          p.stroke(40, 40, 60, a);
-          p.strokeWeight(0.8);
-          p.line(nodes[i].x, nodes[i].y, nodes[j].x, nodes[j].y);
-        }
+    // Draw geometric shapes (background layer)
+    for (let g of geoShapes) {
+      g.rotation += g.rotSpeed;
+      g.x += g.driftX;
+      g.y += g.driftY;
+      
+      // Wrap around
+      if (g.x < -g.size) g.x = W + g.size;
+      if (g.x > W + g.size) g.x = -g.size;
+      if (g.y < -g.size) g.y = H + g.size;
+      if (g.y > H + g.size) g.y = -g.size;
+      
+      // Mouse repulsion
+      let dx = p.mouseX - g.x, dy = p.mouseY - g.y;
+      let dist = Math.sqrt(dx*dx + dy*dy);
+      if (dist < 150 && dist > 0) {
+        g.x -= (dx / dist) * 1.5;
+        g.y -= (dy / dist) * 1.5;
       }
+      
+      // Draw polygon
+      p.push();
+      p.translate(g.x, g.y);
+      p.rotate(g.rotation);
+      p.noFill();
+      p.stroke(g.hue, 60, 40, g.alpha);
+      p.strokeWeight(0.5);
+      p.beginShape();
+      for (let i = 0; i < g.sides; i++) {
+        let a = (p.TWO_PI / g.sides) * i;
+        p.vertex(Math.cos(a) * g.size, Math.sin(a) * g.size);
+      }
+      p.endShape(p.CLOSE);
+      p.pop();
     }
     
     // Update and draw particles
     for (let pt of particles) {
-      pt.t += pt.speed;
-      if (pt.t >= 1) {
-        Object.assign(pt, newParticle());
-        pt.t = 0;
-        pt.trail = [];
+      let col = Math.floor(pt.x / SCALE);
+      let row = Math.floor(pt.y / SCALE);
+      
+      if (col >= 0 && col < cols && row >= 0 && row < rows) {
+        let angle = flowField[row * cols + col];
+        let force = 0.3;
+        pt.vx += Math.cos(angle) * force;
+        pt.vy += Math.sin(angle) * force;
       }
       
-      let s = nodes[pt.src], tgt = nodes[pt.tgt];
-      // Bezier path
-      let mx = (s.x + tgt.x) / 2, my = (s.y + tgt.y) / 2;
-      let perpX = -(tgt.y - s.y) * 0.15, perpY = (tgt.x - s.x) * 0.15;
-      if (pt.src % 2 === 0) { perpX *= -1; perpY *= -1; }
-      let cx = mx + perpX, cy = my + perpY;
-      
-      let t = pt.t;
-      let px = (1-t)*(1-t)*s.x + 2*(1-t)*t*cx + t*t*tgt.x;
-      let py = (1-t)*(1-t)*s.y + 2*(1-t)*t*cy + t*t*tgt.y;
-      
-      pt.trail.push({x: px, y: py});
-      if (pt.trail.length > 6) pt.trail.shift();
-      
-      // Draw trail
-      let col = COLORS[pt.src];
-      for (let i = 0; i < pt.trail.length; i++) {
-        let al = p.map(i, 0, pt.trail.length, 10, 100);
-        let sz = p.map(i, 0, pt.trail.length, 0.5, pt.size * 0.7);
-        p.noStroke();
-        p.fill(col[0], col[1], col[2], al);
-        p.ellipse(pt.trail[i].x, pt.trail[i].y, sz, sz);
+      // Mouse attraction
+      let dx = p.mouseX - pt.x, dy = p.mouseY - pt.y;
+      let dist = Math.sqrt(dx*dx + dy*dy);
+      if (dist < 180 && dist > 0) {
+        let pull = p.map(dist, 0, 180, 0.15, 0);
+        pt.vx += (dx / dist) * pull;
+        pt.vy += (dy / dist) * pull;
+        pt.hue = p.lerp(pt.hue, p.mouseX > W/2 ? 200 : 260, 0.02);
       }
       
-      // Draw particle
-      p.fill(col[0], col[1], col[2], 200);
+      pt.vx *= 0.92;
+      pt.vy *= 0.92;
+      pt.x += pt.vx;
+      pt.y += pt.vy;
+      pt.life--;
+      
+      // Reset if dead or off screen
+      if (pt.life <= 0 || pt.x < -10 || pt.x > W+10 || pt.y < -10 || pt.y > H+10) {
+        pt.x = p.random(W);
+        pt.y = p.random(H);
+        pt.vx = 0;
+        pt.vy = 0;
+        pt.life = p.random(100, 300);
+        pt.hue = p.random(180, 240);
+      }
+      
+      // Draw
+      let alpha = p.map(pt.life, 0, 50, 0, 50);
+      if (pt.life > 50) alpha = 50;
+      
       p.noStroke();
-      p.ellipse(px, py, pt.size, pt.size);
-      p.fill(255, 255, 255, 150);
-      p.ellipse(px, py, pt.size * 0.3, pt.size * 0.3);
+      p.fill(pt.hue, 70, 80, alpha);
+      p.ellipse(pt.x, pt.y, pt.size, pt.size);
+      
+      // Bright core for some particles
+      if (pt.size > 2) {
+        p.fill(pt.hue, 40, 100, alpha * 0.5);
+        p.ellipse(pt.x, pt.y, pt.size * 0.4, pt.size * 0.4);
+      }
     }
     
-    // Draw nodes (on top)
-    for (let n of nodes) {
-      let pulse = Math.sin(n.phase) * 0.2 + 0.8;
-      
-      // Glow
+    // Mouse trail effect
+    if (p.mouseX > 0 && p.mouseY > 0) {
+      mouseTrail.push({x: p.mouseX, y: p.mouseY, age: 0});
+      if (mouseTrail.length > 30) mouseTrail.shift();
+    }
+    
+    for (let i = 0; i < mouseTrail.length; i++) {
+      let mt = mouseTrail[i];
+      mt.age++;
+      let alpha = p.map(mt.age, 0, 30, 15, 0);
+      let size = p.map(mt.age, 0, 30, 8, 2);
       p.noStroke();
-      for (let i = 3; i > 0; i--) {
-        p.fill(n.col[0], n.col[1], n.col[2], 12 * i);
-        p.ellipse(n.x, n.y, n.size * 2 * i * pulse * 0.5, n.size * 2 * i * pulse * 0.5);
+      p.fill(200, 50, 80, alpha);
+      p.ellipse(mt.x, mt.y, size, size);
+    }
+    
+    // Draw connections between nearby particles (sparse)
+    p.strokeWeight(0.3);
+    for (let i = 0; i < particles.length; i += 3) {
+      for (let j = i + 3; j < particles.length; j += 5) {
+        let dx = particles[j].x - particles[i].x;
+        let dy = particles[j].y - particles[i].y;
+        let dist = Math.sqrt(dx*dx + dy*dy);
+        if (dist < 60) {
+          let alpha = p.map(dist, 0, 60, 8, 0);
+          p.stroke(210, 50, 50, alpha);
+          p.line(particles[i].x, particles[i].y, particles[j].x, particles[j].y);
+        }
       }
-      
-      // Core
-      p.fill(n.col[0], n.col[1], n.col[2], 180);
-      p.stroke(n.col[0], n.col[1], n.col[2], 60);
+    }
+    
+    // Subtle scanlines
+    for (let y = 0; y < H; y += 4) {
+      p.stroke(0, 0, 0, 3);
       p.strokeWeight(1);
-      p.ellipse(n.x, n.y, n.size * pulse, n.size * pulse);
-      
-      // Center dot
-      p.noStroke();
-      p.fill(255, 255, 255, 120);
-      p.ellipse(n.x, n.y, n.size * 0.2, n.size * 0.2);
-      
-      // Label
-      p.fill(n.col[0], n.col[1], n.col[2], 140);
-      p.textAlign(p.CENTER, p.CENTER);
-      p.textSize(9);
-      p.textFont('monospace');
-      p.text(n.label, n.x, n.y + n.size * 0.7);
+      p.line(0, y, W, y);
     }
   };
   
   p.windowResized = function() {
     let wrap = document.getElementById('hero-wrap');
     W = wrap.offsetWidth;
-    H = 500;
+    H = 600;
     p.resizeCanvas(W, H);
+    cols = Math.ceil(W / SCALE) + 1;
+    rows = Math.ceil(H / SCALE) + 1;
   };
 }, 'hero-wrap');
 </script>
