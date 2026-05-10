@@ -1,5 +1,5 @@
 {{- define "main" }}
-<div id="hero-canvas" style="width: 100%; height: 500px; position: relative; overflow: hidden;"></div>
+<div id="hero-canvas" style="width: 100%; height: 500px; position: relative; overflow: hidden; background: #0a0a0f;"></div>
 
 <script>p5.disableFriendlyErrors = true;</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
@@ -9,12 +9,12 @@
 
 const CONFIG = {
   nodeCount: 7,
-  particleCount: 100,
-  connectionDistance: 280,
+  particleCount: 80,
+  connectionDistance: 250,
   nodePulseSpeed: 0.02,
   particleSpeed: 1.0,
-  mouseInfluence: 150,
-  trailLength: 8,
+  mouseInfluence: 120,
+  trailLength: 6,
 };
 
 const PALETTE = {
@@ -30,209 +30,216 @@ const PALETTE = {
   particle: [200, 200, 220],
 };
 
+let nodes = [];
+let particles = [];
+let canvasReady = false;
+
 class InfrastructureNode {
-  constructor(x, y, label, color, size) {
+  constructor(x, y, label, col, sz) {
     this.pos = createVector(x, y);
     this.vel = p5.Vector.random2D().mult(0.3);
     this.label = label;
-    this.color = color;
-    this.size = size;
-    this.pulsePhase = random(TWO_PI);
-    this.glowIntensity = 0;
+    this.col = col;
+    this.sz = sz;
+    this.phase = random(TWO_PI);
+    this.glow = 0;
   }
 
-  update(nodes) {
+  update() {
     this.pos.add(this.vel);
-    const margin = 80;
-    if (this.pos.x < margin || this.pos.x > width - margin) this.vel.x *= -1;
-    if (this.pos.y < margin || this.pos.y > height - margin) this.vel.y *= -1;
+    const m = 60;
+    if (this.pos.x < m || this.pos.x > width - m) this.vel.x *= -1;
+    if (this.pos.y < m || this.pos.y > height - m) this.vel.y *= -1;
     
     for (let other of nodes) {
       if (other === this) continue;
       let d = p5.Vector.dist(this.pos, other.pos);
-      if (d < 120) {
-        let force = p5.Vector.sub(this.pos, other).normalize().mult(0.5);
-        this.vel.add(force);
+      if (d < 100) {
+        let f = p5.Vector.sub(this.pos, other).normalize().mult(0.3);
+        this.vel.add(f);
       }
     }
     
-    let mouseDist = dist(mouseX, mouseY, this.pos.x, this.pos.y);
-    if (mouseDist < CONFIG.mouseInfluence) {
-      let attraction = p5.Vector.sub(createVector(mouseX, mouseY), this.pos);
-      attraction.normalize().mult(0.15);
-      this.vel.add(attraction);
-      this.glowIntensity = min(this.glowIntensity + 0.1, 1);
+    let md = dist(mouseX, mouseY, this.pos.x, this.pos.y);
+    if (md < CONFIG.mouseInfluence && mouseX > 0 && mouseY > 0) {
+      let a = p5.Vector.sub(createVector(mouseX, mouseY), this.pos);
+      a.normalize().mult(0.1);
+      this.vel.add(a);
+      this.glow = min(this.glow + 0.08, 1);
     } else {
-      this.glowIntensity = max(this.glowIntensity - 0.02, 0);
+      this.glow = max(this.glow - 0.015, 0);
     }
     
-    this.vel.limit(0.8);
-    this.pulsePhase += CONFIG.nodePulseSpeed;
+    this.vel.limit(0.6);
+    this.phase += CONFIG.nodePulseSpeed;
   }
 
-  display() {
+  draw() {
     push();
     translate(this.pos.x, this.pos.y);
-    let pulse = sin(this.pulsePhase) * 0.3 + 0.7;
-    let glowSize = this.size * (2 + pulse + this.glowIntensity);
+    let p = sin(this.phase) * 0.3 + 0.7;
+    let gs = this.sz * (1.8 + p + this.glow);
     
+    // Glow
     noStroke();
     for (let i = 3; i > 0; i--) {
-      fill(this.color[0], this.color[1], this.color[2], 10 * i);
-      ellipse(0, 0, glowSize * i * 0.5, glowSize * i * 0.5);
+      fill(this.col[0], this.col[1], this.col[2], 15 * i);
+      ellipse(0, 0, gs * i * 0.4, gs * i * 0.4);
     }
     
-    fill(this.color[0], this.color[1], this.color[2], 200 + this.glowIntensity * 55);
-    stroke(this.color[0], this.color[1], this.color[2], 100);
-    strokeWeight(1.5);
-    ellipse(0, 0, this.size * pulse, this.size * pulse);
+    // Core
+    fill(this.col[0], this.col[1], this.col[2], 180 + this.glow * 75);
+    stroke(this.col[0], this.col[1], this.col[2], 80);
+    strokeWeight(1.2);
+    ellipse(0, 0, this.sz * p, this.sz * p);
     
-    fill(255, 255, 255, 150 + this.glowIntensity * 100);
+    // Bright center
     noStroke();
-    ellipse(0, 0, this.size * 0.3, this.size * 0.3);
+    fill(255, 255, 255, 120 + this.glow * 135);
+    ellipse(0, 0, this.sz * 0.25, this.sz * 0.25);
     
-    fill(this.color[0], this.color[1], this.color[2], 180);
+    // Label
+    fill(this.col[0], this.col[1], this.col[2], 160);
+    noStroke();
     textAlign(CENTER, CENTER);
-    textSize(10);
+    textSize(9);
     textFont('monospace');
-    text(this.label, 0, this.size * 0.8);
+    text(this.label, 0, this.sz * 0.75);
     pop();
   }
 }
 
 class DataParticle {
-  constructor() { this.reset(); this.trail = []; }
+  constructor() {
+    this.trail = [];
+    this.reset();
+  }
 
   reset() {
-    this.sourceNode = floor(random(CONFIG.nodeCount));
-    do { this.targetNode = floor(random(CONFIG.nodeCount)); } while (this.targetNode === this.sourceNode);
-    this.progress = 0;
-    this.speed = random(0.005, 0.015) * CONFIG.particleSpeed;
-    this.size = random(2, 5);
+    this.src = floor(random(CONFIG.nodeCount));
+    do { this.tgt = floor(random(CONFIG.nodeCount)); } while (this.tgt === this.src);
+    this.t = 0;
+    this.spd = random(0.006, 0.014) * CONFIG.particleSpeed;
+    this.sz = random(2, 4);
     this.trail = [];
   }
 
-  update(nodes) {
-    this.progress += this.speed;
-    if (this.progress >= 1) { this.reset(); return; }
+  update() {
+    this.t += this.spd;
+    if (this.t >= 1) { this.reset(); return; }
     
-    let source = nodes[this.sourceNode].pos;
-    let target = nodes[this.targetNode].pos;
-    let mid = p5.Vector.add(source, target).mult(0.5);
-    let perp = p5.Vector.sub(target, source).rotate(HALF_PI).mult(0.2 * sin(this.sourceNode + this.targetNode));
-    let control = p5.Vector.add(mid, perp);
+    let s = nodes[this.src].pos;
+    let e = nodes[this.tgt].pos;
+    let mid = p5.Vector.add(s, e).mult(0.5);
+    let perp = p5.Vector.sub(e, s).rotate(HALF_PI).mult(0.15 * (this.src % 3 === 0 ? 1 : -1));
+    let c = p5.Vector.add(mid, perp);
     
-    let t = this.progress;
-    let x = (1-t)*(1-t)*source.x + 2*(1-t)*t*control.x + t*t*target.x;
-    let y = (1-t)*(1-t)*source.y + 2*(1-t)*t*control.y + t*t*target.y;
+    let x = (1-this.t)*(1-this.t)*s.x + 2*(1-this.t)*this.t*c.x + this.t*this.t*e.x;
+    let y = (1-this.t)*(1-this.t)*s.y + 2*(1-this.t)*this.t*c.y + this.t*this.t*e.y;
     
     this.pos = createVector(x, y);
     this.trail.push({x, y});
     if (this.trail.length > CONFIG.trailLength) this.trail.shift();
   }
 
-  display(nodes) {
+  draw() {
     if (!this.pos) return;
-    let nodeColor = nodes[this.sourceNode].color;
+    let col = nodes[this.src].col;
     
-    noFill();
+    // Trail
+    noStroke();
     for (let i = 0; i < this.trail.length; i++) {
-      let alpha = map(i, 0, this.trail.length, 20, 150);
-      let size = map(i, 0, this.trail.length, 1, this.size);
-      fill(nodeColor[0], nodeColor[1], nodeColor[2], alpha);
-      noStroke();
-      ellipse(this.trail[i].x, this.trail[i].y, size, size);
+      let a = map(i, 0, this.trail.length, 10, 120);
+      let s = map(i, 0, this.trail.length, 0.5, this.sz * 0.8);
+      fill(col[0], col[1], col[2], a);
+      ellipse(this.trail[i].x, this.trail[i].y, s, s);
     }
     
-    fill(nodeColor[0], nodeColor[1], nodeColor[2], 220);
-    noStroke();
-    ellipse(this.pos.x, this.pos.y, this.size, this.size);
-    fill(255, 255, 255, 180);
-    ellipse(this.pos.x, this.pos.y, this.size * 0.4, this.size * 0.4);
+    // Particle
+    fill(col[0], col[1], col[2], 200);
+    ellipse(this.pos.x, this.pos.y, this.sz, this.sz);
+    fill(255, 255, 255, 160);
+    ellipse(this.pos.x, this.pos.y, this.sz * 0.3, this.sz * 0.3);
   }
 }
 
-let nodes = [];
-let particles = [];
-let bgLayer;
-
 function setup() {
-  let canvas = createCanvas(document.getElementById('hero-canvas').offsetWidth, 500);
-  canvas.parent('hero-canvas');
-  colorMode(RGB, 255, 255, 255, 255);
+  let container = document.getElementById('hero-canvas');
+  let c = createCanvas(container.offsetWidth, 500);
+  c.parent('hero-canvas');
+  colorMode(RGB, 255);
+  background(PALETTE.bg[0], PALETTE.bg[1], PALETTE.bg[2]);
   
-  bgLayer = createGraphics(width, height);
-  drawBackgroundGrid(bgLayer);
+  // Create nodes in a ring
+  let cx = width / 2;
+  let cy = height / 2;
+  let r = min(width, height) * 0.28;
   
-  const nodeData = [
-    { label: 'HERMES', color: PALETTE.hermes, size: 32 },
-    { label: 'FIRECRAWL', color: PALETTE.firecrawl, size: 26 },
-    { label: 'UPTIME KUMA', color: PALETTE.uptime, size: 26 },
-    { label: 'GITHUB', color: PALETTE.github, size: 28 },
-    { label: 'N8N', color: PALETTE.n8n, size: 24 },
-    { label: 'ADGUARD', color: PALETTE.adguard, size: 22 },
-    { label: 'TAILSCALE', color: PALETTE.tailscale, size: 24 },
+  let nodeInfo = [
+    {l:'HERMES', c:PALETTE.hermes, s:30},
+    {l:'FIRECRAWL', c:PALETTE.firecrawl, s:24},
+    {l:'UPTIME KUMA', c:PALETTE.uptime, s:24},
+    {l:'GITHUB', c:PALETTE.github, s:26},
+    {l:'N8N', c:PALETTE.n8n, s:22},
+    {l:'ADGUARD', c:PALETTE.adguard, s:20},
+    {l:'TAILSCALE', c:PALETTE.tailscale, s:22}
   ];
   
-  const centerX = width / 2;
-  const centerY = height / 2;
-  const radius = min(width, height) * 0.3;
-  
   for (let i = 0; i < CONFIG.nodeCount; i++) {
-    let angle = (TWO_PI / CONFIG.nodeCount) * i - HALF_PI;
-    let r = radius * (0.7 + 0.3 * sin(i * 1.5));
-    let x = centerX + cos(angle) * r;
-    let y = centerY + sin(angle) * r;
-    nodes.push(new InfrastructureNode(x, y, nodeData[i].label, nodeData[i].color, nodeData[i].size));
+    let a = (TWO_PI / CONFIG.nodeCount) * i - HALF_PI;
+    let rr = r * (0.8 + 0.2 * sin(i * 2.1));
+    nodes.push(new InfrastructureNode(
+      cx + cos(a) * rr,
+      cy + sin(a) * rr,
+      nodeInfo[i].l, nodeInfo[i].c, nodeInfo[i].s
+    ));
   }
   
   for (let i = 0; i < CONFIG.particleCount; i++) {
     let p = new DataParticle();
-    p.progress = random(1);
+    p.t = random(1);
     particles.push(p);
   }
-}
-
-function drawBackgroundGrid(bg) {
-  bg.background(PALETTE.bg[0], PALETTE.bg[1], PALETTE.bg[2]);
-  bg.stroke(30, 30, 45, 30);
-  bg.strokeWeight(0.5);
-  const gridSize = 60;
-  for (let x = 0; x < width; x += gridSize) bg.line(x, 0, x, height);
-  for (let y = 0; y < height; y += gridSize) bg.line(0, y, width, y);
   
-  for (let r = min(width, height); r > 0; r -= 4) {
-    let alpha = map(r, 0, min(width, height), 25, 0);
-    bg.noStroke();
-    bg.fill(PALETTE.bg[0] + 5, PALETTE.bg[1] + 5, PALETTE.bg[2] + 15, alpha);
-    bg.ellipse(width/2, height/2, r, r);
-  }
+  canvasReady = true;
 }
 
 function draw() {
-  image(bgLayer, 0, 0);
+  if (!canvasReady) return;
   
-  stroke(PALETTE.connection[0], PALETTE.connection[1], PALETTE.connection[2], 40);
-  strokeWeight(1);
+  // Dark background with slight fade for trails
+  background(PALETTE.bg[0], PALETTE.bg[1], PALETTE.bg[2]);
+  
+  // Grid
+  stroke(25, 25, 40, 25);
+  strokeWeight(0.5);
+  for (let x = 0; x < width; x += 50) line(x, 0, x, height);
+  for (let y = 0; y < height; y += 50) line(0, y, width, y);
+  
+  // Connections
   for (let i = 0; i < nodes.length; i++) {
     for (let j = i + 1; j < nodes.length; j++) {
       let d = p5.Vector.dist(nodes[i].pos, nodes[j].pos);
       if (d < CONFIG.connectionDistance) {
-        let alpha = map(d, 0, CONFIG.connectionDistance, 60, 10);
-        stroke(PALETTE.connection[0], PALETTE.connection[1], PALETTE.connection[2], alpha);
+        let a = map(d, 0, CONFIG.connectionDistance, 50, 8);
+        stroke(50, 50, 70, a);
+        strokeWeight(0.8);
         line(nodes[i].pos.x, nodes[i].pos.y, nodes[j].pos.x, nodes[j].pos.y);
       }
     }
   }
   
-  for (let p of particles) { p.update(nodes); p.display(nodes); }
-  for (let node of nodes) { node.update(nodes); node.display(); }
+  // Particles
+  for (let p of particles) { p.update(); p.draw(); }
+  
+  // Nodes (drawn last so they're on top)
+  for (let n of nodes) { n.update(); n.draw(); }
 }
 
 function windowResized() {
-  resizeCanvas(document.getElementById('hero-canvas').offsetWidth, 500);
-  bgLayer = createGraphics(width, height);
-  drawBackgroundGrid(bgLayer);
+  let container = document.getElementById('hero-canvas');
+  resizeCanvas(container.offsetWidth, 500);
+  background(PALETTE.bg[0], PALETTE.bg[1], PALETTE.bg[2]);
 }
 </script>
 
