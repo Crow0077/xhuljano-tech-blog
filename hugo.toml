@@ -1,6 +1,6 @@
 baseURL = "https://crow0077.github.io/xhuljano-tech-blog/"
 languageCode = "en-us"
-title = "Xhuljano Caushllari — AI Platform Engineer"
+title = "Xhuljano Caushllari"
 theme = "PaperMod"
 [pagination]
   pagerSize = 10
@@ -9,7 +9,7 @@ buildDrafts = false
 
 [params]
   env = "production"
-  description = "AI Platform Engineer building homelab infrastructure, AI agents, and MCP servers. WGU Cloud and Network Engineering student."
+  description = "Cloud engineering student building with AI agents, MCP servers, and homelab infrastructure."
   author = "Xhuljano Caushllari"
   defaultTheme = "dark"
   ShowReadingTime = true
@@ -21,8 +21,8 @@ buildDrafts = false
   TocOpen = false
   
   [params.homeInfoParams]
-    Title = "Xhuljano Caushllari"
-    Content = "AI Platform Engineer building production infrastructure with AI agents, MCP servers, and container orchestration. Currently pursuing WGU Cloud and Network Engineering."
+    Title = "Building with AI Agents"
+    Content = "Cloud engineering student building real infrastructure — AI agents, MCP servers, container orchestration, and homelab automation. Documenting the journey from warehouse to engineering."
   
   [[params.socialIcons]]
     name = "github"
