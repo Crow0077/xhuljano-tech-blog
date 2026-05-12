@@ -57,6 +57,11 @@ buildDrafts = false
     url = "/posts/"
     weight = 15
   [[menu.main]]
+    identifier = "ainews"
+    name = "AI News"
+    url = "/ai-news/"
+    weight = 18
+  [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
