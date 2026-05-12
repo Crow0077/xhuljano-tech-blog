@@ -1,6 +1,6 @@
 baseURL = "https://crow0077.github.io/xhuljano-tech-blog/"
 languageCode = "en-us"
-title = "Xhuljano Caushllari"
+title = "Xhuljano"
 theme = "PaperMod"
 [pagination]
   pagerSize = 10
@@ -10,7 +10,7 @@ buildDrafts = false
 [params]
   env = "production"
   description = "Cloud engineering student building with AI agents, MCP servers, and homelab infrastructure."
-  author = "Xhuljano Caushllari"
+  author = "Xhuljano"
   defaultTheme = "dark"
   ShowReadingTime = true
   ShowShareButtons = false
