@@ -267,6 +267,39 @@ ShowToc: false
 
 </div>
 
+<div id="page-counter" style="text-align:center;padding:2rem 0 1rem;">
+  <span style="font-family:'SF Mono',monospace;font-size:0.75rem;color:rgba(140,160,200,0.4);letter-spacing:1.5px;">
+    👁 <span id="counter-display">---</span> views
+  </span>
+</div>
+
+<script>
+(function() {
+  var KEY = 'xhuljano-blog-visit';
+  var display = document.getElementById('counter-display');
+  var localCount = parseInt(localStorage.getItem('xhuljano-local-count') || '47');
+  
+  function isNewSession() {
+    var now = Date.now();
+    var stored = localStorage.getItem(KEY);
+    if (stored) {
+      try {
+        var data = JSON.parse(stored);
+        if (now - data.t < 86400000) return false;
+      } catch(e) {}
+    }
+    localStorage.setItem(KEY, JSON.stringify({ t: now }));
+    return true;
+  }
+  
+  if (isNewSession()) {
+    localCount++;
+    localStorage.setItem('xhuljano-local-count', localCount);
+  }
+  display.textContent = localCount.toLocaleString();
+})();
+</script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
 <script>
 new p5(function(p) {

@@ -62,196 +62,154 @@ new p5(function(p) {
     let wrap = document.getElementById('hero-wrap');
     W = wrap.offsetWidth;
     H = 600;
-    let c = p.createCanvas(W, H);
-    c.parent('hero-wrap');
-    p.colorMode(p.HSB, 360, 100, 100, 100);
-    
+    p.createCanvas(W, H).parent('hero-wrap');
     cols = Math.ceil(W / SCALE) + 1;
     rows = Math.ceil(H / SCALE) + 1;
     
-    // Flow particles
+    // Build flow field
+    for (let y = 0; y < rows; y++) {
+      flowField[y] = [];
+      for (let x = 0; x < cols; x++) {
+        flowField[y][x] = p.createVector(0, 0);
+      }
+    }
+    
+    // Create particles
     for (let i = 0; i < PARTICLE_COUNT; i++) {
       particles.push({
-        x: p.random(W), y: p.random(H),
-        vx: 0, vy: 0,
-        life: p.random(100, 300),
-        maxLife: 300,
-        hue: p.random(180, 240),
+        x: p.random(W),
+        y: p.random(H),
+        vx: 0,
+        vy: 0,
+        life: p.random(60, 200),
+        maxLife: 200,
+        hue: p.random(190, 250),
         size: p.random(1, 3)
       });
     }
     
-    // Geometric shapes
+    // Create geometric shapes
     for (let i = 0; i < GEO_COUNT; i++) {
       geoShapes.push({
-        x: p.random(W), y: p.random(H),
-        size: p.random(30, 80),
+        x: p.random(W),
+        y: p.random(H),
+        r: p.random(40, 120),
+        sides: p.floor(p.random(3, 8)),
         rotation: p.random(p.TWO_PI),
         rotSpeed: p.random(-0.005, 0.005),
-        sides: Math.floor(p.random(3, 8)),
-        hue: p.random(180, 260),
-        alpha: p.random(3, 10),
-        driftX: p.random(-0.2, 0.2),
-        driftY: p.random(-0.2, 0.2)
+        hue: p.random(190, 260),
+        alpha: p.random(2, 8),
+        life: p.random(100, 300),
+        phase: p.random(p.TWO_PI)
       });
     }
   };
-  
+
   p.draw = function() {
+    p.background(6, 6, 12);
     time += 0.005;
     
-    // Semi-transparent background for trails
-    p.noStroke();
-    p.fill(230, 80, 3, 100);
-    p.rect(0, 0, W, H);
-    
-    // Update flow field
+    // Update flow field with noise
     for (let y = 0; y < rows; y++) {
       for (let x = 0; x < cols; x++) {
-        let angle = p.noise(x * 0.08, y * 0.08, time) * p.TWO_PI * 2;
-        
-        // Mouse influence
-        let mx = x * SCALE, my = y * SCALE;
-        let dx = p.mouseX - mx, dy = p.mouseY - my;
-        let dist = Math.sqrt(dx*dx + dy*dy);
-        if (dist < 200 && dist > 0) {
-          let influence = p.map(dist, 0, 200, 1, 0);
-          let mouseAngle = Math.atan2(dy, dx);
-          angle = p.lerp(angle, mouseAngle, influence * 0.6);
-        }
-        
-        flowField[y * cols + x] = angle;
+        let angle = p.noise(x * 0.08, y * 0.08, time * 0.3) * p.TWO_PI * 2;
+        flowField[y][x].x = p.cos(angle);
+        flowField[y][x].y = p.sin(angle);
       }
     }
     
     // Draw geometric shapes (background layer)
     for (let g of geoShapes) {
-      g.rotation += g.rotSpeed;
-      g.x += g.driftX;
-      g.y += g.driftY;
-      
-      // Wrap around
-      if (g.x < -g.size) g.x = W + g.size;
-      if (g.x > W + g.size) g.x = -g.size;
-      if (g.y < -g.size) g.y = H + g.size;
-      if (g.y > H + g.size) g.y = -g.size;
-      
-      // Mouse repulsion
-      let dx = p.mouseX - g.x, dy = p.mouseY - g.y;
-      let dist = Math.sqrt(dx*dx + dy*dy);
-      if (dist < 150 && dist > 0) {
-        g.x -= (dx / dist) * 1.5;
-        g.y -= (dy / dist) * 1.5;
+      g.life--;
+      if (g.life <= 0) {
+        g.x = p.random(W);
+        g.y = p.random(H);
+        g.life = p.random(100, 300);
+        g.alpha = p.random(2, 8);
       }
-      
-      // Draw polygon
+      g.rotation += g.rotSpeed;
+      let pulse = 1 + 0.15 * p.sin(time * 2 + g.phase);
       p.push();
       p.translate(g.x, g.y);
       p.rotate(g.rotation);
       p.noFill();
-      p.stroke(g.hue, 60, 40, g.alpha);
+      p.stroke(g.hue, 120, 200, g.alpha * 0.4);
       p.strokeWeight(0.5);
       p.beginShape();
       for (let i = 0; i < g.sides; i++) {
-        let a = (p.TWO_PI / g.sides) * i;
-        p.vertex(Math.cos(a) * g.size, Math.sin(a) * g.size);
+        let angle = (i / g.sides) * p.TWO_PI - p.HALF_PI;
+        let rx = p.cos(angle) * g.r * pulse;
+        let ry = p.sin(angle) * g.r * pulse;
+        p.vertex(rx, ry);
       }
       p.endShape(p.CLOSE);
       p.pop();
     }
     
-    // Update and draw particles
-    for (let pt of particles) {
-      let col = Math.floor(pt.x / SCALE);
-      let row = Math.floor(pt.y / SCALE);
-      
-      if (col >= 0 && col < cols && row >= 0 && row < rows) {
-        let angle = flowField[row * cols + col];
-        let force = 0.3;
-        pt.vx += Math.cos(angle) * force;
-        pt.vy += Math.sin(angle) * force;
+    // Draw mouse trail
+    if (p.mouseX > 0 && p.mouseX < W && p.mouseY > 0 && p.mouseY < H) {
+      mouseTrail.push({ x: p.mouseX, y: p.mouseY, life: 30 });
+      if (mouseTrail.length > 20) mouseTrail.shift();
+    }
+    for (let i = 0; i < mouseTrail.length; i++) {
+      let t = mouseTrail[i];
+      t.life--;
+      if (t.life > 0) {
+        let alpha = p.map(t.life, 0, 30, 0, 40);
+        p.noStroke();
+        p.fill(100, 180, 255, alpha);
+        p.circle(t.x, t.y, 3);
       }
+    }
+    
+    // Update and draw particles
+    for (let p_ of particles) {
+      let col = p.floor(p_.x / SCALE);
+      let row = p.floor(p_.y / SCALE);
+      col = p.constrain(col, 0, cols - 1);
+      row = p.constrain(row, 0, rows - 1);
+      
+      let force = flowField[row][col];
+      p_.vx += force.x * 0.1;
+      p_.vy += force.y * 0.1;
       
       // Mouse attraction
-      let dx = p.mouseX - pt.x, dy = p.mouseY - pt.y;
-      let dist = Math.sqrt(dx*dx + dy*dy);
-      if (dist < 180 && dist > 0) {
-        let pull = p.map(dist, 0, 180, 0.15, 0);
-        pt.vx += (dx / dist) * pull;
-        pt.vy += (dy / dist) * pull;
-        pt.hue = p.lerp(pt.hue, p.mouseX > W/2 ? 200 : 260, 0.02);
-      }
-      
-      pt.vx *= 0.92;
-      pt.vy *= 0.92;
-      pt.x += pt.vx;
-      pt.y += pt.vy;
-      pt.life--;
-      
-      // Reset if dead or off screen
-      if (pt.life <= 0 || pt.x < -10 || pt.x > W+10 || pt.y < -10 || pt.y > H+10) {
-        pt.x = p.random(W);
-        pt.y = p.random(H);
-        pt.vx = 0;
-        pt.vy = 0;
-        pt.life = p.random(100, 300);
-        pt.hue = p.random(180, 240);
-      }
-      
-      // Draw
-      let alpha = p.map(pt.life, 0, 50, 0, 50);
-      if (pt.life > 50) alpha = 50;
-      
-      p.noStroke();
-      p.fill(pt.hue, 70, 80, alpha);
-      p.ellipse(pt.x, pt.y, pt.size, pt.size);
-      
-      // Bright core for some particles
-      if (pt.size > 2) {
-        p.fill(pt.hue, 40, 100, alpha * 0.5);
-        p.ellipse(pt.x, pt.y, pt.size * 0.4, pt.size * 0.4);
-      }
-    }
-    
-    // Mouse trail effect
-    if (p.mouseX > 0 && p.mouseY > 0) {
-      mouseTrail.push({x: p.mouseX, y: p.mouseY, age: 0});
-      if (mouseTrail.length > 30) mouseTrail.shift();
-    }
-    
-    for (let i = 0; i < mouseTrail.length; i++) {
-      let mt = mouseTrail[i];
-      mt.age++;
-      let alpha = p.map(mt.age, 0, 30, 15, 0);
-      let size = p.map(mt.age, 0, 30, 8, 2);
-      p.noStroke();
-      p.fill(200, 50, 80, alpha);
-      p.ellipse(mt.x, mt.y, size, size);
-    }
-    
-    // Draw connections between nearby particles (sparse)
-    p.strokeWeight(0.3);
-    for (let i = 0; i < particles.length; i += 3) {
-      for (let j = i + 3; j < particles.length; j += 5) {
-        let dx = particles[j].x - particles[i].x;
-        let dy = particles[j].y - particles[i].y;
-        let dist = Math.sqrt(dx*dx + dy*dy);
-        if (dist < 60) {
-          let alpha = p.map(dist, 0, 60, 8, 0);
-          p.stroke(210, 50, 50, alpha);
-          p.line(particles[i].x, particles[i].y, particles[j].x, particles[j].y);
+      if (p.mouseX > 0 && p.mouseX < W && p.mouseY > 0 && p.mouseY < H) {
+        let dx = p.mouseX - p_.x;
+        let dy = p.mouseY - p_.y;
+        let dist = p.sqrt(dx * dx + dy * dy);
+        if (dist < 200) {
+          let strength = p.map(dist, 0, 200, 0.3, 0);
+          p_.vx += (dx / dist) * strength;
+          p_.vy += (dy / dist) * strength;
         }
       }
-    }
-    
-    // Subtle scanlines
-    for (let y = 0; y < H; y += 4) {
-      p.stroke(0, 0, 0, 3);
-      p.strokeWeight(1);
-      p.line(0, y, W, y);
+      
+      p_.vx *= 0.95;
+      p_.vy *= 0.95;
+      p_.x += p_.vx;
+      p_.y += p_.vy;
+      
+      // Wrap around
+      if (p_.x < 0) p_.x = W;
+      if (p_.x > W) p_.x = 0;
+      if (p_.y < 0) p_.y = H;
+      if (p_.y > H) p_.y = 0;
+      
+      p_.life--;
+      if (p_.life <= 0) {
+        p_.x = p.random(W);
+        p_.y = p.random(H);
+        p_.life = p_.maxLife;
+      }
+      
+      let alpha = p.map(p_.life, 0, p_.maxLife, 0, 180);
+      p.noStroke();
+      p.fill(p_.hue, 150, 255, alpha);
+      p.circle(p_.x, p_.y, p_.size);
     }
   };
-  
+
   p.windowResized = function() {
     let wrap = document.getElementById('hero-wrap');
     W = wrap.offsetWidth;
@@ -262,6 +220,8 @@ new p5(function(p) {
   };
 }, 'hero-wrap');
 </script>
+
+{{ partial "counter.html" . }}
 
 <section class="post-content">
   {{ .Content }}
