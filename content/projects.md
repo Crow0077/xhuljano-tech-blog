@@ -1,131 +1,120 @@
 ---
 title: "Projects"
-date: 2026-05-10
+date: 2026-05-12
 draft: false
 ShowToc: false
 ---
 
 {{< rawhtml >}}
 <style>
-.project-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-.project-card {
-  background: rgba(15,15,25,0.8);
-  border: 1px solid rgba(60,60,90,0.3);
-  border-radius: 12px;
-  overflow: hidden;
-  transition: border-color 0.3s;
-}
-.project-card:hover {
-  border-color: rgba(100,140,255,0.4);
-}
-.project-canvas {
-  width: 100%;
-  height: 300px;
-  position: relative;
-  overflow: hidden;
-  cursor: crosshair;
-}
-.project-canvas canvas {
-  display: block;
-}
-.project-info {
-  padding: 1.5rem;
-}
-.project-info h2 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.4rem;
-  color: #e0e0f0;
-}
-.project-info .tag-row {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin-bottom: 0.8rem;
-}
-.project-info .tag {
-  background: rgba(60,80,120,0.3);
-  color: rgba(160,180,220,0.9);
-  padding: 0.15rem 0.6rem;
-  border-radius: 4px;
-  font-size: 0.75rem;
-  font-family: monospace;
-}
-.project-info p {
-  color: rgba(160,170,190,0.8);
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin: 0;
-}
-.project-info .links {
-  margin-top: 1rem;
-  display: flex;
-  gap: 1rem;
-}
-.project-info .links a {
-  color: rgba(100,180,255,0.8);
-  text-decoration: none;
-  font-size: 0.85rem;
-  font-family: monospace;
-}
-.project-info .links a:hover {
-  color: rgba(100,180,255,1);
-}
+.project-grid { display:grid; grid-template-columns:1fr; gap:2rem; margin-top:2rem; }
+.project-card { background:rgba(15,15,25,0.8); border:1px solid rgba(60,60,90,0.3); border-radius:12px; overflow:hidden; transition:border-color 0.3s; }
+.project-card:hover { border-color:rgba(100,140,255,0.4); }
+.project-canvas { width:100%; height:240px; position:relative; overflow:hidden; cursor:crosshair; }
+.project-canvas canvas { display:block; }
+.project-info { padding:1.5rem; }
+.project-info h2 { margin:0 0 0.5rem 0; font-size:1.4rem; color:#e0e0f0; }
+.project-info .tag-row { display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:0.8rem; }
+.project-info .tag { background:rgba(60,80,120,0.3); color:rgba(160,180,220,0.9); padding:0.15rem 0.6rem; border-radius:4px; font-size:0.75rem; font-family:monospace; }
+.project-info p { color:rgba(160,170,190,0.8); font-size:0.95rem; line-height:1.6; margin:0; }
+.project-info .stat-row { display:flex; gap:1.5rem; margin:0.8rem 0; }
+.project-info .stat { text-align:center; }
+.project-info .stat .num { font-size:1.3rem; color:rgba(130,180,240,0.9); font-family:monospace; }
+.project-info .stat .lbl { font-size:0.6rem; color:rgba(120,150,190,0.4); text-transform:uppercase; letter-spacing:1px; }
+.project-info .links { margin-top:1rem; display:flex; gap:1rem; }
+.project-info .links a { color:rgba(100,180,255,0.8); text-decoration:none; font-size:0.85rem; font-family:monospace; }
+.project-info .links a:hover { color:rgba(100,180,255,1); }
 </style>
+
 <div class="project-grid">
 
 <div class="project-card">
-  <div class="project-canvas" id="canvas-flooring"></div>
+  <div class="project-canvas" id="canvas-command"></div>
   <div class="project-info">
-    <h2>KR Flooring MCP Server</h2>
+    <h2>MCP Command Center</h2>
     <div class="tag-row">
       <span class="tag">MCP</span>
-      <span class="tag">Cloudflare Workers</span>
-      <span class="tag">ChatGPT</span>
-      <span class="tag">API</span>
-    </div>
-    <p>MCP server that lets customers get instant flooring estimates and book appointments through ChatGPT. 4 tools, 3 HTML widgets, deployed globally on Cloudflare Workers for free.</p>
-    <div class="links">
-      <a href="https://kr-flooring-mcp.xcaushlari.workers.dev/mcp">Live Endpoint</a>
-      <a href="/xhuljano-tech-blog/posts/mcp-server-flooring-business/">Write-up</a>
-    </div>
-  </div>
-</div>
-
-<div class="project-card">
-  <div class="project-canvas" id="canvas-homelab"></div>
-  <div class="project-info">
-    <h2>AI-Powered Homelab</h2>
-    <div class="tag-row">
-      <span class="tag">Hermes Agent</span>
-      <span class="tag">Podman</span>
-      <span class="tag">MCP</span>
-      <span class="tag">Fedora</span>
-    </div>
-    <p>Production homelab managed by AI agents with 35 custom MCP tools. Two nodes running containers, monitoring, DNS filtering, and workflow automation 24/7.</p>
-    <div class="links">
-      <a href="/xhuljano-tech-blog/posts/homelab-dell-optiplex/">Write-up</a>
-    </div>
-  </div>
-</div>
-
-<div class="project-card">
-  <div class="project-canvas" id="canvas-agent"></div>
-  <div class="project-info">
-    <h2>MCP Server Ecosystem</h2>
-    <div class="tag-row">
+      <span class="tag">Systemd</span>
+      <span class="tag">Streamable HTTP</span>
       <span class="tag">Python</span>
-      <span class="tag">Socket.IO</span>
-      <span class="tag">GitHub API</span>
-      <span class="tag">n8n</span>
     </div>
-    <p>5 custom MCP servers bridging AI agents to real infrastructure — web scraping, service monitoring, repository management, and workflow automation.</p>
+    <p>10 production MCP servers running as standalone systemd daemons on Fedora Server — compliance auditing, incident forensics, self-healing infrastructure, container management, log aggregation, backup orchestration, and cloud exit analysis. 85+ tools. Every server survives reboots and runs independently of any AI agent session.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="num">10</div><div class="lbl">MCP Servers</div></div>
+      <div class="stat"><div class="num">85+</div><div class="lbl">Tools</div></div>
+      <div class="stat"><div class="num">2</div><div class="lbl">Enterprise Tier</div></div>
+      <div class="stat"><div class="num">24/7</div><div class="lbl">Uptime</div></div>
+    </div>
     <div class="links">
-      <a href="/xhuljano-tech-blog/posts/what-are-mcp-servers/">Write-up</a>
+      <a href="/xhuljano-tech-blog/ai-news/">AI News</a>
+      <a href="https://github.com/Crow0077">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="project-canvas" id="canvas-compliance"></div>
+  <div class="project-info">
+    <h2>Infrastructure Compliance Auditor</h2>
+    <div class="tag-row">
+      <span class="tag">CIS Benchmarks</span>
+      <span class="tag">CVE Detection</span>
+      <span class="tag">SSH Audit</span>
+      <span class="tag">SQLite</span>
+    </div>
+    <p>Enterprise-grade compliance scanning engine. Runs nightly CIS Level 1 audits across 9 security dimensions — SSH hardening, firewall verification, kernel parameters, open port classification, brute force detection, disk encryption, and pending CVE checks. All results stored in SQLite with historical trending. Telegram alerts when score drops below 75%.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="num">9</div><div class="lbl">CIS Checks</div></div>
+      <div class="stat"><div class="num">3am</div><div class="lbl">Nightly Scan</div></div>
+      <div class="stat"><div class="num">8</div><div class="lbl">Tools</div></div>
+      <div class="stat"><div class="num">:8100</div><div class="lbl">HTTP Port</div></div>
+    </div>
+    <div class="links">
+      <a href="https://github.com/Crow0077/homelab-ai-toolkit">Source</a>
+    </div>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="project-canvas" id="canvas-forensics"></div>
+  <div class="project-info">
+    <h2>Automated Incident Forensics</h2>
+    <div class="tag-row">
+      <span class="tag">Root Cause Analysis</span>
+      <span class="tag">Timeline Reconstruction</span>
+      <span class="tag">Podman</span>
+      <span class="tag">SQLite</span>
+    </div>
+    <p>Proactive incident investigation engine. Monitors all containers every 15 minutes for error spikes. When anomalies are detected, automatically gathers logs from every service, correlates events across containers, builds chronological timelines, and identifies the root cause — before a human even knows something broke. Stores full incident history with replayable event logs.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="num">15m</div><div class="lbl">Proactive Scan</div></div>
+      <div class="stat"><div class="num">6</div><div class="lbl">Tools</div></div>
+      <div class="stat"><div class="num">:8101</div><div class="lbl">HTTP Port</div></div>
+    </div>
+    <div class="links">
+      <a href="https://github.com/Crow0077/homelab-ai-toolkit">Source</a>
+    </div>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="project-canvas" id="canvas-immune"></div>
+  <div class="project-info">
+    <h2>Self-Healing Infrastructure</h2>
+    <div class="tag-row">
+      <span class="tag">Quorum Sensing</span>
+      <span class="tag">Treg Arbitration</span>
+      <span class="tag">Immune Memory</span>
+      <span class="tag">Auto-Heal</span>
+    </div>
+    <p>Autonomous infrastructure healing inspired by the adaptive immune system. Four-channel health detection (HTTP, container status, logs, resources) with quorum sensing requires consensus before acting. Treg arbitrator suppresses false positives. Immune memory prevents restart loops. Heals confirmed failures automatically without human intervention.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="num">4</div><div class="lbl">Detection Channels</div></div>
+      <div class="stat"><div class="num">5</div><div class="lbl">Tools</div></div>
+      <div class="stat"><div class="num">:8102</div><div class="lbl">HTTP Port</div></div>
+    </div>
+    <div class="links">
+      <a href="https://github.com/Crow0077/homelab-ai-toolkit">Source</a>
     </div>
   </div>
 </div>
@@ -134,459 +123,162 @@ ShowToc: false
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
 <script>
-// === KR Flooring Visualizer ===
-new p5(function(p) {
-  let W = 800, H = 300;
-  let stage = 0;
-  let timer = 0;
-  let questionText = "How much for LVP in a 15x20 room?";
-  let typedChars = 0;
-  let dataParticles = [];
-  let pulse = 0;
-  
-  p.setup = function() {
-    let wrap = document.getElementById('canvas-flooring');
-    W = wrap.offsetWidth;
-    let c = p.createCanvas(W, H);
-    c.parent('canvas-flooring');
-    p.colorMode(p.RGB, 255);
-    p.textFont('monospace');
-  };
-  
-  p.draw = function() {
-    p.background(8, 8, 16);
-    timer++;
-    pulse += 0.03;
-    
-    p.stroke(20, 20, 35);
-    p.strokeWeight(0.5);
-    for (let x = 0; x < W; x += 40) p.line(x, 0, x, H);
-    for (let y = 0; y < H; y += 40) p.line(0, y, W, y);
-    
-    let cx = W / 2, cy = H / 2;
-    
-    if (stage === 0) {
-      p.fill(20, 30, 50);
-      p.stroke(40, 60, 100);
-      p.strokeWeight(1);
-      p.rect(cx - 180, cy - 40, 360, 50, 8);
-      
-      if (timer % 3 === 0 && typedChars < questionText.length) typedChars++;
-      p.fill(150, 200, 255);
-      p.noStroke();
-      p.textSize(14);
-      p.textAlign(p.CENTER, p.CENTER);
-      p.text(questionText.substring(0, typedChars), cx, cy - 15);
-      
-      if (typedChars < questionText.length && timer % 30 < 15) {
-        let tw = p.textWidth(questionText.substring(0, typedChars));
-        p.fill(150, 200, 255);
-        p.rect(cx - tw/2 + 2, cy - 25, 2, 20);
-      }
-      
-      p.fill(100, 120, 160);
-      p.textSize(11);
-      p.text("Customer via ChatGPT", cx, cy + 30);
-      
-      if (typedChars >= questionText.length && timer > 120) {
-        stage = 1;
-        timer = 0;
-      }
-    }
-    
-    if (stage === 1) {
-      p.fill(15, 20, 35);
-      p.stroke(0, 200, 255, 60);
-      p.strokeWeight(1);
-      p.rect(cx - 50, cy - 30, 100, 60, 6);
-      p.fill(0, 200, 255, 180);
-      p.noStroke();
-      p.textSize(10);
-      p.textAlign(p.CENTER, p.CENTER);
-      p.text("MCP SERVER", cx, cy - 8);
-      p.textSize(8);
-      p.fill(0, 200, 255, 100);
-      p.text("estimate tool", cx, cy + 8);
-      
-      p.fill(20, 30, 50);
-      p.stroke(40, 60, 100);
-      p.strokeWeight(1);
-      p.rect(40, cy - 20, 160, 40, 6);
-      p.fill(150, 200, 255);
-      p.noStroke();
-      p.textSize(11);
-      p.text("LVP 15x20 room?", 120, cy);
-      
-      if (timer % 8 === 0) {
-        dataParticles.push({x: 200, y: cy, vx: 3, life: 100, col: [0, 200, 255]});
-      }
-      
-      for (let i = dataParticles.length - 1; i >= 0; i--) {
-        let dp = dataParticles[i];
-        dp.x += dp.vx;
-        dp.life--;
-        p.noStroke();
-        p.fill(dp.col[0], dp.col[1], dp.col[2], dp.life * 2);
-        p.ellipse(dp.x, dp.y, 4, 4);
-        p.fill(255, 255, 255, dp.life);
-        p.ellipse(dp.x, dp.y, 1.5, 1.5);
-        if (dp.life <= 0 || dp.x > W) dataParticles.splice(i, 1);
-      }
-      
-      if (timer > 40) {
-        p.fill(15, 25, 15);
-        p.stroke(0, 255, 150, 40);
-        p.strokeWeight(1);
-        p.rect(cx + 80, cy - 25, 180, 50, 6);
-        
-        let lines = ["Materials: $450", "Labor: $300", "Total: $750"];
-        p.fill(0, 255, 150, 180);
-        p.noStroke();
-        p.textSize(11);
-        p.textAlign(p.LEFT, p.CENTER);
-        for (let i = 0; i < lines.length; i++) {
-          if (timer > 60 + i * 20) {
-            p.text(lines[i], cx + 95, cy - 12 + i * 15);
-          }
-        }
-      }
-      
-      if (timer > 150) {
-        stage = 2;
-        timer = 0;
-      }
-    }
-    
-    if (stage === 2) {
-      let boxes = [
-        {x: W*0.1, label: "Customer", col: [150, 200, 255]},
-        {x: W*0.35, label: "ChatGPT", col: [100, 255, 100]},
-        {x: W*0.6, label: "MCP Server", col: [0, 200, 255]},
-        {x: W*0.85, label: "Response", col: [0, 255, 150]}
-      ];
-      
-      for (let i = 0; i < boxes.length - 1; i++) {
-        let x1 = boxes[i].x, x2 = boxes[i+1].x;
-        p.stroke(40, 50, 80, 80);
-        p.strokeWeight(1);
-        p.line(x1 + 30, cy, x2 - 30, cy);
-        
-        let t = ((timer * 2 + i * 50) % 200) / 200;
-        let px = p.lerp(x1 + 30, x2 - 30, t);
-        p.noStroke();
-        p.fill(boxes[i].col[0], boxes[i].col[1], boxes[i].col[2], 150);
-        p.ellipse(px, cy, 4, 4);
-      }
-      
-      for (let b of boxes) {
-        let glow = Math.sin(pulse + b.x * 0.01) * 0.2 + 0.8;
-        p.fill(12, 15, 25);
-        p.stroke(b.col[0], b.col[1], b.col[2], 60 * glow);
-        p.strokeWeight(1);
-        p.rect(b.x - 40, cy - 22, 80, 44, 6);
-        
-        p.fill(b.col[0], b.col[1], b.col[2], 180);
-        p.noStroke();
-        p.textSize(10);
-        p.textAlign(p.CENTER, p.CENTER);
-        p.text(b.label, b.x, cy);
-      }
-      
-      p.fill(0, 255, 150, 150);
-      p.textSize(12);
-      p.textAlign(p.CENTER, p.CENTER);
-      p.text("Instant estimate delivered", cx, cy + 50);
-      
-      if (timer > 200) {
-        stage = 0;
-        timer = 0;
-        typedChars = 0;
-        dataParticles = [];
-      }
-    }
-  };
-  
-  p.windowResized = function() {
-    let wrap = document.getElementById('canvas-flooring');
-    W = wrap.offsetWidth;
-    p.resizeCanvas(W, H);
-  };
-}, 'canvas-flooring');
 
+new p5(function(p){
+  let W,H, nodes=[], particles=[], time=0;
+  p.setup=function(){
+    let c=p.createCanvas(1,1);
+    let wrap=document.getElementById('canvas-command');
+    W=wrap.offsetWidth;H=240;
+    p.resizeCanvas(W,H);c.parent('canvas-command');
+    let names=['AUDITOR','FORENSICS','IMMUNE','DEPLOY','LOGS','BACKUP','HOMELAB','UPTIME','FIRECRAWL','BULKEXIT'];
+    let cols=[[0,200,255],[255,160,60],[80,220,120],[200,140,255],[255,200,50],[100,200,200],[255,100,150],[120,200,255],[255,180,80],[160,140,255]];
+    let cx=W/2,cy=H/2,r=Math.min(W,H)*0.35;
+    for(let i=0;i<10;i++){
+      let a=(p.TWO_PI/10)*i-p.HALF_PI;
+      nodes.push({x:cx+p.cos(a)*r,y:cy+p.sin(a)*r,col:cols[i],label:names[i],size:14,phase:p.random(p.TWO_PI),conns:[]});
+    }
+    for(let i=0;i<10;i++){nodes[i].conns=[(i+1)%10,(i+3)%10,(i+7)%10];}
+    for(let i=0;i<60;i++){particles.push({src:p.floor(p.random(10)),tgt:p.floor(p.random(10)),t:p.random(1),sp:0.003+p.random()*0.005});}
+  };
+  p.draw=function(){
+    p.background(8,8,16);time+=0.008;
+    for(let n of nodes){for(let ci of n.conns){let t=nodes[ci];p.stroke(30,35,55,25);p.strokeWeight(0.4);p.line(n.x,n.y,t.x,t.y);}}
+    for(let pt of particles){
+      pt.t+=pt.sp;if(pt.t>=1){pt.t=0;pt.src=pt.tgt;pt.tgt=p.floor(p.random(10))}
+      let s=nodes[pt.src],t=nodes[pt.tgt];
+      let x=p.lerp(s.x,t.x,pt.t),y=p.lerp(s.y,t.y,pt.t);
+      p.noStroke();p.fill(s.col[0],s.col[1],s.col[2],120);p.circle(x,y,2.5);
+    }
+    for(let n of nodes){
+      let ps=1+p.sin(time+n.phase)*0.15;
+      p.noStroke();for(let g=3;g>0;g--){p.fill(n.col[0],n.col[1],n.col[2],8*g);p.circle(n.x,n.y,n.size*2+g*4);}
+      p.fill(n.col[0],n.col[1],n.col[2],180);p.circle(n.x,n.y,n.size*ps);
+      p.fill(255,255,255,80);p.circle(n.x,n.y,n.size*0.2);
+      p.fill(n.col[0],n.col[1],n.col[2],100);p.textSize(7);p.textFont('monospace');p.textAlign(p.CENTER);p.text(n.label,n.x,n.y+n.size+8);
+    }
+  };
+  p.windowResized=function(){let w=document.getElementById('canvas-command');W=w.offsetWidth;p.resizeCanvas(W,H);};
+},'canvas-command');
 
-// === Homelab Visualizer ===
-new p5(function(p) {
-  let W = 800, H = 300;
-  let nodes = [];
-  let particles = [];
-  let pulse = 0;
-  
-  p.setup = function() {
-    let wrap = document.getElementById('canvas-homelab');
-    W = wrap.offsetWidth;
-    let c = p.createCanvas(W, H);
-    c.parent('canvas-homelab');
-    p.colorMode(p.RGB, 255);
-    
-    let cx = W/2, cy = H/2, r = 90;
-    let labels = ['HERMES', 'UPTIME', 'FIRECRAWL', 'GITHUB', 'N8N', 'ADGUARD'];
-    let cols = [[0,200,255],[0,255,150],[255,120,60],[160,110,255],[255,210,50],[255,70,110]];
-    
-    for (let i = 0; i < 6; i++) {
-      let a = (p.TWO_PI / 6) * i - p.HALF_PI;
-      nodes.push({
-        x: cx + Math.cos(a) * r,
-        y: cy + Math.sin(a) * r,
-        vx: 0, vy: 0,
-        col: cols[i], label: labels[i],
-        size: 22, phase: p.random(p.TWO_PI)
-      });
+new p5(function(p){
+  let W,H, checks=[], scanPhase=0, timer=0;
+  p.setup=function(){
+    let c=p.createCanvas(1,1);
+    let wrap=document.getElementById('canvas-compliance');
+    W=wrap.offsetWidth;H=240;
+    p.resizeCanvas(W,H);c.parent('canvas-compliance');
+    let names=['SSH Root','SSH Auth','Protocol','Firewall','Updates','Kernel','Ports','Logins','Encrypt'];
+    for(let i=0;i<9;i++){checks.push({name:names[i],x:60+i*(W-120)/8,y:H/2,status:'pending',col:[80,80,100]});}
+  };
+  p.draw=function(){
+    p.background(8,8,16);timer++;
+    if(timer%80===0&&scanPhase<9){checks[scanPhase].status='scanning';checks[scanPhase].col=[0,200,255];}
+    if(timer%80===40&&scanPhase<9){
+      let r=p.random();checks[scanPhase].status=r>0.55?'pass':r>0.15?'fail':'skip';
+      checks[scanPhase].col=checks[scanPhase].status==='pass'?[80,220,120]:checks[scanPhase].status==='fail'?[255,100,100]:[200,180,80];
+      scanPhase++;
     }
-    
-    for (let i = 0; i < 50; i++) {
-      let src = Math.floor(Math.random() * 6);
-      let tgt;
-      do { tgt = Math.floor(Math.random() * 6); } while (tgt === src);
-      particles.push({src, tgt, t: Math.random(), speed: 0.004 + Math.random() * 0.006, size: 2 + Math.random() * 2, trail: []});
+    if(scanPhase>=9&&timer%300===0){scanPhase=0;timer=0;for(let c of checks){c.status='pending';c.col=[80,80,100];}}
+    if(scanPhase<9){
+      let sx=checks[scanPhase].x,sy=checks[scanPhase].y;
+      p.stroke(0,200,255,60+20*p.sin(timer*0.1));p.strokeWeight(1);p.line(sx,sy-30,sx,sy+30);
+    }
+    for(let c of checks){
+      let glow=c.status==='scanning'?1+0.3*p.sin(timer*0.2):1;
+      p.noStroke();for(let g=2;g>0;g--){p.fill(c.col[0],c.col[1],c.col[2],10*g*glow);p.circle(c.x,c.y,16+g*6);}
+      p.fill(c.col[0],c.col[1],c.col[2],180);p.circle(c.x,c.y,8*glow);
+      if(c.status==='pass'){p.fill(80,220,120);p.textSize(12);p.textAlign(p.CENTER);p.text('\u2713',c.x,c.y+4);}
+      else if(c.status==='fail'){p.fill(255,100,100);p.textSize(12);p.textAlign(p.CENTER);p.text('\u2717',c.x,c.y+4);}
+      else if(c.status==='skip'){p.fill(200,180,80);p.textSize(12);p.textAlign(p.CENTER);p.text('\u2212',c.x,c.y+4);}
+      p.fill(c.col[0],c.col[1],c.col[2],80);p.textSize(7);p.textFont('monospace');p.textAlign(p.CENTER);p.text(c.name,c.x,c.y+22);
+    }
+    if(scanPhase>=9){
+      let passed=checks.filter(c=>c.status==='pass').length;
+      p.fill(130,180,240,200);p.textSize(14);p.textFont('monospace');p.textAlign(p.CENTER);
+      p.text('Score: '+Math.round(passed/checks.length*100)+'%',W/2,H-25);
     }
   };
-  
-  p.draw = function() {
-    p.background(8, 8, 16);
-    pulse += 0.02;
-    
-    p.stroke(18, 18, 30);
-    p.strokeWeight(0.5);
-    for (let x = 0; x < W; x += 40) p.line(x, 0, x, H);
-    for (let y = 0; y < H; y += 40) p.line(0, y, W, y);
-    
-    for (let n of nodes) {
-      n.vx += (W/2 - n.x) * 0.0002;
-      n.vy += (H/2 - n.y) * 0.0002;
-      for (let o of nodes) {
-        if (o === n) continue;
-        let dx = n.x - o.x, dy = n.y - o.y;
-        let d = Math.sqrt(dx*dx + dy*dy);
-        if (d < 60 && d > 0) { n.vx += (dx/d)*0.15; n.vy += (dy/d)*0.15; }
-      }
-      let md = Math.sqrt((p.mouseX-n.x)**2 + (p.mouseY-n.y)**2);
-      if (md < 120 && md > 0 && p.mouseX > 0) {
-        n.vx += ((p.mouseX-n.x)/md) * 0.06;
-        n.vy += ((p.mouseY-n.y)/md) * 0.06;
-      }
-      n.vx *= 0.95; n.vy *= 0.95;
-      n.x += n.vx; n.y += n.vy;
-      n.phase += 0.02;
-    }
-    
-    for (let i = 0; i < nodes.length; i++) {
-      for (let j = i+1; j < nodes.length; j++) {
-        let d = Math.sqrt((nodes[j].x-nodes[i].x)**2 + (nodes[j].y-nodes[i].y)**2);
-        if (d < 180) {
-          p.stroke(35, 40, 60, p.map(d, 0, 180, 35, 5));
-          p.strokeWeight(0.6);
-          p.line(nodes[i].x, nodes[i].y, nodes[j].x, nodes[j].y);
-        }
-      }
-    }
-    
-    for (let pt of particles) {
-      pt.t += pt.speed;
-      if (pt.t >= 1) { pt.t = 0; pt.trail = []; let s = pt.src; do { pt.src = Math.floor(Math.random()*6); } while(pt.src === s); pt.tgt = Math.floor(Math.random()*6); while(pt.tgt === pt.src) pt.tgt = Math.floor(Math.random()*6); }
-      
-      let s = nodes[pt.src], t = nodes[pt.tgt];
-      let mx = (s.x+t.x)/2, my = (s.y+t.y)/2;
-      let px = -(t.y-s.y)*0.12, py = (t.x-s.x)*0.12;
-      if (pt.src%2===0) { px*=-1; py*=-1; }
-      
-      let x = (1-pt.t)*(1-pt.t)*s.x + 2*(1-pt.t)*pt.t*(mx+px) + pt.t*pt.t*t.x;
-      let y = (1-pt.t)*(1-pt.t)*s.y + 2*(1-pt.t)*pt.t*(my+py) + pt.t*pt.t*t.y;
-      
-      pt.trail.push({x, y});
-      if (pt.trail.length > 5) pt.trail.shift();
-      
-      let col = nodes[pt.src].col;
-      for (let i = 0; i < pt.trail.length; i++) {
-        let a = p.map(i, 0, pt.trail.length, 8, 80);
-        p.noStroke(); p.fill(col[0], col[1], col[2], a);
-        p.ellipse(pt.trail[i].x, pt.trail[i].y, 2, 2);
-      }
-      p.fill(col[0], col[1], col[2], 180);
-      p.ellipse(x, y, pt.size, pt.size);
-    }
-    
-    for (let n of nodes) {
-      let pulse = Math.sin(n.phase)*0.2+0.8;
-      p.noStroke();
-      for (let i = 3; i > 0; i--) {
-        p.fill(n.col[0], n.col[1], n.col[2], 10*i);
-        p.ellipse(n.x, n.y, n.size*2*i*pulse*0.4, n.size*2*i*pulse*0.4);
-      }
-      p.fill(n.col[0], n.col[1], n.col[2], 170);
-      p.stroke(n.col[0], n.col[1], n.col[2], 50);
-      p.strokeWeight(1);
-      p.ellipse(n.x, n.y, n.size*pulse, n.size*pulse);
-      p.noStroke();
-      p.fill(255, 255, 255, 100);
-      p.ellipse(n.x, n.y, n.size*0.2, n.size*0.2);
-      p.fill(n.col[0], n.col[1], n.col[2], 130);
-      p.textSize(8); p.textFont('monospace'); p.textAlign(p.CENTER, p.CENTER);
-      p.text(n.label, n.x, n.y + n.size*0.65);
-    }
-  };
-  
-  p.windowResized = function() {
-    let wrap = document.getElementById('canvas-homelab');
-    W = wrap.offsetWidth;
-    p.resizeCanvas(W, H);
-  };
-}, 'canvas-homelab');
+  p.windowResized=function(){let w=document.getElementById('canvas-compliance');W=w.offsetWidth;p.resizeCanvas(W,H);};
+},'canvas-compliance');
 
+new p5(function(p){
+  let W,H,events=[],time=0;
+  p.setup=function(){
+    let c=p.createCanvas(1,1);
+    let wrap=document.getElementById('canvas-forensics');
+    W=wrap.offsetWidth;H=240;
+    p.resizeCanvas(W,H);c.parent('canvas-forensics');
+    let svcs=['n8n','firecrawl','uptime','grafana','prometheus','dozzle'];
+    for(let i=0;i<30;i++){
+      let s=svcs[p.floor(p.random(svcs.length))];
+      let sev=p.random()>0.85?'error':p.random()>0.7?'warning':'info';
+      events.push({x:p.random(W*0.1,W*0.9),y:30+p.random(H-60),svc:s,sev:sev,life:p.random(80,200),maxLife:200,phase:p.random(p.TWO_PI)});
+    }
+  };
+  p.draw=function(){
+    p.background(8,8,16);time+=0.01;
+    p.stroke(20,22,35);p.strokeWeight(0.5);
+    for(let y=40;y<H-20;y+=30)p.line(20,y,W-20,y);
+    p.stroke(40,50,80,60);p.strokeWeight(1);p.line(30,H-15,W-30,H-15);
+    p.fill(80,100,140,80);p.textSize(8);p.textAlign(p.LEFT);p.text('\u2190 incident window \u2192',35,H-8);
+    for(let e of events){
+      e.life--;if(e.life<=0){e.life=e.maxLife;e.x=p.random(W*0.1,W*0.9);e.y=30+p.random(H-60);}
+      let alpha=p.map(e.life,0,e.maxLife,0,180);
+      let col=e.sev==='error'?[255,90,90]:e.sev==='warning'?[255,180,60]:[80,140,220];
+      p.noStroke();p.fill(col[0],col[1],col[2],alpha);p.circle(e.x,e.y,4+2*p.sin(time*2+e.phase));
+      p.stroke(col[0],col[1],col[2],alpha*0.3);p.strokeWeight(0.3);p.line(e.x,e.y+8,e.x,H-15);
+    }
+    let errs=events.filter(e=>e.sev==='error');
+    if(errs.length>0){
+      let first=errs.reduce((a,b)=>a.x<b.x?a:b);
+      p.noFill();p.stroke(255,80,80,60+20*p.sin(time*3));p.strokeWeight(1.5);p.circle(first.x,first.y,16+4*p.sin(time*2));
+      p.fill(255,80,80,180);p.textSize(8);p.textAlign(p.CENTER);p.text('ROOT CAUSE',first.x,first.y-16);
+    }
+  };
+  p.windowResized=function(){let w=document.getElementById('canvas-forensics');W=w.offsetWidth;p.resizeCanvas(W,H);};
+},'canvas-forensics');
 
-// === MCP Ecosystem Visualizer ===
-new p5(function(p) {
-  let W = 800, H = 300;
-  let tools = [];
-  let callParticles = [];
-  let pulse = 0;
-  let callTimer = 0;
-  
-  p.setup = function() {
-    let wrap = document.getElementById('canvas-agent');
-    W = wrap.offsetWidth;
-    let c = p.createCanvas(W, H);
-    c.parent('canvas-agent');
-    p.colorMode(p.RGB, 255);
-    
-    let toolData = [
-      {label: "scrape", col: [255, 120, 60]},
-      {label: "monitor", col: [0, 255, 150]},
-      {label: "github", col: [160, 110, 255]},
-      {label: "workflow", col: [255, 210, 50]},
-      {label: "dns", col: [255, 70, 110]}
-    ];
-    
-    for (let i = 0; i < 5; i++) {
-      let y = 40 + (H - 80) * (i / 4);
-      tools.push({x: W*0.85, y: y, col: toolData[i].col, label: toolData[i].label, active: false, activeTimer: 0});
-    }
+new p5(function(p){
+  let W,H,cells=[],threats=[],time=0;
+  p.setup=function(){
+    let c=p.createCanvas(1,1);
+    let wrap=document.getElementById('canvas-immune');
+    W=wrap.offsetWidth;H=240;
+    p.resizeCanvas(W,H);c.parent('canvas-immune');
+    for(let i=0;i<12;i++){cells.push({x:p.random(W*0.15,W*0.85),y:p.random(H*0.2,H*0.8),r:12+Math.random()*8,hp:100,infected:false,phase:p.random(p.TWO_PI)});}
   };
-  
-  p.draw = function() {
-    p.background(8, 8, 16);
-    pulse += 0.025;
-    callTimer++;
-    
-    p.stroke(18, 18, 30);
-    p.strokeWeight(0.5);
-    for (let x = 0; x < W; x += 40) p.line(x, 0, x, H);
-    for (let y = 0; y < H; y += 40) p.line(0, y, W, y);
-    
-    let agentX = W*0.15, agentY = H/2;
-    let aglow = Math.sin(pulse) * 0.2 + 0.8;
-    p.noStroke();
-    for (let i = 3; i > 0; i--) {
-      p.fill(0, 200, 255, 10*i*aglow);
-      p.ellipse(agentX, agentY, 60*i*0.4, 60*i*0.4);
+  p.draw=function(){
+    p.background(8,8,16);time+=0.01;
+    if(p.random()<0.02&&threats.length<3){
+      let target=cells[p.floor(p.random(cells.length))];
+      threats.push({x:p.random(W),y:p.random(H),tx:target.x,ty:target.y,t:0,sp:0.008+Math.random()*0.01});
     }
-    p.fill(12, 15, 25);
-    p.stroke(0, 200, 255, 60);
-    p.strokeWeight(1.5);
-    p.ellipse(agentX, agentY, 50, 50);
-    p.fill(0, 200, 255, 200);
-    p.noStroke();
-    p.textSize(11);
-    p.textFont('monospace');
-    p.textAlign(p.CENTER, p.CENTER);
-    p.text("HERMES", agentX, agentY - 5);
-    p.textSize(8);
-    p.fill(0, 200, 255, 100);
-    p.text("35 tools", agentX, agentY + 10);
-    
-    for (let t of tools) {
-      if (t.active) {
-        t.activeTimer--;
-        if (t.activeTimer <= 0) t.active = false;
-      }
-      
-      let tglow = t.active ? 1 : 0.4;
-      p.fill(12, 15, 25);
-      p.stroke(t.col[0], t.col[1], t.col[2], 50 * tglow);
-      p.strokeWeight(1);
-      p.rect(t.x - 35, t.y - 15, 70, 30, 5);
-      
-      p.fill(t.col[0], t.col[1], t.col[2], 160 * tglow);
-      p.noStroke();
-      p.textSize(9);
-      p.textAlign(p.CENTER, p.CENTER);
-      p.text(t.label, t.x, t.y);
+    for(let i=threats.length-1;i>=0;i--){
+      let th=threats[i];th.t+=th.sp;
+      th.x=p.lerp(th.x,th.tx,th.t);th.y=p.lerp(th.y,th.ty,th.t);
+      p.noStroke();p.fill(255,60,60,200);p.circle(th.x,th.y,8+2*p.sin(time*5));
+      p.fill(255,100,100,60);p.circle(th.x,th.y,16);
+      for(let c of cells){let d=p.dist(th.x,th.y,c.x,c.y);if(d<20&&!c.infected){c.infected=true;c.hp=100;threats.splice(i,1);break;}}
+      if(th.t>=1)threats.splice(i,1);
     }
-    
-    if (callTimer % 40 === 0) {
-      let tgt = Math.floor(Math.random() * tools.length);
-      tools[tgt].active = true;
-      tools[tgt].activeTimer = 60;
-      callParticles.push({
-        srcX: agentX + 25, srcY: agentY,
-        tgtX: tools[tgt].x - 35, tgtY: tools[tgt].y,
-        t: 0, speed: 0.015 + Math.random() * 0.01,
-        col: tools[tgt].col, returning: false
-      });
+    for(let i=0;i<cells.length;i++){for(let j=i+1;j<cells.length;j++){
+      let d=p.dist(cells[i].x,cells[i].y,cells[j].x,cells[j].y);
+      if(d<100){p.stroke(40,80,140,15);p.strokeWeight(0.4);p.line(cells[i].x,cells[i].y,cells[j].x,cells[j].y);}
+    }}
+    for(let c of cells){
+      if(c.infected){c.hp-=0.3;if(c.hp<=0){c.infected=false;c.hp=100;}}
+      let alpha=c.infected?p.map(c.hp,0,100,80,200):180;
+      let col=c.infected?[255,130,80]:[80,200,140];
+      p.noStroke();for(let g=3;g>0;g--){p.fill(col[0],col[1],col[2],8*g);p.circle(c.x,c.y,c.r*2+g*6);}
+      p.fill(col[0],col[1],col[2],alpha);p.circle(c.x,c.y,c.r);
+      if(c.infected){p.stroke(255,255,255,40);p.strokeWeight(0.5);p.arc(c.x,c.y,c.r+6,c.r+6,-p.HALF_PI,-p.HALF_PI+p.map(c.hp,100,0,p.TWO_PI*0.8,p.TWO_PI*0.1));}
+      p.fill(col[0],col[1],col[2],100);p.textSize(6);p.textFont('monospace');p.textAlign(p.CENTER);p.text(c.infected?'HEALING':'HEALTHY',c.x,c.y+c.r+10);
     }
-    
-    for (let i = callParticles.length - 1; i >= 0; i--) {
-      let cp = callParticles[i];
-      cp.t += cp.speed;
-      
-      let startX = cp.returning ? cp.tgtX : cp.srcX;
-      let startY = cp.returning ? cp.tgtY : cp.srcY;
-      let endX = cp.returning ? cp.srcX : cp.tgtX;
-      let endY = cp.returning ? cp.srcY : cp.tgtY;
-      
-      let midX = (startX + endX) / 2;
-      let midY = (startY + endY) / 2 - 30;
-      
-      let t = cp.t;
-      let x = (1-t)*(1-t)*startX + 2*(1-t)*t*midX + t*t*endX;
-      let y = (1-t)*(1-t)*startY + 2*(1-t)*t*midY + t*t*endY;
-      
-      p.noStroke();
-      p.fill(cp.col[0], cp.col[1], cp.col[2], 200);
-      p.ellipse(x, y, 5, 5);
-      p.fill(255, 255, 255, 150);
-      p.ellipse(x, y, 2, 2);
-      
-      for (let j = 1; j <= 3; j++) {
-        let tt = Math.max(0, cp.t - j * 0.03);
-        let tx = (1-tt)*(1-tt)*startX + 2*(1-tt)*tt*midX + tt*tt*endX;
-        let ty = (1-tt)*(1-tt)*startY + 2*(1-tt)*tt*midY + tt*tt*endY;
-        p.fill(cp.col[0], cp.col[1], cp.col[2], 60 - j*15);
-        p.ellipse(tx, ty, 3, 3);
-      }
-      
-      if (cp.t >= 1) {
-        if (!cp.returning) {
-          cp.returning = true;
-          cp.t = 0;
-        } else {
-          callParticles.splice(i, 1);
-        }
-      }
-    }
-    
-    p.fill(80, 90, 120);
-    p.noStroke();
-    p.textSize(10);
-    p.textAlign(p.CENTER, p.CENTER);
-    p.text("Agent", agentX, agentY + 40);
-    p.text("MCP Tools", tools[0].x, 15);
+    p.fill(200,180,100,100);p.textSize(8);p.textAlign(p.RIGHT);p.text('TREG: suppressing false positives',W-15,H-8);
   };
-  
-  p.windowResized = function() {
-    let wrap = document.getElementById('canvas-agent');
-    W = wrap.offsetWidth;
-    p.resizeCanvas(W, H);
-  };
-}, 'canvas-agent');
+  p.windowResized=function(){let w=document.getElementById('canvas-immune');W=w.offsetWidth;p.resizeCanvas(W,H);};
+},'canvas-immune');
+
 </script>
 {{< /rawhtml >}}
