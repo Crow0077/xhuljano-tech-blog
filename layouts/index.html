@@ -66,7 +66,6 @@ new p5(function(p) {
     cols = Math.ceil(W / SCALE) + 1;
     rows = Math.ceil(H / SCALE) + 1;
     
-    // Build flow field
     for (let y = 0; y < rows; y++) {
       flowField[y] = [];
       for (let x = 0; x < cols; x++) {
@@ -74,7 +73,6 @@ new p5(function(p) {
       }
     }
     
-    // Create particles
     for (let i = 0; i < PARTICLE_COUNT; i++) {
       particles.push({
         x: p.random(W),
@@ -88,7 +86,6 @@ new p5(function(p) {
       });
     }
     
-    // Create geometric shapes
     for (let i = 0; i < GEO_COUNT; i++) {
       geoShapes.push({
         x: p.random(W),
@@ -109,7 +106,6 @@ new p5(function(p) {
     p.background(6, 6, 12);
     time += 0.005;
     
-    // Update flow field with noise
     for (let y = 0; y < rows; y++) {
       for (let x = 0; x < cols; x++) {
         let angle = p.noise(x * 0.08, y * 0.08, time * 0.3) * p.TWO_PI * 2;
@@ -118,7 +114,6 @@ new p5(function(p) {
       }
     }
     
-    // Draw geometric shapes (background layer)
     for (let g of geoShapes) {
       g.life--;
       if (g.life <= 0) {
@@ -146,7 +141,6 @@ new p5(function(p) {
       p.pop();
     }
     
-    // Draw mouse trail
     if (p.mouseX > 0 && p.mouseX < W && p.mouseY > 0 && p.mouseY < H) {
       mouseTrail.push({ x: p.mouseX, y: p.mouseY, life: 30 });
       if (mouseTrail.length > 20) mouseTrail.shift();
@@ -162,7 +156,6 @@ new p5(function(p) {
       }
     }
     
-    // Update and draw particles
     for (let p_ of particles) {
       let col = p.floor(p_.x / SCALE);
       let row = p.floor(p_.y / SCALE);
@@ -173,7 +166,6 @@ new p5(function(p) {
       p_.vx += force.x * 0.1;
       p_.vy += force.y * 0.1;
       
-      // Mouse attraction
       if (p.mouseX > 0 && p.mouseX < W && p.mouseY > 0 && p.mouseY < H) {
         let dx = p.mouseX - p_.x;
         let dy = p.mouseY - p_.y;
@@ -190,7 +182,6 @@ new p5(function(p) {
       p_.x += p_.vx;
       p_.y += p_.vy;
       
-      // Wrap around
       if (p_.x < 0) p_.x = W;
       if (p_.x > W) p_.x = 0;
       if (p_.y < 0) p_.y = H;
@@ -221,9 +212,37 @@ new p5(function(p) {
 }, 'hero-wrap');
 </script>
 
-{{ partial "counter.html" . }}
-
 <section class="post-content">
   {{ .Content }}
 </section>
+
+<div style="text-align:center;padding:3rem 1rem 1rem;max-width:600px;margin:0 auto;">
+  <h2 style="font-family:'SF Mono',monospace;font-size:1.2rem;color:rgba(200,220,255,0.8);margin-bottom:0.8rem;">Connect</h2>
+  <p style="font-size:0.85rem;color:rgba(140,160,190,0.6);line-height:1.6;margin-bottom:1.5rem;">
+    Building MCP servers, homelab infrastructure, and AI agents.
+    Always open to collaborating with other builders.
+  </p>
+  <div style="display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;">
+    <a href="https://github.com/Crow0077" style="font-family:monospace;font-size:0.8rem;color:rgba(130,180,240,0.7);text-decoration:none;padding:0.4rem 1rem;border:1px solid rgba(60,70,100,0.3);border-radius:6px;transition:all 0.2s;">GitHub</a>
+    <a href="https://linkedin.com/in/xhuljanocaushllari" style="font-family:monospace;font-size:0.8rem;color:rgba(130,180,240,0.7);text-decoration:none;padding:0.4rem 1rem;border:1px solid rgba(60,70,100,0.3);border-radius:6px;transition:all 0.2s;">LinkedIn</a>
+    <a href="mailto:xcaushlari@gmail.com" style="font-family:monospace;font-size:0.8rem;color:rgba(130,180,240,0.7);text-decoration:none;padding:0.4rem 1rem;border:1px solid rgba(60,70,100,0.3);border-radius:6px;transition:all 0.2s;">Email</a>
+  </div>
+</div>
+
+<div style="max-width:750px;margin:2rem auto;padding:0 1rem;">
+  <script src="https://giscus.app/client.js"
+    data-repo="Crow0077/xhuljano-tech-blog"
+    data-repo-id="REPO_ID"
+    data-category="General"
+    data-category-id="CATEGORY_ID"
+    data-mapping="pathname"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="dark"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+  </script>
+</div>
 {{- end }}
