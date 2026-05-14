@@ -62,6 +62,11 @@ buildDrafts = false
     url = "/ai-news/"
     weight = 18
   [[menu.main]]
+    identifier = "demo"
+    name = "Demo"
+    url = "/compliance-suite-demo/"
+    weight = 19
+  [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
