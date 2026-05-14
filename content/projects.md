@@ -46,7 +46,7 @@ ShowToc: false
       <div class="stat"><div class="num">24/7</div><div class="lbl">Uptime</div></div>
     </div>
     <div class="links">
-      <a href="/xhuljano-tech-blog/ai-news/">AI News</a>
+      <a href="/ai-news/">AI News</a>
       <a href="https://github.com/Crow0077">GitHub</a>
     </div>
   </div>
@@ -70,7 +70,7 @@ ShowToc: false
       <div class="stat"><div class="num">:8100</div><div class="lbl">HTTP Port</div></div>
     </div>
     <div class="links">
-      <a href="https://github.com/Crow0077/homelab-ai-toolkit">Source</a>
+      <a href="https://github.com/Crow0077/compliance-suite-mcp">Source</a>
     </div>
   </div>
 </div>
