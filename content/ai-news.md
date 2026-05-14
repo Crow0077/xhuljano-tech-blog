@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-05-12
+date: 2026-05-14
 draft: false
 ShowToc: false
 ---
@@ -119,7 +119,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated May 13, 2026 — 15:00 UTC</div>
+    <div class="last-updated">Updated May 14, 2026 — 07:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -128,56 +128,56 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 12</div>
+      <div class="news-date">May 14</div>
       <div class="news-content">
-        <h3><a href="https://the-decoder.com/ai-startup-recursive-emerges-from-stealth-with-650-million-to-build-self-improving-ai/" target="_blank">Recursive Emerges from Stealth with $650M to Build Self-Improving AI</a></h3>
-        <p>AI startup Recursive officially launched with $650M at a $4.65B valuation, backed by GV, Greycroft, AMD Ventures, and Nvidia. Co-founders Richard Socher (ex-Salesforce) and Tim Rocktäschel (ex-DeepMind) aim to automate the scientific method starting with AI research itself.</p>
-        <div class="news-tags"><span>Funding</span><span>Superintelligence</span><span>Startup</span></div>
+        <h3><a href="https://github.com/tinyhumansai/openhuman" target="_blank">OpenHuman: Personal AI Superintelligence Launches on GitHub</a></h3>
+        <p>OpenHuman by tinyhumansai positions itself as a "personal AI superintelligence" built on three pillars: privacy, simplicity, and extreme power. The project aims to democratize advanced AI while keeping data fully under user control — trending #1 on GitHub today.</p>
+        <div class="news-tags"><span>Open Source</span><span>Privacy</span><span>GitHub Trending</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 12</div>
+      <div class="news-date">May 13</div>
       <div class="news-content">
-        <h3><a href="https://github.com/cactus-compute/needle" target="_blank">Needle: Gemini Tool Calling Distilled into a 26M Parameter Model</a></h3>
-        <p>Show HN hit with 482 points: a 26M-parameter model distilled from Google's Gemini tool-calling capabilities, demonstrating that complex agent functionality can run on tiny open models. Built by Cactus Compute.</p>
-        <div class="news-tags"><span>Open Source</span><span>Tool Calling</span><span>Distillation</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/13/meta-ai-incognito-chats/" target="_blank">Meta Launches "Incognito Chat" — First Major AI with Zero Server-Side Logs</a></h3>
+        <p>Mark Zuckerberg unveiled Incognito Chat for Meta AI, describing it as the first major AI product that does not store conversation logs on its servers. Messages are neither saved nor stored in user history, marking a significant privacy shift for Meta in the gen AI landscape.</p>
+        <div class="news-tags"><span>Meta</span><span>Privacy</span><span>Product</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 12</div>
+      <div class="news-date">May 13</div>
       <div class="news-content">
-        <h3><a href="https://deepmind.google/blog/ai-pointer/" target="_blank">DeepMind Reimagines the Mouse Pointer for the AI Era</a></h3>
-        <p>DeepMind's "Pointer Engineering" turns the cursor into a context-capture tool — pixels become structured entities (places, dates, objects). Users can issue shorthand commands like "Fix this" or "Move that here." 210 points on HN.</p>
-        <div class="news-tags"><span>DeepMind</span><span>UX</span><span>Gemini</span></div>
+        <h3><a href="https://www.theverge.com/tech/929791/googlebook-announcement" target="_blank">Googlebook: Google's "AI-First Laptop" Category Announced</a></h3>
+        <p>Google announced Googlebook, a new laptop category "designed for Gemini Intelligence" arriving Fall 2026. Features include Magic Pointer (select anything to ask Gemini), Create My Widget, and seamless phone-to-laptop app casting. 862 points on HN with 1,414 comments.</p>
+        <div class="news-tags"><span>Google</span><span>Hardware</span><span>Gemini</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 12</div>
+      <div class="news-date">May 13</div>
       <div class="news-content">
-        <h3><a href="https://claude.com/blog/claude-for-the-legal-industry" target="_blank">Anthropic Expands Legal AI: 12 New Claude Cowork Plugins</a></h3>
-        <p>Anthropic launched 12 new Claude plugins and 20+ MCP connectors for law firms, integrating with Thomson Reuters CoCounsel, DocuSign, Everlaw, and Harvey. Over 20,000 lawyers attended a recent Claude webinar.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Legal AI</span><span>Enterprise</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents/" target="_blank">Notion Transforms Workspace into AI Agent Hub with Developer Platform</a></h3>
+        <p>Notion launched a new developer platform letting teams connect AI agents, external data sources, and custom code directly into their workspace — a definitive push into "agentic productivity software" and bridging static docs with automated workflows.</p>
+        <div class="news-tags"><span>Notion</span><span>Agents</span><span>Productivity</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 12</div>
+      <div class="news-date">May 13</div>
       <div class="news-content">
-        <h3><a href="https://the-decoder.com/google-is-hiring-hundreds-of-engineers-to-help-customers-adopt-its-ai/" target="_blank">Google Hiring Hundreds of "Forward Deployed Engineers" for AI Adoption</a></h3>
-        <p>Google Cloud is building a "Forward Deployed Engineers" unit to provide hands-on technical resources to AI customers — joining OpenAI's DeployCo and Anthropic's PE joint venture in the race to bridge the AI implementation gap.</p>
-        <div class="news-tags"><span>Google</span><span>Enterprise</span><span>Hiring</span></div>
+        <h3><a href="https://www.theverge.com/tech/930188/microsoft-edge-copilot-ai-tabs" target="_blank">Microsoft Edge Copilot Gets Multi-Tab AI — Data Retrieval Across All Open Tabs</a></h3>
+        <p>Microsoft updated Edge's Copilot to access and process information from all open tabs simultaneously, enabling cross-website product comparisons, multi-article summaries, and context-aware browsing. A significant step toward integrated AI-powered browsing.</p>
+        <div class="news-tags"><span>Microsoft</span><span>Copilot</span><span>Browser</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 12</div>
+      <div class="news-date">May 13</div>
       <div class="news-content">
-        <h3><a href="https://the-decoder.com/alphabets-isomorphic-labs-raises-2-1-billion-to-scale-ai-drug-discovery-toward-clinical-trials/" target="_blank">Isomorphic Labs Raises $2.1B to Scale AI Drug Discovery</a></h3>
-        <p>Alphabet's AI drug discovery spinout closed a $2.1B Series B led by Thrive Capital. The funding will push IsoDDE drug candidates toward clinical trials, with Demis Hassabis calling it a "mission to solve all disease."</p>
-        <div class="news-tags"><span>DeepMind</span><span>Biotech</span><span>Funding</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/13/anthropics-cat-wu-says-that-in-the-future-ai-will-anticipate-your-needs-before-you-know-what-they-are/" target="_blank">Anthropic CPO: "Proactive AI" is the Next Major Evolution</a></h3>
+        <p>Cat Wu, head of product for Claude Code and Cowork, outlined Anthropic's vision for AI that anticipates user needs before explicit prompting — a shift from reactive chat toward autonomous, anticipatory digital assistants integrated into professional workflows.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Claude</span><span>Vision</span></div>
       </div>
     </div>
 
@@ -187,47 +187,47 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 12</div>
+      <div class="news-date">May 13</div>
       <div class="news-content">
-        <h3><a href="https://the-decoder.com/thinking-machines-lab-ships-its-first-model-and-argues-interactivity-is-what-openai-gets-wrong-about-voice/" target="_blank">Thinking Machines Lab Ships First Model — Real-Time Voice AI</a></h3>
-        <p>Mira Murati's startup released its debut model processing audio, video, and text in 200ms parallel chunks — aiming to beat OpenAI's GPT Realtime 2 and Google's Gemini Live on interaction quality rather than raw benchmarks.</p>
-        <div class="news-tags"><span>Voice AI</span><span>Startup</span><span>Real-time</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 12</div>
-      <div class="news-content">
-        <h3><a href="https://www.marktechpost.com/2026/05/12/meet-antangelmed-a-103b-parameter-open-source-medical-language-model-built-on-a-1-32-activation-ratio-moe-architecture/" target="_blank">AntAngelMed: 103B Open-Source Medical MoE Model</a></h3>
-        <p>A new 103B-parameter medical language model with 1/32 activation-ratio Mixture-of-Experts architecture was released open-source, designed for clinical reasoning and biomedical text generation.</p>
-        <div class="news-tags"><span>Open Source</span><span>Healthcare</span><span>MoE</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 11</div>
-      <div class="news-content">
-        <h3><a href="https://www.marktechpost.com/2026/05/11/sakana-ai-and-nvidia-introduce-twell-with-cuda-kernels-for-20-5-inference-and-21-9-training-speedup-in-llms/" target="_blank">Twell: Sakana AI + Nvidia CUDA Kernels for 20.5% Inference Speedup</a></h3>
-        <p>Sakana AI and Nvidia introduced Twell, custom CUDA kernels delivering 20.5% faster inference and 21.9% faster training on LLMs — demonstrating that kernel-level optimization still yields significant gains at scale.</p>
-        <div class="news-tags"><span>Nvidia</span><span>CUDA</span><span>Optimization</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 11</div>
-      <div class="news-content">
-        <h3><a href="https://huggingface.co/papers/2605.12357" target="_blank">Δ-Mem: Efficient Online Memory for Large Language Models</a></h3>
-        <p>New research on arXiv proposes Δ-Mem, an efficient online memory architecture for LLMs that enables persistent multi-session agent memory without full context retention — addressing a key bottleneck in long-running AI agents.</p>
-        <div class="news-tags"><span>Research</span><span>Memory</span><span>Agents</span></div>
+        <h3><a href="https://github.com/cactus-compute/needle" target="_blank">Needle: Gemini Tool Calling Distilled into a 26M Parameter Model</a></h3>
+        <p>A Show HN hit with 557 points: a 26M-parameter model distilled from Google's Gemini tool-calling capabilities, proving complex agentic function-calling can run on tiny open models. Built by Cactus Compute, enabling efficient tool calling on edge devices.</p>
+        <div class="news-tags"><span>Open Source</span><span>Tool Calling</span><span>Distillation</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">May 13</div>
       <div class="news-content">
-        <h3>MCP Ecosystem: 19,831 Servers, 97M Monthly SDK Downloads</h3>
-        <p>The Model Context Protocol ecosystem continues explosive growth with nearly 20,000 indexed servers and 97 million monthly SDK downloads. The 2026 roadmap focuses on transport scalability, agent communication, and enterprise readiness under Linux Foundation governance.</p>
-        <div class="news-tags"><span>MCP</span><span>Agents</span><span>Infrastructure</span></div>
+        <h3><a href="https://www.tryardent.com/" target="_blank">Ardent Launches Instant Postgres Sandboxing for AI Coding Agents</a></h3>
+        <p>Ardent (YC P26) introduced database branching with isolated Postgres sandboxes — 1:1 production clones in under 6 seconds, zero blast radius for AI agent testing. Clones are isolated at both compute and storage with autoscaling to zero.</p>
+        <div class="news-tags"><span>Dev Tools</span><span>Postgres</span><span>Agents</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 12</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/05/13/origin-lab-raises-8m-to-help-video-game-companies-sell-data-to-world-model-builders/" target="_blank">Origin Lab Raises $8M for Licensed Video Game Data Marketplace</a></h3>
+        <p>Origin Lab secured $8M to build a marketplace connecting game companies with AI labs — selling licensed, high-quality gaming data for world model training. Addresses the critical need for structured, legally-acquired datasets in physical AI.</p>
+        <div class="news-tags"><span>Funding</span><span>Data</span><span>World Models</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 13</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/05/12/medicares-new-payment-model-is-built-for-ai-and-most-of-the-tech-world-has-no-idea/" target="_blank">Medicare ACCESS: Outcome-Based Payments for AI Healthcare at Federal Scale</a></h3>
+        <p>CMS launched the ACCESS program, a 10-year initiative testing AI-driven care with 150 participants. Moving from fee-for-service to outcome-based payments for chronic conditions, it creates a federal reimbursement pathway for AI agents previously excluded from Medicare.</p>
+        <div class="news-tags"><span>Healthcare</span><span>Policy</span><span>AI Agents</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 13</div>
+      <div class="news-content">
+        <h3><a href="https://www.technologyreview.com/2026/05/13/1137203/ai-chatbots-are-giving-out-peoples-real-phone-numbers/" target="_blank">Google AI Chatbots Surfacing Private Phone Numbers — Privacy Concerns Grow</a></h3>
+        <p>MIT Technology Review reported that Google's AI systems are inadvertently exposing personal contact information, with one victim receiving a month-long surge of unwanted calls. Highlights the critical gap in mechanisms to prevent AI from surfacing private data.</p>
+        <div class="news-tags"><span>Privacy</span><span>Google</span><span>Safety</span></div>
       </div>
     </div>
 
@@ -239,45 +239,54 @@ ShowToc: false
     <div class="news-item">
       <div class="news-date">May 13</div>
       <div class="news-content">
-        <h3><a href="https://www.cnbc.com/2026/05/13/tencent-q1-earnings-gaming-ai-demand-revenue-miss.html" target="_blank">Tencent Q1: $37B Yuan AI Capex, Revenue Up 9%</a></h3>
-        <p>Tencent reported Q1 revenue of ¥196.5B (+9% YoY) with ¥37B in AI infrastructure capex. The company hired ex-OpenAI researcher Yao Shunyu to compete with Alibaba and ByteDance in the Chinese AI arms race.</p>
-        <div class="news-tags"><span>Tencent</span><span>Earnings</span><span>AI Capex</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/13/musks-xai-is-running-nearly-50-gas-turbines-unchecked-at-its-mississippi-data-center/" target="_blank">xAI Faces Lawsuit Over 50 Unchecked Gas Turbines at Mississippi Colossus 2</a></h3>
+        <p>Elon Musk's xAI is embroiled in a legal dispute over nearly 50 gas turbines operated as "mobile" units at its Colossus 2 data center in Mississippi. The lawsuit alleges these turbines serve as permanent power plants without required regulatory oversight.</p>
+        <div class="news-tags"><span>xAI</span><span>Infrastructure</span><span>Regulation</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">May 13</div>
       <div class="news-content">
-        <h3><a href="https://www.bloomberg.com/news/articles/2026-05-13/alibaba-q4-revenue-misses-estimates-amid-ai-investment-push" target="_blank">Alibaba Q4: Cloud Revenue Jumps 26%, AI Revenue Triple-Digit Growth</a></h3>
-        <p>Alibaba Cloud posted 26% revenue growth with AI-related revenue maintaining triple-digit growth for the 8th consecutive quarter — now over 20% of external customer revenue. Q4 net income doubled YoY to $3.7B.</p>
-        <div class="news-tags"><span>Alibaba</span><span>Cloud</span><span>Earnings</span></div>
+        <h3><a href="https://www.intercom.com/blog/today-intercom-becomes-fin/" target="_blank">Intercom Rebrands Corporate Entity to "Fin" — Full AI Pivot</a></h3>
+        <p>Intercom officially rebranded its parent company to Fin, aligning its corporate identity with its flagship AI customer agent platform. All 1,400 employees are now part of Fin, marking the culmination of a multi-year AI-driven cultural and product transformation.</p>
+        <div class="news-tags"><span>Rebrand</span><span>Customer AI</span><span>Enterprise</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 12</div>
+      <div class="news-date">May 13</div>
       <div class="news-content">
-        <h3><a href="https://the-decoder.com/google-says-it-stopped-a-mass-cyberattack-after-ai-was-used-to-discover-a-zero-day-exploit/" target="_blank">Google Stopped Mass Cyberattack After AI Discovered Zero-Day</a></h3>
-        <p>Google's Threat Intelligence Group identified a threat actor using AI to discover and weaponize a zero-day vulnerability. Google intercepted the planned mass attack and detailed AI-powered cyber threats from China, North Korea, and Russia in a new report.</p>
-        <div class="news-tags"><span>Cybersecurity</span><span>Google</span><span>Zero-Day</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/13/anthropic-courts-a-new-kind-of-customer-small-business-owners/" target="_blank">Anthropic Shifts Strategy to Court 36M US Small Business Owners</a></h3>
+        <p>Anthropic is pivoting downmarket, targeting America's ~36 million small businesses as the AI platform wars move beyond Fortune 500 exclusivity. The shift signals that the next battleground for AI adoption will be defined by scale, accessibility, and SMB penetration.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Strategy</span><span>SMB</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 12</div>
+      <div class="news-date">May 13</div>
       <div class="news-content">
-        <h3>Hugging Face Hosted Malware Masquerading as OpenAI Release</h3>
-        <p>Security researchers discovered malicious software on Hugging Face posing as an official OpenAI release, highlighting supply-chain risks in the open-source AI ecosystem and the need for model provenance verification.</p>
-        <div class="news-tags"><span>Security</span><span>HuggingFace</span><span>Supply Chain</span></div>
+        <h3><a href="https://www.dailyprincetonian.com/article/2026/05/princeton-news-adpol-proctoring-in-person-examinations-passed-faculty-133-years-precedent" target="_blank">Princeton Ends 133-Year Honor Code, Mandates Proctoring Over AI Concerns</a></h3>
+        <p>Princeton faculty voted nearly unanimously to require proctoring for all in-person exams starting July 1, 2026, ending a tradition of unproctored testing dating to 1893. The decision reflects months of deliberation over AI-driven academic integrity violations.</p>
+        <div class="news-tags"><span>Education</span><span>Policy</span><span>AI Ethics</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 9</div>
+      <div class="news-date">May 13</div>
       <div class="news-content">
-        <h3>Meta Laying Off 10% of Staff — 8,000 Jobs Cut Toward Superintelligence Labs</h3>
-        <p>Meta plans to lay off approximately 8,000 employees and close 6,000 open roles, redirecting resources toward "Meta Superintelligence Labs" amid a $115-135B capex forecast for 2026 — the largest AI infrastructure bet by any single company.</p>
-        <div class="news-tags"><span>Meta</span><span>Layoffs</span><span>Superintelligence</span></div>
+        <h3><a href="https://www.courthousenews.com/illinois-suits-accuse-microsoft-nvidia-of-stealing-voiceprints-for-ai-products/" target="_blank">Illinois Suits Accuse Microsoft, Nvidia of Stealing Voiceprints for AI</a></h3>
+        <p>Prominent journalists, audiobook narrators, and podcasters sued Microsoft and Nvidia in Illinois, claiming the companies stole unique voiceprints and used them to train voice AI products without consent — raising new questions about biometric data in AI training.</p>
+        <div class="news-tags"><span>Legal</span><span>Voice AI</span><span>Biometric</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 13</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/05/13/who-trusts-sam-altman/" target="_blank">Sam Altman Testifies in Federal Court, Asserts His Professional Integrity</a></h3>
+        <p>Sam Altman gave formal testimony in federal court, stating "I believe I am an honest and trustworthy businessperson" as a direct defense of his character. The testimony highlights the intersection of executive credibility, personal ethics, and corporate legal accountability in the AI era.</p>
+        <div class="news-tags"><span>OpenAI</span><span>Legal</span><span>Leadership</span></div>
       </div>
     </div>
 
