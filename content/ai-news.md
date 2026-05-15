@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-05-14
+date: 2026-05-15
 draft: false
 ShowToc: false
 ---
@@ -119,7 +119,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated May 14, 2026 — 07:00 UTC</div>
+    <div class="last-updated">Updated May 15, 2026 — 07:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -128,106 +128,106 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
+      <div class="news-date">May 15</div>
+      <div class="news-content">
+        <h3><a href="https://www.mercurynews.com/2026/05/14/elon-musk-vs-openai-trial-goes-to-the-jury/" target="_blank">Musk v OpenAI Trial: Closing Arguments Heard, Jury Now Deliberates</a></h3>
+        <p>The landmark trial pitting Elon Musk against Sam Altman and OpenAI went to the jury after three weeks of tech drama. Musk's team argued the startup deceived him about its non-profit mission; OpenAI countered that Musk's lawsuit was an attempt to "tie OpenAI in knots." The verdict could reshape AI governance and non-profit-to-profit transitions.</p>
+        <div class="news-tags"><span>OpenAI</span><span>Legal</span><span>Governance</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 15</div>
+      <div class="news-content">
+        <h3><a href="https://www.engadget.com/xai-introduces-its-coding-agent-called-grok-build/" target="_blank">xAI Unveils Grok Build — First Coding Agent, Rivaling Anthropic's Claude Code</a></h3>
+        <p>Elon Musk's xAI launched Grok Build, a dedicated AI coding agent that directly challenges Anthropic's Claude Code and OpenAI Codex. The agent ships with terminal access, multi-file editing, and MCP support — entering the increasingly crowded agentic coding space.</p>
+        <div class="news-tags"><span>xAI</span><span>Agents</span><span>Coding</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 15</div>
+      <div class="news-content">
+        <h3><a href="https://mashable.com/article/anthropic-mythos-apple-security-flaws" target="_blank">Anthropic's Mythos Already Finding Security Flaws in Apple Software</a></h3>
+        <p>Days after its restricted preview launch, Anthropic's cybersecurity-focused Mythos model is reportedly discovering vulnerabilities in Apple's desktop operating system. The AI safety agency confirmed Mythos is "evolving faster than expected," fueling both excitement and governance concerns.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Security</span><span>Mythos</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
       <div class="news-date">May 14</div>
       <div class="news-content">
-        <h3><a href="https://github.com/tinyhumansai/openhuman" target="_blank">OpenHuman: Personal AI Superintelligence Launches on GitHub</a></h3>
-        <p>OpenHuman by tinyhumansai positions itself as a "personal AI superintelligence" built on three pillars: privacy, simplicity, and extreme power. The project aims to democratize advanced AI while keeping data fully under user control — trending #1 on GitHub today.</p>
-        <div class="news-tags"><span>Open Source</span><span>Privacy</span><span>GitHub Trending</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/14/openai-codex-mobile/" target="_blank">OpenAI Codex Comes to Mobile — Build Apps from Your Phone</a></h3>
+        <p>OpenAI brought its Codex coding platform to the ChatGPT mobile app, letting users build, test, and deploy apps directly from iOS and Android. The move follows GPT-5.5's record-breaking agentic coding performance (82.7% on Terminal-Bench 2.0) and signals OpenAI's push toward a unified AI super app.</p>
+        <div class="news-tags"><span>OpenAI</span><span>Codex</span><span>Mobile</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 13</div>
+      <div class="news-date">May 15</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/13/meta-ai-incognito-chats/" target="_blank">Meta Launches "Incognito Chat" — First Major AI with Zero Server-Side Logs</a></h3>
-        <p>Mark Zuckerberg unveiled Incognito Chat for Meta AI, describing it as the first major AI product that does not store conversation logs on its servers. Messages are neither saved nor stored in user history, marking a significant privacy shift for Meta in the gen AI landscape.</p>
-        <div class="news-tags"><span>Meta</span><span>Privacy</span><span>Product</span></div>
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-05-15/openai-may-raise-more-capital-as-compute-crunch-deepens-cfo-says" target="_blank">OpenAI May Raise More Capital as Compute Crunch Deepens, CFO Says</a></h3>
+        <p>OpenAI's CFO signaled the company may pursue additional funding rounds, citing an intensifying compute shortage. The admission comes as enterprise revenue hits 40% of total income and demand for GPT-5.5 outstrips available inference capacity — echoing industry-wide infrastructure constraints.</p>
+        <div class="news-tags"><span>OpenAI</span><span>Funding</span><span>Infrastructure</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 13</div>
+      <div class="news-date">May 15</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/tech/929791/googlebook-announcement" target="_blank">Googlebook: Google's "AI-First Laptop" Category Announced</a></h3>
-        <p>Google announced Googlebook, a new laptop category "designed for Gemini Intelligence" arriving Fall 2026. Features include Magic Pointer (select anything to ask Gemini), Create My Widget, and seamless phone-to-laptop app casting. 862 points on HN with 1,414 comments.</p>
-        <div class="news-tags"><span>Google</span><span>Hardware</span><span>Gemini</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 13</div>
-      <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents/" target="_blank">Notion Transforms Workspace into AI Agent Hub with Developer Platform</a></h3>
-        <p>Notion launched a new developer platform letting teams connect AI agents, external data sources, and custom code directly into their workspace — a definitive push into "agentic productivity software" and bridging static docs with automated workflows.</p>
-        <div class="news-tags"><span>Notion</span><span>Agents</span><span>Productivity</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 13</div>
-      <div class="news-content">
-        <h3><a href="https://www.theverge.com/tech/930188/microsoft-edge-copilot-ai-tabs" target="_blank">Microsoft Edge Copilot Gets Multi-Tab AI — Data Retrieval Across All Open Tabs</a></h3>
-        <p>Microsoft updated Edge's Copilot to access and process information from all open tabs simultaneously, enabling cross-website product comparisons, multi-article summaries, and context-aware browsing. A significant step toward integrated AI-powered browsing.</p>
-        <div class="news-tags"><span>Microsoft</span><span>Copilot</span><span>Browser</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 13</div>
-      <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/13/anthropics-cat-wu-says-that-in-the-future-ai-will-anticipate-your-needs-before-you-know-what-they-are/" target="_blank">Anthropic CPO: "Proactive AI" is the Next Major Evolution</a></h3>
-        <p>Cat Wu, head of product for Claude Code and Cowork, outlined Anthropic's vision for AI that anticipates user needs before explicit prompting — a shift from reactive chat toward autonomous, anticipatory digital assistants integrated into professional workflows.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Claude</span><span>Vision</span></div>
+        <h3><a href="https://www.ft.com/content/big-tech-borrowing-spree-ai-expansion" target="_blank">Big Tech Groups Launch Global Borrowing Spree to Fund AI Expansion</a></h3>
+        <p>Financial Times reports major tech companies are tapping global debt markets at unprecedented scale to finance AI data center builds, chip purchases, and energy infrastructure. Combined Big Tech AI capex for 2026 is projected at $725B — up 77% year-over-year.</p>
+        <div class="news-tags"><span>Big Tech</span><span>Capex</span><span>Infrastructure</span></div>
       </div>
     </div>
 
   </div>
 
-  <div class="news-section-title">Models & Inference</div>
+  <div class="news-section-title">Models &amp; Inference</div>
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 13</div>
+      <div class="news-date">May 14</div>
       <div class="news-content">
-        <h3><a href="https://github.com/cactus-compute/needle" target="_blank">Needle: Gemini Tool Calling Distilled into a 26M Parameter Model</a></h3>
-        <p>A Show HN hit with 557 points: a 26M-parameter model distilled from Google's Gemini tool-calling capabilities, proving complex agentic function-calling can run on tiny open models. Built by Cactus Compute, enabling efficient tool calling on edge devices.</p>
-        <div class="news-tags"><span>Open Source</span><span>Tool Calling</span><span>Distillation</span></div>
+        <h3><a href="https://www.cnbc.com/2026/05/14/cerebras-ipo-nasdaq.html" target="_blank">Cerebras IPO Surges 68%, Mints Two Billionaires — Year's Biggest Tech Debut</a></h3>
+        <p>AI chipmaker Cerebras Systems soared 68% on its Nasdaq debut, reaching a $95B market cap and minting two billionaires. CEO declared AI chip demand is "not speculative" as the company posted explosive revenue growth. The blockbuster IPO signals a potential wave of AI hardware listings in 2026.</p>
+        <div class="news-tags"><span>Chips</span><span>IPO</span><span>Hardware</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 13</div>
+      <div class="news-date">May 08</div>
       <div class="news-content">
-        <h3><a href="https://www.tryardent.com/" target="_blank">Ardent Launches Instant Postgres Sandboxing for AI Coding Agents</a></h3>
-        <p>Ardent (YC P26) introduced database branching with isolated Postgres sandboxes — 1:1 production clones in under 6 seconds, zero blast radius for AI agent testing. Clones are isolated at both compute and storage with autoscaling to zero.</p>
-        <div class="news-tags"><span>Dev Tools</span><span>Postgres</span><span>Agents</span></div>
+        <h3><a href="https://blog.modelcontextprotocol.io/posts/2026-mcp-roadmap/" target="_blank">MCP 2026 Roadmap: Stateless Transport, Agent Discovery, Enterprise Auth</a></h3>
+        <p>Anthropic published the official MCP 2026 roadmap outlining transport scalability, agent-to-agent communication, governance maturation, and enterprise readiness. With 19,831+ servers indexed and 97M monthly SDK downloads, MCP is solidifying as the de facto standard for AI-tool interoperability — backed by Anthropic, OpenAI, Google, and Microsoft.</p>
+        <div class="news-tags"><span>MCP</span><span>Ecosystem</span><span>Standards</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 12</div>
+      <div class="news-date">May 05</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/13/origin-lab-raises-8m-to-help-video-game-companies-sell-data-to-world-model-builders/" target="_blank">Origin Lab Raises $8M for Licensed Video Game Data Marketplace</a></h3>
-        <p>Origin Lab secured $8M to build a marketplace connecting game companies with AI labs — selling licensed, high-quality gaming data for world model training. Addresses the critical need for structured, legally-acquired datasets in physical AI.</p>
-        <div class="news-tags"><span>Funding</span><span>Data</span><span>World Models</span></div>
+        <h3><a href="https://whatllm.org/blog/new-ai-models-may-2026" target="_blank">SubQ 1M-Preview: First Commercial Subquadratic LLM Ships with 12M Token Context</a></h3>
+        <p>Subquadratic launched SubQ 1M-Preview — the first commercially available LLM not based on a standard transformer. Its sparse subquadratic attention mechanism delivers a native 12M token context window at ~1/5 the cost of frontier models. If independent benchmarks confirm, this could break the O(n²) attention cost ceiling.</p>
+        <div class="news-tags"><span>Architecture</span><span>Open Source</span><span>Efficiency</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 13</div>
+      <div class="news-date">May 05</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/12/medicares-new-payment-model-is-built-for-ai-and-most-of-the-tech-world-has-no-idea/" target="_blank">Medicare ACCESS: Outcome-Based Payments for AI Healthcare at Federal Scale</a></h3>
-        <p>CMS launched the ACCESS program, a 10-year initiative testing AI-driven care with 150 participants. Moving from fee-for-service to outcome-based payments for chronic conditions, it creates a federal reimbursement pathway for AI agents previously excluded from Medicare.</p>
-        <div class="news-tags"><span>Healthcare</span><span>Policy</span><span>AI Agents</span></div>
+        <h3><a href="https://whatllm.org/blog/new-ai-models-may-2026" target="_blank">GPT-5.5 Instant Becomes ChatGPT Default — Safety Over Smarts</a></h3>
+        <p>OpenAI quietly swapped ChatGPT's default model to GPT-5.5 Instant, prioritizing fewer hallucinations in high-stakes domains (law, medicine, finance) over raw benchmark scores. The change affects hundreds of millions of users — the most consequential "default tier" update since GPT-4's launch.</p>
+        <div class="news-tags"><span>OpenAI</span><span>ChatGPT</span><span>Product</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 13</div>
+      <div class="news-date">May 06</div>
       <div class="news-content">
-        <h3><a href="https://www.technologyreview.com/2026/05/13/1137203/ai-chatbots-are-giving-out-peoples-real-phone-numbers/" target="_blank">Google AI Chatbots Surfacing Private Phone Numbers — Privacy Concerns Grow</a></h3>
-        <p>MIT Technology Review reported that Google's AI systems are inadvertently exposing personal contact information, with one victim receiving a month-long surge of unwanted calls. Highlights the critical gap in mechanisms to prevent AI from surfacing private data.</p>
-        <div class="news-tags"><span>Privacy</span><span>Google</span><span>Safety</span></div>
+        <h3><a href="https://lushbinary.com/blog/best-open-source-llms-ai-agents-may-2026-comparison/" target="_blank">ZAYA1-8B: Apache 2.0 MoE Model Trained Entirely on AMD Hardware</a></h3>
+        <p>Zyphra released ZAYA1-8B, an 8B total / 760M active parameters MoE model trained end-to-end on AMD Instinct GPUs. The first open-weight reasoning model to demonstrate a viable AMD training pipeline, ZAYA1-8B achieves competitive reasoning and math benchmarks while running at a fraction of the inference cost of larger models.</p>
+        <div class="news-tags"><span>Open Source</span><span>AMD</span><span>Efficiency</span></div>
       </div>
     </div>
 
@@ -237,56 +237,47 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 13</div>
+      <div class="news-date">May 14</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/13/musks-xai-is-running-nearly-50-gas-turbines-unchecked-at-its-mississippi-data-center/" target="_blank">xAI Faces Lawsuit Over 50 Unchecked Gas Turbines at Mississippi Colossus 2</a></h3>
-        <p>Elon Musk's xAI is embroiled in a legal dispute over nearly 50 gas turbines operated as "mobile" units at its Colossus 2 data center in Mississippi. The lawsuit alleges these turbines serve as permanent power plants without required regulatory oversight.</p>
-        <div class="news-tags"><span>xAI</span><span>Infrastructure</span><span>Regulation</span></div>
+        <h3><a href="https://www.ft.com/content/anthropic-30bn-funding-900bn-valuation" target="_blank">Anthropic Agrees $30B Funding at $900B Valuation</a></h3>
+        <p>Anthropic reportedly agreed terms on a $30 billion funding round at a staggering $900 billion valuation. Q1 revenue grew 80x year-over-year with ARR above $44B. The round follows its SpaceX Colossus 1 compute deal (220K GPUs, 300MW) and Google Cloud's $200B contract — cementing Anthropic as the best-capitalized AI lab.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Funding</span><span>Valuation</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 13</div>
+      <div class="news-date">May 14</div>
       <div class="news-content">
-        <h3><a href="https://www.intercom.com/blog/today-intercom-becomes-fin/" target="_blank">Intercom Rebrands Corporate Entity to "Fin" — Full AI Pivot</a></h3>
-        <p>Intercom officially rebranded its parent company to Fin, aligning its corporate identity with its flagship AI customer agent platform. All 1,400 employees are now part of Fin, marking the culmination of a multi-year AI-driven cultural and product transformation.</p>
-        <div class="news-tags"><span>Rebrand</span><span>Customer AI</span><span>Enterprise</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/14/cisco-cuts-4000-jobs-ai/" target="_blank">Cisco Cuts 3,900 Jobs, Posts Record Revenue on AI Infrastructure Boom</a></h3>
+        <p>Cisco announced nearly 4,000 layoffs while reporting record quarterly revenue, explicitly linking the cuts to an AI-focused restructuring. CEO Chuck Robbins called it a "networking supercycle" driven by AI data center builds, sending shares soaring 20%. The move continues the pattern of tech firms trading headcount for AI capex.</p>
+        <div class="news-tags"><span>Cisco</span><span>Layoffs</span><span>Infrastructure</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 13</div>
+      <div class="news-date">May 14</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/13/anthropic-courts-a-new-kind-of-customer-small-business-owners/" target="_blank">Anthropic Shifts Strategy to Court 36M US Small Business Owners</a></h3>
-        <p>Anthropic is pivoting downmarket, targeting America's ~36 million small businesses as the AI platform wars move beyond Fortune 500 exclusivity. The shift signals that the next battleground for AI adoption will be defined by scale, accessibility, and SMB penetration.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Strategy</span><span>SMB</span></div>
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-05-14/apple-openai-alliance-frays-legal-fight" target="_blank">Apple-OpenAI Alliance Frays — OpenAI Considering Legal Action</a></h3>
+        <p>OpenAI is reportedly preparing legal action against Apple over their iPhone AI integration deal. The strained relationship opens the door for Google's Gemini to expand its presence on Apple devices — a potential shift in the mobile AI landscape with implications for both consumer access and enterprise partnerships.</p>
+        <div class="news-tags"><span>Apple</span><span>OpenAI</span><span>Partnerships</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 13</div>
+      <div class="news-date">May 14</div>
       <div class="news-content">
-        <h3><a href="https://www.dailyprincetonian.com/article/2026/05/princeton-news-adpol-proctoring-in-person-examinations-passed-faculty-133-years-precedent" target="_blank">Princeton Ends 133-Year Honor Code, Mandates Proctoring Over AI Concerns</a></h3>
-        <p>Princeton faculty voted nearly unanimously to require proctoring for all in-person exams starting July 1, 2026, ending a tradition of unproctored testing dating to 1893. The decision reflects months of deliberation over AI-driven academic integrity violations.</p>
-        <div class="news-tags"><span>Education</span><span>Policy</span><span>AI Ethics</span></div>
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-05-14/ai-buildout-drives-76-power-bill-jump-on-largest-us-grid" target="_blank">AI Buildout Drives 76% Power Bill Jump on Largest US Grid</a></h3>
+        <p>The PJM Interconnection, serving 65 million Americans across 13 states, reported a 76% increase in projected electricity costs driven by AI data center demand. With 70% of Americans now opposing data centers near their homes (less popular than nuclear plants), the energy-cost tension is becoming a political flashpoint.</p>
+        <div class="news-tags"><span>Energy</span><span>Infrastructure</span><span>Policy</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 13</div>
+      <div class="news-date">May 14</div>
       <div class="news-content">
-        <h3><a href="https://www.courthousenews.com/illinois-suits-accuse-microsoft-nvidia-of-stealing-voiceprints-for-ai-products/" target="_blank">Illinois Suits Accuse Microsoft, Nvidia of Stealing Voiceprints for AI</a></h3>
-        <p>Prominent journalists, audiobook narrators, and podcasters sued Microsoft and Nvidia in Illinois, claiming the companies stole unique voiceprints and used them to train voice AI products without consent — raising new questions about biometric data in AI training.</p>
-        <div class="news-tags"><span>Legal</span><span>Voice AI</span><span>Biometric</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 13</div>
-      <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/13/who-trusts-sam-altman/" target="_blank">Sam Altman Testifies in Federal Court, Asserts His Professional Integrity</a></h3>
-        <p>Sam Altman gave formal testimony in federal court, stating "I believe I am an honest and trustworthy businessperson" as a direct defense of his character. The testimony highlights the intersection of executive credibility, personal ethics, and corporate legal accountability in the AI era.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Legal</span><span>Leadership</span></div>
+        <h3><a href="https://opentools.ai/news/metas-2026-workforce-reset-8000-layoffs-for-ai-leap" target="_blank">Meta Plans 8,000 Layoffs Starting May 20 to Fund $115-135B AI Investment</a></h3>
+        <p>Meta is set to cut ~10% of its workforce — approximately 8,000 roles — on May 20, redirecting funds toward AI infrastructure investments projected at $115-135B. Chief AI Officer Alexandr Wang is steering the reorganization under the Superintelligence Labs banner, as Big Tech layoffs in 2026 already top 81,000.</p>
+        <div class="news-tags"><span>Meta</span><span>Layoffs</span><span>Capex</span></div>
       </div>
     </div>
 
