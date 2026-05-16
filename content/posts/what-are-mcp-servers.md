@@ -8,33 +8,33 @@ summary: "MCP (Model Context Protocol) lets AI agents use real tools. Here's wha
 ShowToc: true
 ---
 
-MCP is everywhere in the AI world right now. But most explanations are abstract. Let me explain it by showing you the 5 MCP servers I actually built and what they do.
+MCP is all over AI now. Most guides are too vague. I built 5 MCP servers. Here is what they do.
 
 ## What is MCP?
 
-**Model Context Protocol (MCP)** is a standard way for AI agents to connect to external tools. Think of it as USB for AI — a universal plug that lets any agent use any tool.
+**Model Context Protocol (MCP)** is a norm. It lets AI agents use tools. Think of it as USB for AI. Any agent can use any tool.
 
-Before MCP, every AI tool integration was custom. Now, you write one MCP server, and any MCP-compatible agent (Hermes, Claude, Cursor, ChatGPT) can use it.
+Before MCP, each link was custom. Now you write one server. Any agent can plug in.
 
 ## How It Works
 
-The architecture is simple:
+The setup is simple:
 
 ```
-AI Agent  ←→  MCP Client  ←→  MCP Server  ←→  External Service
+AI Agent  ←→  MCP Client  ←→  MCP Server  ←→  Outside Service
 (hermes)      (built-in)       (your code)     (GitHub, APIs, etc.)
 ```
 
-1. The agent starts and discovers MCP servers from config
-2. Each server advertises its tools (name, description, parameters)
-3. The agent can call any tool with JSON arguments
-4. The server executes the request and returns JSON results
+1. The agent starts. It finds servers from a config file.
+2. Each server lists its tools. It gives a name. It adds a note. It sets rules.
+3. The agent calls a tool with JSON.
+4. The server runs the task. It sends back JSON.
 
-Communication is JSON-RPC over stdin/stdout (stdio transport) or HTTP.
+Talk runs over JSON-RPC. It uses stdin/stdout or HTTP.
 
 ## My 5 MCP Servers
 
-### 1. Firecrawl — Web Scraping
+### 1. Firecrawl — Web Scrapes
 
 ```python
 @server.list_tools()
@@ -47,27 +47,27 @@ async def list_tools():
     ]
 ```
 
-Wraps my self-hosted Firecrawl instance. The agent can scrape any URL to clean markdown — perfect for research and wiki ingestion.
+This wraps my own Firecrawl. The agent can scrape any URL. It turns the page into clean markdown. It is great for study.
 
-### 2. Homelab Dashboard — Infrastructure Monitoring
+### 2. Homelab Board — Infra Checks
 
-Four tools: health status, container list, system resources, network info. Runs shell commands and HTTP checks. No external dependencies.
+This server has four tools. It checks health. It lists boxes. It reads stats. It shows net info. It runs shell cmds. No extra tools are needed.
 
-### 3. Uptime Kuma — Service Monitoring
+### 3. Uptime Kuma — Service Checks
 
-Connects via Socket.IO to Uptime Kuma. Lists monitors, gets heartbeat history. The agent can ask "are all services healthy?" and get a real answer.
+This links to Uptime Kuma. It lists checks. It reads pings. The agent can ask "are all apps up?" It gets a real answer.
 
-### 4. GitHub — Repository Management
+### 4. GitHub — Repo Tools
 
-Uses the official `@modelcontextprotocol/server-github` package. 18+ tools covering issues, PRs, code, branches, search. Full GitHub API access from the agent.
+This uses the main `@modelcontextprotocol/server-github` pkg. It has 18+ tools. It covers issues, PRs, code, and search. The agent gets full GitHub access.
 
-### 5. n8n — Workflow Automation
+### 5. n8n — Flow Tools
 
-Wraps the n8n REST API. List workflows, check executions, get workflow details. The agent can trigger and monitor automations.
+This wraps the n8n REST API. It lists flows. It checks runs. It pulls details. The agent can start and watch flows.
 
 ## The Config
 
-In `~/.hermes/config.yaml`:
+Here is a bit from `~/.hermes/config.yaml`:
 
 ```yaml
 mcp_servers:
@@ -83,22 +83,22 @@ mcp_servers:
       GITHUB_PERSONAL_ACCESS_TOKEN: "ghp_..."
 ```
 
-Each server is just a subprocess. The agent spawns it, discovers tools, and keeps the connection alive.
+Each server is a child proc. The agent spawns it. It finds the tools. It keeps the link open.
 
 ## Why This Matters
 
-MCP turns AI agents from "smart chatbots" into "infrastructure operators." My agent can:
+MCP turns agents from chatbots into ops tools. My agent can now:
 
-- Check if a service is down and restart it
-- Scrape a research paper and summarize it
-- Create a GitHub issue from a bug report
-- Trigger an n8n workflow and report results
+- Spot a dead app. It can fix it.
+- Scrape a paper. It can sum it up.
+- Open a GitHub issue. It can do this from a bug.
+- Start an n8n flow. It can report back.
 
-All through natural language. No manual tool switching.
+All of this works via plain words. You do not switch tools by hand.
 
 ## Build Your Own
 
-The simplest MCP server is ~50 lines of Python:
+A basic server takes ~50 lines of py:
 
 ```bash
 pip install mcp httpx
@@ -129,14 +129,14 @@ import asyncio
 asyncio.run(main())
 ```
 
-That's a working MCP server. Add HTTP calls, database queries, or shell commands to make it do real things.
+That is a live server. Add HTTP calls. Add DB reads. Add shell cmds. Make it do real work.
 
 ## What's Next
 
-- MCP Apps: interactive UI widgets in ChatGPT and Claude
-- Remote MCP servers via HTTP transport
-- Agent-to-agent communication through MCP
+- MCP Apps: small UI apps inside GPT and Claude.
+- Remote MCP servers that talk over HTTP.
+- Agents talking to other agents via MCP.
 
 ---
 
-*MCP is the protocol that will make AI agents actually useful. If you're building anything with AI, learn it now.*
+*MCP is the std that will make AI agents truly handy. If you build with AI, learn it now.*
