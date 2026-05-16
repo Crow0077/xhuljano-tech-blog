@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-05-15
+date: 2026-05-16
 draft: false
 ShowToc: false
 ---
@@ -119,7 +119,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated May 15, 2026 — 07:00 UTC</div>
+    <div class="last-updated">Updated May 16, 2026 — 07:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -131,53 +131,53 @@ ShowToc: false
       <div class="news-date">May 15</div>
       <div class="news-content">
         <h3><a href="https://www.mercurynews.com/2026/05/14/elon-musk-vs-openai-trial-goes-to-the-jury/" target="_blank">Musk v OpenAI Trial: Closing Arguments Heard, Jury Now Deliberates</a></h3>
-        <p>The landmark trial pitting Elon Musk against Sam Altman and OpenAI went to the jury after three weeks of tech drama. Musk's team argued the startup deceived him about its non-profit mission; OpenAI countered that Musk's lawsuit was an attempt to "tie OpenAI in knots." The verdict could reshape AI governance and non-profit-to-profit transitions.</p>
+        <p>The landmark trial pitting Elon Musk against Sam Altman and OpenAI went to the jury after three weeks of testimony. Musk's team argued the startup deceived him about its non-profit mission; OpenAI countered that the lawsuit was an attempt to "tie OpenAI in knots." The verdict could reshape AI governance and non-profit-to-profit transitions.</p>
         <div class="news-tags"><span>OpenAI</span><span>Legal</span><span>Governance</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 15</div>
+      <div class="news-date">May 09</div>
       <div class="news-content">
-        <h3><a href="https://www.engadget.com/xai-introduces-its-coding-agent-called-grok-build/" target="_blank">xAI Unveils Grok Build — First Coding Agent, Rivaling Anthropic's Claude Code</a></h3>
-        <p>Elon Musk's xAI launched Grok Build, a dedicated AI coding agent that directly challenges Anthropic's Claude Code and OpenAI Codex. The agent ships with terminal access, multi-file editing, and MCP support — entering the increasingly crowded agentic coding space.</p>
-        <div class="news-tags"><span>xAI</span><span>Agents</span><span>Coding</span></div>
+        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-may-9-2026" target="_blank">OpenAI Surpasses $25B ARR, Explores IPO Path as Early as Late 2026</a></h3>
+        <p>OpenAI crossed $25 billion in annualized revenue and is taking early steps toward a public listing, potentially as soon as late 2026. Greg Brockman confirmed the IPO exploration at the ongoing Musk trial. The milestone puts OpenAI ahead of Anthropic's ~$19B run rate, though Anthropic is gaining ground in enterprise first-time buyer share.</p>
+        <div class="news-tags"><span>OpenAI</span><span>IPO</span><span>Revenue</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 15</div>
+      <div class="news-date">May 04</div>
       <div class="news-content">
-        <h3><a href="https://mashable.com/article/anthropic-mythos-apple-security-flaws" target="_blank">Anthropic's Mythos Already Finding Security Flaws in Apple Software</a></h3>
-        <p>Days after its restricted preview launch, Anthropic's cybersecurity-focused Mythos model is reportedly discovering vulnerabilities in Apple's desktop operating system. The AI safety agency confirmed Mythos is "evolving faster than expected," fueling both excitement and governance concerns.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Security</span><span>Mythos</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/" target="_blank">Anthropic + Blackstone + Goldman Sachs Launch $1.5B Enterprise AI JV</a></h3>
+        <p>Anthropic announced a joint venture with Blackstone, Hellman & Friedman, and Goldman Sachs to build a new enterprise AI services company. The $1.5B vehicle embeds Anthropic engineers directly inside portfolio companies to redesign workflows — a "forward-deployed" model borrowed from Palantir. Sequoia, Apollo, and GIC also joined the consortium.</p>
+        <div class="news-tags"><span>Anthropic</span><span>PE</span><span>Enterprise</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 14</div>
+      <div class="news-date">May 04</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/14/openai-codex-mobile/" target="_blank">OpenAI Codex Comes to Mobile — Build Apps from Your Phone</a></h3>
-        <p>OpenAI brought its Codex coding platform to the ChatGPT mobile app, letting users build, test, and deploy apps directly from iOS and Android. The move follows GPT-5.5's record-breaking agentic coding performance (82.7% on Terminal-Bench 2.0) and signals OpenAI's push toward a unified AI super app.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Codex</span><span>Mobile</span></div>
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-05-04/openai-finalizes-10-billion-joint-venture-with-pe-firms-to-deploy-ai" target="_blank">OpenAI Finalizes DeployCo — $10B PE-Backed AI Deployment Vehicle</a></h3>
+        <p>OpenAI finalized "The Deployment Company" (DeployCo), a $10B Delaware LLC raising $4B from 19 investors including TPG, Brookfield, Bain Capital, and Advent. OpenAI contributes $500M-$1.5B in equity and retains super-voting shares. The vehicle reportedly guarantees PE backers a 17.5% annualized return over five years — a striking structural detail.</p>
+        <div class="news-tags"><span>OpenAI</span><span>PE</span><span>Deployment</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 15</div>
+      <div class="news-date">May 09</div>
       <div class="news-content">
-        <h3><a href="https://www.bloomberg.com/news/articles/2026-05-15/openai-may-raise-more-capital-as-compute-crunch-deepens-cfo-says" target="_blank">OpenAI May Raise More Capital as Compute Crunch Deepens, CFO Says</a></h3>
-        <p>OpenAI's CFO signaled the company may pursue additional funding rounds, citing an intensifying compute shortage. The admission comes as enterprise revenue hits 40% of total income and demand for GPT-5.5 outstrips available inference capacity — echoing industry-wide infrastructure constraints.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Funding</span><span>Infrastructure</span></div>
+        <h3><a href="https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/" target="_blank">Meta Launches Muse Spark, Its First Proprietary Flagship LLM</a></h3>
+        <p>Meta unveiled Muse Spark — the first model from its Superintelligence Labs division led by Alexandr Wang. It's a strategic departure from the open-source Llama strategy: Muse Spark is closed-weights and natively multimodal, with tool-use, visual chain-of-thought, and multi-agent orchestration. Meta also committed $115-135B in AI capex for 2026.</p>
+        <div class="news-tags"><span>Meta</span><span>Muse Spark</span><span>Models</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 15</div>
+      <div class="news-date">May 04</div>
       <div class="news-content">
-        <h3><a href="https://www.ft.com/content/big-tech-borrowing-spree-ai-expansion" target="_blank">Big Tech Groups Launch Global Borrowing Spree to Fund AI Expansion</a></h3>
-        <p>Financial Times reports major tech companies are tapping global debt markets at unprecedented scale to finance AI data center builds, chip purchases, and energy infrastructure. Combined Big Tech AI capex for 2026 is projected at $725B — up 77% year-over-year.</p>
-        <div class="news-tags"><span>Big Tech</span><span>Capex</span><span>Infrastructure</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/" target="_blank">Sierra Raises $950M at $15.8B Valuation for Enterprise AI Agents</a></h3>
+        <p>Bret Taylor's Sierra raised a $950M Series E led by Tiger Global and GV, pushing its valuation above $15B. The company hit $150M ARR in just 8 quarters, with outcome-based pricing per resolution and 40%+ of the Fortune 50 as customers. Voice agents already surpassed text as Sierra's primary channel by late 2025.</p>
+        <div class="news-tags"><span>Sierra</span><span>Agents</span><span>Funding</span></div>
       </div>
     </div>
 
@@ -187,11 +187,11 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 14</div>
+      <div class="news-date">May 05</div>
       <div class="news-content">
-        <h3><a href="https://www.cnbc.com/2026/05/14/cerebras-ipo-nasdaq.html" target="_blank">Cerebras IPO Surges 68%, Mints Two Billionaires — Year's Biggest Tech Debut</a></h3>
-        <p>AI chipmaker Cerebras Systems soared 68% on its Nasdaq debut, reaching a $95B market cap and minting two billionaires. CEO declared AI chip demand is "not speculative" as the company posted explosive revenue growth. The blockbuster IPO signals a potential wave of AI hardware listings in 2026.</p>
-        <div class="news-tags"><span>Chips</span><span>IPO</span><span>Hardware</span></div>
+        <h3><a href="https://felloai.com/subq-llm-review/" target="_blank">SubQ Subquadratic LLM Faces Skepticism — "Biggest Breakthrough or AI Theranos"</a></h3>
+        <p>Subquadratic's SubQ 1M-Preview claims 52x faster attention at 1M tokens and a 12M context window via sparse subquadratic attention (SSA). But researchers are skeptical: the full technical report hasn't been released, weights are closed, and prior subquadratic architectures (Mamba, RWKV, DeepSeek Sparse Attention) repeatedly underperformed at frontier scale. Independent verification pending.</p>
+        <div class="news-tags"><span>Architecture</span><span>SubQ</span><span>Efficiency</span></div>
       </div>
     </div>
 
@@ -205,29 +205,29 @@ ShowToc: false
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 05</div>
+      <div class="news-date">May 06</div>
       <div class="news-content">
-        <h3><a href="https://whatllm.org/blog/new-ai-models-may-2026" target="_blank">SubQ 1M-Preview: First Commercial Subquadratic LLM Ships with 12M Token Context</a></h3>
-        <p>Subquadratic launched SubQ 1M-Preview — the first commercially available LLM not based on a standard transformer. Its sparse subquadratic attention mechanism delivers a native 12M token context window at ~1/5 the cost of frontier models. If independent benchmarks confirm, this could break the O(n²) attention cost ceiling.</p>
-        <div class="news-tags"><span>Architecture</span><span>Open Source</span><span>Efficiency</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 05</div>
-      <div class="news-content">
-        <h3><a href="https://whatllm.org/blog/new-ai-models-may-2026" target="_blank">GPT-5.5 Instant Becomes ChatGPT Default — Safety Over Smarts</a></h3>
-        <p>OpenAI quietly swapped ChatGPT's default model to GPT-5.5 Instant, prioritizing fewer hallucinations in high-stakes domains (law, medicine, finance) over raw benchmark scores. The change affects hundreds of millions of users — the most consequential "default tier" update since GPT-4's launch.</p>
-        <div class="news-tags"><span>OpenAI</span><span>ChatGPT</span><span>Product</span></div>
+        <h3><a href="https://lushbinary.com/blog/best-open-source-llms-ai-agents-may-2026-comparison/" target="_blank">ZAYA1-8B: Apache 2.0 MoE Model Trained Entirely on AMD Hardware</a></h3>
+        <p>Zyphra released ZAYA1-8B, an 8B total / 760M active parameters MoE model trained end-to-end on AMD Instinct GPUs. The first open-weight reasoning model to demonstrate a viable AMD training pipeline, ZAYA1-8B achieves competitive reasoning and math benchmarks while running at a fraction of the inference cost of larger models.</p>
+        <div class="news-tags"><span>Open Source</span><span>AMD</span><span>Efficiency</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">May 06</div>
       <div class="news-content">
-        <h3><a href="https://lushbinary.com/blog/best-open-source-llms-ai-agents-may-2026-comparison/" target="_blank">ZAYA1-8B: Apache 2.0 MoE Model Trained Entirely on AMD Hardware</a></h3>
-        <p>Zyphra released ZAYA1-8B, an 8B total / 760M active parameters MoE model trained end-to-end on AMD Instinct GPUs. The first open-weight reasoning model to demonstrate a viable AMD training pipeline, ZAYA1-8B achieves competitive reasoning and math benchmarks while running at a fraction of the inference cost of larger models.</p>
-        <div class="news-tags"><span>Open Source</span><span>AMD</span><span>Efficiency</span></div>
+        <h3><a href="https://the-decoder.com/google-and-meta-race-to-build-personal-ai-agents-as-anthropic-and-openai-pull-further-ahead/" target="_blank">Google &amp; Meta Race to Build Personal AI Agents "Remy" and "Hatch"</a></h3>
+        <p>Google is testing "Remy," a 24/7 personal agent inside Gemini that connects to Google services and learns user preferences. Meta is developing "Hatch" for Instagram shopping and everyday tasks, training in sandboxed web environments. Both are direct responses to Anthropic's Claude Code/Cowork and OpenAI's Codex super-app strategy. Browser agents are fading; integrated personal agents are the new battleground.</p>
+        <div class="news-tags"><span>Google</span><span>Meta</span><span>Agents</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 13</div>
+      <div class="news-content">
+        <h3><a href="https://www.biospace.com/press-releases/isomorphic-labs-raises-2-1-billion-series-b" target="_blank">Isomorphic Labs Raises $2.1B for AI Drug Discovery Pipeline</a></h3>
+        <p>The DeepMind spinout led by Nobel laureate Demis Hassabis closed a $2.1B Series B led by Thrive Capital — one of the largest single raises in AI life sciences. Isomorphic Labs is best known for AlphaFold and is now expanding its in-house drug discovery pipeline, reflecting continued investor conviction in AI-native pharma R&D as a distinct category.</p>
+        <div class="news-tags"><span>DeepMind</span><span>Biotech</span><span>Funding</span></div>
       </div>
     </div>
 
@@ -237,38 +237,38 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 14</div>
+      <div class="news-date">May 09</div>
       <div class="news-content">
-        <h3><a href="https://www.ft.com/content/anthropic-30bn-funding-900bn-valuation" target="_blank">Anthropic Agrees $30B Funding at $900B Valuation</a></h3>
-        <p>Anthropic reportedly agreed terms on a $30 billion funding round at a staggering $900 billion valuation. Q1 revenue grew 80x year-over-year with ARR above $44B. The round follows its SpaceX Colossus 1 compute deal (220K GPUs, 300MW) and Google Cloud's $200B contract — cementing Anthropic as the best-capitalized AI lab.</p>
+        <h3><a href="https://www.ft.com/content/anthropic-30bn-funding-900bn-valuation" target="_blank">Anthropic Targets $900B Valuation in $50B Funding Round</a></h3>
+        <p>Anthropic is reportedly planning a $50B funding round at a ~$900B valuation. Q1 revenue grew 80x year-over-year with ARR now above $44B. The round follows its SpaceX Colossus 1 compute deal (220K GPUs, 300MW) and comes as the lab partners with PE giants for enterprise deployment — cementing Anthropic as the best-capitalized AI challenger.</p>
         <div class="news-tags"><span>Anthropic</span><span>Funding</span><span>Valuation</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 14</div>
+      <div class="news-date">Apr 25</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/14/cisco-cuts-4000-jobs-ai/" target="_blank">Cisco Cuts 3,900 Jobs, Posts Record Revenue on AI Infrastructure Boom</a></h3>
-        <p>Cisco announced nearly 4,000 layoffs while reporting record quarterly revenue, explicitly linking the cuts to an AI-focused restructuring. CEO Chuck Robbins called it a "networking supercycle" driven by AI data center builds, sending shares soaring 20%. The move continues the pattern of tech firms trading headcount for AI capex.</p>
-        <div class="news-tags"><span>Cisco</span><span>Layoffs</span><span>Infrastructure</span></div>
+        <h3><a href="https://schwarz-digits.de/en/presse/archive/2026/cohere-and-aleph-alpha-to-form-global-ai-powerhouse" target="_blank">Cohere Merges with Aleph Alpha in $20B Sovereign AI Alliance</a></h3>
+        <p>Cohere and Germany's Aleph Alpha announced a transatlantic merger valued at ~$20B, backed by Schwarz Group's $600M Series E lead. The combined entity positions itself as a sovereign AI alternative to the US-China duopoly, targeting governments and regulated industries with data-residency requirements. It's a signal that mid-tier lab consolidation is accelerating.</p>
+        <div class="news-tags"><span>Cohere</span><span>Sovereign AI</span><span>M&amp;A</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 14</div>
+      <div class="news-date">May 09</div>
       <div class="news-content">
-        <h3><a href="https://www.bloomberg.com/news/articles/2026-05-14/apple-openai-alliance-frays-legal-fight" target="_blank">Apple-OpenAI Alliance Frays — OpenAI Considering Legal Action</a></h3>
-        <p>OpenAI is reportedly preparing legal action against Apple over their iPhone AI integration deal. The strained relationship opens the door for Google's Gemini to expand its presence on Apple devices — a potential shift in the mobile AI landscape with implications for both consumer access and enterprise partnerships.</p>
-        <div class="news-tags"><span>Apple</span><span>OpenAI</span><span>Partnerships</span></div>
+        <h3><a href="https://www.cisa.gov/news-events/news/cisa-and-international-partners-publish-guidance-careful-adoption-agentic-ai" target="_blank">Five Eyes Agencies Release Joint Agentic AI Security Guidance</a></h3>
+        <p>Cybersecurity agencies from the US, UK, Australia, Canada, and New Zealand jointly published "Careful Adoption of Agentic AI Services," addressing five risk categories in critical infrastructure: privilege, design, behavior, structural, and accountability. The guidance stresses incremental deployment, strong governance, and rigorous human oversight — directly tied to recent credential and token exploits targeting AI coding tools.</p>
+        <div class="news-tags"><span>Security</span><span>Policy</span><span>Agents</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 14</div>
+      <div class="news-date">May 09</div>
       <div class="news-content">
-        <h3><a href="https://www.bloomberg.com/news/articles/2026-05-14/ai-buildout-drives-76-power-bill-jump-on-largest-us-grid" target="_blank">AI Buildout Drives 76% Power Bill Jump on Largest US Grid</a></h3>
-        <p>The PJM Interconnection, serving 65 million Americans across 13 states, reported a 76% increase in projected electricity costs driven by AI data center demand. With 70% of Americans now opposing data centers near their homes (less popular than nuclear plants), the energy-cost tension is becoming a political flashpoint.</p>
-        <div class="news-tags"><span>Energy</span><span>Infrastructure</span><span>Policy</span></div>
+        <h3><a href="https://www.msn.com/en-us/news/other/the-enterprise-ai-pivot-how-openai-anthropic-and-langchain-are-redefining-production-in-may-2026/gm-GMD0E27A85" target="_blank">JPMorgan Reclassifies AI as Core Infrastructure, $19.8B Tech Budget</a></h3>
+        <p>JPMorgan Chase formally reclassified its AI investments from experimental R&D to core infrastructure, with a 2026 technology budget of ~$19.8B and 2,000 staff dedicated to AI development. The move signals a broader enterprise pivot: AI is no longer a pilot project but foundational to operations — a trend McKinsey says only 6% of companies have mastered.</p>
+        <div class="news-tags"><span>Enterprise</span><span>Finance</span><span>Infrastructure</span></div>
       </div>
     </div>
 
