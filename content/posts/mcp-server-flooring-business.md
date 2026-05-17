@@ -8,7 +8,7 @@ summary: "I built an MCP server that lets customers get instant flooring estimat
 ShowToc: true
 ---
 
-Most MCP tutorials build a "hello world" tool. I built one for a real flooring business. The owner needed to answer common questions and book jobs fast.
+Most MCP guides make a "hello world" tool. I made one for a real floor shop. The owner gets the same questions daily. He needed fast answers. He wanted to book jobs too.
 
 ## The Problem
 
@@ -17,7 +17,7 @@ KR Flooring hears the same questions every day:
 - What's the difference between LVP and hardwood?
 - Can I book a free estimate?
 
-An MCP server lets ChatGPT answer these with live data. It pulls real prices, open slots, and booking links.
+An MCP server lets ChatGPT answer with live data. It pulls real prices. It shows open slots. It shares booking links.
 
 ## The Architecture
 
@@ -34,15 +34,19 @@ Customer → ChatGPT → MCP Server → Response
 ## The Tools
 
 ### estimate
-Give it room size and floor type. It returns a full quote with parts and labor.
+
+Tell it the room size and floor type. It gives a full quote. Parts and labor included.
 
 ### pricing
-Shows current rates for LVP, hardwood, tile, and carpet.
+
+Show fees for LVP, hardwood, tile, and carpet.
 
 ### faq
+
 Covers install time, warranty, and care tips.
 
 ### book
+
 Sends a link to book a free in-home visit.
 
 ## Deployment
@@ -67,7 +71,7 @@ ChatGPT hits this URL on its own. A customer asks a question. The MCP server rep
 
 2. **Cloudflare Workers is a hidden gem.** It's free, fast, and global. Great for APIs.
 
-3. **The MCP scene is booming.** ChatGPT, Claude, and Cursor all support it. Building servers today feels like making apps when the App Store first dropped.
+3. **The MCP scene is booming.** ChatGPT, Claude, and Cursor all use it. Building servers now feels like making apps when the App Store first dropped.
 
 ## What's Next
 
