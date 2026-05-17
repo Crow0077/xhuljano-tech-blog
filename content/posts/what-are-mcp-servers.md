@@ -8,29 +8,29 @@ summary: "MCP (Model Context Protocol) lets AI agents use real tools. Here's wha
 ShowToc: true
 ---
 
-MCP is all over AI now. Most guides are too vague. I built 5 MCP servers. Here is what they do.
+MCP is all over AI now. Most guides are too vague. I built 5 MCP tools. Here is what they do.
 
 ## What is MCP?
 
 **Model Context Protocol (MCP)** is a norm. It lets AI agents use tools. Think of it as USB for AI. Any agent can use any tool.
 
-Before MCP, each link was custom. Now you write one server. Any agent can plug in.
+Before MCP, you wrote custom links. Now you write one node. Any agent can plug in.
 
 ## How It Works
 
-The setup is simple:
+The setup is easy:
 
 ```
 AI Agent  ←→  MCP Client  ←→  MCP Server  ←→  Outside Service
-(hermes)      (built-in)       (your code)     (GitHub, APIs, etc.)
+(hermes)      (core)           (your code)     (GitHub, APIs, etc.)
 ```
 
-1. The agent starts. It finds servers from a config file.
+1. The agent boots. It finds nodes from a config file.
 2. Each server lists its tools. It gives a name. It adds a note. It sets rules.
 3. The agent calls a tool with JSON.
 4. The server runs the task. It sends back JSON.
 
-Talk runs over JSON-RPC. It uses stdin/stdout or HTTP.
+Talk runs over JSON RPC. It uses pipes or HTTP.
 
 ## My 5 MCP Servers
 
@@ -47,23 +47,23 @@ async def list_tools():
     ]
 ```
 
-This wraps my own Firecrawl. The agent can scrape any URL. It turns the page into clean markdown. It is great for study.
+This wraps my own Firecrawl. The agent can scrape any URL. It turns the page into clean markdown. Great for study.
 
 ### 2. Homelab Board — Infra Checks
 
-This server has four tools. It checks health. It lists boxes. It reads stats. It shows net info. It runs shell cmds. No extra tools are needed.
+This server has four tools. It checks that health is fine. It lists each check. It reads stats. It shows net info. It runs shell cmds. No extras needed.
 
 ### 3. Uptime Kuma — Service Checks
 
-This links to Uptime Kuma. It lists checks. It reads pings. The agent can ask "are all apps up?" It gets a real answer.
+This links Uptime Kuma. It lists each check. It reads pings. The agent can ask: are all apps up? It gets a real reply.
 
 ### 4. GitHub — Repo Tools
 
-This uses the main `@modelcontextprotocol/server-github` pkg. It has 18+ tools. It covers issues, PRs, code, and search. The agent gets full GitHub access.
+This uses the main GitHub node. It has 18+ tools. It covers bugs, PRs, code, and search tasks. The agent gets full GitHub reach.
 
 ### 5. n8n — Flow Tools
 
-This wraps the n8n REST API. It lists flows. It checks runs. It pulls details. The agent can start and watch flows.
+This wraps the n8n API. It lists flows. It checks runs. It pulls facts. The agent can start and watch flows.
 
 ## The Config
 
@@ -83,22 +83,22 @@ mcp_servers:
       GITHUB_PERSONAL_ACCESS_TOKEN: "ghp_..."
 ```
 
-Each server is a child proc. The agent spawns it. It finds the tools. It keeps the link open.
+Each node is a child proc. The agent spawns it. It finds the tools. It keeps the link open.
 
 ## Why This Matters
 
-MCP turns agents from chatbots into ops tools. My agent can now:
+MCP turns agents from bots into ops tools. My agent can now:
 
 - Spot a dead app. It can fix it.
 - Scrape a paper. It can sum it up.
 - Open a GitHub issue. It can do this from a bug.
 - Start an n8n flow. It can report back.
 
-All of this works via plain words. You do not switch tools by hand.
+All this works via plain words. You do not switch tools by hand.
 
 ## Build Your Own
 
-A basic server takes ~50 lines of py:
+A basic server needs ~50 lines:
 
 ```bash
 pip install mcp httpx
@@ -129,14 +129,14 @@ import asyncio
 asyncio.run(main())
 ```
 
-That is a live server. Add HTTP calls. Add DB reads. Add shell cmds. Make it do real work.
+That is a live node. Add HTTP calls. Add DB reads. Add shell cmds. Make it do real work.
 
 ## What's Next
 
-- MCP Apps: small UI apps inside GPT and Claude.
-- Remote MCP servers that talk over HTTP.
-- Agents talking to other agents via MCP.
+- MCP Apps. Small UI apps inside both GPT and Claude tools.
+- Remote MCP nodes that talk over HTTP.
+- Agents talk to other agents via MCP.
 
 ---
 
-*MCP is the std that will make AI agents truly handy. If you build with AI, learn it now.*
+*MCP is the std that makes AI agents truly handy. If you build with AI, learn it now.*
