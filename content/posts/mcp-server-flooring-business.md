@@ -8,18 +8,20 @@ summary: "I built an MCP server that lets customers get instant flooring estimat
 ShowToc: true
 ---
 
-Most MCP guides make a "hello world" tool. I made one for a real floor shop. The owner gets the same questions daily. He needed fast answers. He wanted to book jobs too.
+Most MCP guides make a "hello world" tool. I made one for a real floor shop. The owner hears the same things daily. He needs fast answers. He wants to book jobs too.
 
 ## The Problem
 
-KR Flooring hears the same questions every day:
+KR Flooring hears the same things each day:
 - How much will my new floor cost?
 - What's the difference between LVP and hardwood?
 - Can I book a free estimate?
 
-An MCP server lets ChatGPT answer with live data. It pulls real prices. It shows open slots. It shares booking links.
+An MCP server lets ChatGPT answer with live data. It pulls real prices. It shows open slots. It gives booking links.
 
 ## The Architecture
+
+The flow is simple. A customer asks ChatGPT. ChatGPT talks to the MCP server. The server lives on Cloudflare Workers.
 
 ```
 Customer → ChatGPT → MCP Server → Response
@@ -27,15 +29,13 @@ Customer → ChatGPT → MCP Server → Response
               Cloudflare Workers (free tier)
 ```
 
-- **4 tools:** estimate, pricing, FAQ, and booking
-- **3 widgets:** cost calc, booking form, price list
-- **Hosted on Cloudflare Workers** — free, fast, and zero upkeep
+The server has 4 tools. They are estimate, pricing, FAQ, and booking. It has 3 widgets. They are cost calc, booking form, and price list. It runs on Cloudflare Workers. That is free, fast, and needs zero upkeep.
 
 ## The Tools
 
 ### estimate
 
-Tell it the room size and floor type. It gives a full quote. Parts and labor included.
+Tell it the room size. Tell it the floor type. It gives a full quote. Parts and labor are in it.
 
 ### pricing
 
@@ -51,10 +51,10 @@ Sends a link to book a free in-home visit.
 
 ## Deployment
 
-Cloudflare Workers is free. No card needed. No trial. You get 100k requests per day.
+Cloudflare Workers is free. No card needed. No trial. You get 100k hits a day.
 
 ```bash
-# Install Wrangler CLI
+# Get Wrangler CLI
 npm install -g wrangler
 
 # Deploy
@@ -63,7 +63,7 @@ wrangler deploy
 
 The MCP endpoint: `https://kr-flooring-mcp.xcaushlari.workers.dev/mcp`
 
-ChatGPT hits this URL on its own. A customer asks a question. The MCP server replies with real prices and facts.
+ChatGPT hits this URL alone. A user asks a question. The server replies with real prices. It replies with facts.
 
 ## What I Learned
 
@@ -71,14 +71,14 @@ ChatGPT hits this URL on its own. A customer asks a question. The MCP server rep
 
 2. **Cloudflare Workers is a hidden gem.** It's free, fast, and global. Great for APIs.
 
-3. **The MCP scene is booming.** ChatGPT, Claude, and Cursor all use it. Building servers now feels like making apps when the App Store first dropped.
+3. **The MCP scene is booming.** ChatGPT, Claude, and Cursor all use it. Making servers now feels like making apps when the App Store first came out.
 
 ## What's Next
 
-- Add Stripe for on-site payments
-- Build MCP servers for other local shops
-- Make a template so anyone can deploy one in minutes
+- Add Stripe for on-site payments.
+- Build MCP servers for other local shops.
+- Make a template so anyone can deploy one fast.
 
 ---
 
-*MCP servers are the next app store. If you can write a Python script, you can build one.*
+*MCP servers are the next app store. If you can write Python code, you can build one.*
