@@ -8,7 +8,7 @@ summary: "How I built a production-grade homelab on a used Dell OptiPlex 7090 SF
 ShowToc: true
 ---
 
-Most homelab stories start with big racks. Mine starts with a used Dell PC I bought cheap. Here is how it became the brain of my setup.
+Most homelab tales start with big racks. Mine starts with a used Dell PC. I got it cheap. Here is how it became the brain of my setup.
 
 ## The Setup
 
@@ -18,14 +18,15 @@ Most homelab stories start with big racks. Mine starts with a used Dell PC I bou
 - 465GB NVMe SSD
 - Fedora Server 43
 
-This small box runs it all. 24/7. Quiet. Low power use.
+This small box runs it all. It is on 24/7. It is quiet. It uses little power.
 
 ## What's Running
 
 ### Hermes Agent
+
 An AI agent runs the lab. It uses custom MCP servers. They give it direct access to:
 
-- **Uptime Kuma** — checks the health of all services
+- **Uptime Kuma** — checks all services
 - **Homelab dashboard** — CPU, RAM, disk, net status
 - **Firecrawl** — web scrapes for research
 - **GitHub** — full repo control from the terminal
@@ -45,13 +46,13 @@ It all runs in Podman (rootless where possible):
 
 ### Tailscale Mesh VPN
 
-Both nodes connect via Tailscale. No port forwarding on the router. No open services. You can reach all apps via the tailnet from anywhere.
+Both nodes connect via Tailscale. No port forwarding on the router. No open services. Reach all apps via the tailnet from anywhere.
 
 ## DNS Filtering Without the Pain
 
-AdGuard Home runs as a keen guard. It blocks only threats — trackers, malware, and phishing. Not harsh ad blocking. The rule is simple: guard, do not break.
+AdGuard Home runs as a guard. It blocks only threats. It stops trackers, malware, and phishing. It does not block all ads. The rule is simple: guard, do not break.
 
-**Pitfall I hit:** On Fedora, `systemd-resolved` holds port 53. You must stop AND mask it. That has the monitor and varlink sockets:
+**Pitfall I hit:** On Fedora, `systemd-resolved` holds port 53. You must stop AND mask it. This also stops the monitor and varlink sockets:
 
 ```bash
 sudo systemctl stop systemd-resolved systemd-resolved-monitor.socket systemd-resolved-varlink.socket
@@ -64,7 +65,7 @@ Then swap the `/etc/resolv.conf` symlink for a fixed file. Point it to `127.0.0.
 
 This is what sets the lab apart. Hermes Agent is not just a bot. It has saved data. It uses custom tools. It can run real system tasks.
 
-Each MCP server is a Python script. It shows its tools via the Model Context Protocol. The agent finds them at boot. It calls them like any tool.
+Each MCP server is a Python script. It shares its tools via the Model Context Protocol. The agent finds them at boot. It calls them like any tool.
 
 ```
 mcp_homelab_homelab_status   → health check all services
