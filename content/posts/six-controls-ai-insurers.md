@@ -8,7 +8,7 @@ summary: "Every company deploying AI agents is uninsured. Standard policies now 
 ShowToc: true
 ---
 
-Every company using AI agents is currently uninsured. Standard policies now exclude AI damage. This includes model hallucinations, self-driven actions, PII leaks, and deepfake fraud. The AI insurance market will grow from $40M to $5B by 2032.
+Every company using AI agents is now uninsured. Standard policies exclude AI damage. This covers model hallucinations, self-driven actions, PII leaks, and deepfake fraud. The AI insurance market will grow from $40M to $5B by 2032.
 
 Insurers don't just write checks. They need controls first. Fire insurance needed sprinklers. Auto insurance needed seatbelts. Cyber insurance built the security industry. **AI insurance will create the AI safety industry.**
 
@@ -18,9 +18,9 @@ Here are the six controls every AI insurer will demand. I also list the products
 
 ## Control 1: Immutable Agent Audit Trail
 
-**What insurers need:** When a claim comes in, the insurer must verify what happened. Every agent action, tool call, LLM response, and human escalation must be logged. The log must be append-only and tamper-proof.
+**What insurers need:** When a claim comes in, they must prove what happened. Every agent action, tool call, LLM response, and human escalation must be logged. The log must be append-only. No one can change it later.
 
-**What to build:** An append-only event log for agent sessions. At minimum, use a JSON lines file with timestamps, agent ID, action type, and input/output hashes. A better approach is content-addressed storage such as IPFS or S3 with SHA256 verification. The best approach is a crypto chain so no entry can be changed later.
+**What to build:** An append-only event log for agent sessions. At a minimum, use a JSON lines file. Include timestamps, agent ID, action type, and input/output hashes. A better approach is content-addressed storage such as IPFS or S3 with SHA256 verification. The best approach is a crypto chain. That way no entry can be changed later.
 
 **Enterprise precedent:** Trigger.dev's context logs for durable agents. Temporal's event sourcing. The durable execution pattern.
 
@@ -28,9 +28,9 @@ Here are the six controls every AI insurer will demand. I also list the products
 
 ## Control 2: Multi-Channel Agent Monitoring
 
-**What insurers need:** No single health check is enough. Agents must be watched across many independent signals. These include HTTP response codes, output quality scores, error rate trends, token use, latency, and context coherence. If any two channels agree the agent is failing, it must escalate.
+**What insurers need:** No single health check is enough. Agents must be watched across many separate signals. These include HTTP response codes, output quality scores, error rate trends, token use, latency, and context coherence. If any two channels agree the agent is failing, it must escalate.
 
-**What to build:** A monitoring system with 4+ independent detection channels. Each channel should produce a confidence score. Combine these scores to judge agent health. When confidence drops below a threshold, trigger an escalation.
+**What to build:** A monitoring system with 4+ separate detection channels. Each channel should produce a confidence score. Combine these scores to judge agent health. When confidence drops below a threshold, trigger an escalation.
 
 **Enterprise precedent:** Datadog Bits AI monitors agents across many dimensions. Uber's Minions use multi-signal health checks. This is the "quorum sensing" pattern from biology applied to infra.
 
@@ -38,7 +38,7 @@ Here are the six controls every AI insurer will demand. I also list the products
 
 ## Control 3: Pre-Deployment Eval Gates
 
-**What insurers need:** Before an agent goes to production, it must pass a set of tests. These include known failure cases, edge cases, adversarial inputs, and speed benchmarks. Results must be reproducible and versioned.
+**What insurers need:** Before an agent goes to production, it must pass a set of tests. These include known failure cases, edge cases, adversarial inputs, and speed benchmarks. Results must be repeatable and versioned.
 
 **What to build:** An eval harness that runs agents against a golden dataset. Track pass and fail per case. Gate deployment: if the eval score drops below threshold, block the release.
 
@@ -50,7 +50,7 @@ Here are the six controls every AI insurer will demand. I also list the products
 
 **What insurers need:** Agents must stay within hard bounds. These include a max spend per task, limited tool access, required human approval for high-risk actions, and blocked actions. For example, no deleting production data. No transferring funds without confirmation.
 
-**What to build:** A policy engine that catches agent tool calls. Before execution, check against policy rules. If a rule is broken, block the action and escalate. Policies must be version-controlled and auditable.
+**What to build:** A policy engine that catches agent tool calls. Before execution, check against policy rules. If a rule is broken, block the action and escalate. Policies must be versioned and auditable.
 
 **Enterprise precedent:** Bloomberg's "interceptors" at the protocol level. Anthropic's constitutional classifiers. This is the Treg judge pattern — evaluate, approve or block, and log the decision.
 
@@ -60,7 +60,7 @@ Here are the six controls every AI insurer will demand. I also list the products
 
 **What insurers need:** When agent confidence drops, or a guardrail triggers, or the agent faces a new case, it must escalate to a human. The human must get full context. The human's choice becomes part of the audit trail.
 
-**What to build:** An escalation system with four parts. First, set confidence thresholds per action type. Second, capture a context snapshot at the time of escalation. Third, log the human's choice. Fourth, create a feedback loop so the human's choice trains the agent for next time.
+**What to build:** An escalation system with four parts. First, set confidence thresholds per action type. Second, capture a context snapshot at the time of escalation. Third, log the human's choice. Fourth, create a feedback loop. The human's choice trains the agent for next time.
 
 **Enterprise precedent:** Every production AI system already does this. The difference is formalizing it for insurance compliance. The escalation path must be auditable, not just operational.
 
@@ -68,17 +68,17 @@ Here are the six controls every AI insurer will demand. I also list the products
 
 ## Control 6: Continuous Compliance Scanning
 
-**What insurers need:** Not a one-time cert. Ongoing scanning that detects when agent behavior drifts from baseline. Does output quality drop? Does the model start hallucinating more? Do token costs spike? Does context coherence fall? If so, alert and investigate.
+**What insurers need:** Not a one-time cert. Ongoing scanning detects when agent behavior drifts from baseline. Does output quality drop? Does the model start hallucinating more? Do token costs spike? Does context coherence fall? If so, alert and investigate.
 
-**What to build:** A drift detector that sets baseline behavior. Track average output quality, error rate, latency, and cost per task. Alert when any metric deviates by more than 2 standard deviations. It must run always, not just at deploy time.
+**What to build:** A drift detector that sets baseline behavior. Track average output quality, error rate, latency, and cost per task. Alert when any metric strays by more than 2 standard deviations. It must run always, not just at deploy time.
 
-**Enterprise precedent:** The context degradation detection problem. Arise's Alex agent uses long-session evals. Claude Code uses truncation plus compression. Everyone is solving this.
+**Enterprise precedent:** The context drop detection problem. Arise's Alex agent uses long-session evals. Claude Code uses truncation plus compression. Everyone is solving this.
 
 ---
 
 ## The Career Play
 
-Nobody is writing about this mix of AI and insurance. Every AI firm will need these controls within 2-3 years as insurers require them. The firms that build these products NOW define the standards.
+Nobody is writing about this mix of AI and insurance. Every AI firm will need these controls within 2-3 years. Insurers will require them. The firms that build these products NOW define the standards.
 
 You don't need to build all six. Build ONE well. Multi-channel monitoring (Control 2) plus guardrail enforcement (Control 4) plus escalation pipeline (Control 5) can be a single product. The immutable audit trail (Control 1) is a standalone SaaS. The eval gate (Control 3) is a dev tool.
 
@@ -86,4 +86,4 @@ This market is $40M today. It'll be $5B in six years. The standards are being wr
 
 ---
 
-*This analysis is based on the Moonshots Podcast (May 2026). Insurers including Berkshire Hathaway and Chubb were confirmed to be removing AI coverage from standard policies. The approval rate for exclusion requests was 80%. The six controls framework is my synthesis of insurance industry patterns (fire, auto, cyber) applied to AI. I build AI infra on a homelab running 13 containers with custom MCP servers. These patterns are tested at micro-scale before they become enterprise requirements.*
+*This analysis is based on the Moonshots Podcast (May 2026). Insurers including Berkshire Hathaway and Chubb were confirmed to be removing AI coverage from standard policies. The approval rate for exclusion requests was 80%. The six controls framework is my mix of insurance industry patterns (fire, auto, cyber) applied to AI. I build AI infra on a homelab running 13 containers with custom MCP servers. These patterns are tested at micro-scale before they become enterprise requirements.*
