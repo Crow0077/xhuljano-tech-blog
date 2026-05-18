@@ -21,7 +21,7 @@ Before MCP, you wrote custom links. Now you write one node. Any agent can plug i
 The setup is easy:
 
 ```
-AI Agent  ←→  MCP Client  ←→  MCP Server  ←→  Outside Service
+AI Agent  ←→  MCP Client  ←→  MCP Server  ←→  Other App
 (hermes)      (core)           (your code)     (GitHub, APIs, etc.)
 ```
 
@@ -30,11 +30,11 @@ AI Agent  ←→  MCP Client  ←→  MCP Server  ←→  Outside Service
 3. The agent calls a tool with JSON.
 4. The server runs the task. It sends back JSON.
 
-Talk runs over JSON RPC. It uses pipes or HTTP.
+Talk is JSON RPC. It uses pipes or HTTP.
 
-## My 5 MCP Servers
+## My 5 MCP Nodes
 
-### 1. Firecrawl — Web Scrapes
+### 1. Firecrawl — Web Pulls
 
 ```python
 @server.list_tools()
@@ -47,13 +47,13 @@ async def list_tools():
     ]
 ```
 
-This wraps my own Firecrawl. The agent can scrape any URL. It turns the page into clean markdown. Great for study.
+This wraps my own Firecrawl. The agent can scrape any URL. It turns the page into clean text. Great for study.
 
 ### 2. Homelab Board — Infra Checks
 
-This server has four tools. It checks that health is fine. It lists each check. It reads stats. It shows net info. It runs shell cmds. No extras needed.
+This server has four tools. It checks health. It lists each check. It reads stats. It shows net info. It runs shell cmds. No extras.
 
-### 3. Uptime Kuma — Service Checks
+### 3. Uptime Kuma — App Checks
 
 This links Uptime Kuma. It lists each check. It reads pings. The agent can ask: are all apps up? It gets a real reply.
 
@@ -85,7 +85,7 @@ mcp_servers:
 
 Each node is a child proc. The agent spawns it. It finds the tools. It keeps the link open.
 
-## Why This Matters
+## Why It Helps
 
 MCP turns agents from bots into ops tools. My agent can now:
 
@@ -133,7 +133,7 @@ That is a live node. Add HTTP calls. Add DB reads. Add shell cmds. Make it do re
 
 ## What's Next
 
-- MCP Apps. Small UI apps inside both GPT and Claude tools.
+- MCP Apps. Small UI apps in GPT and Claude.
 - Remote MCP nodes that talk over HTTP.
 - Agents talk to other agents via MCP.
 
