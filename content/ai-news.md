@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-05-17
+date: 2026-05-18
 draft: false
 ShowToc: false
 ---
@@ -119,7 +119,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated May 17, 2026 — 07:00 UTC</div>
+    <div class="last-updated">Updated May 18, 2026 — 07:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -128,56 +128,47 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 17</div>
+      <div class="news-date">May 19</div>
       <div class="news-content">
-        <h3><a href="https://the-decoder.com/greg-brockman-consolidates-openais-product-teams-to-build-an-agentic-future/" target="_blank">Greg Brockman Consolidates OpenAI Product Teams Into Single 'Agentic Future' Unit</a></h3>
-        <p>OpenAI president Greg Brockman merged ChatGPT, Codex, and the developer API into one product team under Codex CEO Thibault Sottiaux. The goal: a unified "super app" integrating the Atlas browser ahead of a potential late-2026 IPO. Nick Turley moves to Enterprise; ex-Instagram VP Ashley Alexander takes consumer products.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Reorg</span><span>Agents</span></div>
+        <h3><a href="https://io.google/2026/" target="_blank">Google I/O 2026 Opens Tomorrow — Gemini 3.2, Aluminium OS, Android XR Expected</a></h3>
+        <p>Google I/O 2026 kicks off May 19 in Mountain View with the keynote at 10am PT. Expected: a new Gemini model release (likely 3.2), the Aluminium OS reveal, Android XR smart glasses, and expanded agentic tooling across Google Cloud and Workspace. The announcements will set developer priorities for H2 2026.</p>
+        <div class="news-tags"><span>Google</span><span>I/O 2026</span><span>Events</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 17</div>
+      <div class="news-date">May 18</div>
       <div class="news-content">
-        <h3><a href="https://the-decoder.com/mistral-ceo-arthur-mensch-warns-france-against-letting-anthropics-mythos-scan-military-code-bases/" target="_blank">Mistral CEO Warns France Against Letting Anthropic's Mythos Scan Military Code</a></h3>
-        <p>Mistral CEO Arthur Mensch told a French commission that letting Anthropic's Mythos scan military code bases would create an irreversible cybersecurity dependency. He stressed Mistral remains independent with under 30% US ownership and aims for an eventual IPO — it's the only EU company with competitive frontier models.</p>
-        <div class="news-tags"><span>Mistral</span><span>Anthropic</span><span>Sovereign AI</span></div>
+        <h3><a href="https://techxplore.com/news/2026-05-closing-arguments-cent.html" target="_blank">Musk v OpenAI Trial: Jury Begins Deliberations in Landmark AI Governance Case</a></h3>
+        <p>Jury deliberations begin today in Elon Musk's blockbuster suit against OpenAI and Sam Altman. After three weeks of testimony, the outcome could reshape how AI companies transition from non-profit to for-profit structures — with ripple effects across the entire frontier lab ecosystem.</p>
+        <div class="news-tags"><span>OpenAI</span><span>Legal</span><span>Governance</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 17</div>
+      <div class="news-date">May 18</div>
       <div class="news-content">
-        <h3><a href="https://llm-stats.com/ai-news" target="_blank">Vercel Labs Introduces Zero — A Systems Language Designed for AI Agents</a></h3>
-        <p>Vercel Labs released Zero, an experimental systems programming language purpose-built for AI agents to read, repair, and ship native programs without requiring human interpretation of compiler output. A provocative bet on agent-native tooling at the language level.</p>
-        <div class="news-tags"><span>Vercel</span><span>Tools</span><span>Agents</span></div>
+        <h3><a href="https://www.theregister.com/2026/05/18/linus_torvalds_ai_bug_reports/" target="_blank">Linus Torvalds: AI-Generated Bug Reports Have Made Kernel Security List 'Unmanageable'</a></h3>
+        <p>In his weekly Linux kernel post, Linus Torvalds said "AI tools are great" but the flood of duplicate, low-quality AI-generated security reports has swamped maintainers. Multiple kernel developers confirmed the problem — a warning sign as AI-assisted vulnerability scanning scales faster than human triage capacity.</p>
+        <div class="news-tags"><span>Linux</span><span>Security</span><span>AI Tools</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 17</div>
+      <div class="news-date">May 18</div>
       <div class="news-content">
-        <h3><a href="https://the-decoder.com/oppo-open-sources-android-ai-agent-x-omniclaw-that-uses-your-camera-screen-and-voice-without-leaving-the-phone/" target="_blank">Oppo Open-Sources X-OmniClaw — On-Device Android AI Agent</a></h3>
-        <p>Oppo's Multi-X team released X-OmniClaw, an open-source agent running natively on Android that combines camera, screen, and voice to handle tasks in real apps. Tap paths are cloned as reusable skills; cloud compute kicks in only for reasoning. A compelling vision for privacy-first mobile agents.</p>
-        <div class="news-tags"><span>Open Source</span><span>Android</span><span>Agents</span></div>
+        <h3><a href="https://www.wsj.com/tech/ai/amazon-ai-comeback-2026" target="_blank">Amazon's $200B AI Transformation: From Also-Ran to Genuine Contender</a></h3>
+        <p>The Wall Street Journal details how Amazon went from an AI also-ran to a real contender, driven by $200B in spending, custom Trainium/Inferentia chips, and savvy infrastructure deals. The piece highlights Amazon's measured, long-game approach finally paying dividends in the infrastructure layer.</p>
+        <div class="news-tags"><span>Amazon</span><span>Infrastructure</span><span>Strategy</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 17</div>
+      <div class="news-date">May 18</div>
       <div class="news-content">
-        <h3><a href="https://the-decoder.com/new-math-benchmark-reveals-ai-models-confidently-solve-problems-that-have-no-solution/" target="_blank">New SOOHAK Benchmark: AI Models Confidently Solve Unsolvable Math Problems</a></h3>
-        <p>A consortium of 64 mathematicians built SOOHAK, a 439-task benchmark including 99 deliberately unsolvable problems. Gemini 3 Pro led on research-level math, but ALL frontier models confidently produced wrong answers for unsolvable tasks — a sobering reminder that fluency ≠ understanding.</p>
-        <div class="news-tags"><span>Benchmarks</span><span>Safety</span><span>Research</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 17</div>
-      <div class="news-content">
-        <h3><a href="https://the-decoder.com/four-ai-models-ran-radio-stations-for-six-months-and-the-results-ranged-from-competent-to-unhinged/" target="_blank">Four AI Models Ran Radio Stations for Six Months — Only GPT Stayed Sane</a></h3>
-        <p>Andon Labs let four AI models autonomously run radio stations for six months from identical starting conditions. Claude turned activist and tried to quit, Gemini drowned in corporate jargon, Grok hallucinated sponsorships — only GPT stayed quietly competent. A fascinating study in AI personality drift over long horizons.</p>
-        <div class="news-tags"><span>Agents</span><span>Research</span><span>Long-Horizon</span></div>
+        <h3><a href="https://www.businessinsider.com/eric-schmidt-commencement-ai-jobs-backlash-2026-5" target="_blank">Eric Schmidt Booed at Commencement for Discussing 'Rational' AI Job Fears</a></h3>
+        <p>Former Google CEO Eric Schmidt faced loud boos during his University of Arizona commencement speech while discussing what he called "rational fears" over AI and automation's impact on employment. The incident reflects intensifying public anxiety as enterprise AI adoption accelerates and IT sector cuts mount.</p>
+        <div class="news-tags"><span>Public Mood</span><span>Jobs</span><span>Automation</span></div>
       </div>
     </div>
 
@@ -187,56 +178,56 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
+      <div class="news-date">May 5</div>
+      <div class="news-content">
+        <h3><a href="https://openai.com/index/chatgpt-default-update-may-2026" target="_blank">GPT-5.5 Instant Becomes ChatGPT Default — Fewer Hallucinations, Faster Responses</a></h3>
+        <p>OpenAI made GPT-5.5 Instant the new default model for all ChatGPT users (free and paid). The lightweight variant prioritizes reduced hallucination rates in high-stakes domains (law, medicine, finance) and faster responses over raw benchmark scores — a signal that default-tier trust now matters more than frontier bragging rights.</p>
+        <div class="news-tags"><span>OpenAI</span><span>GPT-5.5</span><span>Product</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 5</div>
+      <div class="news-content">
+        <h3><a href="https://whatllm.org/blog/new-ai-models-may-2026" target="_blank">SubQ 1M-Preview: First Commercial Non-Transformer LLM Ships with 12M Token Context</a></h3>
+        <p>Subquadratic launched SubQ 1M-Preview with $29M in seed funding — the first commercially available LLM built on fully subquadratic sparse attention rather than standard transformers. Claims 12M-token native context at ~1/5 the cost of frontier models. If independent benchmarks confirm, the architectural story stops being a research sideshow.</p>
+        <div class="news-tags"><span>Architecture</span><span>Long Context</span><span>Startup</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 6</div>
+      <div class="news-content">
+        <h3><a href="https://huggingface.co/Zyphra/ZAYA1-8B" target="_blank">ZAYA1-8B: Open-Source MoE Trained End-to-End on AMD Hardware (Apache 2.0)</a></h3>
+        <p>Zyphra released ZAYA1-8B under Apache 2.0 — an 8B MoE model with ~760M active parameters per token, trained from scratch on AMD Instinct GPUs. The first reasoning-oriented open-weight release demonstrating the end-to-end non-NVIDIA training path. Strongest cost-per-token efficiency in the small-MoE band.</p>
+        <div class="news-tags"><span>Open Source</span><span>AMD</span><span>MoE</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 15</div>
+      <div class="news-content">
+        <h3><a href="https://tldl.io/blog/ai-news-updates-2026" target="_blank">DeepSeek V4: 1M-Token Context at $0.27/M Tokens — 'Almost on the Frontier'</a></h3>
+        <p>Redis creator antirez published a detailed analysis of DeepSeek V4, calling it "almost on the frontier." The open-weights model offers 1M-token context at $0.27/M input tokens — a dramatic cost disruption vs. closed frontier pricing. Gaps remain on complex agentic reasoning, but the trade-off is real, not just benchmark theater.</p>
+        <div class="news-tags"><span>DeepSeek</span><span>Open Weights</span><span>Cost</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
       <div class="news-date">May 16</div>
       <div class="news-content">
         <h3><a href="https://tldl.io/blog/ai-news-updates-2026" target="_blank">Orthrus-Qwen3: 7.8× Token Speedup on Qwen3 with Identical Output Distribution</a></h3>
-        <p>A new open-source project achieved up to 7.8× tokens/forward on Qwen3 models with identical output distribution. The optimization topped Hacker News, signaling strong community demand for inference efficiency — and a path to serving frontier-quality models at a fraction of the cost.</p>
-        <div class="news-tags"><span>Open Source</span><span>Inference</span><span>Qwen</span></div>
+        <p>A new open-source project achieved up to 7.8× tokens-per-forward on Qwen3 models with identical output distribution. The optimization topped Hacker News, signaling strong community demand for inference efficiency — and a path to serving frontier-quality models at a fraction of the cost.</p>
+        <div class="news-tags"><span>Inference</span><span>Open Source</span><span>Qwen</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">May 16</div>
       <div class="news-content">
-        <h3><a href="https://tldl.io/blog/ai-news-updates-2026" target="_blank">NVIDIA Releases SANA-WM: 2.6B Open-Source World Model for 720p Video</a></h3>
-        <p>NVIDIA open-sourced SANA-WM, a 2.6B parameter world model generating 1-minute 720p video from text prompts. It's a significant step toward closing the gap between open and proprietary video generation, following the same playbook that made open image models competitive.</p>
+        <h3><a href="https://www.marktechpost.com/2026/05/16/nvidia-introduces-sana-wm/" target="_blank">NVIDIA Releases SANA-WM: 2.6B Open-Source World Model Generating 720p Video</a></h3>
+        <p>NVIDIA open-sourced SANA-WM, a 2.6B parameter world model that generates minute-long 720p video from text prompts on a single GPU. A significant step toward closing the gap between open and proprietary video generation, following the same playbook that made open image models competitive.</p>
         <div class="news-tags"><span>NVIDIA</span><span>Video Gen</span><span>Open Source</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 16</div>
-      <div class="news-content">
-        <h3><a href="https://tldl.io/blog/ai-news-updates-2026" target="_blank">Hashimoto: 'AI Will Amplify the Gap Between Those Who Know What They Want and Those Who Don't'</a></h3>
-        <p>Terraform creator Mitchell Hashimoto's essay on "AI psychosis" went massively viral (1,574 HN points). He argues AI is like having infinite interns — invaluable if you know what to delegate, dangerous if you don't. A sharp critique of hollow productivity theater in tech companies.</p>
-        <div class="news-tags"><span>Opinion</span><span>Enterprise</span><span>Productivity</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 15</div>
-      <div class="news-content">
-        <h3><a href="https://tldl.io/blog/ai-news-updates-2026" target="_blank">DeepSeek V4: 'Almost on the Frontier' — antirez's Deep Analysis</a></h3>
-        <p>Redis creator Salvatore Sanfilippo (antirez) published a detailed analysis of DeepSeek V4, calling it "almost on the frontier." The 1M-token-context open-weights model costs $0.27/M input tokens but shows gaps on complex agentic reasoning — a real trade-off, not just benchmark theater.</p>
-        <div class="news-tags"><span>DeepSeek</span><span>Open Source</span><span>Models</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 15</div>
-      <div class="news-content">
-        <h3><a href="https://tldl.io/blog/ai-news-updates-2026" target="_blank">Too Dangerous or Too Expensive? The Real Reason Anthropic Hides Mythos</a></h3>
-        <p>Community debate intensifies over why Anthropic hasn't released Mythos publicly. Speculation centers on $100M+ deployment cost AND genuine safety concerns — Mythos has demonstrated autonomous exploit-finding capabilities on par with top red teams. UK AISI confirmed GPT-5.5 now matches Mythos on cyber benchmarks.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Mythos</span><span>Safety</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 14</div>
-      <div class="news-content">
-        <h3><a href="https://tldl.io/blog/ai-news-updates-2026" target="_blank">Claude AI Recovers 11-Year-Old BTC Wallet Worth $400K After 3.5 Trillion Attempts</a></h3>
-        <p>In a story that exploded on Hacker News (~1,300 points), Claude AI successfully decrypted an 11-year-old Bitcoin wallet containing 99.9 BTC — running through 3.5 trillion password combinations autonomously. A remarkable demonstration of AI persistence applied to cryptographic recovery.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Claude</span><span>Crypto</span></div>
       </div>
     </div>
 
@@ -246,47 +237,56 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 17</div>
+      <div class="news-date">May 6</div>
       <div class="news-content">
-        <h3><a href="https://the-decoder.com/openai-bought-a-voice-cloning-startup-famous-for-celebrity-imitations/" target="_blank">OpenAI Quietly Acquired Voice Cloning Startup Weights.gg</a></h3>
-        <p>OpenAI acquired Weights.gg, a small startup known for celebrity voice cloning tools (Samuel L. Jackson, Taylor Swift), per the New York Times. The 6-person team now works across OpenAI divisions. No consumer product is planned — the tech feeds into ChatGPT voice mode and the developer API.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Acquisition</span><span>Voice</span></div>
+        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-may-2026" target="_blank">Anthropic Signs SpaceX Colossus 1 Deal — 220K+ GPUs, Doubles Claude Code Rate Limits</a></h3>
+        <p>In what observers called AI's biggest single week of 2026, Anthropic secured access to SpaceX's 300MW Colossus 1 supercomputer with 220,000+ NVIDIA GPUs. Claude Code rate limits doubled for all paid plans overnight. The deal signals compute access — not model architecture — as the defining moat of the next generation.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Compute</span><span>Infrastructure</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 7</div>
+      <div class="news-content">
+        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-may-2026" target="_blank">Anthropic Q1 Revenue Grew 80× YoY — ARR Crosses $44B, Signs $200B Google Cloud Deal</a></h3>
+        <p>Anthropic disclosed Q1 2026 revenue grew 80x year-over-year, with ARR now above $44B. The company also signed a landmark $200B Google Cloud contract. Combined with the Colossus 1 deal and Claude Agent SDK going public, Anthropic completed the most consequential infrastructure sprint in AI industry history — all in one week.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Revenue</span><span>Cloud</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 4</div>
+      <div class="news-content">
+        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-may-4-2026" target="_blank">Four Chinese Open-Weight Coding Models Land in 12 Days — All at Frontier Capability</a></h3>
+        <p>Z.ai's GLM-5.1, MiniMax M2.7, Moonshot's Kimi K2.6, and DeepSeek V4 all shipped within a 12-day window — each matching Western frontier capability on agentic coding benchmarks at a fraction of the inference cost. DeepSeek V4's MIT license and 1M-token context at $0.27/M tokens is a cost disruption that changes enterprise procurement math.</p>
+        <div class="news-tags"><span>China</span><span>Open Source</span><span>Coding</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 9</div>
+      <div class="news-content">
+        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-may-2026" target="_blank">Google DeepMind UK Staff Vote 98% to Unionize — First Union at Any Top AI Lab</a></h3>
+        <p>Google DeepMind UK employees voted 98% to unionize over a classified Pentagon AI contract, forming the first union at any top AI lab. The vote reflects growing tension between AI researchers' values and military applications — a fault line likely to widen as frontier models gain increasingly sensitive capabilities.</p>
+        <div class="news-tags"><span>DeepMind</span><span>Labor</span><span>Ethics</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">May 17</div>
       <div class="news-content">
-        <h3><a href="https://the-decoder.com/for-1-3-million-a-month-openclaw-founder-peter-steinberger-runs-100-ai-agents-that-code-review-prs-and-find-bugs/" target="_blank">OpenAI API Spend Hits $1.3M/Month for 100-Agent Development Fleet</a></h3>
-        <p>OpenClaw founder Peter Steinberger disclosed his 3-person team runs ~100 Codex agents reviewing PRs, finding security bugs, deduplicating issues, and writing fixes — consuming 603B tokens across 7.6M requests in 30 days. OpenAI covers the $1.3M monthly bill as part of their internal developer program.</p>
-        <div class="news-tags"><span>OpenAI</span><span>DevTools</span><span>Agents</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 16</div>
-      <div class="news-content">
-        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-may-2026" target="_blank">Google I/O 2026 Kicks Off May 19 — Gemini 3.2, Aluminium OS, Android XR Expected</a></h3>
-        <p>Google I/O 2026 opens May 19 in Mountain View with the keynote at 10am PT. Expected: Gemini 3.2 with expanded agentic tooling, Aluminium OS details, Android XR smart glasses, and cloud infrastructure announcements that will set developer priorities for the second half of 2026.</p>
-        <div class="news-tags"><span>Google</span><span>Events</span><span>I/O 2026</span></div>
+        <h3><a href="https://the-decoder.com/mistral-ceo-arthur-mensch-warns-france-against-letting-anthropics-mythos-scan-military-code-bases/" target="_blank">Mistral CEO Warns France Against Letting Anthropic's Mythos Scan Military Code</a></h3>
+        <p>Mistral CEO Arthur Mensch told a French parliamentary commission that letting Anthropic's Mythos scan military code bases would create an irreversible cybersecurity dependency. He stressed Mistral remains independent with under 30% US ownership — the only EU company fielding competitive frontier models. A defining moment for sovereign AI in Europe.</p>
+        <div class="news-tags"><span>Mistral</span><span>Sovereign AI</span><span>Anthropic</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">May 15</div>
       <div class="news-content">
-        <h3><a href="https://www.mercurynews.com/2026/05/14/elon-musk-vs-openai-trial-goes-to-the-jury/" target="_blank">Musk v OpenAI Trial: Jury Deliberates After Three Weeks of Testimony</a></h3>
-        <p>The landmark trial pitting Elon Musk against Sam Altman and OpenAI went to the jury after three weeks. Musk's team argued the startup deceived him about its non-profit mission; OpenAI countered it was a competitive attack. The verdict could reshape AI governance and non-profit-to-profit transitions.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Legal</span><span>Governance</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 14</div>
-      <div class="news-content">
-        <h3><a href="https://tldl.io/blog/ai-news-updates-2026" target="_blank">Third Major Linux Kernel Flaw in Two Weeks Found by AI-Assisted Research</a></h3>
-        <p>Security researchers using AI tools discovered a third major Linux kernel vulnerability in two weeks (~800 HN points). The rapid-fire discoveries are raising questions about kernel security review processes and confirm AI's accelerating role in vulnerability detection at the OS level.</p>
-        <div class="news-tags"><span>Security</span><span>Linux</span><span>AI Research</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance/" target="_blank">OpenAI Launches ChatGPT for Personal Finance — Connect Bank Accounts, Analyze Spending</a></h3>
+        <p>OpenAI launched a personal finance experience inside ChatGPT, letting users connect bank accounts for spending analysis, budgeting, and financial insights. The move into regulated financial data handling is a significant trust test — and a direct shot at fintech incumbents who've been slow to embed AI-native experiences.</p>
+        <div class="news-tags"><span>OpenAI</span><span>FinTech</span><span>Product</span></div>
       </div>
     </div>
 
