@@ -26,9 +26,9 @@ I'm Xhuljano — a cloud engineering student building real infrastructure with A
 - **OS:** Fedora Linux (Server + Workstation)
 - **Containers:** Podman (rootless), Quadlet, systemd
 - **AI/ML:** Ollama, vLLM, local LLM inference on RTX 4080
-- **Automation:** n8n, cron, systemd timers
+- **Automation:** cron, systemd timers, autonomous agents
 - **Monitoring:** Uptime Kuma, Grafana, Prometheus, Dozzle
-- **Tools:** Hermes Agent, Claude Code, Codex CLI
+- **Tools:** Hermes Agent, Claude Code, Codex CLI, 18 MCP servers
 
 ## Contact
 

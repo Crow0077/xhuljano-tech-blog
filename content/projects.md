@@ -38,10 +38,10 @@ ShowToc: false
       <span class="tag">Streamable HTTP</span>
       <span class="tag">Python</span>
     </div>
-    <p>10 production MCP servers running as standalone systemd daemons on Fedora Server — compliance auditing, incident forensics, self-healing infrastructure, container management, log aggregation, backup orchestration, and cloud exit analysis. 85+ tools. Every server survives reboots and runs independently of any AI agent session.</p>
+    <p>18 production MCP servers running as standalone systemd daemons on Fedora Server — compliance auditing, incident forensics, self-healing infrastructure, container management, log aggregation, backup orchestration, security scanning, and cloud exit analysis. 100+ tools. Every server survives reboots and runs independently of any AI agent session.</p>
     <div class="stat-row">
-      <div class="stat"><div class="num">10</div><div class="lbl">MCP Servers</div></div>
-      <div class="stat"><div class="num">85+</div><div class="lbl">Tools</div></div>
+      <div class="stat"><div class="num">18</div><div class="lbl">MCP Servers</div></div>
+      <div class="stat"><div class="num">100+</div><div class="lbl">Tools</div></div>
       <div class="stat"><div class="num">2</div><div class="lbl">Enterprise Tier</div></div>
       <div class="stat"><div class="num">24/7</div><div class="lbl">Uptime</div></div>
     </div>
@@ -131,31 +131,32 @@ new p5(function(p){
     let wrap=document.getElementById('canvas-command');
     W=wrap.offsetWidth;H=240;
     p.resizeCanvas(W,H);c.parent('canvas-command');
-    let names=['AUDITOR','FORENSICS','IMMUNE','DEPLOY','LOGS','BACKUP','HOMELAB','UPTIME','FIRECRAWL','BULKEXIT'];
-    let cols=[[0,200,255],[255,160,60],[80,220,120],[200,140,255],[255,200,50],[100,200,200],[255,100,150],[120,200,255],[255,180,80],[160,140,255]];
-    let cx=W/2,cy=H/2,r=Math.min(W,H)*0.35;
-    for(let i=0;i<10;i++){
-      let a=(p.TWO_PI/10)*i-p.HALF_PI;
-      nodes.push({x:cx+p.cos(a)*r,y:cy+p.sin(a)*r,col:cols[i],label:names[i],size:14,phase:p.random(p.TWO_PI),conns:[]});
+    let names=['AUDITOR','FORENSICS','IMMUNE','DEPLOY','LOGS','BACKUP','HOMELAB','UPTIME','FIRECRAWL','BULKEXIT','SENTINEL','WATCHDOG','GSD','MINIRAG','AMEM','COMPLIANCE'];
+    let cols=[[0,200,255],[255,160,60],[80,220,120],[200,140,255],[255,200,50],[100,200,200],[255,100,150],[120,200,255],[255,180,80],[160,140,255],[200,100,255],[100,255,180],[255,150,100],[180,200,255],[255,100,200],[80,180,255]];
+    let cx=W/2,cy=H/2,r=Math.min(W,H)*0.38;
+    let nCount=Math.min(names.length, 16);
+    for(let i=0;i<nCount;i++){
+      let a=(p.TWO_PI/nCount)*i-p.HALF_PI;
+      nodes.push({x:cx+p.cos(a)*r,y:cy+p.sin(a)*r,col:cols[i],label:names[i],size:10,phase:p.random(p.TWO_PI),conns:[]});
     }
-    for(let i=0;i<10;i++){nodes[i].conns=[(i+1)%10,(i+3)%10,(i+7)%10];}
-    for(let i=0;i<60;i++){particles.push({src:p.floor(p.random(10)),tgt:p.floor(p.random(10)),t:p.random(1),sp:0.003+p.random()*0.005});}
+    for(let i=0;i<nCount;i++){nodes[i].conns=[(i+1)%nCount,(i+3)%nCount,(i+5)%nCount];}
+    for(let i=0;i<80;i++){particles.push({src:p.floor(p.random(nCount)),tgt:p.floor(p.random(nCount)),t:p.random(1),sp:0.003+p.random()*0.006});}
   };
   p.draw=function(){
     p.background(8,8,16);time+=0.008;
-    for(let n of nodes){for(let ci of n.conns){let t=nodes[ci];p.stroke(30,35,55,25);p.strokeWeight(0.4);p.line(n.x,n.y,t.x,t.y);}}
+    for(let n of nodes){for(let ci of n.conns){let t=nodes[ci];p.stroke(30,35,55,20);p.strokeWeight(0.3);p.line(n.x,n.y,t.x,t.y);}}
     for(let pt of particles){
-      pt.t+=pt.sp;if(pt.t>=1){pt.t=0;pt.src=pt.tgt;pt.tgt=p.floor(p.random(10))}
+      pt.t+=pt.sp;if(pt.t>=1){pt.t=0;pt.src=pt.tgt;pt.tgt=p.floor(p.random(nodes.length))}
       let s=nodes[pt.src],t=nodes[pt.tgt];
       let x=p.lerp(s.x,t.x,pt.t),y=p.lerp(s.y,t.y,pt.t);
-      p.noStroke();p.fill(s.col[0],s.col[1],s.col[2],120);p.circle(x,y,2.5);
+      p.noStroke();p.fill(s.col[0],s.col[1],s.col[2],100);p.circle(x,y,2);
     }
     for(let n of nodes){
-      let ps=1+p.sin(time+n.phase)*0.15;
-      p.noStroke();for(let g=3;g>0;g--){p.fill(n.col[0],n.col[1],n.col[2],8*g);p.circle(n.x,n.y,n.size*2+g*4);}
-      p.fill(n.col[0],n.col[1],n.col[2],180);p.circle(n.x,n.y,n.size*ps);
-      p.fill(255,255,255,80);p.circle(n.x,n.y,n.size*0.2);
-      p.fill(n.col[0],n.col[1],n.col[2],100);p.textSize(7);p.textFont('monospace');p.textAlign(p.CENTER);p.text(n.label,n.x,n.y+n.size+8);
+      let ps=1+p.sin(time+n.phase)*0.12;
+      p.noStroke();for(let g=3;g>0;g--){p.fill(n.col[0],n.col[1],n.col[2],6*g);p.circle(n.x,n.y,n.size*2+g*3);}
+      p.fill(n.col[0],n.col[1],n.col[2],160);p.circle(n.x,n.y,n.size*ps);
+      p.fill(255,255,255,70);p.circle(n.x,n.y,n.size*0.18);
+      p.fill(n.col[0],n.col[1],n.col[2],80);p.textSize(6);p.textFont('monospace');p.textAlign(p.CENTER);p.text(n.label,n.x,n.y+n.size+9);
     }
   };
   p.windowResized=function(){let w=document.getElementById('canvas-command');W=w.offsetWidth;p.resizeCanvas(W,H);};
@@ -209,7 +210,7 @@ new p5(function(p){
     let wrap=document.getElementById('canvas-forensics');
     W=wrap.offsetWidth;H=240;
     p.resizeCanvas(W,H);c.parent('canvas-forensics');
-    let svcs=['n8n','firecrawl','uptime','grafana','prometheus','dozzle'];
+    let svcs=['firecrawl','uptime','grafana','prometheus','dozzle','immune','sentinel'];
     for(let i=0;i<30;i++){
       let s=svcs[p.floor(p.random(svcs.length))];
       let sev=p.random()>0.85?'error':p.random()>0.7?'warning':'info';
