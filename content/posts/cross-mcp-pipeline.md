@@ -8,9 +8,9 @@ summary: "Sentinel runs a full security audit across 18 MCP servers, parses 60+ 
 ShowToc: true
 ---
 
-Anthropic just paid ~$300M for Stainless, a company that auto-generates MCP servers from API specs. The bet: agents are only as useful as the systems they can reach.
+Anthropic just paid ~$300M for Stainless. This company auto-generates MCP servers from API specs. The bet is simple. Agents are only as useful as the systems they can reach.
 
-I took the opposite approach. Instead of connecting agents TO more things, I connected MCP servers TO EACH OTHER.
+I took the opposite path. Instead of linking agents to more tools, I linked MCP servers to each other.
 
 ## The Pipeline
 
@@ -24,21 +24,21 @@ Scans 18 servers               Deduplicates              Fix recommendations
 
 ## How It Works
 
-1. **Sentinel** runs `sentinel_full_audit` across all 18 MCP servers
-2. The bridge script parses the text output — extracting severity, patterns, files, and CVE references
-3. Findings are grouped by affected file and deduplicated by pattern
-4. GitHub issues are created with structured bodies: severity, pattern count, fix recommendation
-5. A state file tracks which findings already have issues — no duplicates
+1. **Sentinel** runs `sentinel_full_audit` across all 18 MCP servers.
+2. The bridge script reads the text output. It pulls out severity, patterns, files, and CVE refs.
+3. Findings are grouped by file. Duplicate patterns are removed.
+4. GitHub issues are created with clear bodies. Each shows severity, pattern count, and a fix tip.
+5. A state file tracks what already has an issue. No dupes.
 
 60 raw findings became 6 clean, actionable issues.
 
 ## Why This Matters
 
-Most MCP demos show a single server answering a question. That's the "hello world" of agent infrastructure.
+Most MCP demos show one server answering one question. That is the "hello world" of agent infra.
 
-Cross-MCP pipelines are the real thing. One server's output becomes another server's input. No human in the loop. No API gateway. No orchestration platform. Just two MCP servers talking through a thin Python bridge.
+Cross-MCP pipelines are the next step. One server's output feeds another server. No human needed. No API gateway. No orchestration tool. Just two MCP servers talking through a small Python bridge.
 
-This is the pattern every AI company will need when they have dozens of agents running dozens of tools. The scanner that audits itself, files issues against its own code, and tracks fixes — that's production infrastructure.
+This is the pattern every AI firm will need. Think dozens of agents running dozens of tools. The scanner audits itself. It files issues against its own code. It tracks fixes. That is production infra.
 
 ## The Code
 
@@ -55,13 +55,13 @@ Full source: [sentinel_github_bridge.py](https://github.com/Crow0077/homelab-ai-
 
 ## What's Next
 
-- **Compliance → Immune pipeline:** Nightly CIS scan feeds immune system health checks
-- **Screener → Trade Bot pipeline:** Signal detection triggers one-tap trade execution
-- **Firecrawl → Wiki pipeline:** Article scraping feeds semantic search index
-- **Full autonomous loop:** Scan → detect → file issue → fix → redeploy → re-scan
+- **Compliance → Immune pipeline:** Nightly CIS scan feeds immune health checks.
+- **Screener → Trade Bot pipeline:** Signal detection triggers one-tap trades.
+- **Firecrawl → Wiki pipeline:** Scraped articles feed the search index.
+- **Full autonomous loop:** Scan → detect → file issue → fix → redeploy → re-scan.
 
-The same pattern. Different servers. All MCP.
+Same pattern. Different servers. All MCP.
 
 ---
 
-*Built on a $150 Dell OptiPlex running Fedora Server. 18 MCP servers. 100+ tools. Zero cloud dependencies.*
+*Built on a $150 Dell OptiPlex running Fedora Server. 18 MCP servers. 100+ tools. Zero cloud deps.*
