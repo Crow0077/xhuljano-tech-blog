@@ -1,5 +1,5 @@
 ---
-title: "What Are MCP Servers? A Hands-On Guide From Someone Who Built 5 of Them"
+title: "What Are MCP Servers? A Hands-On Guide From Someone Who Built 18 of Them"
 date: 2026-05-10
 draft: false
 tags: ["mcp", "ai-agents", "python", "tool-calling", "hermes"]
@@ -61,9 +61,9 @@ This links Uptime Kuma. It lists each check. It reads pings. The agent can ask: 
 
 This uses the main GitHub node. It has 18+ tools. It covers bugs, PRs, code, and search tasks. The agent gets full GitHub reach.
 
-### 5. n8n — Flow Tools
+### 5. Compliance Suite — CIS Security Audits
 
-This wraps the n8n API. It lists flows. It checks runs. It pulls facts. The agent can start and watch flows.
+This runs nightly security scans. It checks firewalls, CVEs, open ports, SSH config, and kernel hardening. It stores results with a cryptographic SHA-256 audit trail. It generates SOC 2 evidence packages ready for auditors — all from a single MCP server.
 
 ## The Config
 
@@ -92,7 +92,7 @@ MCP turns agents from bots into ops tools. My agent can now:
 - Spot a dead app. It can fix it.
 - Scrape a paper. It can sum it up.
 - Open a GitHub issue. It can do this from a bug.
-- Start an n8n flow. It can report back.
+- Run a security scan. It generates an audit report.
 
 All this works via plain words. You do not switch tools by hand.
 

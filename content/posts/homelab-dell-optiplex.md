@@ -38,7 +38,6 @@ The agent checks health. It restarts containers. It gets web pages. It runs GitH
 It all runs in Podman (rootless where possible):
 
 - **Uptime Kuma** (3001) — app checks with alerts
-- **n8n** (5678) — auto tasks
 - **Firecrawl** (3002) — web pull API
 - **AdGuard Home** (53/80) — DNS filter, blocks threats only
 
@@ -72,7 +71,7 @@ mcp_uptimekuma_list_monitors → all checks with status
 mcp_firecrawl_firecrawl_scrape → pull any URL to text
 ```
 
-Total: 35 custom tools on 4 MCP nodes.
+Total: 100+ custom tools across 18 MCP servers.
 
 ## Cost
 
