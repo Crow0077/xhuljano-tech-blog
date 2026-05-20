@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-05-19
+date: 2026-05-20
 draft: false
 ShowToc: false
 ---
@@ -119,7 +119,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated May 19, 2026 — 07:00 UTC</div>
+    <div class="last-updated">Updated May 20, 2026 — 07:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -130,54 +130,54 @@ ShowToc: false
     <div class="news-item">
       <div class="news-date">May 19</div>
       <div class="news-content">
-        <h3><a href="https://io.google/2026/" target="_blank">Google I/O 2026 Keynote TODAY — Gemini 4.0, Aluminium OS, Android XR Expected</a></h3>
-        <p>Google I/O 2026 kicks off at 10am PT at Shoreline Amphitheatre. Confirmed: "latest Gemini model updates" and "agentic coding." Widely expected: Gemini 4.0 reveal, Aluminium OS (ChromeOS replacement), Android XR glasses with Samsung/Warby Parker, and Google Cloud Agentic Toolkit expansions for enterprises. The biggest AI dev event of the month.</p>
-        <div class="news-tags"><span>Google</span><span>I/O 2026</span><span>Events</span></div>
+        <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/" target="_blank">Google I/O 2026: Gemini 3.5 Flash, Gemini Omni, Gemini Spark — The Biggest AI Keynote Ever</a></h3>
+        <p>Google's nearly two-hour I/O keynote was the most AI-dense product showcase in company history. Gemini 3.5 Flash is now the default model across all Google products, outclassing prior models on latency and quality. Gemini Omni creates anything from any input starting with video. Gemini Spark — a 24/7 personal AI agent — launches next week for AI Ultra subscribers. AI Mode in Search represents the biggest Search upgrade in 30 years. Gemini app now has 900M+ MAU, Google processes 9.7 trillion tokens/month.</p>
+        <div class="news-tags"><span>Google</span><span>I/O 2026</span><span>Gemini</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 18</div>
+      <div class="news-date">May 19</div>
       <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-may-18-2026" target="_blank">Anthropic Closing $30B+ Round at $900B+ Valuation — Would Surpass OpenAI</a></h3>
-        <p>Bloomberg reports Anthropic's mega-round — co-led by Sequoia, Dragoneer, Greenoaks, and Altimeter — is expected to close by end of May. At $900B+, it would overtake OpenAI's $852B March valuation. CEO Dario Amodei confirmed capital goes toward AWS and Google Cloud compute commitments through 2027. A remarkable reversal from $380B in February.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Funding</span><span>Valuation</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 18</div>
-      <div class="news-content">
-        <h3><a href="https://techxplore.com/news/2026-05-closing-arguments-cent.html" target="_blank">Musk v OpenAI Trial: Jury Begins Deliberations in Landmark AI Governance Case</a></h3>
-        <p>Jury deliberations underway in Elon Musk's blockbuster suit against OpenAI and Sam Altman. After three weeks of testimony covering the non-profit to for-profit transition, the verdict could reshape AI company governance models industry-wide. Closing arguments centered on whether OpenAI's restructuring breached its founding charter.</p>
+        <h3><a href="https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/" target="_blank">Musk Loses Lawsuit Against OpenAI — Jury Unanimously Dismisses All Claims</a></h3>
+        <p>A California federal jury needed less than two hours to unanimously reject Elon Musk's entire lawsuit against OpenAI and Sam Altman. The jury found Musk's claims were barred by the statute of limitations — he waited too long to sue. The verdict ends a three-week trial that scrutinized OpenAI's non-profit to for-profit transition. Musk had sought to oust Altman and unwind the restructuring. A landmark moment for AI company governance.</p>
         <div class="news-tags"><span>OpenAI</span><span>Legal</span><span>Governance</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 16</div>
+      <div class="news-date">May 19</div>
       <div class="news-content">
-        <h3><a href="https://news.ycombinator.com/item?id=48153379" target="_blank">Mitchell Hashimoto: "Entire Companies Are Under AI Psychosis" — 1,574 HN Points</a></h3>
-        <p>Terraform creator and HashiCorp co-founder Mitchell Hashimoto's viral essay warns of companies shipping broken products while treating AI agents as infinite bug-fixers — repeating the MTBF-vs-MTTR mistake from the cloud era. "AI will only amplify the gap between those who know what they want and those who don't." The most-discussed AI essay of the month.</p>
-        <div class="news-tags"><span>Industry</span><span>Culture</span><span>Viral</span></div>
+        <h3><a href="https://the-decoder.com/cursors-composer-2-5-matches-opus-4-7-and-gpt-5-5-benchmarks-at-a-fraction-of-the-cost/" target="_blank">Cursor Ships Composer 2.5 — Matches Opus 4.7 &amp; GPT-5.5 at 1/10th the Cost</a></h3>
+        <p>Cursor released Composer 2.5, a new in-house coding model built on Kimi K2.5 with 25× more synthetic training tasks than its predecessor. It scores 79.8% on SWE-Bench Multilingual and 63.2% on CursorBench v3.1 — matching Claude Opus 4.7 and GPT-5.5 on coding benchmarks at $0.50/M input tokens versus $15/M. The price gap hasn't been this wide since coding models became production tools.</p>
+        <div class="news-tags"><span>Cursor</span><span>Coding</span><span>Benchmarks</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 18</div>
+      <div class="news-date">May 19</div>
       <div class="news-content">
-        <h3><a href="https://www.theregister.com/2026/05/18/linus_torvalds_ai_bug_reports/" target="_blank">Linus Torvalds: AI-Generated Bug Reports Have Made Kernel Security List "Unmanageable"</a></h3>
-        <p>Torvalds declared the Linux kernel security mailing list "almost entirely unmanageable" due to AI-powered bug hunters submitting duplicate, low-quality reports. Multiple researchers use identical AI tools and find identical bugs. "AI detected bugs are pretty much by definition not secret" — a warning as automated vulnerability scanning outpaces human triage.</p>
-        <div class="news-tags"><span>Linux</span><span>Security</span><span>AI Tools</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/" target="_blank">Anthropic Acquires Stainless for $300M+ — Cuts Off OpenAI &amp; Google SDK Access</a></h3>
+        <p>Anthropic acquired Stainless, the SDK and API documentation company that powers every official Anthropic SDK and also served OpenAI, Google, and Cloudflare. The $300M+ deal immediately shut down hosted products for competitors — a strategic infrastructure play that consolidates the API tooling layer under one lab. Stainless founder Alex Rattray (ex-Stripe) joins Anthropic.</p>
+        <div class="news-tags"><span>Anthropic</span><span>M&amp;A</span><span>SDK</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 13</div>
+      <div class="news-date">May 19</div>
       <div class="news-content">
-        <h3><a href="https://www.anthropic.com/news/small-business" target="_blank">Claude for Small Business Launched — 15 Agentic Workflows for the SMB Gap</a></h3>
-        <p>Anthropic launched Claude for Small Business — a toggle inside Claude Cowork connecting QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, and Microsoft 365 with 15 pre-built agentic workflows. Targets the 7% deep AI adoption rate among SMBs which represent 44% of US GDP. Every action requires user approval before execution.</p>
-        <div class="news-tags"><span>Anthropic</span><span>SMB</span><span>Product</span></div>
+        <h3><a href="https://apnews.com/article/vatican-pope-anthropic-olah-encyclical-artificial-intelligence-9cf3e07fd691f6af510c4a6f9c8ba353" target="_blank">Pope Leo XIV to Publish First-Ever AI Encyclical with Anthropic Co-Founder</a></h3>
+        <p>The Vatican announced Pope Leo XIV's first encyclical, "Magnifica Humanitas," on safeguarding human dignity in the age of AI, to be published May 25. Anthropic co-founder will present alongside the Pope — an unprecedented intersection of religious authority and frontier AI. The document addresses the protection of the human person amid rapid AI development, signaling AI ethics has reached the highest levels of global discourse.</p>
+        <div class="news-tags"><span>Ethics</span><span>Anthropic</span><span>Vatican</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 19</div>
+      <div class="news-content">
+        <h3><a href="https://simonwillison.net/2026/May/19/last-six-months-in-llms/" target="_blank">Simon Willison: "The Last Six Months in LLMs" — PyCon 2026 Lightning Talk Goes Viral</a></h3>
+        <p>Simon Willison's PyCon US 2026 lightning talk covered the November 2025 inflection point when coding agents "got good," OpenClaw's rise, and the new agentic coding landscape. 586 points on Hacker News with 477 comments. A must-watch 5-minute summary of the most transformative six months in AI tooling history — from Claude Code to Cursor to the MCP ecosystem explosion.</p>
+        <div class="news-tags"><span>LLMs</span><span>Agents</span><span>PyCon</span></div>
       </div>
     </div>
 
@@ -187,47 +187,38 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 5</div>
+      <div class="news-date">May 19</div>
       <div class="news-content">
-        <h3><a href="https://openai.com/index/chatgpt-default-update-may-2026" target="_blank">GPT-5.5 Instant Becomes ChatGPT Default — Lower Hallucination, Faster Responses</a></h3>
-        <p>OpenAI made GPT-5.5 Instant the new default for all ChatGPT users (free and paid). The lightweight variant prioritizes reduced hallucination rates in high-stakes domains (law, medicine, finance) and faster responses over raw benchmark scores. A clear signal that default-tier trust now matters more than frontier bragging rights.</p>
-        <div class="news-tags"><span>OpenAI</span><span>GPT-5.5</span><span>Product</span></div>
+        <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/" target="_blank">Gemini 3.5 Flash Now Default Across All Google Products — Quality Without Latency Tradeoffs</a></h3>
+        <p>Google made Gemini 3.5 Flash the default model for the Gemini app, AI Mode in Search, and all Google products globally. "You no longer have to trade quality for latency," Google stated. The model combines frontier intelligence with action capabilities and is the first in a new family of models designed for agentic workloads.</p>
+        <div class="news-tags"><span>Google</span><span>Gemini 3.5</span><span>Product</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 15</div>
+      <div class="news-date">May 19</div>
       <div class="news-content">
-        <h3><a href="https://tldl.io/blog/ai-news-updates-2026" target="_blank">DeepSeek V4: 1M-Token Context at $0.27/M Tokens — "Almost on the Frontier"</a></h3>
-        <p>Redis creator antirez published a detailed analysis of DeepSeek V4, calling it "almost on the frontier." The MIT-licensed open-weights model offers 1M-token context at $0.27/M input tokens — a dramatic cost disruption vs. closed frontier pricing. Gaps remain on complex agentic reasoning, but the price-performance trade-off is real, not benchmark theater.</p>
-        <div class="news-tags"><span>DeepSeek</span><span>Open Weights</span><span>Cost</span></div>
+        <h3><a href="https://the-decoder.com/cursors-composer-2-5-matches-opus-4-7-and-gpt-5-5-benchmarks-at-a-fraction-of-the-cost/" target="_blank">Cursor Composer 2.5 Deep Dive: Kimi K2.5-Based, 25× More Synthetic Training Data</a></h3>
+        <p>Composer 2.5 was trained on 25× more synthetic coding tasks than Composer 2, achieving 79.8% on SWE-Bench Multilingual with a latency-optimized architecture. It ships with extended context handling for long coding sessions and is optimized for complex multi-file refactors. The model proves that fine-tuning on synthetic agent traces can close the gap with frontier models at dramatically lower cost.</p>
+        <div class="news-tags"><span>Cursor</span><span>Fine-Tuning</span><span>Kimi K2.5</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 16</div>
+      <div class="news-date">May 19</div>
       <div class="news-content">
-        <h3><a href="https://tldl.io/blog/ai-news-updates-2026" target="_blank">Orthrus-Qwen3: 7.8× Token Speedup on Qwen3 with Identical Output Distribution</a></h3>
-        <p>A new open-source project achieved up to 7.8× tokens-per-forward on Qwen3 models with identical output distribution. Topped Hacker News (155 pts), signaling strong community demand for inference efficiency — and a path to serving frontier-quality models at a fraction of the cost. Qwen3 continues to emerge as the inference-optimization platform of choice.</p>
-        <div class="news-tags"><span>Inference</span><span>Open Source</span><span>Qwen</span></div>
+        <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/" target="_blank">Gemini Omni: Google's Leap into Native Multimodal Creation from Any Input</a></h3>
+        <p>Gemini Omni can create anything from any input modality — starting with video generation but spanning text, image, audio, and code. Described by Google DeepMind's Demis Hassabis as "a leap forward in world understanding," Omni represents the convergence of generation and understanding in a single model. Video output quality in demos rivaled dedicated video generation models.</p>
+        <div class="news-tags"><span>Google</span><span>Multimodal</span><span>Video Gen</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 16</div>
+      <div class="news-date">May 19</div>
       <div class="news-content">
-        <h3><a href="https://www.marktechpost.com/2026/05/16/nvidia-introduces-sana-wm/" target="_blank">NVIDIA Releases SANA-WM: 2.6B Open-Source World Model for 720p Video</a></h3>
-        <p>NVIDIA open-sourced SANA-WM, a 2.6B parameter world model generating minute-long 720p video from text prompts on a single GPU. A significant step toward closing the gap between open and proprietary video generation — following the same playbook that made open image models competitive with closed alternatives.</p>
-        <div class="news-tags"><span>NVIDIA</span><span>Video Gen</span><span>Open Source</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 5</div>
-      <div class="news-content">
-        <h3><a href="https://whatllm.org/blog/new-ai-models-may-2026" target="_blank">SubQ 1M-Preview: First Commercial Non-Transformer LLM Ships with 12M Token Context</a></h3>
-        <p>Subquadratic launched SubQ 1M-Preview with $29M in seed funding — the first commercially available LLM built on fully subquadratic sparse attention rather than standard transformers. Claims 12M-token native context at ~1/5 the cost of frontier models. If independent benchmarks confirm, the architectural story stops being a research sideshow.</p>
-        <div class="news-tags"><span>Architecture</span><span>Long Context</span><span>Startup</span></div>
+        <h3><a href="https://simonwillison.net/2026/May/19/last-six-months-in-llms/" target="_blank">Simon Willison on the November 2025 Inflection Point: When Coding Agents "Got Good"</a></h3>
+        <p>Willison's PyCon talk pinpoints November 2025 as the moment coding agents crossed the usability threshold — when Claude Code, Cursor, and the MCP ecosystem reached a critical mass of capability and reliability. The talk traces the shift from "impressive demos" to "daily driver tools" and examines what the "Claw" naming convention says about ecosystem dynamics.</p>
+        <div class="news-tags"><span>Agents</span><span>History</span><span>Coding</span></div>
       </div>
     </div>
 
@@ -240,10 +231,55 @@ ShowToc: false
       </div>
     </div>
 
+    <div class="news-item">
+      <div class="news-date">May 15</div>
+      <div class="news-content">
+        <h3><a href="https://tldl.io/blog/ai-news-updates-2026" target="_blank">DeepSeek V4: 1M-Token Context at $0.27/M Tokens — MIT-Licensed Open Weights</a></h3>
+        <p>Redis creator antirez published an analysis of DeepSeek V4 calling it "almost on the frontier." The MIT-licensed open-weights model offers 1M-token context at $0.27/M input tokens — a cost disruption vs. closed frontier pricing. Gaps remain on complex agentic reasoning but the price-performance trade-off is real, not benchmark theater.</p>
+        <div class="news-tags"><span>DeepSeek</span><span>Open Weights</span><span>Cost</span></div>
+      </div>
+    </div>
+
   </div>
 
   <div class="news-section-title">Industry Moves</div>
   <div class="news-grid">
+
+    <div class="news-item">
+      <div class="news-date">May 19</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/" target="_blank">Anthropic's Stainless Acquisition: Strategic SDK Layer Consolidation</a></h3>
+        <p>Anthropic's acquisition of Stainless for $300M+ is a calculated infrastructure play: control the API documentation and SDK generation layer that competitors depend on. By shutting down hosted products for OpenAI and Google, Anthropic forces rivals to rebuild their own tooling — while Claude's ecosystem gets exclusive access. The deal echoes cloud-era platform lock-in strategies applied to the AI API layer.</p>
+        <div class="news-tags"><span>Anthropic</span><span>M&amp;A</span><span>Strategy</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 19</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/" target="_blank">Musk v OpenAI Verdict: What It Means for AI Company Structure</a></h3>
+        <p>The unanimous jury verdict clearing OpenAI sets a precedent: non-profit to for-profit transitions, when challenged years after the fact, face steep statute-of-limitations hurdles. The ruling effectively validates OpenAI's restructuring and removes the most significant legal threat to the capped-profit model. AI governance debates now shift from courts to regulators and legislatures.</p>
+        <div class="news-tags"><span>OpenAI</span><span>Legal</span><span>Governance</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 19</div>
+      <div class="news-content">
+        <h3><a href="https://news.ycombinator.com/item?id=48411500" target="_blank">Andon FM: Autonomous AI Agents Now Running a Radio Station</a></h3>
+        <p>Andon Labs continues AI-run retail experiments with Andon FM — a fully autonomous radio station where AI agents handle programming, scheduling, and content. 317 points on Hacker News. Follows earlier AI cafe experiments in Stockholm and San Francisco. A striking proof point that agentic AI has moved beyond coding assistants into real-world autonomous operations.</p>
+        <div class="news-tags"><span>Agents</span><span>Autonomous</span><span>Retail</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 19</div>
+      <div class="news-content">
+        <h3><a href="https://news.ycombinator.com/item?id=48411200" target="_blank">314 Malicious npm Packages Discovered — Supply Chain Attack Targets AI/ML Tooling</a></h3>
+        <p>Security researchers uncovered 314 compromised npm packages in an ongoing supply chain attack campaign — including packages impersonating popular AI/ML libraries. The attack targets the growing dependency chain of AI development tooling. A stark reminder that as AI tooling ecosystems expand, the attack surface for supply chain compromises grows proportionally.</p>
+        <div class="news-tags"><span>Security</span><span>Supply Chain</span><span>npm</span></div>
+      </div>
+    </div>
 
     <div class="news-item">
       <div class="news-date">May 6-7</div>
@@ -255,47 +291,11 @@ ShowToc: false
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 14</div>
-      <div class="news-content">
-        <h3><a href="https://www.anthropic.com/news/pwc-expanded-partnership" target="_blank">PwC Deploys Claude to Hundreds of Thousands — Largest Professional Services AI Rollout</a></h3>
-        <p>Anthropic and PwC expanded their alliance: Claude Code and Cowork will reach PwC's global workforce of hundreds of thousands. 30,000 US professionals will be certified. A new Office of the CFO business group is built entirely on Claude. Insurance underwriting dropped from 10 weeks to 10 days; security tasks from hours to minutes — up to 70% faster.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Enterprise</span><span>PwC</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 14</div>
-      <div class="news-content">
-        <h3><a href="https://www.anthropic.com/news/gates-foundation-partnership" target="_blank">Anthropic + Gates Foundation: $200M Over Four Years for Global Health AI</a></h3>
-        <p>Anthropic and the Bill &amp; Melinda Gates Foundation announced a $200M partnership combining grant funding, Claude credits, and technical support. Focus areas: outbreak detection, vaccine candidate screening, and supply chain management for polio, HPV (~350K deaths/year), and eclampsia. A concrete signal that beneficial AI deployment is not just PR.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Global Health</span><span>Philanthropy</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 4</div>
-      <div class="news-content">
-        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-may-2026" target="_blank">Four Chinese Open-Weight Coding Models in 12 Days — All at Frontier Capability</a></h3>
-        <p>Z.ai's GLM-5.1, MiniMax M2.7, Moonshot's Kimi K2.6, and DeepSeek V4 all shipped within a 12-day window — each matching Western frontier capability on agentic coding benchmarks at a fraction of the inference cost. DeepSeek V4's MIT license and 1M-token context at $0.27/M tokens is a cost disruption that changes enterprise procurement math.</p>
-        <div class="news-tags"><span>China</span><span>Open Source</span><span>Coding</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
       <div class="news-date">May 17</div>
       <div class="news-content">
         <h3><a href="https://the-decoder.com/mistral-ceo-arthur-mensch-warns-france-against-letting-anthropics-mythos-scan-military-code-bases/" target="_blank">Mistral CEO Warns France Against Anthropic's Mythos Scanning Military Code</a></h3>
         <p>Mistral CEO Arthur Mensch told a French parliamentary commission that letting Anthropic's Mythos scan military code bases would create an irreversible cybersecurity dependency. He stressed Mistral remains independent with under 30% US ownership — the only EU company fielding competitive frontier models. A defining moment for sovereign AI in Europe.</p>
         <div class="news-tags"><span>Mistral</span><span>Sovereign AI</span><span>Anthropic</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 9</div>
-      <div class="news-content">
-        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-may-2026" target="_blank">Google DeepMind UK Staff Vote 98% to Unionize — First Union at Any Top AI Lab</a></h3>
-        <p>Google DeepMind UK employees voted 98% to unionize over a classified Pentagon AI contract, forming the first union at any top AI lab. The vote reflects growing tension between AI researchers' values and military applications — a fault line likely to widen as frontier models gain increasingly sensitive capabilities and deployment contexts.</p>
-        <div class="news-tags"><span>DeepMind</span><span>Labor</span><span>Ethics</span></div>
       </div>
     </div>
 
