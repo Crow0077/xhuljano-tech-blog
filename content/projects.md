@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-date: 2026-05-19
+date: 2026-05-12
 draft: false
 ShowToc: false
 ---
@@ -38,84 +38,16 @@ ShowToc: false
       <span class="tag">Streamable HTTP</span>
       <span class="tag">Python</span>
     </div>
-    <p>18 production MCP servers running as standalone systemd daemons on Fedora Server — compliance auditing, incident forensics, self-healing infrastructure, container management, log aggregation, backup orchestration, security scanning, and cloud exit analysis. 100+ tools. Every server survives reboots and runs independently of any AI agent session.</p>
+    <p>12 production MCP servers running as standalone systemd daemons on Fedora Server — security auditing, self-healing infrastructure, container management, log aggregation, backup orchestration, vulnerability scanning, and more. 80+ tools. Every server survives reboots and runs independently of any AI agent session.</p>
     <div class="stat-row">
-      <div class="stat"><div class="num">18</div><div class="lbl">MCP Servers</div></div>
-      <div class="stat"><div class="num">100+</div><div class="lbl">Tools</div></div>
+      <div class="stat"><div class="num">12</div><div class="lbl">MCP Servers</div></div>
+      <div class="stat"><div class="num">80+</div><div class="lbl">Tools</div></div>
+      <div class="stat"><div class="num">1</div><div class="lbl">Enterprise Tier</div></div>
       <div class="stat"><div class="num">24/7</div><div class="lbl">Uptime</div></div>
-      <div class="stat"><div class="num">1</div><div class="lbl">Pipeline</div></div>
     </div>
     <div class="links">
       <a href="/ai-news/">AI News</a>
       <a href="https://github.com/Crow0077">GitHub</a>
-    </div>
-  </div>
-</div>
-
-<div class="project-card">
-  <div class="project-canvas" id="canvas-bridge"></div>
-  <div class="project-info">
-    <h2>Cross-MCP Security Pipeline</h2>
-    <div class="tag-row">
-      <span class="tag">MCP→MCP</span>
-      <span class="tag">Automation</span>
-      <span class="tag">Sentinel</span>
-      <span class="tag">GitHub Issues</span>
-    </div>
-    <p>Sentinel runs a full security audit across 18 MCP servers, parses 60+ findings by severity, groups them by affected file, and auto-creates GitHub issues with CVE references and fix recommendations — all without human intervention. Deduplication ensures no duplicate issues. This is the first cross-MCP pipeline where one MCP server feeds another.</p>
-    <div class="stat-row">
-      <div class="stat"><div class="num">60+</div><div class="lbl">Findings Scanned</div></div>
-      <div class="stat"><div class="num">6</div><div class="lbl">Issues Created</div></div>
-      <div class="stat"><div class="num">18</div><div class="lbl">Servers Audited</div></div>
-    </div>
-    <div class="links">
-      <a href="https://github.com/Crow0077/homelab-ai-toolkit/blob/master/sentinel_github_bridge.py">Source</a>
-      <a href="https://github.com/Crow0077/homelab-ai-toolkit/issues">Issues</a>
-    </div>
-  </div>
-</div>
-
-<div class="project-card">
-  <div class="project-canvas" id="canvas-compliance"></div>
-  <div class="project-info">
-    <h2>Infrastructure Compliance Auditor</h2>
-    <div class="tag-row">
-      <span class="tag">CIS Benchmarks</span>
-      <span class="tag">CVE Detection</span>
-      <span class="tag">SSH Audit</span>
-      <span class="tag">SQLite</span>
-    </div>
-    <p>Enterprise-grade compliance scanning engine. Runs nightly CIS Level 1 audits across 9 security dimensions — SSH hardening, firewall verification, kernel parameters, open port classification, brute force detection, disk encryption, and pending CVE checks. All results stored in SQLite with historical trending. Telegram alerts when score drops below 75%.</p>
-    <div class="stat-row">
-      <div class="stat"><div class="num">9</div><div class="lbl">CIS Checks</div></div>
-      <div class="stat"><div class="num">3am</div><div class="lbl">Nightly Scan</div></div>
-      <div class="stat"><div class="num">8</div><div class="lbl">Tools</div></div>
-      <div class="stat"><div class="num">:8100</div><div class="lbl">HTTP Port</div></div>
-    </div>
-    <div class="links">
-      <a href="https://github.com/Crow0077/compliance-suite-mcp">Source</a>
-    </div>
-  </div>
-</div>
-
-<div class="project-card">
-  <div class="project-canvas" id="canvas-forensics"></div>
-  <div class="project-info">
-    <h2>Automated Incident Forensics</h2>
-    <div class="tag-row">
-      <span class="tag">Root Cause Analysis</span>
-      <span class="tag">Timeline Reconstruction</span>
-      <span class="tag">Podman</span>
-      <span class="tag">SQLite</span>
-    </div>
-    <p>Proactive incident investigation engine. Monitors all containers every 15 minutes for error spikes. When anomalies are detected, automatically gathers logs from every service, correlates events across containers, builds chronological timelines, and identifies the root cause — before a human even knows something broke. Stores full incident history with replayable event logs.</p>
-    <div class="stat-row">
-      <div class="stat"><div class="num">15m</div><div class="lbl">Proactive Scan</div></div>
-      <div class="stat"><div class="num">6</div><div class="lbl">Tools</div></div>
-      <div class="stat"><div class="num">:8101</div><div class="lbl">HTTP Port</div></div>
-    </div>
-    <div class="links">
-      <a href="https://github.com/Crow0077/homelab-ai-toolkit">Source</a>
     </div>
   </div>
 </div>
@@ -142,6 +74,29 @@ ShowToc: false
   </div>
 </div>
 
+<div class="project-card">
+  <div class="project-canvas" id="canvas-bridge"></div>
+  <div class="project-info">
+    <h2>Cross-MCP Security Pipeline</h2>
+    <div class="tag-row">
+      <span class="tag">MCP→MCP</span>
+      <span class="tag">Automation</span>
+      <span class="tag">Sentinel</span>
+      <span class="tag">GitHub Issues</span>
+    </div>
+    <p>Sentinel runs a full security audit, a bridge script parses findings by severity, groups them by affected file, and creates structured GitHub issues with CVE references and fix recommendations — all without human intervention. The pattern generalizes to any MCP→MCP pipeline.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="num">MCP→MCP</div><div class="lbl">Pattern</div></div>
+      <div class="stat"><div class="num">6</div><div class="lbl">Issues Created</div></div>
+      <div class="stat"><div class="num">18</div><div class="lbl">Servers Audited</div></div>
+    </div>
+    <div class="links">
+      <a href="https://github.com/Crow0077/homelab-ai-toolkit/blob/master/sentinel_github_bridge.py">Source</a>
+      <a href="https://github.com/Crow0077/homelab-ai-toolkit/issues">Issues</a>
+    </div>
+  </div>
+</div>
+
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
@@ -154,7 +109,7 @@ new p5(function(p){
     let wrap=document.getElementById('canvas-command');
     W=wrap.offsetWidth;H=240;
     p.resizeCanvas(W,H);c.parent('canvas-command');
-    let names=['AUDITOR','FORENSICS','IMMUNE','DEPLOY','LOGS','BACKUP','HOMELAB','UPTIME','FIRECRAWL','BULKEXIT','SENTINEL','WATCHDOG','GSD','MINIRAG','AMEM','COMPLIANCE','JOBSCAN','BRIDGE'];
+    let names=['DEPLOY','LOGS','BACKUP','HOMELAB','UPTIME','FIRECRAWL','SENTINEL','GSD','MINIRAG','AMEM','IMMUNE','BRIDGE'];
     let cols=[[0,200,255],[255,160,60],[80,220,120],[200,140,255],[255,200,50],[100,200,200],[255,100,150],[120,200,255],[255,180,80],[160,140,255],[200,100,255],[100,255,180],[255,150,100],[180,200,255],[255,100,200],[80,180,255],[150,220,100],[255,255,100]];
     let cx=W/2,cy=H/2,r=Math.min(W,H)*0.38;
     let nCount=Math.min(names.length, 18);
@@ -167,140 +122,26 @@ new p5(function(p){
   };
   p.draw=function(){
     p.background(8,8,16);time+=0.008;
-    for(let n of nodes){for(let ci of n.conns){let t=nodes[ci];p.stroke(30,35,55,20);p.strokeWeight(0.3);p.line(n.x,n.y,t.x,t.y);}}
+    for(let n of nodes){for(let ci of n.conns){let t=nodes[ci];p.stroke(30,35,55,25);p.strokeWeight(0.4);p.line(n.x,n.y,t.x,t.y);}}
     for(let pt of particles){
-      pt.t+=pt.sp;if(pt.t>=1){pt.t=0;pt.src=pt.tgt;pt.tgt=p.floor(p.random(nodes.length))}
+      pt.t+=pt.sp;if(pt.t>=1){pt.t=0;pt.src=pt.tgt;pt.tgt=p.floor(p.random(10))}
       let s=nodes[pt.src],t=nodes[pt.tgt];
       let x=p.lerp(s.x,t.x,pt.t),y=p.lerp(s.y,t.y,pt.t);
-      p.noStroke();p.fill(s.col[0],s.col[1],s.col[2],100);p.circle(x,y,2);
+      p.noStroke();p.fill(s.col[0],s.col[1],s.col[2],120);p.circle(x,y,2.5);
     }
     for(let n of nodes){
-      let ps=1+p.sin(time+n.phase)*0.12;
-      p.noStroke();for(let g=3;g>0;g--){p.fill(n.col[0],n.col[1],n.col[2],6*g);p.circle(n.x,n.y,n.size*2+g*3);}
-      p.fill(n.col[0],n.col[1],n.col[2],160);p.circle(n.x,n.y,n.size*ps);
-      p.fill(255,255,255,70);p.circle(n.x,n.y,n.size*0.18);
-      p.fill(n.col[0],n.col[1],n.col[2],80);p.textSize(6);p.textFont('monospace');p.textAlign(p.CENTER);p.text(n.label,n.x,n.y+n.size+9);
+      let ps=1+p.sin(time+n.phase)*0.15;
+      p.noStroke();for(let g=3;g>0;g--){p.fill(n.col[0],n.col[1],n.col[2],8*g);p.circle(n.x,n.y,n.size*2+g*4);}
+      p.fill(n.col[0],n.col[1],n.col[2],180);p.circle(n.x,n.y,n.size*ps);
+      p.fill(255,255,255,80);p.circle(n.x,n.y,n.size*0.2);
+      p.fill(n.col[0],n.col[1],n.col[2],100);p.textSize(7);p.textFont('monospace');p.textAlign(p.CENTER);p.text(n.label,n.x,n.y+n.size+8);
     }
   };
   p.windowResized=function(){let w=document.getElementById('canvas-command');W=w.offsetWidth;p.resizeCanvas(W,H);};
 },'canvas-command');
 
 new p5(function(p){
-  let W,H,nodes=[],flows=[],time=0;
-  p.setup=function(){
-    let c=p.createCanvas(1,1);
-    let wrap=document.getElementById('canvas-bridge');
-    W=wrap.offsetWidth;H=240;
-    p.resizeCanvas(W,H);c.parent('canvas-bridge');
-    nodes.push({x:W*0.15,y:H/2,col:[0,200,255],label:'SENTINEL',r:16});
-    nodes.push({x:W*0.5,y:H/2,col:[80,220,120],label:'BRIDGE',r:12});
-    nodes.push({x:W*0.85,y:H/2,col:[255,180,60],label:'GITHUB',r:16});
-    for(let i=0;i<25;i++){flows.push({from:0,to:1,t:p.random(1),sp:0.005+p.random()*0.01,col:null});}
-  };
-  p.draw=function(){
-    p.background(8,8,16);time+=0.01;
-    p.stroke(40,60,100,40);p.strokeWeight(1);
-    p.line(nodes[0].x,nodes[0].y,nodes[1].x,nodes[1].y);
-    p.line(nodes[1].x,nodes[1].y,nodes[2].x,nodes[2].y);
-    for(let f of flows){
-      f.t+=f.sp;if(f.t>=1){f.t=0;}
-      let s=nodes[f.from],t=nodes[f.from==1?2:1];
-      let x=p.lerp(s.x,t.x,f.t),y=p.lerp(s.y,t.y,f.t);
-      let col=f.from==0?[0,200,255]:[80,220,120];
-      p.noStroke();p.fill(col[0],col[1],col[2],100+40*p.sin(time*3+f.t*10));p.circle(x,y,3);
-    }
-    for(let n of nodes){
-      let ps=1+p.sin(time*2+nodes.indexOf(n))*0.1;
-      p.noStroke();for(let g=3;g>0;g--){p.fill(n.col[0],n.col[1],n.col[2],6*g);p.circle(n.x,n.y,n.r*2+g*4);}
-      p.fill(n.col[0],n.col[1],n.col[2],180);p.circle(n.x,n.y,n.r*ps);
-      p.fill(255,255,255,70);p.circle(n.x,n.y,n.r*0.2);
-      p.fill(n.col[0],n.col[1],n.col[2],90);p.textSize(7);p.textFont('monospace');p.textAlign(p.CENTER);p.text(n.label,n.x,n.y+n.r+12);
-    }
-    p.fill(180,180,200,80);p.textSize(8);p.textAlign(p.CENTER);p.text('scan → parse → issue',W/2,H-15);
-  };
-  p.windowResized=function(){let w=document.getElementById('canvas-bridge');W=w.offsetWidth;p.resizeCanvas(W,H);};
-},'canvas-bridge');
-
-new p5(function(p){
-  let W,H, checks=[], scanPhase=0, timer=0;
-  p.setup=function(){
-    let c=p.createCanvas(1,1);
-    let wrap=document.getElementById('canvas-compliance');
-    W=wrap.offsetWidth;H=240;
-    p.resizeCanvas(W,H);c.parent('canvas-compliance');
-    let names=['SSH Root','SSH Auth','Protocol','Firewall','Updates','Kernel','Ports','Logins','Encrypt'];
-    for(let i=0;i<9;i++){checks.push({name:names[i],x:60+i*(W-120)/8,y:H/2,status:'pending',col:[80,80,100]});}
-  };
-  p.draw=function(){
-    p.background(8,8,16);timer++;
-    if(timer%80===0&&scanPhase<9){checks[scanPhase].status='scanning';checks[scanPhase].col=[0,200,255];}
-    if(timer%80===40&&scanPhase<9){
-      let r=p.random();checks[scanPhase].status=r>0.55?'pass':r>0.15?'fail':'skip';
-      checks[scanPhase].col=checks[scanPhase].status==='pass'?[80,220,120]:checks[scanPhase].status==='fail'?[255,100,100]:[200,180,80];
-      scanPhase++;
-    }
-    if(scanPhase>=9&&timer%300===0){scanPhase=0;timer=0;for(let c of checks){c.status='pending';c.col=[80,80,100];}}
-    if(scanPhase<9){
-      let sx=checks[scanPhase].x,sy=checks[scanPhase].y;
-      p.stroke(0,200,255,60+20*p.sin(timer*0.1));p.strokeWeight(1);p.line(sx,sy-30,sx,sy+30);
-    }
-    for(let c of checks){
-      let glow=c.status==='scanning'?1+0.3*p.sin(timer*0.2):1;
-      p.noStroke();for(let g=2;g>0;g--){p.fill(c.col[0],c.col[1],c.col[2],10*g*glow);p.circle(c.x,c.y,16+g*6);}
-      p.fill(c.col[0],c.col[1],c.col[2],180);p.circle(c.x,c.y,8*glow);
-      if(c.status==='pass'){p.fill(80,220,120);p.textSize(12);p.textAlign(p.CENTER);p.text('\u2713',c.x,c.y+4);}
-      else if(c.status==='fail'){p.fill(255,100,100);p.textSize(12);p.textAlign(p.CENTER);p.text('\u2717',c.x,c.y+4);}
-      else if(c.status==='skip'){p.fill(200,180,80);p.textSize(12);p.textAlign(p.CENTER);p.text('\u2212',c.x,c.y+4);}
-      p.fill(c.col[0],c.col[1],c.col[2],80);p.textSize(7);p.textFont('monospace');p.textAlign(p.CENTER);p.text(c.name,c.x,c.y+22);
-    }
-    if(scanPhase>=9){
-      let passed=checks.filter(c=>c.status==='pass').length;
-      p.fill(130,180,240,200);p.textSize(14);p.textFont('monospace');p.textAlign(p.CENTER);
-      p.text('Score: '+Math.round(passed/checks.length*100)+'%',W/2,H-25);
-    }
-  };
-  p.windowResized=function(){let w=document.getElementById('canvas-compliance');W=w.offsetWidth;p.resizeCanvas(W,H);};
-},'canvas-compliance');
-
-new p5(function(p){
   let W,H,events=[],time=0;
-  p.setup=function(){
-    let c=p.createCanvas(1,1);
-    let wrap=document.getElementById('canvas-forensics');
-    W=wrap.offsetWidth;H=240;
-    p.resizeCanvas(W,H);c.parent('canvas-forensics');
-    let svcs=['firecrawl','uptime','grafana','prometheus','dozzle','immune','sentinel'];
-    for(let i=0;i<30;i++){
-      let s=svcs[p.floor(p.random(svcs.length))];
-      let sev=p.random()>0.85?'error':p.random()>0.7?'warning':'info';
-      events.push({x:p.random(W*0.1,W*0.9),y:30+p.random(H-60),svc:s,sev:sev,life:p.random(80,200),maxLife:200,phase:p.random(p.TWO_PI)});
-    }
-  };
-  p.draw=function(){
-    p.background(8,8,16);time+=0.01;
-    p.stroke(20,22,35);p.strokeWeight(0.5);
-    for(let y=40;y<H-20;y+=30)p.line(20,y,W-20,y);
-    p.stroke(40,50,80,60);p.strokeWeight(1);p.line(30,H-15,W-30,H-15);
-    p.fill(80,100,140,80);p.textSize(8);p.textAlign(p.LEFT);p.text('\u2190 incident window \u2192',35,H-8);
-    for(let e of events){
-      e.life--;if(e.life<=0){e.life=e.maxLife;e.x=p.random(W*0.1,W*0.9);e.y=30+p.random(H-60);}
-      let alpha=p.map(e.life,0,e.maxLife,0,180);
-      let col=e.sev==='error'?[255,90,90]:e.sev==='warning'?[255,180,60]:[80,140,220];
-      p.noStroke();p.fill(col[0],col[1],col[2],alpha);p.circle(e.x,e.y,4+2*p.sin(time*2+e.phase));
-      p.stroke(col[0],col[1],col[2],alpha*0.3);p.strokeWeight(0.3);p.line(e.x,e.y+8,e.x,H-15);
-    }
-    let errs=events.filter(e=>e.sev==='error');
-    if(errs.length>0){
-      let first=errs.reduce((a,b)=>a.x<b.x?a:b);
-      p.noFill();p.stroke(255,80,80,60+20*p.sin(time*3));p.strokeWeight(1.5);p.circle(first.x,first.y,16+4*p.sin(time*2));
-      p.fill(255,80,80,180);p.textSize(8);p.textAlign(p.CENTER);p.text('ROOT CAUSE',first.x,first.y-16);
-    }
-  };
-  p.windowResized=function(){let w=document.getElementById('canvas-forensics');W=w.offsetWidth;p.resizeCanvas(W,H);};
-},'canvas-forensics');
-
-new p5(function(p){
-  let W,H,cells=[],threats=[],time=0;
   p.setup=function(){
     let c=p.createCanvas(1,1);
     let wrap=document.getElementById('canvas-immune');
@@ -339,6 +180,44 @@ new p5(function(p){
   };
   p.windowResized=function(){let w=document.getElementById('canvas-immune');W=w.offsetWidth;p.resizeCanvas(W,H);};
 },'canvas-immune');
+
+new p5(function(p){
+  let W,H,nodes=[],flows=[],time=0;
+  p.setup=function(){
+    let c=p.createCanvas(1,1);
+    let wrap=document.getElementById('canvas-bridge');
+    W=wrap.offsetWidth;H=240;
+    p.resizeCanvas(W,H);c.parent('canvas-bridge');
+    nodes.push({x:W*0.15,y:H/2,col:[0,200,255],label:'SENTINEL',r:16});
+    nodes.push({x:W*0.5,y:H/2,col:[80,220,120],label:'BRIDGE',r:12});
+    nodes.push({x:W*0.85,y:H/2,col:[255,180,60],label:'GITHUB',r:16});
+    for(let i=0;i<25;i++){flows.push({from:0,to:1,t:p.random(1),sp:0.005+p.random()*0.01,col:null});}
+  };
+  p.draw=function(){
+    p.background(8,8,16);time+=0.01;
+    // Connecting lines
+    p.stroke(40,60,100,40);p.strokeWeight(1);
+    p.line(nodes[0].x,nodes[0].y,nodes[1].x,nodes[1].y);
+    p.line(nodes[1].x,nodes[1].y,nodes[2].x,nodes[2].y);
+    // Flowing particles
+    for(let f of flows){
+      f.t+=f.sp;if(f.t>=1){f.t=0;}
+      let s=nodes[f.from],t=nodes[f.from==1?2:1];
+      let x=p.lerp(s.x,t.x,f.t),y=p.lerp(s.y,t.y,f.t);
+      let col=f.from==0?[0,200,255]:[80,220,120];
+      p.noStroke();p.fill(col[0],col[1],col[2],100+40*p.sin(time*3+f.t*10));p.circle(x,y,3);
+    }
+    for(let n of nodes){
+      let ps=1+p.sin(time*2+nodes.indexOf(n))*0.1;
+      p.noStroke();for(let g=3;g>0;g--){p.fill(n.col[0],n.col[1],n.col[2],6*g);p.circle(n.x,n.y,n.r*2+g*4);}
+      p.fill(n.col[0],n.col[1],n.col[2],180);p.circle(n.x,n.y,n.r*ps);
+      p.fill(255,255,255,70);p.circle(n.x,n.y,n.r*0.2);
+      p.fill(n.col[0],n.col[1],n.col[2],90);p.textSize(7);p.textFont('monospace');p.textAlign(p.CENTER);p.text(n.label,n.x,n.y+n.r+12);
+    }
+    p.fill(180,180,200,80);p.textSize(8);p.textAlign(p.CENTER);p.text('scan → parse → issue',W/2,H-15);
+  };
+  p.windowResized=function(){let w=document.getElementById('canvas-bridge');W=w.offsetWidth;p.resizeCanvas(W,H);};
+},'canvas-bridge');
 
 </script>
 {{< /rawhtml >}}

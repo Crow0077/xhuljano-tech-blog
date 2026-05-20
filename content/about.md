@@ -28,7 +28,7 @@ I'm Xhuljano — a cloud engineering student building real infrastructure with A
 - **AI/ML:** Ollama, vLLM, local LLM inference on RTX 4080
 - **Automation:** cron, systemd timers, autonomous agents
 - **Monitoring:** Uptime Kuma, Grafana, Prometheus, Dozzle
-- **Tools:** Hermes Agent, Claude Code, Codex CLI, 18 MCP servers
+- **Tools:** Hermes Agent, 12 MCP servers, podman, systemd
 
 ## Contact
 

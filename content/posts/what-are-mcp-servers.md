@@ -1,14 +1,14 @@
 ---
-title: "What Are MCP Servers? A Hands-On Guide From Someone Who Built 18 of Them"
+title: "What Are MCP Servers? A Hands-On Guide From Someone Running 12 of Them"
 date: 2026-05-10
 draft: false
 tags: ["mcp", "ai-agents", "python", "tool-calling", "hermes"]
 categories: ["AI"]
-summary: "MCP (Model Context Protocol) lets AI agents use real tools. Here's what it is, how it works, and how I built 5 MCP servers that manage my entire homelab."
+summary: "MCP (Model Context Protocol) lets AI agents use real tools. Here's what it is, how it works, and how I run 12 MCP servers that manage my entire homelab."
 ShowToc: true
 ---
 
-MCP is all over AI now. Most guides are too vague. I built 5 MCP tools. Here is what they do.
+MCP is all over AI now. Most guides are too vague. I run 12 MCP servers. Here is what they do.
 
 ## What is MCP?
 
@@ -32,38 +32,45 @@ AI Agent  ←→  MCP Client  ←→  MCP Server  ←→  Other App
 
 Talk is JSON RPC. It uses pipes or HTTP.
 
-## My 5 MCP Nodes
+## My MCP Servers
 
-### 1. Firecrawl — Web Pulls
+### Firecrawl — Web Scraping
+Wraps the self-hosted Firecrawl API. The agent can scrape any page and get clean markdown. Great for research and wiki ingestion.
 
-```python
-@server.list_tools()
-async def list_tools():
-    return [
-        Tool(name="firecrawl_scrape",
-             description="Scrape a single URL, return markdown",
-             inputSchema={"type": "object",
-                          "properties": {"url": {"type": "string"}}})
-    ]
-```
+### Homelab Dashboard — Infrastructure Status
+Four tools: health check, service listing, system stats (CPU/RAM/disk), and network info. The agent asks "are all services up?" and gets a real answer.
 
-This wraps the tool above. My agent can pull any page. It turns it into clean text. Great for study.
+### Uptime Kuma — Monitoring
+Links to Uptime Kuma's API. Lists all monitors and their status. The agent can check uptime history for any service.
 
-### 2. Homelab Board — Infra Checks
+### Deploy — Container Management
+Start, stop, restart, and update Podman containers. The agent manages the entire container fleet.
 
-This node has four tools. It checks health. It lists checks. It reads stats. It shows net info. It runs shell code. No extras.
+### Logs — Log Aggregation
+Search across all container logs. Find errors, warnings, or patterns. Generate health reports from log data.
 
-### 3. Uptime Kuma — App Checks
+### Backup — Automated Backups
+Create, list, verify, and restore backups of any service. Keeps configs, wiki, and MCP servers safe.
 
-This links Uptime Kuma. It lists each check. It reads pings. The agent can ask: are all apps up? It gets a real reply.
+### GSD — Security Audit Orchestrator
+4-stage security compliance copilot. Formulate → Plan → Execute → Verify. Runs CIS benchmarks, CVE checks, and MCP vulnerability scans.
 
-### 4. GitHub — Repo Tools
+### Sentinel — MCP Security Scanner
+First MCP-native vulnerability scanner. Audits MCP servers against 8 known vulnerability classes with CVE references.
 
-This uses the main GitHub node. It has 18+ tools. It covers bugs, PRs, code, and search. The agent gets full reach.
+### Immune — Self-Healing Infrastructure
+Multi-channel health detection with quorum sensing. Auto-restarts confirmed-down services.
 
-### 5. Compliance Suite — CIS Security Audits
+### YouTube — Transcript Fetching
+Search YouTube and fetch transcripts. Powers the wiki ingestion pipeline.
 
-This runs nightly scans. It checks firewalls, CVEs, open ports, SSH, and kernels. It stores results with a SHA-256 chain. It makes SOC 2 packs for audits. All from one MCP node.
+### Google Calendar — Schedule Management
+Create, search, and manage calendar events from the terminal.
+
+### Arxiv — Paper Search
+Search academic papers by keyword, author, or category.
+
+Total: 12 MCP servers, 80+ tools.
 
 ## The Config
 
@@ -80,7 +87,7 @@ mcp_servers:
     command: "npx"
     args: ["-y", "@modelcontextprotocol/server-github"]
     env:
-      GITHUB_PERSONAL_ACCESS_TOKEN: "ghp_..."
+      GITHUB_PERSONAL_ACCESS_TOKEN: "${GITHUB_TOKEN}"
 ```
 
 Each node is a child proc. The agent spawns it. It finds the tools. It keeps the link open.

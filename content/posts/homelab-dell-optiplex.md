@@ -39,24 +39,13 @@ It all runs in Podman (rootless where possible):
 
 - **Uptime Kuma** (3001) — app checks with alerts
 - **Firecrawl** (3002) — web pull API
-- **AdGuard Home** (53/80) — DNS filter, blocks threats only
+- **Grafana** (3003) — metrics dashboards
+- **Prometheus** (9091) — metrics collection
+- **Dozzle** (8080) — container log viewer
 
 ### Tailscale Mesh VPN
 
 Both nodes link via Tailscale. No ports open on the router. No open apps. Reach all apps via the tailnet from afar.
-
-## DNS Filtering Without the Pain
-
-AdGuard Home runs as a guard. It blocks only threats. It stops trackers, malware, and phishing. It does not block all ads. The rule is simple: guard, do not break.
-
-**Pitfall I hit:** On Fedora, a system tool holds port 53. You must stop AND mask it. This also stops the linked sockets:
-
-```bash
-sudo systemctl stop systemd-resolved systemd-resolved-monitor.socket systemd-resolved-varlink.socket
-sudo systemctl mask systemd-resolved
-```
-
-Then swap the `/etc/resolv.conf` link for a fixed file. Point it to `127.0.0.1`.
 
 ## The AI Agent Layer
 
@@ -71,7 +60,7 @@ mcp_uptimekuma_list_monitors → all checks with status
 mcp_firecrawl_firecrawl_scrape → pull any URL to text
 ```
 
-Total: 100+ custom tools across 18 MCP servers.
+Total: 80+ custom tools across 12 MCP servers.
 
 ## Cost
 
