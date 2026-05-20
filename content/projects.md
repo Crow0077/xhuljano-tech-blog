@@ -53,28 +53,6 @@ ShowToc: false
 </div>
 
 <div class="project-card">
-  <div class="project-canvas" id="canvas-immune"></div>
-  <div class="project-info">
-    <h2>Self-Healing Infrastructure</h2>
-    <div class="tag-row">
-      <span class="tag">Quorum Sensing</span>
-      <span class="tag">Treg Arbitration</span>
-      <span class="tag">Immune Memory</span>
-      <span class="tag">Auto-Heal</span>
-    </div>
-    <p>Autonomous infrastructure healing inspired by the adaptive immune system. Four-channel health detection (HTTP, container status, logs, resources) with quorum sensing requires consensus before acting. Treg arbitrator suppresses false positives. Immune memory prevents restart loops. Heals confirmed failures automatically without human intervention.</p>
-    <div class="stat-row">
-      <div class="stat"><div class="num">4</div><div class="lbl">Detection Channels</div></div>
-      <div class="stat"><div class="num">5</div><div class="lbl">Tools</div></div>
-      <div class="stat"><div class="num">:8102</div><div class="lbl">HTTP Port</div></div>
-    </div>
-    <div class="links">
-      <a href="https://github.com/Crow0077/homelab-ai-toolkit">Source</a>
-    </div>
-  </div>
-</div>
-
-<div class="project-card">
   <div class="project-canvas" id="canvas-bridge"></div>
   <div class="project-info">
     <h2>Cross-MCP Security Pipeline</h2>
@@ -109,7 +87,7 @@ new p5(function(p){
     let wrap=document.getElementById('canvas-command');
     W=wrap.offsetWidth;H=240;
     p.resizeCanvas(W,H);c.parent('canvas-command');
-    let names=['DEPLOY','LOGS','BACKUP','HOMELAB','UPTIME','FIRECRAWL','SENTINEL','GSD','MINIRAG','AMEM','IMMUNE','BRIDGE'];
+    let names=['DEPLOY','LOGS','BACKUP','HOMELAB','UPTIME','FIRECRAWL','SENTINEL','GSD','MINIRAG','AMEM','BRIDGE'];
     let cols=[[0,200,255],[255,160,60],[80,220,120],[200,140,255],[255,200,50],[100,200,200],[255,100,150],[120,200,255],[255,180,80],[160,140,255],[200,100,255],[100,255,180],[255,150,100],[180,200,255],[255,100,200],[80,180,255],[150,220,100],[255,255,100]];
     let cx=W/2,cy=H/2,r=Math.min(W,H)*0.38;
     let nCount=Math.min(names.length, 18);
@@ -139,47 +117,6 @@ new p5(function(p){
   };
   p.windowResized=function(){let w=document.getElementById('canvas-command');W=w.offsetWidth;p.resizeCanvas(W,H);};
 },'canvas-command');
-
-new p5(function(p){
-  let W,H,events=[],time=0;
-  p.setup=function(){
-    let c=p.createCanvas(1,1);
-    let wrap=document.getElementById('canvas-immune');
-    W=wrap.offsetWidth;H=240;
-    p.resizeCanvas(W,H);c.parent('canvas-immune');
-    for(let i=0;i<12;i++){cells.push({x:p.random(W*0.15,W*0.85),y:p.random(H*0.2,H*0.8),r:12+Math.random()*8,hp:100,infected:false,phase:p.random(p.TWO_PI)});}
-  };
-  p.draw=function(){
-    p.background(8,8,16);time+=0.01;
-    if(p.random()<0.02&&threats.length<3){
-      let target=cells[p.floor(p.random(cells.length))];
-      threats.push({x:p.random(W),y:p.random(H),tx:target.x,ty:target.y,t:0,sp:0.008+Math.random()*0.01});
-    }
-    for(let i=threats.length-1;i>=0;i--){
-      let th=threats[i];th.t+=th.sp;
-      th.x=p.lerp(th.x,th.tx,th.t);th.y=p.lerp(th.y,th.ty,th.t);
-      p.noStroke();p.fill(255,60,60,200);p.circle(th.x,th.y,8+2*p.sin(time*5));
-      p.fill(255,100,100,60);p.circle(th.x,th.y,16);
-      for(let c of cells){let d=p.dist(th.x,th.y,c.x,c.y);if(d<20&&!c.infected){c.infected=true;c.hp=100;threats.splice(i,1);break;}}
-      if(th.t>=1)threats.splice(i,1);
-    }
-    for(let i=0;i<cells.length;i++){for(let j=i+1;j<cells.length;j++){
-      let d=p.dist(cells[i].x,cells[i].y,cells[j].x,cells[j].y);
-      if(d<100){p.stroke(40,80,140,15);p.strokeWeight(0.4);p.line(cells[i].x,cells[i].y,cells[j].x,cells[j].y);}
-    }}
-    for(let c of cells){
-      if(c.infected){c.hp-=0.3;if(c.hp<=0){c.infected=false;c.hp=100;}}
-      let alpha=c.infected?p.map(c.hp,0,100,80,200):180;
-      let col=c.infected?[255,130,80]:[80,200,140];
-      p.noStroke();for(let g=3;g>0;g--){p.fill(col[0],col[1],col[2],8*g);p.circle(c.x,c.y,c.r*2+g*6);}
-      p.fill(col[0],col[1],col[2],alpha);p.circle(c.x,c.y,c.r);
-      if(c.infected){p.stroke(255,255,255,40);p.strokeWeight(0.5);p.arc(c.x,c.y,c.r+6,c.r+6,-p.HALF_PI,-p.HALF_PI+p.map(c.hp,100,0,p.TWO_PI*0.8,p.TWO_PI*0.1));}
-      p.fill(col[0],col[1],col[2],100);p.textSize(6);p.textFont('monospace');p.textAlign(p.CENTER);p.text(c.infected?'HEALING':'HEALTHY',c.x,c.y+c.r+10);
-    }
-    p.fill(200,180,100,100);p.textSize(8);p.textAlign(p.RIGHT);p.text('TREG: suppressing false positives',W-15,H-8);
-  };
-  p.windowResized=function(){let w=document.getElementById('canvas-immune');W=w.offsetWidth;p.resizeCanvas(W,H);};
-},'canvas-immune');
 
 new p5(function(p){
   let W,H,nodes=[],flows=[],time=0;
