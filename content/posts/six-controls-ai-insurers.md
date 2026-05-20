@@ -10,7 +10,7 @@ ShowToc: true
 
 Every company using AI agents is now uninsured. Standard policies exclude AI damage. This covers model mistakes, bad actions, data leaks, and deepfake fraud. The AI insurance market will grow from $40M to $5B by 2032.
 
-Insurers don't just write checks. They need controls first. Fire insurance needed sprinklers. Auto insurance needed seatbelts. Cyber insurance built the security industry. **AI insurance will create the AI safety industry.**
+Insurers don't just write checks. They need controls first. Fire insurance needed sprinklers. Auto insurance needed seatbelts. Cyber insurance built the security field. **AI insurance will create the AI safety field.**
 
 Here are the six controls every AI insurer will demand. I also list the products you can build now to meet them.
 
@@ -20,11 +20,11 @@ Here are the six controls every AI insurer will demand. I also list the products
 
 **What insurers need:** When a claim comes in, they must prove what happened. Every agent action, tool call, LLM response, and human step-up must be logged. The log must be append-only. No one can change it later.
 
-**What to build:** An append-only event log for agent sessions. At a minimum, use a JSON lines file. Include timestamps, agent ID, action type, and input/output hashes.
+**What to build:** Build an append-only event log for agent sessions. At a minimum, use a JSON lines file. Include timestamps, agent ID, action type, and input/output hashes.
 
-A better approach is content-addressed storage such as IPFS or S3 with SHA256 checks. The best approach is a crypto chain. That way no entry can be changed later.
+A better approach is content-addressed storage. Use IPFS or S3 with SHA256 checks. The best approach is a crypto chain. That way no entry can be changed later.
 
-**Enterprise precedent:** Trigger.dev's context logs for durable agents. Temporal's event sourcing. The durable execution pattern.
+**Enterprise example:** Trigger.dev's context logs for durable agents. Temporal's event sourcing. The durable runs pattern.
 
 ---
 
@@ -32,9 +32,9 @@ A better approach is content-addressed storage such as IPFS or S3 with SHA256 ch
 
 **What insurers need:** No single health check is enough. Agents must be watched across many separate signals. These include HTTP codes, output quality scores, error rate trends, token use, latency, and context fit. If any two channels agree the agent is failing, it must step up.
 
-**What to build:** A monitoring system with 4+ separate detection channels. Each channel should produce a confidence score. Combine these scores to judge agent health. When confidence drops below a set point, trigger a step-up.
+**What to build:** Build a monitoring system with 4+ separate detection channels. Each channel should produce a confidence score. Combine these scores to judge agent health. When confidence drops below a set point, trigger a step-up.
 
-**Enterprise precedent:** Datadog Bits AI watches agents across many angles. Uber's Minions use multi-signal health checks. This is the "quorum sensing" pattern from biology applied to infra.
+**Enterprise example:** Datadog Bits AI watches agents across many angles. Uber's Minions use multi-signal health checks. This is the "quorum sensing" pattern from biology. It is applied to infra.
 
 ---
 
@@ -42,9 +42,9 @@ A better approach is content-addressed storage such as IPFS or S3 with SHA256 ch
 
 **What insurers need:** Before an agent goes live, it must pass a set of tests. These include known failure cases, edge cases, bad inputs, and speed tests. Results must be repeatable and versioned.
 
-**What to build:** An eval harness that runs agents against a golden dataset. Track pass and fail per case. Gate deployment: if the eval score drops below the set point, block the release.
+**What to build:** Build an eval harness. Run agents against a golden dataset. Track pass and fail per case. Gate release: if the eval score drops below the set point, block the release.
 
-**Enterprise precedent:** Datadog's "eval, eval, eval" lesson. Pydantic's Jeppa plus managed variables. Anthropic's eval suite. Every live agent team is building this.
+**Enterprise example:** Datadog's "eval, eval, eval" lesson. Pydantic's Jeppa plus managed variables. Anthropic's eval suite. Every live agent team is building this.
 
 ---
 
@@ -52,9 +52,9 @@ A better approach is content-addressed storage such as IPFS or S3 with SHA256 ch
 
 **What insurers need:** Agents must stay within hard bounds. These include a max spend per task, limited tool access, required human OK for high-risk actions, and blocked actions. For example, no deleting live data. No moving funds without OK.
 
-**What to build:** A policy engine that catches agent tool calls. Before execution, check against policy rules. If a rule is broken, block the action and step up. Policies must be versioned and auditable.
+**What to build:** Build a policy engine. It catches agent tool calls. Before runs, check against policy rules. If a rule is broken, block the action and step up. Policies must be versioned and auditable.
 
-**Enterprise precedent:** Bloomberg's "interceptors" at the protocol level. Anthropic's classifiers. This is the Treg judge pattern — check, OK or block, and log the choice.
+**Enterprise example:** Bloomberg's "interceptors" at the protocol level. Anthropic's classifiers. This is the Treg judge pattern. Check, OK or block, and log the choice.
 
 ---
 
@@ -62,19 +62,19 @@ A better approach is content-addressed storage such as IPFS or S3 with SHA256 ch
 
 **What insurers need:** When agent confidence drops, or a guardrail triggers, or the agent faces a new case, it must step up to a human. The human must get full context. The human's choice becomes part of the audit trail.
 
-**What to build:** An step-up system with four parts. First, set confidence thresholds per action type. Second, capture a context snapshot at the time of step-up. Third, log the human's choice. Fourth, create a feedback loop. The human's choice trains the agent for next time.
+**What to build:** Build a step-up system with four parts. First, set confidence thresholds per action type. Second, capture a context snapshot at the time of step-up. Third, log the human's choice. Fourth, create a feedback loop. The human's choice trains the agent for next time.
 
-**Enterprise precedent:** Every live AI system already does this. The difference is formalizing it for insurance compliance. The step-up path must be auditable, not just ops-driven.
+**Enterprise example:** Every live AI system already does this. The difference is formalizing it for insurance rules. The step-up path must be auditable. It must not just be ops-driven.
 
 ---
 
 ## Control 6: Continuous Compliance Scanning
 
-**What insurers need:** Not a one-time cert. Ongoing scanning detects when agent behavior drifts from baseline. Does output quality drop? Does the model start making things up more? Do token costs spike? Does context fit fall? If so, alert and dig in.
+**What insurers need:** Not a one-time cert. Ongoing scanning spots when agent behavior drifts from base. Does output quality drop? Does the model start making things up more? Do token costs spike? Does context fit fall? If so, alert and dig in.
 
-**What to build:** A drift detector that sets baseline behavior. Track average output quality, error rate, latency, and cost per task. Alert when any metric strays by more than 2 standard deviations. It must run always, not just at deploy time.
+**What to build:** Build a drift detector. Set baseline behavior. Track average output quality, error rate, latency, and cost per task. Alert when any metric strays by more than 2 standard deviations. It must run always. It must not just run at deploy time.
 
-**Enterprise precedent:** The context drop detection problem. Arise's Alex agent uses long-session evals. Claude Code uses truncation plus compression. Everyone is solving this.
+**Enterprise example:** The context drop detection problem. Arise's Alex agent uses long-session evals. Claude Code uses truncation plus compression. Everyone is solving this.
 
 ---
 
@@ -82,10 +82,10 @@ A better approach is content-addressed storage such as IPFS or S3 with SHA256 ch
 
 Nobody is writing about this mix of AI and insurance. Every AI firm will need these controls within 2-3 years. Insurers will require them. The firms that build these products NOW define the standards.
 
-You don't need to build all six. Build ONE well. Multi-channel monitoring (Control 2) plus guardrail enforcement (Control 4) plus step-up pipeline (Control 5) can be a single product. The immutable audit trail (Control 1) is a standalone SaaS. The eval gate (Control 3) is a dev tool.
+You don't need to build all six. Build ONE well. Multi-channel monitoring (Control 2) plus guardrail enforcement (Control 4) plus step-up pipeline (Control 5) can be a single product. The fixed audit trail (Control 1) is a standalone SaaS. The eval gate (Control 3) is a dev tool.
 
 This market is $40M today. It'll be $5B in six years. The standards are being written *right now*. The people who ship first write the rules.
 
 ---
 
-*This analysis is based on the Moonshots Podcast (May 2026). Insurers including Berkshire Hathaway and Chubb were confirmed to be removing AI coverage from standard policies. The OK rate for exclusion requests was 80%. The six controls framework is my mix of insurance industry patterns (fire, auto, cyber) applied to AI. I build AI infra on a homelab running 13 containers with custom MCP servers. These patterns are tested at small scale before they become enterprise requirements.*
+*This analysis is based on the Moonshots Podcast (May 2026). Insurers including Berkshire Hathaway and Chubb were confirmed to be removing AI coverage from standard policies. The OK rate for exclusion requests was 80%. The six controls framework is my mix of insurance industry patterns (fire, auto, cyber) applied to AI. I build AI infra on a homelab. It runs 13 containers with custom MCP servers. These models are tested at small scale. They are tested before they become enterprise requirements.*
