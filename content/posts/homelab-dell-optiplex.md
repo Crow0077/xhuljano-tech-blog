@@ -8,7 +8,7 @@ summary: "How I built a production-grade homelab on a used Dell OptiPlex 7090 SF
 ShowToc: true
 ---
 
-Most homelab tales start with big racks. Mine starts with a used Dell PC. I got it cheap. Here is how it became the brain. It runs my setup.
+Most homelab tales start with big racks. Mine starts with a used Dell PC. I got it cheap. Here is how it became the core. It runs all my gear.
 
 ## The Setup
 
@@ -29,19 +29,19 @@ An AI agent runs the lab. It uses MCP nodes. They give it access to:
 - **Uptime Kuma** — checks all apps
 - **Homelab board** — CPU, RAM, disk, net status
 - **Firecrawl** — web pulls for study
-- **GitHub** — full repo control from the terminal
+- **GitHub** — full repo rule from the shell
 
-The agent checks health. It restarts containers. It gets web pages. It runs GitHub repos. It even sets its own cron jobs. All via plain words.
+The agent checks health. It restarts boxes. It gets web pages. It runs GitHub repos. It even sets its own cron jobs. All via plain words.
 
 ### Podman Containers
 
-It all runs in Podman (rootless where possible):
+It all runs in Podman (no root where possible):
 
 - **Uptime Kuma** (3001) — app checks with alerts
 - **Firecrawl** (3002) — web pull API
-- **Grafana** (3003) — metrics dashboards
-- **Prometheus** (9091) — metrics collection
-- **Dozzle** (8080) — container log viewer
+- **Grafana** (3003) — stats dashboards
+- **Prometheus** (9091) — stats collection
+- **Dozzle** (8080) — box log viewer
 
 ### Tailscale Mesh VPN
 
@@ -51,7 +51,7 @@ Both nodes link via Tailscale. No ports open on the router. No open apps. Reach 
 
 This is what sets the lab apart. Hermes Agent is not just a bot. It has saved data. It uses custom tools. It can run real system tasks.
 
-Each MCP server is a Python script. It shares tools via MCP. The agent finds them at boot. It calls them like any tool.
+Each MCP node is a Python script. It shares tools via MCP. The agent finds them at boot. It calls them like any tool.
 
 ```
 mcp_homelab_homelab_status   → health check all apps
@@ -60,7 +60,7 @@ mcp_uptimekuma_list_monitors → all checks with status
 mcp_firecrawl_firecrawl_scrape → pull any URL to text
 ```
 
-Total: 80+ custom tools across 12 MCP servers.
+Total: 80+ custom tools across 12 MCP nodes.
 
 ## Cost
 
