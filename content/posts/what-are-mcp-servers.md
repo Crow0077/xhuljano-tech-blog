@@ -12,9 +12,9 @@ MCP is all over AI now. Most guides are too vague. I built 5 MCP tools. Here is 
 
 ## What is MCP?
 
-**Model Context Protocol (MCP)** is a norm. It lets AI agents use tools. Think of it as USB for AI. Any agent can use any tool.
+**Model Context Protocol (MCP)** is a spec. It lets AI use tools. Think of it as USB for AI. Any agent can plug in.
 
-Before MCP, you wrote custom links. Now you write one node. Any agent can plug in.
+Before MCP, you wrote custom code. Now you write one node. Any agent can plug in.
 
 ## How It Works
 
@@ -47,11 +47,11 @@ async def list_tools():
     ]
 ```
 
-This wraps my own Firecrawl. The agent can scrape any URL. It turns the page into clean text. Great for study.
+This wraps the tool above. My agent can pull any page. It turns it into clean text. Great for study.
 
 ### 2. Homelab Board — Infra Checks
 
-This server has four tools. It checks health. It lists each check. It reads stats. It shows net info. It runs shell cmds. No extras.
+This node has four tools. It checks health. It lists checks. It reads stats. It shows net info. It runs shell code. No extras.
 
 ### 3. Uptime Kuma — App Checks
 
@@ -59,11 +59,11 @@ This links Uptime Kuma. It lists each check. It reads pings. The agent can ask: 
 
 ### 4. GitHub — Repo Tools
 
-This uses the main GitHub node. It has 18+ tools. It covers bugs, PRs, code, and search tasks. The agent gets full GitHub reach.
+This uses the main GitHub node. It has 18+ tools. It covers bugs, PRs, code, and search. The agent gets full reach.
 
 ### 5. Compliance Suite — CIS Security Audits
 
-This runs nightly security scans. It checks firewalls, CVEs, open ports, SSH config, and kernel hardening. It stores results with a cryptographic SHA-256 audit trail. It generates SOC 2 evidence packages ready for auditors — all from a single MCP server.
+This runs nightly scans. It checks firewalls, CVEs, open ports, SSH, and kernels. It stores results with a SHA-256 chain. It makes SOC 2 packs for audits. All from one MCP node.
 
 ## The Config
 
@@ -89,10 +89,10 @@ Each node is a child proc. The agent spawns it. It finds the tools. It keeps the
 
 MCP turns agents from bots into ops tools. My agent can now:
 
-- Spot a dead app. It can fix it.
-- Scrape a paper. It can sum it up.
-- Open a GitHub issue. It can do this from a bug.
-- Run a security scan. It generates an audit report.
+- Spot a dead app. Fix it.
+- Pull a paper. Sum it up.
+- Open a GitHub issue. Do it from a bug.
+- Run a scan. Make an audit report.
 
 All this works via plain words. You do not switch tools by hand.
 
@@ -129,7 +129,7 @@ import asyncio
 asyncio.run(main())
 ```
 
-That is a live node. Add HTTP calls. Add DB reads. Add shell cmds. Make it do real work.
+That is a live node. Add HTTP calls. Add DB reads. Add shell code. Make it do real work.
 
 ## What's Next
 
