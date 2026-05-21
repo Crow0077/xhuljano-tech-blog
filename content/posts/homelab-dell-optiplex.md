@@ -8,7 +8,7 @@ summary: "How I built a production-grade homelab on a used Dell OptiPlex 7090 SF
 ShowToc: true
 ---
 
-Most homelab tales start with big racks. Mine starts with a used Dell PC. I got it cheap. Here is how it became the core. It runs all my gear.
+Most home lab tales start with big racks. Mine starts with a used Dell PC. I got it cheap. Here is how it became the core. It runs all my gear.
 
 ## The Setup
 
@@ -18,7 +18,7 @@ Most homelab tales start with big racks. Mine starts with a used Dell PC. I got 
 - 465GB NVMe SSD
 - Fedora Server 43
 
-This box runs it all. It is on 24/7. It is quiet. It uses little power.
+This box is the core. It runs it all. It is on 24/7. It is quiet. It uses little power.
 
 ## What's Running
 
@@ -26,26 +26,26 @@ This box runs it all. It is on 24/7. It is quiet. It uses little power.
 
 An AI agent runs the lab. It uses MCP nodes. They give it access to:
 
-- **Uptime Kuma** — checks all apps
-- **Homelab board** — CPU, RAM, disk, net status
-- **Firecrawl** — web pulls for study
-- **GitHub** — full repo rule from the shell
+- Uptime Kuma — checks all apps
+- Homelab board — CPU, RAM, disk, net status
+- Firecrawl — web pulls for study
+- GitHub — full repo rule from the shell
 
-The agent checks health. It restarts boxes. It gets web pages. It runs GitHub repos. It even sets its own cron jobs. All via plain words.
+The agent checks app health. It brings them back up. It pulls web pages. It runs GitHub repos. It even sets its own cron jobs. All via plain words.
 
 ### Podman Containers
 
-It all runs in Podman (no root where possible):
+It all runs in Podman (no root where we can):
 
-- **Uptime Kuma** (3001) — app checks with alerts
-- **Firecrawl** (3002) — web pull API
-- **Grafana** (3003) — stats dashboards
-- **Prometheus** (9091) — stats collection
-- **Dozzle** (8080) — box log viewer
+- Uptime Kuma (3001) — app checks with alerts
+- Firecrawl (3002) — web pull API
+- Grafana (3003) — stats charts
+- Prometheus (9091) — stats pulls
+- Dozzle (8080) — box log viewer
 
 ### Tailscale Mesh VPN
 
-Both nodes link via Tailscale. No ports open on the router. No open apps. Reach all apps via the tailnet from afar.
+Both nodes link via Tailscale. No ports open on the router. No open apps. Reach all apps via mesh from afar.
 
 ## The AI Agent Layer
 
