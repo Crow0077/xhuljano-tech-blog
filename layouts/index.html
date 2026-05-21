@@ -1,24 +1,4 @@
 {{- define "main" }}
-<style>
-#hero-wrap{width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;height:100vh;max-height:900px;background:#020208;overflow:hidden}
-#hero-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0.85}
-#hero-overlay{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,0) 40%,rgba(2,2,8,0.7) 100%)}
-#hero-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;z-index:10}
-#hero-text h1{font-family:'SF Mono','Fira Code','JetBrains Mono',monospace;font-size:2.8rem;color:rgba(255,255,255,0.95);margin:0;letter-spacing:-1px;text-shadow:0 0 60px rgba(255,180,50,0.25),0 0 120px rgba(255,180,50,0.1)}
-#hero-text p{font-family:'SF Mono','Fira Code','JetBrains Mono',monospace;font-size:0.85rem;color:rgba(200,210,240,0.7);margin-top:12px;letter-spacing:3px;text-transform:uppercase}
-#hero-credit{position:absolute;bottom:12px;right:16px;z-index:10;font-family:monospace;font-size:0.6rem;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:2px}
-</style>
-<div id="hero-wrap">
-  <video id="hero-video" autoplay loop muted playsinline preload="auto">
-    <source src="{{ "solar-hero.mp4" | relURL }}" type="video/mp4">
-  </video>
-  <div id="hero-overlay"></div>
-  <div id="hero-text">
-    <h1>Building with AI Agents</h1>
-    <p>Cloud Engineering Student · AI Agents · MCP · Homelab</p>
-  </div>
-  <div id="hero-credit">3D Render — Blender 5.1 · MCP Server · RTX 4080 Super</div>
-</div>
 <section class="post-content">{{ .Content }}</section>
 <div style="text-align:center;padding:3rem 1rem 1rem;max-width:600px;margin:0 auto;">
   <h2 style="font-family:'SF Mono',monospace;font-size:1.2rem;color:rgba(200,220,255,0.8);margin-bottom:0.8rem;">Connect</h2>
