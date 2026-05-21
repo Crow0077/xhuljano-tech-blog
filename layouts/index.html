@@ -1,118 +1,88 @@
 {{- define "main" }}
 <style>
-#hero-wrap{width:100%;height:600px;background:#08080c;position:relative;overflow:hidden;cursor:grab}
+#hero-wrap{width:100%;height:600px;background:#020208;position:relative;overflow:hidden;cursor:grab}
 #hero-wrap:active{cursor:grabbing}
 #hero-wrap canvas{display:block;position:absolute;top:0;left:0}
 #hero-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;z-index:10;pointer-events:none}
-#hero-text h1{font-family:'SF Mono','Fira Code','JetBrains Mono',monospace;font-size:2.8rem;color:rgba(255,255,255,0.9);margin:0;letter-spacing:-1px;text-shadow:0 0 40px rgba(126,200,192,0.3),0 0 80px rgba(126,200,192,0.1)}
+#hero-text h1{font-family:'SF Mono','Fira Code','JetBrains Mono',monospace;font-size:2.8rem;color:rgba(255,255,255,0.9);margin:0;letter-spacing:-1px;text-shadow:0 0 40px rgba(255,180,50,0.2),0 0 80px rgba(255,180,50,0.08)}
 #hero-text p{font-family:'SF Mono','Fira Code','JetBrains Mono',monospace;font-size:0.85rem;color:rgba(160,170,200,0.6);margin-top:12px;letter-spacing:3px;text-transform:uppercase}
-.hint{position:absolute;bottom:20px;left:0;right:0;text-align:center;z-index:2;color:rgba(255,255,255,0.2);font-size:10px;pointer-events:none;letter-spacing:2px}
 </style>
 <div id="hero-wrap">
   <div id="hero-text"><h1>Building with AI Agents</h1><p>Cloud Engineering Student · AI Agents · MCP · Homelab</p></div>
-  <div class="hint">drag to rotate · double‑click to shatter · scroll to zoom</div>
 </div>
 <script>
-// ── Stellated Nexus — icosahedron crystal system for hero
 (function(){
-const Wp=document.getElementById("hero-wrap"),Cv=document.createElement("canvas"),X=Cv.getContext("2d");
-Wp.appendChild(Cv);
-const HH=600;
-let W,H,DPR,time=0,dt2=.016,lt=0,rotX=.4,rotY=0,autoSpin=.25,trX=.4,trY=0,zoom=1,tZoom=1;
-let mouse={x:0,y:0,down:!1,px:0,py:0},shattered=!1,sp=0,sTgt=0,hueShift=0,sparkles=[],bgP=[];
-
-// Icosahedron
-const phi=(1+Math.sqrt(5))/2;
-const icoV=[[-1,phi,0],[1,phi,0],[-1,-phi,0],[3,-phi,0],[0,-1,phi],[0,1,phi],[0,-1,-phi],[0,1,-phi],[phi,0,-1],[phi,0,1],[-phi,0,-1],[-phi,0,1]].map(v=>{const m=Math.sqrt(v[0]**2+v[1]**2+v[2]**2);return[v[0]/m,v[1]/m,v[2]/m]});
-const icoF=[[0,11,5],[0,5,1],[0,1,7],[0,7,10],[0,10,11],[1,5,9],[5,11,4],[11,10,2],[10,7,6],[7,1,8],[3,9,4],[3,4,2],[3,2,6],[3,6,8],[3,8,9],[4,5,9],[2,4,11],[6,2,10],[8,6,7],[9,8,1]];
-function crs(a,b){return[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]]}
-function sb(a,b){return[a[0]-b[0],a[1]-b[1],a[2]-b[2]]}
-function nm(v){const m=Math.sqrt(v[0]**2+v[1]**2+v[2]**2);return[v[0]/m,v[1]/m,v[2]/m]}
-const icoFN=icoF.map(f=>nm(crs(sb(icoV[f[1]],icoV[f[0]]),sb(icoV[f[2]],icoV[f[0]]))));
-const icoFC=icoF.map(f=>{const cx=(icoV[f[0]][0]+icoV[f[1]][0]+icoV[f[2]][0])/3,cy=(icoV[f[0]][1]+icoV[f[1]][1]+icoV[f[2]][1])/3,cz=(icoV[f[0]][2]+icoV[f[1]][2]+icoV[f[2]][2])/3;return nm([cx,cy,cz])});
-// Tetrahedron orbiters
-const tetV=[[1,1,1],[1,-1,-1],[-1,1,-1],[-1,-1,1]].map(v=>{const m=Math.sqrt(3);return[v[0]/m,v[1]/m,v[2]/m]});
-const tetF=[[0,1,2],[0,2,3],[0,3,1],[1,3,2]];
-const tetFN=tetF.map(f=>nm(crs(sb(tetV[f[1]],tetV[f[0]]),sb(tetV[f[2]],tetV[f[0]]))));
-const tetFC=tetF.map(f=>{const cx=(tetV[f[0]][0]+tetV[f[1]][0]+tetV[f[2]][0])/3,cy=(tetV[f[0]][1]+tetV[f[1]][1]+tetV[f[2]][1])/3,cz=(tetV[f[0]][2]+tetV[f[1]][2]+tetV[f[2]][2])/3;return nm([cx,cy,cz])});
-const orbiters=[{d:2.5,tX:.3,tY:0,s:.7,z:.35,h:190},{d:2.8,tX:-.5,tY:.8,s:-.55,z:.28,h:220},{d:3,tX:.7,tY:-.4,s:.9,z:.22,h:250},{d:2.4,tX:-.2,tY:-.7,s:-.65,z:.32,h:175}];
-const L1=nm([.4,.7,.35]),L2=nm([-.3,-.45,.25]),L3=nm([.1,.2,.8]),AMB=.06;
+const wp=document.getElementById("hero-wrap"),cv=document.createElement("canvas"),x=cv.getContext("2d");
+wp.appendChild(cv);const HH=600;
+let W,H,dpr,time=0,dt=0,lt=0;
+let camDist=22,camLat=.35,camLon=0,cd=22,cl=.35,clo=0;
+let mouse={x:0,y:0,down:!1,px:0,py:0},hovered=-1;
+let stars=[],st=[];
+const planets=[{name:"Mercury",c:"#b5b5b5",o:3,s:.08,sp:4.15,r:!1},{name:"Venus",c:"#e8cda0",o:4,s:.18,sp:3,r:!1},{name:"Earth",c:"#5599dd",o:5.2,s:.19,sp:2.4,r:!1},{name:"Mars",c:"#dd6644",o:6.5,s:.13,sp:1.9,r:!1},{name:"Jupiter",c:"#d4a574",o:9,s:.7,sp:1.05,r:!1},{name:"Saturn",c:"#e8d5a3",o:11.5,s:.58,sp:.78,r:!0},{name:"Uranus",c:"#8cd4d4",o:14,s:.38,sp:.55,r:!1},{name:"Neptune",c:"#4466dd",o:16,s:.36,sp:.44,r:!1}];
+const ps=planets.map(p=>({angle:Math.random()*Math.PI*2,ox:0,oy:0,oz:0}));
 
 function rY(x,y,z,a){const c=Math.cos(a),s=Math.sin(a);return[x*c+z*s,y,-x*s+z*c]}
 function rX(x,y,z,a){const c=Math.cos(a),s=Math.sin(a);return[x,y*c-z*s,y*s+z*c]}
-function prj(v,cx,cy,sz,tx,ty){let[x,y,z]=rY(v[0],v[1],v[2],ty);[x,y,z]=rX(x,y,z,tx);const d=z+5;return[cx+x*sz/d,cy-y*sz/d,z/sz]}
-function prjN(n,tx,ty){let[nx,ny,nz]=rY(n[0],n[1],n[2],ty);[nx,ny,nz]=rX(nx,ny,nz,tx);return[nx,ny,nz]}
-
-// Background particles
-for(let i=0;i<150;i++){const a=Math.random()*Math.PI*2,b=Math.acos(2*Math.random()-1),r=3+Math.random()*8;bgP.push({ba:a,bb:b,br:r,size:.5+Math.random()*1.5,hue:180+Math.random()*80,alpha:.1+Math.random()*.3,speed:.08+Math.random()*.25})}
-
-function aS(x,y,z,c){sparkles.push({x,y,z,life:1,decay:.4+Math.random()*.8,size:1+Math.random()*3,color:c||'#fff',phase:Math.random()*Math.PI*2})}
-function dS(sx,sy,s,life,color,phase){
-  if(life<.02)return;const fk=.6+.4*Math.sin(phase+time*3),a=life*.8*fk;
-  const g=X.createRadialGradient(sx,sy,0,sx,sy,s*2.5);g.addColorStop(0,`rgba(255,255,255,${a})`);g.addColorStop(.3,`${color}${(a*.6).toFixed(2)})`);g.addColorStop(1,'rgba(0,0,0,0)');X.fillStyle=g;X.beginPath();X.arc(sx,sy,s*2.5,0,Math.PI*2);X.fill();
-  X.strokeStyle=`rgba(255,255,255,${a})`;X.lineWidth=.6;X.beginPath();X.moveTo(sx,sy-s);X.lineTo(sx,sy+s);X.stroke();X.beginPath();X.moveTo(sx-s,sy);X.lineTo(sx+s,sy);X.stroke();
-  X.fillStyle=`rgba(255,255,255,${a*1.2})`;X.beginPath();X.arc(sx,sy,s*.2,0,Math.PI*2);X.fill()
+function prj(wx,wy,wz){
+  const cx=cd*Math.cos(cl)*Math.sin(clo),cy=cd*Math.sin(cl),cz=cd*Math.cos(cl)*Math.cos(clo);
+  const fx=-cx,fy=-cy,fz=-cz,fm=Math.sqrt(fx*fx+fy*fy+fz*fz),fwx=fx/fm,fwy=fy/fm,fwz=fz/fm;
+  let rx=1*fwz-0*fwy,ry=0*fwx-0*fwz,rz=0*fwy-1*fwx;
+  const rmag=Math.sqrt(rx*rx+ry*ry+rz*rz);rx/=rmag;ry/=rmag;rz/=rmag;
+  const ux=fwy*rz-fwz*ry,uy=fwz*rx-fwx*rz,uz=fwx*ry-fwy*rx;
+  const dx=wx-cx,dy=wy-cy,dz=wz-cz;
+  const sx=dx*rx+dy*ry+dz*rz,sy=dx*ux+dy*uy+dz*uz,sz=dx*fwx+dy*fwy+dz*fwz;
+  if(sz<.1)return null;const sc=150/sz;
+  return{x:W/2+sx*sc,y:H/2-sy*sc,z:sz,sc:sc};
 }
 
-function rP(verts,faces,fnorm,fcent,cx,cy,sz,tx,ty,hue,sA){
-  const pts=verts.map(v=>prj(v,cx,cy,sz,tx,ty));
-  const fd=faces.map((f,i)=>{const pn=prjN(fnorm[i],tx,ty);let za=(pts[f[0]][2]+pts[f[1]][2]+pts[f[2]][2])/3;
-    if(sA>.001){const cn=prjN(fcent[i],tx,ty);za+=sA*3;const px=cn[0]*sA*sz*.6,py=-cn[1]*sA*sz*.6;for(let j=0;j<3;j++){pts[f[j]][0]+=px;pts[f[j]][1]+=py}}
-    const d1=Math.max(0,pn[0]*L1[0]+pn[1]*L1[1]+pn[2]*L1[2]),d2=Math.max(0,pn[0]*L2[0]+pn[1]*L2[1]+pn[2]*L2[2]),d3=Math.max(0,pn[0]*L3[0]+pn[1]*L3[1]+pn[2]*L3[2]);
-    const diff=d1*.5+d2*.3+d3*.15+AMB,rx=2*d1*pn[0]-L1[0],ry=2*d1*pn[1]-L1[1],rz=2*d1*pn[2]-L1[2],spk=Math.pow(Math.max(0,rx*.3+ry*.2+rz*.6),25);
-    return{f,lit:Math.min(1,diff+spk*.45),z:za}});
-  fd.sort((a,b)=>b.z-a.z);
-  for(const f of fd){const l=f.lit,r=Math.round(20+(hue>200?40:30)+l*80),g=Math.round(40+(hue>200?30:50)+l*120),b=Math.round(50+(hue>200?60:40)+l*100);
-    X.fillStyle=`rgba(${r},${g},${b},${.5+l*.4})`;X.strokeStyle=`rgba(${Math.round(r*1.3)},${Math.round(g*1.3)},${Math.round(b*1.3)},${.12+l*.18})`;X.lineWidth=.5;
-    X.beginPath();X.moveTo(pts[f.f[0]][0],pts[f.f[0]][1]);X.lineTo(pts[f.f[1]][0],pts[f.f[1]][1]);X.lineTo(pts[f.f[2]][0],pts[f.f[2]][1]);X.closePath();X.fill();X.stroke()}
-  return fcent.map(fc=>prj(fc,cx,cy,sz,tx,ty))
+for(let i=0;i<400;i++){const a=Math.random()*Math.PI*2,b=Math.acos(2*Math.random()-1),r=35+Math.random()*65;stars.push({x:Math.sin(b)*Math.cos(a)*r,y:Math.sin(b)*Math.sin(a)*r,z:Math.cos(b)*r,sz:.3+Math.random()*1.5,br:.4+Math.random()*.6});st.push({sp:.5+Math.random()*3,ph:Math.random()*Math.PI*2})}
+
+function lg(hex,amt){const r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);return`rgb(${Math.min(255,Math.round(r+255*amt))},${Math.min(255,Math.round(g+255*amt))},${Math.min(255,Math.round(b+255*amt))})`}
+function dk(hex,amt){const r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);return`rgb(${Math.max(0,Math.round(r*(1-amt)))},${Math.max(0,Math.round(g*(1-amt)))},${Math.max(0,Math.round(b*(1-amt)))})`}
+
+function drawSun(){
+  const p=prj(0,0,0);if(!p)return;
+  const r=Math.max(p.sc*.75,18);
+  for(let i=4;i>=0;i--){const gr=Math.round(r+r*.3*i),g=x.createRadialGradient(p.x,p.y,0,p.x,p.y,gr);g.addColorStop(0,`rgba(255,255,200,${.15-i*.025})`);g.addColorStop(.4,`rgba(255,180,50,${.08-i*.012})`);g.addColorStop(1,'rgba(0,0,0,0)');x.fillStyle=g;x.beginPath();x.arc(p.x,p.y,gr,0,Math.PI*2);x.fill()}
+  const g2=x.createRadialGradient(p.x-r*.3,p.y-r*.3,r*.05,p.x,p.y,r);g2.addColorStop(0,'#fffde0');g2.addColorStop(.25,'#ffe08a');g2.addColorStop(.6,'#ff9d2e');g2.addColorStop(1,'#cc5500');x.fillStyle=g2;x.beginPath();x.arc(p.x,p.y,r,0,Math.PI*2);x.fill()
 }
 
-function dr(cx,cy,sz,tx,ty,dist,seg,hue){
-  X.strokeStyle=`rgba(${Math.round(hue*.6)},${Math.round(120+hue*.3)},${Math.round(180+hue*.2)},.12)`;X.lineWidth=.6;X.beginPath();
-  let first=!0;for(let i=0;i<=seg;i++){const a=(i/seg)*Math.PI*2;const[sx,sy]=prj([Math.cos(a)*dist,0,Math.sin(a)*dist],cx,cy,sz,tx,ty);if(first){X.moveTo(sx,sy);first=!1}else X.lineTo(sx,sy)}X.stroke()
+function dPlanet(px,py,pz,r,hx,rings){
+  const p=prj(px,py,pz);if(!p)return null;
+  const sr=Math.max(p.sc*r,1.5);
+  const g=x.createRadialGradient(p.x-sr*.3,p.y-sr*.3,sr*.05,p.x,p.y,sr);g.addColorStop(0,lg(hx,.4));g.addColorStop(.6,hx);g.addColorStop(1,dk(hx,.5));x.fillStyle=g;x.beginPath();x.arc(p.x,p.y,sr,0,Math.PI*2);x.fill();
+  x.fillStyle='rgba(0,0,0,.25)';x.beginPath();x.arc(p.x+sr*.15,p.y,sr*.85,-Math.PI*.5,Math.PI*.5);x.fill();
+  if(rings){x.save();x.translate(p.x,p.y);x.scale(1,.28);x.rotate(-.4);x.strokeStyle='rgba(210,190,150,.5)';x.lineWidth=sr*.18;x.beginPath();x.ellipse(0,0,sr*2.3,sr*2.3,0,Math.PI*.7,Math.PI*1.7);x.stroke();x.strokeStyle='rgba(190,170,130,.35)';x.lineWidth=sr*.35;x.beginPath();x.ellipse(0,0,sr*1.8,sr*1.8,0,Math.PI*.6,Math.PI*1.8);x.stroke();x.restore()}
+  return{x:p.x,y:p.y,r:sr}
 }
 
-function dThread(x1,y1,x2,y2,alpha,hue){
-  const mx=(x1+x2)/2,my=(y1+y2)/2-12;X.strokeStyle=`rgba(${Math.round(100+hue*.4)},${Math.round(180+hue*.3)},${Math.round(230)},${alpha})`;X.lineWidth=.4;X.beginPath();X.moveTo(x1,y1);X.quadraticCurveTo(mx,my,x2,y2);X.stroke()
-}
+function rs(){dpr=Math.min(devicePixelRatio||1,2);W=wp.offsetWidth;H=HH;cv.width=W*dpr;cv.height=H*dpr;x.setTransform(dpr,0,0,dpr,0,0)}
+rs();addEventListener("resize",rs);
 
-function rs(){DPR=Math.min(devicePixelRatio||1,2);W=Wp.offsetWidth;H=HH;Cv.width=W*DPR;Cv.height=H*DPR;X.setTransform(DPR,0,0,DPR,0,0)}
 function fr(now){
-  dt2=lt?Math.min((now-lt)/1e3,.1):.016;lt=now;time+=dt2;
-  rotX+=(trX-rotX)*Math.min(dt2*5,1);rotY+=(trY-rotY)*Math.min(dt2*5,1);zoom+=(tZoom-zoom)*Math.min(dt2*4,1);
-  if(!mouse.down)trY+=autoSpin*dt2;
-  const sd=sTgt-sp;if(Math.abs(sd)>.001)sp+=Math.sign(sd)*Math.min(Math.abs(sd),1.8*dt2);
-  hueShift+=dt2*.08;const bh=190+Math.sin(hueShift)*30;
-  X.clearRect(0,0,W,H);
-  const cx=W/2,cy=H/2,sz=Math.min(W,H)*.2*zoom;
-  // BG particles
-  for(const p of bgP){p.ba+=p.speed*dt2;const px=Math.sin(p.bb)*Math.cos(p.ba)*p.br,py=Math.sin(p.bb)*Math.sin(p.ba)*p.br,pz=Math.cos(p.bb)*p.br;const[sx,sy,z]=prj([px,py,pz],cx,cy,sz,rotX,rotY);if(z<.01)continue;X.fillStyle=`hsla(${p.hue},60%,70%,${p.alpha*(.4+.6*((z*sz+3)/8))})`;X.beginPath();X.arc(sx,sy,p.size,0,Math.PI*2);X.fill()}
-  // Orbital rings
-  for(const o of orbiters)dr(cx,cy,sz,rotX+o.tX,rotY+o.tY,o.d,100,o.h);
-  // Orbiters
-  const oP=[];for(const o of orbiters){const an=time*o.s;let[wx,wy,wz]=rX(Math.cos(an)*o.d,0,Math.sin(an)*o.d,o.tX);[wx,wy,wz]=rY(wx,wy,wz,o.tY);const[osx,osy,osz]=prj([wx,wy,wz],cx,cy,sz,rotX,rotY);oP.push({sx:osx,sy:osy,h:o.h});rP(tetV,tetF,tetFN,tetFC,osx,osy,sz*o.z,rotX+o.tX,rotY+o.tY,o.h,0)}
-  // Central icosahedron
-  const anc=rP(icoV,icoF,icoFN,icoFC,cx,cy,sz,rotX,rotY,bh,sp);
-  // Energy threads
-  if(sp<1)for(const op of oP)dThread(cx,cy,op.sx,op.sy,(1-sp)*.12,op.h);
-  // Sparkles
-  if(!shattered&&Math.random()<.05&&sparkles.length<10){const ai=Math.floor(Math.random()*anc.length);if(!sparkles.some(s=>s.ai===ai)){const[ax,ay]=anc[ai];aS(ax,ay,1,'#c0f0ff');sparkles[sparkles.length-1].ai=ai}}
-  if(sp>.1&&Math.random()<.25){const ri=Math.floor(Math.random()*anc.length);aS(anc[ri][0]+(Math.random()-.5)*35,anc[ri][1]+(Math.random()-.5)*35,.5,'#ffd0a0')}
-  for(let i=sparkles.length-1;i>=0;i--){const s=sparkles[i];s.life-=s.decay*dt2;if(s.life<=0){sparkles.splice(i,1);continue}dS(s.x,s.y,s.size,s.life,s.color,s.phase)}
+  dt=lt?Math.min((now-lt)/1e3,.1):.016;lt=now;time+=dt;
+  camDist+=(cd-camDist)*Math.min(dt*5,1);camLat+=(cl-camLat)*Math.min(dt*8,1);camLon+=(clo-camLon)*Math.min(dt*8,1);
+  x.fillStyle='#020208';x.fillRect(0,0,W,H);
+  for(let i=0;i<stars.length;i++){const s=stars[i],p=prj(s.x,s.y,s.z);if(!p)continue;const tw=s.br*(.7+.3*Math.sin(time*st[i].sp+st[i].ph)),a=tw*.8;x.fillStyle=`rgba(200,210,255,${a})`;x.beginPath();x.arc(p.x,p.y,Math.max(.3,s.sz*.8),0,Math.PI*2);x.fill()}
+  for(const p of planets){x.strokeStyle='rgba(255,255,255,.04)';x.lineWidth=.5;x.beginPath();let f=!0;for(let a=0;a<=Math.PI*2;a+=.06){const pt=prj(Math.cos(a)*p.o,0,Math.sin(a)*p.o);if(!pt)continue;if(f){x.moveTo(pt.x,pt.y);f=!1}else x.lineTo(pt.x,pt.y)}x.stroke()}
+  for(let i=0;i<planets.length;i++){ps[i].angle+=planets[i].sp*dt;ps[i].ox=Math.cos(ps[i].angle)*planets[i].o;ps[i].oz=Math.sin(ps[i].angle)*planets[i].o}
+  drawSun();
+  const scr=[];hovered=-1;let cdMin=50;
+  for(let i=0;i<planets.length;i++){const r=dPlanet(ps[i].ox,ps[i].oy,ps[i].oz,planets[i].s,planets[i].c,planets[i].r);if(r){scr.push({i,x:r.x,y:r.y,r:r.r});if(i===2){const ma=time*5+ps[i].angle*3,dst=.35;dPlanet(ps[i].ox+Math.cos(ma)*dst,ps[i].oy,ps[i].oz+Math.sin(ma)*dst,.04,'#ddd',!1)}}}
+  if(mouse.x>0&&mouse.y>0)for(const s of scr){const dx=mouse.x-s.x,dy=mouse.y-s.y,d=Math.sqrt(dx*dx+dy*dy);if(d<Math.max(s.r+10,24)&&d<cdMin){hovered=s.i;cdMin=d}}
   requestAnimationFrame(fr)
 }
 
-rs();addEventListener("resize",rs);
-Wp.addEventListener("mousedown",e=>{mouse.down=!0;mouse.px=e.clientX;mouse.py=e.clientY;e.preventDefault()});
-Wp.addEventListener("mousemove",e=>{mouse.x=e.clientX;mouse.y=e.clientY;if(mouse.down){trY+=(e.clientX-mouse.px)*.005;trX-=(e.clientY-mouse.py)*.005;trX=Math.max(-1.2,Math.min(1.2,trX));mouse.px=e.clientX;mouse.py=e.clientY}});
-Wp.addEventListener("mouseup",()=>{mouse.down=!1});
-Wp.addEventListener("mouseleave",()=>{mouse.down=!1});
-Wp.addEventListener("dblclick",e=>{e.preventDefault();shattered=!shattered;sTgt=shattered?1:0;autoSpin=shattered?.15:.25});
-Wp.addEventListener("wheel",e=>{e.preventDefault();tZoom=Math.max(.6,Math.min(2.5,tZoom-e.deltaY*.001))},{passive:!1});
-Wp.addEventListener("touchstart",e=>{if(e.touches.length===1){mouse.down=!0;mouse.px=e.touches[0].clientX;mouse.py=e.touches[0].clientY}e.preventDefault()});
-Wp.addEventListener("touchmove",e=>{if(mouse.down&&e.touches.length===1){trY+=(e.touches[0].clientX-mouse.px)*.005;trX-=(e.touches[0].clientY-mouse.py)*.005;trX=Math.max(-1.2,Math.min(1.2,trX));mouse.px=e.touches[0].clientX;mouse.py=e.touches[0].clientY}if(e.touches.length===2){const d=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);tZoom=Math.max(.6,Math.min(2.5,1+(d-150)*.003))}e.preventDefault()},{passive:!1});
-Wp.addEventListener("touchend",()=>{mouse.down=!1});
+wp.addEventListener("mousedown",e=>{mouse.down=!0;mouse.px=e.clientX;mouse.py=e.clientY;e.preventDefault()});
+wp.addEventListener("mousemove",e=>{mouse.x=e.clientX;mouse.y=e.clientY;if(mouse.down){clo+=(e.clientX-mouse.px)*.003;cl-=(e.clientY-mouse.py)*.003;cl=Math.max(-1.2,Math.min(1.2,cl));mouse.px=e.clientX;mouse.py=e.clientY}});
+wp.addEventListener("mouseup",()=>{mouse.down=!1});
+wp.addEventListener("mouseleave",()=>{mouse.down=!1;mouse.x=-1;mouse.y=-1});
+wp.addEventListener("click",e=>{if(hovered>=0){const p=planets[hovered];cd=p.o*1.5;cl=.15}});
+wp.addEventListener("dblclick",e=>{cd=22;cl=.35;clo=0;e.preventDefault()});
+wp.addEventListener("wheel",e=>{e.preventDefault();cd=Math.max(5,Math.min(50,cd-e.deltaY*.02))},{passive:!1});
+wp.addEventListener("touchstart",e=>{if(e.touches.length===1){mouse.down=!0;mouse.px=e.touches[0].clientX;mouse.py=e.touches[0].clientY;mouse.x=e.touches[0].clientX;mouse.y=e.touches[0].clientY}e.preventDefault()});
+wp.addEventListener("touchmove",e=>{if(mouse.down&&e.touches.length===1){clo+=(e.touches[0].clientX-mouse.px)*.003;cl-=(e.touches[0].clientY-mouse.py)*.003;cl=Math.max(-1.2,Math.min(1.2,cl));mouse.px=e.touches[0].clientX;mouse.py=e.touches[0].clientY;mouse.x=e.touches[0].clientX;mouse.y=e.touches[0].clientY}if(e.touches.length===2){const d=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);cd=Math.max(5,Math.min(50,22-(d-150)*.03))}e.preventDefault()},{passive:!1});
+wp.addEventListener("touchend",()=>{mouse.down=!1});
 requestAnimationFrame(fr);
 })();
 </script>
