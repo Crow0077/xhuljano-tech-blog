@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-05-20
+date: 2026-05-21
 draft: false
 ShowToc: false
 ---
@@ -119,7 +119,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated May 20, 2026 — 07:00 UTC</div>
+    <div class="last-updated">Updated May 21, 2026 — 07:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -128,56 +128,56 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 19</div>
+      <div class="news-date">May 20</div>
       <div class="news-content">
-        <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/" target="_blank">Google I/O 2026: Gemini 3.5 Flash, Gemini Omni, Gemini Spark — The Biggest AI Keynote Ever</a></h3>
-        <p>Google's nearly two-hour I/O keynote was the most AI-dense product showcase in company history. Gemini 3.5 Flash is now the default model across all Google products, outclassing prior models on latency and quality. Gemini Omni creates anything from any input starting with video. Gemini Spark — a 24/7 personal AI agent — launches next week for AI Ultra subscribers. AI Mode in Search represents the biggest Search upgrade in 30 years. Gemini app now has 900M+ MAU, Google processes 9.7 trillion tokens/month.</p>
-        <div class="news-tags"><span>Google</span><span>I/O 2026</span><span>Gemini</span></div>
+        <h3><a href="https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/" target="_blank">Google I/O 2026: 100 Announcements — Gemini Omni, Antigravity 2.0, WebMCP, Android XR Glasses</a></h3>
+        <p>Google's I/O 2026 keynote was the most AI-dense product showcase in company history, with 100 announcements spanning models, agents, Search, Chrome, Android, YouTube, and smart glasses. Gemini 3.5 Flash is now the default model across all products, 4× faster than rival frontier models. Gemini Spark — a 24/7 background personal agent — launches next week. Universal Cart brings agentic shopping. WebMCP, a proposed open standard for agent-friendly websites, starts origin trials in Chrome 149. Google now processes 3.2 quadrillion tokens/month, Gemini app hits 900M+ MAU, and AI Mode in Search surpassed 1B MAU.</p>
+        <div class="news-tags"><span>Google I/O</span><span>Gemini Omni</span><span>WebMCP</span><span>Agents</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">May 19</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/" target="_blank">Musk Loses Lawsuit Against OpenAI — Jury Unanimously Dismisses All Claims</a></h3>
-        <p>A California federal jury needed less than two hours to unanimously reject Elon Musk's entire lawsuit against OpenAI and Sam Altman. The jury found Musk's claims were barred by the statute of limitations — he waited too long to sue. The verdict ends a three-week trial that scrutinized OpenAI's non-profit to for-profit transition. Musk had sought to oust Altman and unwind the restructuring. A landmark moment for AI company governance.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Legal</span><span>Governance</span></div>
+        <h3><a href="https://theaitrack.com/andrej-karpathy-joins-anthropic/" target="_blank">Andrej Karpathy Joins Anthropic's Pretraining Team to Work on Claude</a></h3>
+        <p>Andrej Karpathy, co-founder of OpenAI and former Tesla AI director, announced he has joined Anthropic's pretraining team under Nick Joseph. Karpathy will lead a group focused on using Claude itself to accelerate pretraining research — AI-assisted AI development. The hire signals Anthropic's commitment to competing for elite research talent during an intensifying frontier AI talent war. Karpathy said he remains "deeply passionate about education" and plans to resume Eureka Labs in time.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Karpathy</span><span>Pretraining</span><span>Talent</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 19</div>
+      <div class="news-date">May 20</div>
       <div class="news-content">
-        <h3><a href="https://the-decoder.com/cursors-composer-2-5-matches-opus-4-7-and-gpt-5-5-benchmarks-at-a-fraction-of-the-cost/" target="_blank">Cursor Ships Composer 2.5 — Matches Opus 4.7 &amp; GPT-5.5 at 1/10th the Cost</a></h3>
-        <p>Cursor released Composer 2.5, a new in-house coding model built on Kimi K2.5 with 25× more synthetic training tasks than its predecessor. It scores 79.8% on SWE-Bench Multilingual and 63.2% on CursorBench v3.1 — matching Claude Opus 4.7 and GPT-5.5 on coding benchmarks at $0.50/M input tokens versus $15/M. The price gap hasn't been this wide since coding models became production tools.</p>
-        <div class="news-tags"><span>Cursor</span><span>Coding</span><span>Benchmarks</span></div>
+        <h3><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/" target="_blank">OpenAI Reasoning Model Disproves 80-Year-Old Erdős Geometry Conjecture</a></h3>
+        <p>OpenAI's general-purpose reasoning model disproved a central conjecture in discrete geometry that had stood since 1946 — the planar unit distance problem posed by Paul Erdős. The model identified an infinite family of examples providing a polynomial improvement over the previously believed-optimal square grid construction. Critically, the result was verified by the same mathematicians who previously exposed flaws in OpenAI's mathematical claims, lending credibility. The breakthrough was achieved by a general-purpose model, not one specialized for mathematics.</p>
+        <div class="news-tags"><span>OpenAI</span><span>Mathematics</span><span>Breakthrough</span><span>Erdős</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 19</div>
+      <div class="news-date">May 20</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/" target="_blank">Anthropic Acquires Stainless for $300M+ — Cuts Off OpenAI &amp; Google SDK Access</a></h3>
-        <p>Anthropic acquired Stainless, the SDK and API documentation company that powers every official Anthropic SDK and also served OpenAI, Google, and Cloudflare. The $300M+ deal immediately shut down hosted products for competitors — a strategic infrastructure play that consolidates the API tooling layer under one lab. Stainless founder Alex Rattray (ex-Stripe) joins Anthropic.</p>
-        <div class="news-tags"><span>Anthropic</span><span>M&amp;A</span><span>SDK</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/" target="_blank">Anthropic to Pay xAI $1.25 Billion/Month for Compute — Archrivals Become Partners</a></h3>
+        <p>In a surprising industry move, Anthropic entered an agreement to purchase compute resources from Elon Musk's xAI at $1.25 billion per month — $15 billion annually. The deal highlights the staggering capital requirements of frontier AI and establishes an unprecedented commercial relationship between two competitors. xAI itself lost $6.4 billion in 2025, revealed through SpaceX's IPO filing, and is spending $2.8 billion on natural gas turbines for data center power.</p>
+        <div class="news-tags"><span>Anthropic</span><span>xAI</span><span>Compute</span><span>Infrastructure</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 19</div>
+      <div class="news-date">May 20</div>
       <div class="news-content">
-        <h3><a href="https://apnews.com/article/vatican-pope-anthropic-olah-encyclical-artificial-intelligence-9cf3e07fd691f6af510c4a6f9c8ba353" target="_blank">Pope Leo XIV to Publish First-Ever AI Encyclical with Anthropic Co-Founder</a></h3>
-        <p>The Vatican announced Pope Leo XIV's first encyclical, "Magnifica Humanitas," on safeguarding human dignity in the age of AI, to be published May 25. Anthropic co-founder will present alongside the Pope — an unprecedented intersection of religious authority and frontier AI. The document addresses the protection of the human person amid rapid AI development, signaling AI ethics has reached the highest levels of global discourse.</p>
-        <div class="news-tags"><span>Ethics</span><span>Anthropic</span><span>Vatican</span></div>
+        <h3><a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027" target="_blank">NVIDIA Posts Record $81.6B Revenue — 85% YoY Growth — Reveals $43B Startup Portfolio</a></h3>
+        <p>NVIDIA reported Q1 FY2027 revenue of $81.6 billion, up 20% sequentially and 85% year-over-year. The company disclosed $43 billion in startup holdings, cementing its role as the financial engine of the AI ecosystem. However, NVIDIA also forecast slowing revenue growth next quarter — a potential signal that hyperscaler CapEx may be approaching a plateau after three years of breakneck acceleration.</p>
+        <div class="news-tags"><span>NVIDIA</span><span>Earnings</span><span>Startups</span><span>Revenue</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 19</div>
+      <div class="news-date">May 20</div>
       <div class="news-content">
-        <h3><a href="https://simonwillison.net/2026/May/19/last-six-months-in-llms/" target="_blank">Simon Willison: "The Last Six Months in LLMs" — PyCon 2026 Lightning Talk Goes Viral</a></h3>
-        <p>Simon Willison's PyCon US 2026 lightning talk covered the November 2025 inflection point when coding agents "got good," OpenClaw's rise, and the new agentic coding landscape. 586 points on Hacker News with 477 comments. A must-watch 5-minute summary of the most transformative six months in AI tooling history — from Claude Code to Cursor to the MCP ecosystem explosion.</p>
-        <div class="news-tags"><span>LLMs</span><span>Agents</span><span>PyCon</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/20/xai-burned-6-4b-last-year-spacexs-ipo-filing-shows-why-the-spending-is-far-from-over/" target="_blank">xAI Lost $6.4B in 2025 — SpaceX IPO Filing Reveals Massive Grok Expansion Plans</a></h3>
+        <p>SpaceX's IPO filing provided the first public glimpse into xAI's finances: a $6.4 billion net loss in 2025, driven by aggressive Grok model expansion. The filing reveals xAI plans to spend $2.8 billion on natural gas turbines over three years for data center power, and is currently being sued over its existing generators. The disclosure underscores the extreme capital intensity of competing at the AI frontier — burning billions annually with no near-term path to profitability.</p>
+        <div class="news-tags"><span>xAI</span><span>Finance</span><span>IPO</span><span>Grok</span></div>
       </div>
     </div>
 
@@ -187,56 +187,56 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 19</div>
+      <div class="news-date">May 21</div>
       <div class="news-content">
-        <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/" target="_blank">Gemini 3.5 Flash Now Default Across All Google Products — Quality Without Latency Tradeoffs</a></h3>
-        <p>Google made Gemini 3.5 Flash the default model for the Gemini app, AI Mode in Search, and all Google products globally. "You no longer have to trade quality for latency," Google stated. The model combines frontier intelligence with action capabilities and is the first in a new family of models designed for agentic workloads.</p>
-        <div class="news-tags"><span>Google</span><span>Gemini 3.5</span><span>Product</span></div>
+        <h3><a href="https://github.com/anthropics/claude-plugins-official" target="_blank">Anthropic Launches Official Claude Code Plugin Directory</a></h3>
+        <p>Anthropic released the official Claude Code Plugin Directory — a curated, centrally managed repository of high-quality plugins for the Claude Code environment. The directory, hosted on GitHub under the Anthropic organization, provides a quality-gated ecosystem for extending Claude's coding capabilities. The move parallels VS Code's extension marketplace and positions Claude Code as an extensible platform rather than a standalone tool.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Claude Code</span><span>Plugins</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 21</div>
+      <div class="news-content">
+        <h3><a href="https://github.com/rtk-ai/rtk" target="_blank">RTK: Rust CLI Agent Slashes LLM Token Consumption by 60-90%</a></h3>
+        <p>RTK (Rust Token Killer) is a new single-binary Rust CLI agent that claims to reduce LLM token usage by 60-90% during common development commands. With zero external dependencies, it addresses the mounting cost of AI-driven development by aggressively optimizing prompts and responses. The project hit GitHub Trending on launch day, reflecting widespread developer frustration with token costs in agent workflows.</p>
+        <div class="news-tags"><span>Rust</span><span>Tokens</span><span>CLI</span><span>Cost</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 21</div>
+      <div class="news-content">
+        <h3><a href="https://github.com/rohitg00/agentmemory" target="_blank">AgentMemory Ranked #1 Persistent Memory Solution for AI Coding Agents</a></h3>
+        <p>AgentMemory claimed the top spot in real-world benchmarks for persistent AI agent memory, beating competing solutions on state retention across long-running coding sessions. As AI agents increasingly tackle multi-step development tasks spanning hours or days, persistent context has become a critical bottleneck. AgentMemory provides a high-performance persistence layer validated on real development workflows, not synthetic tests.</p>
+        <div class="news-tags"><span>Memory</span><span>Agents</span><span>Open Source</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 21</div>
+      <div class="news-content">
+        <h3><a href="https://github.com/tinyhumansai/openhuman" target="_blank">OpenHuman: Open-Source Private AI Superintelligence Project Debuts</a></h3>
+        <p>OpenHuman, a new open-source project by TinyHumansAI, positions itself as a "private superintelligence" built on three principles: privacy, simplicity, and high performance. The project aims to give users complete control over powerful AI without cloud dependencies — part of a growing movement toward decentralized, locally-run frontier AI. Early documentation is sparse but the project hit GitHub Trending immediately.</p>
+        <div class="news-tags"><span>Open Source</span><span>Privacy</span><span>Superintelligence</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">May 19</div>
       <div class="news-content">
-        <h3><a href="https://the-decoder.com/cursors-composer-2-5-matches-opus-4-7-and-gpt-5-5-benchmarks-at-a-fraction-of-the-cost/" target="_blank">Cursor Composer 2.5 Deep Dive: Kimi K2.5-Based, 25× More Synthetic Training Data</a></h3>
-        <p>Composer 2.5 was trained on 25× more synthetic coding tasks than Composer 2, achieving 79.8% on SWE-Bench Multilingual with a latency-optimized architecture. It ships with extended context handling for long coding sessions and is optimized for complex multi-file refactors. The model proves that fine-tuning on synthetic agent traces can close the gap with frontier models at dramatically lower cost.</p>
-        <div class="news-tags"><span>Cursor</span><span>Fine-Tuning</span><span>Kimi K2.5</span></div>
+        <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/" target="_blank">Gemini 3.5 Flash: Google's Agent-First Model — 4× Faster Than Frontier Rivals</a></h3>
+        <p>Gemini 3.5 Flash is Google's new default model, designed primarily for agentic workloads with complex multi-step reasoning. It's 4× faster on output tokens per second than competing frontier models and outperforms Gemini 3.1 Pro on coding and agentic benchmarks. Google AI Studio now supports prompt-to-app for Android with direct Play Console publishing, Managed Agents via a single API call in isolated Linux environments, and WebMCP for agent-browser interoperability.</p>
+        <div class="news-tags"><span>Google</span><span>Gemini 3.5</span><span>Agents</span><span>WebMCP</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 19</div>
+      <div class="news-date">May 21</div>
       <div class="news-content">
-        <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/" target="_blank">Gemini Omni: Google's Leap into Native Multimodal Creation from Any Input</a></h3>
-        <p>Gemini Omni can create anything from any input modality — starting with video generation but spanning text, image, audio, and code. Described by Google DeepMind's Demis Hassabis as "a leap forward in world understanding," Omni represents the convergence of generation and understanding in a single model. Video output quality in demos rivaled dedicated video generation models.</p>
-        <div class="news-tags"><span>Google</span><span>Multimodal</span><span>Video Gen</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 19</div>
-      <div class="news-content">
-        <h3><a href="https://simonwillison.net/2026/May/19/last-six-months-in-llms/" target="_blank">Simon Willison on the November 2025 Inflection Point: When Coding Agents "Got Good"</a></h3>
-        <p>Willison's PyCon talk pinpoints November 2025 as the moment coding agents crossed the usability threshold — when Claude Code, Cursor, and the MCP ecosystem reached a critical mass of capability and reliability. The talk traces the shift from "impressive demos" to "daily driver tools" and examines what the "Claw" naming convention says about ecosystem dynamics.</p>
-        <div class="news-tags"><span>Agents</span><span>History</span><span>Coding</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 6</div>
-      <div class="news-content">
-        <h3><a href="https://huggingface.co/Zyphra/ZAYA1-8B" target="_blank">ZAYA1-8B: Open-Source MoE Trained End-to-End on AMD Hardware (Apache 2.0)</a></h3>
-        <p>Zyphra released ZAYA1-8B under Apache 2.0 — an 8B MoE model with ~760M active parameters per token, trained from scratch on AMD Instinct GPUs. The first reasoning-oriented open-weight release demonstrating an end-to-end non-NVIDIA training path. Strongest cost-per-token efficiency in the small-MoE band.</p>
-        <div class="news-tags"><span>Open Source</span><span>AMD</span><span>MoE</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 15</div>
-      <div class="news-content">
-        <h3><a href="https://tldl.io/blog/ai-news-updates-2026" target="_blank">DeepSeek V4: 1M-Token Context at $0.27/M Tokens — MIT-Licensed Open Weights</a></h3>
-        <p>Redis creator antirez published an analysis of DeepSeek V4 calling it "almost on the frontier." The MIT-licensed open-weights model offers 1M-token context at $0.27/M input tokens — a cost disruption vs. closed frontier pricing. Gaps remain on complex agentic reasoning but the price-performance trade-off is real, not benchmark theater.</p>
-        <div class="news-tags"><span>DeepSeek</span><span>Open Weights</span><span>Cost</span></div>
+        <h3><a href="https://github.com/HKUDS/CLI-Anything" target="_blank">CLI-Anything: HKUDS Project Aims for Native AI Agent Support in All Software</a></h3>
+        <p>CLI-Anything, from the University of Hong Kong Data Science Lab, introduces the CLI-Hub platform to give every software application native AI agent support through a standardized command-line interface framework. The open-source project seeks to bridge traditional software with modern AI agent capabilities, treating CLI as the universal integration layer. A strategic bet on CLIs as the enduring interface for agentic automation.</p>
+        <div class="news-tags"><span>CLI</span><span>Agents</span><span>Open Source</span></div>
       </div>
     </div>
 
@@ -248,54 +248,54 @@ ShowToc: false
     <div class="news-item">
       <div class="news-date">May 19</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/" target="_blank">Anthropic's Stainless Acquisition: Strategic SDK Layer Consolidation</a></h3>
-        <p>Anthropic's acquisition of Stainless for $300M+ is a calculated infrastructure play: control the API documentation and SDK generation layer that competitors depend on. By shutting down hosted products for OpenAI and Google, Anthropic forces rivals to rebuild their own tooling — while Claude's ecosystem gets exclusive access. The deal echoes cloud-era platform lock-in strategies applied to the AI API layer.</p>
-        <div class="news-tags"><span>Anthropic</span><span>M&amp;A</span><span>Strategy</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/19/meta-layoffs-8000-ai-pivot-2026/" target="_blank">Meta Lays Off 8,000 Employees — 7,000 Reassigned to AI-Native Organizations</a></h3>
+        <p>Meta announced a 10% workforce reduction (~8,000 employees) with 7,000 reassigned into four new AI-first organizations with flatter structures and fewer managers. CEO Mark Zuckerberg is redirecting the company's $125-145 billion 2026 CapEx budget toward AI data centers and custom silicon. Severance: 16 weeks base pay + 2 weeks per year of service. The restructuring signals that AI is now Meta's primary growth driver, not an R&D line item.</p>
+        <div class="news-tags"><span>Meta</span><span>Layoffs</span><span>Restructuring</span><span>AI Pivot</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 19</div>
+      <div class="news-date">May 21</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/" target="_blank">Musk v OpenAI Verdict: What It Means for AI Company Structure</a></h3>
-        <p>The unanimous jury verdict clearing OpenAI sets a precedent: non-profit to for-profit transitions, when challenged years after the fact, face steep statute-of-limitations hurdles. The ruling effectively validates OpenAI's restructuring and removes the most significant legal threat to the capped-profit model. AI governance debates now shift from courts to regulators and legislatures.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Legal</span><span>Governance</span></div>
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-05-21/manus-co-founders-raise-1b-to-buy-back-company" target="_blank">Manus Co-Founders Raise $1B+ to Buy Back Company After Beijing Blocks Meta Deal</a></h3>
+        <p>Manus co-founders are in talks to raise over $1 billion to buy back the Chinese-founded AI company after Beijing ordered Meta to unwind its $2 billion acquisition. The forced unwinding represents the most significant intervention yet in cross-border AI M&A, signaling that sovereign control over AI assets is becoming a geopolitical priority. The deal structure would return Manus to independent status.</p>
+        <div class="news-tags"><span>Manus</span><span>M&A</span><span>Geopolitics</span><span>Meta</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 19</div>
+      <div class="news-date">May 21</div>
       <div class="news-content">
-        <h3><a href="https://news.ycombinator.com/item?id=48411500" target="_blank">Andon FM: Autonomous AI Agents Now Running a Radio Station</a></h3>
-        <p>Andon Labs continues AI-run retail experiments with Andon FM — a fully autonomous radio station where AI agents handle programming, scheduling, and content. 317 points on Hacker News. Follows earlier AI cafe experiments in Stockholm and San Francisco. A striking proof point that agentic AI has moved beyond coding assistants into real-world autonomous operations.</p>
-        <div class="news-tags"><span>Agents</span><span>Autonomous</span><span>Retail</span></div>
+        <h3><a href="https://www.reuters.com/technology/amd-pledges-10-billion-taiwan-chip-investment-2026-05-21/" target="_blank">AMD Pledges $10B+ Investment in Taiwan's Semiconductor Industry</a></h3>
+        <p>AMD committed over $10 billion to Taiwan's chip industry for advanced packaging and R&D facilities, deepening its manufacturing partnership with TSMC and Taiwan's semiconductor ecosystem. The investment comes as global chip demand continues to outstrip supply and geopolitical tensions make supply chain diversification a strategic imperative for every major chip designer.</p>
+        <div class="news-tags"><span>AMD</span><span>Taiwan</span><span>Semiconductor</span><span>Investment</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 19</div>
+      <div class="news-date">May 21</div>
       <div class="news-content">
-        <h3><a href="https://news.ycombinator.com/item?id=48411200" target="_blank">314 Malicious npm Packages Discovered — Supply Chain Attack Targets AI/ML Tooling</a></h3>
-        <p>Security researchers uncovered 314 compromised npm packages in an ongoing supply chain attack campaign — including packages impersonating popular AI/ML libraries. The attack targets the growing dependency chain of AI development tooling. A stark reminder that as AI tooling ecosystems expand, the attack surface for supply chain compromises grows proportionally.</p>
-        <div class="news-tags"><span>Security</span><span>Supply Chain</span><span>npm</span></div>
+        <h3><a href="https://www.wsj.com/articles/higgsfield-ai-hell-grind-cannes-2026-05-21" target="_blank">Higgsfield AI Premieres First 95-Minute Fully AI-Generated Film at Cannes</a></h3>
+        <p>Higgsfield AI premiered "Hell Grind," a 95-minute fully AI-generated film, at the Cannes Film Festival. The production took two weeks and cost $500,000 — of which $400,000 was AI compute — a dramatic reduction from traditional animated feature costs ($50-200M). The Cannes premiere marks a legitimacy milestone for AI-generated entertainment and signals that feature-length AI films are now commercially viable.</p>
+        <div class="news-tags"><span>AI Film</span><span>Cannes</span><span>Entertainment</span><span>Higgsfield</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 6-7</div>
+      <div class="news-date">May 20</div>
       <div class="news-content">
-        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-may-2026" target="_blank">Anthropic's Biggest Week Ever: Colossus 1 (220K GPUs), ARR $44B, $200B Google Cloud Deal</a></h3>
-        <p>In a single week, Anthropic signed for SpaceX's entire Colossus 1 supercomputer (220,000+ NVIDIA GPUs, 300MW), disclosed Q1 revenue growing 80× YoY with ARR above $44B, signed a $200B Google Cloud contract, opened the Claude Agent SDK to all developers, and shipped Claude Code Auto Mode. Compute access — not model architecture — is the defining moat of 2026.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Compute</span><span>Infrastructure</span></div>
+        <h3><a href="https://www.theverge.com/tech/934432/samsung-electronics-strike-memory-chip-supply" target="_blank">Samsung Averts 47,000-Worker Strike That Threatened Global Chip Supply</a></h3>
+        <p>Samsung Electronics reached a tentative labor agreement late Wednesday, narrowly avoiding an 18-day strike by 47,000+ workers at its domestic chipmaking facilities. The strike would have severely impacted memory chip production amid already-tight global supply. The resolution is a temporary reprieve for the AI hardware supply chain, which depends on Samsung's HBM and DRAM output for GPU manufacturing.</p>
+        <div class="news-tags"><span>Samsung</span><span>Supply Chain</span><span>Chips</span><span>Labor</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 17</div>
+      <div class="news-date">May 20</div>
       <div class="news-content">
-        <h3><a href="https://the-decoder.com/mistral-ceo-arthur-mensch-warns-france-against-letting-anthropics-mythos-scan-military-code-bases/" target="_blank">Mistral CEO Warns France Against Anthropic's Mythos Scanning Military Code</a></h3>
-        <p>Mistral CEO Arthur Mensch told a French parliamentary commission that letting Anthropic's Mythos scan military code bases would create an irreversible cybersecurity dependency. He stressed Mistral remains independent with under 30% US ownership — the only EU company fielding competitive frontier models. A defining moment for sovereign AI in Europe.</p>
-        <div class="news-tags"><span>Mistral</span><span>Sovereign AI</span><span>Anthropic</span></div>
+        <h3><a href="https://www.theverge.com/column/935021/google-io-gemini-for-science-alphafold-alphagenome-ai-health" target="_blank">Google I/O: Gemini for Science, AlphaFold &amp; AlphaGenome Target Disease Eradication</a></h3>
+        <p>Google DeepMind CEO Demis Hassabis positioned Gemini for Science as the next phase of AI-driven biological research — targeting "the foothills of singularity" with AlphaFold, AlphaGenome, and new scientific AI tools. The health-focused I/O showcase claimed AI could accelerate disease understanding to previously impossible speeds. The Verge's analysis asks whether these tools can deliver on their life-changing promises or represent overhyped research demos.</p>
+        <div class="news-tags"><span>Google</span><span>Science</span><span>AlphaFold</span><span>Health</span></div>
       </div>
     </div>
 
@@ -332,7 +332,6 @@ new p5(function(p) {
       });
     }
 
-    // Build connections (nearest 2-4 neighbors)
     for (let i = 0; i < nodes.length; i++) {
       let dists = [];
       for (let j = 0; j < nodes.length; j++) {
@@ -353,7 +352,6 @@ new p5(function(p) {
     p.background(6, 6, 12, 30);
     time += 0.01;
 
-    // Draw connections
     p.strokeWeight(0.5);
     for (let i = 0; i < nodes.length; i++) {
       let n = nodes[i];
@@ -365,31 +363,23 @@ new p5(function(p) {
       }
     }
 
-    // Draw nodes with pulse
     for (let n of nodes) {
       n.x += p.sin(time * n.speed * 10 + n.phase) * 0.3;
       n.y += p.cos(time * n.speed * 8 + n.phase + 1) * 0.3;
-
-      // Clamp to bounds
       n.x = p.constrain(n.x, 5, W - 5);
       n.y = p.constrain(n.y, 5, H - 5);
-
       n.pulse = 1 + 0.3 * p.sin(time * 3 + n.phase);
 
-      // Glow
       p.noStroke();
       for (let g = 3; g > 0; g--) {
         let alpha = 8 * g * n.pulse;
         p.fill(n.hue, 180, 255, alpha);
         p.circle(n.x, n.y, n.r * 2 + g * 4);
       }
-
-      // Core
       p.fill(n.hue, 160, 255, 180);
       p.circle(n.x, n.y, n.r * n.pulse);
     }
 
-    // Floating data particles
     p.strokeWeight(0.8);
     for (let i = 0; i < 5; i++) {
       let t = (time * 0.5 + i * 0.7) % 1;
