@@ -8,9 +8,9 @@ summary: "The cross-MCP pipeline pattern: one MCP server scans, a bridge script 
 ShowToc: true
 ---
 
-Anthropic just paid ~$300M for Stainless. This firm builds MCP servers from API specs. The bet is simple. Agents are only as useful as the systems they can reach.
+Anthropic just paid ~$300M for Stainless. This firm builds MCP servers from API specs. The bet is simple. Agents are only as useful as the tools they can use.
 
-I'm building the other side: MCP servers that talk to MCP servers.
+I'm making the other side: MCP servers that talk to MCP servers.
 
 ## The Pattern
 
@@ -22,15 +22,15 @@ Screener finds signal   Format trade params     Trade bot executes
 Firecrawl scrapes       Extract entities        Wiki ingests pages
 ```
 
-This is not a deployed product — it's a pattern I've validated on my homelab. The Sentinel→GitHub pipeline runs as a demo: Sentinel audits MCP servers, a Python bridge groups findings by file, and structured issues get created with CVE references.
+This is not a live app. It's a way I tested on my home lab. The Sentinel→GitHub flow runs as a demo. Sentinel audits MCP servers. A Python bridge groups findings by file. Clean issues get made with CVE links.
 
 ## Why This Matters
 
-Most MCP demos show one server answering one question. That is the "hello world" of agent infra.
+Most MCP demos show one tool for one job. That is the "hello world" of agent infra.
 
-Cross-MCP pipelines are the next step. One server feeds another. No human needed. No API gateway. No control tool. Just two MCP servers talk through a small Python bridge.
+Cross-MCP flows are the next step. One server feeds another. No human needed. No API proxy. No control tool. Just two MCP servers talk via a small Python bridge.
 
-This pattern works anywhere. The Sentinel pipeline is running on my homelab today. Same bridge script structure works for Screener→Trade bot, Firecrawl→Wiki, and Compliance→Immune pipelines.
+This setup works for all. The Sentinel flow runs on my home lab today. The same bridge script form works for Screener→Trade bot, Firecrawl→Wiki, and Compliance→Immune flows.
 
 **Pattern code (demo):**
 ```python
@@ -42,17 +42,17 @@ for file, issues in grouped.items():
     create_github_issue(file, issues)
 ```
 
-This pattern generalizes to any MCP→MCP workflow.
+This way scales to any MCP→MCP task.
 
 ## What's Next
 
-- **Compliance → Immune pipeline:** Nightly CIS scans feed immune health checks.
-- **Screener → Trade Bot pipeline:** Signal finds trigger trades.
-- **Firecrawl → Wiki pipeline:** Pulled pages feed the search index.
-- **Full auto loop:** Scan → detect → file issue → fix → redeploy → re-scan.
+- **Compliance → Immune flow:** Each night CIS scans feed immune health checks.
+- **Screener → Trade Bot flow:** Signal finds start trades.
+- **Firecrawl → Wiki flow:** Pulled pages feed the search index.
+- **Full auto loop:** Scan → spot → file issue → fix → ship again → re-scan.
 
-Same pattern. Different servers. All MCP.
+Same way. Other tools. All MCP.
 
 ---
 
-*Built on a $150 Dell OptiPlex running Fedora Server. 12 MCP servers. 80+ tools. Zero cloud deps.*
+*Built on a $150 Dell OptiPlex with Fedora Server. 18 MCP nodes. 100+ tools. Zero cloud deps.*
