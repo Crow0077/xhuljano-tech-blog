@@ -35,42 +35,54 @@ Talk is JSON RPC. It uses pipes or HTTP.
 ## My MCP Servers
 
 ### Firecrawl — Web Scraping
-Wraps the self-hosted Firecrawl API. The agent can scrape any page and get clean markdown. Great for research and wiki ingestion.
 
-### Homelab Dashboard — Infrastructure Status
-Four tools: health check, service listing, system stats (CPU/RAM/disk), and network info. The agent asks "are all services up?" and gets a real answer.
+Wraps the Firecrawl API. The agent can scrape any page and get clean markdown. Great for research and wiki feed.
 
-### Uptime Kuma — Monitoring
-Links to Uptime Kuma's API. Lists all monitors and their status. The agent can check uptime history for any service.
+### Homelab Dashboard — Infra Status
 
-### Deploy — Container Management
-Start, stop, restart, and update Podman containers. The agent manages the entire container fleet.
+Four tools: health checks, app list, system stats (CPU/RAM/disk), and net info. The agent asks "are all apps up?" and gets a real answer.
 
-### Logs — Log Aggregation
-Search across all container logs. Find errors, warnings, or patterns. Generate health reports from log data.
+### Uptime Kuma — Uptime Checks
 
-### Backup — Automated Backups
-Create, list, verify, and restore backups of any service. Keeps configs, wiki, and MCP servers safe.
+Links to Uptime Kuma's API. Lists all checks and their state. The agent can check uptime history for any app.
 
-### GSD — Security Audit Orchestrator
-4-stage security compliance copilot. Formulate → Plan → Execute → Verify. Runs CIS benchmarks, CVE checks, and MCP vulnerability scans.
+### Deploy — Container Ops
 
-### Sentinel — MCP Security Scanner
-First MCP-native vulnerability scanner. Audits MCP servers against 8 known vulnerability classes with CVE references.
+Start, stop, restart, and update Podman. The agent runs the whole fleet.
 
-### Immune — Self-Healing Infrastructure
-Multi-channel health detection with quorum sensing. Auto-restarts confirmed-down services.
+### Logs — Log Gather
 
-### YouTube — Transcript Fetching
-Search YouTube and fetch transcripts. Powers the wiki ingestion pipeline.
+Search all app logs. Find errors, warnings, or patterns. Make health reports from log data.
 
-### Google Calendar — Schedule Management
-Create, search, and manage calendar events from the terminal.
+### Backup — Auto Backups
+
+Create, list, verify, and restore backups of any app. Keeps configs, wiki, and MCP nodes safe.
+
+### GSD — Safe Audit Runner
+
+4-stage safe rules helper. Formulate → Plan → Execute → Verify. Runs CIS tests, CVE checks, and MCP flaw scans.
+
+### Sentinel — MCP Safe Scan
+
+First MCP-native flaw finder. Audits MCP nodes against 8 known flaw types with CVE links.
+
+### Immune — Auto-Fix Infra
+
+Health checks with quorum sense. Auto-fixes down apps.
+
+### YouTube — Text Pull
+
+Search YouTube and get text. Powers the wiki feed.
+
+### Google Calendar — Time Plan
+
+Create, search, and manage plan events from the shell.
 
 ### Arxiv — Paper Search
-Search academic papers by keyword, author, or category.
 
-Total: 12 MCP servers, 80+ tools.
+Search school papers by term, name, or type.
+
+Total: 12 MCP nodes, 80+ tools.
 
 ## The Config
 
@@ -94,7 +106,7 @@ Each node is a child proc. The agent spawns it. It finds the tools. It keeps the
 
 ## Why It Helps
 
-MCP turns agents from bots into ops tools. My agent can now:
+MCP turns agents from bots into ops tools. Now my agent can:
 
 - Spot a dead app. Fix it.
 - Pull a paper. Sum it up.
@@ -105,7 +117,7 @@ All this works via plain words. You do not switch tools by hand.
 
 ## Build Your Own
 
-A basic server needs ~50 lines:
+A basic node needs ~50 lines:
 
 ```bash
 pip install mcp httpx
