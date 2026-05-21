@@ -1,21 +1,21 @@
-{{- define "main" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Illyrian Crystal</title>
 <style>
-#hero-wrap { width:100%; height:600px; background:#0d0d0f; position:relative; overflow:hidden; cursor:crosshair; }
-#hero-wrap canvas { display:block; position:absolute; top:0; left:0; }
-#hero-text { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; z-index:10; pointer-events:none; }
-#hero-text h1 { font-family:'SF Mono','Fira Code','JetBrains Mono',monospace; font-size:2.8rem; color:rgba(255,255,255,0.9); margin:0; letter-spacing:-1px; text-shadow:0 0 40px rgba(126,200,192,0.3),0 0 80px rgba(126,200,192,0.1); }
-#hero-text p { font-family:'SF Mono','Fira Code','JetBrains Mono',monospace; font-size:0.85rem; color:rgba(160,170,200,0.6); margin-top:12px; letter-spacing:3px; text-transform:uppercase; }
+:root { --bg: #0d0d0f; --accent: #7ec8c0; --accent2: #4a9d95; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); display: flex; align-items: center; justify-content: center; min-height: 100vh; overflow: hidden; font-family: 'Fira Code', monospace; }
+canvas { position: fixed; inset: 0; z-index: 1; }
 </style>
-<div id="hero-wrap"><div id="hero-text"><h1>Building with AI Agents</h1><p>Cloud Engineering Student · AI Agents · MCP · Homelab</p></div></div>
+</head>
+<body>
+<canvas id="c"></canvas>
 <script>
-// ─── Illyrian Crystal — geometric octahedron hero for Xhuljano Tech Blog
-// Technique inspired by Ethan Stigter's diamond renderer (ethans.studio)
-const C=document.createElement("canvas"),X=C.getContext("2d"),Wp=document.getElementById("hero-wrap");
-Wp.appendChild(C);
-const HERO_H=600;
-
-// ─── CONFIG ───
-const DS=26,DR=1.2,DF=16,DRT=.012,DC="rgba(160,155,148,0.12)";
+const C=document.getElementById("c"),X=C.getContext("2d");
+const DS=26,DR=1.2,DF=16,DRT=.012,DC="rgba(160,155,148,0.15)";
 let W,H,DPR,dots=[],mouse={x:-9999,y:-9999},rotY=0,rotX=.3,lt=0,dt=.016,sparkles=[],clusterMode=!1,ct=0;
 const SPIN=.35,TILT=.2,L1=[.45,.7,.4],L2=[.25,-.45,.35],AMB=.08;
 function nm(v){const m=Math.sqrt(v[0]*v[0]+v[1]*v[1]+v[2]*v[2]);return[v[0]/m,v[1]/m,v[2]/m]}
@@ -28,21 +28,18 @@ const FN_CRY=F_CRY.map(f=>{const e1=sb(V_CRY[f[1]],V_CRY[f[0]]),e2=sb(V_CRY[f[2]
 const SA=V_CRY.map(v=>[...v]);
 for(const f of F_CRY){const cx=(V_CRY[f[0]][0]+V_CRY[f[1]][0]+V_CRY[f[2]][0])/3,cy=(V_CRY[f[0]][1]+V_CRY[f[1]][1]+V_CRY[f[2]][1])/3,cz=(V_CRY[f[0]][2]+V_CRY[f[1]][2]+V_CRY[f[2]][2])/3;SA.push([cx,cy,cz])}
 const CLST=[[0,0,0],[2.2,1,.5],[-2.2,-.8,-.5],[1,-2,1],[-1.5,1.8,-1]];
-
 function bd(){dots=[];for(let x=DS;x<W+DS;x+=DS)for(let y=DS;y<H+DS;y+=DS)dots.push({hx:x,hy:y,x,y})}
-function rs(){DPR=Math.min(devicePixelRatio||1,2);W=Wp.offsetWidth;H=HERO_H;C.width=W*DPR;C.height=H*DPR;X.setTransform(DPR,0,0,DPR,0,0);bd()}
+function rs(){DPR=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;C.width=W*DPR;C.height=H*DPR;X.setTransform(DPR,0,0,DPR,0,0);bd()}
 function rY(x,y,z,a){const c=Math.cos(a),s=Math.sin(a);return[x*c+z*s,y,-x*s+z*c]}
 function rX(x,y,z,a){const c=Math.cos(a),s=Math.sin(a);return[x,y*c-z*s,y*s+z*c]}
 function prj(v,cx,cy,sz,tx,ty){let[x,y,z]=rY(v[0],v[1],v[2],rotY+ty);[x,y,z]=rX(x,y,z,rotX+tx);const d=z+4;return[cx+x*sz/d,cy-y*sz/d,z]}
 function prjN(n,tx,ty){let[nx,ny,nz]=rY(n[0],n[1],n[2],rotY+ty);[nx,ny,nz]=rX(nx,ny,nz,rotX+tx);return[nx,ny,nz]}
-
 function aS(ai){sparkles.push({a:ai,l:1,z:1.5+Math.random()*3,d:.3+Math.random()*.5,p:Math.random()*Math.PI*2})}
 function dS(x,y,s,l,p){if(l<.03)return;const fk=.6+.4*Math.sin(p+performance.now()*.005),a=l*.85*fk;
   const g=X.createRadialGradient(x,y,0,x,y,s*2.2);g.addColorStop(0,`rgba(255,255,255,${a*.9})`);g.addColorStop(.25,`rgba(180,240,235,${a*.5})`);g.addColorStop(1,'rgba(126,200,192,0)');X.fillStyle=g;X.beginPath();X.arc(x,y,s*2.2,0,Math.PI*2);X.fill();
   X.strokeStyle=`rgba(255,255,255,${a})`;X.lineWidth=.8;X.beginPath();X.moveTo(x,y-s);X.lineTo(x,y+s);X.stroke();X.beginPath();X.moveTo(x-s,y);X.lineTo(x+s,y);X.stroke();
   X.strokeStyle=`rgba(180,225,220,${a*.5})`;X.lineWidth=.4;const d=s*.55;X.beginPath();X.moveTo(x-d,y-d);X.lineTo(x+d,y+d);X.stroke();X.beginPath();X.moveTo(x+d,y-d);X.lineTo(x-d,y+d);X.stroke();
   X.fillStyle=`rgba(255,255,255,${a})`;X.beginPath();X.arc(x,y,s*.25,0,Math.PI*2);X.fill()}
-
 function rC(cx,cy,sz,tx,ty,tr,tg,tb){
   const pts=V_CRY.map(v=>prj(v,cx,cy,sz,tx,ty));
   const fd=F_CRY.map((f,i)=>{const pn=prjN(FN_CRY[i],tx,ty),za=(pts[f[0]][2]+pts[f[1]][2]+pts[f[2]][2])/3;
@@ -55,7 +52,6 @@ function rC(cx,cy,sz,tx,ty,tr,tg,tb){
     X.beginPath();X.moveTo(pts[f.f[0]][0],pts[f.f[0]][1]);X.lineTo(pts[f.f[1]][0],pts[f.f[1]][1]);X.lineTo(pts[f.f[2]][0],pts[f.f[2]][1]);X.closePath();X.fill();X.stroke()}
   for(let i=sparkles.length-1;i>=0;i--){const s=sparkles[i];s.l-=s.d*dt;if(s.l<=0){sparkles.splice(i,1);continue}const[sx,sy]=prj(SA[s.a],cx,cy,sz,tx,ty);dS(sx,sy,s.z,s.l,s.p)}
   if(sparkles.length<3&&Math.random()<.03){const ai=Math.floor(Math.random()*SA.length);if(!sparkles.some(s=>s.a===ai))aS(ai)}}
-
 function fr(now){dt=lt?Math.min((now-lt)/1e3,.1):.016;lt=now;X.clearRect(0,0,W,H);
   const mx=mouse.x,my=mouse.y,fr2=110*110;
   for(const d of dots){const dx=d.x-mx,dy=d.y-my,d2=dx*dx+dy*dy;if(d2<fr2&&d2>.5){const dist=Math.sqrt(d2),f=(1-dist/110)*DF;d.x+=dx/dist*f*.7;d.y+=dy/dist*f*.7}d.x+=(d.hx-d.x)*DRT;d.y+=(d.hy-d.y)*DRT;X.fillStyle=DC;X.beginPath();X.arc(d.x,d.y,DR,0,Math.PI*2);X.fill()}
@@ -67,22 +63,12 @@ function fr(now){dt=lt?Math.min((now-lt)/1e3,.1):.016;lt=now;X.clearRect(0,0,W,H
   else{const t=ct;rC(cX,cY,sZ*(1-t*.55),tx,ty,30,70,85);
     for(let i=1;i<5;i++){const o=CLST[i],a=Math.max(0,(t-.2)/.8);if(a<.01)continue;X.globalAlpha=a;rC(cX+o[0]*sZ*.8*t,cY+o[1]*sZ*.8*t,sZ*.4*t,tx+o[0]*.1,ty+o[1]*.1,30+i*20,65,85);X.globalAlpha=1}}
   requestAnimationFrame(fr)}
-
 addEventListener("resize",rs);
 addEventListener("mousemove",e=>{mouse.x=e.clientX;mouse.y=e.clientY});
 addEventListener("touchmove",e=>{mouse.x=e.touches[0].clientX;mouse.y=e.touches[0].clientY},{passive:!0});
 addEventListener("touchend",()=>{mouse.x=-9999;mouse.y=-9999});
-Wp.addEventListener("dblclick",e=>{e.preventDefault();clusterMode=!clusterMode});
+addEventListener("dblclick",e=>{e.preventDefault();clusterMode=!clusterMode});
 rs();requestAnimationFrame(fr);
 </script>
-<section class="post-content">{{ .Content }}</section>
-<div style="text-align:center;padding:3rem 1rem 1rem;max-width:600px;margin:0 auto;">
-  <h2 style="font-family:'SF Mono',monospace;font-size:1.2rem;color:rgba(200,220,255,0.8);margin-bottom:0.8rem;">Connect</h2>
-  <p style="font-size:0.85rem;color:rgba(140,160,190,0.6);line-height:1.6;margin-bottom:1.5rem;">Building MCP servers, homelab infrastructure, and AI agents. Always open to collaborating with other builders.</p>
-  <div style="display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;">
-    <a href="https://github.com/Crow0077" style="font-family:monospace;font-size:0.8rem;color:rgba(130,180,240,0.7);text-decoration:none;padding:0.4rem 1rem;border:1px solid rgba(60,70,100,0.3);border-radius:6px;">GitHub</a>
-    <a href="https://linkedin.com/in/xhuljanocaushllari" style="font-family:monospace;font-size:0.8rem;color:rgba(130,180,240,0.7);text-decoration:none;padding:0.4rem 1rem;border:1px solid rgba(60,70,100,0.3);border-radius:6px;">LinkedIn</a>
-    <a href="mailto:xcaushlari@gmail.com" style="font-family:monospace;font-size:0.8rem;color:rgba(130,180,240,0.7);text-decoration:none;padding:0.4rem 1rem;border:1px solid rgba(60,70,100,0.3);border-radius:6px;">Email</a>
-  </div>
-</div>
-{{- end }}
+</body>
+</html>
