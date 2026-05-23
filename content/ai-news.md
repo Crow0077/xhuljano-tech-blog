@@ -119,7 +119,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated May 21, 2026 — 07:00 UTC</div>
+    <div class="last-updated">Updated May 22, 2026 — 21:30 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -128,115 +128,97 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 20</div>
+      <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/" target="_blank">Google I/O 2026: 100 Announcements — Gemini Omni, Antigravity 2.0, WebMCP, Android XR Glasses</a></h3>
-        <p>Google's I/O 2026 keynote was the most AI-dense product showcase in company history, with 100 announcements spanning models, agents, Search, Chrome, Android, YouTube, and smart glasses. Gemini 3.5 Flash is now the default model across all products, 4× faster than rival frontier models. Gemini Spark — a 24/7 background personal agent — launches next week. Universal Cart brings agentic shopping. WebMCP, a proposed open standard for agent-friendly websites, starts origin trials in Chrome 149. Google now processes 3.2 quadrillion tokens/month, Gemini app hits 900M+ MAU, and AI Mode in Search surpassed 1B MAU.</p>
-        <div class="news-tags"><span>Google I/O</span><span>Gemini Omni</span><span>WebMCP</span><span>Agents</span></div>
+        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026" target="_blank">Anthropic Projects First-Ever Profit: $10.9B Q2 Revenue, 130% Growth</a></h3>
+        <p>Anthropic revealed it is on track for its first quarterly operating profit ever, projecting $10.9 billion in Q2 2026 revenue — up 130% from Q1. Annual run rate hits $43.6B, with operating income of ~$559M. Claude Code and the developer ecosystem drive high-margin API revenue. Compute efficiency is improving: spend per revenue dollar dropped from 71¢ to 56¢. Customers spending >$1M/year doubled from 500 to 1,000 since February.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Revenue</span><span>Profit</span><span>Claude Code</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 19</div>
+      <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://theaitrack.com/andrej-karpathy-joins-anthropic/" target="_blank">Andrej Karpathy Joins Anthropic's Pretraining Team to Work on Claude</a></h3>
-        <p>Andrej Karpathy, co-founder of OpenAI and former Tesla AI director, announced he has joined Anthropic's pretraining team under Nick Joseph. Karpathy will lead a group focused on using Claude itself to accelerate pretraining research — AI-assisted AI development. The hire signals Anthropic's commitment to competing for elite research talent during an intensifying frontier AI talent war. Karpathy said he remains "deeply passionate about education" and plans to resume Eureka Labs in time.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Karpathy</span><span>Pretraining</span><span>Talent</span></div>
+        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026" target="_blank">OpenAI Files Confidential S-1 for September IPO at $852B–$1T Valuation</a></h3>
+        <p>OpenAI prepared a confidential S-1 filing expected as early as May 22, targeting a September 2026 IPO at an $852 billion to $1 trillion valuation — potentially the largest tech offering in history. Goldman Sachs and Morgan Stanley are leading. Coinbase prediction markets give 85% odds OpenAI lists before Anthropic. The race to go public first is partly a race to set the AI valuation narrative.</p>
+        <div class="news-tags"><span>OpenAI</span><span>IPO</span><span>Valuation</span><span>S-1</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 20</div>
+      <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/" target="_blank">OpenAI Reasoning Model Disproves 80-Year-Old Erdős Geometry Conjecture</a></h3>
-        <p>OpenAI's general-purpose reasoning model disproved a central conjecture in discrete geometry that had stood since 1946 — the planar unit distance problem posed by Paul Erdős. The model identified an infinite family of examples providing a polynomial improvement over the previously believed-optimal square grid construction. Critically, the result was verified by the same mathematicians who previously exposed flaws in OpenAI's mathematical claims, lending credibility. The breakthrough was achieved by a general-purpose model, not one specialized for mathematics.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Mathematics</span><span>Breakthrough</span><span>Erdős</span></div>
+        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026" target="_blank">SpaceX S-1 Reveals Anthropic Paying $1.25B/Month for Compute Through 2029</a></h3>
+        <p>SpaceX's IPO filing disclosed that Anthropic agreed to pay $1.25 billion per month — approximately $45 billion total — for GPU compute access through May 2029. The deal covers Colossus 1 (220,000+ NVIDIA GPUs, 300 MW) and is expanding to Colossus 2 for NVIDIA GB200 Blackwell Ultra capacity. Either party can terminate with 90 days' notice. This is the largest disclosed single compute contract in history.</p>
+        <div class="news-tags"><span>SpaceX</span><span>Anthropic</span><span>Compute</span><span>$45B Deal</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 20</div>
+      <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/" target="_blank">Anthropic to Pay xAI $1.25 Billion/Month for Compute — Archrivals Become Partners</a></h3>
-        <p>In a surprising industry move, Anthropic entered an agreement to purchase compute resources from Elon Musk's xAI at $1.25 billion per month — $15 billion annually. The deal highlights the staggering capital requirements of frontier AI and establishes an unprecedented commercial relationship between two competitors. xAI itself lost $6.4 billion in 2025, revealed through SpaceX's IPO filing, and is spending $2.8 billion on natural gas turbines for data center power.</p>
-        <div class="news-tags"><span>Anthropic</span><span>xAI</span><span>Compute</span><span>Infrastructure</span></div>
+        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026" target="_blank">Chinese Models Capture 60% of OpenRouter Usage — Threaten OpenAI & Anthropic IPOs</a></h3>
+        <p>CNBC reports that Chinese AI models have silently captured 60% of usage on OpenRouter, the dominant model routing platform. Artificial Analysis priced ten identical evaluations: Claude at $4,811, GPT at $3,357, DeepSeek at just $1,071. This cost disparity threatens both upcoming IPOs — why pay $852B for OpenAI when models 3-4× cheaper perform comparably?</p>
+        <div class="news-tags"><span>China</span><span>DeepSeek</span><span>OpenRouter</span><span>Pricing</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 20</div>
+      <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027" target="_blank">NVIDIA Posts Record $81.6B Revenue — 85% YoY Growth — Reveals $43B Startup Portfolio</a></h3>
-        <p>NVIDIA reported Q1 FY2027 revenue of $81.6 billion, up 20% sequentially and 85% year-over-year. The company disclosed $43 billion in startup holdings, cementing its role as the financial engine of the AI ecosystem. However, NVIDIA also forecast slowing revenue growth next quarter — a potential signal that hyperscaler CapEx may be approaching a plateau after three years of breakneck acceleration.</p>
-        <div class="news-tags"><span>NVIDIA</span><span>Earnings</span><span>Startups</span><span>Revenue</span></div>
+        <h3><a href="https://www.theverge.com/2026/05/21/musk-openai-trial-verdict" target="_blank">Musk v OpenAI Trial Goes to Jury — Verdict Could Reshape AI Governance</a></h3>
+        <p>The landmark trial pitting Elon Musk against Sam Altman and OpenAI went to the jury after nearly a month of tech drama. Musk's team argued the startup deceived him about its non-profit mission; OpenAI countered that Musk's lawsuit was an attempt to tie the company in legal knots. The verdict could reshape how AI non-profit-to-profit transitions are governed and set precedent for founder disputes across the industry.</p>
+        <div class="news-tags"><span>OpenAI</span><span>Musk</span><span>Trial</span><span>Governance</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 20</div>
+      <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/20/xai-burned-6-4b-last-year-spacexs-ipo-filing-shows-why-the-spending-is-far-from-over/" target="_blank">xAI Lost $6.4B in 2025 — SpaceX IPO Filing Reveals Massive Grok Expansion Plans</a></h3>
-        <p>SpaceX's IPO filing provided the first public glimpse into xAI's finances: a $6.4 billion net loss in 2025, driven by aggressive Grok model expansion. The filing reveals xAI plans to spend $2.8 billion on natural gas turbines over three years for data center power, and is currently being sued over its existing generators. The disclosure underscores the extreme capital intensity of competing at the AI frontier — burning billions annually with no near-term path to profitability.</p>
-        <div class="news-tags"><span>xAI</span><span>Finance</span><span>IPO</span><span>Grok</span></div>
+        <h3><a href="https://www.theverge.com/2026/05/21/graduates-boo-tech-executives-ai" target="_blank">2026 Graduates Boo Tech Executives Over AI — Growing Public Discontent</a></h3>
+        <p>Viral videos show 2026 graduates across multiple universities heckling commencement speakers who praised AI. Former Google CEO Eric Schmidt was notably booed. The protests highlight mounting public anxiety over rapid AI integration, job displacement fears, and a growing generational divide in attitudes toward automation. The class of 2026 is entering a workforce being fundamentally reshaped by AI.</p>
+        <div class="news-tags"><span>Society</span><span>Jobs</span><span>Backlash</span><span>Graduation</span></div>
       </div>
     </div>
 
   </div>
 
-  <div class="news-section-title">Models &amp; Inference</div>
+  <div class="news-section-title">Models &amp; Tools</div>
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 21</div>
+      <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://github.com/anthropics/claude-plugins-official" target="_blank">Anthropic Launches Official Claude Code Plugin Directory</a></h3>
-        <p>Anthropic released the official Claude Code Plugin Directory — a curated, centrally managed repository of high-quality plugins for the Claude Code environment. The directory, hosted on GitHub under the Anthropic organization, provides a quality-gated ecosystem for extending Claude's coding capabilities. The move parallels VS Code's extension marketplace and positions Claude Code as an extensible platform rather than a standalone tool.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Claude Code</span><span>Plugins</span></div>
+        <h3><a href="https://www.theverge.com/2026/05/21/mozilla-firefox-project-nova-redesign-ai-kill-switch" target="_blank">Mozilla Firefox "Project Nova": Major Redesign with AI Master Kill Switch</a></h3>
+        <p>Mozilla unveiled "Project Nova," a major Firefox redesign featuring rounded UI, revamped Settings, and — most notably — a master switch to disable all current and future AI features. The privacy-first move positions Firefox as the browser for users who want AI on their terms, contrasting with Chrome and Edge's aggressive AI integration. The redesign is currently in Nightly builds.</p>
+        <div class="news-tags"><span>Firefox</span><span>Privacy</span><span>Browser</span><span>AI Ethics</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 21</div>
+      <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://github.com/rtk-ai/rtk" target="_blank">RTK: Rust CLI Agent Slashes LLM Token Consumption by 60-90%</a></h3>
-        <p>RTK (Rust Token Killer) is a new single-binary Rust CLI agent that claims to reduce LLM token usage by 60-90% during common development commands. With zero external dependencies, it addresses the mounting cost of AI-driven development by aggressively optimizing prompts and responses. The project hit GitHub Trending on launch day, reflecting widespread developer frustration with token costs in agent workflows.</p>
-        <div class="news-tags"><span>Rust</span><span>Tokens</span><span>CLI</span><span>Cost</span></div>
+        <h3><a href="https://github.com/multica-ai/andrej-karpathy-skills" target="_blank">Karpathy's LLM Insights Encoded as Reusable Skills for AI Coding Agents</a></h3>
+        <p>A new open-source project encodes Andrej Karpathy's insights on LLM pitfalls into a structured CLAUDE.md file — essentially a reusable skill set for AI coding agents. The project aims to improve reliability and efficiency of AI-generated code by baking Karpathy's hard-won lessons directly into agent context. The approach mirrors the "skills" pattern increasingly used in agent frameworks.</p>
+        <div class="news-tags"><span>Karpathy</span><span>Skills</span><span>Open Source</span><span>Agents</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 21</div>
+      <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://github.com/rohitg00/agentmemory" target="_blank">AgentMemory Ranked #1 Persistent Memory Solution for AI Coding Agents</a></h3>
-        <p>AgentMemory claimed the top spot in real-world benchmarks for persistent AI agent memory, beating competing solutions on state retention across long-running coding sessions. As AI agents increasingly tackle multi-step development tasks spanning hours or days, persistent context has become a critical bottleneck. AgentMemory provides a high-performance persistence layer validated on real development workflows, not synthetic tests.</p>
-        <div class="news-tags"><span>Memory</span><span>Agents</span><span>Open Source</span></div>
+        <h3><a href="https://github.com/obra/superpowers" target="_blank">Superpowers: Composable Agent Programming Framework Hits GitHub Trending</a></h3>
+        <p>The Superpowers framework introduces composable skills and explicit initial instructions for modular, disciplined agent development. It addresses reliability and scalability challenges in agentic workflows by enforcing structured skill composition — a paradigm shift from monolithic agent prompts to reusable, testable building blocks. The project hit GitHub Trending on launch day.</p>
+        <div class="news-tags"><span>Agents</span><span>Framework</span><span>Open Source</span><span>Skills</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 21</div>
+      <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://github.com/tinyhumansai/openhuman" target="_blank">OpenHuman: Open-Source Private AI Superintelligence Project Debuts</a></h3>
-        <p>OpenHuman, a new open-source project by TinyHumansAI, positions itself as a "private superintelligence" built on three principles: privacy, simplicity, and high performance. The project aims to give users complete control over powerful AI without cloud dependencies — part of a growing movement toward decentralized, locally-run frontier AI. Early documentation is sparse but the project hit GitHub Trending immediately.</p>
-        <div class="news-tags"><span>Open Source</span><span>Privacy</span><span>Superintelligence</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 19</div>
-      <div class="news-content">
-        <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/" target="_blank">Gemini 3.5 Flash: Google's Agent-First Model — 4× Faster Than Frontier Rivals</a></h3>
-        <p>Gemini 3.5 Flash is Google's new default model, designed primarily for agentic workloads with complex multi-step reasoning. It's 4× faster on output tokens per second than competing frontier models and outperforms Gemini 3.1 Pro on coding and agentic benchmarks. Google AI Studio now supports prompt-to-app for Android with direct Play Console publishing, Managed Agents via a single API call in isolated Linux environments, and WebMCP for agent-browser interoperability.</p>
-        <div class="news-tags"><span>Google</span><span>Gemini 3.5</span><span>Agents</span><span>WebMCP</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 21</div>
-      <div class="news-content">
-        <h3><a href="https://github.com/HKUDS/CLI-Anything" target="_blank">CLI-Anything: HKUDS Project Aims for Native AI Agent Support in All Software</a></h3>
-        <p>CLI-Anything, from the University of Hong Kong Data Science Lab, introduces the CLI-Hub platform to give every software application native AI agent support through a standardized command-line interface framework. The open-source project seeks to bridge traditional software with modern AI agent capabilities, treating CLI as the universal integration layer. A strategic bet on CLIs as the enduring interface for agentic automation.</p>
-        <div class="news-tags"><span>CLI</span><span>Agents</span><span>Open Source</span></div>
+        <h3><a href="https://xix.ai/live" target="_blank">Google DeepMind's Green Tree Matches Super-Forecaster Performance on Forecast Bench</a></h3>
+        <p>For the first time, an LLM — Google DeepMind's Green Tree — matched super-forecaster performance on the Forecasting Research Institute's benchmark. Recursive self-improvement is no longer theoretical: Alibaba's Qwen 3.7 Max ran 35 hours of continuous autonomous execution, performing 432 kernel evaluations across 1,158 tool calls and delivering a 10× geometric mean speedup over Triton reference implementations.</p>
+        <div class="news-tags"><span>DeepMind</span><span>Forecasting</span><span>Qwen</span><span>Self-Improvement</span></div>
       </div>
     </div>
 
@@ -246,56 +228,38 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 19</div>
+      <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/19/meta-layoffs-8000-ai-pivot-2026/" target="_blank">Meta Lays Off 8,000 Employees — 7,000 Reassigned to AI-Native Organizations</a></h3>
-        <p>Meta announced a 10% workforce reduction (~8,000 employees) with 7,000 reassigned into four new AI-first organizations with flatter structures and fewer managers. CEO Mark Zuckerberg is redirecting the company's $125-145 billion 2026 CapEx budget toward AI data centers and custom silicon. Severance: 16 weeks base pay + 2 weeks per year of service. The restructuring signals that AI is now Meta's primary growth driver, not an R&D line item.</p>
-        <div class="news-tags"><span>Meta</span><span>Layoffs</span><span>Restructuring</span><span>AI Pivot</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/21/spotify-umg-ai-generated-covers-deal/" target="_blank">Spotify & Universal Music Group Strike AI-Generated Music Deal</a></h3>
+        <p>Spotify and Universal Music Group reached a landmark deal allowing premium subscribers to create AI-generated covers and remixes of UMG's catalog. The revenue-sharing model ensures artists are compensated — a structured, licensed approach to generative AI in music that contrasts with the unlicensed scraping that has dominated AI music generation so far.</p>
+        <div class="news-tags"><span>Spotify</span><span>Music</span><span>AI Generation</span><span>Licensing</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 21</div>
+      <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://www.bloomberg.com/news/articles/2026-05-21/manus-co-founders-raise-1b-to-buy-back-company" target="_blank">Manus Co-Founders Raise $1B+ to Buy Back Company After Beijing Blocks Meta Deal</a></h3>
-        <p>Manus co-founders are in talks to raise over $1 billion to buy back the Chinese-founded AI company after Beijing ordered Meta to unwind its $2 billion acquisition. The forced unwinding represents the most significant intervention yet in cross-border AI M&A, signaling that sovereign control over AI assets is becoming a geopolitical priority. The deal structure would return Manus to independent status.</p>
-        <div class="news-tags"><span>Manus</span><span>M&A</span><span>Geopolitics</span><span>Meta</span></div>
+        <h3><a href="https://www.reuters.com/technology/white-house-ai-executive-order-postponed-2026-05-22/" target="_blank">White House AI Executive Order Postponed Again — Internal Disagreement on NSA Role</a></h3>
+        <p>The White House postponed its AI executive order yet again despite invitations already being sent. The proposed framework would require voluntary 90-day pre-launch review of frontier models with NSA involvement in classified testing. Internal disagreement persists between those wanting genuinely voluntary compliance and hardliners seeking binding NSA-enforced rules — a tension amplified by the simultaneous IPO announcements.</p>
+        <div class="news-tags"><span>Regulation</span><span>White House</span><span>NSA</span><span>Policy</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 21</div>
+      <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://www.reuters.com/technology/amd-pledges-10-billion-taiwan-chip-investment-2026-05-21/" target="_blank">AMD Pledges $10B+ Investment in Taiwan's Semiconductor Industry</a></h3>
-        <p>AMD committed over $10 billion to Taiwan's chip industry for advanced packaging and R&D facilities, deepening its manufacturing partnership with TSMC and Taiwan's semiconductor ecosystem. The investment comes as global chip demand continues to outstrip supply and geopolitical tensions make supply chain diversification a strategic imperative for every major chip designer.</p>
-        <div class="news-tags"><span>AMD</span><span>Taiwan</span><span>Semiconductor</span><span>Investment</span></div>
+        <h3><a href="https://www.theverge.com/2026/05/22/robot-barbers-china-ai-haircuts" target="_blank">Robot Barbers in China Give AI Haircuts for Under $1 — Automation Becomes Tangible</a></h3>
+        <p>Robot barbers in China are using 3D scanning and AI to give millimeter-precision haircuts for under a dollar, finally making the deflationary promise of automation tangible at consumer scale. UB unveiled Walker C1, a full-size humanoid that performs ballet and ballroom dances with a human partner, while China's Engine AI activated its 10,000 humanoid production line in Shenzhen with T800 units shipping.</p>
+        <div class="news-tags"><span>Robotics</span><span>China</span><span>Automation</span><span>Humanoids</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 21</div>
+      <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://www.wsj.com/articles/higgsfield-ai-hell-grind-cannes-2026-05-21" target="_blank">Higgsfield AI Premieres First 95-Minute Fully AI-Generated Film at Cannes</a></h3>
-        <p>Higgsfield AI premiered "Hell Grind," a 95-minute fully AI-generated film, at the Cannes Film Festival. The production took two weeks and cost $500,000 — of which $400,000 was AI compute — a dramatic reduction from traditional animated feature costs ($50-200M). The Cannes premiere marks a legitimacy milestone for AI-generated entertainment and signals that feature-length AI films are now commercially viable.</p>
-        <div class="news-tags"><span>AI Film</span><span>Cannes</span><span>Entertainment</span><span>Higgsfield</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 20</div>
-      <div class="news-content">
-        <h3><a href="https://www.theverge.com/tech/934432/samsung-electronics-strike-memory-chip-supply" target="_blank">Samsung Averts 47,000-Worker Strike That Threatened Global Chip Supply</a></h3>
-        <p>Samsung Electronics reached a tentative labor agreement late Wednesday, narrowly avoiding an 18-day strike by 47,000+ workers at its domestic chipmaking facilities. The strike would have severely impacted memory chip production amid already-tight global supply. The resolution is a temporary reprieve for the AI hardware supply chain, which depends on Samsung's HBM and DRAM output for GPU manufacturing.</p>
-        <div class="news-tags"><span>Samsung</span><span>Supply Chain</span><span>Chips</span><span>Labor</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 20</div>
-      <div class="news-content">
-        <h3><a href="https://www.theverge.com/column/935021/google-io-gemini-for-science-alphafold-alphagenome-ai-health" target="_blank">Google I/O: Gemini for Science, AlphaFold &amp; AlphaGenome Target Disease Eradication</a></h3>
-        <p>Google DeepMind CEO Demis Hassabis positioned Gemini for Science as the next phase of AI-driven biological research — targeting "the foothills of singularity" with AlphaFold, AlphaGenome, and new scientific AI tools. The health-focused I/O showcase claimed AI could accelerate disease understanding to previously impossible speeds. The Verge's analysis asks whether these tools can deliver on their life-changing promises or represent overhyped research demos.</p>
-        <div class="news-tags"><span>Google</span><span>Science</span><span>AlphaFold</span><span>Health</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/21/daytona-growth-agent-cloud/" target="_blank">Daytona Reports 74% MoM Growth — 850K+ Daily Runs, New Agent Cloud Launch</a></h3>
+        <p>Daytona reported 74% month-over-month growth with 850,000+ daily runs on its platform. CEO Ivan Burazin announced the new Agent Cloud for bare-metal sandboxes and RL evaluations for agent-environment interaction. The growth signals explosive demand for infrastructure that gives AI agents real computers to work with — not just API endpoints.</p>
+        <div class="news-tags"><span>Daytona</span><span>Agents</span><span>Infrastructure</span><span>Growth</span></div>
       </div>
     </div>
 
