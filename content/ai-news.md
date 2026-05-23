@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-05-21
+date: 2026-05-23
 draft: false
 ShowToc: false
 ---
@@ -119,7 +119,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated May 22, 2026 — 21:30 UTC</div>
+    <div class="last-updated">Updated May 23, 2026 — 14:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -128,56 +128,92 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 22</div>
+      <div class="news-date">May 23</div>
       <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026" target="_blank">Anthropic Projects First-Ever Profit: $10.9B Q2 Revenue, 130% Growth</a></h3>
-        <p>Anthropic revealed it is on track for its first quarterly operating profit ever, projecting $10.9 billion in Q2 2026 revenue — up 130% from Q1. Annual run rate hits $43.6B, with operating income of ~$559M. Claude Code and the developer ecosystem drive high-margin API revenue. Compute efficiency is improving: spend per revenue dollar dropped from 71¢ to 56¢. Customers spending >$1M/year doubled from 500 to 1,000 since February.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Revenue</span><span>Profit</span><span>Claude Code</span></div>
+        <h3><a href="https://www.theverge.com/tech/936507/gemini-omni-hands-on-deepfake-ai-video" target="_blank">Google Unveils Omni Flash: Anything-to-Anything AI Model Generates Video From Images</a></h3>
+        <p>Google launched Gemini Omni Flash, a new model capable of generating AI video directly from real images and clips. The anything-to-anything architecture makes deepfake-quality content creation trivially easy — raising both creative possibilities and significant societal concerns about synthetic media authenticity.</p>
+        <div class="news-tags"><span>Google</span><span>Gemini</span><span>AI Video</span><span>Deepfakes</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026" target="_blank">OpenAI Files Confidential S-1 for September IPO at $852B–$1T Valuation</a></h3>
-        <p>OpenAI prepared a confidential S-1 filing expected as early as May 22, targeting a September 2026 IPO at an $852 billion to $1 trillion valuation — potentially the largest tech offering in history. Goldman Sachs and Morgan Stanley are leading. Coinbase prediction markets give 85% odds OpenAI lists before Anthropic. The race to go public first is partly a race to set the AI valuation narrative.</p>
-        <div class="news-tags"><span>OpenAI</span><span>IPO</span><span>Valuation</span><span>S-1</span></div>
+        <h3><a href="https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard" target="_blank">Google's AI Search Is So Broken It Can 'Disregard' What You're Looking For</a></h3>
+        <p>Google's AI Overviews are responding to prompt injection terms like "disregard" and "skip" like traditional AI chatbots, completely ignoring the search query. The behavior reveals fundamental architectural weaknesses in how Google has integrated LLMs into its core search product.</p>
+        <div class="news-tags"><span>Google</span><span>AI Search</span><span>Prompt Injection</span><span>Safety</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026" target="_blank">SpaceX S-1 Reveals Anthropic Paying $1.25B/Month for Compute Through 2029</a></h3>
-        <p>SpaceX's IPO filing disclosed that Anthropic agreed to pay $1.25 billion per month — approximately $45 billion total — for GPU compute access through May 2029. The deal covers Colossus 1 (220,000+ NVIDIA GPUs, 300 MW) and is expanding to Colossus 2 for NVIDIA GB200 Blackwell Ultra capacity. Either party can terminate with 90 days' notice. This is the largest disclosed single compute contract in history.</p>
-        <div class="news-tags"><span>SpaceX</span><span>Anthropic</span><span>Compute</span><span>$45B Deal</span></div>
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/936219/elon-stop-trying-to-make-grok-happen" target="_blank">Elon, Stop Trying to Make Grok Happen — Government Workers Reject xAI Chatbot</a></h3>
+        <p>New data reveals government employees are not adopting Elon Musk's Grok chatbot, with usage metrics far below enterprise expectations. The findings raise questions about xAI's enterprise go-to-market strategy and whether Grok can compete with Claude and ChatGPT in professional settings.</p>
+        <div class="news-tags"><span>Grok</span><span>xAI</span><span>Musk</span><span>Enterprise</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-may-22-2026" target="_blank">Chinese Models Capture 60% of OpenRouter Usage — Threaten OpenAI & Anthropic IPOs</a></h3>
-        <p>CNBC reports that Chinese AI models have silently captured 60% of usage on OpenRouter, the dominant model routing platform. Artificial Analysis priced ten identical evaluations: Claude at $4,811, GPT at $3,357, DeepSeek at just $1,071. This cost disparity threatens both upcoming IPOs — why pay $852B for OpenAI when models 3-4× cheaper perform comparably?</p>
-        <div class="news-tags"><span>China</span><span>DeepSeek</span><span>OpenRouter</span><span>Pricing</span></div>
+        <h3><a href="https://www.theverge.com/tech/936073/ai-writing-granta-commonwealth-prize" target="_blank">Commonwealth Prize AI Scandal: Literary World 'Not Prepared' for AI-Generated Submissions</a></h3>
+        <p>Three major literary scandals in rapid succession reveal the publishing industry is completely unprepared for AI-generated submissions. The Commonwealth Prize, Granta, and other institutions are scrambling to establish policies as AI-written works slip through editorial review undetected.</p>
+        <div class="news-tags"><span>Publishing</span><span>AI Writing</span><span>Ethics</span><span>Controversy</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 22</div>
+      <div class="news-date">May 21</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/2026/05/21/musk-openai-trial-verdict" target="_blank">Musk v OpenAI Trial Goes to Jury — Verdict Could Reshape AI Governance</a></h3>
-        <p>The landmark trial pitting Elon Musk against Sam Altman and OpenAI went to the jury after nearly a month of tech drama. Musk's team argued the startup deceived him about its non-profit mission; OpenAI countered that Musk's lawsuit was an attempt to tie the company in legal knots. The verdict could reshape how AI non-profit-to-profit transitions are governed and set precedent for founder disputes across the industry.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Musk</span><span>Trial</span><span>Governance</span></div>
+        <h3><a href="https://www.theverge.com/science/935229/spacex-anthropic-ipo-ai-capacity-deal-colossus" target="_blank">SpaceX IPO Reveals Anthropic Paying $15B/Year for GPU Compute — Largest Deal in History</a></h3>
+        <p>SpaceX's IPO filing disclosed that Anthropic is paying $15 billion per year — approximately $45 billion total through 2029 — for GPU compute capacity at Elon Musk's data centers. The Colossus cluster deal is the largest disclosed compute contract in history and highlights the staggering capital requirements of frontier AI development.</p>
+        <div class="news-tags"><span>Anthropic</span><span>SpaceX</span><span>Compute</span><span>$15B Deal</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 22</div>
+      <div class="news-date">May 21</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/2026/05/21/graduates-boo-tech-executives-ai" target="_blank">2026 Graduates Boo Tech Executives Over AI — Growing Public Discontent</a></h3>
-        <p>Viral videos show 2026 graduates across multiple universities heckling commencement speakers who praised AI. Former Google CEO Eric Schmidt was notably booed. The protests highlight mounting public anxiety over rapid AI integration, job displacement fears, and a growing generational divide in attitudes toward automation. The class of 2026 is entering a workforce being fundamentally reshaped by AI.</p>
+        <h3><a href="https://www.theverge.com/tech/935163/meta-layoffs-ai-investment-offset-memo" target="_blank">Meta Lays Off Thousands to Offset Escalating AI Investment Costs</a></h3>
+        <p>Meta has notified thousands of employees of layoffs as the company restructures to compensate for its massive AI infrastructure investments. The cuts come as Meta races to build out GPU clusters and data centers for training next-generation models, prioritizing capital expenditure over headcount.</p>
+        <div class="news-tags"><span>Meta</span><span>Layoffs</span><span>AI Investment</span><span>Big Tech</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 21</div>
+      <div class="news-content">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/935379/spotify-umg-ai-covers-remix" target="_blank">Spotify Launches AI-Generated Song Covers in Landmark UMG Licensing Deal</a></h3>
+        <p>Universal Music Group became the first major label to license AI-generated covers and remixes on Spotify, establishing a revenue-sharing model that ensures artists are compensated. The structured approach contrasts sharply with the unlicensed scraping that has dominated generative AI in music so far.</p>
+        <div class="news-tags"><span>Spotify</span><span>Music</span><span>AI Generation</span><span>Licensing</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 21</div>
+      <div class="news-content">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/935602/graduates-boo-ai-ceos" target="_blank">Graduates Across the US Boo Tech CEOs Over AI at Commencement Ceremonies</a></h3>
+        <p>Viral videos show 2026 graduates at multiple universities heckling tech executives who praised AI during commencement speeches. The protests highlight mounting public anxiety over rapid AI integration and job displacement fears — a growing generational divide in attitudes toward automation.</p>
         <div class="news-tags"><span>Society</span><span>Jobs</span><span>Backlash</span><span>Graduation</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 21</div>
+      <div class="news-content">
+        <h3><a href="https://www.theverge.com/tech/935250/microsoft-github-struggles-notepad" target="_blank">GitHub Faces Existential Fight for Survival Inside Microsoft</a></h3>
+        <p>GitHub is battling repeated outages, security vulnerabilities, and a talent exodus as Microsoft's strategic priorities shift toward Copilot and Azure DevOps. Internal tensions are mounting as the developer platform struggles to maintain its independent identity while being integrated deeper into the Microsoft ecosystem.</p>
+        <div class="news-tags"><span>GitHub</span><span>Microsoft</span><span>Strategy</span><span>Copilot</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 20</div>
+      <div class="news-content">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/934521/google-synthid-c2pa-content-credentials-ai-labelling-efforts" target="_blank">AI Labeling Systems Face Make-or-Break Moment for Deepfake Detection</a></h3>
+        <p>Content credentials systems like Google's SynthID and the C2PA standard are being tested at scale. With elections approaching and AI-generated media flooding platforms, the stakes for deepfake detection have never been higher — and the current systems may not be up to the task.</p>
+        <div class="news-tags"><span>Deepfakes</span><span>Labeling</span><span>SynthID</span><span>Safety</span></div>
       </div>
     </div>
 
@@ -189,77 +225,18 @@ ShowToc: false
     <div class="news-item">
       <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/2026/05/21/mozilla-firefox-project-nova-redesign-ai-kill-switch" target="_blank">Mozilla Firefox "Project Nova": Major Redesign with AI Master Kill Switch</a></h3>
-        <p>Mozilla unveiled "Project Nova," a major Firefox redesign featuring rounded UI, revamped Settings, and — most notably — a master switch to disable all current and future AI features. The privacy-first move positions Firefox as the browser for users who want AI on their terms, contrasting with Chrome and Edge's aggressive AI integration. The redesign is currently in Nightly builds.</p>
-        <div class="news-tags"><span>Firefox</span><span>Privacy</span><span>Browser</span><span>AI Ethics</span></div>
+        <h3><a href="https://www.anthropic.com/research/glasswing-initial-update" target="_blank">Anthropic Publishes Project Glasswing Update on AI Transparency &amp; Security</a></h3>
+        <p>Anthropic released an initial update on Project Glasswing, its collaborative effort to secure the world's most critical software against increasingly capable AI models. The project focuses on mechanistic interpretability and adversarial robustness — opening up Anthropic's safety research to the broader community.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Glasswing</span><span>Interpretability</span><span>Safety</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 22</div>
+      <div class="news-date">May 20</div>
       <div class="news-content">
-        <h3><a href="https://github.com/multica-ai/andrej-karpathy-skills" target="_blank">Karpathy's LLM Insights Encoded as Reusable Skills for AI Coding Agents</a></h3>
-        <p>A new open-source project encodes Andrej Karpathy's insights on LLM pitfalls into a structured CLAUDE.md file — essentially a reusable skill set for AI coding agents. The project aims to improve reliability and efficiency of AI-generated code by baking Karpathy's hard-won lessons directly into agent context. The approach mirrors the "skills" pattern increasingly used in agent frameworks.</p>
-        <div class="news-tags"><span>Karpathy</span><span>Skills</span><span>Open Source</span><span>Agents</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 22</div>
-      <div class="news-content">
-        <h3><a href="https://github.com/obra/superpowers" target="_blank">Superpowers: Composable Agent Programming Framework Hits GitHub Trending</a></h3>
-        <p>The Superpowers framework introduces composable skills and explicit initial instructions for modular, disciplined agent development. It addresses reliability and scalability challenges in agentic workflows by enforcing structured skill composition — a paradigm shift from monolithic agent prompts to reusable, testable building blocks. The project hit GitHub Trending on launch day.</p>
-        <div class="news-tags"><span>Agents</span><span>Framework</span><span>Open Source</span><span>Skills</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 22</div>
-      <div class="news-content">
-        <h3><a href="https://xix.ai/live" target="_blank">Google DeepMind's Green Tree Matches Super-Forecaster Performance on Forecast Bench</a></h3>
-        <p>For the first time, an LLM — Google DeepMind's Green Tree — matched super-forecaster performance on the Forecasting Research Institute's benchmark. Recursive self-improvement is no longer theoretical: Alibaba's Qwen 3.7 Max ran 35 hours of continuous autonomous execution, performing 432 kernel evaluations across 1,158 tool calls and delivering a 10× geometric mean speedup over Triton reference implementations.</p>
-        <div class="news-tags"><span>DeepMind</span><span>Forecasting</span><span>Qwen</span><span>Self-Improvement</span></div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="news-section-title">Industry Moves</div>
-  <div class="news-grid">
-
-    <div class="news-item">
-      <div class="news-date">May 22</div>
-      <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/21/spotify-umg-ai-generated-covers-deal/" target="_blank">Spotify & Universal Music Group Strike AI-Generated Music Deal</a></h3>
-        <p>Spotify and Universal Music Group reached a landmark deal allowing premium subscribers to create AI-generated covers and remixes of UMG's catalog. The revenue-sharing model ensures artists are compensated — a structured, licensed approach to generative AI in music that contrasts with the unlicensed scraping that has dominated AI music generation so far.</p>
-        <div class="news-tags"><span>Spotify</span><span>Music</span><span>AI Generation</span><span>Licensing</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 22</div>
-      <div class="news-content">
-        <h3><a href="https://www.reuters.com/technology/white-house-ai-executive-order-postponed-2026-05-22/" target="_blank">White House AI Executive Order Postponed Again — Internal Disagreement on NSA Role</a></h3>
-        <p>The White House postponed its AI executive order yet again despite invitations already being sent. The proposed framework would require voluntary 90-day pre-launch review of frontier models with NSA involvement in classified testing. Internal disagreement persists between those wanting genuinely voluntary compliance and hardliners seeking binding NSA-enforced rules — a tension amplified by the simultaneous IPO announcements.</p>
-        <div class="news-tags"><span>Regulation</span><span>White House</span><span>NSA</span><span>Policy</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 22</div>
-      <div class="news-content">
-        <h3><a href="https://www.theverge.com/2026/05/22/robot-barbers-china-ai-haircuts" target="_blank">Robot Barbers in China Give AI Haircuts for Under $1 — Automation Becomes Tangible</a></h3>
-        <p>Robot barbers in China are using 3D scanning and AI to give millimeter-precision haircuts for under a dollar, finally making the deflationary promise of automation tangible at consumer scale. UB unveiled Walker C1, a full-size humanoid that performs ballet and ballroom dances with a human partner, while China's Engine AI activated its 10,000 humanoid production line in Shenzhen with T800 units shipping.</p>
-        <div class="news-tags"><span>Robotics</span><span>China</span><span>Automation</span><span>Humanoids</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 22</div>
-      <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/21/daytona-growth-agent-cloud/" target="_blank">Daytona Reports 74% MoM Growth — 850K+ Daily Runs, New Agent Cloud Launch</a></h3>
-        <p>Daytona reported 74% month-over-month growth with 850,000+ daily runs on its platform. CEO Ivan Burazin announced the new Agent Cloud for bare-metal sandboxes and RL evaluations for agent-environment interaction. The growth signals explosive demand for infrastructure that gives AI agents real computers to work with — not just API endpoints.</p>
-        <div class="news-tags"><span>Daytona</span><span>Agents</span><span>Infrastructure</span><span>Growth</span></div>
+        <h3><a href="https://www.theverge.com/tech/934585/google-ai-shopping-ads-search" target="_blank">Google Search's AI Evolution Brings More Ads to AI-Generated Results</a></h3>
+        <p>Google is rolling out new ad formats within its AI-powered Search experience, showing recommended products alongside AI-generated descriptions. The monetization push signals Google's strategy to convert AI Overview engagement into revenue — blending organic AI summaries with paid placements.</p>
+        <div class="news-tags"><span>Google</span><span>Ads</span><span>AI Search</span><span>Monetization</span></div>
       </div>
     </div>
 
