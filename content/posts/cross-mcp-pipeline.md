@@ -4,7 +4,7 @@ date: 2026-05-19
 draft: false
 tags: ["mcp", "security", "automation", "github", "pipeline"]
 categories: ["Projects"]
-summary: "The cross-MCP pipeline pattern: one MCP server scans, a bridge script parses results, and GitHub gets structured issues automatically. This pattern works for Sentinel→Issues, Screener→Trades, Firecrawl→Wiki, and more."
+summary: "The cross-MCP pipeline pattern: one MCP server scans, a bridge script parses results, and GitHub gets structured issues automatically. This pattern works for Sentinel->Issues, Screener->Trades, Firecrawl->Wiki, and more."
 ShowToc: true
 ---
 
@@ -16,13 +16,13 @@ I'm making the other side: MCP servers that talk to MCP servers.
 
 ```
 MCP Server A           Bridge Script           MCP Server B
-─────────────    →     ────────────     →     ─────────────
+-------------    ->     ------------     ->     -------------
 Sentinel scans          Parse findings          GitHub creates issues
 Screener finds signal   Format trade params     Trade bot executes
 Firecrawl scrapes       Extract entities        Wiki ingests pages
 ```
 
-This is not a live app. It's a way I tested on my home lab. The Sentinel→GitHub flow runs as a demo. Sentinel audits MCP servers. A Python bridge groups findings by file. Clean issues get made with CVE links.
+This is not a live app. It's a way I tested on my home lab. The Sentinel->GitHub flow runs as a demo. Sentinel audits MCP servers. A Python bridge groups findings by file. Clean issues get made with CVE links.
 
 ## Why This Matters
 
@@ -30,7 +30,7 @@ Most MCP demos show one tool for one job. That is the "hello world" of agent inf
 
 Cross-MCP flows are the next step. One server feeds another. No human needed. No API proxy. No control tool. Just two MCP servers talk via a small Python bridge.
 
-This setup works for all. The Sentinel flow runs on my home lab today. The same bridge script form works for Screener→Trade bot, Firecrawl→Wiki, and Compliance→Immune flows.
+This setup works for all. The Sentinel flow runs on my home lab today. The same bridge script form works for Screener->Trade bot, Firecrawl->Wiki, and Compliance->Immune flows.
 
 **Pattern code (demo):**
 ```python
@@ -42,17 +42,17 @@ for file, issues in grouped.items():
     create_github_issue(file, issues)
 ```
 
-This way scales to any MCP→MCP task.
+This way scales to any MCP->MCP task.
 
 ## What's Next
 
-- **Compliance → Immune flow:** Each night CIS scans feed immune health checks.
-- **Screener → Trade Bot flow:** Signal finds start trades.
-- **Firecrawl → Wiki flow:** Pulled pages feed the search index.
-- **Full auto loop:** Scan → spot → file issue → fix → ship again → re-scan.
+- **Compliance -> Immune flow:** Each night CIS scans feed immune health checks.
+- **Screener -> Trade Bot flow:** Signal finds start trades.
+- **Firecrawl -> Wiki flow:** Pulled pages feed the search index.
+- **Full auto loop:** Scan -> spot -> file issue -> fix -> ship again -> re-scan.
 
 Same way. Other tools. All MCP.
 
 ---
 
-*Built on a $150 Dell OptiPlex with Fedora Server. 18 MCP nodes. 100+ tools. Zero cloud deps.*
+*Built on a $150 Dell OptiPlex with Fedora Server + RKE2 K8s. 8 MCP servers. 60+ tools. Zero cloud deps.*
