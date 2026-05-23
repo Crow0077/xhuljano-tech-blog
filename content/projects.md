@@ -34,16 +34,17 @@ ShowToc: false
     <h2>MCP Command Center</h2>
     <div class="tag-row">
       <span class="tag">MCP</span>
+      <span class="tag">RKE2 K8s</span>
       <span class="tag">Systemd</span>
       <span class="tag">Streamable HTTP</span>
       <span class="tag">Python</span>
     </div>
-    <p>12 production MCP servers running as standalone systemd daemons on Fedora Server — security auditing, self-healing infrastructure, container management, log aggregation, backup orchestration, vulnerability scanning, and more. 80+ tools. Every server survives reboots and runs independently of any AI agent session.</p>
+    <p>8 production MCP servers deployed across a single-node RKE2 Kubernetes cluster — 6 on K8s with hostNetwork (arxiv, backup, firecrawl, homelab, sentinel, youtube) and 2 on systemd (immune, logs). 60+ tools. All servers use Streamable HTTP transport, survive reboots, and run independently of any AI agent session. Monitoring and observability stripped in favor of k9s and direct kubectl access — no Prometheus/Grafana overhead on a single-node cluster.</p>
     <div class="stat-row">
-      <div class="stat"><div class="num">12</div><div class="lbl">MCP Servers</div></div>
-      <div class="stat"><div class="num">80+</div><div class="lbl">Tools</div></div>
-      <div class="stat"><div class="num">1</div><div class="lbl">Enterprise Tier</div></div>
-      <div class="stat"><div class="num">24/7</div><div class="lbl">Uptime</div></div>
+      <div class="stat"><div class="num">8</div><div class="lbl">MCP Servers</div></div>
+      <div class="stat"><div class="num">60+</div><div class="lbl">Tools</div></div>
+      <div class="stat"><div class="num">6</div><div class="lbl">on K8s</div></div>
+      <div class="stat"><div class="num">2</div><div class="lbl">Systemd</div></div>
     </div>
     <div class="links">
       <a href="/ai-news/">AI News</a>
@@ -87,22 +88,22 @@ new p5(function(p){
     let wrap=document.getElementById('canvas-command');
     W=wrap.offsetWidth;H=240;
     p.resizeCanvas(W,H);c.parent('canvas-command');
-    let names=['DEPLOY','LOGS','BACKUP','HOMELAB','UPTIME','FIRECRAWL','SENTINEL','GSD','MINIRAG','AMEM','BRIDGE'];
-    let cols=[[0,200,255],[255,160,60],[80,220,120],[200,140,255],[255,200,50],[100,200,200],[255,100,150],[120,200,255],[255,180,80],[160,140,255],[200,100,255],[100,255,180],[255,150,100],[180,200,255],[255,100,200],[80,180,255],[150,220,100],[255,255,100]];
+    let names=['ARXIV','BACKUP','FIRECRAWL','HOMELAB','SENTINEL','YOUTUBE','IMMUNE','LOGS'];
+    let cols=[[0,200,255],[80,220,120],[200,140,255],[255,200,50],[100,200,200],[255,100,150],[120,200,255],[255,180,80]];
     let cx=W/2,cy=H/2,r=Math.min(W,H)*0.38;
-    let nCount=Math.min(names.length, 18);
+    let nCount=names.length;
     for(let i=0;i<nCount;i++){
       let a=(p.TWO_PI/nCount)*i-p.HALF_PI;
       nodes.push({x:cx+p.cos(a)*r,y:cy+p.sin(a)*r,col:cols[i],label:names[i],size:8,phase:p.random(p.TWO_PI),conns:[]});
     }
     for(let i=0;i<nCount;i++){nodes[i].conns=[(i+1)%nCount,(i+3)%nCount,(i+5)%nCount];}
-    for(let i=0;i<80;i++){particles.push({src:p.floor(p.random(nCount)),tgt:p.floor(p.random(nCount)),t:p.random(1),sp:0.003+p.random()*0.006});}
+    for(let i=0;i<60;i++){particles.push({src:p.floor(p.random(nCount)),tgt:p.floor(p.random(nCount)),t:p.random(1),sp:0.003+p.random()*0.006});}
   };
   p.draw=function(){
     p.background(8,8,16);time+=0.008;
     for(let n of nodes){for(let ci of n.conns){let t=nodes[ci];p.stroke(30,35,55,25);p.strokeWeight(0.4);p.line(n.x,n.y,t.x,t.y);}}
     for(let pt of particles){
-      pt.t+=pt.sp;if(pt.t>=1){pt.t=0;pt.src=pt.tgt;pt.tgt=p.floor(p.random(10))}
+      pt.t+=pt.sp;if(pt.t>=1){pt.t=0;pt.src=pt.tgt;pt.tgt=p.floor(p.random(nodes.length))}
       let s=nodes[pt.src],t=nodes[pt.tgt];
       let x=p.lerp(s.x,t.x,pt.t),y=p.lerp(s.y,t.y,pt.t);
       p.noStroke();p.fill(s.col[0],s.col[1],s.col[2],120);p.circle(x,y,2.5);
@@ -132,11 +133,9 @@ new p5(function(p){
   };
   p.draw=function(){
     p.background(8,8,16);time+=0.01;
-    // Connecting lines
     p.stroke(40,60,100,40);p.strokeWeight(1);
     p.line(nodes[0].x,nodes[0].y,nodes[1].x,nodes[1].y);
     p.line(nodes[1].x,nodes[1].y,nodes[2].x,nodes[2].y);
-    // Flowing particles
     for(let f of flows){
       f.t+=f.sp;if(f.t>=1){f.t=0;}
       let s=nodes[f.from],t=nodes[f.from==1?2:1];
@@ -151,7 +150,7 @@ new p5(function(p){
       p.fill(255,255,255,70);p.circle(n.x,n.y,n.r*0.2);
       p.fill(n.col[0],n.col[1],n.col[2],90);p.textSize(7);p.textFont('monospace');p.textAlign(p.CENTER);p.text(n.label,n.x,n.y+n.r+12);
     }
-    p.fill(180,180,200,80);p.textSize(8);p.textAlign(p.CENTER);p.text('scan → parse → issue',W/2,H-15);
+    p.fill(180,180,200,80);p.textSize(8);p.textAlign(p.CENTER);p.text('scan -> parse -> issue',W/2,H-15);
   };
   p.windowResized=function(){let w=document.getElementById('canvas-bridge');W=w.offsetWidth;p.resizeCanvas(W,H);};
 },'canvas-bridge');
