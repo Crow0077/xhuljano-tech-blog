@@ -7,7 +7,7 @@ ShowToc: false
 
 ## Who I Am
 
-I'm Xhuljano — a cloud engineering student building real infrastructure with AI agents, MCP servers, and container orchestration.
+I'm Xhuljano — a cloud engineering student building real infrastructure with AI agents, MCP servers, and a single-node RKE2 Kubernetes cluster.
 
 **Current:** Amazon Fulfillment (2022-present)
 **Education:** WGU Cloud and Network Engineering (expected late 2027)
@@ -16,19 +16,20 @@ I'm Xhuljano — a cloud engineering student building real infrastructure with A
 
 ## What I'm Building
 
-- **Homelab infrastructure** — Fedora Server, Podman containers, self-hosted services
-- **MCP servers** — Model Context Protocol tools for AI agent integration
-- **AI agents** — Autonomous workflows for homelab monitoring, trading, and deployment
+- **Homelab infrastructure** — Fedora Server, RKE2 Kubernetes cluster, 8 MCP servers (6 on K8s + 2 systemd)
+- **MCP servers** — Model Context Protocol tools deployed as K8s deployments with hostNetwork for AI agent integration
+- **AI agents** — Autonomous workflows for homelab monitoring, trading, and deployment via Hermes Agent
 - **Portfolio projects** — Real infrastructure, not tutorials
 
 ## Tech Stack
 
 - **OS:** Fedora Linux (Server + Workstation)
-- **Containers:** Podman (rootless), Quadlet, systemd
+- **Orchestration:** RKE2 Kubernetes, kubectl, k9s (no Prometheus/Grafana)
+- **MCP deployment:** 6 servers on K8s (Streamable HTTP), 2 on systemd
 - **AI/ML:** Ollama, vLLM, local LLM inference on RTX 4080
-- **Automation:** cron, systemd timers, autonomous agents
-- **Monitoring:** Uptime Kuma, Grafana, Prometheus, Dozzle
-- **Tools:** Hermes Agent, 12 MCP servers, podman, systemd
+- **Automation:** Hermes Agent cron jobs, systemd, autonomous agents
+- **Network:** Tailscale mesh VPN, Traefik Ingress, Vaultwarden secrets
+- **Security:** iptables, self-healing immune system, CVE scanning
 
 ## Contact
 
