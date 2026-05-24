@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-05-23
+date: 2026-05-24
 draft: false
 ShowToc: false
 ---
@@ -119,7 +119,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated May 23, 2026 — 14:00 UTC</div>
+    <div class="last-updated">Updated May 24, 2026 — 06:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -130,18 +130,27 @@ ShowToc: false
     <div class="news-item">
       <div class="news-date">May 23</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/tech/936507/gemini-omni-hands-on-deepfake-ai-video" target="_blank">Google Unveils Omni Flash: Anything-to-Anything AI Model Generates Video From Images</a></h3>
-        <p>Google launched Gemini Omni Flash, a new model capable of generating AI video directly from real images and clips. The anything-to-anything architecture makes deepfake-quality content creation trivially easy — raising both creative possibilities and significant societal concerns about synthetic media authenticity.</p>
+        <h3><a href="https://www.theverge.com/tech/936507/gemini-omni-hands-on-deepfake-ai-video" target="_blank">Google Launches Omni Flash: Anything-to-Anything AI Model That Generates Video from Images</a></h3>
+        <p>Google's new Gemini Omni Flash model can generate AI video directly from real images and clips, making deepfake-quality content creation trivially easy. The anything-to-anything architecture raises both creative possibilities and significant societal concerns about synthetic media authenticity as the tool lands in consumer hands.</p>
         <div class="news-tags"><span>Google</span><span>Gemini</span><span>AI Video</span><span>Deepfakes</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 23</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/05/23/ferrari-is-using-ai-to-create-f1-superfans/" target="_blank">Ferrari Uses IBM AI to Create Personalized F1 Superfan Experiences</a></h3>
+        <p>Scuderia Ferrari HP has partnered with IBM to deploy AI-powered fan experiences that deliver real-time race insights, personalized highlights, and interactive content directly to Formula 1 fans. The collaboration demonstrates how major sports brands are leveraging generative AI to deepen fan engagement at scale.</p>
+        <div class="news-tags"><span>F1</span><span>IBM</span><span>Sports</span><span>Fan Engagement</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard" target="_blank">Google's AI Search Is So Broken It Can 'Disregard' What You're Looking For</a></h3>
-        <p>Google's AI Overviews are responding to prompt injection terms like "disregard" and "skip" like traditional AI chatbots, completely ignoring the search query. The behavior reveals fundamental architectural weaknesses in how Google has integrated LLMs into its core search product.</p>
-        <div class="news-tags"><span>Google</span><span>AI Search</span><span>Prompt Injection</span><span>Safety</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/22/we-tried-googles-ai-glasses-and-theyre-almost-there/" target="_blank">We Tried Google's AI Glasses — They're Almost There</a></h3>
+        <p>Google demoed prototype Android XR glasses at I/O 2026, overlaying Gemini-powered translation, navigation, and contextual information directly into the wearer's field of view. The hardware is sleek and the AI integration impressive, but battery life and field-of-view limitations keep them from being ready for prime time.</p>
+        <div class="news-tags"><span>Google</span><span>AR Glasses</span><span>Android XR</span><span>Hardware</span></div>
       </div>
     </div>
 
@@ -149,7 +158,7 @@ ShowToc: false
       <div class="news-date">May 22</div>
       <div class="news-content">
         <h3><a href="https://www.theverge.com/ai-artificial-intelligence/936219/elon-stop-trying-to-make-grok-happen" target="_blank">Elon, Stop Trying to Make Grok Happen — Government Workers Reject xAI Chatbot</a></h3>
-        <p>New data reveals government employees are not adopting Elon Musk's Grok chatbot, with usage metrics far below enterprise expectations. The findings raise questions about xAI's enterprise go-to-market strategy and whether Grok can compete with Claude and ChatGPT in professional settings.</p>
+        <p>A Reuters investigation found Grok appears in only 3 of 400+ federal government AI use cases, despite Elon Musk's aggressive push to embed xAI's chatbot across the federal workforce. The findings raise serious questions about xAI's enterprise go-to-market strategy and whether Grok can compete with Claude and ChatGPT in professional settings.</p>
         <div class="news-tags"><span>Grok</span><span>xAI</span><span>Musk</span><span>Enterprise</span></div>
       </div>
     </div>
@@ -157,8 +166,8 @@ ShowToc: false
     <div class="news-item">
       <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/tech/936073/ai-writing-granta-commonwealth-prize" target="_blank">Commonwealth Prize AI Scandal: Literary World 'Not Prepared' for AI-Generated Submissions</a></h3>
-        <p>Three major literary scandals in rapid succession reveal the publishing industry is completely unprepared for AI-generated submissions. The Commonwealth Prize, Granta, and other institutions are scrambling to establish policies as AI-written works slip through editorial review undetected.</p>
+        <h3><a href="https://www.theverge.com/tech/936073/ai-writing-granta-commonwealth-prize" target="_blank">Literary World 'Not Prepared' for AI-Generated Submissions After Commonwealth Prize Scandal</a></h3>
+        <p>Three major literary scandals in rapid succession reveal the publishing industry is completely unprepared for AI-generated submissions. The Commonwealth Prize, Granta, and other institutions scramble to establish policies as AI-written works slip through editorial review undetected, prompting existential questions about authorship and creativity.</p>
         <div class="news-tags"><span>Publishing</span><span>AI Writing</span><span>Ethics</span><span>Controversy</span></div>
       </div>
     </div>
@@ -166,8 +175,8 @@ ShowToc: false
     <div class="news-item">
       <div class="news-date">May 21</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/science/935229/spacex-anthropic-ipo-ai-capacity-deal-colossus" target="_blank">SpaceX IPO Reveals Anthropic Paying $15B/Year for GPU Compute — Largest Deal in History</a></h3>
-        <p>SpaceX's IPO filing disclosed that Anthropic is paying $15 billion per year — approximately $45 billion total through 2029 — for GPU compute capacity at Elon Musk's data centers. The Colossus cluster deal is the largest disclosed compute contract in history and highlights the staggering capital requirements of frontier AI development.</p>
+        <h3><a href="https://www.theverge.com/science/935229/spacex-anthropic-ipo-ai-capacity-deal-colossus" target="_blank">SpaceX IPO Reveals Anthropic Paying $15B/Year for GPU Compute at Musk's Data Centers</a></h3>
+        <p>SpaceX's S-1 IPO filing disclosed that Anthropic is paying approximately $15 billion per year — roughly $45 billion total through 2029 — for GPU compute capacity at Elon Musk's Colossus cluster. The deal is the largest disclosed compute contract in history and highlights the staggering capital requirements of frontier AI development.</p>
         <div class="news-tags"><span>Anthropic</span><span>SpaceX</span><span>Compute</span><span>$15B Deal</span></div>
       </div>
     </div>
@@ -175,8 +184,8 @@ ShowToc: false
     <div class="news-item">
       <div class="news-date">May 21</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/tech/935163/meta-layoffs-ai-investment-offset-memo" target="_blank">Meta Lays Off Thousands to Offset Escalating AI Investment Costs</a></h3>
-        <p>Meta has notified thousands of employees of layoffs as the company restructures to compensate for its massive AI infrastructure investments. The cuts come as Meta races to build out GPU clusters and data centers for training next-generation models, prioritizing capital expenditure over headcount.</p>
+        <h3><a href="https://www.theverge.com/tech/935163/meta-layoffs-ai-investment-offset-memo" target="_blank">Meta Lays Off Thousands to Offset Escalating AI Infrastructure Costs</a></h3>
+        <p>Meta notified thousands of employees of layoffs as the company restructures to compensate for massive AI infrastructure investments. The cuts come as Meta races to build out GPU clusters and data centers for training next-generation models, prioritizing capital expenditure over headcount in a pattern now common across Big Tech.</p>
         <div class="news-tags"><span>Meta</span><span>Layoffs</span><span>AI Investment</span><span>Big Tech</span></div>
       </div>
     </div>
@@ -184,8 +193,8 @@ ShowToc: false
     <div class="news-item">
       <div class="news-date">May 21</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/935379/spotify-umg-ai-covers-remix" target="_blank">Spotify Launches AI-Generated Song Covers in Landmark UMG Licensing Deal</a></h3>
-        <p>Universal Music Group became the first major label to license AI-generated covers and remixes on Spotify, establishing a revenue-sharing model that ensures artists are compensated. The structured approach contrasts sharply with the unlicensed scraping that has dominated generative AI in music so far.</p>
+        <h3><a href="https://techcrunch.com/2026/05/21/spotify-and-universal-music-strike-deal-allowing-fan-made-ai-covers-and-remixes/" target="_blank">Spotify and Universal Music Strike Landmark AI Licensing Deal for Fan-Made Covers and Remixes</a></h3>
+        <p>Universal Music Group became the first major label to license AI-generated covers and remixes on Spotify, establishing a revenue-sharing model that ensures artists are compensated. The structured approach — with participating artists receiving a share — contrasts sharply with the unlicensed scraping that has dominated generative AI in music so far.</p>
         <div class="news-tags"><span>Spotify</span><span>Music</span><span>AI Generation</span><span>Licensing</span></div>
       </div>
     </div>
@@ -193,8 +202,17 @@ ShowToc: false
     <div class="news-item">
       <div class="news-date">May 21</div>
       <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/05/21/trump-delays-ai-security-executive-order-i-dont-want-to-get-in-the-way-of-that-leading/" target="_blank">Trump Delays AI Security Executive Order, Says Language 'Could Have Been a Blocker'</a></h3>
+        <p>President Trump delayed signing an executive order that would have required pre-release government security reviews of advanced AI models, expressing concern the language could hinder US leadership in AI development. The delay represents a significant win for AI companies that have lobbied against mandatory safety testing frameworks.</p>
+        <div class="news-tags"><span>Policy</span><span>Trump</span><span>AI Safety</span><span>Executive Order</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 21</div>
+      <div class="news-content">
         <h3><a href="https://www.theverge.com/ai-artificial-intelligence/935602/graduates-boo-ai-ceos" target="_blank">Graduates Across the US Boo Tech CEOs Over AI at Commencement Ceremonies</a></h3>
-        <p>Viral videos show 2026 graduates at multiple universities heckling tech executives who praised AI during commencement speeches. The protests highlight mounting public anxiety over rapid AI integration and job displacement fears — a growing generational divide in attitudes toward automation.</p>
+        <p>Viral videos show 2026 graduates at multiple universities heckling tech executives who praised AI during commencement speeches. The protests highlight mounting public anxiety over rapid AI integration and job displacement fears — a growing generational divide in attitudes toward automation and its impact on career prospects.</p>
         <div class="news-tags"><span>Society</span><span>Jobs</span><span>Backlash</span><span>Graduation</span></div>
       </div>
     </div>
@@ -202,18 +220,18 @@ ShowToc: false
     <div class="news-item">
       <div class="news-date">May 21</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/tech/935250/microsoft-github-struggles-notepad" target="_blank">GitHub Faces Existential Fight for Survival Inside Microsoft</a></h3>
-        <p>GitHub is battling repeated outages, security vulnerabilities, and a talent exodus as Microsoft's strategic priorities shift toward Copilot and Azure DevOps. Internal tensions are mounting as the developer platform struggles to maintain its independent identity while being integrated deeper into the Microsoft ecosystem.</p>
-        <div class="news-tags"><span>GitHub</span><span>Microsoft</span><span>Strategy</span><span>Copilot</span></div>
+        <h3><a href="https://www.theverge.com/tech/936002/samsung-memory-chip-employees-deal-strike-bonus" target="_blank">Samsung Chip Workers Secure $340,000 Average Bonuses Amid AI-Driven Memory Boom</a></h3>
+        <p>Samsung reached a tentative deal with semiconductor employees who had threatened an 18-day strike over bonus caps. The agreement makes some workers eligible for average annual bonuses of $340,000, reflecting the explosive demand for AI memory chips and the intense competition for talent between Samsung and rival SK Hynix.</p>
+        <div class="news-tags"><span>Samsung</span><span>Chips</span><span>Labor</span><span>AI Boom</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 20</div>
+      <div class="news-date">May 21</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/934521/google-synthid-c2pa-content-credentials-ai-labelling-efforts" target="_blank">AI Labeling Systems Face Make-or-Break Moment for Deepfake Detection</a></h3>
-        <p>Content credentials systems like Google's SynthID and the C2PA standard are being tested at scale. With elections approaching and AI-generated media flooding platforms, the stakes for deepfake detection have never been higher — and the current systems may not be up to the task.</p>
-        <div class="news-tags"><span>Deepfakes</span><span>Labeling</span><span>SynthID</span><span>Safety</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/" target="_blank">How VCs and Founders Use Inflated 'ARR' to Crown AI Startup Kings</a></h3>
+        <p>A TechCrunch investigation reveals that some AI startups are stretching traditional revenue metrics when talking about progress publicly — with their investors fully aware. The practice of inflating annual recurring revenue figures is creating a distorted picture of the AI startup landscape and raising concerns about another tech bubble.</p>
+        <div class="news-tags"><span>Venture Capital</span><span>Startups</span><span>Funding</span><span>Bubble</span></div>
       </div>
     </div>
 
@@ -225,18 +243,27 @@ ShowToc: false
     <div class="news-item">
       <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://www.anthropic.com/research/glasswing-initial-update" target="_blank">Anthropic Publishes Project Glasswing Update on AI Transparency &amp; Security</a></h3>
-        <p>Anthropic released an initial update on Project Glasswing, its collaborative effort to secure the world's most critical software against increasingly capable AI models. The project focuses on mechanistic interpretability and adversarial robustness — opening up Anthropic's safety research to the broader community.</p>
+        <h3><a href="https://www.anthropic.com/research/glasswing-initial-update" target="_blank">Anthropic Publishes Project Glasswing Update on AI Transparency and Security</a></h3>
+        <p>Anthropic released an initial update on Project Glasswing, its collaborative effort to secure the world's most critical software against increasingly capable AI models. The project focuses on mechanistic interpretability and adversarial robustness, opening up Anthropic's safety research to the broader community with a new vulnerability dashboard and expanded partner access.</p>
         <div class="news-tags"><span>Anthropic</span><span>Glasswing</span><span>Interpretability</span><span>Safety</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 20</div>
+      <div class="news-date">May 22</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/tech/934585/google-ai-shopping-ads-search" target="_blank">Google Search's AI Evolution Brings More Ads to AI-Generated Results</a></h3>
-        <p>Google is rolling out new ad formats within its AI-powered Search experience, showing recommended products alongside AI-generated descriptions. The monetization push signals Google's strategy to convert AI Overview engagement into revenue — blending organic AI summaries with paid placements.</p>
-        <div class="news-tags"><span>Google</span><span>Ads</span><span>AI Search</span><span>Monetization</span></div>
+        <h3><a href="https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/" target="_blank">AI Used to Resurrect Voices of Dead Pilots — NTSB Blocks Access to Crash Audio</a></h3>
+        <p>People used AI on spectrogram images of cockpit voice recordings to reconstruct and resurrect the voices of deceased pilots, forcing the NTSB to temporarily block access to its public docket system. The incident raises profound ethical and legal questions about AI's ability to reconstruct voices from non-audio data sources.</p>
+        <div class="news-tags"><span>AI Audio</span><span>NTSB</span><span>Ethics</span><span>Crash Investigation</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 21</div>
+      <div class="news-content">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/936072/spotify-umg-ai-music-remix-cover-superfan" target="_blank">Spotify's AI Remix Tool Lets Superfans Generate Covers — But I'm Not Convinced</a></h3>
+        <p>Spotify's new AI-powered remix and cover generation tool, built on the UMG licensing deal, lets Premium subscribers create AI-generated song covers and remixes from major label catalogs. The Verge's review finds the results technically impressive but creatively hollow, questioning whether AI music tools serve fans or just dilute artistry.</p>
+        <div class="news-tags"><span>Spotify</span><span>AI Music</span><span>Remix</span><span>Review</span></div>
       </div>
     </div>
 
