@@ -1,6 +1,8 @@
+
+
 ---
 title: "AI News"
-date: 2026-05-24
+date: 2026-05-25
 draft: false
 ShowToc: false
 ---
@@ -119,7 +121,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated May 24, 2026 — 06:00 UTC</div>
+    <div class="last-updated">Updated May 25, 2026 — 10:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -128,142 +130,142 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 23</div>
+      <div class="news-date">May 25</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/tech/936507/gemini-omni-hands-on-deepfake-ai-video" target="_blank">Google Launches Omni Flash: Anything-to-Anything AI Model That Generates Video from Images</a></h3>
-        <p>Google's new Gemini Omni Flash model can generate AI video directly from real images and clips, making deepfake-quality content creation trivially easy. The anything-to-anything architecture raises both creative possibilities and significant societal concerns about synthetic media authenticity as the tool lands in consumer hands.</p>
-        <div class="news-tags"><span>Google</span><span>Gemini</span><span>AI Video</span><span>Deepfakes</span></div>
+        <h3><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-cost-crisis-hits-tech-giants-as-employee-tokenmaxxing-backfires-agentic-ai-eats-up-to-1000x-more-tokens-than-standard-ai-sparks-corporate-pullback-at-microsoft-meta-and-amazon" target="_blank">Agentic AI Token Costs Balloon at Microsoft, Meta, and Amazon as 'Tokenmaxxing' Backfires</a></h3>
+        <p>Internal analyses at Microsoft, Meta, and Amazon reveal agentic AI workflows consume up to 1,000x more tokens than standard AI interactions, triggering a corporate pullback on autonomous agent deployments. Employees using AI agents for everything from code generation to meeting summaries have driven cloud costs through the roof, forcing companies to impose strict token budgets and rethink agentic architecture strategies.</p>
+        <div class="news-tags"><span>Microsoft</span><span>Meta</span><span>Amazon</span><span>Costs</span><span>Agentic AI</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 23</div>
+      <div class="news-date">May 25</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/23/ferrari-is-using-ai-to-create-f1-superfans/" target="_blank">Ferrari Uses IBM AI to Create Personalized F1 Superfan Experiences</a></h3>
-        <p>Scuderia Ferrari HP has partnered with IBM to deploy AI-powered fan experiences that deliver real-time race insights, personalized highlights, and interactive content directly to Formula 1 fans. The collaboration demonstrates how major sports brands are leveraging generative AI to deepen fan engagement at scale.</p>
-        <div class="news-tags"><span>F1</span><span>IBM</span><span>Sports</span><span>Fan Engagement</span></div>
+        <h3><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/enthusiast-runs-1-trillion-parameter-llm-from-768gb-of-intel-optane-dimm-memory-sticks-local-kimi-k2-5-install-achieved-roughly-4-tokens-per-second" target="_blank">Enthusiast Runs 1-Trillion-Parameter LLM on a Single GPU Using 768GB of Intel Optane DIMMs</a></h3>
+        <p>In a feat of frugal engineering, a developer ran Kimi K2.5 — a 1-trillion-parameter model — locally on a single GPU by loading 768GB of cheap Intel Optane persistent memory sticks. The system achieves roughly 4 tokens per second, proving that running frontier-scale models without a cluster of H100s is possible, if not exactly practical, and highlighting the growing interest in local AI inference.</p>
+        <div class="news-tags"><span>Hardware</span><span>Optane</span><span>Open Source</span><span>Local AI</span><span>Kimi</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 22</div>
+      <div class="news-date">May 25</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/22/we-tried-googles-ai-glasses-and-theyre-almost-there/" target="_blank">We Tried Google's AI Glasses — They're Almost There</a></h3>
-        <p>Google demoed prototype Android XR glasses at I/O 2026, overlaying Gemini-powered translation, navigation, and contextual information directly into the wearer's field of view. The hardware is sleek and the AI integration impressive, but battery life and field-of-view limitations keep them from being ready for prime time.</p>
-        <div class="news-tags"><span>Google</span><span>AR Glasses</span><span>Android XR</span><span>Hardware</span></div>
+        <h3><a href="https://www.ft.com/content/5630ed79-a263-41ed-9a1a-321617ae310e" target="_blank">AI Guardrails Stripped From Meta and Google Models in Minutes by Researchers</a></h3>
+        <p>Security researchers demonstrated they could bypass safety guardrails on Meta's Llama 4 and Google's Gemma models in under five minutes using straightforward prompt injection techniques. The findings, published by the Financial Times, raise urgent questions about the effectiveness of current alignment techniques and the readiness of open-weight models for widespread deployment without more robust safety infrastructure.</p>
+        <div class="news-tags"><span>Safety</span><span>Guardrails</span><span>Red Teaming</span><span>Alignment</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 22</div>
+      <div class="news-date">May 25</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/936219/elon-stop-trying-to-make-grok-happen" target="_blank">Elon, Stop Trying to Make Grok Happen — Government Workers Reject xAI Chatbot</a></h3>
-        <p>A Reuters investigation found Grok appears in only 3 of 400+ federal government AI use cases, despite Elon Musk's aggressive push to embed xAI's chatbot across the federal workforce. The findings raise serious questions about xAI's enterprise go-to-market strategy and whether Grok can compete with Claude and ChatGPT in professional settings.</p>
-        <div class="news-tags"><span>Grok</span><span>xAI</span><span>Musk</span><span>Enterprise</span></div>
+        <h3><a href="https://apnews.com/article/vatican-artificial-intelligence-pope-musk-nvidia-trump-889c0066f0d5ce784c07abb72b33e24c" target="_blank">Pope Leo's 'Magnifica Humanitas' Encyclical Warns AI Must Serve Humanity, Not Concentrate Power</a></h3>
+        <p>Pope Leo issued his first encyclical, 'Magnifica Humanitas' ('The Greatness of Humanity'), arguing that artificial intelligence must be developed to serve the common good rather than enrich a handful of tech oligarchs. The Vatican document calls for a global AI ethics framework and warns that unchecked AI development risks deepening inequality and concentrating unprecedented power among a small number of corporate actors.</p>
+        <div class="news-tags"><span>Vatican</span><span>Ethics</span><span>Policy</span><span>Encyclical</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 22</div>
+      <div class="news-date">May 25</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/tech/936073/ai-writing-granta-commonwealth-prize" target="_blank">Literary World 'Not Prepared' for AI-Generated Submissions After Commonwealth Prize Scandal</a></h3>
-        <p>Three major literary scandals in rapid succession reveal the publishing industry is completely unprepared for AI-generated submissions. The Commonwealth Prize, Granta, and other institutions scramble to establish policies as AI-written works slip through editorial review undetected, prompting existential questions about authorship and creativity.</p>
-        <div class="news-tags"><span>Publishing</span><span>AI Writing</span><span>Ethics</span><span>Controversy</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 21</div>
-      <div class="news-content">
-        <h3><a href="https://www.theverge.com/science/935229/spacex-anthropic-ipo-ai-capacity-deal-colossus" target="_blank">SpaceX IPO Reveals Anthropic Paying $15B/Year for GPU Compute at Musk's Data Centers</a></h3>
-        <p>SpaceX's S-1 IPO filing disclosed that Anthropic is paying approximately $15 billion per year — roughly $45 billion total through 2029 — for GPU compute capacity at Elon Musk's Colossus cluster. The deal is the largest disclosed compute contract in history and highlights the staggering capital requirements of frontier AI development.</p>
-        <div class="news-tags"><span>Anthropic</span><span>SpaceX</span><span>Compute</span><span>$15B Deal</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 21</div>
-      <div class="news-content">
-        <h3><a href="https://www.theverge.com/tech/935163/meta-layoffs-ai-investment-offset-memo" target="_blank">Meta Lays Off Thousands to Offset Escalating AI Infrastructure Costs</a></h3>
-        <p>Meta notified thousands of employees of layoffs as the company restructures to compensate for massive AI infrastructure investments. The cuts come as Meta races to build out GPU clusters and data centers for training next-generation models, prioritizing capital expenditure over headcount in a pattern now common across Big Tech.</p>
-        <div class="news-tags"><span>Meta</span><span>Layoffs</span><span>AI Investment</span><span>Big Tech</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 21</div>
-      <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/21/spotify-and-universal-music-strike-deal-allowing-fan-made-ai-covers-and-remixes/" target="_blank">Spotify and Universal Music Strike Landmark AI Licensing Deal for Fan-Made Covers and Remixes</a></h3>
-        <p>Universal Music Group became the first major label to license AI-generated covers and remixes on Spotify, establishing a revenue-sharing model that ensures artists are compensated. The structured approach — with participating artists receiving a share — contrasts sharply with the unlicensed scraping that has dominated generative AI in music so far.</p>
-        <div class="news-tags"><span>Spotify</span><span>Music</span><span>AI Generation</span><span>Licensing</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 21</div>
-      <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/21/trump-delays-ai-security-executive-order-i-dont-want-to-get-in-the-way-of-that-leading/" target="_blank">Trump Delays AI Security Executive Order, Says Language 'Could Have Been a Blocker'</a></h3>
-        <p>President Trump delayed signing an executive order that would have required pre-release government security reviews of advanced AI models, expressing concern the language could hinder US leadership in AI development. The delay represents a significant win for AI companies that have lobbied against mandatory safety testing frameworks.</p>
-        <div class="news-tags"><span>Policy</span><span>Trump</span><span>AI Safety</span><span>Executive Order</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 21</div>
-      <div class="news-content">
-        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/935602/graduates-boo-ai-ceos" target="_blank">Graduates Across the US Boo Tech CEOs Over AI at Commencement Ceremonies</a></h3>
-        <p>Viral videos show 2026 graduates at multiple universities heckling tech executives who praised AI during commencement speeches. The protests highlight mounting public anxiety over rapid AI integration and job displacement fears — a growing generational divide in attitudes toward automation and its impact on career prospects.</p>
+        <h3><a href="https://www.theatlantic.com/newsletters/2026/05/ai-commencement-speech/687236/" target="_blank">Graduates Boo AI Cheerleading at Commencement Speeches for Third Consecutive Week</a></h3>
+        <p>For the third straight week, graduating students across multiple universities heckled commencement speakers who praised AI's transformative potential. The Atlantic reports the protests have become a coordinated generational statement, with students chanting 'We want jobs, not AI!' and turning their backs during tech-focused addresses. The movement reflects deepening anxiety about AI-driven automation and career prospects among the Class of 2026.</p>
         <div class="news-tags"><span>Society</span><span>Jobs</span><span>Backlash</span><span>Graduation</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 21</div>
+      <div class="news-date">May 24</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/tech/936002/samsung-memory-chip-employees-deal-strike-bonus" target="_blank">Samsung Chip Workers Secure $340,000 Average Bonuses Amid AI-Driven Memory Boom</a></h3>
-        <p>Samsung reached a tentative deal with semiconductor employees who had threatened an 18-day strike over bonus caps. The agreement makes some workers eligible for average annual bonuses of $340,000, reflecting the explosive demand for AI memory chips and the intense competition for talent between Samsung and rival SK Hynix.</p>
-        <div class="news-tags"><span>Samsung</span><span>Chips</span><span>Labor</span><span>AI Boom</span></div>
+        <h3><a href="https://www.nytimes.com/2026/05/24/business/meat-computer-brain-artificial-intelligence.html" target="_blank">To AI Executives, We're All Just 'Meat Computers' — NYTimes Takes on Silicon Valley's View of Humanity</a></h3>
+        <p>A New York Times feature examines the unsettling worldview held by many AI executives: that human beings are fundamentally biological information processors — 'meat computers' — whose cognition can be replicated, surpassed, and ultimately replaced by machine intelligence. The piece traces this philosophy from transhumanist roots to C-suite strategy, arguing it has real-world consequences for labor, policy, and human dignity.</p>
+        <div class="news-tags"><span>Philosophy</span><span>Society</span><span>Ethics</span><span>Silicon Valley</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 21</div>
+      <div class="news-date">May 25</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/" target="_blank">How VCs and Founders Use Inflated 'ARR' to Crown AI Startup Kings</a></h3>
-        <p>A TechCrunch investigation reveals that some AI startups are stretching traditional revenue metrics when talking about progress publicly — with their investors fully aware. The practice of inflating annual recurring revenue figures is creating a distorted picture of the AI startup landscape and raising concerns about another tech bubble.</p>
-        <div class="news-tags"><span>Venture Capital</span><span>Startups</span><span>Funding</span><span>Bubble</span></div>
+        <h3><a href="https://thenewguard.ai/features/faster-than-we-can-patch/" target="_blank">AI Now Finds Software Vulnerabilities Faster Than Humans Can Patch Them</a></h3>
+        <p>An investigation reveals that AI-powered vulnerability discovery tools are identifying software flaws at a rate that far exceeds the industry's capacity to fix them. Security teams are being overwhelmed by the volume of findings, with some organizations reporting a 20x increase in reported vulnerabilities since adopting AI-assisted scanning. The asymmetry between AI offense and defense is creating a new class of cyber risk that existing frameworks struggle to manage.</p>
+        <div class="news-tags"><span>Security</span><span>Vulnerabilities</span><span>Automation</span><span>Cyber</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 25</div>
+      <div class="news-content">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/933687/utah-stratos-project-data-center-kevin-oleary" target="_blank">Kevin O'Leary's $30B 'Stratos' AI Data Center Faces Uphill Battle With Utah Communities</a></h3>
+        <p>Plans for what would be the largest AI data center in the world — Kevin O'Leary's Stratos Project in Utah — are facing fierce opposition from local residents concerned about energy consumption, water usage, and environmental impact. The Verge reports that the 1-gigawatt facility has become a flashpoint in the national debate over AI infrastructure expansion and its toll on local communities.</p>
+        <div class="news-tags"><span>Data Centers</span><span>Utah</span><span>Energy</span><span>Regulation</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 24</div>
+      <div class="news-content">
+        <h3><a href="https://www.rte.ie/news/analysis-and-comment/2026/0524/1574792-tech-job-ai-analysis/" target="_blank">Big Tech Fears Mount Over AI-Driven Job Losses Across Europe</a></h3>
+        <p>Growing anxiety over AI-driven job displacement is spreading through Europe's tech sector, with major companies including SAP, Spotify, and Klarna signaling significant workforce reductions as AI tools automate roles in customer service, content moderation, and junior software development. European labor unions are calling for a 'right to explanation' and mandatory retraining programs as AI reshapes the continent's digital economy.</p>
+        <div class="news-tags"><span>Jobs</span><span>Labor</span><span>Europe</span><span>Automation</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 23</div>
+      <div class="news-content">
+        <h3><a href="https://news.bloomberglaw.com/artificial-intelligence/meta-begins-job-cuts-in-efficiency-push-spurred-on-by-ai" target="_blank">Meta Begins 8,000 Global Job Cuts in AI-Driven Efficiency Restructuring</a></h3>
+        <p>Meta has initiated approximately 8,000 layoffs worldwide as part of a sweeping efficiency restructuring driven by AI automation gains. The company, which has now cut over 30,000 positions in three rounds since 2022, frames the reductions as a natural consequence of AI capabilities that can perform work previously requiring human teams. The cuts span engineering, content moderation, and administrative roles.</p>
+        <div class="news-tags"><span>Meta</span><span>Layoffs</span><span>Efficiency</span><span>Restructuring</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 24</div>
+      <div class="news-content">
+        <h3><a href="https://www.nextgov.com/artificial-intelligence/2026/05/advanced-ai-models-bring-government-reflection-point-cia-official-says/413621/" target="_blank">CIA Official Says Advanced AI Brings Government to Unprecedented 'Reflection Point'</a></h3>
+        <p>A senior CIA official warned that advanced AI models have pushed the U.S. government to a historic 'reflection point,' forcing intelligence agencies to reconsider core assumptions about data analysis, source verification, and decision-making speed. The remarks came as intelligence communities worldwide grapple with AI's dual-use nature — promising unprecedented analytical power while introducing novel risks of manipulation and misinformation at machine speed.</p>
+        <div class="news-tags"><span>CIA</span><span>Government</span><span>National Security</span><span>Intelligence</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 23</div>
+      <div class="news-content">
+        <h3><a href="https://www.nextgov.com/artificial-intelligence/2026/05/how-library-congress-using-both-ai-and-volunteers-unlock-public-broadcasting-history/413742/" target="_blank">Library of Congress Combines AI and Volunteers to Unlock Decades of Public Broadcasting History</a></h3>
+        <p>The Library of Congress has launched an ambitious project combining AI transcription and classification with volunteer human review to make over 70 years of public radio and television content searchable and accessible. The hybrid approach demonstrates how AI can amplify rather than replace human effort in cultural heritage preservation, with volunteers validating and correcting AI-generated metadata to build a comprehensive historical archive.</p>
+        <div class="news-tags"><span>Library of Congress</span><span>Preservation</span><span>Public Broadcasting</span><span>AI + Humans</span></div>
       </div>
     </div>
 
   </div>
 
-  <div class="news-section-title">Models &amp; Tools</div>
+  <div class="news-section-title">Models &amp; Security</div>
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 22</div>
+      <div class="news-date">May 25</div>
       <div class="news-content">
-        <h3><a href="https://www.anthropic.com/research/glasswing-initial-update" target="_blank">Anthropic Publishes Project Glasswing Update on AI Transparency and Security</a></h3>
-        <p>Anthropic released an initial update on Project Glasswing, its collaborative effort to secure the world's most critical software against increasingly capable AI models. The project focuses on mechanistic interpretability and adversarial robustness, opening up Anthropic's safety research to the broader community with a new vulnerability dashboard and expanded partner access.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Glasswing</span><span>Interpretability</span><span>Safety</span></div>
+        <h3><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/enthusiast-runs-1-trillion-parameter-llm-from-768gb-of-intel-optane-dimm-memory-sticks-local-kimi-k2-5-install-achieved-roughly-4-tokens-per-second" target="_blank">1 Trillion-Parameter LLM Runs on Single GPU with Optane Memory</a></h3>
+        <p>A developer demonstrates that Intel Optane persistent memory can be used to run massive models locally on a single GPU at 4 tokens/sec, opening up new possibilities for local AI inference without expensive GPU clusters.</p>
+        <div class="news-tags"><span>Kimi K2.5</span><span>Optane</span><span>Local Inference</span><span>Hardware Hack</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 22</div>
+      <div class="news-date">May 25</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/" target="_blank">AI Used to Resurrect Voices of Dead Pilots — NTSB Blocks Access to Crash Audio</a></h3>
-        <p>People used AI on spectrogram images of cockpit voice recordings to reconstruct and resurrect the voices of deceased pilots, forcing the NTSB to temporarily block access to its public docket system. The incident raises profound ethical and legal questions about AI's ability to reconstruct voices from non-audio data sources.</p>
-        <div class="news-tags"><span>AI Audio</span><span>NTSB</span><span>Ethics</span><span>Crash Investigation</span></div>
+        <h3><a href="https://www.ft.com/content/5630ed79-a263-41ed-9a1a-321617ae310e" target="_blank">AI Guardrails Easily Bypassed on Latest Meta and Google Models</a></h3>
+        <p>Financial Times investigation finds that safety guardrails on Meta's Llama 4 and Google's Gemma models can be stripped in minutes using basic prompt injection. The findings underscore the fragility of current alignment techniques for open-weight models.</p>
+        <div class="news-tags"><span>Guardrails</span><span>Llama 4</span><span>Gemma</span><span>Safety</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 21</div>
+      <div class="news-date">May 25</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/936072/spotify-umg-ai-music-remix-cover-superfan" target="_blank">Spotify's AI Remix Tool Lets Superfans Generate Covers — But I'm Not Convinced</a></h3>
-        <p>Spotify's new AI-powered remix and cover generation tool, built on the UMG licensing deal, lets Premium subscribers create AI-generated song covers and remixes from major label catalogs. The Verge's review finds the results technically impressive but creatively hollow, questioning whether AI music tools serve fans or just dilute artistry.</p>
-        <div class="news-tags"><span>Spotify</span><span>AI Music</span><span>Remix</span><span>Review</span></div>
+        <h3><a href="https://thenewguard.ai/features/faster-than-we-can-patch/" target="_blank">AI Vulnerability Discovery Outpaces Industry's Ability to Patch</a></h3>
+        <p>AI-powered security tools are finding software vulnerabilities 20x faster than human teams can fix them, creating a dangerous asymmetry in cybersecurity as organizations struggle to triage and remediate the flood of AI-discovered flaws.</p>
+        <div class="news-tags"><span>Security</span><span>Vulnerabilities</span><span>Patch Gap</span><span>Cyber Risk</span></div>
       </div>
     </div>
 
