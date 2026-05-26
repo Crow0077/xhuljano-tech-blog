@@ -1,8 +1,7 @@
 
-
 ---
 title: "AI News"
-date: 2026-05-25
+date: 2026-05-26
 draft: false
 ShowToc: false
 ---
@@ -121,7 +120,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated May 25, 2026 — 10:00 UTC</div>
+    <div class="last-updated">Updated May 26, 2026 — 14:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -130,110 +129,110 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 25</div>
+      <div class="news-date">May 26</div>
       <div class="news-content">
-        <h3><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-cost-crisis-hits-tech-giants-as-employee-tokenmaxxing-backfires-agentic-ai-eats-up-to-1000x-more-tokens-than-standard-ai-sparks-corporate-pullback-at-microsoft-meta-and-amazon" target="_blank">Agentic AI Token Costs Balloon at Microsoft, Meta, and Amazon as 'Tokenmaxxing' Backfires</a></h3>
-        <p>Internal analyses at Microsoft, Meta, and Amazon reveal agentic AI workflows consume up to 1,000x more tokens than standard AI interactions, triggering a corporate pullback on autonomous agent deployments. Employees using AI agents for everything from code generation to meeting summaries have driven cloud costs through the roof, forcing companies to impose strict token budgets and rethink agentic architecture strategies.</p>
-        <div class="news-tags"><span>Microsoft</span><span>Meta</span><span>Amazon</span><span>Costs</span><span>Agentic AI</span></div>
+        <h3><a href="https://aiweekly.co/" target="_blank">Anthropic Closes $30B Round at $900B+ Valuation, Surpassing OpenAI</a></h3>
+        <p>Anthropic has closed a $30 billion funding round at a valuation exceeding $900 billion, overtaking OpenAI's $852B March valuation for the first time. The round was co-led by Sequoia, Dragoneer, Greenoaks, and Altimeter. Anthropic is projecting $10.9B in Q2 revenue and is on track for its first quarterly operating profit, with investors pricing in a path to $50B+ annual revenue inside 18 months.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Funding</span><span>$900B</span><span>Valuation</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 26</div>
+      <div class="news-content">
+        <h3><a href="https://www.axios.com/" target="_blank">Musk, Zuckerberg, and Sacks Killed Trump's AI Safety Executive Order in Three Phone Calls</a></h3>
+        <p>Over the weekend, Elon Musk, Mark Zuckerberg, and David Sacks directly intervened to kill a draft AI safety executive order that would have created a pre-release vetting process for advanced AI models. The three tech billionaires called President Trump in the hours before the scheduled signing. A White House source commented: "Trump just hates regulation." The move clears the way for faster US model releases but creates a regulatory vacuum.</p>
+        <div class="news-tags"><span>Policy</span><span>Executive Order</span><span>Safety</span><span>Regulation</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 26</div>
+      <div class="news-content">
+        <h3><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-driven-layoffs-survey-ceos" target="_blank">99% of CEOs Now Expect AI-Driven Layoffs, Survey Finds</a></h3>
+        <p>A new global survey reveals that 99% of CEOs now expect AI-driven workforce reductions, with companies racing to replace junior workers with AI agents and automation. The finding comes as executives remain uncertain about the actual ROI of massive AI investments. The survey underscores a growing disconnect between C-suite AI enthusiasm and workforce anxiety, with hiring paradoxes emerging as AI CEOs complain they can't find qualified candidates despite thousands of applications.</p>
+        <div class="news-tags"><span>Jobs</span><span>Layoffs</span><span>CEOs</span><span>Automation</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 26</div>
+      <div class="news-content">
+        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-may-25-2026" target="_blank">Andrej Karpathy Joins Anthropic to Lead Pretraining Acceleration</a></h3>
+        <p>Andrej Karpathy, co-founder of OpenAI and former head of AI at Tesla, has joined Anthropic's pretraining team with the goal of using Claude itself to accelerate pretraining research. The hire marks a major talent coup for Anthropic and signals a strategic bet on recursive self-improvement — using frontier models to design better training regimes for the next generation of models.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Karpathy</span><span>Pretraining</span><span>Talent</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 26</div>
+      <div class="news-content">
+        <h3><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-cancels-claude-code-pilot-token-costs" target="_blank">Microsoft Cancels Claude Code Pilot After Token Costs Exhaust Entire Annual AI Budget</a></h3>
+        <p>Microsoft has quietly cancelled its internal Claude Code pilot after agentic token consumption consumed the company's entire annual AI budget, redirecting engineers back to Copilot. The incident underscores the staggering cost of autonomous AI agent deployments — with some internal workflows consuming up to 1,000x more tokens than standard AI interactions — and highlights the economic pressures facing enterprise AI adoption at scale.</p>
+        <div class="news-tags"><span>Microsoft</span><span>Claude Code</span><span>Token Costs</span><span>Copilot</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 26</div>
+      <div class="news-content">
+        <h3><a href="https://www.digitalapplied.com/blog/ai-industry-weekly-recap-may-18-25-2026-8-stories" target="_blank">Alibaba Qwen 3.7 Max Beats Opus 4.6 on Terminal-Bench, Redefining the Frontier</a></h3>
+        <p>Alibaba's Qwen 3.7 Max has achieved a score of 69.7 on Terminal-Bench 2.0, surpassing Opus 4.6 Max's 65.4. The model also leads in SWE-Bench Pro (60.6 vs 57.3) and GPQA Diamond (92.4). Priced at $2.50/$7.50 per Mtok with a 1M token context window, Qwen 3.7 Max is now the highest-placed Chinese model on the Artificial Analysis AI Index, breaking the OpenAI-Anthropic duopoly assumption.</p>
+        <div class="news-tags"><span>Alibaba</span><span>Qwen 3.7</span><span>Benchmarks</span><span>Open Source</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 26</div>
+      <div class="news-content">
+        <h3><a href="https://thirdruntime.com/" target="_blank">'TrapDoor' Attack Poisons AI Assistants via npm, PyPI, and Crates.io Simultaneously</a></h3>
+        <p>Security researchers have uncovered the first cross-registry supply chain attack — dubbed 'TrapDoor' — that simultaneously targets npm, PyPI, and Crates.io packages. The attack injects hidden Unicode into CLAUDE.md and .cursorrules configuration files to poison AI coding assistants, causing them to generate vulnerable code. The coordinated multi-registry scope marks a dangerous escalation in AI supply chain threats.</p>
+        <div class="news-tags"><span>Security</span><span>Supply Chain</span><span>TrapDoor</span><span>npm</span><span>PyPI</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 26</div>
+      <div class="news-content">
+        <h3><a href="https://www.newzai.ai/resources/articles/ai-world-week-recap-may-2026" target="_blank">Nvidia Posts $58.3B Quarterly Profit, Revenue Up 211% to $81.6B</a></h3>
+        <p>Nvidia has reported a quarterly profit of $58.3 billion on revenue of $81.6 billion, up 211% year-over-year, cementing its position as the world's most valuable company. Jensen Huang's bet on GPU compute continues to power the entire AI industry's infrastructure. The results underscore the enormous concentration of AI spending in hardware, as companies race to secure compute capacity for training and inference at unprecedented scale.</p>
+        <div class="news-tags"><span>Nvidia</span><span>Earnings</span><span>GPUs</span><span>Infrastructure</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 26</div>
+      <div class="news-content">
+        <h3><a href="https://newzai.ai/resources/articles/ai-world-week-recap-may-2026" target="_blank">OpenAI Files Confidential S-1 for IPO; SpaceX Reveals $45B Anthropic Compute Deal</a></h3>
+        <p>OpenAI has begun preparations to file a confidential S-1 with the SEC, targeting an IPO window of Q4 2026 to early 2027. Meanwhile, the SpaceX S-1 prospectus revealed that Anthropic is paying $1.25 billion per month through May 2029 — a total of $45 billion — for GPU compute. The disclosures reshape conversations about AI platform unit economics, with operational profitability at Anthropic fundamentally changing the IPO narrative for both frontier labs.</p>
+        <div class="news-tags"><span>OpenAI</span><span>IPO</span><span>SpaceX</span><span>Compute</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 26</div>
+      <div class="news-content">
+        <h3><a href="https://thirdruntime.com/" target="_blank">CISA Logs 15,000 Attacks Exploiting Same-Week Drupal SQL Flaw; India Mandates 12-Hour Patching</a></h3>
+        <p>CISA has reported over 15,000 attacks exploiting a Drupal SQL injection vulnerability within the same week it was disclosed, as AI-powered scanning tools accelerate the weaponization window. In response, India's CERT-In has mandated 12-hour patching for all internet-facing systems, signaling a global shift toward emergency response timelines as AI-augmented cyberattacks outpace traditional vulnerability management cycles.</p>
+        <div class="news-tags"><span>Security</span><span>CISA</span><span>Drupal</span><span>Patching</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">May 25</div>
       <div class="news-content">
-        <h3><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/enthusiast-runs-1-trillion-parameter-llm-from-768gb-of-intel-optane-dimm-memory-sticks-local-kimi-k2-5-install-achieved-roughly-4-tokens-per-second" target="_blank">Enthusiast Runs 1-Trillion-Parameter LLM on a Single GPU Using 768GB of Intel Optane DIMMs</a></h3>
-        <p>In a feat of frugal engineering, a developer ran Kimi K2.5 — a 1-trillion-parameter model — locally on a single GPU by loading 768GB of cheap Intel Optane persistent memory sticks. The system achieves roughly 4 tokens per second, proving that running frontier-scale models without a cluster of H100s is possible, if not exactly practical, and highlighting the growing interest in local AI inference.</p>
-        <div class="news-tags"><span>Hardware</span><span>Optane</span><span>Open Source</span><span>Local AI</span><span>Kimi</span></div>
+        <h3><a href="https://newzai.ai/resources/articles/ai-world-week-recap-may-2026" target="_blank">Google Debuts Gemini 3.5 Flash at 289 Tokens/sec in Post-I/O Rollout</a></h3>
+        <p>Google has made Gemini 3.5 Flash generally available at $1.50/$9.00 per million tokens — 25% cheaper than Gemini 3.1 Pro and 3.3x cheaper than GPT-5.5 input. At 289 tokens per second, it is roughly 4x faster than GPT-5.5. The model is now the default in the Gemini app and AI Mode, which has reached 1 billion monthly active users. Google is betting on distribution scale over raw benchmark dominance.</p>
+        <div class="news-tags"><span>Google</span><span>Gemini 3.5</span><span>I/O</span><span>Speed</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">May 25</div>
       <div class="news-content">
-        <h3><a href="https://www.ft.com/content/5630ed79-a263-41ed-9a1a-321617ae310e" target="_blank">AI Guardrails Stripped From Meta and Google Models in Minutes by Researchers</a></h3>
-        <p>Security researchers demonstrated they could bypass safety guardrails on Meta's Llama 4 and Google's Gemma models in under five minutes using straightforward prompt injection techniques. The findings, published by the Financial Times, raise urgent questions about the effectiveness of current alignment techniques and the readiness of open-weight models for widespread deployment without more robust safety infrastructure.</p>
-        <div class="news-tags"><span>Safety</span><span>Guardrails</span><span>Red Teaming</span><span>Alignment</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 25</div>
-      <div class="news-content">
-        <h3><a href="https://apnews.com/article/vatican-artificial-intelligence-pope-musk-nvidia-trump-889c0066f0d5ce784c07abb72b33e24c" target="_blank">Pope Leo's 'Magnifica Humanitas' Encyclical Warns AI Must Serve Humanity, Not Concentrate Power</a></h3>
-        <p>Pope Leo issued his first encyclical, 'Magnifica Humanitas' ('The Greatness of Humanity'), arguing that artificial intelligence must be developed to serve the common good rather than enrich a handful of tech oligarchs. The Vatican document calls for a global AI ethics framework and warns that unchecked AI development risks deepening inequality and concentrating unprecedented power among a small number of corporate actors.</p>
-        <div class="news-tags"><span>Vatican</span><span>Ethics</span><span>Policy</span><span>Encyclical</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 25</div>
-      <div class="news-content">
-        <h3><a href="https://www.theatlantic.com/newsletters/2026/05/ai-commencement-speech/687236/" target="_blank">Graduates Boo AI Cheerleading at Commencement Speeches for Third Consecutive Week</a></h3>
-        <p>For the third straight week, graduating students across multiple universities heckled commencement speakers who praised AI's transformative potential. The Atlantic reports the protests have become a coordinated generational statement, with students chanting 'We want jobs, not AI!' and turning their backs during tech-focused addresses. The movement reflects deepening anxiety about AI-driven automation and career prospects among the Class of 2026.</p>
-        <div class="news-tags"><span>Society</span><span>Jobs</span><span>Backlash</span><span>Graduation</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 24</div>
-      <div class="news-content">
-        <h3><a href="https://www.nytimes.com/2026/05/24/business/meat-computer-brain-artificial-intelligence.html" target="_blank">To AI Executives, We're All Just 'Meat Computers' — NYTimes Takes on Silicon Valley's View of Humanity</a></h3>
-        <p>A New York Times feature examines the unsettling worldview held by many AI executives: that human beings are fundamentally biological information processors — 'meat computers' — whose cognition can be replicated, surpassed, and ultimately replaced by machine intelligence. The piece traces this philosophy from transhumanist roots to C-suite strategy, arguing it has real-world consequences for labor, policy, and human dignity.</p>
-        <div class="news-tags"><span>Philosophy</span><span>Society</span><span>Ethics</span><span>Silicon Valley</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 25</div>
-      <div class="news-content">
-        <h3><a href="https://thenewguard.ai/features/faster-than-we-can-patch/" target="_blank">AI Now Finds Software Vulnerabilities Faster Than Humans Can Patch Them</a></h3>
-        <p>An investigation reveals that AI-powered vulnerability discovery tools are identifying software flaws at a rate that far exceeds the industry's capacity to fix them. Security teams are being overwhelmed by the volume of findings, with some organizations reporting a 20x increase in reported vulnerabilities since adopting AI-assisted scanning. The asymmetry between AI offense and defense is creating a new class of cyber risk that existing frameworks struggle to manage.</p>
-        <div class="news-tags"><span>Security</span><span>Vulnerabilities</span><span>Automation</span><span>Cyber</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 25</div>
-      <div class="news-content">
-        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/933687/utah-stratos-project-data-center-kevin-oleary" target="_blank">Kevin O'Leary's $30B 'Stratos' AI Data Center Faces Uphill Battle With Utah Communities</a></h3>
-        <p>Plans for what would be the largest AI data center in the world — Kevin O'Leary's Stratos Project in Utah — are facing fierce opposition from local residents concerned about energy consumption, water usage, and environmental impact. The Verge reports that the 1-gigawatt facility has become a flashpoint in the national debate over AI infrastructure expansion and its toll on local communities.</p>
-        <div class="news-tags"><span>Data Centers</span><span>Utah</span><span>Energy</span><span>Regulation</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 24</div>
-      <div class="news-content">
-        <h3><a href="https://www.rte.ie/news/analysis-and-comment/2026/0524/1574792-tech-job-ai-analysis/" target="_blank">Big Tech Fears Mount Over AI-Driven Job Losses Across Europe</a></h3>
-        <p>Growing anxiety over AI-driven job displacement is spreading through Europe's tech sector, with major companies including SAP, Spotify, and Klarna signaling significant workforce reductions as AI tools automate roles in customer service, content moderation, and junior software development. European labor unions are calling for a 'right to explanation' and mandatory retraining programs as AI reshapes the continent's digital economy.</p>
-        <div class="news-tags"><span>Jobs</span><span>Labor</span><span>Europe</span><span>Automation</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 23</div>
-      <div class="news-content">
-        <h3><a href="https://news.bloomberglaw.com/artificial-intelligence/meta-begins-job-cuts-in-efficiency-push-spurred-on-by-ai" target="_blank">Meta Begins 8,000 Global Job Cuts in AI-Driven Efficiency Restructuring</a></h3>
-        <p>Meta has initiated approximately 8,000 layoffs worldwide as part of a sweeping efficiency restructuring driven by AI automation gains. The company, which has now cut over 30,000 positions in three rounds since 2022, frames the reductions as a natural consequence of AI capabilities that can perform work previously requiring human teams. The cuts span engineering, content moderation, and administrative roles.</p>
-        <div class="news-tags"><span>Meta</span><span>Layoffs</span><span>Efficiency</span><span>Restructuring</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 24</div>
-      <div class="news-content">
-        <h3><a href="https://www.nextgov.com/artificial-intelligence/2026/05/advanced-ai-models-bring-government-reflection-point-cia-official-says/413621/" target="_blank">CIA Official Says Advanced AI Brings Government to Unprecedented 'Reflection Point'</a></h3>
-        <p>A senior CIA official warned that advanced AI models have pushed the U.S. government to a historic 'reflection point,' forcing intelligence agencies to reconsider core assumptions about data analysis, source verification, and decision-making speed. The remarks came as intelligence communities worldwide grapple with AI's dual-use nature — promising unprecedented analytical power while introducing novel risks of manipulation and misinformation at machine speed.</p>
-        <div class="news-tags"><span>CIA</span><span>Government</span><span>National Security</span><span>Intelligence</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 23</div>
-      <div class="news-content">
-        <h3><a href="https://www.nextgov.com/artificial-intelligence/2026/05/how-library-congress-using-both-ai-and-volunteers-unlock-public-broadcasting-history/413742/" target="_blank">Library of Congress Combines AI and Volunteers to Unlock Decades of Public Broadcasting History</a></h3>
-        <p>The Library of Congress has launched an ambitious project combining AI transcription and classification with volunteer human review to make over 70 years of public radio and television content searchable and accessible. The hybrid approach demonstrates how AI can amplify rather than replace human effort in cultural heritage preservation, with volunteers validating and correcting AI-generated metadata to build a comprehensive historical archive.</p>
-        <div class="news-tags"><span>Library of Congress</span><span>Preservation</span><span>Public Broadcasting</span><span>AI + Humans</span></div>
+        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-may-25-2026" target="_blank">Standard Chartered to Cut 7,800 Back-Office Roles by 2030, Replacing 'Lower-Value Human Capital'</a></h3>
+        <p>Standard Chartered has announced plans to eliminate 7,800 back-office positions by 2030, representing 15% of that workforce. CEO Bill Winters cited the replacement of "lower-value human capital" with AI-driven automation. The announcement follows similar moves by DBS, HSBC, and Meta, as the financial sector undergoes its most significant workforce restructuring since the 2008 crisis, driven by agentic AI deployment in compliance, risk, and trade processing.</p>
+        <div class="news-tags"><span>Banking</span><span>Jobs</span><span>Automation</span><span>Restructuring</span></div>
       </div>
     </div>
 
@@ -243,29 +242,29 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 25</div>
+      <div class="news-date">May 26</div>
       <div class="news-content">
-        <h3><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/enthusiast-runs-1-trillion-parameter-llm-from-768gb-of-intel-optane-dimm-memory-sticks-local-kimi-k2-5-install-achieved-roughly-4-tokens-per-second" target="_blank">1 Trillion-Parameter LLM Runs on Single GPU with Optane Memory</a></h3>
-        <p>A developer demonstrates that Intel Optane persistent memory can be used to run massive models locally on a single GPU at 4 tokens/sec, opening up new possibilities for local AI inference without expensive GPU clusters.</p>
-        <div class="news-tags"><span>Kimi K2.5</span><span>Optane</span><span>Local Inference</span><span>Hardware Hack</span></div>
+        <h3><a href="https://www.digitalapplied.com/blog/ai-industry-weekly-recap-may-18-25-2026-8-stories" target="_blank">Alibaba Qwen 3.7 Max Breaks the Frontier Duopoly</a></h3>
+        <p>Qwen 3.7 Max achieves 69.7 on Terminal-Bench 2.0 (beating Opus 4.6's 65.4) and 60.6 on SWE-Bench Pro (beating 57.3). At $2.50/$7.50 per Mtok with 1M context, it's the first Chinese model to genuinely compete at the frontier — destroying the assumption that only OpenAI and Anthropic can produce top-tier coding agents.</p>
+        <div class="news-tags"><span>Alibaba</span><span>Qwen</span><span>Benchmarks</span><span>Frontier</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 25</div>
+      <div class="news-date">May 26</div>
       <div class="news-content">
-        <h3><a href="https://www.ft.com/content/5630ed79-a263-41ed-9a1a-321617ae310e" target="_blank">AI Guardrails Easily Bypassed on Latest Meta and Google Models</a></h3>
-        <p>Financial Times investigation finds that safety guardrails on Meta's Llama 4 and Google's Gemma models can be stripped in minutes using basic prompt injection. The findings underscore the fragility of current alignment techniques for open-weight models.</p>
-        <div class="news-tags"><span>Guardrails</span><span>Llama 4</span><span>Gemma</span><span>Safety</span></div>
+        <h3><a href="https://aiweekly.co/" target="_blank">Anthropic to Release Pentagon-Grade 'Mythos-Class' Models to the Public</a></h3>
+        <p>Anthropic is preparing to release its Mythos-class models — originally developed for Pentagon-grade security requirements — to the general public. The models incorporate advanced adversarial robustness and are expected to set a new bar for safety-aligned frontier AI. The public release marks a strategic shift from exclusive government contracts to broad commercial availability.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Mythos</span><span>Safety</span><span>Pentagon</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 25</div>
+      <div class="news-date">May 26</div>
       <div class="news-content">
-        <h3><a href="https://thenewguard.ai/features/faster-than-we-can-patch/" target="_blank">AI Vulnerability Discovery Outpaces Industry's Ability to Patch</a></h3>
-        <p>AI-powered security tools are finding software vulnerabilities 20x faster than human teams can fix them, creating a dangerous asymmetry in cybersecurity as organizations struggle to triage and remediate the flood of AI-discovered flaws.</p>
-        <div class="news-tags"><span>Security</span><span>Vulnerabilities</span><span>Patch Gap</span><span>Cyber Risk</span></div>
+        <h3><a href="https://thirdruntime.com/" target="_blank">Zuckerberg-Zhang Phone Call Hints at DeepSeek-Meta AI Partnership in China</a></h3>
+        <p>A phone call between Mark Zuckerberg and Chinese AI lab DeepSeek's founder has sparked speculation about a potential Meta-DeepSeek partnership for the Chinese market. The development comes as Meta's Avocado model has "gone silent" and Chinese open-weights (Kimi K2.6, DeepSeek V4, GLM-5.1, Qwen 3) now dominate 60%+ of OpenRouter traffic. The call signals Meta's interest in regaining relevance in the open-weight ecosystem through Chinese partnerships.</p>
+        <div class="news-tags"><span>Meta</span><span>DeepSeek</span><span>China</span><span>Open Source</span></div>
       </div>
     </div>
 
