@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Particle Network — Generative Art</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0a0a0f; overflow: hidden; font-family: 'Inter', -apple-system, sans-serif; }
+    canvas { display: block; }
+    
+    #info {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,0.35);
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      pointer-events: none;
+      transition: opacity 2s;
+      text-shadow: 0 0 8px rgba(0,0,0,0.8);
+    }
+    #info span { display: inline-block; margin: 0 12px; }
+    .fade-out { opacity: 0 !important; }
+    #controls {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 8px;
+      z-index: 10;
+    }
+    #controls button {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.5);
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 12px;
+      backdrop-filter: blur(8px);
+      transition: all 0.3s;
+    }
+    #controls button:hover {
+      background: rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.9);
+      border-color: rgba(255,255,255,0.3);
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <button id="btnBurst">BURST</button>
+    <button id="btnReset">RESET</button>
+  </div>
+  <div id="info">
+    <span>move mouse → flow</span>
+    <span>click → burst</span>
+    <span>scroll → spread</span>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
+  <script>
+    // ─── Config ───────────────────────────────────────────────
+    const CONFIG = {
+      count: 300,
+      connectionDist: 130,
+      maxSpeed: 3.2,
+      forceStrength: 0.06,
+      friction: 0.97,
+      burstStrength: 8,
+      trailFade: 0.15,
+      hueSpeed: 0.15,
+    };
+
+    // ─── State ────────────────────────────────────────────────
+    let particles = [];
+    let hueOffset = 0;
+    let mouseForce = 0;
+    let mouseInfluence = 120;
+
+    // ─── Particle Class ──────────────────────────────────────
+    class Particle {
+      constructor() {
+        this.reset();
+      }
+
+      reset() {
+        this.pos = createVector(random(width), random(height));
+        this.vel = p5.Vector.random2D().mult(random(0.5, 2));
+        this.acc = createVector(0, 0);
+        this.radius = random(1.5, 3.5);
+        this.hue = random(360);
+        this.id = random(10000);
+        this.trail = [];
+        this.maxTrail = 6;
+      }
+
+      update() {
+        // Friction
+        this.vel.mult(CONFIG.friction);
+        
+        // Acceleration
+        this.vel.add(this.acc);
+        this.vel.limit(CONFIG.maxSpeed);
+        this.pos.add(this.vel);
+        this.acc.mult(0);
+
+        // Hue drift
+        this.hue += CONFIG.hueSpeed * (1 + this.vel.mag() / CONFIG.maxSpeed);
+        if (this.hue > 360) this.hue -= 360;
+
+        // Trails
+        if (this.vel.mag() > 0.3) {
+          this.trail.push(this.pos.copy());
+          if (this.trail.length > this.maxTrail) this.trail.shift();
+        }
+
+        // Wrap edges
+        if (this.pos.x < -20) this.pos.x = width + 20;
+        if (this.pos.x > width + 20) this.pos.x = -20;
+        if (this.pos.y < -20) this.pos.y = height + 20;
+        if (this.pos.y > height + 20) this.pos.y = -20;
+      }
+
+      applyForce(force) {
+        this.acc.add(force);
+      }
+
+      draw() {
+        const alpha = map(this.vel.mag(), 0, CONFIG.maxSpeed, 60, 255);
+        const size = this.radius + map(this.vel.mag(), 0, CONFIG.maxSpeed, 0, 1.5);
+
+        // Glow
+        noStroke();
+        for (let i = 2; i >= 0; i--) {
+          const galpha = map(i, 0, 2, 6, 20);
+          fill(this.hue, 80, 70, galpha);
+          circle(this.pos.x, this.pos.y, size + i * 6);
+        }
+
+        // Core
+        colorMode(HSB, 360, 100, 100, 100);
+        fill(this.hue, 70 + this.vel.mag() * 10, 80, alpha);
+        noStroke();
+        circle(this.pos.x, this.pos.y, size);
+        colorMode(RGB, 255);
+      }
+    }
+
+    // ─── Setup ────────────────────────────────────────────────
+    function setup() {
+      const canvas = createCanvas(windowWidth, windowHeight);
+      canvas.style('display', 'block');
+      
+      colorMode(HSB, 360, 100, 100, 100);
+      for (let i = 0; i < CONFIG.count; i++) {
+        particles.push(new Particle());
+      }
+
+      // UI handlers
+      document.getElementById('btnBurst').addEventListener('click', () => {
+        burst(width / 2 + random(-100, 100), height / 2 + random(-100, 100));
+      });
+      document.getElementById('btnReset').addEventListener('click', resetAll);
+
+      // Fade info text
+      setTimeout(() => {
+        document.getElementById('info').classList.add('fade-out');
+      }, 6000);
+    }
+
+    // ─── Draw ────────────────────────────────────────────────
+    function draw() {
+      // Fade background trail
+      colorMode(RGB, 255);
+      fill(10, 10, 15, CONFIG.trailFade * 8);
+      noStroke();
+      rect(0, 0, width, height);
+
+      // Global hue drift
+      hueOffset += 0.08;
+
+      // Mouse force
+      if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
+        const m = createVector(mouseX, mouseY);
+        mouseForce = map(mouseX, 0, width, -1, 1);
+      }
+
+      // Update particles
+      for (let p of particles) {
+        // Mouse interaction
+        if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
+          const mouseVec = createVector(mouseX, mouseY);
+          const dir = p5.Vector.sub(mouseVec, p.pos);
+          const dist = dir.mag();
+          if (dist < mouseInfluence && dist > 5) {
+            dir.normalize();
+            const strength = map(dist, 5, mouseInfluence, CONFIG.forceStrength * 2, CONFIG.forceStrength);
+            dir.mult(strength * (mouseIsPressed ? -1.8 : 1));
+            p.applyForce(dir);
+          }
+        }
+
+        // Weak center gravity
+        const center = createVector(width / 2, height / 2);
+        const toCenter = p5.Vector.sub(center, p.pos);
+        toCenter.mult(0.0003);
+        p.applyForce(toCenter);
+
+        // Random jitter
+        p.applyForce(p5.Vector.random2D().mult(0.02));
+
+        p.update();
+      }
+
+      // Draw connections
+      const step = 2;
+      for (let i = 0; i < particles.length; i += step) {
+        for (let j = i + step; j < particles.length; j += step) {
+          const dx = particles[i].pos.x - particles[j].pos.x;
+          const dy = particles[i].pos.y - particles[j].pos.y;
+          const d = dx * dx + dy * dy;
+
+          if (d < CONFIG.connectionDist * CONFIG.connectionDist) {
+            const alpha = map(d, 0, CONFIG.connectionDist * CONFIG.connectionDist, 60, 0);
+            const avgHue = (particles[i].hue + particles[j].hue) / 2;
+            colorMode(HSB, 360, 100, 100, 100);
+            stroke(avgHue + hueOffset, 50, 60, alpha);
+            strokeWeight(0.5 + map(d, 0, CONFIG.connectionDist * CONFIG.connectionDist, 1.2, 0));
+            line(particles[i].pos.x, particles[i].pos.y, particles[j].pos.x, particles[j].pos.y);
+            colorMode(RGB, 255);
+          }
+        }
+      }
+
+      // Draw particles (on top of lines)
+      for (let p of particles) {
+        p.draw();
+      }
+
+      // Stats
+      colorMode(RGB, 255);
+      fill(255, 30);
+      noStroke();
+      textAlign(LEFT, TOP);
+      textSize(11);
+      text(`fps: ${floor(frameRate())}  |  particles: ${CONFIG.count}  |  connections: dynamic`, 16, 16);
+    }
+
+    // ─── Window Resize ───────────────────────────────────────
+    function windowResized() {
+      resizeCanvas(windowWidth, windowHeight);
+    }
+
+    // ─── Click: Burst ────────────────────────────────────────
+    function mouseClicked() {
+      burst(mouseX, mouseY);
+    }
+
+    function burst(x, y) {
+      const origin = createVector(x, y);
+      for (let p of particles) {
+        const dir = p5.Vector.sub(p.pos, origin);
+        const dist = dir.mag();
+        if (dist < 200) {
+          dir.normalize();
+          const strength = map(dist, 0, 200, CONFIG.burstStrength, CONFIG.burstStrength * 0.3);
+          p.vel.add(dir.mult(strength));
+          p.hue += random(-30, 30);
+        }
+      }
+    }
+
+    // ─── Scroll: Spread ──────────────────────────────────────
+    function mouseWheel(event) {
+      const delta = event.delta > 0 ? -0.3 : 0.3;
+      CONFIG.connectionDist = constrain(CONFIG.connectionDist + delta * 20, 40, 350);
+      document.getElementById('info').classList.remove('fade-out');
+      setTimeout(() => document.getElementById('info').classList.add('fade-out'), 3000);
+      return false;
+    }
+
+    // ─── Reset ───────────────────────────────────────────────
+    function resetAll() {
+      for (let p of particles) p.reset();
+    }
+  </script>
+</body>
+</html>
