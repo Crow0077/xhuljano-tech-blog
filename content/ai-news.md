@@ -1,7 +1,7 @@
 
 ---
 title: "AI News"
-date: 2026-05-28
+date: 2026-05-29
 draft: false
 ShowToc: false
 ---
@@ -120,7 +120,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated May 28, 2026 — 16:00 UTC</div>
+    <div class="last-updated">Updated May 29, 2026 — 16:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -129,106 +129,106 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 28</div>
+      <div class="news-date">May 29</div>
       <div class="news-content">
         <h3><a href="https://www.buildfastwithai.com/" target="_blank">KPMG Deploys Claude to 276,000 Employees Across 138 Countries</a></h3>
-        <p>KPMG launched its "Digital Gateway Powered by Claude" — integrating Claude Cowork and Managed Agents directly into the firm's core client delivery platform. The deployment covers 276,000 professionals across tax, private equity, and cybersecurity practices, with full Azure migration by September 2026. KPMG CEO Bill Thomas said "security, trust, and governance" drove the decision over raw speed. The move completes a sweep of the Big Four — Deloitte (470K), PwC (global), and now KPMG are all standardizing on Claude, putting ~1.1M consultants on Anthropic's platform.</p>
+        <p>KPMG launched its "Digital Gateway Powered by Claude" — embedding Claude Cowork and Managed Agents directly into the firm's core client delivery platform across tax, legal, and advisory practices. The deployment covers all 276,000 professionals in 138 countries, with full Azure migration by September 2026. KPMG also announced Blaze, a joint product with Anthropic for legacy IT modernization using Claude Code. The deal completes a sweep of the Big Four — Deloitte, PwC, and now KPMG are all on Claude, putting ~1.1M consultants on Anthropic's platform.</p>
         <div class="news-tags"><span>Enterprise</span><span>KPMG</span><span>Claude</span><span>Big Four</span><span>Consulting</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 28</div>
+      <div class="news-date">May 29</div>
       <div class="news-content">
         <h3><a href="https://techcrunch.com/" target="_blank">OpenAI Launches DeployCo — a $4B Enterprise Consulting Subsidiary</a></h3>
-        <p>OpenAI announced DeployCo, a majority-owned standalone consulting subsidiary with $4B+ in initial capital from 19 firms (TPG leading, with Goldman, McKinsey, and Capgemini). The unit will operate with Palantir-style Forward Deployed Engineers and acquired Tomoro (150 engineers) for immediate capacity. The move is a direct response to OpenAI's enterprise API share dropping from ~50% (2023) to ~25% (mid-2025) amid Anthropic and Google competition, signaling a strategic pivot from platform to services.</p>
+        <p>OpenAI announced DeployCo, a majority-owned standalone consulting subsidiary with $4B+ in initial capital from a 19-firm consortium led by TPG, with Goldman Sachs, McKinsey, and Capgemini as strategic backers. The unit will operate with Palantir-style Forward Deployed Engineers and acquired Tomoro (150 engineers) for immediate capacity. DeployCo exclusively deploys OpenAI models — a strategic pivot from platform to services as enterprise API share faces growing Anthropic and Google competition.</p>
         <div class="news-tags"><span>OpenAI</span><span>DeployCo</span><span>Consulting</span><span>Enterprise</span><span>$4B</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 28</div>
+      <div class="news-date">May 29</div>
       <div class="news-content">
-        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-may-2026" target="_blank">Anthropic Reports First Profit: $559M on $10.9B Q2 Revenue</a></h3>
-        <p>Anthropic achieved its first-ever operating profit of $559 million in Q2 2026 — two years ahead of its 2028 target. Revenue hit $10.9B (130% growth from $4.8B in Q1), with annualized revenue run rate exceeding $44B. Claude Code enterprise deployments now generate $2.5B ARR. CEO Dario Amodei noted the company planned for 10x annual growth but saw 80x, calling demand "too hard to handle." The milestone comes as OpenAI (at $25B ARR) continues operating at a loss ahead of its IPO filing.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Profit</span><span>$10.9B</span><span>Revenue</span><span>Milestone</span></div>
+        <h3><a href="https://techxplore.com/" target="_blank">Anthropic Raises $65B, Valuation Surges to $965B</a></h3>
+        <p>Anthropic closed a $65B primary funding round led by Sequoia Capital, pushing its valuation to approximately $965B — nearly tripling from February 2026. The round comes on the heels of Anthropic's first-ever quarterly profit ($559M on $10.9B Q2 revenue). CEO Dario Amodei noted demand remains "too hard to handle" with 80x annualized growth. The valuation positions Anthropic for a potential October IPO, setting up a historic narrative battle with OpenAI's expected September public debut.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Funding</span><span>$965B</span><span>Valuation</span><span>Record</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 28</div>
+      <div class="news-date">May 29</div>
       <div class="news-content">
         <h3><a href="https://www.reuters.com/technology/" target="_blank">OpenAI Files for IPO at $1 Trillion Target Valuation</a></h3>
-        <p>OpenAI filed its IPO prospectus with Goldman Sachs and Morgan Stanley advising, targeting a public listing above $1 trillion as early as September 2026. The filing reveals $25B ARR and 900 million weekly active users, though the company remains unprofitable. The IPO race with Anthropic (profitable at $44B ARR, targeting October IPO per Bloomberg) sets up a historic narrative battle between the scale-first and profitability-first approaches to AI commercialization.</p>
+        <p>OpenAI filed its IPO prospectus with Goldman Sachs and Morgan Stanley advising, targeting a public listing above $1 trillion as early as September 2026. The filing reveals $25B ARR and 900 million weekly active users, though the company remains unprofitable. The IPO race with Anthropic (profitable at $44B ARR, also targeting public markets) sets up a historic battle between scale-first and profitability-first approaches to AI commercialization.</p>
         <div class="news-tags"><span>OpenAI</span><span>IPO</span><span>$1 Trillion</span><span>Public Markets</span><span>Valuation</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 28</div>
+      <div class="news-date">May 29</div>
       <div class="news-content">
-        <h3><a href="https://www.france24.com/en/technology/20260528-ai-leaders-soften-warnings-on-job-losses-as-industry-reassesses-impact" target="_blank">AI Leaders Huang, Altman, and Amodei Soften Job Apocalypse Warnings</a></h3>
-        <p>In a coordinated shift, top AI executives are walking back doomsday job-loss predictions. Jensen Huang (Nvidia) called AI-blamed layoffs "intellectually lazy" and "irresponsible scaremongering." Sam Altman (OpenAI) issued a mea culpa in Sydney, admitting his intuitions about rapid white-collar displacement were wrong. Dario Amodei (Anthropic) now predicts a highly-augmented workforce rather than pure replacement. The rhetorical shift coincides with upcoming IPOs requiring broad investor confidence and growing public hostility toward AI-driven disruption narratives.</p>
+        <h3><a href="https://www.wired.com/" target="_blank">Illinois Passes Major AI Safety Bill Requiring Third-Party Audits</a></h3>
+        <p>Illinois passed SB 315, one of the strongest state-level AI oversight laws in the US, requiring frontier AI labs (OpenAI, Anthropic, Google DeepMind) to undergo mandatory third-party safety audits. If signed by Governor JB Pritzker, the bill could become a national test case for independent AI accountability. The legislation targets frontier model training, deployment safeguards, and incident reporting — filling a regulatory vacuum as federal AI legislation remains stalled in Congress.</p>
+        <div class="news-tags"><span>Illinois</span><span>Regulation</span><span>Safety</span><span>Audits</span><span>Policy</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 29</div>
+      <div class="news-content">
+        <h3><a href="https://www.france24.com/en/technology/" target="_blank">AI Leaders Huang, Altman, and Amodei Soften Job Apocalypse Warnings</a></h3>
+        <p>In a coordinated shift, top AI executives are walking back doomsday job-loss predictions. Jensen Huang (Nvidia) called AI-blamed layoffs "intellectually lazy" and "irresponsible scaremongering." Sam Altman (OpenAI) admitted his intuitions about rapid white-collar displacement were wrong. Dario Amodei (Anthropic) now predicts a highly-augmented workforce rather than replacement. The rhetorical shift coincides with upcoming IPOs requiring broad investor confidence and growing public hostility toward AI-driven disruption narratives.</p>
         <div class="news-tags"><span>Jobs</span><span>Society</span><span>Huang</span><span>Altman</span><span>Amodei</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 28</div>
-      <div class="news-content">
-        <h3><a href="https://techjournal.org/tech-layoffs-2026-ai-spending" target="_blank">113K Tech Layoffs in 2026 While AI CapEx Hits $725B</a></h3>
-        <p>Over 113,000 tech workers have been laid off across 179 companies in 2026 (avg. 825/day) while Meta, Amazon, Microsoft, and Alphabet committed $725B in CapEx — almost exclusively for AI data centers, chips, and infrastructure. Amazon leads with ~30,000 cuts, followed by Oracle (10K+, expected 30K) and Meta (8,000). Analysts estimate ~48% of layoffs explicitly cite AI, though much is "AI washing" — reallocating payroll budgets to GPU procurement. Per Deutsche Bank, "AI redundancy washing will be a significant feature of 2026."</p>
-        <div class="news-tags"><span>Layoffs</span><span>AI Spending</span><span>$725B</span><span>Economy</span><span>Restructuring</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 28</div>
+      <div class="news-date">May 29</div>
       <div class="news-content">
         <h3><a href="https://www.globalpolicywatch.com/2026/05/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions/" target="_blank">EU AI Act Amended: High-Risk Rules Delayed to 2027/28, New Prohibitions Added</a></h3>
-        <p>EU lawmakers reached a provisional agreement on May 7 to amend the AI Act as part of the Digital Omnibus initiative. High-risk AI system obligations are postponed to 2027/28, while new prohibitions on predictive policing and social scoring based on AI are introduced. The amendments reduce overlap with existing machinery and product safety regulations. GPAI (general-purpose AI) transparency rules remain on track for August 2026 enforcement, focusing on training data disclosure and copyright compliance for foundation models.</p>
+        <p>EU lawmakers reached a provisional agreement to amend the AI Act as part of the Digital Omnibus initiative. High-risk AI system obligations are postponed to 2027-2028, while new prohibitions on predictive policing and social scoring based on AI are introduced. GPAI transparency rules remain on track for August 2026 enforcement, focusing on training data disclosure and copyright compliance for foundation models. The amendments reduce regulatory overlap with existing machinery and product safety regulations.</p>
         <div class="news-tags"><span>EU AI Act</span><span>Regulation</span><span>Policy</span><span>Compliance</span><span>High-Risk</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 28</div>
+      <div class="news-date">May 29</div>
       <div class="news-content">
         <h3><a href="https://www.buildfastwithai.com/" target="_blank">Canada Rules ChatGPT Violated Privacy Law in Landmark Decision</a></h3>
-        <p>Canada's Office of the Privacy Commissioner — joined by Quebec, BC, and Alberta privacy authorities — ruled that OpenAI's ChatGPT violated Canadian privacy law (PIPEDA) through overcollection of public data, lack of meaningful consent, and inadequate safeguards for health data and children's information. The federal commissioner has conditionally resolved, while provinces continue enforcement. It's the first major national privacy ruling on AI training data, setting a precedent that could reshape how frontier models are trained on publicly scraped data.</p>
+        <p>Canada's Office of the Privacy Commissioner — joined by Quebec, BC, and Alberta privacy authorities — ruled that OpenAI's ChatGPT violated Canadian privacy law (PIPEDA) through overcollection of public data, lack of meaningful consent, and inadequate safeguards for children's information. It's the first major national privacy ruling on AI training data, setting a precedent that could reshape how frontier models are trained on publicly scraped data across multiple jurisdictions.</p>
         <div class="news-tags"><span>Privacy</span><span>Canada</span><span>ChatGPT</span><span>PIPEDA</span><span>Landmark</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 28</div>
-      <div class="news-content">
-        <h3><a href="https://llm-stats.com/ai-news" target="_blank">Mistral Releases Mistral 3 Family — Open-Source Frontier Models Under Apache 2.0</a></h3>
-        <p>Mistral AI launched Mistral 3, a family of ten open-source models under Apache 2.0 — including Mistral Large 3 (675B total / 41B active, sparse MoE) and dense models at 14B, 8B, and 3B designed for smartphones, drones, and edge deployment. The release positions Mistral as Europe's primary challenger to US and Chinese frontier labs. CEO Arthur Mensch accelerated the timeline citing Europe's need for "AI sovereignty," with enterprise supply deals already signed with Airbus and BMW for industrial AI workloads.</p>
-        <div class="news-tags"><span>Mistral</span><span>Open Source</span><span>Mistral 3</span><span>Europe</span><span>Apache 2.0</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 28</div>
-      <div class="news-content">
-        <h3><a href="https://www.perplexity.ai/hub/blog/perplexity-is-open-sourcing-bumblebee" target="_blank">Perplexity Open-Sources Unigram Tokenizer — 5-6x CPU Reduction for Rerankers</a></h3>
-        <p>Perplexity AI open-sourced its rebuilt Unigram tokenizer, achieving 5x lower p50 latency than Hugging Face tokenizers and cutting production CPU utilization by 5-6x for small rerankers and embedding models. The release targets the often-overlooked tokenization bottleneck in AI inference pipelines — small models run in single-digit milliseconds on GPU, making CPU tokenization a meaningful fraction of total latency. The move continues Perplexity's shift toward becoming an open-source AI infrastructure provider.</p>
-        <div class="news-tags"><span>Perplexity</span><span>Open Source</span><span>Tokenizer</span><span>Performance</span><span>Tools</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 28</div>
+      <div class="news-date">May 29</div>
       <div class="news-content">
         <h3><a href="https://techcrunch.com/" target="_blank">Cohere Acquires Aleph Alpha to Create $20B Transatlantic Sovereign AI Challenger</a></h3>
-        <p>Cohere (Canada) acquired Aleph Alpha (Germany) in a deal creating a ~$20B transatlantic sovereign AI company. Schwarz Group (Lidl parent) invested $600M in Cohere's Series E as part of the deal. The combined entity maintains dual HQ in Toronto and Berlin, backed by the Canada-Germany Sovereign Technology Alliance. Aleph Alpha brings German government clients, Deutsche Bank, and SAP; Cohere brings RBC, Fujitsu, and LG CNS. The "sovereign premium" approach is validated in defense and public sector but remains untested in cost-sensitive commercial markets.</p>
+        <p>Cohere (Canada) acquired Aleph Alpha (Germany) in a deal creating a ~$20B transatlantic sovereign AI company. Schwarz Group (Lidl parent) invested $600M in Cohere's Series E as part of the deal. The combined entity maintains dual HQ in Toronto and Berlin, backed by the Canada-Germany Sovereign Technology Alliance. The acquisition targets European enterprises and governments that cannot route sensitive data through US-domiciled AI infrastructure — validating the "sovereign premium" for defense and public sector clients.</p>
         <div class="news-tags"><span>Cohere</span><span>Aleph Alpha</span><span>Sovereign AI</span><span>Acquisition</span><span>Geopolitics</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 28</div>
+      <div class="news-date">May 29</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/" target="_blank">Cognition (Devin) Raises $1B at $26B Valuation — AI Coding Agent Mania</a></h3>
+        <p>Cognition AI, creator of the autonomous coding agent Devin, raised $1B+ in fresh funding at a $26B valuation — up from $10.2B just eight months ago. Demand for AI software engineers is surging among enterprises as coding agents become one of the hottest infrastructure layers in enterprise software. The raise signals investor conviction that AI-native developer tools will capture a significant share of the $500B+ global software development market.</p>
+        <div class="news-tags"><span>Cognition</span><span>Devin</span><span>AI Coding</span><span>$1B</span><span>Valuation</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 29</div>
+      <div class="news-content">
+        <h3><a href="https://www.reuters.com/technology/" target="_blank">ByteDance Develops Custom AI Chips Amid US Export Controls</a></h3>
+        <p>ByteDance is developing custom CPU chips to reduce reliance on foreign suppliers amid tightening US export controls. The initiative aims to improve cost control and AI performance across TikTok's recommendation systems and Doubao's AI products. The move reflects a broader trend where AI competition is increasingly becoming a chip strategy contest — with Chinese tech giants investing billions to build domestic semiconductor capabilities as US chip restrictions continue to escalate.</p>
+        <div class="news-tags"><span>ByteDance</span><span>Chips</span><span>Export Controls</span><span>China</span><span>Hardware</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 29</div>
       <div class="news-content">
         <h3><a href="https://www.buildfastwithai.com/" target="_blank">ChatGPT Voice Mode Controversy: Running on Old GPT-4o Model, Not GPT-5.5</a></h3>
         <p>Investigations by Andrej Karpathy and Simon Willison revealed that ChatGPT's Voice Mode operates on a GPT-4o-era model with an April 2024 knowledge cutoff — while the text interface uses GPT-5.5. The capability gap spans 13+ months and is not prominently disclosed to $200/mo Pro subscribers. By contrast, Google's Gemini Live uses the latest Gemini 3.5 Flash model. The controversy highlights the engineering challenges of real-time multimodal inference and raises transparency questions about what model version users are actually interacting with via voice.</p>
@@ -242,20 +242,20 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 28</div>
+      <div class="news-date">May 29</div>
       <div class="news-content">
-        <h3><a href="https://www.france24.com/" target="_blank">JD.com Founder Vows to Protect 900,000 Employees from AI Automation</a></h3>
-        <p>JD.com founder Liu Qiangdong publicly committed to "do everything possible" to protect the company's 900,000 employees from AI-driven automation, making one of the strongest workforce guarantees from a major tech employer. The pledge contrasts sharply with Meta, Amazon, and Oracle which have cut 100K+ combined this year citing AI efficiency. The divergence highlights a global split in corporate AI strategy: US Big Tech is restructuring aggressively while Asian tech giants like JD.com and SoftBank emphasize labor protection and societal stability.</p>
-        <div class="news-tags"><span>JD.com</span><span>Jobs</span><span>Automation</span><span>China</span><span>Workforce</span></div>
+        <h3><a href="https://www.ft.com/" target="_blank">Amazon Kills Internal AI Leaderboard After Employees Gamed the System</a></h3>
+        <p>Amazon shut down its internal AI leaderboard after employees gamed the scoring system by running pointless GPU tasks to inflate performance metrics, driving up cloud costs in the process. The incident highlights the perverse incentives that can emerge when AI benchmarks are linked to internal funding and visibility. The company is redesigning its evaluation framework to prevent similar gaming, but the episode underscores the challenge of measuring AI progress in large organizations.</p>
+        <div class="news-tags"><span>Amazon</span><span>AI Leaderboard</span><span>Gaming</span><span>Cloud Costs</span><span>Internal</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 28</div>
+      <div class="news-date">May 29</div>
       <div class="news-content">
-        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-may-2026" target="_blank">SpaceX S-1 Reveals $45B Anthropic Compute Deal — $1.25B per Month</a></h3>
-        <p>The SpaceX S-1 filing for its semiconductor fab revealed the full terms of Anthropic's Colossus 1 compute deal: $1.25 billion per month through May 2029, totaling $45 billion — 3-5x higher than analyst estimates of $3-6B/year. The deal alone generates more annual revenue for SpaceX than the company's entire 2025 standalone revenue. The staggering figure reveals that compute cost — not model architecture — is the primary economic constraint on frontier AI development, with a single deal exceeding the entire pre-revenue valuation of most AI startups.</p>
-        <div class="news-tags"><span>SpaceX</span><span>Anthropic</span><span>$45B</span><span>Compute</span><span>Infrastructure</span></div>
+        <h3><a href="https://asia.nikkei.com/" target="_blank">MediaTek Begins Using Intel Foundry for Advanced Chip Packaging</a></h3>
+        <p>MediaTek announced it will use Intel Foundry for advanced chip packaging in addition to its longstanding partnership with TSMC, betting on surging AI demand for growth diversification. The move gives Intel a major design win in its foundry revival strategy and signals that AI-driven chip demand is creating enough market growth for multiple fabrication partners. The shift also provides MediaTek with supply chain redundancy amid growing geopolitical tensions over Taiwan's semiconductor dominance.</p>
+        <div class="news-tags"><span>MediaTek</span><span>Intel</span><span>Foundry</span><span>Chips</span><span>Hardware</span></div>
       </div>
     </div>
 
@@ -362,4 +362,4 @@ new p5(function(p) {
 </script>
 {{< /rawhtml >}}
 
-<!-- update 1779968000 -->
+<!-- update 1780054400 -->
