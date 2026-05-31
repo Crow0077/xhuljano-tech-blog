@@ -1,7 +1,7 @@
 
 ---
 title: "AI News"
-date: 2026-05-30
+date: 2026-05-31
 draft: false
 ShowToc: false
 ---
@@ -120,7 +120,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated May 30, 2026 — 14:00 UTC</div>
+    <div class="last-updated">Updated May 31, 2026 — 14:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -129,120 +129,114 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 30</div>
+      <div class="news-date">May 31</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/" target="_blank">OpenAI Codex Gets "Computer Use" on Windows 11 — Autonomous PC Control</a></h3>
-        <p>OpenAI's Codex app now runs on Windows 11 with "Computer Use" capability — the AI can independently control programs, test applications, and hunt for bugs without human supervision. The ChatGPT mobile app lets users initiate remote tasks even when the PC is unattended. The feature positions Codex as a direct competitor to Claude Code and GitHub Copilot in the agentic coding space, blurring the line between AI assistant and autonomous operator.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Codex</span><span>Computer Use</span><span>Windows</span><span>Autonomous</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 30</div>
-      <div class="news-content">
-        <h3><a href="https://www.theverge.com/" target="_blank">Attackers Abuse ChatGPT and Claude Chat-Sharing Features to Spread Malware</a></h3>
-        <p>Security researchers have identified attackers exploiting the chat-sharing features in ChatGPT and Claude to distribute malware. The attacks mimic error messages or software install guides within shared conversations, slipping past traditional security tools that don't inspect AI-generated content. The novel vector targets enterprise users who frequently share AI chats internally. OpenAI and Anthropic are investigating mitigations for the shared-chat threat surface.</p>
-        <div class="news-tags"><span>Security</span><span>Malware</span><span>ChatGPT</span><span>Claude</span><span>Threat Vector</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 30</div>
-      <div class="news-content">
-        <h3><a href="https://www.reuters.com/technology/" target="_blank">Salesforce: Claude Code Cut a 231-Day Migration to 13 Days With 5x Fewer Incidents</a></h3>
-        <p>Salesforce reported that moving its entire development organization to Anthropic's Claude Code with no token limits yielded dramatic productivity gains: 79% more pull requests per developer, 5x fewer production incidents, and a migration originally estimated at 231 days completed in just 13. The results validate the enterprise productivity thesis for AI-native development tools and have triggered a wave of adoption interest across Fortune 500 engineering orgs.</p>
-        <div class="news-tags"><span>Salesforce</span><span>Claude Code</span><span>Enterprise</span><span>Productivity</span><span>DevOps</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 30</div>
-      <div class="news-content">
-        <h3><a href="https://techcrunch.com/" target="_blank">Claude Opus 4.8 Released With Parallel-Subagent Workflows, 2.5x Fast Mode</a></h3>
-        <p>Anthropic released Claude Opus 4.8, scoring 88.6% on SWE-bench Verified and 74.6% on Terminal-Bench 2.1. The release introduces parallel-subagent workflows — allowing Claude to spawn and coordinate multiple sub-agents for complex multi-step tasks — and a 2.5x fast mode for latency-sensitive applications. Pricing remains at $5/$25 per 1M tokens. The update follows Anthropic's $65B round and positions Opus 4.8 as the strongest coding model ahead of the anticipated IPO battle with OpenAI.</p>
+        <h3><a href="https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/" target="_blank">Claude Opus 4.8 Launch With Dynamic Workflows — 1,000 Parallel Subagents</a></h3>
+        <p>Anthropic released Claude Opus 4.8 just 41 days after 4.7 — its fastest cadence ever. The model scores 88.6% on SWE-bench Verified and 69.2% on SWE-bench Pro, beating GPT-5.5 by ~10 points on both. The headline feature is Dynamic Workflows: Claude Code can now fan complex problems out to up to 1,000 parallel subagents, then synthesize results. Canonical proof: Bun creator Jarred Sumner migrated ~750K lines of Rust in 11 days. Fast Mode is 2.5x speed at $10/$50 per M tokens — 3x cheaper than Opus 4.7 Fast.</p>
         <div class="news-tags"><span>Anthropic</span><span>Claude Opus 4.8</span><span>Models</span><span>Subagents</span><span>Coding</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 30</div>
+      <div class="news-date">May 31</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/" target="_blank">Meta Leaked Memo Reveals AI Pendant, Supersensing Glasses, and Enterprise Wearables Strategy</a></h3>
-        <p>A leaked internal memo from Meta details the company's pivot to consumer and enterprise AI wearables, including an AI pendant, "supersensing" glasses, and a unified enterprise AR platform. Industry observers note Meta has poured billions into AI research with limited commercial payoff so far — open-source models haven't translated to revenue, and research breakthroughs haven't become shipping products. The wearables push represents Meta's most concrete AI hardware strategy to date.</p>
-        <div class="news-tags"><span>Meta</span><span>Wearables</span><span>Hardware</span><span>AR</span><span>Leaked Memo</span></div>
+        <h3><a href="https://finance.yahoo.com/news/anthropic-debuts-flagship-claude-opus-48-ai-model-as-ipo-race-with-openai-heats-up-170000527.html" target="_blank">Claude Mythos Gets Public Release Timeline — "In the Coming Weeks"</a></h3>
+        <p>Anthropic confirmed that its most powerful model, Claude Mythos Preview, will be publicly available "in the coming weeks" — the first explicit timeline. Currently restricted to ~50 Project Glasswing partners, Mythos found 23,019 high-severity vulnerabilities in its first month including a 27-year-old bug in OpenBSD and a 16-year-old flaw in FFmpeg. The UK AISI evaluated it as capable of a 32-step simulated corporate network attack. The news signals the most consequential AI deployment of Q3 2026.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Mythos</span><span>Security</span><span>Safety</span><span>Release</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 30</div>
+      <div class="news-date">May 31</div>
       <div class="news-content">
-        <h3><a href="https://www.reuters.com/technology/" target="_blank">Groq Raising $650M at ~$8B Valuation — AI Inference Chip Race Intensifies</a></h3>
-        <p>AI chip startup Groq is reportedly raising $650M at an ~$8B valuation, following Nvidia's $20B "not-acqui-hire" deal with the company earlier this year. Groq's LPU (Language Processing Unit) architecture targets ultra-low-latency inference, positioning it as an alternative to Nvidia's dominant GPU infrastructure. The raise signals that the AI inference chip market is attracting massive investment as hyperscalers and enterprises seek alternatives to Nvidia's supply-constrained hardware.</p>
-        <div class="news-tags"><span>Groq</span><span>Chips</span><span>Funding</span><span>Inference</span><span>Hardware</span></div>
+        <h3><a href="https://www.theverge.com/" target="_blank">Microsoft Fires Back With MAI Models — Build 2026 Prepares Homegrown AI to Win Back Copilot</a></h3>
+        <p>Microsoft's Build 2026 (June 2-3) will debut the MAI model suite: a coding-specialized model for GitHub Copilot, a reasoning model, and a new agent. The strategic trigger: internal telemetry shows Claude Code has overtaken GitHub Copilot in enterprise developer adoption. Microsoft's partnership with OpenAI was renegotiated in April, freeing Mustafa Suleyman's AI division to train top-tier in-house models. GitHub Copilot now writes 46% of all code on the platform, up from 40% in November 2025.</p>
+        <div class="news-tags"><span>Microsoft</span><span>MAI</span><span>Build 2026</span><span>Copilot</span><span>Claude Code</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 30</div>
+      <div class="news-date">May 31</div>
       <div class="news-content">
-        <h3><a href="https://www.bloomberg.com/" target="_blank">MiniMax Prepares for Chinese IPO After Hitting $300M ARR</a></h3>
-        <p>Shanghai-based AI startup MiniMax has begun preparations for a Chinese IPO, according to a filing. The company, which listed in Hong Kong in January, reports annualized recurring revenue of $300M. MiniMax — known for its Hailuo AI video generation platform and MiniMax-Text model — represents the growing class of Chinese AI companies achieving product-market fit while navigating US export control restrictions on advanced chips.</p>
-        <div class="news-tags"><span>MiniMax</span><span>IPO</span><span>China</span><span>$300M</span><span>Funding</span></div>
+        <h3><a href="https://www.reuters.com/technology/" target="_blank">OpenAI Releases Rosalind Biodefense Model and Files Codex Pro Pricing Restructure</a></h3>
+        <p>OpenAI released Rosalind, a specialized biodefense model, on May 31 as part of its expanding safety ecosystem. Separately, the company restructured Codex Pro pricing amid the escalating agentic coding wars with Anthropic. OpenAI filed its confidential S-1 on May 22 targeting a $1 trillion valuation with Goldman Sachs and Morgan Stanley leading, aiming for a September debut. Revenue reached $25B ARR. The company also announced it solved an 80-year-old unsolved geometry problem using its reasoning model earlier in May.</p>
+        <div class="news-tags"><span>OpenAI</span><span>Rosalind</span><span>Biodefense</span><span>Codex</span><span>IPO</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 30</div>
+      <div class="news-date">May 31</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/" target="_blank">DuckDuckGo Installs Up 30% as Users Reject Google's Forced AI Search</a></h3>
-        <p>DuckDuckGo reported a 30% surge in installations as users actively seek alternatives to Google's AI-integrated search experience. The backlash against Google's AI Overviews and forced AI search integration — which some users describe as being "force-fed" AI results — is driving meaningful market share shifts. The trend highlights growing consumer pushback against aggressive AI integration in core products and validates privacy-first search as a differentiator.</p>
-        <div class="news-tags"><span>DuckDuckGo</span><span>Google</span><span>Search</span><span>Privacy</span><span>Consumer</span></div>
+        <h3><a href="https://www.inc.com/ben-sherry/anthropic-says-its-latest-claude-model-is-the-most-honest-yet/91351657" target="_blank">Nightmare Eclipse: Rogue Researcher Released 6 Critical Windows Zero-Days — GitHub and GitLab Bans Fail to Contain Threat</a></h3>
+        <p>A rogue security researcher released 6 working critical Windows exploits over 6 weeks, achieving full SYSTEM access and BitLocker bypass on fully patched systems. GitHub banned the account on May 23; the researcher immediately migrated to GitLab, which banned them May 26. Both platforms wiped all repos. The researcher threatens further releases on July 14, claiming a "Dead man's switch." Microsoft patches are scheduled for June 9 Patch Tuesday. The incident exposes a structural gap in zero-day exploit distribution containment.</p>
+        <div class="news-tags"><span>Security</span><span>Windows</span><span>Zero-Day</span><span>GitHub</span><span>Exploit</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 31</div>
+      <div class="news-content">
+        <h3><a href="https://www.reuters.com/technology/" target="_blank">Anthropic Hits First Operating Profit at $559M — Valuation Surpasses OpenAI at $965B</a></h3>
+        <p>Anthropic reported its first quarterly operating profit of $559M on $10.9B Q2 revenue, two years ahead of projections. Revenue hit $44B+ ARR, growing 80x year-over-year. The company's valuation rose to $965B, surpassing OpenAI's $852B. Major enterprise wins include PwC going all-in on Claude, KPMG deploying to 276,000 staff, and a $200M Gates Foundation deal. Anthropic also secured SpaceX's entire Colossus 1 supercomputer (220K+ GPUs) at $1.25B/month through 2029 — a $200B+ compute bet.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Profit</span><span>Valuation</span><span>Revenue</span><span>Enterprise</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 31</div>
+      <div class="news-content">
+        <h3><a href="https://www.bbc.com/news/technology" target="_blank">AI CEOs Walk Back Job Apocalypse Predictions — Dario Amodei and Sam Altman Shift Narrative</a></h3>
+        <p>Both Anthropic CEO Dario Amodei and OpenAI CEO Sam Altman have abruptly shifted their public predictions about AI-driven job displacement. After years of warning that GenAI would dismantle white-collar employment, both executives now emphasize human-AI collaboration and argue that AI will augment rather than replace workers. Critics note the convenient timing ahead of anticipated IPOs from both companies. The narrative reversal reflects growing pressure from enterprise customers who need workforce stability to adopt AI tools at scale.</p>
+        <div class="news-tags"><span>Workforce</span><span>CEOs</span><span>Jobs</span><span>Narrative</span><span>Policy</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 31</div>
+      <div class="news-content">
+        <h3><a href="https://www.bloomberg.com/" target="_blank">SpaceX Files S-1 for IPO — AI Compute Partnership With Anthropic Paves Way for June 8 Roadshow</a></h3>
+        <p>SpaceX filed its S-1, revealing its IPO roadshow is set for June 8. The filing confirmed the Colossus 1 supercomputer deal with Anthropic at $1.25B/month through 2029 — now revealed to have a 90-day cancellation clause. The SpaceX IPO is expected to be one of the largest in history, driven in part by its AI infrastructure expansion. The deal positions SpaceX as a critical compute provider in the AI race alongside hyperscalers like AWS, Google Cloud, and Azure.</p>
+        <div class="news-tags"><span>SpaceX</span><span>IPO</span><span>Compute</span><span>Infrastructure</span><span>Anthropic</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 31</div>
+      <div class="news-content">
+        <h3><a href="https://www.ft.com/technology" target="_blank">Google Confirms Gemini 3.5 Pro for June Launch as Flash Becomes Agentic Default</a></h3>
+        <p>Sundar Pichai confirmed Gemini 3.5 Pro's general availability for June 2026, with Vertex AI allowlist already open for enterprises. Meanwhile, Gemini 3.5 Flash has become Google's agentic flagship — scoring 76.2% on Terminal-Bench 2.1, 83.6% on MCP Atlas, and 84.2% on CharXiv Reasoning at just $1.50/$9 per M tokens. Google also launched Gemini Spark, wrapping the model into a personal AI agent across Gmail, Calendar, Docs, and Android. Antigravity is Google's new agent-first dev platform.</p>
+        <div class="news-tags"><span>Google</span><span>Gemini 3.5</span><span>Models</span><span>Spark</span><span>Agents</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 31</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/" target="_blank">OnlyFans "Mega Leak" of 340M Records Is a Correlation Database — No Breach, Seller Admits</a></h3>
+        <p>A seller offering 340M records for 0.313 BTC (~$76,000) claimed to have breached OnlyFans, but the seller admitted to Hackread: "We didn't breach or hack OnlyFans. We used existing breaches and leaks databases and matched with users of the OnlyFans platform." The dataset is an identity correlation database that breaks pseudonymity for creators and subscribers by linking real identities from Twitter, Instagram leaks to OnlyFans profiles. Troy Hunt questioned whether the data is even real vs AI-generated. The real risk is doxing and phishing.</p>
+        <div class="news-tags"><span>OnlyFans</span><span>Security</span><span>Data Leak</span><span>Privacy</span><span>Doxing</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 31</div>
+      <div class="news-content">
+        <h3><a href="https://www.reuters.com/technology/" target="_blank">KPMG Deploys Claude to 276,000 Staff — PwC Goes "All-In" on Anthropic's Enterprise Push</a></h3>
+        <p>KPMG deployed Anthropic's Claude to all 276,000 employees in one of the largest enterprise AI deployments to date, following PwC's "all-in" commitment on Claude earlier in May. The Big Four accounting firm adoptions signal that enterprise AI is shifting from experimentation to full-scale deployment. Salesforce also reported that moving its entire dev org to Claude Code with no token limits yielded 79% more pull requests per developer, 5x fewer production incidents, and a 231-day migration completed in just 13 days.</p>
+        <div class="news-tags"><span>KPMG</span><span>Enterprise</span><span>Claude</span><span>Deployment</span><span>Productivity</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">May 31</div>
+      <div class="news-content">
+        <h3><a href="https://www.wsj.com/tech/ai" target="_blank">Alibaba's Qwen 3.7 Max and the China AI Wave — Four Open-Weight Models Match Western Benchmarks at <1/3 the Price</a></h3>
+        <p>Four Chinese labs — Z.ai GLM-5.1, MiniMax M2.7, Kimi K2.6, and DeepSeek V4 — dropped open-weight frontier coding models in 12 days, matching Western capability at under a third of the price of Claude Opus 4.7. Alibaba's Qwen 3.7 Max leads with 1M-token context, 92.4 GPQA Diamond, and $2.50/$7.50 per M tokens — roughly half GPT-5.5 pricing. ByteDance announced $70B in AI CapEx. The China-US gap on metrics most teams care about is rapidly closing.</p>
+        <div class="news-tags"><span>China</span><span>Alibaba</span><span>Qwen</span><span>Open Models</span><span>Benchmarks</span></div>
       </div>
     </div>
 
   </div>
-
-  <div class="news-section-title">Models &amp; Policy</div>
-  <div class="news-grid">
-
-    <div class="news-item">
-      <div class="news-date">May 30</div>
-      <div class="news-content">
-        <h3><a href="https://www.wsj.com/tech/ai" target="_blank">AI Token Futures Are Coming — Tradeable Like Gold and Oil</a></h3>
-        <p>A new asset class is emerging: AI token futures. Multiple exchanges are developing tokenized compute and model access contracts that could be traded like commodities — allowing enterprises to hedge against GPU price volatility and speculators to bet on AI infrastructure demand. The market echoes the early days of oil futures and could fundamentally change how AI compute capacity is allocated and priced globally.</p>
-        <div class="news-tags"><span>AI Tokens</span><span>Futures</span><span>Trading</span><span>Infrastructure</span><span>Markets</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 30</div>
-      <div class="news-content">
-        <h3><a href="https://www.bbc.com/news/technology" target="_blank">Asana Acquires StackAI for No-Code Agent Builder — Enterprise Automation Arms Race</a></h3>
-        <p>Asana acquired StackAI, a no-code AI agent builder, signaling the next phase of the enterprise automation arms race. The acquisition lets non-technical users create custom AI agents that integrate directly with Asana workflows — without writing a line of code. StackAI joins a wave of no-code agent platforms (including LangChain, Vellum, and Relevance AI) that are democratizing AI agent creation beyond engineering teams.</p>
-        <div class="news-tags"><span>Asana</span><span>StackAI</span><span>Acquisition</span><span>No-Code</span><span>Enterprise</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 30</div>
-      <div class="news-content">
-        <h3><a href="https://www.ft.com/technology" target="_blank">Coders Refusing to Work Without AI Sparks Hiring and Retention Crisis</a></h3>
-        <p>A growing number of software engineers are refusing to work without AI coding assistants, creating a new class of hiring and retention risks for enterprise organizations. Some developers report they won't take jobs where AI tooling is restricted, while others argue that coding without AI is an inefficient use of their skills. The trend mirrors earlier debates about Stack Overflow and Google access, but the dependency is more acute — AI code generation is becoming an expected productivity baseline rather than a perk.</p>
-        <div class="news-tags"><span>Workforce</span><span>AI Dependency</span><span>Coding</span><span>Hiring</span><span>Retention</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 30</div>
-      <div class="news-content">
-        <h3><a href="https://techcrunch.com/" target="_blank">Genesis AI Releases Genesis World 1.0 — Open Robotics Simulation Platform</a></h3>
-        <p>Genesis AI released Genesis World 1.0, a four-component open simulation platform covering physics, rendering, compilation, and tooling for robotics foundation model evaluation. The platform achieves a Pearson correlation of 0.8996 — meaning its simulated results closely match real-world outcomes. The release addresses a critical bottleneck in robotics AI: the gap between simulated training environments and physical deployment, which has historically caused robotics models to fail when transitioning from simulation to reality.</p>
-        <div class="news-tags"><span>Genesis AI</span><span>Robotics</span><span>Simulation</span><span>Open Source</span><span>Research</span></div>
-      </div>
-    </div>
-
-  </div>
-
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
@@ -344,4 +338,4 @@ new p5(function(p) {
 </script>
 {{< /rawhtml >}}
 
-<!-- update 1780140800 -->
+<!-- update 1780246400 -->
