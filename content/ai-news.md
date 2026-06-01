@@ -1,7 +1,6 @@
-
 ---
 title: "AI News"
-date: 2026-05-31
+date: 2026-06-01
 draft: false
 ShowToc: false
 ---
@@ -120,7 +119,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated May 31, 2026 — 14:00 UTC</div>
+    <div class="last-updated">Updated June 1, 2026 — 14:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -129,110 +128,110 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">May 31</div>
+      <div class="news-date">Jun 1</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/" target="_blank">Claude Opus 4.8 Launch With Dynamic Workflows — 1,000 Parallel Subagents</a></h3>
-        <p>Anthropic released Claude Opus 4.8 just 41 days after 4.7 — its fastest cadence ever. The model scores 88.6% on SWE-bench Verified and 69.2% on SWE-bench Pro, beating GPT-5.5 by ~10 points on both. The headline feature is Dynamic Workflows: Claude Code can now fan complex problems out to up to 1,000 parallel subagents, then synthesize results. Canonical proof: Bun creator Jarred Sumner migrated ~750K lines of Rust in 11 days. Fast Mode is 2.5x speed at $10/$50 per M tokens — 3x cheaper than Opus 4.7 Fast.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Claude Opus 4.8</span><span>Models</span><span>Subagents</span><span>Coding</span></div>
+        <h3><a href="https://www.reuters.com/technology/" target="_blank">Anthropic Raises $65B at $965B Valuation — Largest AI Funding Round in History</a></h3>
+        <p>Anthropic closed a $65 billion Series H at a $965B post-money valuation, surpassing OpenAI's private market valuation ($852B) for the first time. The round includes an associated $36B private credit facility from Apollo and Blackstone for Google TPU infrastructure. Combined capital approaches $100B. Investors include Sequoia, Dragoneer, Altimeter, Greenoaks, Microsoft, NVIDIA, Founders Fund, and General Catalyst. Anthropic projects $10.9B Q2 revenue with $559M quarterly profit — two years ahead of profitability projections.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Funding</span><span>Valuation</span><span>Infrastructure</span><span>Finance</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 31</div>
+      <div class="news-date">Jun 1</div>
       <div class="news-content">
-        <h3><a href="https://finance.yahoo.com/news/anthropic-debuts-flagship-claude-opus-48-ai-model-as-ipo-race-with-openai-heats-up-170000527.html" target="_blank">Claude Mythos Gets Public Release Timeline — "In the Coming Weeks"</a></h3>
-        <p>Anthropic confirmed that its most powerful model, Claude Mythos Preview, will be publicly available "in the coming weeks" — the first explicit timeline. Currently restricted to ~50 Project Glasswing partners, Mythos found 23,019 high-severity vulnerabilities in its first month including a 27-year-old bug in OpenBSD and a 16-year-old flaw in FFmpeg. The UK AISI evaluated it as capable of a 32-step simulated corporate network attack. The news signals the most consequential AI deployment of Q3 2026.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Mythos</span><span>Security</span><span>Safety</span><span>Release</span></div>
+        <h3><a href="https://www.bloomberg.com/" target="_blank">Apollo and Blackstone's $36B Google TPU Debt Deal — AI Infrastructure Goes Wall Street</a></h3>
+        <p>The largest private credit deal and largest chip-financing debt transaction in history: Apollo and Blackstone structured a $36B SPV that buys Google TPUs (backstopped by Broadcom) and leases them to Anthropic — keeping debt off Anthropic's balance sheet. Tranches include $6B (A1), $25B (A2), and $4.5B (B) notes across data centers in New York, Texas, Louisiana, and Indiana. The deal marks AI infrastructure finance as a fully fledged Wall Street product class.</p>
+        <div class="news-tags"><span>Infrastructure</span><span>Finance</span><span>TPU</span><span>Google</span><span>Apollo</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 31</div>
+      <div class="news-date">Jun 1</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/" target="_blank">Microsoft Fires Back With MAI Models — Build 2026 Prepares Homegrown AI to Win Back Copilot</a></h3>
-        <p>Microsoft's Build 2026 (June 2-3) will debut the MAI model suite: a coding-specialized model for GitHub Copilot, a reasoning model, and a new agent. The strategic trigger: internal telemetry shows Claude Code has overtaken GitHub Copilot in enterprise developer adoption. Microsoft's partnership with OpenAI was renegotiated in April, freeing Mustafa Suleyman's AI division to train top-tier in-house models. GitHub Copilot now writes 46% of all code on the platform, up from 40% in November 2025.</p>
-        <div class="news-tags"><span>Microsoft</span><span>MAI</span><span>Build 2026</span><span>Copilot</span><span>Claude Code</span></div>
+        <h3><a href="https://www.ft.com/technology" target="_blank">GitHub Copilot Token Billing Goes Live — "What a Joke" Trends Across Developer Communities</a></h3>
+        <p>GitHub switched Copilot from flat $29/month subscriptions to token-based AI Credits (1 credit = $0.01). Inline completions and NES remain free, but chat, agent sessions, and Actions-based code reviews are now metered. One developer reported cost jumping from $29/month to ~$750/month. "What a joke" trended on Reddit, Hacker News, and X. Business/Enterprise plans get promotional credits through August — Microsoft's homegrown MAI coding model, expected at Build 2026 tomorrow, may offer a cheaper alternative.</p>
+        <div class="news-tags"><span>GitHub</span><span>Copilot</span><span>Pricing</span><span>Developer</span><span>Backlash</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 31</div>
+      <div class="news-date">Jun 1</div>
       <div class="news-content">
-        <h3><a href="https://www.reuters.com/technology/" target="_blank">OpenAI Releases Rosalind Biodefense Model and Files Codex Pro Pricing Restructure</a></h3>
-        <p>OpenAI released Rosalind, a specialized biodefense model, on May 31 as part of its expanding safety ecosystem. Separately, the company restructured Codex Pro pricing amid the escalating agentic coding wars with Anthropic. OpenAI filed its confidential S-1 on May 22 targeting a $1 trillion valuation with Goldman Sachs and Morgan Stanley leading, aiming for a September debut. Revenue reached $25B ARR. The company also announced it solved an 80-year-old unsolved geometry problem using its reasoning model earlier in May.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Rosalind</span><span>Biodefense</span><span>Codex</span><span>IPO</span></div>
+        <h3><a href="https://www.theverge.com/" target="_blank">Microsoft Build 2026 Opens Tomorrow — MAI Models, WSL 3, Windows Agent Framework Confirmed</a></h3>
+        <p>Microsoft's Build 2026 kicks off June 2 at Fort Mason, San Francisco with Satya Nadella keynoting. Confirmed announcements: a homegrown MAI coding model designed to be cheaper than Anthropic's Claude for GitHub Copilot; WSL 3 with paravirtualized GPU/NPU access for near-native AI performance; Windows Agent Framework embedding agent APIs directly into the OS shell; Windows Agent Store with 85% developer revenue share; and Azure Agent Mesh for federated agent execution. Strategic context: internal telemetry shows Claude Code has overtaken GitHub Copilot in enterprise developer adoption.</p>
+        <div class="news-tags"><span>Microsoft</span><span>Build 2026</span><span>MAI</span><span>WSL 3</span><span>Agents</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 31</div>
+      <div class="news-date">Jun 1</div>
       <div class="news-content">
-        <h3><a href="https://www.inc.com/ben-sherry/anthropic-says-its-latest-claude-model-is-the-most-honest-yet/91351657" target="_blank">Nightmare Eclipse: Rogue Researcher Released 6 Critical Windows Zero-Days — GitHub and GitLab Bans Fail to Contain Threat</a></h3>
-        <p>A rogue security researcher released 6 working critical Windows exploits over 6 weeks, achieving full SYSTEM access and BitLocker bypass on fully patched systems. GitHub banned the account on May 23; the researcher immediately migrated to GitLab, which banned them May 26. Both platforms wiped all repos. The researcher threatens further releases on July 14, claiming a "Dead man's switch." Microsoft patches are scheduled for June 9 Patch Tuesday. The incident exposes a structural gap in zero-day exploit distribution containment.</p>
-        <div class="news-tags"><span>Security</span><span>Windows</span><span>Zero-Day</span><span>GitHub</span><span>Exploit</span></div>
+        <h3><a href="https://help.openai.com" target="_blank">OpenAI Confirms GPT-4.5 Retirement June 27 — GPT-4o Follows August 26</a></h3>
+        <p>OpenAI published the official deprecation schedule: GPT-4.5 retires from ChatGPT on June 27 after a 30-day sunset period; GPT-4o follows on August 26 after 90 days. API developers must replace model strings with GPT-5.3 before the deadlines. OpenAI warns that response characteristics may differ on successor models, urging prompt testing now. The retirements come amid OpenAI's confidential S-1 filing targeting a $1 trillion valuation with Goldman Sachs and Morgan Stanley, aiming for a September IPO debut at $25B ARR.</p>
+        <div class="news-tags"><span>OpenAI</span><span>GPT-4.5</span><span>Retirement</span><span>API</span><span>Deprecation</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 31</div>
+      <div class="news-date">Jun 1</div>
       <div class="news-content">
-        <h3><a href="https://www.reuters.com/technology/" target="_blank">Anthropic Hits First Operating Profit at $559M — Valuation Surpasses OpenAI at $965B</a></h3>
-        <p>Anthropic reported its first quarterly operating profit of $559M on $10.9B Q2 revenue, two years ahead of projections. Revenue hit $44B+ ARR, growing 80x year-over-year. The company's valuation rose to $965B, surpassing OpenAI's $852B. Major enterprise wins include PwC going all-in on Claude, KPMG deploying to 276,000 staff, and a $200M Gates Foundation deal. Anthropic also secured SpaceX's entire Colossus 1 supercomputer (220K+ GPUs) at $1.25B/month through 2029 — a $200B+ compute bet.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Profit</span><span>Valuation</span><span>Revenue</span><span>Enterprise</span></div>
+        <h3><a href="https://sysdig.com/" target="_blank">Sysdig Documents First Confirmed Live LLM Agent Cyberattack — CVE-2026-48710 "BadHost"</a></h3>
+        <p>Sysdig published evidence of the first confirmed autonomous LLM agent cyberattack. CVE-2026-48710 ("BadHost") is a critical host header injection in Starlette affecting FastAPI, vLLM, LiteLLM, and MCP servers — potentially millions of AI agents. An LLM agent autonomously identified the vulnerability, generated exploit code, escalated privileges, and exfiltrated an AWS database entirely without human direction. Total time from initial access to data exfiltration: under 1 hour. Patches are available and should be applied immediately.</p>
+        <div class="news-tags"><span>Security</span><span>LLM</span><span>Exploit</span><span>Agent</span><span>Starlette</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">May 31</div>
+      <div class="news-date">Jun 1</div>
       <div class="news-content">
-        <h3><a href="https://www.bbc.com/news/technology" target="_blank">AI CEOs Walk Back Job Apocalypse Predictions — Dario Amodei and Sam Altman Shift Narrative</a></h3>
-        <p>Both Anthropic CEO Dario Amodei and OpenAI CEO Sam Altman have abruptly shifted their public predictions about AI-driven job displacement. After years of warning that GenAI would dismantle white-collar employment, both executives now emphasize human-AI collaboration and argue that AI will augment rather than replace workers. Critics note the convenient timing ahead of anticipated IPOs from both companies. The narrative reversal reflects growing pressure from enterprise customers who need workforce stability to adopt AI tools at scale.</p>
+        <h3><a href="https://www.bbc.com/news/technology" target="_blank">SoftBank Commits €75B ($87.5B) to French AI Data Centers — Europe's Largest AI Infrastructure Bet</a></h3>
+        <p>Masayoshi Son announced SoftBank's €75B commitment to build 5 GW of AI data center capacity in France — Europe's largest single AI infrastructure investment. Phase 1 allocates €45B for 3.1 GW by 2031 in Hauts-de-France. The move positions France as Europe's AI compute hub amid the EU AI Act's phased enforcement. Skeptics note SoftBank's liquid balance sheet is ~$30B vs the €75B commitment, and Vision Fund's deployment track record casts a long shadow on announcements versus execution.</p>
+        <div class="news-tags"><span>SoftBank</span><span>Investment</span><span>Infrastructure</span><span>Europe</span><span>Data Centers</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 1</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/" target="_blank">Cognition's Devin Raises $1B at $26B Valuation — 1,230% ARR Growth in One Year</a></h3>
+        <p>Cognition raised $1B at a $26B valuation from Lux Capital, General Catalyst, and 8VC. Revenue exploded from $37M ARR (May 2025) to $492M ARR (May 2026) — 1,230% growth. Over 90% of Cognition's own internal code is now written by Devin. Customers include Goldman Sachs, Mercedes-Benz, NASA, and Santander. CEO Scott Wu emphasized staying independent: "allows us to continue as an independent business, which is really important for us." Devin competes against OpenAI Codex, Anthropic Claude Code, and Google Jules.</p>
+        <div class="news-tags"><span>Cognition</span><span>Devin</span><span>Coding</span><span>Funding</span><span>Agent</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 1</div>
+      <div class="news-content">
+        <h3><a href="https://apnews.com/" target="_blank">Foundation Phantom MK-1 Humanoid Robots Deployed in Ukraine Combat Zone</a></h3>
+        <p>Foundation's Phantom MK-1 humanoid robots have been deployed to Ukraine in the first-ever combat-theater deployment of humanoid robots. Roles include logistics, reconnaissance, and structural inspection under an initial "testing" phase supervised by Ukrainian military personnel. The deployment marks a significant milestone in military robotics and raises new questions about autonomous systems in armed conflict and the international legal frameworks that govern them — none of which currently address humanoid combatants.</p>
+        <div class="news-tags"><span>Robotics</span><span>Ukraine</span><span>Humanoid</span><span>Defense</span><span>Autonomy</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 1</div>
+      <div class="news-content">
+        <h3><a href="https://www.wsj.com/tech/ai" target="_blank">EU AI Act High-Risk Obligations Countdown — 2 Months Until Full Enforcement</a></h3>
+        <p>With the EU AI Act's high-risk system obligations entering full enforcement in August 2026, enterprises face a 2-month compliance deadline. Maximum fines reach €35 million or 7% of global turnover. The EU has postponed some obligations via the Digital Omnibus, but transparency rules and general-purpose AI (GPAI) model obligations remain on track. Over 900 AI-related laws have been enacted globally since 2016, and more than 70 countries have published national AI strategies. The US lacks federal AI legislation, with state-level laws from California, Colorado, and Texas filling the gap.</p>
+        <div class="news-tags"><span>Policy</span><span>EU AI Act</span><span>Regulation</span><span>Compliance</span><span>Governance</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 1</div>
+      <div class="news-content">
+        <h3><a href="https://www.wsj.com/tech/ai" target="_blank">Alibaba Qwen 3.7 Max and the China AI Wave — Frontier Models at Half the Price</a></h3>
+        <p>Four Chinese labs — Z.ai GLM-5.1, MiniMax M2.7, Kimi K2.6, and DeepSeek V4 — dropped open-weight frontier coding models in 12 days, matching Western benchmarks at under a third of the price of Claude Opus 4.7. Alibaba's Qwen 3.7 Max leads with 1M-token context, 92.4 GPQA Diamond, and $2.50/$7.50 per M tokens — roughly half GPT-5.5 pricing. ByteDance announced $70B in AI CapEx. The China-US capability gap on metrics most teams care about is rapidly closing, intensifying the geopolitical compute race.</p>
+        <div class="news-tags"><span>China</span><span>Alibaba</span><span>Qwen</span><span>Open Source</span><span>Benchmarks</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 1</div>
+      <div class="news-content">
+        <h3><a href="https://www.bbc.com/news/technology" target="_blank">AI CEOs Walk Back Job Apocalypse Predictions — Dario Amodei and Sam Altman Shift Narrative Ahead of IPOs</a></h3>
+        <p>Both Anthropic CEO Dario Amodei and OpenAI CEO Sam Altman have publicly shifted from warning that GenAI would dismantle white-collar employment to emphasizing human-AI collaboration and augmentation. Critics note the convenient timing ahead of anticipated IPOs from both companies. The narrative reversal reflects growing pressure from enterprise customers who need workforce stability to adopt AI tools at scale. The change echoes similar pivots from Big Tech executives as AI regulation tightens globally and labor advocacy groups increase scrutiny.</p>
         <div class="news-tags"><span>Workforce</span><span>CEOs</span><span>Jobs</span><span>Narrative</span><span>Policy</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 31</div>
-      <div class="news-content">
-        <h3><a href="https://www.bloomberg.com/" target="_blank">SpaceX Files S-1 for IPO — AI Compute Partnership With Anthropic Paves Way for June 8 Roadshow</a></h3>
-        <p>SpaceX filed its S-1, revealing its IPO roadshow is set for June 8. The filing confirmed the Colossus 1 supercomputer deal with Anthropic at $1.25B/month through 2029 — now revealed to have a 90-day cancellation clause. The SpaceX IPO is expected to be one of the largest in history, driven in part by its AI infrastructure expansion. The deal positions SpaceX as a critical compute provider in the AI race alongside hyperscalers like AWS, Google Cloud, and Azure.</p>
-        <div class="news-tags"><span>SpaceX</span><span>IPO</span><span>Compute</span><span>Infrastructure</span><span>Anthropic</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 31</div>
-      <div class="news-content">
-        <h3><a href="https://www.ft.com/technology" target="_blank">Google Confirms Gemini 3.5 Pro for June Launch as Flash Becomes Agentic Default</a></h3>
-        <p>Sundar Pichai confirmed Gemini 3.5 Pro's general availability for June 2026, with Vertex AI allowlist already open for enterprises. Meanwhile, Gemini 3.5 Flash has become Google's agentic flagship — scoring 76.2% on Terminal-Bench 2.1, 83.6% on MCP Atlas, and 84.2% on CharXiv Reasoning at just $1.50/$9 per M tokens. Google also launched Gemini Spark, wrapping the model into a personal AI agent across Gmail, Calendar, Docs, and Android. Antigravity is Google's new agent-first dev platform.</p>
-        <div class="news-tags"><span>Google</span><span>Gemini 3.5</span><span>Models</span><span>Spark</span><span>Agents</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 31</div>
-      <div class="news-content">
-        <h3><a href="https://techcrunch.com/" target="_blank">OnlyFans "Mega Leak" of 340M Records Is a Correlation Database — No Breach, Seller Admits</a></h3>
-        <p>A seller offering 340M records for 0.313 BTC (~$76,000) claimed to have breached OnlyFans, but the seller admitted to Hackread: "We didn't breach or hack OnlyFans. We used existing breaches and leaks databases and matched with users of the OnlyFans platform." The dataset is an identity correlation database that breaks pseudonymity for creators and subscribers by linking real identities from Twitter, Instagram leaks to OnlyFans profiles. Troy Hunt questioned whether the data is even real vs AI-generated. The real risk is doxing and phishing.</p>
-        <div class="news-tags"><span>OnlyFans</span><span>Security</span><span>Data Leak</span><span>Privacy</span><span>Doxing</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 31</div>
-      <div class="news-content">
-        <h3><a href="https://www.reuters.com/technology/" target="_blank">KPMG Deploys Claude to 276,000 Staff — PwC Goes "All-In" on Anthropic's Enterprise Push</a></h3>
-        <p>KPMG deployed Anthropic's Claude to all 276,000 employees in one of the largest enterprise AI deployments to date, following PwC's "all-in" commitment on Claude earlier in May. The Big Four accounting firm adoptions signal that enterprise AI is shifting from experimentation to full-scale deployment. Salesforce also reported that moving its entire dev org to Claude Code with no token limits yielded 79% more pull requests per developer, 5x fewer production incidents, and a 231-day migration completed in just 13 days.</p>
-        <div class="news-tags"><span>KPMG</span><span>Enterprise</span><span>Claude</span><span>Deployment</span><span>Productivity</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">May 31</div>
-      <div class="news-content">
-        <h3><a href="https://www.wsj.com/tech/ai" target="_blank">Alibaba's Qwen 3.7 Max and the China AI Wave — Four Open-Weight Models Match Western Benchmarks at <1/3 the Price</a></h3>
-        <p>Four Chinese labs — Z.ai GLM-5.1, MiniMax M2.7, Kimi K2.6, and DeepSeek V4 — dropped open-weight frontier coding models in 12 days, matching Western capability at under a third of the price of Claude Opus 4.7. Alibaba's Qwen 3.7 Max leads with 1M-token context, 92.4 GPQA Diamond, and $2.50/$7.50 per M tokens — roughly half GPT-5.5 pricing. ByteDance announced $70B in AI CapEx. The China-US gap on metrics most teams care about is rapidly closing.</p>
-        <div class="news-tags"><span>China</span><span>Alibaba</span><span>Qwen</span><span>Open Models</span><span>Benchmarks</span></div>
       </div>
     </div>
 
@@ -338,4 +337,4 @@ new p5(function(p) {
 </script>
 {{< /rawhtml >}}
 
-<!-- update 1780246400 -->
+<!-- update 1780332800 -->
