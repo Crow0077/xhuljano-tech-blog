@@ -1,25 +1,39 @@
 <style>
 #hero-wrap{width:100%;height:100vh;max-height:900px;background:#020208;position:relative;overflow:hidden}
-#hero-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0.85}
+#hero-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0.9}
 #hero-overlay{position:absolute;inset:0;
-  background:radial-gradient(ellipse at center,rgba(0,0,0,0) 30%,rgba(2,2,8,0.85) 100%),
-  linear-gradient(to bottom,rgba(0,20,40,0.1) 0%,transparent 50%,rgba(2,2,8,0.4) 100%);
+  background:linear-gradient(to right,rgba(2,2,8,0.85) 0%,rgba(2,2,8,0.4) 40%,rgba(2,2,8,0.1) 70%,rgba(2,2,8,0.3) 100%);
 }
-#hero-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;z-index:10;width:90%;max-width:800px}
-#hero-text h1{font-family:'SF Mono','Fira Code','JetBrains Mono',monospace;font-size:2.8rem;color:rgba(255,255,255,0.95);margin:0;letter-spacing:-1px;text-shadow:0 0 60px rgba(100,180,255,0.2),0 0 120px rgba(100,180,255,0.08)}
-#hero-text p{font-family:'SF Mono','Fira Code','JetBrains Mono',monospace;font-size:0.85rem;color:rgba(180,200,240,0.75);margin-top:12px;letter-spacing:3px;text-transform:uppercase}
-#hero-cta{display:inline-block;margin-top:28px;padding:0.75rem 2rem;
-  font-family:'SF Mono','Fira Code',monospace;font-size:0.8rem;letter-spacing:2px;text-transform:uppercase;
-  color:#fff;background:linear-gradient(135deg,rgba(100,180,255,0.15),rgba(100,180,255,0.05));
-  border:1px solid rgba(100,180,255,0.3);border-radius:8px;text-decoration:none;
-  transition:all 0.3s ease;backdrop-filter:blur(4px)}
-#hero-cta:hover{background:linear-gradient(135deg,rgba(100,180,255,0.25),rgba(100,180,255,0.1));
-  border-color:rgba(100,180,255,0.6);transform:translateY(-2px);box-shadow:0 8px 30px rgba(100,180,255,0.15)}
-#hero-credit{position:absolute;bottom:48px;right:20px;z-index:10;font-family:monospace;font-size:0.6rem;color:rgba(255,255,255,0.2);text-transform:uppercase;letter-spacing:2px}
+#hero-text{position:absolute;top:50%;left:8%;transform:translateY(-50%);z-index:10;max-width:520px}
+#hero-card{background:rgba(6,6,14,0.55);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border:1px solid rgba(100,180,255,0.08);border-radius:16px;padding:2.5rem 2.8rem;
+  box-shadow:0 20px 60px rgba(0,0,0,0.4)}
+#hero-card h1{font-family:'SF Mono','Fira Code','JetBrains Mono',monospace;font-size:2.6rem;
+  color:rgba(255,255,255,0.95);margin:0 0 0.6rem 0;letter-spacing:-1px;line-height:1.15}
+#hero-card .subtitle{font-family:'SF Mono','Fira Code','JetBrains Mono',monospace;font-size:0.75rem;
+  color:rgba(180,200,240,0.65);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:1.2rem}
+#hero-card .bio{font-size:0.85rem;color:rgba(160,180,210,0.6);line-height:1.6;margin-bottom:1.5rem}
+#hero-cta{display:inline-flex;align-items:center;gap:8px;padding:0.7rem 1.8rem;
+  font-family:'SF Mono','Fira Code',monospace;font-size:0.8rem;letter-spacing:1.5px;text-transform:uppercase;
+  color:#fff;background:linear-gradient(135deg,rgba(100,180,255,0.18),rgba(100,180,255,0.06));
+  border:1px solid rgba(100,180,255,0.25);border-radius:8px;text-decoration:none;
+  transition:all 0.3s ease}
+#hero-cta:hover{background:linear-gradient(135deg,rgba(100,180,255,0.3),rgba(100,180,255,0.12));
+  border-color:rgba(100,180,255,0.5);transform:translateY(-2px);box-shadow:0 8px 30px rgba(100,180,255,0.12)}
+#hero-cta .arrow{transition:transform 0.3s ease;display:inline-block}
+#hero-cta:hover .arrow{transform:translateX(4px)}
+#hero-credit{position:absolute;bottom:14px;right:18px;z-index:10;font-family:monospace;font-size:0.55rem;color:rgba(255,255,255,0.18);text-transform:uppercase;letter-spacing:1.5px}
 #scroll-indicator{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);z-index:10;
-  display:flex;flex-direction:column;align-items:center;gap:4px;opacity:0.4;animation:float 2s ease-in-out infinite}
-#scroll-indicator span{display:block;width:1px;height:24px;background:linear-gradient(to bottom,rgba(180,200,240,0.6),transparent)}
+  display:flex;flex-direction:column;align-items:center;gap:4px;opacity:0.35;animation:float 2s ease-in-out infinite}
+#scroll-indicator span{display:block;width:1px;height:20px;background:linear-gradient(to bottom,rgba(180,200,240,0.5),transparent)}
 @keyframes float{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+
+@media (max-width:768px){
+  #hero-text{left:5%;right:5%;max-width:none}
+  #hero-card{padding:1.5rem}
+  #hero-card h1{font-size:1.8rem}
+  #hero-credit{display:none}
+}
 </style>
 <div id="hero-wrap">
   <video id="hero-video" autoplay loop muted playsinline preload="auto">
@@ -27,9 +41,14 @@
   </video>
   <div id="hero-overlay"></div>
   <div id="hero-text">
-    <h1>Building with AI Agents</h1>
-    <p>Cloud Engineering Student · AI Agents · MCP · Homelab</p>
-    <a href="{{ "projects/" | absURL }}" id="hero-cta">Explore My Work →</a>
+    <div id="hero-card">
+      <h1>Building with<br>AI Agents</h1>
+      <div class="subtitle">Cloud Engineering Student · AI Agents · MCP · Homelab</div>
+      <p class="bio">I design and deploy autonomous AI infrastructure — 8 MCP servers on RKE2 K8s, Blender 3D pipelines driven by agents, and self-healing homelab systems. CompTIA A+ certified.</p>
+      <a href="{{ "projects/" | absURL }}" id="hero-cta">
+        Explore My Work <span class="arrow">→</span>
+      </a>
+    </div>
   </div>
   <div id="hero-credit">3D Render — Blender 5.1 · MCP Server · RTX 4080 Super</div>
   <div id="scroll-indicator"><span></span></div>
