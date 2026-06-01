@@ -22,7 +22,7 @@ buildDrafts = false
   
   [params.homeInfoParams]
     Title = "Building with AI Agents"
-    Content = "Cloud engineering student building real infrastructure — AI agents, MCP servers on RKE2 K8s, homelab automation, and self-hosted services. CompTIA A+ certified. Currently at Amazon, building toward AI Platform Engineer."
+    Content = "Cloud engineering student building real infrastructure — 56-pod RKE2 K8s cluster, 8 MCP servers (60+ tools), Blender 3D + AI pipeline, autonomous security auditing. CompTIA A+ certified. Building toward AI Platform Engineer."
   
   [[params.socialIcons]]
     name = "github"

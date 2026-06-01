@@ -1,2 +1,41 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/favicon.svg">
+<style>
+/* Premium accent color — cyan/blue */
+:root {
+  --accent: 100, 180, 255;
+  --accent-dim: 60, 80, 140;
+  --bg-deeper: #020208;
+}
+html { scroll-behavior: smooth; }
+
+/* PaperMod overrides for premium feel */
+.main { padding-top: 0 !important; }
+.post-entry { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.post-entry:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(100,180,255,0.06); }
+
+/* Better selection color */
+::selection { background: rgba(var(--accent), 0.3); }
+
+/* Subtle link underline animation */
+a:not(.header-nav a):not(.post-title):not(.card-link):not(.connect-links a) { 
+  text-decoration: none; 
+  background-image: linear-gradient(transparent calc(100% - 1px), rgba(var(--accent), 0.3) 1px);
+  background-size: 0 100%; background-repeat: no-repeat; transition: background-size 0.3s;
+}
+a:not(.header-nav a):not(.post-title):not(.card-link):not(.connect-links a):hover { background-size: 100% 100%; }
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-deeper); }
+::-webkit-scrollbar-thumb { background: rgba(var(--accent), 0.15); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(var(--accent), 0.3); }
+
+/* Smooth fade-in for page content */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+.main > * { animation: fadeIn 0.4s ease forwards; }
+
+/* Dark theme optimization for PaperMod */
+:root { --code-bg: #0a0a14; }
+.dark { --theme: #06060e; --entry: #0c0c18; --border: #181828; }
+</style>

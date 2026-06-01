@@ -16,9 +16,10 @@ I'm Xhuljano — a cloud engineering student building real infrastructure with A
 
 ## What I'm Building
 
-- **Homelab infrastructure** — Fedora Server, RKE2 Kubernetes cluster, 8 MCP servers (6 on K8s + 2 systemd)
-- **MCP servers** — Model Context Protocol tools deployed as K8s deployments with hostNetwork for AI agent integration
-- **AI agents** — Autonomous workflows for homelab monitoring, trading, and deployment via Hermes Agent
+- **Homelab infrastructure** — Fedora Server, RKE2 Kubernetes cluster (56 pods), Longhorn storage, MetalLB, Traefik
+- **MCP servers** — 8 MCP servers (6 on K8s + 2 systemd) with Streamable HTTP transport — arxiv, backup, firecrawl, homelab, sentinel, youtube, immune, logs
+- **AI agents** — Autonomous workflows for homelab monitoring, security auditing, and content ingestion via Hermes Agent
+- **3D + AI** — Blender MCP pipeline: agent-driven 3D scene creation, Cycles rendering on RTX 4080 Super, portfolio hero videos
 - **Portfolio projects** — Real infrastructure, not tutorials
 
 ## Tech Stack
