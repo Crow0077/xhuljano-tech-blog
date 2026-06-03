@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-06-02
+date: 2026-06-03
 draft: false
 ShowToc: false
 ---
@@ -119,7 +119,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated June 2, 2026 — 16:00 UTC</div>
+    <div class="last-updated">Updated June 3, 2026 — 16:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -128,110 +128,110 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">Jun 2</div>
+      <div class="news-date">Jun 3</div>
       <div class="news-content">
-        <h3><a href="https://www.cnbc.com/2026/06/02/microsoft-build-2026-keynote.html" target="_blank">Microsoft Build 2026 Opens — Project Polaris Cuts OpenAI Dependency, Windows Agent Framework 1.0 Ships</a></h3>
-        <p>Satya Nadella kicked off Build 2026 at Fort Mason, San Francisco with landmark announcements: Project Polaris — Microsoft's own MoE coding model — becomes the default for GitHub Copilot in August 2026, replacing GPT-4 Turbo. Windows Agent Framework 1.0 reaches GA with an Agent Store offering 85% developer revenue share (Adobe, Zoom as launch partners). WSL 3 ships with paravirtualized GPU/NPU access for near-native Linux AI performance. Azure Agent Mesh announced for federated agent execution across hybrid environments (GA Q4 2026). "Windows is no longer a platform for human users only — agents are now first-class citizens," Nadella said.</p>
-        <div class="news-tags"><span>Microsoft</span><span>Build 2026</span><span>Polaris</span><span>Agents</span><span>Windows</span></div>
+        <h3><a href="https://news.microsoft.com/source/features/innovation/majorana-2-microsoft-discovery-agentic-ai" target="_blank">Microsoft Build Day 2: Majorana 2 Quantum Chip, MAI-Thinking-1, and Mayo Clinic Health AI</a></h3>
+        <p>Microsoft unloaded a second wave of announcements at Build Day 2 in San Francisco. Majorana 2 — the next-gen topological quantum chip — claims a 1,000x qubit reliability improvement and pushes Microsoft's timeline to a "scalable quantum computer by 2029." Mustafa Suleyman unveiled MAI-Thinking-1, Microsoft's first flagship reasoning model trained "from the ground up on clean data, without distillation," matching Claude Sonnet 4.6 in blind human preference evaluations. Aion 1.0 Instruct and Aion 1.0 Plan (14B) shipped for on-device Windows agents. The Surface RTX Spark Dev Box with 1 petaflop of AI power was unveiled, and Microsoft Discovery hit general availability. Big bet: Azure AI Foundry pricing will undercut Anthropic Sonnet.</p>
+        <div class="news-tags"><span>Microsoft</span><span>Build 2026</span><span>Quantum</span><span>MAI-Thinking-1</span><span>Mayo Clinic</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 2</div>
+      <div class="news-date">Jun 3</div>
       <div class="news-content">
-        <h3><a href="https://www.cnbc.com/2026/06/01/alphabet-to-raise-80-billion-from-stock-sales-to-fund-ai-buildout.html" target="_blank">Alphabet to Raise $80B in Stock Sales to Fund AI Infrastructure Buildout</a></h3>
-        <p>Alphabet announced plans to sell $80 billion in stock — including a $10 billion commitment from Warren Buffett's Berkshire Hathaway — to fund AI infrastructure expansion. The move underscores the staggering capital intensity of the AI arms race, with hyperscalers now borrowing at historic levels to keep pace with compute demand. Alphabet said the capital will fund investments in its world-class AI infrastructure, data centers, and compute capacity to meet surging enterprise and consumer demand for AI services.</p>
-        <div class="news-tags"><span>Alphabet</span><span>Google</span><span>Infrastructure</span><span>Finance</span><span>Investment</span></div>
+        <h3><a href="https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-and-microsoft-collaborate-to-develop-a-frontier-ai-model-for-healthcare/" target="_blank">Mayo Clinic + Microsoft Announce Frontier Health AI Model — Trained on De-Identified Clinical Data</a></h3>
+        <p>Mayo Clinic and Microsoft formalized a strategic collaboration to build and deploy a frontier AI model for healthcare. The model will be owned by Mayo Clinic, trained on de-identified clinical data, longitudinal records, and Mayo's medical expertise, and deployed on Azure. The move positions Mayo against OpenAI's HealthBench and Google's MedLM as hospitals race to bring clinically-vetted AI into patient workflows. The partnership also gives Microsoft a credible reference deployment in a sector where regulatory scrutiny and accuracy requirements are far higher than consumer chatbots.</p>
+        <div class="news-tags"><span>Healthcare</span><span>Mayo Clinic</span><span>Microsoft</span><span>Clinical AI</span><span>Partnership</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 2</div>
+      <div class="news-date">Jun 3</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/2026/06/02/anthropic-ipo-filing" target="_blank">Anthropic Files for IPO — $965B Valuation, First Major AI Startup to Go Public</a></h3>
-        <p>Anthropic has officially filed an S-1 with the SEC, beating OpenAI in the race to go public with a post-money valuation of $965 billion — making it the world's most valuable startup. The IPO will be a defining test of investor appetite for pure-play AI companies. The filing comes after Anthropic's record $65B Series H round last week, which included a $36B private credit facility from Apollo and Blackstone for Google TPU infrastructure. Anthropic projects $10.9B Q2 revenue with $559M quarterly profit.</p>
-        <div class="news-tags"><span>Anthropic</span><span>IPO</span><span>Valuation</span><span>Finance</span><span>Public Markets</span></div>
+        <h3><a href="https://www.cnbc.com/2026/06/01/stargate-project-michigan-live-updates.html" target="_blank">Sam Altman at Stargate Michigan: Coding Models Are the Single Biggest Driver of AI Demand</a></h3>
+        <p>In his most substantive interview of 2026, OpenAI CEO Sam Altman toured the $16B Stargate Saline Township data center under construction with Oracle and named coding models as the #1 demand driver. He warned that enterprise AI spend is being wasted by companies lacking a clear use case, pushed back on the US-China AI race framing, and reaffirmed a human-centered work philosophy. The interview sets the tone for OpenAI's commercial strategy as GPT-5.6 ships later this month and the new robotics division ramps up.</p>
+        <div class="news-tags"><span>OpenAI</span><span>Stargate</span><span>Altman</span><span>Infrastructure</span><span>Coding</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 2</div>
+      <div class="news-date">Jun 3</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/06/01/florida-sues-openai-sam-altman/" target="_blank">Florida Sues OpenAI and Sam Altman in First-of-Its-Kind State Lawsuit Over ChatGPT-Linked Violence</a></h3>
-        <p>Florida Attorney General James Uthmeier filed a civil lawsuit against OpenAI and CEO Sam Altman, alleging the company knowingly released ChatGPT while concealing serious risks. The suit cites two violent incidents: a mass shooting at Florida State University where the gunman allegedly used ChatGPT during planning, and another fatal incident. It's the first state-level legal action of its kind against an AI company, and the case could reshape how courts assign responsibility when AI products are implicated in real-world tragedies. Florida has also opened a separate criminal probe into OpenAI.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Florida</span><span>Lawsuit</span><span>Safety</span><span>Policy</span></div>
+        <h3><a href="https://www.theverge.com/policy/942296/google-water-commitments-data-centers" target="_blank">Google Commits to Net-Positive Water Use by 2030 — Five New Data Center Sustainability Pledges</a></h3>
+        <p>Google unveiled five water-stewardship commitments for its AI data centers, headlined by a pledge to become "water positive" by 2030 — replenishing more freshwater than it consumes. Google will also expand local infrastructure investment in data center host communities, increase transparency around per-site water usage, and back ecosystem restoration projects. The move responds to growing local pushback in Loudoun County, Mesa, and The Dalles where Google data centers used 8.1B gallons in 2024. It also sets a benchmark for Microsoft, Amazon, and Meta hyperscaler disclosures.</p>
+        <div class="news-tags"><span>Google</span><span>Sustainability</span><span>Data Centers</span><span>Water</span><span>Policy</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 2</div>
+      <div class="news-date">Jun 3</div>
       <div class="news-content">
-        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-june-2-2026" target="_blank">NVIDIA Nemotron 3 Ultra — 550B MoE Open-Weight Model Ships June 4 at Computex</a></h3>
-        <p>NVIDIA unveiled Nemotron 3 Ultra at Computex 2026: a 550B total / 55B active parameter MoE model delivering 300+ output tokens/second — 3-6x faster than comparable Chinese open models. It claims the #1 US open-weights position (Intelligence Index of 48), though still behind China's Kimi K2.6 (Index #1). Full weights, training recipes, and 2.5T pre-training tokens released. Ships June 4 on Hugging Face, ModelScope, OpenRouter, and NVIDIA NIM. A "Nemotron Coalition" of 8 labs including Mistral and Perplexity is already at work on Nemotron 4.</p>
-        <div class="news-tags"><span>NVIDIA</span><span>Nemotron</span><span>Open Source</span><span>MoE</span><span>Computex</span></div>
+        <h3><a href="https://www.wsj.com/business/earnings/gitlab-to-cut-14-of-workforce-as-part-of-ai-pivot-493b9813" target="_blank">GitLab Lays Off 350 Staff (14%) and Exits 22 Countries in AI-First Pivot</a></h3>
+        <p>GitLab announced it is cutting 350 full-time employees — 14% of its workforce — and exiting 22 countries as part of a strategic pivot to become an "AI-focused enterprise software development platform." CEO Bill Staples framed the restructuring as an investment in the agentic era, with R&D reorganized into 60 smaller autonomous teams and management layers flattened. The cuts will incur $30-35M in one-time severance charges, even as GitLab reported stronger revenue growth and improved profit guidance. The move joins Meta, LinkedIn, and other Bay Area peers in an AI-driven workforce reset.</p>
+        <div class="news-tags"><span>GitLab</span><span>Layoffs</span><span>Restructuring</span><span>DevTools</span><span>AI Pivot</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 2</div>
+      <div class="news-date">Jun 3</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/06/02/pentagon-microsoft-azure-agent-mesh-422m/" target="_blank">Pentagon Signs $422M Azure Agent Mesh Deal — Largest Government AI Deployment on Public Cloud</a></h3>
-        <p>The Department of Defense signed a landmark $422M enterprise agreement with Microsoft built on the newly announced Azure Agent Mesh platform. The deal will automate logistics, procurement, and administrative workflows, with agents running inference locally via Windows IoT Enterprise and Azure Stack HCI to meet DoD data residency requirements. Expected to save the DoD $422M annually. Siemens and Rockwell Automation demonstrated a "digital shift supervisor" adjusting assembly lines in real-time. The deal provides a critical reference deployment for other government buyers ahead of Azure Agent Mesh GA in Q4 2026.</p>
-        <div class="news-tags"><span>Pentagon</span><span>Defense</span><span>Azure</span><span>Government</span><span>Automation</span></div>
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-06-03-suno-400m-bond-round" target="_blank">Suno Raises $400M at $5.4B — AI Music Hits Unicorn-Tier as Subscribers Double</a></h3>
+        <p>AI music startup Suno closed a $400M Series led by Bond at a $5.4B post-money valuation — more than double its $2.45B mark from November 2025. The company passed 2M paying subscribers in February and continues to ship tens of millions of generated tracks per month. The raise signals a maturation of generative music as a category, with implications for rights holders, streaming royalties, and the broader creator economy. Suno's growth also raises fresh questions about training-data licensing and output attribution as labels push for stronger AI music regulation.</p>
+        <div class="news-tags"><span>Suno</span><span>AI Music</span><span>Funding</span><span>Generative Audio</span><span>Valuation</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 2</div>
+      <div class="news-date">Jun 3</div>
       <div class="news-content">
-        <h3><a href="https://robohorizon.com/en-us/news/2026/06/openai-is-building-robots-again/" target="_blank">OpenAI Relaunches Robotics Division — Building Humanoid Robots After Figure Breakup</a></h3>
-        <p>Sam Altman announced OpenAI is officially back in the robotics business with a new division staffing up to build humanoid robots capable of "helping people in the physical world." The move comes months after a very public breakup with humanoid robotics startup Figure. OpenAI Robotics is hiring full-stack hardware engineers and aims to push beyond software agents into embodied AI — a domain where China currently leads on industrial-robot deployment. The effort is described as a multi-year talent and capital commitment rather than a near-term product play.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Robotics</span><span>Humanoid</span><span>Hardware</span><span>Embodied AI</span></div>
+        <h3><a href="https://blog.zutacore.com/press-releases/zutacore-100m-series-c-funding-ai-data-center-cooling" target="_blank">ZutaCore Raises $100M Series C for Waterless Liquid Cooling — AI Data Center Heat Crisis</a></h3>
+        <p>Israeli direct-to-chip liquid cooling startup ZutaCore closed a $100M Series C at a $600M valuation, led by Mitsubishi Electric, Samsung Ventures, and Carrier. ZutaCore's waterless two-phase cooling targets the thermal bottleneck of next-gen AI chips — Blackwell, MI400-class accelerators — that are pushing air and water cooling past their limits. The funding round underscores how AI infrastructure is splitting into a separate cooling economy: the $1.2T AI capex wave is driving tens of billions into power, water, and thermal management adjacent to the GPUs themselves.</p>
+        <div class="news-tags"><span>ZutaCore</span><span>Cooling</span><span>Data Center</span><span>Hardware</span><span>Infrastructure</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 2</div>
+      <div class="news-date">Jun 3</div>
       <div class="news-content">
-        <h3><a href="https://www.nature.com/articles/s41587-026-03101-8" target="_blank">China Approves World's First Invasive Brain-Computer Chip — Leapfrogging Neuralink</a></h3>
-        <p>China's National Medical Products Administration approved Neuracle's NEO system — the world's first invasive brain-computer interface (BCI) device for commercial medical use. The chip, developed by Shanghai-based Neuracle Technology, restores hand movement and other motor capabilities in patients with spinal cord injuries. The approval leapfrogs Elon Musk's Neuralink, which remains in clinical trials in the US. The development signals China's serious ambitions in next-generation neurotechnology and represents a significant milestone in the global race for brain-computer interface dominance.</p>
-        <div class="news-tags"><span>China</span><span>BCI</span><span>Neuralink</span><span>Medical</span><span>Neurotechnology</span></div>
+        <h3><a href="https://www.nytimes.com/2026/06/01/us/politics/china-ai-predicting-dissent.html" target="_blank">Leaked Geedge Networks Docs: China Is Building AI to Predict Political Dissent Before It Happens</a></h3>
+        <p>Over 100,000 leaked documents from Chinese surveillance vendor Geedge Networks — analyzed by Vanderbilt University researchers and reported by the New York Times — reveal an AI system designed to flag "potential government critics" by combining location data, browsing history, and social-graph analysis. Geedge sells a commercial version of the Great Firewall infrastructure used to enforce online censorship. The system enables mass profiling and pre-emptive flagging of individuals for state action — what civil liberties groups call "Minority Report" predictive policing scaled to a national population. The revelations intensify the global debate over dual-use AI exports.</p>
+        <div class="news-tags"><span>China</span><span>Geedge</span><span>Surveillance</span><span>Human Rights</span><span>Predictive Policing</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 2</div>
+      <div class="news-date">Jun 3</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/06/02/nvidia-rtx-spark-ai-agent-pcs/" target="_blank">Nvidia RTX Spark AI Agent PCs — Targeting Intel and AMD's $200B CPU Market</a></h3>
-        <p>Nvidia announced RTX Spark AI Agent PCs in partnership with Microsoft, Dell, and HP — a push into the $200B CPU market with Arm-based chips designed to run AI agents locally. The RTX Spark chips bring powerful on-device AI inference to consumer PCs, potentially marking Windows' "M1 moment" — combining Arm-based performance and battery life with mainstream AI agent capabilities. The move positions Nvidia to compete directly with Intel and AMD in the CPU space while expanding the addressable market for on-device AI inference hardware.</p>
-        <div class="news-tags"><span>NVIDIA</span><span>RTX Spark</span><span>AI PCs</span><span>Hardware</span><span>Arm</span></div>
+        <h3><a href="https://www.techmeme.com/260603/p18" target="_blank">Anthropic Stock Traded for San Francisco Real Estate — Pre-IPO Secondary Market Heats Up</a></h3>
+        <p>Multiple San Francisco Bay Area real estate listings are now accepting Anthropic equity as payment for home purchases, signaling a vibrant pre-IPO secondary market following the company's record $65B Series H at a $965B valuation. Buyers — often early employees and venture investors — are using Anthropic stock as collateral or direct tender in property transactions, a pattern last seen during the 2021 tech boom. The trend underscores how the AI cap cycle is bleeding into adjacent markets and creating new wealth-management infrastructure for illiquid pre-IPO shares.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Real Estate</span><span>Pre-IPO</span><span>Secondaries</span><span>Wealth</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 2</div>
+      <div class="news-date">Jun 3</div>
       <div class="news-content">
-        <h3><a href="https://alibabagroup.com/en-US" target="_blank">Alibaba Qwen 3.7 Max — Chinese Frontier Models Close the Gap at Half the Price</a></h3>
-        <p>Alibaba's Qwen 3.7 Max claims the #1 position among Chinese LLMs with GPQA Diamond 92.4, 1M-token context, and pricing at $2.50/$7.50 per M tokens — roughly half GPT-5.5 pricing and competitive with Claude Opus 4.6 on agentic benchmarks. The model handles multi-file software projects, orchestrates multi-agent workflows, and is optimized for agent harnesses including Hermes Agent, Claude Code, and OpenClaw. Four Chinese labs dropped open-weight coding models in 12 days, intensifying the China-US AI capability race as the gap on metrics most teams care about rapidly closes.</p>
-        <div class="news-tags"><span>Alibaba</span><span>Qwen</span><span>China</span><span>Frontier Models</span><span>Benchmarks</span></div>
+        <h3><a href="https://arxiv.org/html/2511.05797v1" target="_blank">Study: Prompt Injection Is Now the #1 Exploited Vulnerability in Production AI Systems</a></h3>
+        <p>A large-scale measurement study of 10,000+ third-party AI chatbot plugins — accepted to IEEE S&P 2026 — found prompt injection vulnerabilities are now the most actively exploited class of attacks against production LLM systems. Attacks have evolved from simple jailbreaks to "Prompt Injection 2.0": hybrid threats combining natural-language manipulation with traditional exploits to achieve account takeovers, remote code execution, and persistent system compromise. The research highlights a widening gap between agentic capability growth and security maturity, particularly as agents gain tool access and write privileges.</p>
+        <div class="news-tags"><span>Security</span><span>Prompt Injection</span><span>LLM</span><span>Research</span><span>Agent Safety</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 2</div>
+      <div class="news-date">Jun 3</div>
       <div class="news-content">
-        <h3><a href="https://deepmind.google/" target="_blank">DeepMind Claims Continual Learning Breakthrough — No More Catastrophic Forgetting</a></h3>
-        <p>DeepMind published research claiming a breakthrough in continual learning that allows AI models to acquire new knowledge without catastrophic forgetting — the longstanding problem where neural networks overwrite previously learned information when trained on new data. If validated, the breakthrough could fundamentally change how AI systems are trained and updated, enabling models that continuously learn and adapt without full retraining cycles. The approach could reduce the massive energy and compute costs associated with retraining frontier models from scratch.</p>
-        <div class="news-tags"><span>DeepMind</span><span>Continual Learning</span><span>Research</span><span>Catastrophic Forgetting</span><span>Efficiency</span></div>
+        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-3-2026" target="_blank">AI IPO Wave Adds Up to $4T in US Market Cap — SpaceX, Anthropic, OpenAI on Deck</a></h3>
+        <p>Bloomberg's equity desk estimates the upcoming SpaceX, Anthropic, and OpenAI IPOs — combined with existing public-market AI leaders — could add as much as $4 trillion in market capitalization to US equity markets over the next 18 months. Anthropic is the first pure-play frontier lab to file (S-1, $965B), OpenAI is widely expected to follow in Q4 2026, and SpaceX is positioning its Colossus AI infrastructure business for a 2027 listing. The capital formation wave would be larger than the entire US IPO market of 2024-2025 combined.</p>
+        <div class="news-tags"><span>IPOs</span><span>Public Markets</span><span>SpaceX</span><span>Anthropic</span><span>OpenAI</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 2</div>
+      <div class="news-date">Jun 3</div>
       <div class="news-content">
-        <h3><a href="https://www.bbc.com/news/technology" target="_blank">NHS Halts AI Scribe Rollout After Transcription Error Investigation</a></h3>
-        <p>The UK's National Health Service paused the rollout of ambient AI note-taking tools for doctors following an investigation that revealed transcription errors in clinical documentation. The decision highlights the critical safety challenges of deploying generative AI in healthcare settings, where accuracy is paramount and errors can have serious consequences for patient care. The pause is a setback for the growing AI medical scribe industry, which has been rapidly adopted across healthcare systems worldwide as a solution to reduce physician burnout from documentation burdens.</p>
-        <div class="news-tags"><span>Healthcare</span><span>NHS</span><span>AI Scribes</span><span>Safety</span><span>Regulation</span></div>
+        <h3><a href="https://www.wsj.com/articles/factorial-hr-ai-150m-series-d" target="_blank">Factorial Raises $150M Series D at $2.5B — HR AI Agents Target Europe's Mid-Market</a></h3>
+        <p>Barcelona-based HR software startup Factorial raised a $150M Series D led by General Catalyst at a $2.5B valuation, with the capital earmarked for expanding its AI agent platform and growing in Germany. Factorial's agents automate payroll, compliance, and employee onboarding workflows for SMB and mid-market customers — a segment that has lagged enterprise in AI adoption but is now catching up. The raise is part of a broader wave of European vertical AI SaaS funding as regional players consolidate around industry-specific agent stacks before US giants expand more aggressively into the EU.</p>
+        <div class="news-tags"><span>Factorial</span><span>HR Tech</span><span>Europe</span><span>AI Agents</span><span>Funding</span></div>
       </div>
     </div>
 
@@ -337,4 +337,4 @@ new p5(function(p) {
 </script>
 {{< /rawhtml >}}
 
-<!-- update 1780419200 -->
+<!-- update 1780505600 -->
