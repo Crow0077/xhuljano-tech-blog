@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-06-03
+date: 2026-06-04
 draft: false
 ShowToc: false
 ---
@@ -119,7 +119,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated June 3, 2026 — 16:00 UTC</div>
+    <div class="last-updated">Updated June 4, 2026 — 18:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -128,110 +128,110 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">Jun 3</div>
+      <div class="news-date">Jun 4</div>
       <div class="news-content">
-        <h3><a href="https://news.microsoft.com/source/features/innovation/majorana-2-microsoft-discovery-agentic-ai" target="_blank">Microsoft Build Day 2: Majorana 2 Quantum Chip, MAI-Thinking-1, and Mayo Clinic Health AI</a></h3>
-        <p>Microsoft unloaded a second wave of announcements at Build Day 2 in San Francisco. Majorana 2 — the next-gen topological quantum chip — claims a 1,000x qubit reliability improvement and pushes Microsoft's timeline to a "scalable quantum computer by 2029." Mustafa Suleyman unveiled MAI-Thinking-1, Microsoft's first flagship reasoning model trained "from the ground up on clean data, without distillation," matching Claude Sonnet 4.6 in blind human preference evaluations. Aion 1.0 Instruct and Aion 1.0 Plan (14B) shipped for on-device Windows agents. The Surface RTX Spark Dev Box with 1 petaflop of AI power was unveiled, and Microsoft Discovery hit general availability. Big bet: Azure AI Foundry pricing will undercut Anthropic Sonnet.</p>
-        <div class="news-tags"><span>Microsoft</span><span>Build 2026</span><span>Quantum</span><span>MAI-Thinking-1</span><span>Mayo Clinic</span></div>
+        <h3><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/" target="_blank">Trump Signs Scaled-Back AI Executive Order — Voluntary 30-Day Pre-Release Testing</a></h3>
+        <p>President Trump signed a significantly softened AI executive order after industry pushback, backing off from mandatory licensing. AI companies are now encouraged — not required — to voluntarily submit new models for government safety testing 30 days before public release, down from a 90-day mandate in earlier drafts. The order explicitly prohibits mandatory licensing or preclearance, and directs the DOJ to treat AI-assisted hacking as a high-priority enforcement area. Trump signed privately rather than at a planned ceremony with Silicon Valley executives, underscoring ongoing tech-policy tensions. This is his second major AI directive, following the December 2025 unified framework.</p>
+        <div class="news-tags"><span>Policy</span><span>White House</span><span>Regulation</span><span>Safety Testing</span><span>Trump</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 3</div>
+      <div class="news-date">Jun 4</div>
       <div class="news-content">
-        <h3><a href="https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-and-microsoft-collaborate-to-develop-a-frontier-ai-model-for-healthcare/" target="_blank">Mayo Clinic + Microsoft Announce Frontier Health AI Model — Trained on De-Identified Clinical Data</a></h3>
-        <p>Mayo Clinic and Microsoft formalized a strategic collaboration to build and deploy a frontier AI model for healthcare. The model will be owned by Mayo Clinic, trained on de-identified clinical data, longitudinal records, and Mayo's medical expertise, and deployed on Azure. The move positions Mayo against OpenAI's HealthBench and Google's MedLM as hospitals race to bring clinically-vetted AI into patient workflows. The partnership also gives Microsoft a credible reference deployment in a sector where regulatory scrutiny and accuracy requirements are far higher than consumer chatbots.</p>
-        <div class="news-tags"><span>Healthcare</span><span>Mayo Clinic</span><span>Microsoft</span><span>Clinical AI</span><span>Partnership</span></div>
+        <h3><a href="https://www.cnbc.com/2026/05/17/uber-ai-budget-claude-code.html" target="_blank">Uber Exhausts Entire 2026 AI Budget in Four Months — Claude Code Token Spend Spikes</a></h3>
+        <p>Uber burned through its full 2026 AI budget by April, with CTO Praveen Neppalli Naga confirming the overrun was driven by surging Claude Code usage among engineers. Despite the spending spike, COO Jill Hazelbaker admitted the company hasn't yet seen proportional ROI in consumer-facing features. Uber R&amp;D expenses hit $3.4B in 2025 (+9% YoY) with AI as the key driver. Separately, Uber cut 23% of its HR department and launched a major restructuring under new president Jill Hazelbaker. The story has become a cautionary tale for enterprise AI adoption: token pricing breaks conventional budget planning assumptions.</p>
+        <div class="news-tags"><span>Uber</span><span>Claude Code</span><span>Anthropic</span><span>Enterprise AI</span><span>Budget</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 3</div>
+      <div class="news-date">Jun 4</div>
       <div class="news-content">
-        <h3><a href="https://www.cnbc.com/2026/06/01/stargate-project-michigan-live-updates.html" target="_blank">Sam Altman at Stargate Michigan: Coding Models Are the Single Biggest Driver of AI Demand</a></h3>
-        <p>In his most substantive interview of 2026, OpenAI CEO Sam Altman toured the $16B Stargate Saline Township data center under construction with Oracle and named coding models as the #1 demand driver. He warned that enterprise AI spend is being wasted by companies lacking a clear use case, pushed back on the US-China AI race framing, and reaffirmed a human-centered work philosophy. The interview sets the tone for OpenAI's commercial strategy as GPT-5.6 ships later this month and the new robotics division ramps up.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Stargate</span><span>Altman</span><span>Infrastructure</span><span>Coding</span></div>
+        <h3><a href="https://xix.ai/live/4944" target="_blank">BYD Confirms Humanoid Robot "Yao Shun Yu" — 4,000 R&amp;D Staff, 150 Units on Factory Floors</a></h3>
+        <p>BYD EVP Li Ke confirmed the company's self-developed humanoid robot project, codenamed Yao Shun Yu, initiated in 2022. The seventh-generation prototype walks at 1.5 m/s, lifts 50 kg, and features a dexterous hand with tactile sensing. Approximately 150 units already operate in factories at 80% human efficiency. BYD plans 2,000 robots in 2025, 20,000 in 2026, and full deployment by 2028. Over 60% of components are shared with cars, and BYD's self-developed Xuanji A3 chip can be transferred to the robot platform — signaling that EV manufacturers are now serious embodied-AI players.</p>
+        <div class="news-tags"><span>BYD</span><span>Humanoid Robot</span><span>Embodied AI</span><span>Manufacturing</span><span>China</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 3</div>
+      <div class="news-date">Jun 4</div>
       <div class="news-content">
-        <h3><a href="https://www.theverge.com/policy/942296/google-water-commitments-data-centers" target="_blank">Google Commits to Net-Positive Water Use by 2030 — Five New Data Center Sustainability Pledges</a></h3>
-        <p>Google unveiled five water-stewardship commitments for its AI data centers, headlined by a pledge to become "water positive" by 2030 — replenishing more freshwater than it consumes. Google will also expand local infrastructure investment in data center host communities, increase transparency around per-site water usage, and back ecosystem restoration projects. The move responds to growing local pushback in Loudoun County, Mesa, and The Dalles where Google data centers used 8.1B gallons in 2024. It also sets a benchmark for Microsoft, Amazon, and Meta hyperscaler disclosures.</p>
-        <div class="news-tags"><span>Google</span><span>Sustainability</span><span>Data Centers</span><span>Water</span><span>Policy</span></div>
+        <h3><a href="https://blog.google/products/gemini/gemini-drive-gmail/" target="_blank">Google Extends Ask Gemini to Gmail — Natural Language Email Search Goes Live</a></h3>
+        <p>Google expanded its Ask Gemini feature from Drive into Gmail, allowing Workspace, AI Pro, and Ultra users to search emails using natural language queries like "Find the emails I received regarding the Jenkins project approval." The feature supports multi-turn conversations for a unified view across emails, files, and folders — a practical step toward the agentic email experience Google has been promising. The rollout continues Google's strategy of embedding Gemini deeper into productivity workflows without requiring users to adopt a separate AI interface.</p>
+        <div class="news-tags"><span>Google</span><span>Gemini</span><span>Gmail</span><span>Workspace</span><span>Productivity</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 3</div>
+      <div class="news-date">Jun 4</div>
       <div class="news-content">
-        <h3><a href="https://www.wsj.com/business/earnings/gitlab-to-cut-14-of-workforce-as-part-of-ai-pivot-493b9813" target="_blank">GitLab Lays Off 350 Staff (14%) and Exits 22 Countries in AI-First Pivot</a></h3>
-        <p>GitLab announced it is cutting 350 full-time employees — 14% of its workforce — and exiting 22 countries as part of a strategic pivot to become an "AI-focused enterprise software development platform." CEO Bill Staples framed the restructuring as an investment in the agentic era, with R&D reorganized into 60 smaller autonomous teams and management layers flattened. The cuts will incur $30-35M in one-time severance charges, even as GitLab reported stronger revenue growth and improved profit guidance. The move joins Meta, LinkedIn, and other Bay Area peers in an AI-driven workforce reset.</p>
-        <div class="news-tags"><span>GitLab</span><span>Layoffs</span><span>Restructuring</span><span>DevTools</span><span>AI Pivot</span></div>
+        <h3><a href="https://about.meta.com/blog/whatsapp-business-ai-agent/" target="_blank">Meta Launches AI Customer Support Agent on WhatsApp Business Globally</a></h3>
+        <p>Meta launched its Meta Business Agent globally on WhatsApp Business after two years of testing. The agent handles customer queries, recommends products, screens leads, and escalates complex issues to human agents. A Daily Briefing feature for missed messages is in testing. Future plans include search integration and an open customization platform for businesses. The move brings AI-powered customer service to WhatsApp's 2B+ user base and positions Meta as a serious player in the conversational commerce AI market, competing with offerings from Salesforce, Zendesk, and Intercom.</p>
+        <div class="news-tags"><span>Meta</span><span>WhatsApp</span><span>Customer Service</span><span>AI Agents</span><span>Conversational Commerce</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 3</div>
+      <div class="news-date">Jun 4</div>
       <div class="news-content">
-        <h3><a href="https://www.bloomberg.com/news/articles/2026-06-03-suno-400m-bond-round" target="_blank">Suno Raises $400M at $5.4B — AI Music Hits Unicorn-Tier as Subscribers Double</a></h3>
-        <p>AI music startup Suno closed a $400M Series led by Bond at a $5.4B post-money valuation — more than double its $2.45B mark from November 2025. The company passed 2M paying subscribers in February and continues to ship tens of millions of generated tracks per month. The raise signals a maturation of generative music as a category, with implications for rights holders, streaming royalties, and the broader creator economy. Suno's growth also raises fresh questions about training-data licensing and output attribution as labels push for stronger AI music regulation.</p>
-        <div class="news-tags"><span>Suno</span><span>AI Music</span><span>Funding</span><span>Generative Audio</span><span>Valuation</span></div>
+        <h3><a href="https://github.com/meituan-longcat/LongCat-Next" target="_blank">LongCat-Next: Meituan Open-Sources Native Multimodal Model — DiNA Architecture Unifies Text, Vision, Audio</a></h3>
+        <p>Meituan's LongCat team open-sourced LongCat-Next, a 74B-parameter native multimodal model that processes text, images, and audio under a single autoregressive objective. Built on the novel DiNA (Discrete Native) architecture, it converts all modalities into shared discrete tokens, eliminating the bolted-on vision/audio modules typical of multimodal systems. Its dNaViT tokenizer achieves 28× pixel compression. Benchmarks show it outperforms Qwen3-Omni on OmniDocBench and leads in MMLU-Pro and SWE-Bench — a significant result from an open model in the multimodal frontier race.</p>
+        <div class="news-tags"><span>Open Source</span><span>Multimodal</span><span>LongCat</span><span>Meituan</span><span>DiNA</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 3</div>
+      <div class="news-date">Jun 4</div>
       <div class="news-content">
-        <h3><a href="https://blog.zutacore.com/press-releases/zutacore-100m-series-c-funding-ai-data-center-cooling" target="_blank">ZutaCore Raises $100M Series C for Waterless Liquid Cooling — AI Data Center Heat Crisis</a></h3>
-        <p>Israeli direct-to-chip liquid cooling startup ZutaCore closed a $100M Series C at a $600M valuation, led by Mitsubishi Electric, Samsung Ventures, and Carrier. ZutaCore's waterless two-phase cooling targets the thermal bottleneck of next-gen AI chips — Blackwell, MI400-class accelerators — that are pushing air and water cooling past their limits. The funding round underscores how AI infrastructure is splitting into a separate cooling economy: the $1.2T AI capex wave is driving tens of billions into power, water, and thermal management adjacent to the GPUs themselves.</p>
-        <div class="news-tags"><span>ZutaCore</span><span>Cooling</span><span>Data Center</span><span>Hardware</span><span>Infrastructure</span></div>
+        <h3><a href="https://www.studioglobal.ai/discover/answers/what-is-the-multi-year-deal-between-swedish-6a20ffae687eb4476985ee1d" target="_blank">Lovable Deepens Google Cloud Partnership — $400M ARR Startup Goes All-In on Gemini</a></h3>
+        <p>Swedish vibe-coding startup Lovable announced an expanded multi-year strategic partnership with Google Cloud at the Google Cloud Summit Nordics in Stockholm. The deal increases Lovable's cloud resource usage fivefold, embeds its AI agent into Google Cloud's marketplace, and grants broader access to both Anthropic's Claude and Google's Gemini models. With $400M annualized revenue and just 146 employees serving over half of Fortune 500 companies, Lovable has become the poster child for AI-native startups achieving hyperscale revenue efficiency. The partnership includes Wiz security integration and underscores Google's strategy of locking in high-growth AI startups.</p>
+        <div class="news-tags"><span>Lovable</span><span>Google Cloud</span><span>Startups</span><span>Gemini</span><span>Vibe Coding</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 3</div>
+      <div class="news-date">Jun 4</div>
       <div class="news-content">
-        <h3><a href="https://www.nytimes.com/2026/06/01/us/politics/china-ai-predicting-dissent.html" target="_blank">Leaked Geedge Networks Docs: China Is Building AI to Predict Political Dissent Before It Happens</a></h3>
-        <p>Over 100,000 leaked documents from Chinese surveillance vendor Geedge Networks — analyzed by Vanderbilt University researchers and reported by the New York Times — reveal an AI system designed to flag "potential government critics" by combining location data, browsing history, and social-graph analysis. Geedge sells a commercial version of the Great Firewall infrastructure used to enforce online censorship. The system enables mass profiling and pre-emptive flagging of individuals for state action — what civil liberties groups call "Minority Report" predictive policing scaled to a national population. The revelations intensify the global debate over dual-use AI exports.</p>
-        <div class="news-tags"><span>China</span><span>Geedge</span><span>Surveillance</span><span>Human Rights</span><span>Predictive Policing</span></div>
+        <h3><a href="https://www.cnbc.com/2026/06/03/alphasense-350m-funding-valuation.html" target="_blank">AlphaSense Raises $350M at $7.5B Valuation — AI Market Intelligence Platform Nears Unicorn Decacorn</a></h3>
+        <p>AlphaSense closed a $350M funding round at a $7.5B valuation — nearly double its prior $4B mark — and surpassed $600M in annual recurring revenue in Q1 2026. The AI-powered market intelligence platform has raised well over $1B total, and the raise signals strong investor appetite for vertical AI platforms serving finance and corporate strategy. AlphaSense competes with Bloomberg Terminal and Refinitiv by applying NLP and generative search across earnings calls, filings, broker research, and news — a space where AI-native challengers are rapidly eroding legacy data-terminal moats.</p>
+        <div class="news-tags"><span>AlphaSense</span><span>Funding</span><span>Market Intelligence</span><span>Fintech</span><span>Valuation</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 3</div>
+      <div class="news-date">Jun 4</div>
       <div class="news-content">
-        <h3><a href="https://www.techmeme.com/260603/p18" target="_blank">Anthropic Stock Traded for San Francisco Real Estate — Pre-IPO Secondary Market Heats Up</a></h3>
-        <p>Multiple San Francisco Bay Area real estate listings are now accepting Anthropic equity as payment for home purchases, signaling a vibrant pre-IPO secondary market following the company's record $65B Series H at a $965B valuation. Buyers — often early employees and venture investors — are using Anthropic stock as collateral or direct tender in property transactions, a pattern last seen during the 2021 tech boom. The trend underscores how the AI cap cycle is bleeding into adjacent markets and creating new wealth-management infrastructure for illiquid pre-IPO shares.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Real Estate</span><span>Pre-IPO</span><span>Secondaries</span><span>Wealth</span></div>
+        <h3><a href="https://xix.ai/live/4942" target="_blank">LLM Exploit Showdown: GPT-5.5 vs DeepSeek V4 Pro — Cost Efficiency Gap Is 15×</a></h3>
+        <p>Safety researcher Kasra Rahjerdi benchmarked frontier models on exploiting a vulnerable application with exposed Google backend credentials. GPT-5.5 achieved the highest success rate (7/10 runs) but cost $9.46 per successful exploit. DeepSeek V4 Pro succeeded 3/10 times at just $0.62 per success — roughly 1/15th the cost. Google's Gemini models failed entirely due to built-in rejection mechanisms. The test highlights a growing tension between capability and cost in AI security: cheaper models may enable more attempts per dollar, changing the economics of both offense and defense at scale.</p>
+        <div class="news-tags"><span>Security</span><span>GPT-5.5</span><span>DeepSeek V4</span><span>Benchmarks</span><span>Exploit Testing</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 3</div>
+      <div class="news-date">Jun 4</div>
       <div class="news-content">
-        <h3><a href="https://arxiv.org/html/2511.05797v1" target="_blank">Study: Prompt Injection Is Now the #1 Exploited Vulnerability in Production AI Systems</a></h3>
-        <p>A large-scale measurement study of 10,000+ third-party AI chatbot plugins — accepted to IEEE S&P 2026 — found prompt injection vulnerabilities are now the most actively exploited class of attacks against production LLM systems. Attacks have evolved from simple jailbreaks to "Prompt Injection 2.0": hybrid threats combining natural-language manipulation with traditional exploits to achieve account takeovers, remote code execution, and persistent system compromise. The research highlights a widening gap between agentic capability growth and security maturity, particularly as agents gain tool access and write privileges.</p>
-        <div class="news-tags"><span>Security</span><span>Prompt Injection</span><span>LLM</span><span>Research</span><span>Agent Safety</span></div>
+        <h3><a href="https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/" target="_blank">Anthropic Scales Claude Mythos to Critical Infrastructure in 15+ Countries</a></h3>
+        <p>Anthropic announced that its most powerful model system, Claude Mythos, is now deployed across critical infrastructure sectors in more than 15 countries — including energy grids, telecommunications networks, and financial settlement systems. The expansion marks a significant escalation in frontier AI's penetration of high-stakes operational environments. Mythos, which has been in controlled rollout since late May, represents Anthropic's bet that trust and safety engineering can unlock adoption in regulated sectors that have been hesitant to integrate LLMs into operational decision pipelines.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Mythos</span><span>Infrastructure</span><span>Claude</span><span>Enterprise</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 3</div>
+      <div class="news-date">Jun 4</div>
       <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-3-2026" target="_blank">AI IPO Wave Adds Up to $4T in US Market Cap — SpaceX, Anthropic, OpenAI on Deck</a></h3>
-        <p>Bloomberg's equity desk estimates the upcoming SpaceX, Anthropic, and OpenAI IPOs — combined with existing public-market AI leaders — could add as much as $4 trillion in market capitalization to US equity markets over the next 18 months. Anthropic is the first pure-play frontier lab to file (S-1, $965B), OpenAI is widely expected to follow in Q4 2026, and SpaceX is positioning its Colossus AI infrastructure business for a 2027 listing. The capital formation wave would be larger than the entire US IPO market of 2024-2025 combined.</p>
-        <div class="news-tags"><span>IPOs</span><span>Public Markets</span><span>SpaceX</span><span>Anthropic</span><span>OpenAI</span></div>
+        <h3><a href="https://www.ft.com/content/spacex-55b-chip-plant-texas" target="_blank">SpaceX Wins Tax Breaks for $55B Texas Terafab Chip Facility — AI Silicon Independence Play</a></h3>
+        <p>SpaceX secured property tax exemptions for its massive $55B Terafab semiconductor fabrication facility in Texas, overcoming local opposition and legal challenges. The chip plant is central to Elon Musk's vision of vertically integrating AI silicon production — reducing dependence on TSMC, Samsung, and NVIDIA for the custom ASICs powering Colossus AI infrastructure. Combined with SpaceX's $1.25B/month compute deal with Anthropic and its Cursor acquisition option ($60B), the Terafab move positions SpaceX as a full-stack AI infrastructure player spanning chips, compute, and developer tooling — a competitive threat to both cloud hyperscalers and traditional semiconductor supply chains.</p>
+        <div class="news-tags"><span>SpaceX</span><span>Semiconductors</span><span>Infrastructure</span><span>Texas</span><span>AI Chips</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 3</div>
+      <div class="news-date">Jun 4</div>
       <div class="news-content">
-        <h3><a href="https://www.wsj.com/articles/factorial-hr-ai-150m-series-d" target="_blank">Factorial Raises $150M Series D at $2.5B — HR AI Agents Target Europe's Mid-Market</a></h3>
-        <p>Barcelona-based HR software startup Factorial raised a $150M Series D led by General Catalyst at a $2.5B valuation, with the capital earmarked for expanding its AI agent platform and growing in Germany. Factorial's agents automate payroll, compliance, and employee onboarding workflows for SMB and mid-market customers — a segment that has lagged enterprise in AI adoption but is now catching up. The raise is part of a broader wave of European vertical AI SaaS funding as regional players consolidate around industry-specific agent stacks before US giants expand more aggressively into the EU.</p>
-        <div class="news-tags"><span>Factorial</span><span>HR Tech</span><span>Europe</span><span>AI Agents</span><span>Funding</span></div>
+        <h3><a href="https://cybernews.com/ai-news/ai-virology-dna-screening-congress/" target="_blank">AI Virology Alarm — Altman, Amodei, Hassabis Urge Congress to Screen Synthetic DNA Orders</a></h3>
+        <p>Three of the most prominent AI leaders — Sam Altman (OpenAI), Dario Amodei (Anthropic), and Demis Hassabis (Google DeepMind) — jointly urged Congress to require mandatory screening of synthetic DNA orders, warning that AI tools can now coach amateur virologists through dangerous pathogen design. The unusual joint appeal follows research showing that current LLMs can meaningfully assist non-experts in virology workflows. The letter marks a rare moment of unified industry front on biosecurity and raises the stakes for the upcoming biosafety provisions in both US and EU AI regulatory frameworks.</p>
+        <div class="news-tags"><span>Biosecurity</span><span>DNA Screening</span><span>OpenAI</span><span>Anthropic</span><span>DeepMind</span></div>
       </div>
     </div>
 
@@ -337,4 +337,4 @@ new p5(function(p) {
 </script>
 {{< /rawhtml >}}
 
-<!-- update 1780505600 -->
+<!-- update 1749067200 -->
