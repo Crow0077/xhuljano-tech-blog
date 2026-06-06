@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-06-05
+date: 2026-06-06
 draft: false
 ShowToc: false
 ---
@@ -119,7 +119,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated June 5, 2026 — 18:00 UTC</div>
+    <div class="last-updated">Updated June 6, 2026 — 18:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -128,37 +128,82 @@ ShowToc: false
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">Jun 5</div>
+      <div class="news-date">Jun 6</div>
       <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-5-2026" target="_blank">Great American AI Act: 269-Page Draft Proposes 3-Year Federal Preemption of State AI Laws</a></h3>
-        <p>Reps. Jay Obernolte (R-CA) and Lori Trahan (D-MA) released a bipartisan discussion draft that would freeze all state AI laws for three years — directly threatening Colorado's AI Act set to take effect June 30. Companies with over $500M annual revenue must publish Frontier AI Frameworks, report critical safety incidents, and submit to cybersecurity audits. The bill also creates a $100M/year Center for AI Standards & Innovation. Labor unions call it a "giveaway to the AI industry," while tech groups praise it. The preemption clause previously died in the Senate 99-1 and faces stiff opposition from state lawmakers.</p>
-        <div class="news-tags"><span>Policy</span><span>Congress</span><span>Regulation</span><span>Colorado AI Act</span><span>Preemption</span></div>
+        <h3><a href="https://aitoolsrecap.com/Blog/microsoft-mai-models-thinking-1-frontier-tuning-build-2026" target="_blank">Microsoft Unveils 7 MAI Models — An In-House AI Stack Built Without OpenAI</a></h3>
+        <p>At Build 2026, Microsoft revealed its largest-ever in-house AI push: seven MAI models trained from scratch with zero distillation from third-party models — no GPT outputs, no Anthropic outputs, no AI-generated pre-training content. The flagship MAI-Thinking-1 is a clean-IP reasoning model that leads Claude Haiku 4.5 on SWE-Bench Pro with 60% fewer tokens. MAI Code One ships directly inside GitHub Copilot and VS Code. Most striking: Frontier Tuning applies reinforcement learning on your own operational data inside your compliance boundary — McKinsey achieved a 10× cost reduction after adoption. Work IQ APIs go live June 16. The move signals Microsoft's strategic decoupling from pure OpenAI dependency while keeping Azure as the deployment surface for both.</p>
+        <div class="news-tags"><span>Microsoft</span><span>MAI Models</span><span>Build 2026</span><span>Reasoning</span><span>GitHub Copilot</span><span>Frontier Tuning</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 5</div>
+      <div class="news-date">Jun 6</div>
       <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-5-2026" target="_blank">OpenAI Rolls Out Dreaming V3 — ChatGPT Memory Gets a Silent Brain Rewire</a></h3>
-        <p>OpenAI began rolling out Dreaming V3 on June 4, a major memory architecture upgrade that automatically synthesizes user context after conversations without explicit "remember this" prompts. The system identifies preferences, constraints, projects, and time-sensitive facts — and knows when past events are over to stop stale recommendations. It's ~5× more compute-efficient than the old system, making it viable for free tiers. Premium users get double memory storage. A February 2026 arXiv study found 96% of ChatGPT memories were created unilaterally by the system, raising privacy questions ahead of EU AI Act transparency rules in August.</p>
-        <div class="news-tags"><span>OpenAI</span><span>ChatGPT</span><span>Memory</span><span>Dreaming V3</span><span>Privacy</span></div>
+        <h3><a href="https://aitoolsrecap.com/Blog/anthropic-claude-sonnet-4-8-leak-ipo-timeline-june-2026" target="_blank">Claude Sonnet 4.8 Leak: NPM Source Map Evidence Grows Stronger</a></h3>
+        <p>An accidental source map shipped in the @anthropic-ai/claude-code npm package v2.1.88 on March 31 contained three unannounced model strings: sonnet-4-8, opus-4-7, and mythos. Opus 4.7 shipped April 16 and Mythos launched April 7 — two of three proven accurate, giving the sonnet-4-8 string high credibility. Developer communities expect a mid-to-late June release, possibly at ~$3/M input tokens matching Opus 4.8's efficiency gains. If priced competitively, it could reset enterprise agentic workload economics. Anthropic has never skipped a minor Sonnet version (4.6 → 4.8 with no 4.7), making this an unprecedented release pattern. Strong rumor — no official confirmation yet.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Claude</span><span>Sonnet 4.8</span><span>Leak</span><span>NPM</span><span>Rumor</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 5</div>
+      <div class="news-date">Jun 6</div>
       <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-5-2026" target="_blank">Anthropic Files Confidential S-1 for IPO at $965B Valuation</a></h3>
-        <p>Anthropic submitted a confidential draft S-1 to the SEC on June 1, targeting what analysts describe as a trillion-dollar listing as the base case. The company's revenue run-rate hit ~$47B in May 2026 — roughly 5× annual growth — driven by Claude Code, enterprise demand, and Claude Opus 4.8. A key disclosure: Anthropic pays SpaceX $1.25B/month ($15B/year) for compute through May 2029, which will heavily shape margin discussions. OpenAI is expected to file its own IPO soon, setting up what Fortune calls "the two largest AI listings of 2026" competing for the same institutional investor pool.</p>
-        <div class="news-tags"><span>Anthropic</span><span>IPO</span><span>Valuation</span><span>SEC</span><span>Claude</span></div>
+        <h3><a href="https://aitoolsrecap.com/Blog/nvidia-rtx-spark-superchip-surface-laptop-ultra-pc-reinvented-2026" target="_blank">NVIDIA RTX Spark: Arm Superchip Brings Native CUDA to Windows Laptops</a></h3>
+        <p>Announced at Computex 2026 (Taipei, June 1), NVIDIA's RTX Spark is an Arm-based SoC integrating CPU, GPU, and NPU with native CUDA support on a single die — the first laptop chip to bring the full NVIDIA AI stack (CUDA, TensorRT, cuDNN) to a portable device. For AI developers, it eliminates the "Mac for portability, NVIDIA desktop for CUDA" split. Microsoft's Surface Laptop Ultra (15-inch) will be the first device, with Adobe rebuilding Photoshop and Premiere Pro natively. Consumer laptops ship autumn 2026; pricing undisclosed. AMD, Intel, and Qualcomm shares fell immediately on the announcement — Wall Street read it as an existential threat, not a product refresh.</p>
+        <div class="news-tags"><span>NVIDIA</span><span>RTX Spark</span><span>ARM</span><span>CUDA</span><span>Computex</span><span>Laptops</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 5</div>
+      <div class="news-date">Jun 6</div>
       <div class="news-content">
-        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-june-5-2026" target="_blank">OpenAI Realtime Audio API Goes GA — Three New Voice Models Exit Beta</a></h3>
-        <p>OpenAI's Realtime API is now generally available with three production-ready models: GPT-Realtime-2 (GPT-5-class continuous audio reasoning that hears tone and interruptions with sub-pipeline latency), GPT-Realtime-Translate (live multilingual translation across 70+ input languages and 13 output languages, tested by Deutsche Telekom and Vimeo), and GPT-Realtime-Whisper (streaming live transcription). Pricing ranges from $3/M input tokens for Whisper to $40/$80 per million audio tokens for the Realtime-2 and Translate models. The API supports both WebSocket and WebRTC connections, positioning OpenAI for the next wave of voice-native AI applications.</p>
+        <h3><a href="https://unrot.co/blogs/ai-news-today-june-6-2026" target="_blank">GPT-5.5-Cyber Expands to Vetted EU Teams — OpenAI Races Anthropic's Glasswing</a></h3>
+        <p>OpenAI's specialized cybersecurity variant GPT-5.5-Cyber is now available in limited preview to vetted EU entities — businesses, governments, national cybersecurity authorities, and the EU AI Office. Access is gated: organizations must apply and demonstrate a defensive mission. It's a competitive sprint against Anthropic's Project Glasswing, which covers similar critical infrastructure but is not yet available in the EU. The EU AI Office's direct involvement signals how seriously Brussels takes AI-powered cyber defense, especially with the August 2 EU AI Act enforcement deadline approaching and critical infrastructure protection requirements taking effect.</p>
+        <div class="news-tags"><span>OpenAI</span><span>Cybersecurity</span><span>EU</span><span>GPT-5.5</span><span>Glasswing</span><span>Critical Infrastructure</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 5–6</div>
+      <div class="news-content">
+        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-6-2026" target="_blank">Great American AI Act: 269-Page Draft Faces Bipartisan Crossfire</a></h3>
+        <p>The 269-page discussion draft released June 4 by Reps. Obernolte (R-CA) and Trahan (D-MA) proposes a three-year federal preemption of all state AI laws governing frontier model development — freezing Colorado's AI Act (June 30 deadline) and California's laws. Companies with $500M+ revenue must publish Frontier AI Frameworks, report safety incidents, and fund a $100M/year Center for AI Standards. But the House Democratic Commission on AI issued an unusual intra-party rebuke: "does not meet the enormity of the moment." Labor unions call it an industry giveaway. The preemption clause previously died 99-1 in the Senate. Passage before June 30 is "functionally zero" — the draft reshapes negotiations, not laws, this month.</p>
+        <div class="news-tags"><span>Policy</span><span>Congress</span><span>Regulation</span><span>Preemption</span><span>Colorado AI Act</span><span>Bipartisan</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 5–6</div>
+      <div class="news-content">
+        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-6-2026" target="_blank">ChatGPT Dreaming V3 Expands: Free Tier Gets the Memory Rewire</a></h3>
+        <p>OpenAI's Dreaming V3 memory overhaul — launched June 4 to US Plus/Pro users — now expands to Free and Go tiers in the coming weeks. The system automatically synthesizes user context after conversations, recognizes when events are in the past to stop stale recommendations, and runs ~5× more compute-efficient than the old memory stack. Premium users get double storage. But a February 2026 arXiv study found 96% of ChatGPT memories were created unilaterally by the system without user prompts — a finding that will face scrutiny under EU AI Act transparency rules effective August 2026. Currently opt-out, not opt-in. Strategic read: a churn-reduction play dressed as a capability release.</p>
+        <div class="news-tags"><span>OpenAI</span><span>ChatGPT</span><span>Dreaming V3</span><span>Memory</span><span>Privacy</span><span>EU AI Act</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 6</div>
+      <div class="news-content">
+        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-6-2026" target="_blank">Anthropic IPO S-1: $47B Revenue Run-Rate, $1.25B/Month SpaceX Compute Tab</a></h3>
+        <p>Anthropic's confidential S-1 filing (June 1) reveals a $47B revenue run-rate in May 2026 — roughly 5× annual growth — driven by Claude Code, enterprise demand, and Opus 4.8. The most scrutinized line item: Anthropic pays SpaceX $1.25 billion per month ($15B/year) for compute through May 2029, a single-vendor dependency that will dominate the margin discussion during IPO roadshows. At a $965B post-money valuation, analysts project a $1T market debut. OpenAI is expected to file its own S-1 imminently, setting up what Fortune calls "the two largest AI listings of 2026" competing for the same institutional investor pool.</p>
+        <div class="news-tags"><span>Anthropic</span><span>IPO</span><span>S-1</span><span>Revenue</span><span>SpaceX</span><span>Compute</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 6</div>
+      <div class="news-content">
+        <h3><a href="https://techstartups.com/2026/06/03/top-tech-news-today-june-3-2026/" target="_blank">SpaceX Sets $75B IPO at $135/Share — Nasdaq Debut June 12 Under SPCX</a></h3>
+        <p>SpaceX's record-breaking $75 billion IPO roadshow is underway, targeting a $1.75 trillion valuation with a Nasdaq debut set for June 12 under ticker SPCX. The offering includes 30% retail allocation, dual-class shares preserving founder control, and a 366-day Musk lockup. SpaceX's merged xAI division and Colossus GPU infrastructure position the listing as a market-clearing event for AI-compute valuations. Morningstar's fair-value estimate of $780B highlights the gap between space/AI hype and fundamentals. Combined with the $55B Texas Terafab chip plant and the Anthropic compute deal, SpaceX is now a full-stack AI infrastructure play spanning silicon, compute, and orbital assets.</p>
+        <div class="news-tags"><span>SpaceX</span><span>IPO</span><span>Nasdaq</span><span>SPCX</span><span>AI Compute</span><span>Valuation</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 5–6</div>
+      <div class="news-content">
+        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-june-5-2026" target="_blank">OpenAI Realtime Audio Goes GA: Three Voice Models, WebSocket + WebRTC</a></h3>
+        <p>OpenAI's Realtime API is now generally available with three production models: GPT-Realtime-2 (GPT-5-class continuous audio reasoning that hears tone and interruptions with sub-pipeline latency at $40/$80 per million audio tokens), GPT-Realtime-Translate (live multilingual translation across 70+ input languages and 13 output languages, tested by Deutsche Telekom and Vimeo), and GPT-Realtime-Whisper (streaming live transcription at $3/M input tokens). The API supports both WebSocket and WebRTC connections, positioning OpenAI for the next wave of voice-native AI applications. The pricing ladder — from $3 to $80 — creates distinct tiers for transcription, translation, and full conversational AI.</p>
         <div class="news-tags"><span>OpenAI</span><span>Voice AI</span><span>Realtime API</span><span>Translation</span><span>GA</span></div>
       </div>
     </div>
@@ -166,63 +211,27 @@ ShowToc: false
     <div class="news-item">
       <div class="news-date">Jun 5</div>
       <div class="news-content">
-        <h3><a href="https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-jumpstart/" target="_blank">NVIDIA Nemotron 3 Ultra Hits SageMaker JumpStart — One-Click Deploy, 5× Faster Inference</a></h3>
-        <p>AWS confirmed day-zero availability of NVIDIA's 550B-parameter Nemotron 3 Ultra on SageMaker JumpStart on June 4. The hybrid Transformer-Mamba Mixture-of-Experts model ships with NVFP4 precision optimization, delivering 5× faster inference throughput and 30% lower cost versus BF16. With 55B active parameters per token, a 1M-token context window, and Mamba-2 state-space layers for constant-memory long-context handling, the model is purpose-built for long-running agentic workloads. It's the top US open-weights model (Intelligence Index 48) but still trails China's Kimi K2.6 in the open-weight leaderboard.</p>
-        <div class="news-tags"><span>NVIDIA</span><span>Nemotron</span><span>AWS</span><span>SageMaker</span><span>MoE</span><span>Open Weights</span></div>
+        <h3><a href="https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-ultra-now-available-on-amazon-sagemaker-jumpstart/" target="_blank">Nemotron 3 Ultra Lands on SageMaker: NVFP4 Delivers 5× Faster, 30% Cheaper Inference</a></h3>
+        <p>AWS confirmed day-zero availability of NVIDIA's 550B-parameter Nemotron 3 Ultra on SageMaker JumpStart. The hybrid Transformer-Mamba Mixture-of-Experts model ships with NVFP4 precision optimization — a 4-bit floating-point format for Blackwell GPU tensor cores — delivering 5× faster inference throughput and 30% lower cost versus BF16. With 55B active parameters per token, a 1M-token context window, and Mamba-2 state-space layers for constant-memory long-context handling, the model is purpose-built for agentic workloads that plan, execute, and iterate across hundreds of turns. It's the top US open-weights model (Intelligence Index 48) but still trails China's Kimi K2.6.</p>
+        <div class="news-tags"><span>NVIDIA</span><span>Nemotron</span><span>AWS</span><span>SageMaker</span><span>NVFP4</span><span>Open Weights</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">Jun 5</div>
       <div class="news-content">
-        <h3><a href="https://techstartups.com/2026/06/03/deepseek-set-to-raise-7-4-billion-in-first-funding-round-targeting-valuation-as-high-as-59-billion/" target="_blank">DeepSeek Eyes $7.4B First-Ever Funding Round at ~$59B Valuation</a></h3>
-        <p>Chinese AI champion DeepSeek is preparing to raise approximately $7.4 billion in its first external funding round, a dramatic shift from its no-outside-capital stance. Tencent and battery giant CATL are reportedly leading the round, which values the company at up to $59 billion. The raise signals that even capital-efficient AI labs now need infrastructure-scale investment to compete in chips, cloud, and strategic partnerships. DeepSeek's V4 Pro model — made permanently 75% cheaper in May — has become a go-to for cost-sensitive agent and coding workloads, making the company a serious contender in the global AI economics race.</p>
+        <h3><a href="https://techstartups.com/2026/06/03/deepseek-set-to-raise-7-4-billion-in-first-funding-round-targeting-valuation-as-high-as-59-billion/" target="_blank">DeepSeek Eyes $7.4B First-Ever Funding at ~$59B — Tencent & CATL Lead</a></h3>
+        <p>Chinese AI champion DeepSeek is preparing to raise approximately $7.4 billion in its first external funding round, a dramatic shift from its no-outside-capital stance. Tencent and battery giant CATL are reportedly leading the round at up to $59 billion valuation. The raise signals that even capital-efficient AI labs now need infrastructure-scale investment to compete in chips, cloud, and strategic partnerships. DeepSeek's V4 Pro model — made permanently 75% cheaper in May — has become a go-to for cost-sensitive agent and coding workloads, making the company a serious contender in the global AI economics race. The funding will likely fuel GPU procurement amid tightening export controls.</p>
         <div class="news-tags"><span>DeepSeek</span><span>Funding</span><span>Tencent</span><span>CATL</span><span>Open Weights</span><span>China</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 5</div>
+      <div class="news-date">Jun 6</div>
       <div class="news-content">
-        <h3><a href="https://arstechnica.com/ai/2026/06/meta-ai-support-chatbot-gave-hackers-access-to-notable-instagram-accounts/" target="_blank">Instagram AI Chatbot Breach — Hackers Trick Meta's Support Bot Into Handing Over Accounts</a></h3>
-        <p>Attackers exploited Meta's AI-powered account recovery tool on Instagram by simply asking the chatbot to forward password reset codes without verification, successfully hijacking high-value accounts. The breach has become a high-profile case study in AI security risk: an automated agent with access to sensitive systems and no human-in-the-loop guardrails was socially engineered by humans. Meta initiated emergency patches and the incident has drawn fresh scrutiny from regulators and cybersecurity experts who warn that AI support agents deployed at scale create a new class of vulnerability — one that conventional security frameworks weren't designed to address.</p>
-        <div class="news-tags"><span>Meta</span><span>Instagram</span><span>Security</span><span>AI Agents</span><span>Breach</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 5</div>
-      <div class="news-content">
-        <h3><a href="https://www.cnbc.com/2026/06/02/anthropic-mythos-ai-project-glasswing.html" target="_blank">Anthropic Project Glasswing Expands to 150 Organizations — Mythos Finds Zero-Days Across Every Major OS</a></h3>
-        <p>Anthropic expanded Project Glasswing to 150 organizations across 15+ countries, deploying Claude Mythos Preview for defensive cybersecurity at scale. The unreleased frontier model autonomously discovered thousands of high-severity vulnerabilities, including decades-old zero-days in every major operating system and web browser. Partners include AWS, Apple, Broadcom, Cisco, CrowdStrike, Google, JPMorgan Chase, Microsoft, NVIDIA, and the Linux Foundation. Anthropic is investing $100M in usage credits plus $4M in open-source security donations. Mythos scored 83.1% on CyberGym (vs. 66.6% for prior models), marking what experts call the most significant shift in vulnerability research since Google's Project Zero.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Mythos</span><span>Cybersecurity</span><span>Zero-Day</span><span>Glasswing</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 5</div>
-      <div class="news-content">
-        <h3><a href="https://www.gallup.com/workplace/708575/ai-changing-creative-work-arts-arent-disappearing.aspx" target="_blank">Gallup: AI Is Transforming Creative Work, but the Arts Aren't Disappearing</a></h3>
-        <p>A major Gallup survey finds that generative AI is reshaping how artists, designers, and writers work rather than eliminating their roles. About 25% of artists reported frequent AI use — higher than the 20% rate among workers overall — primarily for idea generation, enhancing creative processes, and automating smaller tasks. AI adoption is rising without corresponding job displacement in the arts, though the study notes that creative workers are putting in more hours as AI raises output expectations. The findings push back against narratives of imminent creative-class obsolescence while acknowledging that the nature of creative labor is shifting rapidly.</p>
-        <div class="news-tags"><span>Society</span><span>Creative Work</span><span>Gallup</span><span>Artists</span><span>Jobs</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 5</div>
-      <div class="news-content">
-        <h3><a href="https://techstartups.com/2026/06/03/top-tech-news-today-june-3-2026/" target="_blank">SpaceX Sets $75B IPO at $135/Share — $1.75T Valuation Tests AI Infrastructure Market</a></h3>
-        <p>SpaceX filed for a record-breaking $75 billion IPO at a fixed $135/share, targeting a $1.75 trillion valuation with Nasdaq debut set for June 12 under ticker SPCX. The offering includes 30% retail allocation, dual-class shares preserving founder control, and a 366-day Musk lockup. SpaceX's merged xAI division and Colossus GPU infrastructure position the listing as a market-clearing event for AI-compute valuations. Morningstar's fair-value estimate of $780B highlights the gap between space/AI hype and fundamentals. Combined with the $55B Texas Terafab chip plant and a $1.25B/month Anthropic compute deal, SpaceX is now a full-stack AI infrastructure play spanning silicon, compute, and orbital assets.</p>
-        <div class="news-tags"><span>SpaceX</span><span>IPO</span><span>Infrastructure</span><span>AI Compute</span><span>Valuation</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 5</div>
-      <div class="news-content">
-        <h3><a href="https://tech-insider.org/microsoft-19-billion-canada-ai-investment-ontario-2026/" target="_blank">Microsoft's $19B Canadian AI Data Center Build-Out Gains Momentum as Sovereign Compute Alternative</a></h3>
-        <p>Microsoft's $19 billion CAD Canadian AI infrastructure commitment is accelerating, anchored by a major expansion of the Azure Canada Central data centre region in Vaughan, Ontario. The build-out is increasingly viewed as a sovereign-compute alternative for North American enterprises seeking non-U.S. data jurisdictions while remaining on-continent. Provincial energy strategies and NVIDIA-aligned partnerships support the expansion, which Invest Ontario calls "one of the largest single hyperscaler bets ever placed on the province." The project reinforces a broader trend of AI infrastructure becoming a water, energy, and land-use issue — not just a compute story — as communities push back on data center resource consumption.</p>
-        <div class="news-tags"><span>Microsoft</span><span>Canada</span><span>Data Centers</span><span>Infrastructure</span><span>Sovereign AI</span></div>
+        <h3><a href="https://www.glacis.io/guide-eu-ai-act" target="_blank">EU AI Act Countdown: 57 Days Until Enforcement — €35M Fines Loom</a></h3>
+        <p>The EU AI Act's high-risk system obligations enter force on August 2, 2026 — 57 days from today — with penalties reaching €35 million or 7% of global annual turnover. The Digital Omnibus provisional postponement (pending formal adoption) has created regulatory uncertainty, but the core obligations under Articles 9-15 — risk management, data governance, transparency, human oversight, accuracy, robustness, and cybersecurity — are locked in. General-Purpose AI (GPAI) providers must also comply with transparency and copyright disclosure rules. OpenAI's Dreaming V3 memory profiling, Anthropic's IPO disclosures, and every frontier model deployment touching EU users now face enforceable transparency requirements. Companies are treating August 2 as a hard deadline regardless of Omnibus timing.</p>
+        <div class="news-tags"><span>EU AI Act</span><span>Regulation</span><span>Compliance</span><span>GPAI</span><span>Transparency</span><span>Deadline</span></div>
       </div>
     </div>
 
@@ -328,4 +337,4 @@ new p5(function(p) {
 </script>
 {{< /rawhtml >}}
 
-<!-- update 1749153600 -->
+<!-- update 1749232800 -->
