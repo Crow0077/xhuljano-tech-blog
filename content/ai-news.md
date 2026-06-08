@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-06-07
+date: 2026-06-08
 draft: false
 ShowToc: false
 ---
@@ -119,119 +119,119 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated June 7, 2026 — 14:00 UTC</div>
+    <div class="last-updated">Updated June 8, 2026 — 18:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
 
-  <div class="news-section-title">This Weekend's Headlines</div>
+  <div class="news-section-title">Monday's Headlines</div>
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">Jun 7</div>
+      <div class="news-date">Jun 8</div>
       <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-7-2026" target="_blank">WWDC 2026 Preview: Tim Cook's Finale, Gemini Siri & Multi-Model Apple Intelligence</a></h3>
-        <p>Apple's WWDC opens tomorrow (June 8) with Tim Cook's last keynote before handing CEO to John Ternus on September 1. The centerpiece: Siri rebuilt on a custom 1.2-trillion-parameter Google Gemini model licensed for ~$1B/year. Apple is ending OpenAI's exclusivity — users can choose ChatGPT, Gemini, or Claude for Apple Intelligence, with distinct voices for each. Gemini is the default. iOS 27 is positioned as a "Snow Leopard" release focused on performance and stability, dropping iPhone 11 support. Six OS developer betas drop same afternoon. The contrarian bet: Apple pays for frontier models rather than building them, focusing on private compute and integration — becoming the "Switzerland of the AI wars."</p>
-        <div class="news-tags"><span>Apple</span><span>WWDC</span><span>Gemini</span><span>Siri</span><span>iOS 27</span><span>Tim Cook</span></div>
+        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026" target="_blank">Apple WWDC 2026: Tim Cook's Finale — Gemini Siri, Claude on iPhone, Multi-AI Extensions</a></h3>
+        <p>Tim Cook delivered his final WWDC keynote, handing CEO duties to John Ternus on September 1. The centerpiece: a completely rebuilt Siri powered by a custom 1.2-trillion-parameter Google Gemini model licensed for ~$1B/year. Apple's new AI Extensions system lets users choose ChatGPT, Gemini (default), or Anthropic's Claude for Apple Intelligence across Siri, Writing Tools, and Image Playground — each with a distinct voice. Claude becomes a native iPhone option for the first time, reaching 2.2 billion active Apple devices. iOS 27 beta 1 is positioned as a "Snow Leopard" stability release; iPhone 11 is dropped, and Apple Intelligence requires 15 Pro+. No new hardware announced. The contrarian bet: Apple pays for frontier models rather than building them — becoming the "Switzerland of the AI wars" but accepting permanent dependency on Google's model quality.</p>
+        <div class="news-tags"><span>Apple</span><span>WWDC</span><span>Gemini</span><span>Claude</span><span>iOS 27</span><span>Tim Cook</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 7</div>
+      <div class="news-date">Jun 7–8</div>
       <div class="news-content">
-        <h3><a href="https://opentools.ai/news/anthropic-warns-ai-industry-has-no-brake-pedal" target="_blank">Anthropic Issues Urgent Warning: AI Industry Has "No Brake Pedal" — Claude Writes 80% of Its Own Codebase</a></h3>
-        <p>Anthropic co-founder Jack Clark issued a rare public warning that AI systems are advancing so fast they may soon undergo self-improvement without human oversight. The evidence: Claude now writes over 80% of Anthropic's own codebase. Current safety evaluation frameworks assume models improve between training runs (every few months), but a self-improving model can change its own weights during deployment. Clark called for a coordinated, verifiable pause mechanism before AI systems achieve full recursive self-improvement. The statement is the strongest caution yet from a frontier lab about the pace of advancement.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Safety</span><span>Self-Improvement</span><span>Recursive</span><span>Warning</span><span>Claude</span></div>
+        <h3><a href="https://theaitrack.com/ai-news-june-2026-in-depth-and-concise/" target="_blank">Anthropic Files for $965B IPO — Apollo & Blackstone Lock $35B Chip Deal</a></h3>
+        <p>Anthropic confidentially filed for an IPO at a ~$965B valuation, leapfrogging OpenAI in the public-market race. Fueled by Claude Code enterprise traction, the Opus 4.8 launch, and surging demand, the filing tests public market appetite for frontier AI valuations. Private equity giants Apollo and Blackstone committed $35 billion in chip financing to massively scale Anthropic's compute infrastructure. Combined with Anthropic's $1.25B/month SpaceX compute contract, the financing positions Anthropic as the most capital-intensive private AI company. The IPO filing also complicates the political landscape — Bernie Sanders' proposed "American AI Sovereign Wealth Fund Act" would impose a 50% stock tax on AI labs, and the Trump administration has endorsed the concept of government equity stakes.</p>
+        <div class="news-tags"><span>Anthropic</span><span>IPO</span><span>$965B</span><span>Apollo</span><span>Blackstone</span><span>Claude Code</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 7</div>
+      <div class="news-date">Jun 8</div>
       <div class="news-content">
-        <h3><a href="https://opentools.ai/news/apollo-blackstone-35-billion-anthropic-chip-financing" target="_blank">Apollo & Blackstone Lock $35B Chip Deal to Fuel Anthropic's AI Expansion</a></h3>
-        <p>Private equity giants Apollo and Blackstone have committed $35 billion in chip financing to massively scale Anthropic's compute infrastructure. The deal — confirmed June 7 — signals that institutional capital sees AI infrastructure as a generational investment opportunity. Combined with Anthropic's $1.25B/month SpaceX compute contract and its $965B IPO valuation, the financing positions Anthropic as the most capital-intensive private AI company in the world. The deal also highlights the growing role of private credit markets in funding AI's insatiable compute demands.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Apollo</span><span>Blackstone</span><span>Chip Financing</span><span>Infrastructure</span><span>Private Equity</span></div>
+        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026" target="_blank">Colorado AI Act: 22 Days Until Enforcement — No Federal Preemption Yet</a></h3>
+        <p>The Colorado Consumer Protections for Artificial Intelligence Act takes effect June 30, 2026 — just 22 days away. It applies to deployers and developers of high-risk AI systems serving Colorado residents in employment, healthcare, financial services, education, housing, and legal services. Requirements include a risk management program, annual impact assessments, consumer disclosure, and rights to appeal adverse decisions. The Great American AI Act proposes three years of federal preemption but has not passed — companies waiting for preemption are now 22 days from a real deadline. With the EU AI Act's August 2 deadline also looming (fines up to €35M or 7% of global turnover), the regulatory gauntlet is tightening on both sides of the Atlantic.</p>
+        <div class="news-tags"><span>Regulation</span><span>Colorado</span><span>AI Act</span><span>Compliance</span><span>Deadline</span><span>Policy</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 7</div>
+      <div class="news-date">Jun 6–8</div>
       <div class="news-content">
-        <h3><a href="https://opentools.ai/news/trump-administration-government-stake-openai" target="_blank">Government Ownership of AI Goes Mainstream — Trump, Sanders & Altman Align on Equity Stake Concept</a></h3>
-        <p>The strangest political convergence of the year: Donald Trump has endorsed the concept of the US government taking equity stakes in AI labs. Bernie Sanders' proposed "American AI Sovereign Wealth Fund Act" would impose a one-time 50% stock tax on OpenAI, Anthropic, and xAI — shares going into a public sovereign wealth fund. OpenAI CEO Sam Altman is reportedly pitching the White House on a smaller government stake, telling Sanders he "can't support the 50% threshold" but wants to work together. Anthropic filed for its $965B IPO the same day Sanders' op-ed dropped, making the political environment for AI IPOs significantly more complex. The concept — unimaginable six months ago — is now a mainstream negotiating position.</p>
-        <div class="news-tags"><span>Policy</span><span>Government</span><span>Sovereign Wealth</span><span>Trump</span><span>Sanders</span><span>Altman</span></div>
+        <h3><a href="https://imfounder.com/science-tech/explosive-tech-news-june-2026-ai-lawsuits-ipos-cyberattacks/" target="_blank">Florida Sues OpenAI & Sam Altman — First State-Level AI Accountability Lawsuit</a></h3>
+        <p>Florida Attorney General James Uthmeier filed the first-ever US state lawsuit against OpenAI and CEO Sam Altman directly, alleging ChatGPT contributed to harmful incidents including violence involving users. The complaint accuses OpenAI of prioritizing growth over safety with inadequate protections for minors. OpenAI denies responsibility, citing extensive safety measures. The case could establish legal precedents for AI accountability at the state level and may trigger additional regulatory actions. It arrives amid a broader wave of AI litigation and regulatory pressure, with the EU AI Act's enforcement deadline approaching and the Colorado AI Act taking effect this month.</p>
+        <div class="news-tags"><span>OpenAI</span><span>Lawsuit</span><span>Florida</span><span>Litigation</span><span>Accountability</span><span>Safety</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 7</div>
+      <div class="news-date">Jun 6–8</div>
       <div class="news-content">
-        <h3><a href="https://opentools.ai/news" target="_blank">xAI's Blitz Week: Grok for Government, Coding Agent & Enterprise Web Connectors</a></h3>
-        <p>xAI had its most significant product push since inception, pivoting from a model lab to a full enterprise stack. Grok for Government landed the longest-running federal AI contract — $0.42 per agency for 18 months via the GSA, a subsidized distribution play to capture federal mindshare. Grok Build (terminal-based coding agent) entered early beta for SuperGrok Heavy subscribers, competing directly with Claude Code, Copilot, and Cursor with support for planning, diffs, parallel subagents, and worktrees. Grok Web Connectors bring deep integration with SharePoint, Outlook, Google Workspace, Notion, GitHub, and MCP protocol support — opening the door for cross-platform AI tooling in enterprise environments.</p>
-        <div class="news-tags"><span>xAI</span><span>Grok</span><span>Enterprise</span><span>Government</span><span>Coding Agent</span><span>Connectors</span></div>
+        <h3><a href="https://imfounder.com/science-tech/explosive-tech-news-june-2026-ai-lawsuits-ipos-cyberattacks/" target="_blank">Alphabet Raises $80 Billion for AI Infrastructure Arms Race</a></h3>
+        <p>Alphabet announced an $80 billion stock offering to fund massive investments in AI infrastructure, compute capacity, and global data center expansion. The move underscores that AI infrastructure spending is becoming the defining competitive advantage. Demand for AI services is exceeding available supply — even Google, one of the world's largest data center operators, recently rented 110,000 GPUs from SpaceX because it couldn't build capacity fast enough. The bet signals that the gap between AI leaders and laggards will widen dramatically, and that the "build or buy compute" equation increasingly favors those with capital to deploy at scale. Morningstar's formal valuation of SpaceX — which provides much of this compute — is $780B, less than half the IPO price.</p>
+        <div class="news-tags"><span>Alphabet</span><span>Infrastructure</span><span>$80B</span><span>Data Centers</span><span>Compute</span><span>Capital</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 7</div>
+      <div class="news-date">Jun 6–8</div>
       <div class="news-content">
-        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-june-7-2026" target="_blank">SpaceX IPO Prices Tuesday at $135/Share — $1.77T Valuation, Largest in History</a></h3>
-        <p>SpaceX's record-breaking IPO roadshow is in its final days: pricing Tuesday June 11 after market close, trading Wednesday June 12 on Nasdaq under ticker SPCX. The $135/share fixed price implies a $1.77T valuation. But the numbers underneath are contentious: the Google-SpaceX $920M/month compute deal (disclosed June 5 in S-1 Amendment No. 2) plus the Anthropic $1.25B/month contract give Colossus a ~$26B annualized AI infrastructure run rate — already larger than Starlink's full-year 2025 revenue of $18.7B. Morningstar's formal valuation is $780B — less than half the IPO price. SpaceX posted a $4.94B net loss in 2025 and $4.28B loss in Q1 2026 alone. Both the Anthropic and Google compute contracts are terminable with 90 days' notice after Dec 31, 2026.</p>
-        <div class="news-tags"><span>SpaceX</span><span>IPO</span><span>SPCX</span><span>Valuation</span><span>AI Compute</span><span>Colossus</span></div>
+        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026" target="_blank">Microsoft Foundry: 11,000 Models & Claude in Excel for 750M Users</a></h3>
+        <p>Microsoft's post-Build momentum continues: Foundry now hosts 11,000+ models including GPT-5.5, Claude Opus 4.8, Sonnet 4.5, Gemini, and Microsoft's own MAI family — all via a single Azure endpoint with MACC-eligible billing. Claude Opus 4.8 is now directly embedded inside Excel for formula writing, data cleaning, and narrative generation, targeting 750 million global Excel users. Microsoft's MAI-Thinking-1 received its first credible third-party validation (blind eval by Surge showed it preferred over Claude Sonnet 4.6). Majorana 2 quantum chip promises 1,000x reliability improvement with topological qubits — though "within striking distance of commercially useful" is not the same as having one.</p>
+        <div class="news-tags"><span>Microsoft</span><span>Foundry</span><span>Claude</span><span>Excel</span><span>MAI</span><span>Enterprise</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 6–8</div>
+      <div class="news-content">
+        <h3><a href="https://imfounder.com/science-tech/explosive-tech-news-june-2026-ai-lawsuits-ipos-cyberattacks/" target="_blank">SpaceX IPO Prices at $135/Share — $1.77T Valuation, Water Scarcity Warning</a></h3>
+        <p>SpaceX's record-breaking IPO roadshow is in its final days: pricing Tuesday June 11 at $135/share, trading Wednesday June 12 on Nasdaq under ticker SPCX. The $1.77T valuation is contentious — Morningstar's formal valuation is $780B, less than half. The Google-SpaceX $920M/month compute deal and Anthropic's $1.25B/month contract give Colossus a ~$26B annualized AI infrastructure run rate, larger than Starlink's full-year 2025 revenue. But SpaceX posted a $4.94B net loss in 2025 and $4.28B loss in Q1 2026. In a warning to investors, SpaceX flagged that water access for data center cooling is becoming a critical strategic risk — a sign that environmental constraints are entering AI infrastructure planning.</p>
+        <div class="news-tags"><span>SpaceX</span><span>IPO</span><span>SPCX</span><span>Valuation</span><span>Water</span><span>Infrastructure</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 2–8</div>
+      <div class="news-content">
+        <h3><a href="https://cybernews.com/ai-news/trump-pre-check-openai-google-anthropic-models/" target="_blank">US Government to Pre-Screen AI Models for National Security — Trump Executive Order</a></h3>
+        <p>President Trump signed an executive order establishing a framework for the federal government to vet the most advanced AI models for national security risks before public release. Federal agencies get 30 days to assess models, focusing on cybersecurity risks and vulnerabilities. OpenAI, Google, and Anthropic have all voiced support, calling it a step toward safer AI deployment. The policy signals a major shift in the US AI stance — balancing innovation leadership with tighter government oversight on security risks, and marking the first formalized pre-release screening process for frontier AI models at the federal level.</p>
+        <div class="news-tags"><span>Policy</span><span>Executive Order</span><span>Security</span><span>Oversight</span><span>Trump</span><span>Regulation</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 1–8</div>
+      <div class="news-content">
+        <h3><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Microsoft-Reinvent-Windows-PCs-for-the-Age-of-Personal-AI/default.aspx" target="_blank">NVIDIA RTX Spark Superchip Reinvents Windows PCs for Personal AI Agents</a></h3>
+        <p>NVIDIA unveiled RTX Spark, a 1-petaflop AI superchip for Windows PCs, at GTC Taipei alongside Microsoft. The chip reinvents PCs for the era of personal AI agents — moving from tool to teammate. Microsoft is optimizing Windows for local AI agent execution. Dell, HP, and other major OEMs will ship "AI Agent PCs" powered by RTX Spark starting fall 2026. The move expands NVIDIA beyond its GPU stronghold into the $200B CPU market, signaling that AI workloads are shifting from purely cloud-based to hybrid local execution. NVIDIA also launched Nemotron 3 Ultra at GTC Taipei, the most capable US open-weights model.</p>
+        <div class="news-tags"><span>NVIDIA</span><span>RTX Spark</span><span>Microsoft</span><span>AI PC</span><span>Hardware</span><span>GTC</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 8</div>
+      <div class="news-content">
+        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026" target="_blank">AI Chatbot Market Shifts: Claude Grows 306%, ChatGPT Drops to 54.7%</a></h3>
+        <p>Web traffic data from Momentic/Similarweb reveals the most significant competitive shift in the AI chatbot market since ChatGPT launched. Claude's web traffic grew 306% in one quarter (203M to 824M visits), reaching 8.2% global share and 12.5% in the US. ChatGPT's share fell from 76.5% (Feb 2025) to 54.7%. Gemini surged 104% in six months to 27.4%. Caveat: web visits only — API and embedded markets tell a different story. But combined with Claude becoming an iPhone option via Apple's Extensions system, the trajectory is clear: the multi-model era has arrived, and the days of a single dominant AI assistant are over.</p>
+        <div class="news-tags"><span>Market Share</span><span>Claude</span><span>ChatGPT</span><span>Gemini</span><span>Growth</span><span>Competition</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 6–8</div>
+      <div class="news-content">
+        <h3><a href="https://theaitrack.com/ai-news-june-2026-in-depth-and-concise/" target="_blank">OpenAI IPO Sprint: GPT-Rosalind, Codex Expansion, Landmark AWS Deal</a></h3>
+        <p>OpenAI is racing toward a September 2026 IPO (Goldman Sachs & Morgan Stanley) at a $730-850B valuation. Revenue grew 10x from $2B to $20B annually, but Q1 2026 operating margin is -122% with projected cumulative losses of $14B between 2023-2029. Key product moves: GPT-Rosalind (life sciences model, 31% fewer tokens than GPT-5.5 for genomics, 21.6% accuracy improvement), Rosalind Biodefense for pandemic preparedness, Codex expansion to non-developer roles (lawyers, PMs, analysts via Salesforce/Jira plugins), ChatGPT Lockdown Mode for enterprise prompt-injection protection, and a landmark deal putting OpenAI frontier models on Amazon Web Services — directly alongside Claude in the AWS console.</p>
+        <div class="news-tags"><span>OpenAI</span><span>IPO</span><span>GPT-Rosalind</span><span>Codex</span><span>AWS</span><span>Enterprise</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">Jun 6–7</div>
       <div class="news-content">
-        <h3><a href="https://opentools.ai/news/openai-lockdown-mode-chatgpt-prompt-injection-protection" target="_blank">OpenAI IPO Sprint: $730-850B Target, GPT-Rosalind, Codex for Everyone, AWS Partnership</a></h3>
-        <p>OpenAI is sprinting toward a September 2026 IPO (Goldman & Morgan Stanley) at a $730-850B valuation. Revenue grew from $2B to $20B annually, but Q1 2026 operating margin is -122% with projected cumulative losses of $14B between 2023-2029. Key product moves: GPT-Rosalind (life sciences model, 31% fewer tokens than GPT-5.5 for genomics, 21.6% accuracy improvement), Rosalind Biodefense for pandemic preparedness, Codex expansion to non-developer roles (lawyers, PMs, analysts via Salesforce/Jira plugins), ChatGPT Lockdown Mode for enterprise prompt-injection protection, and a landmark deal putting OpenAI frontier models and Codex on Amazon Web Services — directly alongside Claude in the AWS console.</p>
-        <div class="news-tags"><span>OpenAI</span><span>IPO</span><span>GPT-Rosalind</span><span>Codex</span><span>AWS</span><span>Enterprise</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 6</div>
-      <div class="news-content">
-        <h3><a href="https://imfounder.com/science-tech/explosive-tech-news-june-2026-ai-lawsuits-ipos-cyberattacks/" target="_blank">Florida Sues OpenAI and Sam Altman — First State-Level AI Accountability Lawsuit</a></h3>
-        <p>Florida became the first US state to sue OpenAI and CEO Sam Altman directly. Florida AG James Uthmeier alleges ChatGPT contributed to harmful incidents, including violence involving users, and accuses OpenAI of prioritizing growth over safety with inadequate protections for minors. OpenAI denied responsibility, citing extensive safety measures. The case could establish legal precedents for AI accountability at the state level and may trigger additional regulatory actions from other states. It arrives amid a broader wave of AI litigation and regulatory pressure as the EU AI Act's August 2 enforcement deadline approaches.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Lawsuit</span><span>Florida</span><span>Litigation</span><span>Accountability</span><span>Safety</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 6</div>
-      <div class="news-content">
-        <h3><a href="https://imfounder.com/science-tech/explosive-tech-news-june-2026-ai-lawsuits-ipos-cyberattacks/" target="_blank">Alphabet Raises $80 Billion for AI Infrastructure Arms Race</a></h3>
-        <p>Alphabet announced plans to raise $80 billion through a stock offering to fund massive investments in AI infrastructure, compute capacity, and global data center expansion. The move underscores that AI investment has reached historic levels, with infrastructure spending becoming the defining competitive advantage. Demand for AI services is exceeding available supply — even Google, one of the world's largest data center operators, recently rented 110,000 GPUs from SpaceX because it couldn't build capacity fast enough. The bet signals that the gap between AI leaders and laggards will widen significantly, and that the "build or buy compute" equation increasingly favors those with capital to deploy at scale.</p>
-        <div class="news-tags"><span>Alphabet</span><span>Infrastructure</span><span>$80B</span><span>Data Centers</span><span>Compute</span><span>Capital</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 7</div>
-      <div class="news-content">
-        <h3><a href="https://opentools.ai/news/tesla-fsd-trainers-distrust-self-driving-safety-stats" target="_blank">Tesla FSD Trainers Don't Trust Their Own Tech — Reuters Investigation Finds Inflated Safety Claims</a></h3>
-        <p>A Reuters investigation revealed that 7 of 9 former data labelers who trained Tesla's Full Self-Driving system said they would not trust it to drive them, citing dangerous failures they observed firsthand. Separately, 11 independent researchers found Tesla inflates its FSD safety record by up to 3x through a methodological flaw: comparing airbag-deployment crashes against far less severe incidents, skewing the safety comparison. The S&P 500 also rejected fast-track entry for unprofitable AI companies (SpaceX, OpenAI, Anthropic), blocking them from $7.5 trillion in passive index funds. Tech layoffs topped 123K in 2026, with May the worst month in two years.</p>
-        <div class="news-tags"><span>Tesla</span><span>FSD</span><span>Safety</span><span>Reuters</span><span>Layoffs</span><span>SP500</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 7</div>
-      <div class="news-content">
-        <h3><a href="https://aitoolly.com/ai-news/2026-06-07" target="_blank">Meituan LongCat Drops Massive Open-Source Suite: Video Avatars, Theorem Provers & Multimodal Models</a></h3>
-        <p>Meituan's LongCat team released a wave of open-source models spanning video generation, multimodal AI, embodied systems, and math reasoning. LongCat-Video-Avatar 1.5 delivers commercial-grade digital human generation with improved lip-sync and long-form stability. LongCat-Flash-Prover tackles rigorous mathematical theorem proving and formal verification — shifting models from guessing answers to providing verifiable proofs. LongCat-Next is a native multimodal model integrating vision and speech as "first-class" modalities, open-sourced alongside its discrete tokenizer. LongCat-AudioDiT offers zero-shot TTS voice cloning in waveform latent space. The release positions Meituan as a major open-source AI contributor from China, rivaling DeepSeek and Alibaba's Qwen ecosystem.</p>
-        <div class="news-tags"><span>Meituan</span><span>LongCat</span><span>Open Source</span><span>Video</span><span>Multimodal</span><span>Embodied AI</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 5–7</div>
-      <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-7-2026" target="_blank">The Week in Review: Models, Infrastructure & Regulation Reshape the AI Landscape</a></h3>
-        <p>A look back at a week that redefined the industry: Microsoft launched 7 in-house MAI models at Build (ending its position as primarily an OpenAI reseller), NVIDIA shipped Nemotron 3 Ultra (the most capable US open-weights model), OpenAI reached GA on three real-time audio models, the Great American AI Act proposed blocking all state AI laws for three years, and Anthropic confirmed Claude Mythos will go public "in coming weeks." The central thesis of 2026 is crystallizing: the infrastructure constraint is the defining story — not the models themselves, but who controls the physical compute to run them. Google rented 110K GPUs from SpaceX because it couldn't build fast enough. Microsoft built its own model family because renting OpenAI's was too expensive and strategically exposed. Anthropic is going public because capital markets are the only funding source large enough for what comes next.</p>
-        <div class="news-tags"><span>Week in Review</span><span>Microsoft</span><span>NVIDIA</span><span>Regulation</span><span>Infrastructure</span><span>2026 Thesis</span></div>
+        <h3><a href="https://theaitrack.com/ai-news-june-2026-in-depth-and-concise/" target="_blank">The Model Firehose: Pricing Wars, June Release Map & What Ships Next</a></h3>
+        <p>June 2026 is an unprecedented model release window. Shipped: GPT-5.5, Claude Opus 4.8, Gemini 3.5 Flash (3x price hike signals premium positioning), Grok 4.3 ($0.50/input — a subsidized loss leader). Preview: Claude Mythos (Project Glasswing, 200+ organizations). Rumored (high credibility): Claude Sonnet 4.8 (mid-June, npm leak), Gemini 3.5 Pro (June window, expected $2-4/$12-25 per million tokens — directly competing with Opus 4.8). In training: Grok 5, GPT-5.6. Anthropic's Fast Mode (~3x cheaper Opus) is the most interesting pricing innovation — making frontier intelligence accessible for cost-sensitive enterprise builders. DeepSeek V4 Pro's 75% price cut made permanent, solidifying its position as the low-cost leader for agents and long-context tasks.</p>
+        <div class="news-tags"><span>Models</span><span>Pricing</span><span>GPT-5.5</span><span>Opus 4.8</span><span>Gemini</span><span>Grok</span></div>
       </div>
     </div>
 
@@ -337,4 +337,4 @@ new p5(function(p) {
 </script>
 {{< /rawhtml >}}
 
-<!-- update 1749319200 -->
+<!-- update 1749405600 -->
