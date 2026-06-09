@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-06-08
+date: 2026-06-09
 draft: false
 ShowToc: false
 ---
@@ -119,119 +119,119 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated June 8, 2026 — 18:00 UTC</div>
+    <div class="last-updated">Updated June 9, 2026 — 12:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
 
-  <div class="news-section-title">Monday's Headlines</div>
+  <div class="news-section-title">Tuesday's Headlines</div>
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">Jun 8</div>
+      <div class="news-date">Jun 9</div>
       <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026" target="_blank">Apple WWDC 2026: Tim Cook's Finale — Gemini Siri, Claude on iPhone, Multi-AI Extensions</a></h3>
-        <p>Tim Cook delivered his final WWDC keynote, handing CEO duties to John Ternus on September 1. The centerpiece: a completely rebuilt Siri powered by a custom 1.2-trillion-parameter Google Gemini model licensed for ~$1B/year. Apple's new AI Extensions system lets users choose ChatGPT, Gemini (default), or Anthropic's Claude for Apple Intelligence across Siri, Writing Tools, and Image Playground — each with a distinct voice. Claude becomes a native iPhone option for the first time, reaching 2.2 billion active Apple devices. iOS 27 beta 1 is positioned as a "Snow Leopard" stability release; iPhone 11 is dropped, and Apple Intelligence requires 15 Pro+. No new hardware announced. The contrarian bet: Apple pays for frontier models rather than building them — becoming the "Switzerland of the AI wars" but accepting permanent dependency on Google's model quality.</p>
-        <div class="news-tags"><span>Apple</span><span>WWDC</span><span>Gemini</span><span>Claude</span><span>iOS 27</span><span>Tim Cook</span></div>
+        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-june-9-2026" target="_blank">WWDC Fallout: Siri AI Blocked in EU, macOS Golden Gate Ends Intel Era</a></h3>
+        <p>Apple's WWDC aftermath reveals a buried headline: Siri AI — rebuilt on Google Gemini with personal context and on-screen awareness — is blocked at launch on iOS/iPadOS in the EU, with Apple blaming the Digital Markets Act (DMA) for requiring equal third-party assistant access. macOS 27 "Golden Gate" officially ends support for all Intel Macs, requiring Apple Silicon (M1+). Developer betas for all six OS versions dropped June 8 afternoon. Siri AI ships as a standalone app with a "Search or Ask" gesture and conversational card interface. The EU exclusion affects hundreds of millions of users, while China is also excluded. Tim Cook's final WWDC as CEO hands the reins to John Ternus on September 1.</p>
+        <div class="news-tags"><span>Apple</span><span>WWDC</span><span>Siri AI</span><span>EU</span><span>DMA</span><span>macOS</span><span>Tim Cook</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 7–8</div>
+      <div class="news-date">Jun 9</div>
       <div class="news-content">
-        <h3><a href="https://theaitrack.com/ai-news-june-2026-in-depth-and-concise/" target="_blank">Anthropic Files for $965B IPO — Apollo & Blackstone Lock $35B Chip Deal</a></h3>
-        <p>Anthropic confidentially filed for an IPO at a ~$965B valuation, leapfrogging OpenAI in the public-market race. Fueled by Claude Code enterprise traction, the Opus 4.8 launch, and surging demand, the filing tests public market appetite for frontier AI valuations. Private equity giants Apollo and Blackstone committed $35 billion in chip financing to massively scale Anthropic's compute infrastructure. Combined with Anthropic's $1.25B/month SpaceX compute contract, the financing positions Anthropic as the most capital-intensive private AI company. The IPO filing also complicates the political landscape — Bernie Sanders' proposed "American AI Sovereign Wealth Fund Act" would impose a 50% stock tax on AI labs, and the Trump administration has endorsed the concept of government equity stakes.</p>
-        <div class="news-tags"><span>Anthropic</span><span>IPO</span><span>$965B</span><span>Apollo</span><span>Blackstone</span><span>Claude Code</span></div>
+        <h3><a href="https://aitoolsrecap.com/Blog/spacex-ipo-roadshow-135-dollars-june-12-nasdaq-2026" target="_blank">SpaceX IPO Prices Wednesday at $135/Share — $1.77T Valuation, 30% Retail Allocation</a></h3>
+        <p>SpaceX's record-breaking IPO roadshow enters its final days: pricing Tuesday June 11 after market close at $135/share, first trade Thursday June 12 on Nasdaq under ticker SPCX. The $1.77T valuation ($75B raise) is contentious — Morningstar's formal valuation is $780B, less than half. Key risk disclosures: $2.17B/month in AI compute revenue (Anthropic $1.25B/mo + Google $920M/mo) is terminable with 90 days' notice after December 31, 2026. SpaceX posted a $4.94B net loss in 2025 and $4.28B loss in Q1 2026. 30% of shares allocated to retail via Robinhood, Fidelity, Schwab — demand reportedly exceeds supply at $135. Water scarcity for data center cooling flagged as a growing strategic risk.</p>
+        <div class="news-tags"><span>SpaceX</span><span>IPO</span><span>SPCX</span><span>$135</span><span>Retail</span><span>Infrastructure</span><span>Nasdaq</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 8</div>
+      <div class="news-date">Jun 9</div>
       <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026" target="_blank">Colorado AI Act: 22 Days Until Enforcement — No Federal Preemption Yet</a></h3>
-        <p>The Colorado Consumer Protections for Artificial Intelligence Act takes effect June 30, 2026 — just 22 days away. It applies to deployers and developers of high-risk AI systems serving Colorado residents in employment, healthcare, financial services, education, housing, and legal services. Requirements include a risk management program, annual impact assessments, consumer disclosure, and rights to appeal adverse decisions. The Great American AI Act proposes three years of federal preemption but has not passed — companies waiting for preemption are now 22 days from a real deadline. With the EU AI Act's August 2 deadline also looming (fines up to €35M or 7% of global turnover), the regulatory gauntlet is tightening on both sides of the Atlantic.</p>
-        <div class="news-tags"><span>Regulation</span><span>Colorado</span><span>AI Act</span><span>Compliance</span><span>Deadline</span><span>Policy</span></div>
+        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-june-9-2026" target="_blank">Anthropic Files Updated S-1 — October 2026 IPO Confirmed at $965B Valuation</a></h3>
+        <p>Anthropic filed an updated confidential S-1 registration statement, confirming an October 2026 public listing. The company reports $47B ARR backed by a $65B Series H at $965B post-money valuation. The IPO window is getting crowded: OpenAI targets September 2026 (S-1 filed May 22), SpaceX debuts June 12, and Anthropic follows in October — forcing institutional investors to allocate across three major AI-adjacent IPOs within a six-week Q3-Q4 window. Anthropic's $1.25B/month SpaceX compute contract and $35B Apollo/Blackstone chip financing underpin its capital-intensive position. Claude Opus 4.8's dynamic workflows and enterprise traction (Claude Code, Excel integration) drive the revenue story.</p>
+        <div class="news-tags"><span>Anthropic</span><span>IPO</span><span>S-1</span><span>October</span><span>$965B</span><span>Claude</span><span>Enterprise</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 6–8</div>
+      <div class="news-date">Jun 8–9</div>
       <div class="news-content">
-        <h3><a href="https://imfounder.com/science-tech/explosive-tech-news-june-2026-ai-lawsuits-ipos-cyberattacks/" target="_blank">Florida Sues OpenAI & Sam Altman — First State-Level AI Accountability Lawsuit</a></h3>
-        <p>Florida Attorney General James Uthmeier filed the first-ever US state lawsuit against OpenAI and CEO Sam Altman directly, alleging ChatGPT contributed to harmful incidents including violence involving users. The complaint accuses OpenAI of prioritizing growth over safety with inadequate protections for minors. OpenAI denies responsibility, citing extensive safety measures. The case could establish legal precedents for AI accountability at the state level and may trigger additional regulatory actions. It arrives amid a broader wave of AI litigation and regulatory pressure, with the EU AI Act's enforcement deadline approaching and the Colorado AI Act taking effect this month.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Lawsuit</span><span>Florida</span><span>Litigation</span><span>Accountability</span><span>Safety</span></div>
+        <h3><a href="https://ecency.com/@ai-news-daily/ai-news-daily-2026-06-09" target="_blank">Google NotebookLM Becomes Agentic Research Workspace — Gemini 3.5 + Antigravity</a></h3>
+        <p>NotebookLM upgraded to Gemini 3.5 with Antigravity agent infrastructure, introducing source discovery from chat — the tool now helps assemble the source repository, not just answer questions from pre-loaded documents. This marks Google's strategic bet on managing "the messy middle" of research: sources, citations, context, exports, and repeatable research habits. Antigravity is emerging as shared agent infrastructure across Google products, expanding beyond coding into research workflows. For researchers, writers, and product teams, the implication is clear: the winning product is not the flashiest model but the one that manages the full research lifecycle.</p>
+        <div class="news-tags"><span>Google</span><span>NotebookLM</span><span>Gemini 3.5</span><span>Antigravity</span><span>Research</span><span>Agents</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 6–8</div>
+      <div class="news-date">Jun 8–9</div>
       <div class="news-content">
-        <h3><a href="https://imfounder.com/science-tech/explosive-tech-news-june-2026-ai-lawsuits-ipos-cyberattacks/" target="_blank">Alphabet Raises $80 Billion for AI Infrastructure Arms Race</a></h3>
-        <p>Alphabet announced an $80 billion stock offering to fund massive investments in AI infrastructure, compute capacity, and global data center expansion. The move underscores that AI infrastructure spending is becoming the defining competitive advantage. Demand for AI services is exceeding available supply — even Google, one of the world's largest data center operators, recently rented 110,000 GPUs from SpaceX because it couldn't build capacity fast enough. The bet signals that the gap between AI leaders and laggards will widen dramatically, and that the "build or buy compute" equation increasingly favors those with capital to deploy at scale. Morningstar's formal valuation of SpaceX — which provides much of this compute — is $780B, less than half the IPO price.</p>
-        <div class="news-tags"><span>Alphabet</span><span>Infrastructure</span><span>$80B</span><span>Data Centers</span><span>Compute</span><span>Capital</span></div>
+        <h3><a href="https://www.axios.com/2026/06/08/exclusive-anthropics-mythos-can-exploit-new-flaws-in-hours" target="_blank">Anthropic Mythos Can Exploit New Vulnerabilities in Hours — Dual-Use Security Dilemma</a></h3>
+        <p>Anthropic's Mythos Preview (Project Glasswing) can exploit newly disclosed vulnerabilities in hours — including full exploit chains and remote code execution — according to Axios and Anthropic's own red-team write-up. The same model improvements that help defenders find, reproduce, and patch vulnerabilities can also reduce the friction of weaponization. AI security is moving from theoretical to practical: vulnerability disclosure timelines are compressing, and defenses need faster patch pipelines, better sandboxing, and serious access limits on offensive-capable systems. The findings renew questions about responsible release of capable autonomous coding agents.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Mythos</span><span>Security</span><span>Vulnerabilities</span><span>Red Team</span><span>Dual-Use</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 6–8</div>
+      <div class="news-date">Jun 8–9</div>
       <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026" target="_blank">Microsoft Foundry: 11,000 Models & Claude in Excel for 750M Users</a></h3>
-        <p>Microsoft's post-Build momentum continues: Foundry now hosts 11,000+ models including GPT-5.5, Claude Opus 4.8, Sonnet 4.5, Gemini, and Microsoft's own MAI family — all via a single Azure endpoint with MACC-eligible billing. Claude Opus 4.8 is now directly embedded inside Excel for formula writing, data cleaning, and narrative generation, targeting 750 million global Excel users. Microsoft's MAI-Thinking-1 received its first credible third-party validation (blind eval by Surge showed it preferred over Claude Sonnet 4.6). Majorana 2 quantum chip promises 1,000x reliability improvement with topological qubits — though "within striking distance of commercially useful" is not the same as having one.</p>
-        <div class="news-tags"><span>Microsoft</span><span>Foundry</span><span>Claude</span><span>Excel</span><span>MAI</span><span>Enterprise</span></div>
+        <h3><a href="https://www.wired.com/story/meta-removes-face-recognition-code-meta-ai-app-smart-glasses/" target="_blank">Meta Removes Hidden Face-Recognition Code from Smart Glasses App After WIRED Report</a></h3>
+        <p>After WIRED reported unreleased "NameTag" face-recognition components in Meta's smart glasses companion app — including face detection, cropping, and biometric-style processing — Meta removed nearly all code paths in the next app version. The incident highlights how quickly sensitive AI features can move from hidden app artifacts to public scrutiny to product rollback. For the AI wearables industry, the lesson is sharp: face identity, consent, provenance, and disclosure cannot be treated as afterthoughts. An assistant that can see what you see is powerful; one that can identify people without clear consent is a social and regulatory minefield.</p>
+        <div class="news-tags"><span>Meta</span><span>Face Recognition</span><span>Privacy</span><span>Smart Glasses</span><span>Wearables</span><span>WIRED</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 6–8</div>
+      <div class="news-date">Jun 8–9</div>
       <div class="news-content">
-        <h3><a href="https://imfounder.com/science-tech/explosive-tech-news-june-2026-ai-lawsuits-ipos-cyberattacks/" target="_blank">SpaceX IPO Prices at $135/Share — $1.77T Valuation, Water Scarcity Warning</a></h3>
-        <p>SpaceX's record-breaking IPO roadshow is in its final days: pricing Tuesday June 11 at $135/share, trading Wednesday June 12 on Nasdaq under ticker SPCX. The $1.77T valuation is contentious — Morningstar's formal valuation is $780B, less than half. The Google-SpaceX $920M/month compute deal and Anthropic's $1.25B/month contract give Colossus a ~$26B annualized AI infrastructure run rate, larger than Starlink's full-year 2025 revenue. But SpaceX posted a $4.94B net loss in 2025 and $4.28B loss in Q1 2026. In a warning to investors, SpaceX flagged that water access for data center cooling is becoming a critical strategic risk — a sign that environmental constraints are entering AI infrastructure planning.</p>
-        <div class="news-tags"><span>SpaceX</span><span>IPO</span><span>SPCX</span><span>Valuation</span><span>Water</span><span>Infrastructure</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 2–8</div>
-      <div class="news-content">
-        <h3><a href="https://cybernews.com/ai-news/trump-pre-check-openai-google-anthropic-models/" target="_blank">US Government to Pre-Screen AI Models for National Security — Trump Executive Order</a></h3>
-        <p>President Trump signed an executive order establishing a framework for the federal government to vet the most advanced AI models for national security risks before public release. Federal agencies get 30 days to assess models, focusing on cybersecurity risks and vulnerabilities. OpenAI, Google, and Anthropic have all voiced support, calling it a step toward safer AI deployment. The policy signals a major shift in the US AI stance — balancing innovation leadership with tighter government oversight on security risks, and marking the first formalized pre-release screening process for frontier AI models at the federal level.</p>
-        <div class="news-tags"><span>Policy</span><span>Executive Order</span><span>Security</span><span>Oversight</span><span>Trump</span><span>Regulation</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 1–8</div>
-      <div class="news-content">
-        <h3><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Microsoft-Reinvent-Windows-PCs-for-the-Age-of-Personal-AI/default.aspx" target="_blank">NVIDIA RTX Spark Superchip Reinvents Windows PCs for Personal AI Agents</a></h3>
-        <p>NVIDIA unveiled RTX Spark, a 1-petaflop AI superchip for Windows PCs, at GTC Taipei alongside Microsoft. The chip reinvents PCs for the era of personal AI agents — moving from tool to teammate. Microsoft is optimizing Windows for local AI agent execution. Dell, HP, and other major OEMs will ship "AI Agent PCs" powered by RTX Spark starting fall 2026. The move expands NVIDIA beyond its GPU stronghold into the $200B CPU market, signaling that AI workloads are shifting from purely cloud-based to hybrid local execution. NVIDIA also launched Nemotron 3 Ultra at GTC Taipei, the most capable US open-weights model.</p>
-        <div class="news-tags"><span>NVIDIA</span><span>RTX Spark</span><span>Microsoft</span><span>AI PC</span><span>Hardware</span><span>GTC</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 8</div>
-      <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026" target="_blank">AI Chatbot Market Shifts: Claude Grows 306%, ChatGPT Drops to 54.7%</a></h3>
-        <p>Web traffic data from Momentic/Similarweb reveals the most significant competitive shift in the AI chatbot market since ChatGPT launched. Claude's web traffic grew 306% in one quarter (203M to 824M visits), reaching 8.2% global share and 12.5% in the US. ChatGPT's share fell from 76.5% (Feb 2025) to 54.7%. Gemini surged 104% in six months to 27.4%. Caveat: web visits only — API and embedded markets tell a different story. But combined with Claude becoming an iPhone option via Apple's Extensions system, the trajectory is clear: the multi-model era has arrived, and the days of a single dominant AI assistant are over.</p>
+        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026" target="_blank">AI Chatbot Market Shifts Record: Claude +306%, ChatGPT Drops to 54.7%</a></h3>
+        <p>Web traffic data from Momentic/Similarweb reveals the most significant competitive shift since ChatGPT launched. Claude's web traffic grew 306% in one quarter (203M to 824M visits), reaching 8.2% global share and 12.5% in the US. ChatGPT's share fell from 76.5% (Feb 2025) to 54.7%. Gemini surged 104% in six months to 27.4%. DeepSeek holds 4.1%, Grok 2.8%. Caveat: web visits only — API and embedded markets tell a different story. But combined with Claude becoming an iPhone option via Apple's Extensions system and Microsoft embedding Claude in Excel, the multi-model era is here. The days of a single dominant AI assistant are over.</p>
         <div class="news-tags"><span>Market Share</span><span>Claude</span><span>ChatGPT</span><span>Gemini</span><span>Growth</span><span>Competition</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 6–8</div>
+      <div class="news-date">Jun 8–9</div>
       <div class="news-content">
-        <h3><a href="https://theaitrack.com/ai-news-june-2026-in-depth-and-concise/" target="_blank">OpenAI IPO Sprint: GPT-Rosalind, Codex Expansion, Landmark AWS Deal</a></h3>
-        <p>OpenAI is racing toward a September 2026 IPO (Goldman Sachs & Morgan Stanley) at a $730-850B valuation. Revenue grew 10x from $2B to $20B annually, but Q1 2026 operating margin is -122% with projected cumulative losses of $14B between 2023-2029. Key product moves: GPT-Rosalind (life sciences model, 31% fewer tokens than GPT-5.5 for genomics, 21.6% accuracy improvement), Rosalind Biodefense for pandemic preparedness, Codex expansion to non-developer roles (lawyers, PMs, analysts via Salesforce/Jira plugins), ChatGPT Lockdown Mode for enterprise prompt-injection protection, and a landmark deal putting OpenAI frontier models on Amazon Web Services — directly alongside Claude in the AWS console.</p>
-        <div class="news-tags"><span>OpenAI</span><span>IPO</span><span>GPT-Rosalind</span><span>Codex</span><span>AWS</span><span>Enterprise</span></div>
+        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026" target="_blank">Colorado AI Act: 21 Days to Enforcement — EU AI Act 54 Days Away</a></h3>
+        <p>The Colorado Consumer Protections for Artificial Intelligence Act takes effect June 30, 2026 — just 21 days away. It applies to deployers and developers of high-risk AI systems in employment, healthcare, financial services, education, housing, and legal services. Requirements include a risk management program, annual impact assessments, consumer disclosure, and rights to appeal adverse decisions. The Great American AI Act proposes three years of federal preemption but has not passed. The EU AI Act's August 2 deadline (fines up to €35M or 7% of global turnover) compounds the pressure. Companies waiting for federal preemption are now 21 days from a real deadline with no relief in sight.</p>
+        <div class="news-tags"><span>Regulation</span><span>Colorado</span><span>AI Act</span><span>Compliance</span><span>EU AI Act</span><span>Policy</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 6–7</div>
+      <div class="news-date">Jun 8–9</div>
       <div class="news-content">
-        <h3><a href="https://theaitrack.com/ai-news-june-2026-in-depth-and-concise/" target="_blank">The Model Firehose: Pricing Wars, June Release Map & What Ships Next</a></h3>
-        <p>June 2026 is an unprecedented model release window. Shipped: GPT-5.5, Claude Opus 4.8, Gemini 3.5 Flash (3x price hike signals premium positioning), Grok 4.3 ($0.50/input — a subsidized loss leader). Preview: Claude Mythos (Project Glasswing, 200+ organizations). Rumored (high credibility): Claude Sonnet 4.8 (mid-June, npm leak), Gemini 3.5 Pro (June window, expected $2-4/$12-25 per million tokens — directly competing with Opus 4.8). In training: Grok 5, GPT-5.6. Anthropic's Fast Mode (~3x cheaper Opus) is the most interesting pricing innovation — making frontier intelligence accessible for cost-sensitive enterprise builders. DeepSeek V4 Pro's 75% price cut made permanent, solidifying its position as the low-cost leader for agents and long-context tasks.</p>
-        <div class="news-tags"><span>Models</span><span>Pricing</span><span>GPT-5.5</span><span>Opus 4.8</span><span>Gemini</span><span>Grok</span></div>
+        <h3><a href="https://www.aiapps.com/blog/ai-news-breakthroughs-launches-trends-must-read/" target="_blank">Microsoft Foundry Hits 11K Models — Claude in Excel for 750M Users, MAI-Thinking-1 Validated</a></h3>
+        <p>Microsoft's post-Build momentum continues: Foundry now hosts 11,000+ models including GPT-5.5, Claude Opus 4.8, Sonnet 4.5, Gemini, and Microsoft's own MAI family — all via a single Azure endpoint. Claude Opus 4.8 is embedded directly inside Excel for formula writing, data cleaning, and narrative generation, targeting 750 million global Excel users. MAI-Thinking-1 received its first credible third-party validation (blind eval by Surge showed it preferred over Claude Sonnet 4.6). Microsoft's Majorana 2 quantum chip promises 1,000x reliability improvement with topological qubits. Copilot now bills based on token consumption, positioning usage-based pricing as "the new gateway drug" for enterprise AI adoption.</p>
+        <div class="news-tags"><span>Microsoft</span><span>Foundry</span><span>Claude</span><span>Excel</span><span>MAI</span><span>Enterprise</span><span>Quantum</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 8–9</div>
+      <div class="news-content">
+        <h3><a href="https://ecency.com/@ai-news-daily/ai-news-daily-2026-06-09" target="_blank">MiniMax M3: 1M Token Context at 1/20th Compute with Sparse Attention</a></h3>
+        <p>MiniMax released M3, built on the MiniMax Sparse Attention (MSA) architecture that slashes per-token compute to 1/20th of previous models. It supports up to 1 million tokens with 9x faster prefilling and 15x faster decoding at full context length. The efficiency breakthrough challenges the assumption that long-context processing requires proportional compute scaling. It arrives alongside NVIDIA Cosmos 3, the first fully open "omnimodel" for physical AI integrating vision reasoning, world simulation, and action generation. The efficiency race is now running alongside the capability race — cheaper long-context inference changes what applications are economically viable.</p>
+        <div class="news-tags"><span>MiniMax</span><span>M3</span><span>Sparse Attention</span><span>1M Tokens</span><span>Efficiency</span><span>NVIDIA</span><span>Cosmos</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 8–9</div>
+      <div class="news-content">
+        <h3><a href="https://aiagentstore.ai/ai-agent-news/daily/2026-06-09" target="_blank">MetaMask Launches Agent Wallet — Self-Custodial Crypto Wallets for AI Traders</a></h3>
+        <p>MetaMask released "Agent Wallet," letting AI agents execute onchain trades across EVM chains and DeFi primitives under mandatory security checks. Default guard-mode enforces spending limits, allowlists, transaction simulation, and two-factor approval. "Safe" transactions backed by Transaction Protection up to specified limits. For crypto and fintech builders, this standardizes a safer pattern for autonomous fund management while keeping user control and auditability. The move signals that agent-driven finance is moving from experimental to infrastructure — but the security-first design acknowledges the catastrophic risks of autonomous trading without guardrails. Early access opened June 8.</p>
+        <div class="news-tags"><span>MetaMask</span><span>Agent Wallet</span><span>Crypto</span><span>DeFi</span><span>Security</span><span>Autonomous Trading</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 6–9</div>
+      <div class="news-content">
+        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026" target="_blank">Pentagon AI Race: Testing OpenAI & Google Models to Replace Anthropic's Claude</a></h3>
+        <p>The Pentagon is actively testing OpenAI and Google AI models as potential replacements for Anthropic's Claude in certain defense applications, marking a significant competitive shift in defense AI contracting. The evaluation comes as Anthropic navigates the dual-use security scrutiny amplified by Mythos's rapid exploit capabilities. The move highlights that government AI procurement is becoming multi-vendor by design — no single AI lab can assume incumbency in defense contracts. With Colorado's AI Act 21 days away and the EU AI Act 54 days out, the regulatory landscape for defense AI is diverging sharply between domestic compliance requirements and export control considerations for deployed systems.</p>
+        <div class="news-tags"><span>Pentagon</span><span>Defense</span><span>OpenAI</span><span>Google</span><span>Anthropic</span><span>Procurement</span></div>
       </div>
     </div>
 
@@ -337,4 +337,4 @@ new p5(function(p) {
 </script>
 {{< /rawhtml >}}
 
-<!-- update 1749405600 -->
+<!-- update 1749513600 -->
