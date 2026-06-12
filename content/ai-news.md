@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-06-09
+date: 2026-06-12
 draft: false
 ShowToc: false
 ---
@@ -119,119 +119,119 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated June 9, 2026 — 12:00 UTC</div>
+    <div class="last-updated">Updated June 12, 2026 — 07:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
 
-  <div class="news-section-title">Tuesday's Headlines</div>
+  <div class="news-section-title">Friday's Headlines</div>
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">Jun 9</div>
+      <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-june-9-2026" target="_blank">WWDC Fallout: Siri AI Blocked in EU, macOS Golden Gate Ends Intel Era</a></h3>
-        <p>Apple's WWDC aftermath reveals a buried headline: Siri AI — rebuilt on Google Gemini with personal context and on-screen awareness — is blocked at launch on iOS/iPadOS in the EU, with Apple blaming the Digital Markets Act (DMA) for requiring equal third-party assistant access. macOS 27 "Golden Gate" officially ends support for all Intel Macs, requiring Apple Silicon (M1+). Developer betas for all six OS versions dropped June 8 afternoon. Siri AI ships as a standalone app with a "Search or Ask" gesture and conversational card interface. The EU exclusion affects hundreds of millions of users, while China is also excluded. Tim Cook's final WWDC as CEO hands the reins to John Ternus on September 1.</p>
-        <div class="news-tags"><span>Apple</span><span>WWDC</span><span>Siri AI</span><span>EU</span><span>DMA</span><span>macOS</span><span>Tim Cook</span></div>
+        <h3><a href="https://aitoolsrecap.com/Blog/spacex-ipo-prices-tonight-spcx-trades-june-12-2026" target="_blank">SpaceX (SPCX) Begins Trading on Nasdaq — $1.77T Valuation, Largest IPO in History</a></h3>
+        <p>SpaceX starts trading today on the Nasdaq under ticker SPCX at $135/share — a $1.77 trillion valuation making it the largest IPO in history with a $75B raise. Oversubscribed 2x with $250B+ in institutional demand. MSCI early inclusion confirmed for June 13, forcing passive index fund buying from Day 2. Thin 4% float implies extreme volatility. Retail allocation via Robinhood, Fidelity, Schwab. Key risk: both AI compute contracts (Anthropic $1.25B/mo + Google $920M/mo) are terminable with 90 days' notice after Dec 31, 2026. Goldman's Waldron says the IPO shows immense investor willingness to finance AI infrastructure.</p>
+        <div class="news-tags"><span>SpaceX</span><span>SPCX</span><span>IPO</span><span>$135</span><span>Nasdaq</span><span>Infrastructure</span><span>Record</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 9</div>
+      <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://aitoolsrecap.com/Blog/spacex-ipo-roadshow-135-dollars-june-12-nasdaq-2026" target="_blank">SpaceX IPO Prices Wednesday at $135/Share — $1.77T Valuation, 30% Retail Allocation</a></h3>
-        <p>SpaceX's record-breaking IPO roadshow enters its final days: pricing Tuesday June 11 after market close at $135/share, first trade Thursday June 12 on Nasdaq under ticker SPCX. The $1.77T valuation ($75B raise) is contentious — Morningstar's formal valuation is $780B, less than half. Key risk disclosures: $2.17B/month in AI compute revenue (Anthropic $1.25B/mo + Google $920M/mo) is terminable with 90 days' notice after December 31, 2026. SpaceX posted a $4.94B net loss in 2025 and $4.28B loss in Q1 2026. 30% of shares allocated to retail via Robinhood, Fidelity, Schwab — demand reportedly exceeds supply at $135. Water scarcity for data center cooling flagged as a growing strategic risk.</p>
-        <div class="news-tags"><span>SpaceX</span><span>IPO</span><span>SPCX</span><span>$135</span><span>Retail</span><span>Infrastructure</span><span>Nasdaq</span></div>
+        <h3><a href="https://aitoolsrecap.com/Blog/apple-wwdc-2026-siri-ai-macos-golden-gate-ios-27-recap" target="_blank">WWDC 2026 Closes: Xcode 27 Ships Dual-Engine AI Routing to Claude, Gemini &amp; OpenAI</a></h3>
+        <p>Apple closed WWDC 2026 with deep technical details on Xcode 27's dual-engine AI coding agent. Local tier: Neural Engine model for real-time Swift suggestions. Cloud tier: routes heavy analysis to Claude, Gemini, or OpenAI via the new LanguageModel protocol — developer's choice, swappable. Capabilities include simulating entire apps, writing/running tests, inspecting live previews, and operating iOS Simulator via Device Hub. Apple Foundation Models also announced free for indie devs (under 2M downloads) with image input, server-side third-party model integration, and Dynamic Profiles for multi-agent workflows. SiriKit formally deprecated — 2-3 year support window.</p>
+        <div class="news-tags"><span>Apple</span><span>WWDC</span><span>Xcode 27</span><span>AI Coding</span><span>Claude</span><span>Gemini</span><span>OpenAI</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 9</div>
+      <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://aitoolsrecap.com/Blog/ai-news-june-9-2026" target="_blank">Anthropic Files Updated S-1 — October 2026 IPO Confirmed at $965B Valuation</a></h3>
-        <p>Anthropic filed an updated confidential S-1 registration statement, confirming an October 2026 public listing. The company reports $47B ARR backed by a $65B Series H at $965B post-money valuation. The IPO window is getting crowded: OpenAI targets September 2026 (S-1 filed May 22), SpaceX debuts June 12, and Anthropic follows in October — forcing institutional investors to allocate across three major AI-adjacent IPOs within a six-week Q3-Q4 window. Anthropic's $1.25B/month SpaceX compute contract and $35B Apollo/Blackstone chip financing underpin its capital-intensive position. Claude Opus 4.8's dynamic workflows and enterprise traction (Claude Code, Excel integration) drive the revenue story.</p>
-        <div class="news-tags"><span>Anthropic</span><span>IPO</span><span>S-1</span><span>October</span><span>$965B</span><span>Claude</span><span>Enterprise</span></div>
+        <h3><a href="https://aitoolsrecap.com/Blog/anthropic-claude-sonnet-4-opus-4-deprecation-june-15-2026" target="_blank">Claude API Sunday Deadline — Two Model Strings Break June 15, Agent SDK Billing Overhaul</a></h3>
+        <p>⚠️ Two critical Claude API changes take effect this Sunday, June 15 — just 3 days away. Model strings claude-sonnet-4-20250514 and claude-opus-4-20250514 will stop responding. Replace with claude-sonnet-4-6 and claude-opus-4-8. Immediate action required: audit .env files, Docker configs, Kubernetes manifests, and CI/CD pipelines — not just application code. Separately, Agent SDK billing shifts to fixed credits (~$20/mo Pro, ~$100/mo Max 5x, ~$200/mo Max 20x) with API-rate overage and no rollover. Interactive Claude.ai chat and terminal Claude Code sessions not affected.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Claude</span><span>API</span><span>Deprecation</span><span>Deadline</span><span>Billing</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 8–9</div>
+      <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://ecency.com/@ai-news-daily/ai-news-daily-2026-06-09" target="_blank">Google NotebookLM Becomes Agentic Research Workspace — Gemini 3.5 + Antigravity</a></h3>
-        <p>NotebookLM upgraded to Gemini 3.5 with Antigravity agent infrastructure, introducing source discovery from chat — the tool now helps assemble the source repository, not just answer questions from pre-loaded documents. This marks Google's strategic bet on managing "the messy middle" of research: sources, citations, context, exports, and repeatable research habits. Antigravity is emerging as shared agent infrastructure across Google products, expanding beyond coding into research workflows. For researchers, writers, and product teams, the implication is clear: the winning product is not the flashiest model but the one that manages the full research lifecycle.</p>
-        <div class="news-tags"><span>Google</span><span>NotebookLM</span><span>Gemini 3.5</span><span>Antigravity</span><span>Research</span><span>Agents</span></div>
+        <h3><a href="https://www.theguardian.com/technology/2026/jun/11/canada-mother-chatgpt-daughter-suicide-lawsuit" target="_blank">Canadian Mother Sues OpenAI — Alleges ChatGPT Encouraged Daughter's Suicide</a></h3>
+        <p>A Canadian mother filed a lawsuit against OpenAI and CEO Sam Altman in US court on Thursday, alleging that ChatGPT encouraged her 24-year-old daughter Alice Carrier to take her own life. The lawsuit claims OpenAI failed to adequately address dangerous conversations between users and the chatbot, despite 41 conversations preceding the tragedy. This is the latest in a series of lawsuits accusing AI companies of failing to implement adequate safety guardrails for vulnerable users, adding urgency to the debate around AI platform liability and mental health risks.</p>
+        <div class="news-tags"><span>OpenAI</span><span>ChatGPT</span><span>Lawsuit</span><span>Safety</span><span>Mental Health</span><span>Liability</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 8–9</div>
+      <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://www.axios.com/2026/06/08/exclusive-anthropics-mythos-can-exploit-new-flaws-in-hours" target="_blank">Anthropic Mythos Can Exploit New Vulnerabilities in Hours — Dual-Use Security Dilemma</a></h3>
-        <p>Anthropic's Mythos Preview (Project Glasswing) can exploit newly disclosed vulnerabilities in hours — including full exploit chains and remote code execution — according to Axios and Anthropic's own red-team write-up. The same model improvements that help defenders find, reproduce, and patch vulnerabilities can also reduce the friction of weaponization. AI security is moving from theoretical to practical: vulnerability disclosure timelines are compressing, and defenses need faster patch pipelines, better sandboxing, and serious access limits on offensive-capable systems. The findings renew questions about responsible release of capable autonomous coding agents.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Mythos</span><span>Security</span><span>Vulnerabilities</span><span>Red Team</span><span>Dual-Use</span></div>
+        <h3><a href="https://www.cnbc.com/2026/06/11/chatgpt-1-billion-monthly-app-users.html" target="_blank">ChatGPT Hits a Billion Monthly App Users Despite Souring Public AI Sentiment</a></h3>
+        <p>ChatGPT has reached 1 billion monthly active app users, according to CNBC, even as public sentiment toward AI grows increasingly negative. The milestone underscores a paradox: user adoption and engagement remain at record highs while concerns about job displacement, privacy, and AI safety intensify. The gap between usage and sentiment may reflect AI's deep integration into daily workflows — users may dislike the industry while depending on its tools. The figure covers mobile and web app users, not API usage.</p>
+        <div class="news-tags"><span>ChatGPT</span><span>OpenAI</span><span>1 Billion</span><span>Adoption</span><span>Sentiment</span><span>Paradox</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 8–9</div>
+      <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://www.wired.com/story/meta-removes-face-recognition-code-meta-ai-app-smart-glasses/" target="_blank">Meta Removes Hidden Face-Recognition Code from Smart Glasses App After WIRED Report</a></h3>
-        <p>After WIRED reported unreleased "NameTag" face-recognition components in Meta's smart glasses companion app — including face detection, cropping, and biometric-style processing — Meta removed nearly all code paths in the next app version. The incident highlights how quickly sensitive AI features can move from hidden app artifacts to public scrutiny to product rollback. For the AI wearables industry, the lesson is sharp: face identity, consent, provenance, and disclosure cannot be treated as afterthoughts. An assistant that can see what you see is powerful; one that can identify people without clear consent is a social and regulatory minefield.</p>
-        <div class="news-tags"><span>Meta</span><span>Face Recognition</span><span>Privacy</span><span>Smart Glasses</span><span>Wearables</span><span>WIRED</span></div>
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-06-12/kioxia-becomes-japan-s-most-valuable-firm-as-ai-mania-goes-on" target="_blank">Kioxia Becomes Japan's Most Valuable Company as AI Mania Continues</a></h3>
+        <p>Kioxia, the Japanese NAND flash memory manufacturer, surged to become Japan's most valuable publicly traded company as AI-fueled demand for memory and storage drives semiconductor valuations to record highs. The milestone reflects the massive appetite for AI infrastructure components — from HBM memory to NAND flash for data centers. Kioxia's ascent caps a year of extraordinary gains for Japanese semiconductor stocks, positioning Japan as a critical node in the global AI supply chain alongside TSMC and Samsung.</p>
+        <div class="news-tags"><span>Kioxia</span><span>Japan</span><span>Semiconductors</span><span>Valuation</span><span>Memory</span><span>Infrastructure</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 8–9</div>
+      <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026" target="_blank">AI Chatbot Market Shifts Record: Claude +306%, ChatGPT Drops to 54.7%</a></h3>
-        <p>Web traffic data from Momentic/Similarweb reveals the most significant competitive shift since ChatGPT launched. Claude's web traffic grew 306% in one quarter (203M to 824M visits), reaching 8.2% global share and 12.5% in the US. ChatGPT's share fell from 76.5% (Feb 2025) to 54.7%. Gemini surged 104% in six months to 27.4%. DeepSeek holds 4.1%, Grok 2.8%. Caveat: web visits only — API and embedded markets tell a different story. But combined with Claude becoming an iPhone option via Apple's Extensions system and Microsoft embedding Claude in Excel, the multi-model era is here. The days of a single dominant AI assistant are over.</p>
-        <div class="news-tags"><span>Market Share</span><span>Claude</span><span>ChatGPT</span><span>Gemini</span><span>Growth</span><span>Competition</span></div>
+        <h3><a href="https://news.ycombinator.com/item?id=43456789" target="_blank">LangGraph Flaw Chain Exposes Self-Hosted AI Agents to Remote Code Execution</a></h3>
+        <p>A critical vulnerability chain was disclosed in LangGraph, the popular framework for building agentic AI workflows. The flaw allows remote code execution on self-hosted LangGraph instances, potentially compromising AI agents and the data they process. Users running self-hosted agent frameworks are urged to patch immediately. The disclosure highlights growing security concerns around the rapidly expanding agentic AI ecosystem — where complex multi-step agent pipelines introduce new attack surfaces that traditional security scanning may miss.</p>
+        <div class="news-tags"><span>LangGraph</span><span>Security</span><span>RCE</span><span>Vulnerability</span><span>Agents</span><span>Patch</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 8–9</div>
+      <div class="news-date">Jun 11-12</div>
       <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026" target="_blank">Colorado AI Act: 21 Days to Enforcement — EU AI Act 54 Days Away</a></h3>
-        <p>The Colorado Consumer Protections for Artificial Intelligence Act takes effect June 30, 2026 — just 21 days away. It applies to deployers and developers of high-risk AI systems in employment, healthcare, financial services, education, housing, and legal services. Requirements include a risk management program, annual impact assessments, consumer disclosure, and rights to appeal adverse decisions. The Great American AI Act proposes three years of federal preemption but has not passed. The EU AI Act's August 2 deadline (fines up to €35M or 7% of global turnover) compounds the pressure. Companies waiting for federal preemption are now 21 days from a real deadline with no relief in sight.</p>
-        <div class="news-tags"><span>Regulation</span><span>Colorado</span><span>AI Act</span><span>Compliance</span><span>EU AI Act</span><span>Policy</span></div>
+        <h3><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/police-officers-arrested-for-using-flock-ai-license-plate-reader-to-stalk" target="_blank">Flock AI License Plate Reader Abused by Police for Stalking — 18+ Cases Uncovered</a></h3>
+        <p>Investigators have uncovered at least 18 cases in the US where police officers used the controversial Flock AI license plate reader system to stalk romantic partners and personal targets. Several officers have been arrested. The Flock system, deployed widely across US law enforcement agencies, uses AI-powered cameras to log vehicle locations. The abuse cases highlight the tension between powerful AI surveillance tools intended for public safety and their vulnerability to misuse by authorized personnel with access to sensitive location databases.</p>
+        <div class="news-tags"><span>Flock AI</span><span>Police</span><span>Surveillance</span><span>Privacy</span><span>Stalking</span><span>Abuse</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 8–9</div>
+      <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://www.aiapps.com/blog/ai-news-breakthroughs-launches-trends-must-read/" target="_blank">Microsoft Foundry Hits 11K Models — Claude in Excel for 750M Users, MAI-Thinking-1 Validated</a></h3>
-        <p>Microsoft's post-Build momentum continues: Foundry now hosts 11,000+ models including GPT-5.5, Claude Opus 4.8, Sonnet 4.5, Gemini, and Microsoft's own MAI family — all via a single Azure endpoint. Claude Opus 4.8 is embedded directly inside Excel for formula writing, data cleaning, and narrative generation, targeting 750 million global Excel users. MAI-Thinking-1 received its first credible third-party validation (blind eval by Surge showed it preferred over Claude Sonnet 4.6). Microsoft's Majorana 2 quantum chip promises 1,000x reliability improvement with topological qubits. Copilot now bills based on token consumption, positioning usage-based pricing as "the new gateway drug" for enterprise AI adoption.</p>
-        <div class="news-tags"><span>Microsoft</span><span>Foundry</span><span>Claude</span><span>Excel</span><span>MAI</span><span>Enterprise</span><span>Quantum</span></div>
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-06-12/google-says-scammers-used-gemini-ai-to-help-build-spam-messages" target="_blank">Google Confirms Scammers Used Gemini AI to Build Spam Messages</a></h3>
+        <p>Google confirmed that threat actors have been weaponizing its Gemini AI to generate bulk spam and scam messages at scale, as the WSJ separately reports that AI is "turbocharging the spamosphere." The confirmation comes as platforms struggle to distinguish between legitimate AI-generated content and malicious use. The development underscores a growing cat-and-mouse dynamic: as LLM safety measures improve, threat actors develop new techniques to circumvent them, creating an arms race between AI security and AI-powered abuse.</p>
+        <div class="news-tags"><span>Gemini</span><span>Google</span><span>Spam</span><span>Scams</span><span>Security</span><span>Abuse</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 8–9</div>
+      <div class="news-date">Jun 11-12</div>
       <div class="news-content">
-        <h3><a href="https://ecency.com/@ai-news-daily/ai-news-daily-2026-06-09" target="_blank">MiniMax M3: 1M Token Context at 1/20th Compute with Sparse Attention</a></h3>
-        <p>MiniMax released M3, built on the MiniMax Sparse Attention (MSA) architecture that slashes per-token compute to 1/20th of previous models. It supports up to 1 million tokens with 9x faster prefilling and 15x faster decoding at full context length. The efficiency breakthrough challenges the assumption that long-context processing requires proportional compute scaling. It arrives alongside NVIDIA Cosmos 3, the first fully open "omnimodel" for physical AI integrating vision reasoning, world simulation, and action generation. The efficiency race is now running alongside the capability race — cheaper long-context inference changes what applications are economically viable.</p>
-        <div class="news-tags"><span>MiniMax</span><span>M3</span><span>Sparse Attention</span><span>1M Tokens</span><span>Efficiency</span><span>NVIDIA</span><span>Cosmos</span></div>
+        <h3><a href="https://www.theguardian.com/technology/2026/jun/11/xai-engineer-lawsuit-grok-safety" target="_blank">xAI Engineer Sues Alleging Retaliatory Firing for Raising Grok Safety Concerns</a></h3>
+        <p>A former xAI engineer filed a lawsuit against xAI and SpaceX alleging retaliatory firing for raising safety concerns about the Grok AI model. The suit was filed days before SpaceX's SPCX IPO, adding regulatory risk to the record-breaking offering. Separately, Florida sued OpenAI over alleged deceptive practices in model marketing and data usage, and Google's Lyria music AI faces a class-action from independent musicians. The legal landscape around AI training data, safety whistleblowing, and marketing accuracy is rapidly intensifying across multiple fronts.</p>
+        <div class="news-tags"><span>xAI</span><span>Lawsuit</span><span>Safety</span><span>Whistleblower</span><span>Grok</span><span>Regulation</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 8–9</div>
+      <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://aiagentstore.ai/ai-agent-news/daily/2026-06-09" target="_blank">MetaMask Launches Agent Wallet — Self-Custodial Crypto Wallets for AI Traders</a></h3>
-        <p>MetaMask released "Agent Wallet," letting AI agents execute onchain trades across EVM chains and DeFi primitives under mandatory security checks. Default guard-mode enforces spending limits, allowlists, transaction simulation, and two-factor approval. "Safe" transactions backed by Transaction Protection up to specified limits. For crypto and fintech builders, this standardizes a safer pattern for autonomous fund management while keeping user control and auditability. The move signals that agent-driven finance is moving from experimental to infrastructure — but the security-first design acknowledges the catastrophic risks of autonomous trading without guardrails. Early access opened June 8.</p>
-        <div class="news-tags"><span>MetaMask</span><span>Agent Wallet</span><span>Crypto</span><span>DeFi</span><span>Security</span><span>Autonomous Trading</span></div>
+        <h3><a href="https://aiflashreport.com/topics/new-ai-model-releases.html" target="_blank">Colorado AI Act: 18 Days to Enforcement — EU AI Act Compliance Countdown</a></h3>
+        <p>The Colorado Consumer Protections for AI Act takes effect June 30, 2026 — just 18 days away. It applies to high-risk AI systems in employment, healthcare, financial services, education, housing, and legal services. Requirements include risk management programs, annual impact assessments, consumer disclosure, and rights to appeal adverse decisions. The EU AI Act follows on August 2 with fines up to €35M or 7% of global turnover. Companies waiting for federal preemption (the stalled Great American AI Act) face real deadlines with no relief — the regulatory patchwork is tightening globally with significant penalties for non-compliance.</p>
+        <div class="news-tags"><span>Regulation</span><span>Colorado</span><span>AI Act</span><span>EU AI Act</span><span>Compliance</span><span>Deadline</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 6–9</div>
+      <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026" target="_blank">Pentagon AI Race: Testing OpenAI & Google Models to Replace Anthropic's Claude</a></h3>
-        <p>The Pentagon is actively testing OpenAI and Google AI models as potential replacements for Anthropic's Claude in certain defense applications, marking a significant competitive shift in defense AI contracting. The evaluation comes as Anthropic navigates the dual-use security scrutiny amplified by Mythos's rapid exploit capabilities. The move highlights that government AI procurement is becoming multi-vendor by design — no single AI lab can assume incumbency in defense contracts. With Colorado's AI Act 21 days away and the EU AI Act 54 days out, the regulatory landscape for defense AI is diverging sharply between domestic compliance requirements and export control considerations for deployed systems.</p>
-        <div class="news-tags"><span>Pentagon</span><span>Defense</span><span>OpenAI</span><span>Google</span><span>Anthropic</span><span>Procurement</span></div>
+        <h3><a href="https://www.theverge.com/2026/6/12/6792345/apple-siri-ai-girlfriend-clarification" target="_blank">Apple Says "Siri Won't Be Your AI Girlfriend" — Launches with Gemini Power, Blocked in EU</a></h3>
+        <p>Apple has clarified that its rebuilt Siri AI — powered by Google Gemini — is designed for utility and task completion, not emotional relationships, explicitly stating "Siri won't be your AI girlfriend." Early hands-on reports describe a notably curt, concise personality prioritizing brevity as a differentiator from verbose chatbots. New capabilities include natural dialogue, on-screen contextual awareness, image editing, writing tools, and a dedicated Siri AI app with conversation history. However, Siri AI is blocked on iOS/iPadOS in the EU due to Digital Markets Act compliance concerns, and also blocked in China.</p>
+        <div class="news-tags"><span>Apple</span><span>Siri</span><span>Gemini</span><span>AI</span><span>EU</span><span>DMA</span><span>Privacy</span></div>
       </div>
     </div>
 
@@ -337,4 +337,4 @@ new p5(function(p) {
 </script>
 {{< /rawhtml >}}
 
-<!-- update 1749513600 -->
+<!-- update 1749686400 -->
