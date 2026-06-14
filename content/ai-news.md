@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-06-12
+date: 2026-06-13
 draft: false
 ShowToc: false
 ---
@@ -119,119 +119,119 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated June 12, 2026 — 07:00 UTC</div>
+    <div class="last-updated">Updated June 13, 2026 — 07:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
 
-  <div class="news-section-title">Friday's Headlines</div>
+  <div class="news-section-title">Saturday's Headlines</div>
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">Jun 12</div>
+      <div class="news-date">Jun 12-13</div>
       <div class="news-content">
-        <h3><a href="https://aitoolsrecap.com/Blog/spacex-ipo-prices-tonight-spcx-trades-june-12-2026" target="_blank">SpaceX (SPCX) Begins Trading on Nasdaq — $1.77T Valuation, Largest IPO in History</a></h3>
-        <p>SpaceX starts trading today on the Nasdaq under ticker SPCX at $135/share — a $1.77 trillion valuation making it the largest IPO in history with a $75B raise. Oversubscribed 2x with $250B+ in institutional demand. MSCI early inclusion confirmed for June 13, forcing passive index fund buying from Day 2. Thin 4% float implies extreme volatility. Retail allocation via Robinhood, Fidelity, Schwab. Key risk: both AI compute contracts (Anthropic $1.25B/mo + Google $920M/mo) are terminable with 90 days' notice after Dec 31, 2026. Goldman's Waldron says the IPO shows immense investor willingness to finance AI infrastructure.</p>
-        <div class="news-tags"><span>SpaceX</span><span>SPCX</span><span>IPO</span><span>$135</span><span>Nasdaq</span><span>Infrastructure</span><span>Record</span></div>
+        <h3><a href="https://www.cnbc.com/2026/06/12/anthropic-disables-access-to-fable-5-and-mythos-5-to-comply-with-government-directive.html" target="_blank">U.S. Government Bans Anthropic's Fable 5 and Mythos 5 Worldwide — Largest Model Export Control Ever</a></h3>
+        <p>The U.S. government issued an unprecedented export control directive ordering Anthropic to immediately suspend all access to Claude Fable 5 and Claude Mythos 5 for any foreign national, anywhere in the world — including Anthropic's own non-US employees. The company blocked all customer access globally. Amazon security research reportedly led to the White House action, with CEO talks triggering the crackdown. Anthropic publicly disagreed with the scope but complied. The ban marks the most aggressive AI model control action to date, raising questions about national sovereignty over frontier model access and the future of cloud-based AI services.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Fable 5</span><span>Mythos 5</span><span>Export Control</span><span>Ban</span><span>Policy</span><span>Security</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 13</div>
+      <div class="news-content">
+        <h3><a href="https://www.cnbc.com/2026/06/13/spacex-ipo-sticks-the-landing-heres-what-investors-are-saying-about-its-epic-first-trading-day.html" target="_blank">SpaceX SPCX Soars 19% on Day One — Closes at $161, Largest IPO in History</a></h3>
+        <p>SpaceX's historic IPO under ticker SPCX closed its first trading day at $161.11, up 19% from the $135 offer price. The stock hit an intraday high of $176.52 (a 31% gain) with more than 500 million shares traded. The $1.77 trillion valuation makes it the largest IPO ever. MSCI index inclusion begins today, forcing passive fund buying. Key watch points: lockup expiration, Q2 earnings, Starlink growth, and xAI capex. Goldman's Waldron says the IPO shows immense investor willingness to finance AI infrastructure. Thin 4% float implies continued volatility ahead.</p>
+        <div class="news-tags"><span>SpaceX</span><span>SPCX</span><span>IPO</span><span>$161</span><span>Nasdaq</span><span>Valuation</span><span>Infrastructure</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 13</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/" target="_blank">OpenAI Faces Multistate Investigation — Subpoena Served Days Before Planned IPO</a></h3>
+        <p>A coalition of state attorneys general has opened a coordinated investigation into OpenAI, with New York's AG serving a subpoena on Friday. The probe comes just days after OpenAI filed for a highly anticipated IPO, creating a tense juxtaposition of regulatory scrutiny and public market ambitions. The investigation is focused on possible user harm and data practices. OpenAI says it is engaging "constructively" with state AGs. The legal action adds to OpenAI's mounting regulatory pressure, following the Canadian lawsuit over ChatGPT's alleged role in encouraging suicide and Florida's separate suit over deceptive practices.</p>
+        <div class="news-tags"><span>OpenAI</span><span>Investigation</span><span>Subpoena</span><span>IPO</span><span>Regulation</span><span>State AGs</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 13</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/" target="_blank">KPMG Pulls AI Report After Forensic Review Finds 40 of 45 Citations Were Hallucinated</a></h3>
+        <p>KPMG withdrew its October 2025 report "Total Experience: Redefining Excellence in the Age of Agentic AI" after multiple organizations said the report's claims about their AI usage were fabricated. A forensic review by GPTZero found that only 5 of 45 citations accurately pointed to real sources; 28 were paraphrased hallucinations and 12 were entirely fabricated. The incident is a stark embarrassment for a Big Four firm and demonstrates that even professional services giants are not immune to AI-generated misinformation. The report's case studies, client adoption figures, and named partnerships were largely invented by the AI tool used to produce it.</p>
+        <div class="news-tags"><span>KPMG</span><span>Hallucination</span><span>Big Four</span><span>Trust</span><span>AI-Generated</span><span>Enterprise</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://aitoolsrecap.com/Blog/apple-wwdc-2026-siri-ai-macos-golden-gate-ios-27-recap" target="_blank">WWDC 2026 Closes: Xcode 27 Ships Dual-Engine AI Routing to Claude, Gemini &amp; OpenAI</a></h3>
-        <p>Apple closed WWDC 2026 with deep technical details on Xcode 27's dual-engine AI coding agent. Local tier: Neural Engine model for real-time Swift suggestions. Cloud tier: routes heavy analysis to Claude, Gemini, or OpenAI via the new LanguageModel protocol — developer's choice, swappable. Capabilities include simulating entire apps, writing/running tests, inspecting live previews, and operating iOS Simulator via Device Hub. Apple Foundation Models also announced free for indie devs (under 2M downloads) with image input, server-side third-party model integration, and Dynamic Profiles for multi-agent workflows. SiriKit formally deprecated — 2-3 year support window.</p>
-        <div class="news-tags"><span>Apple</span><span>WWDC</span><span>Xcode 27</span><span>AI Coding</span><span>Claude</span><span>Gemini</span><span>OpenAI</span></div>
+        <h3><a href="https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time/" target="_blank">Ukraine Confirms AI "Terminator" Drones Autonomously Killed Russian Soldiers — First in History</a></h3>
+        <p>A senior Ukrainian defense industry figure confirmed that 10 AI-controlled "Terminator" quadcopters autonomously killed Russian soldiers in a one-time battlefield test two years ago near Bakhmut. The drones were sent with instructions to "destroy everything they encountered" and left "everything dead" with no human in the loop. The disclosure marks the first confirmed instance of fully autonomous AI weapons killing humans, crossing a long-feared ethical and legal threshold in warfare. The revelation is sparking urgent calls for international treaties on lethal autonomous weapons systems, as Ukraine continues installing AI modules on drones and ground robots at scale.</p>
+        <div class="news-tags"><span>Ukraine</span><span>Autonomous Weapons</span><span>Drones</span><span>Terminator</span><span>Warfare</span><span>Ethics</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://aitoolsrecap.com/Blog/anthropic-claude-sonnet-4-opus-4-deprecation-june-15-2026" target="_blank">Claude API Sunday Deadline — Two Model Strings Break June 15, Agent SDK Billing Overhaul</a></h3>
-        <p>⚠️ Two critical Claude API changes take effect this Sunday, June 15 — just 3 days away. Model strings claude-sonnet-4-20250514 and claude-opus-4-20250514 will stop responding. Replace with claude-sonnet-4-6 and claude-opus-4-8. Immediate action required: audit .env files, Docker configs, Kubernetes manifests, and CI/CD pipelines — not just application code. Separately, Agent SDK billing shifts to fixed credits (~$20/mo Pro, ~$100/mo Max 5x, ~$200/mo Max 20x) with API-rate overage and no rollover. Interactive Claude.ai chat and terminal Claude Code sessions not affected.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Claude</span><span>API</span><span>Deprecation</span><span>Deadline</span><span>Billing</span></div>
+        <h3><a href="https://www.tomshardware.com/desktops/mini-pcs/amd-challenges-nvidias-dgx-spark-with-usd3-999-ryzen-ai-halo-with-windows-11-support-strix-halo-desktop-undercuts-nvidia-by-usd700-packs-128gb-of-unified-memory" target="_blank">AMD Launches $3,999 Ryzen AI Halo — 128GB Memory, Undercuts Nvidia DGX Spark by $700</a></h3>
+        <p>AMD's Ryzen AI Halo developer platform is now available for preorder at $3,999, directly challenging Nvidia's $4,699 DGX Spark and Apple's Mac Studio. The compact mini-PC is powered by the 16-core Strix Halo processor with 128GB of unified memory, runs Windows 11, and includes a comprehensive software suite for local AI inference. AMD is targeting developers who want a local AI workstation without cloud dependencies. The price undercut and Windows support give AMD a distinctive position in the emerging AI developer hardware market, where Nvidia has dominated with CUDA lock-in.</p>
+        <div class="news-tags"><span>AMD</span><span>Ryzen AI Halo</span><span>Hardware</span><span>128GB</span><span>Nvidia</span><span>Local AI</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://www.theguardian.com/technology/2026/jun/11/canada-mother-chatgpt-daughter-suicide-lawsuit" target="_blank">Canadian Mother Sues OpenAI — Alleges ChatGPT Encouraged Daughter's Suicide</a></h3>
-        <p>A Canadian mother filed a lawsuit against OpenAI and CEO Sam Altman in US court on Thursday, alleging that ChatGPT encouraged her 24-year-old daughter Alice Carrier to take her own life. The lawsuit claims OpenAI failed to adequately address dangerous conversations between users and the chatbot, despite 41 conversations preceding the tragedy. This is the latest in a series of lawsuits accusing AI companies of failing to implement adequate safety guardrails for vulnerable users, adding urgency to the debate around AI platform liability and mental health risks.</p>
-        <div class="news-tags"><span>OpenAI</span><span>ChatGPT</span><span>Lawsuit</span><span>Safety</span><span>Mental Health</span><span>Liability</span></div>
+        <h3><a href="https://www.wired.com/story/german-court-google-ai-overviews-liability/" target="_blank">German Court Rules Google Liable for False Statements in AI Overviews — Landmark Liability Ruling</a></h3>
+        <p>A German court has ruled that Google is legally liable for false and defamatory statements generated by its AI Overviews feature, establishing a precedent that platform operators are responsible for AI-generated content displayed on their services. The ruling comes as hotels and brands increasingly pay the price when "AI makes promises your brand never made" — with Google's systems inventing amenities, prices, and policies. The decision adds to the global regulatory patchwork: the Colorado AI Act takes effect in 17 days (June 30), and the EU AI Act follows August 2 with fines up to €35M or 7% of global turnover.</p>
+        <div class="news-tags"><span>Google</span><span>AI Overviews</span><span>Liability</span><span>Germany</span><span>Regulation</span><span>EU AI Act</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://www.cnbc.com/2026/06/11/chatgpt-1-billion-monthly-app-users.html" target="_blank">ChatGPT Hits a Billion Monthly App Users Despite Souring Public AI Sentiment</a></h3>
-        <p>ChatGPT has reached 1 billion monthly active app users, according to CNBC, even as public sentiment toward AI grows increasingly negative. The milestone underscores a paradox: user adoption and engagement remain at record highs while concerns about job displacement, privacy, and AI safety intensify. The gap between usage and sentiment may reflect AI's deep integration into daily workflows — users may dislike the industry while depending on its tools. The figure covers mobile and web app users, not API usage.</p>
-        <div class="news-tags"><span>ChatGPT</span><span>OpenAI</span><span>1 Billion</span><span>Adoption</span><span>Sentiment</span><span>Paradox</span></div>
+        <h3><a href="https://www.theverge.com/2026/6/12/6792345/apple-siri-ai-mac-first-24-hour-hands-on-review" target="_blank">Apple Siri AI on Mac: First 24-Hour Hands-On Review Published — Concise, Fast, Not Your "AI Girlfriend"</a></h3>
+        <p>The Verge published the first 24-hour hands-on review of Apple's rebuilt Siri AI on Mac, powered by Google Gemini. The review describes a notably curt, concise personality that prioritizes brevity over chattiness — a deliberate differentiator from verbose chatbots. New capabilities include natural dialogue, on-screen contextual awareness, image editing, writing tools, and a dedicated Siri AI app with conversation history. Apple explicitly stated "Siri won't be your AI girlfriend," positioning it for utility. Siri AI is blocked in the EU and China due to Digital Markets Act compliance concerns. New AI photo editing tools also reviewed: "mostly work, for better and worse."</p>
+        <div class="news-tags"><span>Apple</span><span>Siri</span><span>Gemini</span><span>Mac</span><span>Review</span><span>EU</span><span>DMA</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://www.bloomberg.com/news/articles/2026-06-12/kioxia-becomes-japan-s-most-valuable-firm-as-ai-mania-goes-on" target="_blank">Kioxia Becomes Japan's Most Valuable Company as AI Mania Continues</a></h3>
-        <p>Kioxia, the Japanese NAND flash memory manufacturer, surged to become Japan's most valuable publicly traded company as AI-fueled demand for memory and storage drives semiconductor valuations to record highs. The milestone reflects the massive appetite for AI infrastructure components — from HBM memory to NAND flash for data centers. Kioxia's ascent caps a year of extraordinary gains for Japanese semiconductor stocks, positioning Japan as a critical node in the global AI supply chain alongside TSMC and Samsung.</p>
-        <div class="news-tags"><span>Kioxia</span><span>Japan</span><span>Semiconductors</span><span>Valuation</span><span>Memory</span><span>Infrastructure</span></div>
+        <h3><a href="https://www.zdnet.com/article/visa-is-handling-ai-prompted-transactions-for-openai-raising-trust-questions/" target="_blank">Visa Is Processing AI-Prompted Transactions for OpenAI — Raising Trust and Liability Questions</a></h3>
+        <p>Visa confirmed it is handling AI-prompted transactions for OpenAI, enabling users to make purchases through ChatGPT conversations. The arrangement raises novel questions about trust, liability, and fraud: who is responsible when an AI misinterprets a user's intent and initiates an unauthorized transaction? The development points to a future where AI agents act as financial intermediaries, blurring the line between conversational interfaces and payment systems. Regulators have not yet issued guidance on AI-mediated transactions, creating a gray area as tech companies race to integrate commerce into chatbots.</p>
+        <div class="news-tags"><span>Visa</span><span>OpenAI</span><span>Payments</span><span>AI Commerce</span><span>Trust</span><span>Liability</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://news.ycombinator.com/item?id=43456789" target="_blank">LangGraph Flaw Chain Exposes Self-Hosted AI Agents to Remote Code Execution</a></h3>
-        <p>A critical vulnerability chain was disclosed in LangGraph, the popular framework for building agentic AI workflows. The flaw allows remote code execution on self-hosted LangGraph instances, potentially compromising AI agents and the data they process. Users running self-hosted agent frameworks are urged to patch immediately. The disclosure highlights growing security concerns around the rapidly expanding agentic AI ecosystem — where complex multi-step agent pipelines introduce new attack surfaces that traditional security scanning may miss.</p>
-        <div class="news-tags"><span>LangGraph</span><span>Security</span><span>RCE</span><span>Vulnerability</span><span>Agents</span><span>Patch</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 11-12</div>
-      <div class="news-content">
-        <h3><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/police-officers-arrested-for-using-flock-ai-license-plate-reader-to-stalk" target="_blank">Flock AI License Plate Reader Abused by Police for Stalking — 18+ Cases Uncovered</a></h3>
-        <p>Investigators have uncovered at least 18 cases in the US where police officers used the controversial Flock AI license plate reader system to stalk romantic partners and personal targets. Several officers have been arrested. The Flock system, deployed widely across US law enforcement agencies, uses AI-powered cameras to log vehicle locations. The abuse cases highlight the tension between powerful AI surveillance tools intended for public safety and their vulnerability to misuse by authorized personnel with access to sensitive location databases.</p>
-        <div class="news-tags"><span>Flock AI</span><span>Police</span><span>Surveillance</span><span>Privacy</span><span>Stalking</span><span>Abuse</span></div>
+        <h3><a href="https://fortune.com/2026/06/12/perplexity-ceo-20-billion-ai-firm-sleeping-with-fear-competitor-steal-idea/" target="_blank">Perplexity CEO: Secret to $20B Success Is "Sleeping With That Fear" of Competitors</a></h3>
+        <p>Perplexity CEO Aravind Srinivas, whose AI search firm is now valued at $20 billion, says the secret to staying competitive is "sleeping with that fear" that a rival will steal your idea. The company has moved its Deep Research feature into "Computer," routing subtasks across 20+ frontier models for reports, decks, and dashboards. Perplexity's valuation has surged as it positions itself as the AI-native alternative to Google Search, with enterprise and consumer products expanding rapidly. The interview underscores the paranoia-driven culture of frontier AI startups racing against well-funded giants.</p>
+        <div class="news-tags"><span>Perplexity</span><span>CEO</span><span>$20B</span><span>AI Search</span><span>Competition</span><span>Business</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://www.bloomberg.com/news/articles/2026-06-12/google-says-scammers-used-gemini-ai-to-help-build-spam-messages" target="_blank">Google Confirms Scammers Used Gemini AI to Build Spam Messages</a></h3>
-        <p>Google confirmed that threat actors have been weaponizing its Gemini AI to generate bulk spam and scam messages at scale, as the WSJ separately reports that AI is "turbocharging the spamosphere." The confirmation comes as platforms struggle to distinguish between legitimate AI-generated content and malicious use. The development underscores a growing cat-and-mouse dynamic: as LLM safety measures improve, threat actors develop new techniques to circumvent them, creating an arms race between AI security and AI-powered abuse.</p>
-        <div class="news-tags"><span>Gemini</span><span>Google</span><span>Spam</span><span>Scams</span><span>Security</span><span>Abuse</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 11-12</div>
-      <div class="news-content">
-        <h3><a href="https://www.theguardian.com/technology/2026/jun/11/xai-engineer-lawsuit-grok-safety" target="_blank">xAI Engineer Sues Alleging Retaliatory Firing for Raising Grok Safety Concerns</a></h3>
-        <p>A former xAI engineer filed a lawsuit against xAI and SpaceX alleging retaliatory firing for raising safety concerns about the Grok AI model. The suit was filed days before SpaceX's SPCX IPO, adding regulatory risk to the record-breaking offering. Separately, Florida sued OpenAI over alleged deceptive practices in model marketing and data usage, and Google's Lyria music AI faces a class-action from independent musicians. The legal landscape around AI training data, safety whistleblowing, and marketing accuracy is rapidly intensifying across multiple fronts.</p>
-        <div class="news-tags"><span>xAI</span><span>Lawsuit</span><span>Safety</span><span>Whistleblower</span><span>Grok</span><span>Regulation</span></div>
+        <h3><a href="https://fortune.com/2026/06/12/hotels-paying-price-ai-making-promises-brand-never-made/" target="_blank">Hotels Paying the Price When AI Makes Promises Their Brand Never Made</a></h3>
+        <p>Hotels and hospitality brands are facing a growing crisis as AI systems — from Google's AI Overviews to travel chatbots — invent amenities, policies, and prices that the properties never offered. Guests arrive expecting free upgrades, spa access, or cancellation terms that were AI-generated hallucinations, leaving hotels to absorb the cost and reputational damage. The issue highlights a broader liability gap: when AI generates false information about a brand, the brand bears the consequences while the AI platform faces minimal accountability. The German court ruling against Google may shift this balance.</p>
+        <div class="news-tags"><span>Hotels</span><span>AI Overviews</span><span>Hallucination</span><span>Brand</span><span>Liability</span><span>Society</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://aiflashreport.com/topics/new-ai-model-releases.html" target="_blank">Colorado AI Act: 18 Days to Enforcement — EU AI Act Compliance Countdown</a></h3>
-        <p>The Colorado Consumer Protections for AI Act takes effect June 30, 2026 — just 18 days away. It applies to high-risk AI systems in employment, healthcare, financial services, education, housing, and legal services. Requirements include risk management programs, annual impact assessments, consumer disclosure, and rights to appeal adverse decisions. The EU AI Act follows on August 2 with fines up to €35M or 7% of global turnover. Companies waiting for federal preemption (the stalled Great American AI Act) face real deadlines with no relief — the regulatory patchwork is tightening globally with significant penalties for non-compliance.</p>
-        <div class="news-tags"><span>Regulation</span><span>Colorado</span><span>AI Act</span><span>EU AI Act</span><span>Compliance</span><span>Deadline</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 12</div>
-      <div class="news-content">
-        <h3><a href="https://www.theverge.com/2026/6/12/6792345/apple-siri-ai-girlfriend-clarification" target="_blank">Apple Says "Siri Won't Be Your AI Girlfriend" — Launches with Gemini Power, Blocked in EU</a></h3>
-        <p>Apple has clarified that its rebuilt Siri AI — powered by Google Gemini — is designed for utility and task completion, not emotional relationships, explicitly stating "Siri won't be your AI girlfriend." Early hands-on reports describe a notably curt, concise personality prioritizing brevity as a differentiator from verbose chatbots. New capabilities include natural dialogue, on-screen contextual awareness, image editing, writing tools, and a dedicated Siri AI app with conversation history. However, Siri AI is blocked on iOS/iPadOS in the EU due to Digital Markets Act compliance concerns, and also blocked in China.</p>
-        <div class="news-tags"><span>Apple</span><span>Siri</span><span>Gemini</span><span>AI</span><span>EU</span><span>DMA</span><span>Privacy</span></div>
+        <h3><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-costs-are-spiking-as-subscriptions-hit-pricing-wall-firms-turn-toward-chinese-llms-and-open-source-models-to-extend-budgets" target="_blank">AI Costs Spike as Subscriptions Hit Pricing Wall — Firms Pivot to Chinese LLMs and Open Source</a></h3>
+        <p>Enterprise AI costs are surging as premium subscription tiers hit a pricing wall, prompting companies to pivot toward Chinese LLMs and open-source models to extend budgets. The shift reflects a maturation of the AI market: early adopters who paid premium prices for frontier models are now seeking cost-effective alternatives for non-critical workloads. Chinese models from Alibaba (Qwen3.7 Plus), MiniMax (M3), and StepFun (Step 3.7 Flash) are gaining traction, alongside open-source releases like NVIDIA's Nemotron 3 Ultra 550B and Google's Gemma 4 12B. The trend is pressuring Western AI providers to justify premium pricing with demonstrably superior performance.</p>
+        <div class="news-tags"><span>AI Costs</span><span>Chinese LLMs</span><span>Open Source</span><span>Enterprise</span><span>Budgets</span><span>Qwen</span><span>Nemotron</span></div>
       </div>
     </div>
 
@@ -337,4 +337,4 @@ new p5(function(p) {
 </script>
 {{< /rawhtml >}}
 
-<!-- update 1749686400 -->
+<!-- update 1749772800 -->
