@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-06-13
+date: 2026-06-15
 draft: false
 ShowToc: false
 ---
@@ -119,13 +119,40 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated June 13, 2026 — 07:00 UTC</div>
+    <div class="last-updated">Updated June 15, 2026 — 07:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
 
-  <div class="news-section-title">Saturday's Headlines</div>
+  <div class="news-section-title">Monday's Headlines</div>
   <div class="news-grid">
+
+    <div class="news-item">
+      <div class="news-date">Jun 15</div>
+      <div class="news-content">
+        <h3><a href="https://www.reuters.com/commentary/breakingviews/anthropic-becomes-cautionary-sovereign-ai-fable-2026-06-15/" target="_blank">Anthropic Export Controls Spark Global AI Sovereignty Scramble — Nations Rush to Build Independent AI</a></h3>
+        <p>The U.S. government's June 13 ban on Anthropic's Fable 5 and Mythos 5 has triggered an international alarm over who controls the AI the world runs on. A single White House directive took both models offline for every user on Earth — including briefly Anthropic's own foreign-born employees — turning an abstract policy fear into a live reality. Europe and Canada are now scrambling to accelerate sovereign AI initiatives, fearing that frontier models hosted by U.S. cloud providers can be unilaterally severed. The incident is being called a "cautionary sovereign-AI fable" that proves dependence on American AI infrastructure is a strategic vulnerability.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Export Control</span><span>Sovereignty</span><span>Policy</span><span>Europe</span><span>Geopolitics</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 15</div>
+      <div class="news-content">
+        <h3><a href="https://www.artificialintelligence-news.com/news/ai-shopping-agents-consumer-trust-accenture-report/" target="_blank">Accenture: 74% of Consumers Trust AI Shopping Agents More Than Their Best Friend</a></h3>
+        <p>Accenture's 2026 Consumer Pulse Research — surveying 25,590 people across 16 countries — found that 74% of consumers would trust a personal AI shopping agent more than their best friend to make a purchase on their behalf. The same percentage would delegate routine commerce tasks (negotiation, complaints, reorders) to an agent. However, trust drops sharply at the payment stage: only 9% would allow an agent to complete purchases without final approval, and 12% are open to autonomous payment decisions. The report warns brands that 71% of consumers expect generative AI to influence at least half of their spending decisions in the next 12 months, and 37% of loyal customers would let an agent switch brands if it finds a better fit.</p>
+        <div class="news-tags"><span>Accenture</span><span>AI Agents</span><span>Commerce</span><span>Consumer</span><span>Trust</span><span>Retail</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 15</div>
+      <div class="news-content">
+        <h3><a href="https://www.artificialintelligence-news.com/news/harmonyos-7-china-ai-apple-gap/" target="_blank">Huawei HarmonyOS 7 Enters "Agent Era" — Fills AI Vacuum Apple Left in China</a></h3>
+        <p>Four days after Apple confirmed Siri AI will not launch in China, Huawei unveiled HarmonyOS 7 at its Developer Conference with an "intent-as-service" architecture built around 2,000+ third-party AI agents. The system-level Xiaoyi assistant now controls 2,100+ device capabilities and coordinates with local services like Ctrip and Ant Medical. The OS runs on Huawei's openPangu 2.0 model (up to 505B parameters, 512K context window) and claims a >90% task execution rate. HarmonyOS already holds 19% of China's mobile OS market, overtaking iOS in Q2 2025. The stable consumer release is expected autumn 2026, with a 30B-parameter on-device model arriving on Kirin chips later this year. The timing gives Huawei a clear runway in the world's largest smartphone market while Apple remains blocked by regulatory friction.</p>
+        <div class="news-tags"><span>Huawei</span><span>HarmonyOS 7</span><span>Agentic AI</span><span>China</span><span>Apple</span><span>Xiaoyi</span></div>
+      </div>
+    </div>
 
     <div class="news-item">
       <div class="news-date">Jun 12-13</div>
@@ -337,4 +364,4 @@ new p5(function(p) {
 </script>
 {{< /rawhtml >}}
 
-<!-- update 1749772800 -->
+<!-- update 1749859200 -->
