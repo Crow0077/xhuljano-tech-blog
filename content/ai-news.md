@@ -119,7 +119,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated June 15, 2026 — 23:45 UTC</div>
+    <div class="last-updated">Updated June 15, 2026 — 13:15 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -130,108 +130,72 @@ ShowToc: false
     <div class="news-item">
       <div class="news-date">Jun 15</div>
       <div class="news-content">
-        <h3><a href="https://aitoolly.com/ai-news/2026-06-15" target="_blank">Meituan's LongCat Team Unleashes Open-Source Wave — Multimodal, Video, Math, and Embodied AI</a></h3>
-        <p>Meituan's LongCat research team open-sourced a sweeping suite of models and benchmarks today. LongCat-Next is a native multimodal model treating vision and speech as core languages rather than add-ons. LongCat-Video-Avatar 1.5 delivers commercial-grade digital human generation with improved lip-sync and multi-person interaction. LongCat-Flash-Prover targets rigorous mathematical theorem proving through strict logical chains. The team also released General 365, a new reasoning benchmark where Gemini 3 Pro topped out at just 62.8% — most models failed to clear 60%. Additional contributions include LARYBench (the "ImageNet for embodied AI"), LongCat-AudioDiT for zero-shot voice cloning, and a 310,000-line AI refactoring case study documenting how Meituan manages codebases where AI-generated contributions exceed 90%.</p>
-        <div class="news-tags"><span>Meituan</span><span>LongCat</span><span>Open Source</span><span>Multimodal</span><span>Benchmark</span><span>Embodied AI</span></div>
+        <h3><a href="https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities/" target="_blank">NewCore Emerges with $66M to Give AI Agents Their Own Identities — Treating Bots as Digital Employees</a></h3>
+        <p>Cybersecurity startup NewCore emerged from stealth with $66M in seed funding led by Cyberstarts, valuing the company at $300M. The company argues the next frontier of enterprise security is managing AI agent identities, not human ones. Its platform treats AI agents as first-class identities with their own permissions, lifecycle controls, and revocation mechanisms, built on a "split-key" architecture. Founder Zohar Alon predicts AI agents could outnumber human employees at tech companies within years, and warns that legacy identity platforms from Okta and Microsoft will buckle under the scale. The platform already integrates with Claude Code, OpenAI Codex, and Cursor via an "Agentic Skill" package.</p>
+        <div class="news-tags"><span>NewCore</span><span>Identity</span><span>Security</span><span>AI Agents</span><span>$66M</span><span>Enterprise</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">Jun 15</div>
       <div class="news-content">
-        <h3><a href="https://www.gillibrand.senate.gov/news/press/release/gillibrand-introduces-groundbreaking-new-bill-to-regulate-the-pentagons-use-of-artificial-intelligence/" target="_blank">Gillibrand Introduces Landmark Bill to Regulate Pentagon AI — Bans Autonomous Nuclear Targeting</a></h3>
-        <p>Senator Kirsten Gillibrand introduced groundbreaking legislation that would prohibit the Pentagon from using AI to target or launch nuclear weapons, conduct mass domestic surveillance, or develop offensive fully autonomous weapons. The bill comes as the FY2026 defense budget allocates $13.4 billion for autonomous weapons and AI systems — a 570% increase in six years. The legislation would require AI labs to report model theft and supply chain breaches. The bill arrives days after Ukraine confirmed that AI-controlled drones autonomously killed human soldiers for the first time in history, crossing a long-feared ethical threshold in warfare.</p>
-        <div class="news-tags"><span>Gillibrand</span><span>Military AI</span><span>Autonomous Weapons</span><span>Regulation</span><span>Pentagon</span><span>Nuclear</span></div>
+        <h3><a href="https://techcrunch.com/2026/06/15/a-satellite-just-learned-to-find-things-on-its-own-heres-what-that-means/" target="_blank">A Satellite Just Learned to Find Things on Its Own — First VLM in Orbit with Google's Gemma 3</a></h3>
+        <p>In a historic first, an Earth observation satellite autonomously identified targets without human analysts. The Yam-9 satellite, built by Loft Orbital and running Google DeepMind's Gemma 3 vision-language model on an Nvidia Jetson Orin AGX GPU, classified sensor data and answered natural language queries about infrastructure — all in orbit. JPL's NAVI-Orbital software acted as the harness. Loft Orbital's Head of AI Paul Lasserre says the breakthrough "opens the door to always-on patrol layers in space" and a fleet of 50-100 such satellites could provide real-time coverage of anywhere on Earth. The concept originally stemmed from JPL research into astronaut AI assistants for lunar and Mars missions.</p>
+        <div class="news-tags"><span>Satellite</span><span>VLM</span><span>Gemma 3</span><span>Loft Orbital</span><span>Space</span><span>Onboard AI</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">Jun 15</div>
       <div class="news-content">
-        <h3><a href="https://privacy108.com.au/insights/ai-news-from-june-2026/" target="_blank">Great American AI Act of 2026 Introduced — Bipartisan Bill Pre-Empts State Laws</a></h3>
-        <p>The Great American Artificial Intelligence Act of 2026 has been introduced with bipartisan support, Politico reports. The bill introduces comprehensive obligations for companies, requiring them to address significant safety risks and complete third-party audits to ensure AI systems are secure. Notably, the bill would pre-empt state-level AI laws — a move Americans for Responsible Innovation President Brad Carson called a "generational mistake." The legislation arrives as the EU AI Act's August 2 enforcement deadline approaches, carrying penalties up to €35 million or 7% of global turnover, and as the Colorado AI Act takes effect June 30.</p>
-        <div class="news-tags"><span>AI Act</span><span>Bipartisan</span><span>Regulation</span><span>Pre-emption</span><span>Safety</span><span>Audit</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 15</div>
-      <div class="news-content">
-        <h3><a href="https://www.artificialintelligence-news.com/news/harmonyos-7-china-ai-apple-gap/" target="_blank">Huawei HarmonyOS 7 Enters "Agent Era" — Fills AI Vacuum Apple Left in China</a></h3>
-        <p>Four days after Apple confirmed Siri AI will not launch in China, Huawei unveiled HarmonyOS 7 at its Developer Conference with an "intent-as-service" architecture built around 2,000+ third-party AI agents. The system-level Xiaoyi assistant now controls 2,100+ device capabilities and coordinates with local services like Ctrip and Ant Medical. The OS runs on Huawei's openPangu 2.0 model (up to 505B parameters, 512K context window) and claims a >90% task execution rate. HarmonyOS already holds 19% of China's mobile OS market, overtaking iOS in Q2 2025. The stable consumer release is expected autumn 2026, with a 30B-parameter on-device model arriving on Kirin chips later this year.</p>
-        <div class="news-tags"><span>Huawei</span><span>HarmonyOS 7</span><span>Agentic AI</span><span>China</span><span>Apple</span><span>Xiaoyi</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 14-15</div>
-      <div class="news-content">
-        <h3><a href="https://ts2.tech/en/category/artificial-intelligence/" target="_blank">OpenAI Files for IPO, Altman Cancels Abu Dhabi Trip — Pursuing $1 Trillion Valuation</a></h3>
-        <p>OpenAI has confidentially filed for a U.S. IPO, pursuing a potential $1 trillion valuation. CEO Sam Altman abruptly canceled a planned trip to Abu Dhabi with UAE investors, casting uncertainty over the company's regional strategy. The IPO filing comes just days after a multistate attorney general investigation was opened against OpenAI, with New York's AG serving a subpoena. The juxtaposition of regulatory scrutiny and public market ambitions creates a tense backdrop for what would be the largest AI company IPO in history. Florida separately sued OpenAI over ChatGPT's alleged risks to children, and a California jury dismissed Elon Musk's lawsuit against the company.</p>
-        <div class="news-tags"><span>OpenAI</span><span>IPO</span><span>$1T</span><span>Altman</span><span>Regulation</span><span>UAE</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 14-15</div>
-      <div class="news-content">
-        <h3><a href="https://ts2.tech/en/category/artificial-intelligence/" target="_blank">Meta Boosts AI CapEx to $125-145B — Zuckerberg Admits Workforce Overhaul Mistakes</a></h3>
-        <p>Meta Platforms raised its 2026 capital expenditure forecast to $125-145 billion, up from previous guidance, driven by higher component prices and data center costs. CEO Mark Zuckerberg publicly admitted mistakes in the company's rapid AI workforce overhaul, acknowledging the human cost of the aggressive pivot. The massive spending underscores the escalating infrastructure arms race among hyperscalers, with Meta joining Microsoft, Google, and Amazon in committing hundreds of billions to AI compute. Meta also launched a Business Agent on WhatsApp using its Muse Spark model for autonomous commercial interactions, with metered volume-based pricing for large organizations.</p>
-        <div class="news-tags"><span>Meta</span><span>CapEx</span><span>$125B</span><span>Zuckerberg</span><span>Infrastructure</span><span>WhatsApp</span></div>
+        <h3><a href="https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/" target="_blank">The AI Layoff Wave Is Becoming a Powder Keg — 150,000 Workers Cut as AI Insiders Get Rich</a></h3>
+        <p>TechCrunch reports a combustible dynamic: ~150,000 tech workers have been laid off in 2026 in ~363 separate cuts — a pace of 974 people/day, 44% faster than 2025 — while a tiny cohort of AI insiders amasses unprecedented wealth. AI has been cited as the #1 reason for layoffs for three consecutive months across every industry. Marc Andreessen called AI the "silver bullet excuse" for over-hiring during the pandemic. Meanwhile, SpaceX's Friday IPO minted ~4,400 millionaires, Anthropic and OpenAI both approach trillion-dollar valuations, and Mark Zuckerberg purchased a record $170M Miami mansion two months before cutting 8,000 Meta employees. The piece warns the social backlash could exceed 2008-era Occupy Wall Street.</p>
+        <div class="news-tags"><span>Layoffs</span><span>Inequality</span><span>Tech Industry</span><span>Society</span><span>IPO Wealth</span><span>Backlash</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">Jun 14</div>
       <div class="news-content">
-        <h3><a href="https://imfounder.com/science-tech/ai/ai-updates-june-2026-siri-gemini-claude/" target="_blank">Jeff Bezos Returns with Prometheus AI — Physical Product Design from First Principles</a></h3>
-        <p>Jeff Bezos unveiled his first major AI venture post-Amazon: Prometheus AI, a platform designed to help engineers design, simulate, optimize, and manufacture physical products. Unlike generative AI focused on text and images, Prometheus targets the physical world — product design, engineering simulations, manufacturing optimization, and rapid prototyping. The venture signals Bezos's bet that the next frontier of AI value creation lies not in digital content but in transforming how physical goods are conceived and built. The move parallels Elon Musk's vertical AI stack strategy, which controls compute, connectivity, infrastructure, and intelligence end-to-end.</p>
-        <div class="news-tags"><span>Bezos</span><span>Prometheus AI</span><span>Manufacturing</span><span>Physical AI</span><span>Engineering</span><span>Venture</span></div>
+        <h3><a href="https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/" target="_blank">Meta Begins Unwinding $2B Manus Acquisition After Beijing Divestiture Order</a></h3>
+        <p>Meta has started dismantling its $2 billion acquisition of Chinese-founded AI agent startup Manus, cutting the startup off from internal systems and halting data sharing after Beijing ordered the deal reversed on national security grounds. The saga marks a major unraveling: Manus co-founders are now seeking ~$1B to reclaim the company and potentially pursue a Hong Kong listing. The case sets a precedent that Beijing's regulatory power extends to Chinese-founded AI companies even after offshore incorporation. Asian backers including Tencent and ZhenFund have indicated they will cooperate with the unwinding. The deal was announced in December 2025 and had already drawn scrutiny from U.S. Senator John Cornyn.</p>
+        <div class="news-tags"><span>Meta</span><span>Manus</span><span>China</span><span>Acquisition</span><span>Divestiture</span><span>Geopolitics</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 14-15</div>
+      <div class="news-date">Jun 13-14</div>
       <div class="news-content">
-        <h3><a href="https://www.artificialintelligence-news.com/news/anthropic-export-controls-ai-sovereignty/" target="_blank">Anthropic Export Controls Spark Global AI Sovereignty Scramble — Nations Rush to Build Independent AI</a></h3>
-        <p>The U.S. government's June 13 ban on Anthropic's Fable 5 and Mythos 5 has triggered an international alarm over who controls the AI the world runs on. A single White House directive took both models offline for every user on Earth — including briefly Anthropic's own foreign-born employees — turning an abstract policy fear into a live reality. The European Commission is now formally reviewing the impact of regulatory curbs related to Anthropic, while simultaneously committing €10 billion (~$11.6 billion) to support AI Factories through 2027. The incident is being called a "cautionary sovereign-AI fable" that proves dependence on American AI infrastructure is a strategic vulnerability.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Export Control</span><span>Sovereignty</span><span>EU</span><span>€10B</span><span>Geopolitics</span></div>
+        <h3><a href="https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/" target="_blank">India Debates AI Sovereignty After Anthropic Blocks Fable 5 — "Technology Is the Ultimate Weapon"</a></h3>
+        <p>The U.S. government's directive forcing Anthropic to block Fable 5 and Mythos 5 for all foreign nationals has triggered an existential debate in India, the second-largest market for frontier AI. Tech leaders called for urgent action: Activate founder Aakrit Vaish said it "materially changes how we should think about sovereign AI in India," Zoho's Sridhar Vembu urged adopting smaller/open-source models (both Indian and Chinese), and former Infosys executive Mohandas Pai proposed a ₹500B ($5.8B) annual fund for AI. The IndiaAI Mission's current budget is just $1.2B over five years. Lightspeed's Hemant Mohapatra noted talent and compute constraints remain the binding factors. India has only a handful of foundational model efforts, with most startups building applications on foreign models.</p>
+        <div class="news-tags"><span>India</span><span>Anthropic</span><span>Sovereign AI</span><span>Geopolitics</span><span>Policy</span><span>Fable 5</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 15</div>
+      <div class="news-date">Jun 11</div>
       <div class="news-content">
-        <h3><a href="https://privacy108.com.au/insights/ai-news-from-june-2026/" target="_blank">Canada Finds ChatGPT Training Violated Privacy Laws — Musk's OpenAI Lawsuit Dismissed</a></h3>
-        <p>Canada's Office of the Privacy Commissioner, alongside provincial authorities in Alberta, British Columbia, and Quebec, found that OpenAI's ChatGPT training practices violated PIPEDA and provincial privacy statutes. The investigation focused on data collection and consent practices, as well as data subject access requests. Separately, a California jury unanimously dismissed Elon Musk's lawsuit against OpenAI in under two hours, ruling that Musk exceeded the statute of limitations. Musk had alleged breach of charitable trust by Sam Altman and Greg Brockman. The twin legal developments underscore the mounting regulatory and legal pressure on OpenAI as it pursues its IPO.</p>
-        <div class="news-tags"><span>Canada</span><span>Privacy</span><span>PIPEDA</span><span>OpenAI</span><span>Musk</span><span>Lawsuit</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 13</div>
-      <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/" target="_blank">KPMG Pulls AI Report After Forensic Review Finds 40 of 45 Citations Were Hallucinated</a></h3>
-        <p>KPMG withdrew its October 2025 report "Total Experience: Redefining Excellence in the Age of Agentic AI" after multiple organizations said the report's claims about their AI usage were fabricated. A forensic review by GPTZero found that only 5 of 45 citations accurately pointed to real sources; 28 were paraphrased hallucinations and 12 were entirely fabricated. The incident is a stark embarrassment for a Big Four firm and demonstrates that even professional services giants are not immune to AI-generated misinformation. The report's case studies, client adoption figures, and named partnerships were largely invented by the AI tool used to produce it.</p>
-        <div class="news-tags"><span>KPMG</span><span>Hallucination</span><span>Big Four</span><span>Trust</span><span>AI-Generated</span><span>Enterprise</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 12-13</div>
-      <div class="news-content">
-        <h3><a href="https://www.cnbc.com/2026/06/12/anthropic-disables-access-to-fable-5-and-mythos-5-to-comply-with-government-directive.html" target="_blank">U.S. Government Bans Anthropic's Fable 5 and Mythos 5 Worldwide — Largest Model Export Control Ever</a></h3>
-        <p>The U.S. government issued an unprecedented export control directive ordering Anthropic to immediately suspend all access to Claude Fable 5 and Claude Mythos 5 for any foreign national, anywhere in the world — including Anthropic's own non-US employees. The company blocked all customer access globally. Amazon security research reportedly led to the White House action, with CEO talks triggering the crackdown. Anthropic publicly disagreed with the scope but complied. The ban marks the most aggressive AI model control action to date, raising questions about national sovereignty over frontier model access and the future of cloud-based AI services.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Fable 5</span><span>Mythos 5</span><span>Export Control</span><span>Ban</span><span>Policy</span><span>Security</span></div>
+        <h3><a href="https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/" target="_blank">Google DeepMind Funds $10M Multi-Agent Safety Research — "There Isn't a Field for This Yet"</a></h3>
+        <p>Google DeepMind has teamed up with Schmidt Sciences, the UK government's ARIA, and others to launch a $10M funding pot for multi-agent safety research — a field that, by DeepMind's own admission, "barely exists." Rohin Shah, who directs DeepMind's AGI safety research, warns that as millions of AI agents begin interacting online without human oversight, we could hit a tipping point where today's hypothetical dangers become tomorrow's real ones — from supercharged prompt injections turning agents into self-guided malware to coordinated attacks on digital infrastructure. The initiative aims to kick-start academic research outside of tech companies. Anthropic separately published zero-trust guidelines for deploying AI agents. Shah estimates we have "a few more months" before multi-agent risks become a practical concern.</p>
+        <div class="news-tags"><span>DeepMind</span><span>Multi-Agent</span><span>Safety</span><span>$10M</span><span>Research</span><span>Alignment</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">Jun 12</div>
       <div class="news-content">
-        <h3><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-costs-are-spiking-as-subscriptions-hit-pricing-wall-firms-turn-toward-chinese-llms-and-open-source-models-to-extend-budgets" target="_blank">AI Costs Spike as Subscriptions Hit Pricing Wall — Firms Pivot to Chinese LLMs and Open Source</a></h3>
-        <p>Enterprise AI costs are surging as premium subscription tiers hit a pricing wall, prompting companies to pivot toward Chinese LLMs and open-source models to extend budgets. The shift reflects a maturation of the AI market: early adopters who paid premium prices for frontier models are now seeking cost-effective alternatives for non-critical workloads. Chinese models from Alibaba (Qwen3.7 Plus), MiniMax (M3), and StepFun (Step 3.7 Flash) are gaining traction, alongside open-source releases like NVIDIA's Nemotron 3 Ultra 550B and Google's Gemma 4 12B. The trend is pressuring Western AI providers to justify premium pricing with demonstrably superior performance.</p>
-        <div class="news-tags"><span>AI Costs</span><span>Chinese LLMs</span><span>Open Source</span><span>Enterprise</span><span>Budgets</span><span>Qwen</span><span>Nemotron</span></div>
+        <h3><a href="https://github.com/DietrichGebert/ponytail" target="_blank">Ponytail — 11.8k⭐ Tool That Makes AI Agents Think Like "the Laziest Senior Dev"</a></h3>
+        <p>Ponytail, a viral open-source project, has taken the AI agent community by storm with a contrarian philosophy: "The best code is the code you never wrote." The tool configures AI coding agents (Claude Code, Codex, Cursor, etc.) to follow YAGNI (You Ain't Gonna Need It) principles — writing minimal, lazy, production-grade code that avoids over-engineering. With 11,800+ GitHub stars in 3 days, its popularity reflects developer fatigue with AI agents that generate excessive boilerplate. The project's approach is the polar opposite of the "ship everything" agent mindset, teaching agents to aggressively prune scope, question requirements, and refuse unnecessary work.</p>
+        <div class="news-tags"><span>Ponytail</span><span>Open Source</span><span>Developer Tools</span><span>AI Agents</span><span>YAGNI</span><span>Claude Code</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 11</div>
+      <div class="news-content">
+        <h3><a href="https://github.com/omnigent-ai/omnigent" target="_blank">Omnigent — Open-Source Meta-Harness for All AI Agents Hits 1.5k⭐, Supports Claude Code + Codex + Pi</a></h3>
+        <p>Omnigent, a new open-source project from omnigent-ai, provides a common orchestration layer over multiple AI agent harnesses — Claude Code, OpenAI Codex, Pi, and custom agents — allowing users to swap or combine them without rewriting workflows. Features include policy-and-sandbox controls for agent governance and real-time collaboration from any device. With 1,500 GitHub stars since its June 11 launch, the project addresses the growing fragmentation in the AI agent tooling ecosystem as developers juggle multiple agent platforms. The Apache 2.0 licensed project is positioning itself as the Linux-like kernel for the agent operating system.</p>
+        <div class="news-tags"><span>Omnigent</span><span>Open Source</span><span>Agent Orchestration</span><span>Claude Code</span><span>Codex</span><span>DevTools</span></div>
       </div>
     </div>
 
