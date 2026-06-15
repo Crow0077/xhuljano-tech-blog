@@ -119,13 +119,40 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated June 15, 2026 — 07:00 UTC</div>
+    <div class="last-updated">Updated June 15, 2026 — 11:51 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
 
   <div class="news-section-title">Monday's Headlines</div>
   <div class="news-grid">
+
+    <div class="news-item">
+      <div class="news-date">Jun 15</div>
+      <div class="news-content">
+        <h3><a href="https://aitoolly.com/ai-news/2026-06-15" target="_blank">Meituan's LongCat Team Unleashes Open-Source Wave — Multimodal, Video, Math, and Embodied AI</a></h3>
+        <p>Meituan's LongCat research team open-sourced a sweeping suite of models and benchmarks today. LongCat-Next is a native multimodal model treating vision and speech as core languages rather than add-ons. LongCat-Video-Avatar 1.5 delivers commercial-grade digital human generation with improved lip-sync and multi-person interaction. LongCat-Flash-Prover targets rigorous mathematical theorem proving through strict logical chains. The team also released General 365, a new reasoning benchmark where Gemini 3 Pro topped out at just 62.8% — most models failed to clear 60%. Additional contributions include LARYBench (the "ImageNet for embodied AI"), LongCat-AudioDiT for zero-shot voice cloning, and a 310,000-line AI refactoring case study documenting how Meituan manages codebases where AI-generated contributions exceed 90%.</p>
+        <div class="news-tags"><span>Meituan</span><span>LongCat</span><span>Open Source</span><span>Multimodal</span><span>Benchmark</span><span>Embodied AI</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 15</div>
+      <div class="news-content">
+        <h3><a href="https://aitoolly.com/ai-news/2026-06-15" target="_blank">FBI Opens 22,000 Sq Ft Kinetic Cyber Range in Huntsville — Replica Town with Hospital, Gas Station, Homes</a></h3>
+        <p>The FBI officially opened a massive kinetic cyber range in Huntsville, Alabama, featuring a fully built replica small town including a hospital, gas station, convenience store, and furnished residential homes. The facility is designed to simulate the physical consequences of cyberattacks — not just digital intrusion, but real-world kinetic effects like infrastructure failure and public safety cascades. The range will train federal, state, and private-sector partners in responding to AI-accelerated cyber threats and critical infrastructure breaches. The opening reflects growing concern that AI is lowering the barrier to sophisticated cyberattacks while simultaneously increasing their speed and scale.</p>
+        <div class="news-tags"><span>FBI</span><span>Cyber Range</span><span>Security</span><span>Infrastructure</span><span>Huntsville</span><span>Kinetic</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 15</div>
+      <div class="news-content">
+        <h3><a href="https://aitoolly.com/ai-news/2026-06-15" target="_blank">European Commission Commits €10 Billion to AI Factories Through 2027 — Reviews Anthropic Curbs</a></h3>
+        <p>The European Commission announced it is allocating €10 billion (~$11.6 billion) to support AI Factories from 2021 through 2027, a massive infrastructure bet on European sovereign AI capacity. Simultaneously, the Commission is formally reviewing the impact of regulatory curbs related to Anthropic, following the U.S. export control ban that took Fable 5 and Mythos 5 offline globally. The dual moves signal Europe's accelerating push to reduce dependence on American frontier model providers while building domestic compute and training clusters. The funding timeline overlaps with the EU AI Act's August 2 enforcement deadline, which carries penalties up to €35 million or 7% of global turnover.</p>
+        <div class="news-tags"><span>EU</span><span>AI Factories</span><span>€10B</span><span>Anthropic</span><span>Sovereignty</span><span>Policy</span></div>
+      </div>
+    </div>
 
     <div class="news-item">
       <div class="news-date">Jun 15</div>
@@ -364,4 +391,4 @@ new p5(function(p) {
 </script>
 {{< /rawhtml >}}
 
-<!-- update 1749859200 -->
+<!-- update 1750029066 -->
