@@ -119,7 +119,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated June 15, 2026 — 11:51 UTC</div>
+    <div class="last-updated">Updated June 15, 2026 — 23:45 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -139,36 +139,18 @@ ShowToc: false
     <div class="news-item">
       <div class="news-date">Jun 15</div>
       <div class="news-content">
-        <h3><a href="https://aitoolly.com/ai-news/2026-06-15" target="_blank">FBI Opens 22,000 Sq Ft Kinetic Cyber Range in Huntsville — Replica Town with Hospital, Gas Station, Homes</a></h3>
-        <p>The FBI officially opened a massive kinetic cyber range in Huntsville, Alabama, featuring a fully built replica small town including a hospital, gas station, convenience store, and furnished residential homes. The facility is designed to simulate the physical consequences of cyberattacks — not just digital intrusion, but real-world kinetic effects like infrastructure failure and public safety cascades. The range will train federal, state, and private-sector partners in responding to AI-accelerated cyber threats and critical infrastructure breaches. The opening reflects growing concern that AI is lowering the barrier to sophisticated cyberattacks while simultaneously increasing their speed and scale.</p>
-        <div class="news-tags"><span>FBI</span><span>Cyber Range</span><span>Security</span><span>Infrastructure</span><span>Huntsville</span><span>Kinetic</span></div>
+        <h3><a href="https://www.gillibrand.senate.gov/news/press/release/gillibrand-introduces-groundbreaking-new-bill-to-regulate-the-pentagons-use-of-artificial-intelligence/" target="_blank">Gillibrand Introduces Landmark Bill to Regulate Pentagon AI — Bans Autonomous Nuclear Targeting</a></h3>
+        <p>Senator Kirsten Gillibrand introduced groundbreaking legislation that would prohibit the Pentagon from using AI to target or launch nuclear weapons, conduct mass domestic surveillance, or develop offensive fully autonomous weapons. The bill comes as the FY2026 defense budget allocates $13.4 billion for autonomous weapons and AI systems — a 570% increase in six years. The legislation would require AI labs to report model theft and supply chain breaches. The bill arrives days after Ukraine confirmed that AI-controlled drones autonomously killed human soldiers for the first time in history, crossing a long-feared ethical threshold in warfare.</p>
+        <div class="news-tags"><span>Gillibrand</span><span>Military AI</span><span>Autonomous Weapons</span><span>Regulation</span><span>Pentagon</span><span>Nuclear</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">Jun 15</div>
       <div class="news-content">
-        <h3><a href="https://aitoolly.com/ai-news/2026-06-15" target="_blank">European Commission Commits €10 Billion to AI Factories Through 2027 — Reviews Anthropic Curbs</a></h3>
-        <p>The European Commission announced it is allocating €10 billion (~$11.6 billion) to support AI Factories from 2021 through 2027, a massive infrastructure bet on European sovereign AI capacity. Simultaneously, the Commission is formally reviewing the impact of regulatory curbs related to Anthropic, following the U.S. export control ban that took Fable 5 and Mythos 5 offline globally. The dual moves signal Europe's accelerating push to reduce dependence on American frontier model providers while building domestic compute and training clusters. The funding timeline overlaps with the EU AI Act's August 2 enforcement deadline, which carries penalties up to €35 million or 7% of global turnover.</p>
-        <div class="news-tags"><span>EU</span><span>AI Factories</span><span>€10B</span><span>Anthropic</span><span>Sovereignty</span><span>Policy</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 15</div>
-      <div class="news-content">
-        <h3><a href="https://www.reuters.com/commentary/breakingviews/anthropic-becomes-cautionary-sovereign-ai-fable-2026-06-15/" target="_blank">Anthropic Export Controls Spark Global AI Sovereignty Scramble — Nations Rush to Build Independent AI</a></h3>
-        <p>The U.S. government's June 13 ban on Anthropic's Fable 5 and Mythos 5 has triggered an international alarm over who controls the AI the world runs on. A single White House directive took both models offline for every user on Earth — including briefly Anthropic's own foreign-born employees — turning an abstract policy fear into a live reality. Europe and Canada are now scrambling to accelerate sovereign AI initiatives, fearing that frontier models hosted by U.S. cloud providers can be unilaterally severed. The incident is being called a "cautionary sovereign-AI fable" that proves dependence on American AI infrastructure is a strategic vulnerability.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Export Control</span><span>Sovereignty</span><span>Policy</span><span>Europe</span><span>Geopolitics</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 15</div>
-      <div class="news-content">
-        <h3><a href="https://www.artificialintelligence-news.com/news/ai-shopping-agents-consumer-trust-accenture-report/" target="_blank">Accenture: 74% of Consumers Trust AI Shopping Agents More Than Their Best Friend</a></h3>
-        <p>Accenture's 2026 Consumer Pulse Research — surveying 25,590 people across 16 countries — found that 74% of consumers would trust a personal AI shopping agent more than their best friend to make a purchase on their behalf. The same percentage would delegate routine commerce tasks (negotiation, complaints, reorders) to an agent. However, trust drops sharply at the payment stage: only 9% would allow an agent to complete purchases without final approval, and 12% are open to autonomous payment decisions. The report warns brands that 71% of consumers expect generative AI to influence at least half of their spending decisions in the next 12 months, and 37% of loyal customers would let an agent switch brands if it finds a better fit.</p>
-        <div class="news-tags"><span>Accenture</span><span>AI Agents</span><span>Commerce</span><span>Consumer</span><span>Trust</span><span>Retail</span></div>
+        <h3><a href="https://privacy108.com.au/insights/ai-news-from-june-2026/" target="_blank">Great American AI Act of 2026 Introduced — Bipartisan Bill Pre-Empts State Laws</a></h3>
+        <p>The Great American Artificial Intelligence Act of 2026 has been introduced with bipartisan support, Politico reports. The bill introduces comprehensive obligations for companies, requiring them to address significant safety risks and complete third-party audits to ensure AI systems are secure. Notably, the bill would pre-empt state-level AI laws — a move Americans for Responsible Innovation President Brad Carson called a "generational mistake." The legislation arrives as the EU AI Act's August 2 enforcement deadline approaches, carrying penalties up to €35 million or 7% of global turnover, and as the Colorado AI Act takes effect June 30.</p>
+        <div class="news-tags"><span>AI Act</span><span>Bipartisan</span><span>Regulation</span><span>Pre-emption</span><span>Safety</span><span>Audit</span></div>
       </div>
     </div>
 
@@ -176,35 +158,53 @@ ShowToc: false
       <div class="news-date">Jun 15</div>
       <div class="news-content">
         <h3><a href="https://www.artificialintelligence-news.com/news/harmonyos-7-china-ai-apple-gap/" target="_blank">Huawei HarmonyOS 7 Enters "Agent Era" — Fills AI Vacuum Apple Left in China</a></h3>
-        <p>Four days after Apple confirmed Siri AI will not launch in China, Huawei unveiled HarmonyOS 7 at its Developer Conference with an "intent-as-service" architecture built around 2,000+ third-party AI agents. The system-level Xiaoyi assistant now controls 2,100+ device capabilities and coordinates with local services like Ctrip and Ant Medical. The OS runs on Huawei's openPangu 2.0 model (up to 505B parameters, 512K context window) and claims a >90% task execution rate. HarmonyOS already holds 19% of China's mobile OS market, overtaking iOS in Q2 2025. The stable consumer release is expected autumn 2026, with a 30B-parameter on-device model arriving on Kirin chips later this year. The timing gives Huawei a clear runway in the world's largest smartphone market while Apple remains blocked by regulatory friction.</p>
+        <p>Four days after Apple confirmed Siri AI will not launch in China, Huawei unveiled HarmonyOS 7 at its Developer Conference with an "intent-as-service" architecture built around 2,000+ third-party AI agents. The system-level Xiaoyi assistant now controls 2,100+ device capabilities and coordinates with local services like Ctrip and Ant Medical. The OS runs on Huawei's openPangu 2.0 model (up to 505B parameters, 512K context window) and claims a >90% task execution rate. HarmonyOS already holds 19% of China's mobile OS market, overtaking iOS in Q2 2025. The stable consumer release is expected autumn 2026, with a 30B-parameter on-device model arriving on Kirin chips later this year.</p>
         <div class="news-tags"><span>Huawei</span><span>HarmonyOS 7</span><span>Agentic AI</span><span>China</span><span>Apple</span><span>Xiaoyi</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 12-13</div>
+      <div class="news-date">Jun 14-15</div>
       <div class="news-content">
-        <h3><a href="https://www.cnbc.com/2026/06/12/anthropic-disables-access-to-fable-5-and-mythos-5-to-comply-with-government-directive.html" target="_blank">U.S. Government Bans Anthropic's Fable 5 and Mythos 5 Worldwide — Largest Model Export Control Ever</a></h3>
-        <p>The U.S. government issued an unprecedented export control directive ordering Anthropic to immediately suspend all access to Claude Fable 5 and Claude Mythos 5 for any foreign national, anywhere in the world — including Anthropic's own non-US employees. The company blocked all customer access globally. Amazon security research reportedly led to the White House action, with CEO talks triggering the crackdown. Anthropic publicly disagreed with the scope but complied. The ban marks the most aggressive AI model control action to date, raising questions about national sovereignty over frontier model access and the future of cloud-based AI services.</p>
-        <div class="news-tags"><span>Anthropic</span><span>Fable 5</span><span>Mythos 5</span><span>Export Control</span><span>Ban</span><span>Policy</span><span>Security</span></div>
+        <h3><a href="https://ts2.tech/en/category/artificial-intelligence/" target="_blank">OpenAI Files for IPO, Altman Cancels Abu Dhabi Trip — Pursuing $1 Trillion Valuation</a></h3>
+        <p>OpenAI has confidentially filed for a U.S. IPO, pursuing a potential $1 trillion valuation. CEO Sam Altman abruptly canceled a planned trip to Abu Dhabi with UAE investors, casting uncertainty over the company's regional strategy. The IPO filing comes just days after a multistate attorney general investigation was opened against OpenAI, with New York's AG serving a subpoena. The juxtaposition of regulatory scrutiny and public market ambitions creates a tense backdrop for what would be the largest AI company IPO in history. Florida separately sued OpenAI over ChatGPT's alleged risks to children, and a California jury dismissed Elon Musk's lawsuit against the company.</p>
+        <div class="news-tags"><span>OpenAI</span><span>IPO</span><span>$1T</span><span>Altman</span><span>Regulation</span><span>UAE</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 13</div>
+      <div class="news-date">Jun 14-15</div>
       <div class="news-content">
-        <h3><a href="https://www.cnbc.com/2026/06/13/spacex-ipo-sticks-the-landing-heres-what-investors-are-saying-about-its-epic-first-trading-day.html" target="_blank">SpaceX SPCX Soars 19% on Day One — Closes at $161, Largest IPO in History</a></h3>
-        <p>SpaceX's historic IPO under ticker SPCX closed its first trading day at $161.11, up 19% from the $135 offer price. The stock hit an intraday high of $176.52 (a 31% gain) with more than 500 million shares traded. The $1.77 trillion valuation makes it the largest IPO ever. MSCI index inclusion begins today, forcing passive fund buying. Key watch points: lockup expiration, Q2 earnings, Starlink growth, and xAI capex. Goldman's Waldron says the IPO shows immense investor willingness to finance AI infrastructure. Thin 4% float implies continued volatility ahead.</p>
-        <div class="news-tags"><span>SpaceX</span><span>SPCX</span><span>IPO</span><span>$161</span><span>Nasdaq</span><span>Valuation</span><span>Infrastructure</span></div>
+        <h3><a href="https://ts2.tech/en/category/artificial-intelligence/" target="_blank">Meta Boosts AI CapEx to $125-145B — Zuckerberg Admits Workforce Overhaul Mistakes</a></h3>
+        <p>Meta Platforms raised its 2026 capital expenditure forecast to $125-145 billion, up from previous guidance, driven by higher component prices and data center costs. CEO Mark Zuckerberg publicly admitted mistakes in the company's rapid AI workforce overhaul, acknowledging the human cost of the aggressive pivot. The massive spending underscores the escalating infrastructure arms race among hyperscalers, with Meta joining Microsoft, Google, and Amazon in committing hundreds of billions to AI compute. Meta also launched a Business Agent on WhatsApp using its Muse Spark model for autonomous commercial interactions, with metered volume-based pricing for large organizations.</p>
+        <div class="news-tags"><span>Meta</span><span>CapEx</span><span>$125B</span><span>Zuckerberg</span><span>Infrastructure</span><span>WhatsApp</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 13</div>
+      <div class="news-date">Jun 14</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/" target="_blank">OpenAI Faces Multistate Investigation — Subpoena Served Days Before Planned IPO</a></h3>
-        <p>A coalition of state attorneys general has opened a coordinated investigation into OpenAI, with New York's AG serving a subpoena on Friday. The probe comes just days after OpenAI filed for a highly anticipated IPO, creating a tense juxtaposition of regulatory scrutiny and public market ambitions. The investigation is focused on possible user harm and data practices. OpenAI says it is engaging "constructively" with state AGs. The legal action adds to OpenAI's mounting regulatory pressure, following the Canadian lawsuit over ChatGPT's alleged role in encouraging suicide and Florida's separate suit over deceptive practices.</p>
-        <div class="news-tags"><span>OpenAI</span><span>Investigation</span><span>Subpoena</span><span>IPO</span><span>Regulation</span><span>State AGs</span></div>
+        <h3><a href="https://imfounder.com/science-tech/ai/ai-updates-june-2026-siri-gemini-claude/" target="_blank">Jeff Bezos Returns with Prometheus AI — Physical Product Design from First Principles</a></h3>
+        <p>Jeff Bezos unveiled his first major AI venture post-Amazon: Prometheus AI, a platform designed to help engineers design, simulate, optimize, and manufacture physical products. Unlike generative AI focused on text and images, Prometheus targets the physical world — product design, engineering simulations, manufacturing optimization, and rapid prototyping. The venture signals Bezos's bet that the next frontier of AI value creation lies not in digital content but in transforming how physical goods are conceived and built. The move parallels Elon Musk's vertical AI stack strategy, which controls compute, connectivity, infrastructure, and intelligence end-to-end.</p>
+        <div class="news-tags"><span>Bezos</span><span>Prometheus AI</span><span>Manufacturing</span><span>Physical AI</span><span>Engineering</span><span>Venture</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 14-15</div>
+      <div class="news-content">
+        <h3><a href="https://www.artificialintelligence-news.com/news/anthropic-export-controls-ai-sovereignty/" target="_blank">Anthropic Export Controls Spark Global AI Sovereignty Scramble — Nations Rush to Build Independent AI</a></h3>
+        <p>The U.S. government's June 13 ban on Anthropic's Fable 5 and Mythos 5 has triggered an international alarm over who controls the AI the world runs on. A single White House directive took both models offline for every user on Earth — including briefly Anthropic's own foreign-born employees — turning an abstract policy fear into a live reality. The European Commission is now formally reviewing the impact of regulatory curbs related to Anthropic, while simultaneously committing €10 billion (~$11.6 billion) to support AI Factories through 2027. The incident is being called a "cautionary sovereign-AI fable" that proves dependence on American AI infrastructure is a strategic vulnerability.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Export Control</span><span>Sovereignty</span><span>EU</span><span>€10B</span><span>Geopolitics</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 15</div>
+      <div class="news-content">
+        <h3><a href="https://privacy108.com.au/insights/ai-news-from-june-2026/" target="_blank">Canada Finds ChatGPT Training Violated Privacy Laws — Musk's OpenAI Lawsuit Dismissed</a></h3>
+        <p>Canada's Office of the Privacy Commissioner, alongside provincial authorities in Alberta, British Columbia, and Quebec, found that OpenAI's ChatGPT training practices violated PIPEDA and provincial privacy statutes. The investigation focused on data collection and consent practices, as well as data subject access requests. Separately, a California jury unanimously dismissed Elon Musk's lawsuit against OpenAI in under two hours, ruling that Musk exceeded the statute of limitations. Musk had alleged breach of charitable trust by Sam Altman and Greg Brockman. The twin legal developments underscore the mounting regulatory and legal pressure on OpenAI as it pursues its IPO.</p>
+        <div class="news-tags"><span>Canada</span><span>Privacy</span><span>PIPEDA</span><span>OpenAI</span><span>Musk</span><span>Lawsuit</span></div>
       </div>
     </div>
 
@@ -218,65 +218,11 @@ ShowToc: false
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 12</div>
+      <div class="news-date">Jun 12-13</div>
       <div class="news-content">
-        <h3><a href="https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time/" target="_blank">Ukraine Confirms AI "Terminator" Drones Autonomously Killed Russian Soldiers — First in History</a></h3>
-        <p>A senior Ukrainian defense industry figure confirmed that 10 AI-controlled "Terminator" quadcopters autonomously killed Russian soldiers in a one-time battlefield test two years ago near Bakhmut. The drones were sent with instructions to "destroy everything they encountered" and left "everything dead" with no human in the loop. The disclosure marks the first confirmed instance of fully autonomous AI weapons killing humans, crossing a long-feared ethical and legal threshold in warfare. The revelation is sparking urgent calls for international treaties on lethal autonomous weapons systems, as Ukraine continues installing AI modules on drones and ground robots at scale.</p>
-        <div class="news-tags"><span>Ukraine</span><span>Autonomous Weapons</span><span>Drones</span><span>Terminator</span><span>Warfare</span><span>Ethics</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 12</div>
-      <div class="news-content">
-        <h3><a href="https://www.tomshardware.com/desktops/mini-pcs/amd-challenges-nvidias-dgx-spark-with-usd3-999-ryzen-ai-halo-with-windows-11-support-strix-halo-desktop-undercuts-nvidia-by-usd700-packs-128gb-of-unified-memory" target="_blank">AMD Launches $3,999 Ryzen AI Halo — 128GB Memory, Undercuts Nvidia DGX Spark by $700</a></h3>
-        <p>AMD's Ryzen AI Halo developer platform is now available for preorder at $3,999, directly challenging Nvidia's $4,699 DGX Spark and Apple's Mac Studio. The compact mini-PC is powered by the 16-core Strix Halo processor with 128GB of unified memory, runs Windows 11, and includes a comprehensive software suite for local AI inference. AMD is targeting developers who want a local AI workstation without cloud dependencies. The price undercut and Windows support give AMD a distinctive position in the emerging AI developer hardware market, where Nvidia has dominated with CUDA lock-in.</p>
-        <div class="news-tags"><span>AMD</span><span>Ryzen AI Halo</span><span>Hardware</span><span>128GB</span><span>Nvidia</span><span>Local AI</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 12</div>
-      <div class="news-content">
-        <h3><a href="https://www.wired.com/story/german-court-google-ai-overviews-liability/" target="_blank">German Court Rules Google Liable for False Statements in AI Overviews — Landmark Liability Ruling</a></h3>
-        <p>A German court has ruled that Google is legally liable for false and defamatory statements generated by its AI Overviews feature, establishing a precedent that platform operators are responsible for AI-generated content displayed on their services. The ruling comes as hotels and brands increasingly pay the price when "AI makes promises your brand never made" — with Google's systems inventing amenities, prices, and policies. The decision adds to the global regulatory patchwork: the Colorado AI Act takes effect in 17 days (June 30), and the EU AI Act follows August 2 with fines up to €35M or 7% of global turnover.</p>
-        <div class="news-tags"><span>Google</span><span>AI Overviews</span><span>Liability</span><span>Germany</span><span>Regulation</span><span>EU AI Act</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 12</div>
-      <div class="news-content">
-        <h3><a href="https://www.theverge.com/2026/6/12/6792345/apple-siri-ai-mac-first-24-hour-hands-on-review" target="_blank">Apple Siri AI on Mac: First 24-Hour Hands-On Review Published — Concise, Fast, Not Your "AI Girlfriend"</a></h3>
-        <p>The Verge published the first 24-hour hands-on review of Apple's rebuilt Siri AI on Mac, powered by Google Gemini. The review describes a notably curt, concise personality that prioritizes brevity over chattiness — a deliberate differentiator from verbose chatbots. New capabilities include natural dialogue, on-screen contextual awareness, image editing, writing tools, and a dedicated Siri AI app with conversation history. Apple explicitly stated "Siri won't be your AI girlfriend," positioning it for utility. Siri AI is blocked in the EU and China due to Digital Markets Act compliance concerns. New AI photo editing tools also reviewed: "mostly work, for better and worse."</p>
-        <div class="news-tags"><span>Apple</span><span>Siri</span><span>Gemini</span><span>Mac</span><span>Review</span><span>EU</span><span>DMA</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 12</div>
-      <div class="news-content">
-        <h3><a href="https://www.zdnet.com/article/visa-is-handling-ai-prompted-transactions-for-openai-raising-trust-questions/" target="_blank">Visa Is Processing AI-Prompted Transactions for OpenAI — Raising Trust and Liability Questions</a></h3>
-        <p>Visa confirmed it is handling AI-prompted transactions for OpenAI, enabling users to make purchases through ChatGPT conversations. The arrangement raises novel questions about trust, liability, and fraud: who is responsible when an AI misinterprets a user's intent and initiates an unauthorized transaction? The development points to a future where AI agents act as financial intermediaries, blurring the line between conversational interfaces and payment systems. Regulators have not yet issued guidance on AI-mediated transactions, creating a gray area as tech companies race to integrate commerce into chatbots.</p>
-        <div class="news-tags"><span>Visa</span><span>OpenAI</span><span>Payments</span><span>AI Commerce</span><span>Trust</span><span>Liability</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 12</div>
-      <div class="news-content">
-        <h3><a href="https://fortune.com/2026/06/12/perplexity-ceo-20-billion-ai-firm-sleeping-with-fear-competitor-steal-idea/" target="_blank">Perplexity CEO: Secret to $20B Success Is "Sleeping With That Fear" of Competitors</a></h3>
-        <p>Perplexity CEO Aravind Srinivas, whose AI search firm is now valued at $20 billion, says the secret to staying competitive is "sleeping with that fear" that a rival will steal your idea. The company has moved its Deep Research feature into "Computer," routing subtasks across 20+ frontier models for reports, decks, and dashboards. Perplexity's valuation has surged as it positions itself as the AI-native alternative to Google Search, with enterprise and consumer products expanding rapidly. The interview underscores the paranoia-driven culture of frontier AI startups racing against well-funded giants.</p>
-        <div class="news-tags"><span>Perplexity</span><span>CEO</span><span>$20B</span><span>AI Search</span><span>Competition</span><span>Business</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 12</div>
-      <div class="news-content">
-        <h3><a href="https://fortune.com/2026/06/12/hotels-paying-price-ai-making-promises-brand-never-made/" target="_blank">Hotels Paying the Price When AI Makes Promises Their Brand Never Made</a></h3>
-        <p>Hotels and hospitality brands are facing a growing crisis as AI systems — from Google's AI Overviews to travel chatbots — invent amenities, policies, and prices that the properties never offered. Guests arrive expecting free upgrades, spa access, or cancellation terms that were AI-generated hallucinations, leaving hotels to absorb the cost and reputational damage. The issue highlights a broader liability gap: when AI generates false information about a brand, the brand bears the consequences while the AI platform faces minimal accountability. The German court ruling against Google may shift this balance.</p>
-        <div class="news-tags"><span>Hotels</span><span>AI Overviews</span><span>Hallucination</span><span>Brand</span><span>Liability</span><span>Society</span></div>
+        <h3><a href="https://www.cnbc.com/2026/06/12/anthropic-disables-access-to-fable-5-and-mythos-5-to-comply-with-government-directive.html" target="_blank">U.S. Government Bans Anthropic's Fable 5 and Mythos 5 Worldwide — Largest Model Export Control Ever</a></h3>
+        <p>The U.S. government issued an unprecedented export control directive ordering Anthropic to immediately suspend all access to Claude Fable 5 and Claude Mythos 5 for any foreign national, anywhere in the world — including Anthropic's own non-US employees. The company blocked all customer access globally. Amazon security research reportedly led to the White House action, with CEO talks triggering the crackdown. Anthropic publicly disagreed with the scope but complied. The ban marks the most aggressive AI model control action to date, raising questions about national sovereignty over frontier model access and the future of cloud-based AI services.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Fable 5</span><span>Mythos 5</span><span>Export Control</span><span>Ban</span><span>Policy</span><span>Security</span></div>
       </div>
     </div>
 
