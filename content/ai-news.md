@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-06-15
+date: 2026-06-17
 draft: false
 ShowToc: false
 ---
@@ -119,83 +119,119 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated June 15, 2026 — 13:15 UTC</div>
+    <div class="last-updated">Updated June 17, 2026 — 11:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
 
-  <div class="news-section-title">Monday's Headlines</div>
+  <div class="news-section-title">Wednesday's Headlines</div>
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">Jun 15</div>
+      <div class="news-date">Jun 17</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities/" target="_blank">NewCore Emerges with $66M to Give AI Agents Their Own Identities — Treating Bots as Digital Employees</a></h3>
-        <p>Cybersecurity startup NewCore emerged from stealth with $66M in seed funding led by Cyberstarts, valuing the company at $300M. The company argues the next frontier of enterprise security is managing AI agent identities, not human ones. Its platform treats AI agents as first-class identities with their own permissions, lifecycle controls, and revocation mechanisms, built on a "split-key" architecture. Founder Zohar Alon predicts AI agents could outnumber human employees at tech companies within years, and warns that legacy identity platforms from Okta and Microsoft will buckle under the scale. The platform already integrates with Claude Code, OpenAI Codex, and Cursor via an "Agentic Skill" package.</p>
-        <div class="news-tags"><span>NewCore</span><span>Identity</span><span>Security</span><span>AI Agents</span><span>$66M</span><span>Enterprise</span></div>
+        <h3><a href="https://techcrunch.com/2026/06/17/pinterest-launches-an-experimental-ai-shopping-app-called-ask-pinterest/" target="_blank">Pinterest Launches 'Ask Pinterest' — an Experimental AI Shopping App Powered by Conversational Recommendations</a></h3>
+        <p>Pinterest has launched 'Ask Pinterest,' an experimental AI-powered shopping app that lets users browse, discover, and purchase products through natural-language conversations rather than traditional visual search. The app represents Pinterest's bet that conversational AI can unlock new commerce revenue by understanding user intent beyond static pins — suggesting outfits, home decor, and gifts through multi-turn dialogue. Unlike standard AI chatbots, 'Ask Pinterest' is trained on Pinterest's proprietary product graph and visual taste data, giving it a curated sense of style rather than generic shopping recommendations. The app is currently in limited beta on iOS.</p>
+        <div class="news-tags"><span>Pinterest</span><span>AI Shopping</span><span>Conversational AI</span><span>E-Commerce</span><span>Discovery</span><span>Beta</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 16-17</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/16/spacex-valuation-balloons-to-2-6t-briefly-passes-amazon/" target="_blank">SpaceX Hits $2.6T Valuation Post-IPO — Briefly Surpasses Amazon as AI Data Center Demand Fuels Growth</a></h3>
+        <p>SpaceX's valuation has ballooned to $2.6 trillion since its shares began trading June 12, at one point briefly surpassing Amazon's market cap. The company's Starlink division is increasingly seen as critical AI infrastructure — providing low-latency connectivity for distributed AI inference at edge locations where terrestrial fiber doesn't reach, and powering autonomous systems from autonomous vehicles to drone swarms. The IPO minted ~4,400 millionaires among early employees and investors. SpaceX's valuation surge reflects the market's thesis that AI's insatiable bandwidth and compute demands make space-based internet a strategic necessity rather than a luxury.</p>
+        <div class="news-tags"><span>SpaceX</span><span>IPO</span><span>$2.6T</span><span>Starlink</span><span>AI Infrastructure</span><span>Valuation</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 16</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/16/android-17-launches-with-new-multitasking-tools-as-google-expands-gemini-features/" target="_blank">Android 17 Launches with Gemini Deep Integration — Google's On-Device AI Models Power New Multitasking and Accessibility</a></h3>
+        <p>Google has released Android 17 alongside Wear OS 7, bringing the deepest Gemini integration yet into the mobile operating system. The update introduces Gemini-powered multitasking — the AI can summarize screen content, suggest actions based on context, and transcribe audio across any app without developer integration. New "Gemini Actions" allow users to chain multi-app tasks with voice commands ("summarize this email, draft a reply, and schedule a meeting for tomorrow"). On-device processing for most Gemini features runs on Google's latest Tensor G6 chip, with sensitive data staying local. The Pixel Drop also brings expanded AI photo editing and real-time translation in messaging apps.</p>
+        <div class="news-tags"><span>Android 17</span><span>Gemini</span><span>Google</span><span>On-Device AI</span><span>Multitasking</span><span>Wear OS 7</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 16</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/16/doj-claims-xais-unpermitted-gas-turbines-are-a-matter-of-national-economic-and-energy-security/" target="_blank">DOJ Argues xAI's Unpermitted Gas Turbines at Colossus Are a Matter of 'National, Economic, and Energy Security'</a></h3>
+        <p>The U.S. Department of Justice has intervened in the dispute over xAI's Colossus data center near Memphis, arguing that the Pentagon needs xAI's unpermitted gas turbines to remain operational for national security reasons. The filing claims that shutting down the turbines — which operate without required air permits — would disrupt critical AI compute used by defense and intelligence agencies. Environmental groups and local residents have pushed back, citing elevated particulate matter and NOx emissions in surrounding communities. The case tests the tension between accelerating AI infrastructure and environmental regulation, with the DOJ arguing that AI compute capacity is now a strategic asset on par with weapons systems.</p>
+        <div class="news-tags"><span>xAI</span><span>DOJ</span><span>Colossus</span><span>Gas Turbines</span><span>National Security</span><span>Data Centers</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 16</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/16/sixty-percent-of-u-s-consumers-say-ai-in-brand-messaging-is-a-turnoff-survey-finds/" target="_blank">60% of U.S. Consumers Say 'AI' in Brand Messaging Is a Turnoff — WordPress VIP Survey Finds Deep Skepticism</a></h3>
+        <p>A new survey from WordPress VIP finds that 60% of U.S. consumers say seeing "AI" mentioned in brand messaging makes them less likely to engage with a product or service. The survey of 5,000 adults reveals consumers are particularly wary of AI-generated content in customer support, product descriptions, and news articles — with 72% saying they can spot AI-generated text and trust it less. The findings come as companies increasingly market AI features as a differentiator, but consumers appear saturated with the term and skeptical of its real value. Interestingly, branding that emphasizes "human-reviewed" or "human-augmented by AI" performed significantly better in the survey than "AI-powered" alone.</p>
+        <div class="news-tags"><span>AI Backlash</span><span>Consumer Sentiment</span><span>Branding</span><span>WordPress VIP</span><span>Trust</span><span>Survey</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 16</div>
+      <div class="news-content">
+        <h3><a href="https://www.technologyreview.com/2026/06/16/1138591/data-center-online-quickly-electric-grid-flex/" target="_blank">MIT Tech Review: 'Flexible AI Factories' Could Solve Data Center Grid Crunch — Nvidia and Digital Realty Back Emerald AI</a></h3>
+        <p>MIT Technology Review's deep dive explores "power-flexible AI factories" as a solution to the data center energy bottleneck. Emerald AI's Conductor software, backed by Nvidia and Digital Realty, allows data centers to dynamically throttle GPU compute during grid stress — reducing power draw by up to 25% while maintaining critical inference tasks. A 96-megawatt hyperscale facility in Manassas, Virginia will be the first live deployment later this year. Studies from Duke and Princeton suggest that flexible data centers could reach full operation 3-5 years faster than inflexible ones by using existing grid headroom — potentially unlocking 76 GW of additional capacity across the U.S. grid with less than 1% downtime.</p>
+        <div class="news-tags"><span>Data Centers</span><span>Grid Flexibility</span><span>Energy</span><span>Emerald AI</span><span>Nvidia</span><span>Infrastructure</span></div>
       </div>
     </div>
 
     <div class="news-item">
       <div class="news-date">Jun 15</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/06/15/a-satellite-just-learned-to-find-things-on-its-own-heres-what-that-means/" target="_blank">A Satellite Just Learned to Find Things on Its Own — First VLM in Orbit with Google's Gemma 3</a></h3>
-        <p>In a historic first, an Earth observation satellite autonomously identified targets without human analysts. The Yam-9 satellite, built by Loft Orbital and running Google DeepMind's Gemma 3 vision-language model on an Nvidia Jetson Orin AGX GPU, classified sensor data and answered natural language queries about infrastructure — all in orbit. JPL's NAVI-Orbital software acted as the harness. Loft Orbital's Head of AI Paul Lasserre says the breakthrough "opens the door to always-on patrol layers in space" and a fleet of 50-100 such satellites could provide real-time coverage of anywhere on Earth. The concept originally stemmed from JPL research into astronaut AI assistants for lunar and Mars missions.</p>
-        <div class="news-tags"><span>Satellite</span><span>VLM</span><span>Gemma 3</span><span>Loft Orbital</span><span>Space</span><span>Onboard AI</span></div>
+        <h3><a href="https://www.technologyreview.com/2026/06/15/1138983/why-do-south-koreans-love-ai-so-much/" target="_blank">MIT Tech Review: Why Do South Koreans Love AI? — Only 16% Are Worried vs. 50% of Americans</a></h3>
+        <p>MIT Technology Review explores South Korea's unique relationship with AI, where only 16% of citizens are more concerned than excited about AI — the lowest of any of the 25 countries surveyed by Pew (vs. 50% of Americans). The story traces Korea's "engineered enthusiasm" to a cultural conviction that technology modernization is integral to national identity. From AI textbooks in schools and AI eldercare robots in welfare centers to virtual K-pop idols and humanoid monks at Buddhist temples, Korea experiments with AI across every domain of life. The piece notes that government agencies are among the earliest adopters, and the country's hyper-competitive education system may drive AI adoption faster than elsewhere.</p>
+        <div class="news-tags"><span>South Korea</span><span>AI Adoption</span><span>Cultural</span><span>MIT Tech Review</span><span>Global Perspective</span><span>Society</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 15</div>
+      <div class="news-date">Jun 13</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/" target="_blank">The AI Layoff Wave Is Becoming a Powder Keg — 150,000 Workers Cut as AI Insiders Get Rich</a></h3>
-        <p>TechCrunch reports a combustible dynamic: ~150,000 tech workers have been laid off in 2026 in ~363 separate cuts — a pace of 974 people/day, 44% faster than 2025 — while a tiny cohort of AI insiders amasses unprecedented wealth. AI has been cited as the #1 reason for layoffs for three consecutive months across every industry. Marc Andreessen called AI the "silver bullet excuse" for over-hiring during the pandemic. Meanwhile, SpaceX's Friday IPO minted ~4,400 millionaires, Anthropic and OpenAI both approach trillion-dollar valuations, and Mark Zuckerberg purchased a record $170M Miami mansion two months before cutting 8,000 Meta employees. The piece warns the social backlash could exceed 2008-era Occupy Wall Street.</p>
-        <div class="news-tags"><span>Layoffs</span><span>Inequality</span><span>Tech Industry</span><span>Society</span><span>IPO Wealth</span><span>Backlash</span></div>
+        <h3><a href="https://opensourceaimustwin.com/?share=v2" target="_blank">'Open Source AI Must Win' Goes Viral — 1,593 Points on HN as the Future of AI Governance Debated</a></h3>
+        <p>An impassioned manifesto arguing that open-source AI development is the only path to equitable technological futures has gone viral on Hacker News, earning 1,593 points. The piece argues that proprietary AI models create centralized power structures that mirror colonial extractive economies, while open-source AI enables democratic oversight, local adaptation, and scientific reproducibility. The discussion thread — spanning 1,200+ comments — features debates between open-source advocates who cite the success of Llama and Mistral ecosystems versus skeptics who worry that open-weight models enable misuse at scale. The viral post reflects a deepening schism in the AI community as companies like OpenAI and Anthropic move toward increasingly closed, expensive frontier models.</p>
+        <div class="news-tags"><span>Open Source</span><span>AI Governance</span><span>Debate</span><span>Viral</span><span>Hacker News</span><span>Decentralization</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 14</div>
+      <div class="news-date">Jun 10</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/" target="_blank">Meta Begins Unwinding $2B Manus Acquisition After Beijing Divestiture Order</a></h3>
-        <p>Meta has started dismantling its $2 billion acquisition of Chinese-founded AI agent startup Manus, cutting the startup off from internal systems and halting data sharing after Beijing ordered the deal reversed on national security grounds. The saga marks a major unraveling: Manus co-founders are now seeking ~$1B to reclaim the company and potentially pursue a Hong Kong listing. The case sets a precedent that Beijing's regulatory power extends to Chinese-founded AI companies even after offshore incorporation. Asian backers including Tencent and ZhenFund have indicated they will cooperate with the unwinding. The deal was announced in December 2025 and had already drawn scrutiny from U.S. Senator John Cornyn.</p>
-        <div class="news-tags"><span>Meta</span><span>Manus</span><span>China</span><span>Acquisition</span><span>Divestiture</span><span>Geopolitics</span></div>
+        <h3><a href="https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/" target="_blank">Landmark German Ruling: Google Liable for False AI Overviews — 'AI-Generated Answers Are Google's Own Words'</a></h3>
+        <p>A German court has issued a landmark ruling declaring that AI-generated answers in Google's AI Overviews are legally considered Google's own statements — making the company fully liable for false, misleading, or defamatory content produced by its AI. The ruling rejects Google's argument that AI Overviews are merely automated summaries of third-party content (which would fall under intermediary liability protections). Instead, the court found that because Google's AI models rephrase, synthesize, and present information as original answers, the company assumes publisher-level responsibility. The decision could set a precedent across EU member states and force significant changes to how search engines deploy generative AI. Google has indicated it will appeal.</p>
+        <div class="news-tags"><span>Google</span><span>AI Overviews</span><span>Liability</span><span>Germany</span><span>Legal Precedent</span><span>EU Regulation</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 13-14</div>
+      <div class="news-date">Jun 16</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/" target="_blank">India Debates AI Sovereignty After Anthropic Blocks Fable 5 — "Technology Is the Ultimate Weapon"</a></h3>
-        <p>The U.S. government's directive forcing Anthropic to block Fable 5 and Mythos 5 for all foreign nationals has triggered an existential debate in India, the second-largest market for frontier AI. Tech leaders called for urgent action: Activate founder Aakrit Vaish said it "materially changes how we should think about sovereign AI in India," Zoho's Sridhar Vembu urged adopting smaller/open-source models (both Indian and Chinese), and former Infosys executive Mohandas Pai proposed a ₹500B ($5.8B) annual fund for AI. The IndiaAI Mission's current budget is just $1.2B over five years. Lightspeed's Hemant Mohapatra noted talent and compute constraints remain the binding factors. India has only a handful of foundational model efforts, with most startups building applications on foreign models.</p>
-        <div class="news-tags"><span>India</span><span>Anthropic</span><span>Sovereign AI</span><span>Geopolitics</span><span>Policy</span><span>Fable 5</span></div>
+        <h3><a href="http://arxiv.org/abs/2606.18208" target="_blank">Looped World Models (LoopWM) — 100x Parameter Efficiency Through Iterative Latent Refinement</a></h3>
+        <p>A new architecture from academic researchers introduces Looped World Models (LoopWM), the first looped architecture for world modeling that achieves up to 100x parameter efficiency over conventional approaches. Instead of scaling model size and training data, LoopWM iteratively refines latent environment states through a parameter-shared transformer block, with adaptive computation that automatically scales depth to match the complexity of each prediction step. The paper establishes "iterative latent depth" as a new scaling axis for world simulation — potentially reducing the compute requirements for planning, reinforcement learning, and robotics while maintaining or improving simulation fidelity. The approach could be particularly significant for real-time embodied AI systems where model size is constrained by latency budgets.</p>
+        <div class="news-tags"><span>LoopWM</span><span>World Models</span><span>Architecture</span><span>Efficiency</span><span>Research</span><span>Scaling</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 11</div>
+      <div class="news-date">Jun 16</div>
       <div class="news-content">
-        <h3><a href="https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/" target="_blank">Google DeepMind Funds $10M Multi-Agent Safety Research — "There Isn't a Field for This Yet"</a></h3>
-        <p>Google DeepMind has teamed up with Schmidt Sciences, the UK government's ARIA, and others to launch a $10M funding pot for multi-agent safety research — a field that, by DeepMind's own admission, "barely exists." Rohin Shah, who directs DeepMind's AGI safety research, warns that as millions of AI agents begin interacting online without human oversight, we could hit a tipping point where today's hypothetical dangers become tomorrow's real ones — from supercharged prompt injections turning agents into self-guided malware to coordinated attacks on digital infrastructure. The initiative aims to kick-start academic research outside of tech companies. Anthropic separately published zero-trust guidelines for deploying AI agents. Shah estimates we have "a few more months" before multi-agent risks become a practical concern.</p>
-        <div class="news-tags"><span>DeepMind</span><span>Multi-Agent</span><span>Safety</span><span>$10M</span><span>Research</span><span>Alignment</span></div>
+        <h3><a href="http://arxiv.org/abs/2606.18247" target="_blank">VERITAS: Visual Verification Enables Robot Self-Improvement Without Human Intervention</a></h3>
+        <p>Researchers propose VERITAS, a generator-verifier framework that lets robot policies improve autonomously during deployment using visual verification at inference time. The system pairs a pre-trained generalist robot policy (the "generator") with a gradient-free "visual verifier" that evaluates action quality frame-by-frame. The key finding: verified rollouts provide supervision on par with human expert demonstrations for fine-tuning, while requiring zero human intervention. This means deployed robots can practice, evaluate, and improve their own performance continuously — a practical and scalable mechanism for real-world robot learning that doesn't depend on expensive human feedback loops. The system demonstrated consistent gains across manipulation, navigation, and mobile manipulation tasks.</p>
+        <div class="news-tags"><span>VERITAS</span><span>Robotics</span><span>Self-Improvement</span><span>Visual Verification</span><span>Learning</span><span>arXiv</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 12</div>
+      <div class="news-date">Jun 16</div>
       <div class="news-content">
-        <h3><a href="https://github.com/DietrichGebert/ponytail" target="_blank">Ponytail — 11.8k⭐ Tool That Makes AI Agents Think Like "the Laziest Senior Dev"</a></h3>
-        <p>Ponytail, a viral open-source project, has taken the AI agent community by storm with a contrarian philosophy: "The best code is the code you never wrote." The tool configures AI coding agents (Claude Code, Codex, Cursor, etc.) to follow YAGNI (You Ain't Gonna Need It) principles — writing minimal, lazy, production-grade code that avoids over-engineering. With 11,800+ GitHub stars in 3 days, its popularity reflects developer fatigue with AI agents that generate excessive boilerplate. The project's approach is the polar opposite of the "ship everything" agent mindset, teaching agents to aggressively prune scope, question requirements, and refuse unnecessary work.</p>
-        <div class="news-tags"><span>Ponytail</span><span>Open Source</span><span>Developer Tools</span><span>AI Agents</span><span>YAGNI</span><span>Claude Code</span></div>
-      </div>
-    </div>
-
-    <div class="news-item">
-      <div class="news-date">Jun 11</div>
-      <div class="news-content">
-        <h3><a href="https://github.com/omnigent-ai/omnigent" target="_blank">Omnigent — Open-Source Meta-Harness for All AI Agents Hits 1.5k⭐, Supports Claude Code + Codex + Pi</a></h3>
-        <p>Omnigent, a new open-source project from omnigent-ai, provides a common orchestration layer over multiple AI agent harnesses — Claude Code, OpenAI Codex, Pi, and custom agents — allowing users to swap or combine them without rewriting workflows. Features include policy-and-sandbox controls for agent governance and real-time collaboration from any device. With 1,500 GitHub stars since its June 11 launch, the project addresses the growing fragmentation in the AI agent tooling ecosystem as developers juggle multiple agent platforms. The Apache 2.0 licensed project is positioning itself as the Linux-like kernel for the agent operating system.</p>
-        <div class="news-tags"><span>Omnigent</span><span>Open Source</span><span>Agent Orchestration</span><span>Claude Code</span><span>Codex</span><span>DevTools</span></div>
+        <h3><a href="https://techcrunch.com/2026/06/16/plaud-says-its-software-business-topped-100m-in-arr-after-shipping-over-2m-ai-notetakers/" target="_blank">Plaud Hits $100M ARR After Shipping 2M+ AI Notetakers — The Hardware-Turned-Software AI Success Story</a></h3>
+        <p>Plaud announced its software subscription business has surpassed $100M in annual recurring revenue after shipping over 2 million AI notetaker devices. The company started as a hardware play — a physical device that clips onto phones to record and transcribe meetings — but has evolved into a software platform with enterprise features including meeting analytics, action-item extraction, CRM integration, and multi-language transcription. Plaud's success in a crowded market of AI meeting notetakers (Otter, Fireflies, Fathom) demonstrates that hardware can serve as a distribution wedge for AI SaaS. The company's AI models are trained on meeting-specific language patterns and now offer industry-specific transcription for legal, medical, and financial contexts.</p>
+        <div class="news-tags"><span>Plaud</span><span>$100M ARR</span><span>AI Notetakers</span><span>SaaS</span><span>Hardware</span><span>Meetings</span></div>
       </div>
     </div>
 
@@ -301,4 +337,4 @@ new p5(function(p) {
 </script>
 {{< /rawhtml >}}
 
-<!-- update 1750029066 -->
+<!-- update 1750172400 -->
