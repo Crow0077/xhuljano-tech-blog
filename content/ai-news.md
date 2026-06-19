@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-06-17
+date: 2026-06-19
 draft: false
 ShowToc: false
 ---
@@ -119,119 +119,119 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated June 17, 2026 — 11:00 UTC</div>
+    <div class="last-updated">Updated June 19, 2026 — 11:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
 
-  <div class="news-section-title">Wednesday's Headlines</div>
+  <div class="news-section-title">Friday's Headlines</div>
   <div class="news-grid">
 
     <div class="news-item">
-      <div class="news-date">Jun 17</div>
+      <div class="news-date">Jun 19</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/06/17/pinterest-launches-an-experimental-ai-shopping-app-called-ask-pinterest/" target="_blank">Pinterest Launches 'Ask Pinterest' — an Experimental AI Shopping App Powered by Conversational Recommendations</a></h3>
-        <p>Pinterest has launched 'Ask Pinterest,' an experimental AI-powered shopping app that lets users browse, discover, and purchase products through natural-language conversations rather than traditional visual search. The app represents Pinterest's bet that conversational AI can unlock new commerce revenue by understanding user intent beyond static pins — suggesting outfits, home decor, and gifts through multi-turn dialogue. Unlike standard AI chatbots, 'Ask Pinterest' is trained on Pinterest's proprietary product graph and visual taste data, giving it a curated sense of style rather than generic shopping recommendations. The app is currently in limited beta on iOS.</p>
-        <div class="news-tags"><span>Pinterest</span><span>AI Shopping</span><span>Conversational AI</span><span>E-Commerce</span><span>Discovery</span><span>Beta</span></div>
+        <h3><a href="https://www.independent.co.uk/news/world/americas/us-politics/elon-musk-grok-ai-iran-missiles-pentagon-b2997321.html" target="_blank">Pentagon Used Elon Musk's Grok AI to Fire 2,000 Missiles at Iran, Official Says</a></h3>
+        <p>A Pentagon official has disclosed that the U.S. military used Elon Musk's Grok AI to coordinate a salvo of 2,000 missiles targeting Iranian positions, marking one of the first known uses of a commercial large language model in active combat decision-making. The revelation raises urgent questions about the role of unclassified AI systems in kinetic military operations — Grok was not purpose-built for military targeting, and its outputs were processed through existing command-and-control pipelines. Critics point to risks of adversarial manipulation, hallucinated target assessments, and the lack of a clear legal framework for AI-initiated lethal action. The Pentagon defended the decision, noting that all strike orders were reviewed by human commanders before execution and that Grok was used exclusively for logistics coordination, not target selection. The disclosure has reignited debate over the militarization of commercial AI platforms.</p>
+        <div class="news-tags"><span>Pentagon</span><span>Grok</span><span>Military AI</span><span>Iran</span><span>Autonomous Weapons</span><span>Ethics</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 16-17</div>
+      <div class="news-date">Jun 18</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/06/16/spacex-valuation-balloons-to-2-6t-briefly-passes-amazon/" target="_blank">SpaceX Hits $2.6T Valuation Post-IPO — Briefly Surpasses Amazon as AI Data Center Demand Fuels Growth</a></h3>
-        <p>SpaceX's valuation has ballooned to $2.6 trillion since its shares began trading June 12, at one point briefly surpassing Amazon's market cap. The company's Starlink division is increasingly seen as critical AI infrastructure — providing low-latency connectivity for distributed AI inference at edge locations where terrestrial fiber doesn't reach, and powering autonomous systems from autonomous vehicles to drone swarms. The IPO minted ~4,400 millionaires among early employees and investors. SpaceX's valuation surge reflects the market's thesis that AI's insatiable bandwidth and compute demands make space-based internet a strategic necessity rather than a luxury.</p>
-        <div class="news-tags"><span>SpaceX</span><span>IPO</span><span>$2.6T</span><span>Starlink</span><span>AI Infrastructure</span><span>Valuation</span></div>
+        <h3><a href="https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/" target="_blank">OpenAI Poaches Transformer Co-Inventor Noam Shazeer from DeepMind, Hires Former Trump AI Policy Chief Ahead of IPO</a></h3>
+        <p>OpenAI is aggressively bulking up ahead of its anticipated IPO, landing two high-profile hires in the same week: Noam Shazeer, co-inventor of the Transformer architecture, has left Google DeepMind to join OpenAI, and Dean Ball, former AI policy official under the Trump administration, has been brought on to lead government affairs. Shazeer's return to OpenAI (he was an early engineer before leaving in 2021 to start Character.AI) signals a strategic push to deepen the company's architectural research as it races to retain frontier model leadership against Anthropic, Google DeepMind, and xAI. Ball's hire signals the company's preparation for a more complex regulatory environment as it transitions from private research lab to public company, navigating export controls, compute governance, and liability frameworks across multiple jurisdictions.</p>
+        <div class="news-tags"><span>OpenAI</span><span>Noam Shazeer</span><span>Transformer</span><span>IPO</span><span>Hiring</span><span>Policy</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 16</div>
+      <div class="news-date">Jun 18</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/06/16/android-17-launches-with-new-multitasking-tools-as-google-expands-gemini-features/" target="_blank">Android 17 Launches with Gemini Deep Integration — Google's On-Device AI Models Power New Multitasking and Accessibility</a></h3>
-        <p>Google has released Android 17 alongside Wear OS 7, bringing the deepest Gemini integration yet into the mobile operating system. The update introduces Gemini-powered multitasking — the AI can summarize screen content, suggest actions based on context, and transcribe audio across any app without developer integration. New "Gemini Actions" allow users to chain multi-app tasks with voice commands ("summarize this email, draft a reply, and schedule a meeting for tomorrow"). On-device processing for most Gemini features runs on Google's latest Tensor G6 chip, with sensitive data staying local. The Pixel Drop also brings expanded AI photo editing and real-time translation in messaging apps.</p>
-        <div class="news-tags"><span>Android 17</span><span>Gemini</span><span>Google</span><span>On-Device AI</span><span>Multitasking</span><span>Wear OS 7</span></div>
+        <h3><a href="https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/" target="_blank">Amazon to Sell Its Own AI Chips to Third-Party Data Centers — Taking Direct Aim at Nvidia's Dominance</a></h3>
+        <p>AWS is in talks to sell its custom AI chips (Trainium and Inferentia) to other data center operators, a strategic pivot that would directly challenge Nvidia's near-monopoly on AI hardware. Amazon CEO Andy Jassy has described the move as a potential $50 billion market opportunity, arguing that hyperscale operators running training and inference workloads at scale need alternatives to Nvidia's premium-priced GPUs. The chips have been tested internally at Amazon for years and power much of Alexa's and Amazon's recommendation engine; selling externally would mark a significant expansion of AWS's hardware business model from cloud services to silicon vendor. Nvidia currently commands roughly 80% of the AI chip market, but Amazon's move — combined with Google's TPU and Microsoft's Maia — suggests the hyperscaler chip rebellion is accelerating.</p>
+        <div class="news-tags"><span>Amazon</span><span>AWS</span><span>Trainium</span><span>Inferentia</span><span>Nvidia</span><span>AI Chips</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 16</div>
+      <div class="news-date">Jun 18</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/06/16/doj-claims-xais-unpermitted-gas-turbines-are-a-matter-of-national-economic-and-energy-security/" target="_blank">DOJ Argues xAI's Unpermitted Gas Turbines at Colossus Are a Matter of 'National, Economic, and Energy Security'</a></h3>
-        <p>The U.S. Department of Justice has intervened in the dispute over xAI's Colossus data center near Memphis, arguing that the Pentagon needs xAI's unpermitted gas turbines to remain operational for national security reasons. The filing claims that shutting down the turbines — which operate without required air permits — would disrupt critical AI compute used by defense and intelligence agencies. Environmental groups and local residents have pushed back, citing elevated particulate matter and NOx emissions in surrounding communities. The case tests the tension between accelerating AI infrastructure and environmental regulation, with the DOJ arguing that AI compute capacity is now a strategic asset on par with weapons systems.</p>
-        <div class="news-tags"><span>xAI</span><span>DOJ</span><span>Colossus</span><span>Gas Turbines</span><span>National Security</span><span>Data Centers</span></div>
+        <h3><a href="https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/" target="_blank">FERC Mandates Fast-Track Grid Interconnection for AI Data Centers — But Sidesteps Power Supply Shortages</a></h3>
+        <p>The Federal Energy Regulatory Commission (FERC) has ordered grid operators to create a fast lane for AI data center interconnections, expediting approvals for facilities that can demonstrate critical infrastructure status. The ruling aims to slash the multi-year interconnection queue that has become a bottleneck for AI compute expansion. However, critics note the order fails to address the fundamental supply-side problem: many regional grids simply do not have enough spare generation capacity to power the new facilities, and fast-tracking interconnection without addressing generation adequacy could strain local grids during peak demand. The order also does not require data centers to invest in backup generation or demand-response capabilities. AI data center electricity demand is projected to grow from ~4% of U.S. consumption today to nearly 10% by 2030.</p>
+        <div class="news-tags"><span>FERC</span><span>Data Centers</span><span>Grid</span><span>Regulation</span><span>Energy</span><span>Infrastructure</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 16</div>
+      <div class="news-date">Jun 19</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/06/16/sixty-percent-of-u-s-consumers-say-ai-in-brand-messaging-is-a-turnoff-survey-finds/" target="_blank">60% of U.S. Consumers Say 'AI' in Brand Messaging Is a Turnoff — WordPress VIP Survey Finds Deep Skepticism</a></h3>
-        <p>A new survey from WordPress VIP finds that 60% of U.S. consumers say seeing "AI" mentioned in brand messaging makes them less likely to engage with a product or service. The survey of 5,000 adults reveals consumers are particularly wary of AI-generated content in customer support, product descriptions, and news articles — with 72% saying they can spot AI-generated text and trust it less. The findings come as companies increasingly market AI features as a differentiator, but consumers appear saturated with the term and skeptical of its real value. Interestingly, branding that emphasizes "human-reviewed" or "human-augmented by AI" performed significantly better in the survey than "AI-powered" alone.</p>
-        <div class="news-tags"><span>AI Backlash</span><span>Consumer Sentiment</span><span>Branding</span><span>WordPress VIP</span><span>Trust</span><span>Survey</span></div>
+        <h3><a href="https://www.euractiv.com/news/estonia-to-give-digital-identities-to-ai-agents/" target="_blank">Estonia to Grant Digital Identities to AI Agents — A World First in Autonomous Entity Recognition</a></h3>
+        <p>Estonia, the world's most advanced digital society, has announced it will begin issuing legally recognized digital identities to AI agents — a world first. The e-residency-style program will allow autonomous AI systems to enter into contracts, hold digital assets, pay taxes, and be held legally accountable under Estonian law. The initiative positions Estonia as a regulatory sandbox for agentic AI, attracting developers and companies who want legally operable autonomous agents without the uncertainty of grey-market operation. The program includes a registry of agent identities, mandatory audit trails for agent transactions, and liability frameworks that assign responsibility to the agent's operator for damages. Critics warn the move could enable autonomous fraud at scale, while supporters argue that legal personhood for AI agents is inevitable and Estonia is simply getting ahead of the curve.</p>
+        <div class="news-tags"><span>Estonia</span><span>AI Agents</span><span>Digital Identity</span><span>Regulation</span><span>Legal Personhood</span><span>e-Residency</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 16</div>
+      <div class="news-date">Jun 18-19</div>
       <div class="news-content">
-        <h3><a href="https://www.technologyreview.com/2026/06/16/1138591/data-center-online-quickly-electric-grid-flex/" target="_blank">MIT Tech Review: 'Flexible AI Factories' Could Solve Data Center Grid Crunch — Nvidia and Digital Realty Back Emerald AI</a></h3>
-        <p>MIT Technology Review's deep dive explores "power-flexible AI factories" as a solution to the data center energy bottleneck. Emerald AI's Conductor software, backed by Nvidia and Digital Realty, allows data centers to dynamically throttle GPU compute during grid stress — reducing power draw by up to 25% while maintaining critical inference tasks. A 96-megawatt hyperscale facility in Manassas, Virginia will be the first live deployment later this year. Studies from Duke and Princeton suggest that flexible data centers could reach full operation 3-5 years faster than inflexible ones by using existing grid headroom — potentially unlocking 76 GW of additional capacity across the U.S. grid with less than 1% downtime.</p>
-        <div class="news-tags"><span>Data Centers</span><span>Grid Flexibility</span><span>Energy</span><span>Emerald AI</span><span>Nvidia</span><span>Infrastructure</span></div>
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab" target="_blank">Barret Zoph Departs OpenAI Again After Five Months — 'Thinking Machines Lab' Effort Loses Key Researcher</a></h3>
+        <p>Barret Zoph, a prominent AI researcher who co-led OpenAI's reasoning team, has left the company for the second time in under five months after returning to lead the 'Thinking Machines Lab' initiative. Zoph had rejoined OpenAI in early 2026 from Anthropic to spearhead a new research group focused on scalable reasoning and self-improving models. His departure raises questions about OpenAI's ability to retain top talent during the high-pressure lead-up to its IPO, as the company faces stiff competition for researchers from Anthropic, Google DeepMind, and well-funded startups. Zoph has not announced his next move, but sources speculate he may start his own lab or join a rival AI company. The revolving door of senior research talent at OpenAI has become a recurring theme as the organization transitions from research nonprofit to commercial giant.</p>
+        <div class="news-tags"><span>Barret Zoph</span><span>OpenAI</span><span>Thinking Machines</span><span>People</span><span>Talent</span><span>IPO</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 15</div>
+      <div class="news-date">Jun 18</div>
       <div class="news-content">
-        <h3><a href="https://www.technologyreview.com/2026/06/15/1138983/why-do-south-koreans-love-ai-so-much/" target="_blank">MIT Tech Review: Why Do South Koreans Love AI? — Only 16% Are Worried vs. 50% of Americans</a></h3>
-        <p>MIT Technology Review explores South Korea's unique relationship with AI, where only 16% of citizens are more concerned than excited about AI — the lowest of any of the 25 countries surveyed by Pew (vs. 50% of Americans). The story traces Korea's "engineered enthusiasm" to a cultural conviction that technology modernization is integral to national identity. From AI textbooks in schools and AI eldercare robots in welfare centers to virtual K-pop idols and humanoid monks at Buddhist temples, Korea experiments with AI across every domain of life. The piece notes that government agencies are among the earliest adopters, and the country's hyper-competitive education system may drive AI adoption faster than elsewhere.</p>
-        <div class="news-tags"><span>South Korea</span><span>AI Adoption</span><span>Cultural</span><span>MIT Tech Review</span><span>Global Perspective</span><span>Society</span></div>
+        <h3><a href="https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/" target="_blank">AI Inference Startup Baseten Reportedly Raising $1.5B at $13B Valuation — The 'Inference Gold Rush' Accelerates</a></h3>
+        <p>AI inference startup Baseten is reportedly close to finalizing a $1.5 billion funding round at a $13 billion valuation, just months after its previous mega-round, as the 'inference gold rush' shows no signs of slowing. The company provides infrastructure for deploying and serving AI models in production, competing with the likes of Together AI, Fireworks, and Replicate. The explosive growth of agentic AI — which requires multiple model inference calls per task, often chaining models together — has created insatiable demand for low-latency, high-throughput inference infrastructure. Baseten's rapid valuation growth from ~$1B to $13B in under 12 months mirrors the broader market thesis that inference, not training, will be the largest and most durable layer of the AI stack as models move from labs to production systems.</p>
+        <div class="news-tags"><span>Baseten</span><span>$13B</span><span>Inference</span><span>Funding</span><span>Infrastructure</span><span>Agents</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 13</div>
+      <div class="news-date">Jun 18</div>
       <div class="news-content">
-        <h3><a href="https://opensourceaimustwin.com/?share=v2" target="_blank">'Open Source AI Must Win' Goes Viral — 1,593 Points on HN as the Future of AI Governance Debated</a></h3>
-        <p>An impassioned manifesto arguing that open-source AI development is the only path to equitable technological futures has gone viral on Hacker News, earning 1,593 points. The piece argues that proprietary AI models create centralized power structures that mirror colonial extractive economies, while open-source AI enables democratic oversight, local adaptation, and scientific reproducibility. The discussion thread — spanning 1,200+ comments — features debates between open-source advocates who cite the success of Llama and Mistral ecosystems versus skeptics who worry that open-weight models enable misuse at scale. The viral post reflects a deepening schism in the AI community as companies like OpenAI and Anthropic move toward increasingly closed, expensive frontier models.</p>
-        <div class="news-tags"><span>Open Source</span><span>AI Governance</span><span>Debate</span><span>Viral</span><span>Hacker News</span><span>Decentralization</span></div>
+        <h3><a href="https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/" target="_blank">Elastic Acquires AI Debugging Startup DeductiveAI for Up to $85M — Catching Bugs with LLMs</a></h3>
+        <p>Elastic, the company behind the Elasticsearch search and analytics engine, has agreed to acquire DeductiveAI, a three-year-old startup that uses AI to automatically detect and resolve software bugs, for up to $85 million. DeductiveAI's platform analyzes codebases to identify logical errors, race conditions, and edge cases that traditional linters and static analysis tools miss — using large language models to reason about program semantics rather than pattern-matching known bug signatures. The acquisition gives Elastic a differentiated AI-powered developer tool to integrate into its observability and security platforms. The deal is another signal that AI-powered code analysis is becoming a strategically important category, with competitors like GitHub Copilot, GitLab, and Datadog all investing heavily in AI-assisted debugging and root cause analysis.</p>
+        <div class="news-tags"><span>Elastic</span><span>DeductiveAI</span><span>M&A</span><span>Debugging</span><span>$85M</span><span>DevTools</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 10</div>
+      <div class="news-date">Jun 18</div>
       <div class="news-content">
-        <h3><a href="https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/" target="_blank">Landmark German Ruling: Google Liable for False AI Overviews — 'AI-Generated Answers Are Google's Own Words'</a></h3>
-        <p>A German court has issued a landmark ruling declaring that AI-generated answers in Google's AI Overviews are legally considered Google's own statements — making the company fully liable for false, misleading, or defamatory content produced by its AI. The ruling rejects Google's argument that AI Overviews are merely automated summaries of third-party content (which would fall under intermediary liability protections). Instead, the court found that because Google's AI models rephrase, synthesize, and present information as original answers, the company assumes publisher-level responsibility. The decision could set a precedent across EU member states and force significant changes to how search engines deploy generative AI. Google has indicated it will appeal.</p>
-        <div class="news-tags"><span>Google</span><span>AI Overviews</span><span>Liability</span><span>Germany</span><span>Legal Precedent</span><span>EU Regulation</span></div>
+        <h3><a href="https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/" target="_blank">Snap Spins Off AI Video Team into New Company 'Dotmo' — High Costs of GenAI Push Internal Startup Model</a></h3>
+        <p>Snap is spinning off its internal AI video generation team into a standalone company called Dotmo, citing the high cost of running cutting-edge generative AI research within a social media company's margin structure. The new entity will retain current Snap employees working on video generation and will operate independently, with Snap holding a minority stake. The move mirrors Google's spin-off of DeepMind (though DeepMind was later re-assimilated) and reflects a growing trend of social media companies externalizing resource-intensive AI R&D into separately funded entities. Dotmo will focus on building video generation tools for creators and enterprises, competing with OpenAI's Sora, Runway, and Pika. The spin-off allows Dotmo to raise external capital without diluting Snap's core business, while Snap retains access to the technology through a strategic partnership.</p>
+        <div class="news-tags"><span>Snap</span><span>Dotmo</span><span>AI Video</span><span>Spin-off</span><span>GenAI</span><span>Costs</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 16</div>
+      <div class="news-date">Jun 18-19</div>
       <div class="news-content">
-        <h3><a href="http://arxiv.org/abs/2606.18208" target="_blank">Looped World Models (LoopWM) — 100x Parameter Efficiency Through Iterative Latent Refinement</a></h3>
-        <p>A new architecture from academic researchers introduces Looped World Models (LoopWM), the first looped architecture for world modeling that achieves up to 100x parameter efficiency over conventional approaches. Instead of scaling model size and training data, LoopWM iteratively refines latent environment states through a parameter-shared transformer block, with adaptive computation that automatically scales depth to match the complexity of each prediction step. The paper establishes "iterative latent depth" as a new scaling axis for world simulation — potentially reducing the compute requirements for planning, reinforcement learning, and robotics while maintaining or improving simulation fidelity. The approach could be particularly significant for real-time embodied AI systems where model size is constrained by latency budgets.</p>
-        <div class="news-tags"><span>LoopWM</span><span>World Models</span><span>Architecture</span><span>Efficiency</span><span>Research</span><span>Scaling</span></div>
+        <h3><a href="https://github.com/DietrichGebert/ponytail" target="_blank">Ponytail: AI Agent That Thinks Like the Laziest Senior Dev — 38,500+ GitHub Stars in Days</a></h3>
+        <p>Ponytail, an open-source tool that makes AI coding agents 'think like the laziest senior dev in the room,' has exploded to over 38,500 GitHub stars since its release. The project's philosophy — that the best code is the code you never wrote — resonates with developers tired of AI agents that generate over-engineered solutions. Ponytail wraps existing coding agents and applies a 'lazy optimization' layer that prefers simpler implementations, shorter code paths, and fewer dependencies. The viral success reflects a growing backlash against gratuitous code generation in the AI coding tool space, where quantity often overshadows quality. Developers are increasingly seeking agents that prioritize maintainability and conciseness over feature completeness, particularly in production environments where every new line of code is a liability.</p>
+        <div class="news-tags"><span>Ponytail</span><span>Open Source</span><span>Coding Agents</span><span>Viral</span><span>Developer Tools</span><span>38K Stars</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 16</div>
+      <div class="news-date">Jun 18</div>
       <div class="news-content">
-        <h3><a href="http://arxiv.org/abs/2606.18247" target="_blank">VERITAS: Visual Verification Enables Robot Self-Improvement Without Human Intervention</a></h3>
-        <p>Researchers propose VERITAS, a generator-verifier framework that lets robot policies improve autonomously during deployment using visual verification at inference time. The system pairs a pre-trained generalist robot policy (the "generator") with a gradient-free "visual verifier" that evaluates action quality frame-by-frame. The key finding: verified rollouts provide supervision on par with human expert demonstrations for fine-tuning, while requiring zero human intervention. This means deployed robots can practice, evaluate, and improve their own performance continuously — a practical and scalable mechanism for real-world robot learning that doesn't depend on expensive human feedback loops. The system demonstrated consistent gains across manipulation, navigation, and mobile manipulation tasks.</p>
-        <div class="news-tags"><span>VERITAS</span><span>Robotics</span><span>Self-Improvement</span><span>Visual Verification</span><span>Learning</span><span>arXiv</span></div>
+        <h3><a href="https://arxiv.org/abs/2606.20560" target="_blank">How Transparent is DiffusionGemma? — DeepMind's Deep Dive Into Diffusion Model Reasoning Finds Surprising Interpretability</a></h3>
+        <p>A new study from Google DeepMind researchers (including Neel Nanda, Arthur Conmy, and Callum McDougall) investigates the transparency of DiffusionGemma, Google's diffusion-based language model. The study decomposes transparency into variable transparency (understanding intermediate computational states) and algorithmic transparency (reconstructing the reasoning process). Surprisingly, while DiffusionGemma appeared to have 28.6x worse variable transparency than autoregressive Gemma 4, the researchers found they could map information flowing between denoising steps through an interpretable 'token bottleneck' without performance loss — reducing the effective opaque depth to just 1.1x that of Gemma 4. The paper also uncovers novel diffusion-specific phenomena including non-chronological reasoning, token and sequence smearing, and intermediate-context reasoning. The findings suggest diffusion language models may be more interpretable than previously assumed.</p>
+        <div class="news-tags"><span>DiffusionGemma</span><span>DeepMind</span><span>Transparency</span><span>Interpretability</span><span>Research</span><span>Diffusion Models</span></div>
       </div>
     </div>
 
     <div class="news-item">
-      <div class="news-date">Jun 16</div>
+      <div class="news-date">Jun 18</div>
       <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/06/16/plaud-says-its-software-business-topped-100m-in-arr-after-shipping-over-2m-ai-notetakers/" target="_blank">Plaud Hits $100M ARR After Shipping 2M+ AI Notetakers — The Hardware-Turned-Software AI Success Story</a></h3>
-        <p>Plaud announced its software subscription business has surpassed $100M in annual recurring revenue after shipping over 2 million AI notetaker devices. The company started as a hardware play — a physical device that clips onto phones to record and transcribe meetings — but has evolved into a software platform with enterprise features including meeting analytics, action-item extraction, CRM integration, and multi-language transcription. Plaud's success in a crowded market of AI meeting notetakers (Otter, Fireflies, Fathom) demonstrates that hardware can serve as a distribution wedge for AI SaaS. The company's AI models are trained on meeting-specific language patterns and now offer industry-specific transcription for legal, medical, and financial contexts.</p>
-        <div class="news-tags"><span>Plaud</span><span>$100M ARR</span><span>AI Notetakers</span><span>SaaS</span><span>Hardware</span><span>Meetings</span></div>
+        <h3><a href="https://arxiv.org/abs/2606.20529" target="_blank">LedgerAgent: Structured State for Policy-Adherent Tool-Calling Agents — Reduces Consistency Errors Across Domains</a></h3>
+        <p>A new arXiv paper introduces LedgerAgent, an inference-time method for tool-calling agents that maintains observed task states in a separate 'ledger' and renders them into the prompt, rather than relying on agents to implicitly reconstruct state from the full conversation history. The ledger is also used to check state-dependent policy constraints before environment-changing tool calls are executed, blocking policy violations before they happen. Across four customer-service domains and a mixed panel of open- and closed-weight models (including GPT-4o, Claude Opus, and DeepSeek), LedgerAgent improves average pass@k over standard prompt-based tool-calling approaches by a significant margin, with the largest gains under stricter multi-trial consistency metrics. The approach is particularly relevant as agentic AI moves into regulated domains (healthcare, finance, legal) where policy adherence is mandatory.</p>
+        <div class="news-tags"><span>LedgerAgent</span><span>Tool Calling</span><span>Policy Adherence</span><span>Agents</span><span>Research</span><span>arXiv</span></div>
       </div>
     </div>
 
@@ -337,4 +337,4 @@ new p5(function(p) {
 </script>
 {{< /rawhtml >}}
 
-<!-- update 1750172400 -->
+<!-- update 1750273200 -->
