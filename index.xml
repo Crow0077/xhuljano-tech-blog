@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Xhuljano</title><link>https://crow0077.github.io/xhuljano-tech-blog/</link><description>Recent content on Xhuljano</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 19 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://crow0077.github.io/xhuljano-tech-blog/index.xml" rel="self" type="application/rss+xml"/><item><title>AI News</title><link>https://crow0077.github.io/xhuljano-tech-blog/ai-news/</link><pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate><guid>https://crow0077.github.io/xhuljano-tech-blog/ai-news/</guid><description>&lt;style&gt;
+.ainews-wrap {
+max-width: 900px;
+margin: 0 auto;
+padding: 2rem 1rem;
+}
+.ainews-header {
+text-align: center;
+margin-bottom: 2.5rem;
+}
+.ainews-header h1 {
+font-family: 'SF Mono', 'Fira Code', monospace;
+font-size: 2.2rem;
+color: rgba(220,230,255,0.95);
+margin: 0;
+letter-spacing: -1px;
+}
+.ainews-header .last-updated {
+font-family: 'SF Mono', monospace;
+font-size: 0.75rem;
+color: rgba(140,160,200,0.5);
+margin-top: 0.5rem;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+.ainews-art {
+width: 100%;
+height: 180px;
+background: #06060c;
+border: 1px solid rgba(60,60,90,0.2);
+border-radius: 12px;
+margin-bottom: 2.5rem;
+overflow: hidden;
+position: relative;
+}
+.news-grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: 0.8rem;
+}
+.news-item {
+background: rgba(12,14,22,0.85);
+border: 1px solid rgba(50,55,80,0.25);
+border-radius: 8px;
+padding: 1rem 1.3rem;
+transition: border-color 0.2s;
+display: flex;
+gap: 1rem;
+align-items: flex-start;
+}
+.news-item:hover {
+border-color: rgba(100,160,255,0.3);
+}
+.news-date {
+font-family: 'SF Mono', monospace;
+font-size: 0.65rem;
+color: rgba(120,150,200,0.5);
+white-space: nowrap;
+padding-top: 0.15rem;
+min-width: 65px;
+letter-spacing: 1px;
+}
+.news-content {
+flex: 1;
+}
+.news-content h3 {
+font-size: 0.95rem;
+margin: 0 0 0.3rem 0;
+color: rgba(200,215,240,0.9);
+font-weight: 500;
+line-height: 1.3;
+}
+.news-content h3 a {
+color: inherit;
+text-decoration: none;
+}
+.news-content h3 a:hover {
+color: rgba(130,190,255,0.9);
+}
+.news-content p {
+font-size: 0.8rem;
+color: rgba(140,155,185,0.7);
+margin: 0;
+line-height: 1.5;
+}
+.news-tags {
+display: flex;
+gap: 0.3rem;
+flex-wrap: wrap;
+margin-top: 0.4rem;
+}
+.news-tags span {
+background: rgba(50,70,110,0.25);
+color: rgba(140,170,220,0.7);
+padding: 0.1rem 0.5rem;
+border-radius: 3px;
+font-size: 0.6rem;
+font-family: monospace;
+}
+.news-section-title {
+font-family: 'SF Mono', monospace;
+font-size: 0.75rem;
+color: rgba(100,160,255,0.5);
+letter-spacing: 3px;
+text-transform: uppercase;
+margin: 2rem 0 1rem;
+padding-left: 0.3rem;
+}
+&lt;/style&gt;
+&lt;div class="ainews-wrap"&gt;
+&lt;div class="ainews-header"&gt;
+&lt;h1&gt;AI Pulse&lt;/h1&gt;
+&lt;div class="last-updated"&gt;Updated June 19, 2026 — 11:00 UTC&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ainews-art" id="news-art"&gt;&lt;/div&gt;
+&lt;div class="news-section-title"&gt;Friday's Headlines&lt;/div&gt;
+&lt;div class="news-grid"&gt;
+&lt;div class="news-item"&gt;
+&lt;div class="news-date"&gt;Jun 19&lt;/div&gt;
+&lt;div class="news-content"&gt;
+&lt;h3&gt;&lt;a href="https://www.independent.co.uk/news/world/americas/us-politics/elon-musk-grok-ai-iran-missiles-pentagon-b2997321.html" target="_blank"&gt;Pentagon Used Elon Musk's Grok AI to Fire 2,000 Missiles at Iran, Official Says&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A Pentagon official has disclosed that the U.S. military used Elon Musk's Grok AI to coordinate a salvo of 2,000 missiles targeting Iranian positions, marking one of the first known uses of a commercial large language model in active combat decision-making. The revelation raises urgent questions about the role of unclassified AI systems in kinetic military operations — Grok was not purpose-built for military targeting, and its outputs were processed through existing command-and-control pipelines. Critics point to risks of adversarial manipulation, hallucinated target assessments, and the lack of a clear legal framework for AI-initiated lethal action. The Pentagon defended the decision, noting that all strike orders were reviewed by human commanders before execution and that Grok was used exclusively for logistics coordination, not target selection. The disclosure has reignited debate over the militarization of commercial AI platforms.&lt;/p&gt;</description></item><item><title>Particle Network — Generative Art</title><link>https://crow0077.github.io/xhuljano-tech-blog/posts/particle-network/</link><pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate><guid>https://crow0077.github.io/xhuljano-tech-blog/posts/particle-network/</guid><description>&lt;p&gt;An interactive particle network — generative art that runs in your browser.&lt;br&gt;
+Move your mouse to influence the flow. Click to trigger a burst. Scroll to adjust the connection radius.&lt;/p&gt;
+&lt;div style="text-align:center;margin:3rem 0"&gt;
+&lt;a href="https://crow0077.github.io/xhuljano-tech-blog/p5/particle-network.html" target="_blank"
+style="display:inline-block;padding:14px 36px;background:linear-gradient(135deg,#6c5ce7,#a855f7);color:#fff;border-radius:12px;font-size:1rem;font-weight:600;text-decoration:none;transition:transform 0.2s"&gt;
+✦ Launch Interactive
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;This piece uses 300 particles connected by dynamic lines when they&amp;rsquo;re close enough. Every particle has its own velocity, hue, and physics — together they create a living, breathing network that responds to you.&lt;/p&gt;</description></item><item><title>How I Built a 3D Earth Hero With an AI Agent Doing the Actual Work</title><link>https://crow0077.github.io/xhuljano-tech-blog/posts/earth-moon-hero-agent-build/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://crow0077.github.io/xhuljano-tech-blog/posts/earth-moon-hero-agent-build/</guid><description>I directed. Hermes executed. Together we built a cinematic Earth+Moon animation in Blender 5.1 using NASA textures and 218 MCP tools — from a blank scene to a deployed portfolio hero.</description></item><item><title>The Bug That Took 218 Tools and Made Them All Useless</title><link>https://crow0077.github.io/xhuljano-tech-blog/posts/blender-mcp-deadlock/</link><pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate><guid>https://crow0077.github.io/xhuljano-tech-blog/posts/blender-mcp-deadlock/</guid><description>Blender registered all 218 MCP tools successfully. Every single one timed out. Here&amp;rsquo;s the root cause, the dead giveaway, and the threaded fix.</description></item><item><title>I Built a Cross-MCP Pipeline Pattern — One Server Feeds Another</title><link>https://crow0077.github.io/xhuljano-tech-blog/posts/cross-mcp-pipeline/</link><pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate><guid>https://crow0077.github.io/xhuljano-tech-blog/posts/cross-mcp-pipeline/</guid><description>The cross-MCP pipeline pattern: one MCP server scans, a bridge script parses results, and GitHub gets structured issues automatically. This pattern works for Sentinel-&amp;gt;Issues, Screener-&amp;gt;Trades, Firecrawl-&amp;gt;Wiki, and more.</description></item><item><title>Projects</title><link>https://crow0077.github.io/xhuljano-tech-blog/projects/</link><pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate><guid>https://crow0077.github.io/xhuljano-tech-blog/projects/</guid><description>&lt;style&gt;
+.project-grid { display:grid; grid-template-columns:1fr; gap:2rem; margin-top:2rem; }
+.project-card { background:rgba(15,15,25,0.8); border:1px solid rgba(60,60,90,0.3); border-radius:12px; overflow:hidden; transition:border-color 0.3s; }
+.project-card:hover { border-color:rgba(100,140,255,0.4); }
+.project-canvas { width:100%; height:240px; position:relative; overflow:hidden; cursor:crosshair; }
+.project-canvas canvas { display:block; }
+.project-info { padding:1.5rem; }
+.project-info h2 { margin:0 0 0.5rem 0; font-size:1.4rem; color:#e0e0f0; }
+.project-info .tag-row { display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:0.8rem; }
+.project-info .tag { background:rgba(60,80,120,0.3); color:rgba(160,180,220,0.9); padding:0.15rem 0.6rem; border-radius:4px; font-size:0.75rem; font-family:monospace; }
+.project-info p { color:rgba(160,170,190,0.8); font-size:0.95rem; line-height:1.6; margin:0; }
+.project-info .stat-row { display:flex; gap:1.5rem; margin:0.8rem 0; }
+.project-info .stat { text-align:center; }
+.project-info .stat .num { font-size:1.3rem; color:rgba(130,180,240,0.9); font-family:monospace; }
+.project-info .stat .lbl { font-size:0.6rem; color:rgba(120,150,190,0.4); text-transform:uppercase; letter-spacing:1px; }
+.project-info .links { margin-top:1rem; display:flex; gap:1rem; }
+.project-info .links a { color:rgba(100,180,255,0.8); text-decoration:none; font-size:0.85rem; font-family:monospace; }
+.project-info .links a:hover { color:rgba(100,180,255,1); }
+&lt;/style&gt;
+&lt;div class="project-grid"&gt;
+&lt;div class="project-card"&gt;
+&lt;div class="project-canvas" id="canvas-command"&gt;&lt;/div&gt;
+&lt;div class="project-info"&gt;
+&lt;h2&gt;MCP Command Center&lt;/h2&gt;
+&lt;div class="tag-row"&gt;
+&lt;span class="tag"&gt;MCP&lt;/span&gt;
+&lt;span class="tag"&gt;RKE2 K8s&lt;/span&gt;
+&lt;span class="tag"&gt;Systemd&lt;/span&gt;
+&lt;span class="tag"&gt;Streamable HTTP&lt;/span&gt;
+&lt;span class="tag"&gt;Python&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;8 production MCP servers deployed across a single-node RKE2 Kubernetes cluster — 6 on K8s with hostNetwork (arxiv, backup, firecrawl, homelab, sentinel, youtube) and 2 on systemd (immune, logs). 60+ tools. All servers use Streamable HTTP transport, survive reboots, and run independently of any AI agent session. Monitoring and observability stripped in favor of k9s and direct kubectl access — no Prometheus/Grafana overhead on a single-node cluster.&lt;/p&gt;</description></item><item><title>About</title><link>https://crow0077.github.io/xhuljano-tech-blog/about/</link><pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate><guid>https://crow0077.github.io/xhuljano-tech-blog/about/</guid><description>&lt;h2 id="who-i-am"&gt;Who I Am&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m Xhuljano — a cloud engineering student building real infrastructure with AI agents, MCP servers, and a single-node RKE2 Kubernetes cluster.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Current:&lt;/strong&gt; Amazon Fulfillment (2022-present)
+&lt;strong&gt;Education:&lt;/strong&gt; WGU Cloud and Network Engineering (expected late 2027)
+&lt;strong&gt;Certifications:&lt;/strong&gt; CompTIA A+ (May 2026)
+&lt;strong&gt;Location:&lt;/strong&gt; Jacksonville, FL&lt;/p&gt;
+&lt;h2 id="what-im-building"&gt;What I&amp;rsquo;m Building&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Homelab infrastructure&lt;/strong&gt; — Fedora Server, RKE2 Kubernetes cluster (56 pods), Longhorn storage, MetalLB, Traefik&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MCP servers&lt;/strong&gt; — 8 MCP servers (6 on K8s + 2 systemd) with Streamable HTTP transport — arxiv, backup, firecrawl, homelab, sentinel, youtube, immune, logs&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI agents&lt;/strong&gt; — Autonomous workflows for homelab monitoring, security auditing, and content ingestion via Hermes Agent&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;3D + AI&lt;/strong&gt; — Blender MCP pipeline: agent-driven 3D scene creation, Cycles rendering on RTX 4080 Super, portfolio hero videos&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Portfolio projects&lt;/strong&gt; — Real infrastructure, not tutorials&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="tech-stack"&gt;Tech Stack&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; Fedora Linux (Server + Workstation)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Orchestration:&lt;/strong&gt; RKE2 Kubernetes, kubectl, k9s (no Prometheus/Grafana)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MCP deployment:&lt;/strong&gt; 6 servers on K8s (Streamable HTTP), 2 on systemd&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI/ML:&lt;/strong&gt; Ollama, vLLM, local LLM inference on RTX 4080&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Automation:&lt;/strong&gt; Hermes Agent cron jobs, systemd, autonomous agents&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Network:&lt;/strong&gt; Tailscale mesh VPN, Traefik Ingress, Vaultwarden secrets&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security:&lt;/strong&gt; iptables, self-healing immune system, CVE scanning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="contact"&gt;Contact&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub: &lt;a href="https://github.com/Crow0077"&gt;Crow0077&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;LinkedIn: &lt;a href="https://linkedin.com/in/xhuljanocaushllari"&gt;xhuljanocaushllari&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Email: &lt;a href="mailto:xcaushlari@gmail.com"&gt;xcaushlari@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>I Turned a Dell OptiPlex Into a 24/7 AI-Powered Homelab</title><link>https://crow0077.github.io/xhuljano-tech-blog/posts/homelab-dell-optiplex/</link><pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate><guid>https://crow0077.github.io/xhuljano-tech-blog/posts/homelab-dell-optiplex/</guid><description>How I built a production-grade homelab on a used Dell OptiPlex 7090 SFF — running AI agents, RKE2 Kubernetes, MCP servers on K8s, and self-healing infrastructure 24/7 for under $200.</description></item><item><title>The 6 Controls AI Insurers Will Require — And How to Build Them Now</title><link>https://crow0077.github.io/xhuljano-tech-blog/posts/six-controls-ai-insurers/</link><pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate><guid>https://crow0077.github.io/xhuljano-tech-blog/posts/six-controls-ai-insurers/</guid><description>Every company deploying AI agents is uninsured. Standard policies now exclude AI damages. The $40M AI insurance market projects to $5B by 2032. Here are the six controls insurers will demand — and the concrete products you can build to meet them.</description></item><item><title>What Are MCP Servers? A Hands-On Guide From Someone Running 8 of Them</title><link>https://crow0077.github.io/xhuljano-tech-blog/posts/what-are-mcp-servers/</link><pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate><guid>https://crow0077.github.io/xhuljano-tech-blog/posts/what-are-mcp-servers/</guid><description>MCP (Model Context Protocol) lets AI agents use real tools. Here&amp;rsquo;s what it is, how it works, and how I run 8 MCP servers across K8s and systemd that manage my entire homelab.</description></item></channel></rss>
