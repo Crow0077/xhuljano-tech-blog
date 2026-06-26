@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-06-24
+date: 2026-06-26
 draft: false
 ShowToc: false
 ---
@@ -119,13 +119,121 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated June 24, 2026 — 12:00 UTC</div>
+    <div class="last-updated">Updated June 26, 2026 — 12:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
 
-  <div class="news-section-title">Wednesday's Headlines</div>
+  <div class="news-section-title">Friday's Headlines</div>
   <div class="news-grid">
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/" target="_blank">White House Asks OpenAI to Slow-Roll GPT 5.6 Release — Trump Administration Flags Safety Concerns Over Mythos Capabilities</a></h3>
+        <p>The Trump administration has asked OpenAI to limit the release of its upcoming GPT 5.6 model to a small group of partners rather than deploying it broadly, citing unresolved safety concerns — particularly around the model's reportedly advanced "Mythos" capabilities. The move represents the most direct White House intervention in a frontier-model rollout since the Biden-era executive order on AI, and signals that the current administration is willing to apply pressure on private labs even as it simultaneously pushes for US AI dominance over China. OpenAI has reportedly agreed to the constrained release, though it's unclear how long the gating will last. The episode will intensify debate over whether safety-based delays are legitimate precaution or politically-motivated protectionism for incumbents.</p>
+        <div class="news-tags"><span>OpenAI</span><span>GPT 5.6</span><span>White House</span><span>Policy</span><span>Safety</span><span>Mythos</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/" target="_blank">Anthropic's Claude is Winning Over Paid AI Consumers — Eroding ChatGPT's Hold on the Market That Actually Pays</a></h3>
+        <p>Despite ChatGPT's commanding consumer mind-share lead, paying AI customers are increasingly choosing Anthropic's Claude over OpenAI — a striking inversion of the free-tier popularity rankings. The shift, documented in subscription and revenue data, is driven by Claude's perceived strength on coding, longer-context reasoning, and a more conservative tone that resonates with professional users. Anthropic's enterprise revenue reportedly grew faster than OpenAI's consumer revenue in Q2 2026, even as ChatGPT retains 4x the monthly active users. The dynamic suggests the consumer AI market is bifurcating: ChatGPT as the casual default, Claude as the power-user choice. OpenAI's response — bundling Codex and Sora into the Plus tier — has so far failed to stem the migration.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Claude</span><span>ChatGPT</span><span>Consumer AI</span><span>Subscription</span><span>Competition</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/" target="_blank">Patronus AI Lands $50M to Build 'Digital Worlds' That Stress-Test AI Agents — Former Meta AI Founders Cash In on Eval Boom</a></h3>
+        <p>Patronus AI, the agent-evaluation startup founded by former Meta AI researchers, has closed a $50M round led by Greenfield Partners with Lightspeed and Notable Capital participating. The company is building "digital worlds" — simulated environments where AI agents are subjected to multi-step adversarial scenarios to surface failure modes before deployment. Patronus says demand is "nearly insatiable" as enterprises ship agentic products without reliable ways to know if they'll break in production. The round reflects a broader realization across the industry: model benchmarks stopped being useful when agents became multi-step and tool-using, and a new generation of eval companies is rushing to fill the gap. Patronus will use the capital to expand its world-simulation infrastructure and grow its eval engineering team.</p>
+        <div class="news-tags"><span>Patronus AI</span><span>Funding</span><span>Agent Evaluation</span><span>AI Safety</span><span>Benchmarks</span><span>Greenfield</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/" target="_blank">General Intuition's $2.3B Bet That Video Games Can Train AI Agents for the Real World — $320M Raised, Khosla Leads</a></h3>
+        <p>General Intuition has raised $320M at a $2.3B valuation from Khosla Ventures and others to scale AI trained on millions of hours of video game gameplay. The thesis: action data from games — particularly competitive multiplayer — captures the kind of real-time decision-making, spatial reasoning, and long-horizon planning that current models struggle with. General Intuition claims its game-trained agents transfer to robotics, autonomous vehicles, and physical-world task automation. The bet echoes a long line of "games as AI training grounds" research (AlphaGo, OpenAI Five, DeepMind's Atari work) but at unprecedented scale and capital intensity. If it works, the implication is staggering: every minute of competitive gameplay becomes a free training signal for embodied AI.</p>
+        <div class="news-tags"><span>General Intuition</span><span>Gaming AI</span><span>World Models</span><span>Khosla</span><span>Robotics</span><span>Training Data</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/25/databricks-former-ai-chief-thinks-he-can-cut-ais-power-bill-by-1000x/" target="_blank">Ex-Databricks AI Chief Claims 1000x Power Reduction for AI Inference — Diffusion-Based Image Gen Could Upend Compute Economics</a></h3>
+        <p>The former head of AI at Databricks is claiming his new venture, Un-0, has built a diffusion-based image generation system that consumes 1,000x less power than conventional transformer-based approaches. The technical claim — that the system can replicate mainstream AI image generation capabilities at a fraction of the energy cost — would be transformative for the industry's growing compute-and-electricity problem. If validated independently, the work would undercut a key argument against scaling generative AI (its grid impact) and pressure the major labs to adopt the new architecture. The company has not yet published peer-reviewed results, and several AI infrastructure analysts have urged caution until the claims can be reproduced on independent hardware.</p>
+        <div class="news-tags"><span>Databricks</span><span>Un-0</span><span>Diffusion Models</span><span>Image Generation</span><span>Energy</span><span>Efficiency</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/25/amazon-ups-india-bet-with-fresh-13b-ai-infrastructure-investment/" target="_blank">Amazon Pours $13B More Into India AI Infrastructure — AWS Race With Microsoft and Google for Global AI Buildout Heats Up</a></h3>
+        <p>Amazon has announced a fresh $13 billion investment in AI infrastructure in India, expanding its data center footprint and AWS region capacity in the country. The move is part of a broader pattern: global tech companies are rapidly scaling AI-specific infrastructure in India, drawn by lower power costs, favorable regulatory treatment, and a deep engineering talent pool. Microsoft and Google have made similar commitments in recent months, and the three-way race for Indian AI infrastructure is now a major subplot in the global cloud wars. The investment also signals confidence that India's domestic AI demand — both enterprise and consumer — is large enough to justify hyperscaler-scale buildouts. AWS expects the new capacity online by mid-2027.</p>
+        <div class="news-tags"><span>Amazon</span><span>AWS</span><span>India</span><span>Data Centers</span><span>AI Infrastructure</span><span>Cloud</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/25/adobe-acquires-image-and-video-enhancement-tool-maker-topaz-labs/" target="_blank">Adobe Acquires Topaz Labs — Image and Video Enhancement Tools Fold Into Creative Cloud</a></h3>
+        <p>Adobe has acquired Topaz Labs, the maker of widely-used image and video enhancement tools (Topaz Gigapixel, Topaz Video AI), in a deal that brings the company's AI-powered upscaling, denoising, and restoration technology directly into the Creative Cloud ecosystem. The acquisition fills a gap in Adobe's AI offerings — historically strong on generation (Firefly) but weaker on enhancement — and gives the company a defensible position against standalone AI tools like Magnific and Krea. Existing Topaz Labs products will continue to be sold standalone, but Adobe plans to integrate the engines into Photoshop, Premiere, and Lightroom over the next 12 months. Pricing and bundling details will be announced alongside the integration roadmap.</p>
+        <div class="news-tags"><span>Adobe</span><span>Topaz Labs</span><span>Acquisition</span><span>Image AI</span><span>Creative Cloud</span><span>Video</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://www.technologyreview.com/2026/06/25/1137848/repositioning-retail-for-the-ai-era/" target="_blank">Macy's Goes 'AI-First' — 'Ask Macy's' Conversational Stylist Reimagines E-Commerce as Personal Stylist, Not Search Bar</a></h3>
+        <p>Macy's is the latest major retailer to declare an "AI-first" operating philosophy, with senior director of engineering Murali Murugan describing a strategy that bakes intelligence into personalization, search, supply chain, and software development itself — not as a chatbot overlay but as a redesign of how decisions happen. The centerpiece is "Ask Macy's," a conversational shopping assistant that behaves more like a personal stylist than a search bar: customers describe an occasion (a prom, a vacation, a last-minute event) and receive curated recommendations informed by past purchases and context. The launch reflects a broader pattern in retail: AI is moving from pilot projects to integrated systems that compress "the gap between signal and action." Competitors like Sephora, Nordstrom, and Walmart are pursuing similar playbooks, raising the bar for what "AI-native retail" means in practice.</p>
+        <div class="news-tags"><span>Macy's</span><span>Retail AI</span><span>Personalization</span><span>Conversational Commerce</span><span>Enterprise</span><span>Customer Experience</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://arxiv.org/abs/2606.27361v1" target="_blank">'Robin' — 132M-Parameter Boltzmann Generator Beats Flow-Based Models on 10-Residue Peptides (ICML 2026 Spotlight)</a></h3>
+        <p>An ICML 2026 Spotlight paper introduces Autoregressive Boltzmann Generators (ArBG), a framework that ditches flow-based architectures (the dominant approach for molecular sampling) in favor of autoregressive modeling. The new approach sidesteps the strict invertibility constraints that limit normalizing flows, enables sequential inference-time interventions, and scales with the same tricks that have powered large language models. The team trained "Robin," a 132-million-parameter transferable model that improves the previous state-of-the-art zero-shot energy error on 8-residue peptide systems by over 60%. The work is co-authored by Yoshua Bengio, Avishek Joey Bose, and Alexander Tong, and is a notable step toward treating molecular generation as a language modeling problem. Code is open-sourced at github.com/danyalrehman/autobg.</p>
+        <div class="news-tags"><span>Molecular AI</span><span>Boltzmann Generators</span><span>ICML 2026</span><span>Yoshua Bengio</span><span>Drug Discovery</span><span>Open Source</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://arxiv.org/abs/2606.27288v1" target="_blank">'Co-Failure Ceiling' Bounds Multi-Model AI Gains — Combining 67 Frontier Models Rarely Beats the Single Best Without Strong Routing</a></h3>
+        <p>A new analysis across 67 frontier models from 21 providers has put hard theoretical and empirical limits on the gains from multi-model LLM systems (routers, voting, cascades, mixture-of-agents). The paper identifies a "co-failure ceiling" — the rate at which every model in the pool gets the same query wrong — and shows that the field's usual diagnostic (average pairwise error correlation) systematically underprices it. On open-ended mathematics, the observed co-failure rate was 2.5x what a Gaussian copula model predicted, with 90% confidence intervals 1.7 to 3.4. The practical implication: combining models rarely beats the single best model on checkable tasks without a strong query-level routing signal. Gains come from models failing on different questions, not from adding more models.</p>
+        <div class="news-tags"><span>Mixture of Agents</span><span>Routing</span><span>LLM Benchmarks</span><span>Co-Failure</span><span>Frontier Models</span><span>Evaluation</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://arxiv.org/abs/2606.27334v1" target="_blank">Language-Based 'Digital Twins' for Elderly Cognitive Care — LLMs Mimic Conversational Patterns to Detect Mild Cognitive Impairment</a></h3>
+        <p>A PETRA 2026 paper proposes using LLMs to build "language-based digital twins" of elderly individuals, mimicking their conversational style, vocabulary, and contextual cues to model individual cognitive trajectories. The system, evaluated on the I-CONECT dataset, uses a multi-head conditional variational autoencoder to measure both reconstruction fidelity and predict MoCA cognitive scores — outperforming baseline GPT-generated responses on identity preservation. The motivation: language and conversational patterns are non-invasive biomarkers for Mild Cognitive Impairment (MCI), and continuous digital twin monitoring could catch decline earlier than periodic clinical assessments. The work joins a growing body of research using generative AI not just to interact with patients, but to simulate them for diagnostic and longitudinal study purposes.</p>
+        <div class="news-tags"><span>Digital Twins</span><span>Elderly Care</span><span>MCI</span><span>Healthcare AI</span><span>PETRA 2026</span><span>LLMs</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://github.com/omnigent-ai/omnigent" target="_blank">'Omnigent' Open-Source Meta-Harness Orchestrates Claude Code, Codex, Cursor, and Custom Agents Under One Policy Layer</a></h3>
+        <p>Omnigent, an Apache 2.0 open-source framework, has crossed 4,900 GitHub stars since its June 11 launch by positioning itself as a "meta-harness" for AI coding agents — orchestrating Claude Code, Codex, Cursor, Pi, and custom agents behind a single policy and sandboxing layer. The project's pitch: agents are proliferating, but they all need the same primitives (identity, sandbox, observability, governance), and rewriting each agent to add them is wasted effort. Omnigent lets teams swap agent backends without rewriting their tools, enforce consistent security policies, and collaborate in real time from any device. The release comes amid a broader wave of "agent governance" frameworks (LangSmith, Langfuse, Helicone) racing to become the default control plane as multi-agent stacks become the norm.</p>
+        <div class="news-tags"><span>Omnigent</span><span>Claude Code</span><span>Codex</span><span>Agent Framework</span><span>Open Source</span><span>Governance</span></div>
+      </div>
+    </div>
 
     <div class="news-item">
       <div class="news-date">Jun 23</div>
