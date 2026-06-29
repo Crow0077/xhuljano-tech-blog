@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-06-26
+date: 2026-06-29
 draft: false
 ShowToc: false
 ---
@@ -119,13 +119,123 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated June 26, 2026 — 12:00 UTC</div>
+    <div class="last-updated">Updated June 29, 2026 — 11:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
 
-  <div class="news-section-title">Friday's Headlines</div>
+  <div class="news-section-title">Monday's Headlines</div>
   <div class="news-grid">
+
+    <div class="news-item">
+      <div class="news-date">Jun 28</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/" target="_blank">Ford Rehires 'Gray Beard' Engineers After AI Falls Short — "Mistakenly We Thought AI Alone Would Produce a High-Quality Product"</a></h3>
+        <p>Ford has walked back a chunk of its AI-driven engineering push, rehiring veteran "gray beard" engineers after conceding that the bet on automated tooling and model-driven design didn't deliver. A senior Ford leader admitted the company "mistakenly thought that by just introducing artificial intelligence ... that would produce a high-quality product." The reversal is one of the highest-profile public admissions from a major automaker that pure AI-first engineering pipelines are not yet ready to replace institutional human expertise, and signals a more measured "AI-augmented" stance spreading across the manufacturing sector as cost-cutting pressure and quality problems collide. Expect similar reversals at peer OEMs through 2026 as the labor-versus-automation tradeoff gets recalibrated in public.</p>
+        <div class="news-tags"><span>Ford</span><span>Manufacturing</span><span>AI Backlash</span><span>Engineering</span><span>Automation</span><span>Industry</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 28</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/28/why-wall-street-thinks-us-memory-maker-micron-is-the-next-nvidia/" target="_blank">Why Wall Street Thinks US Memory Maker Micron Is the Next Nvidia — HBM Cycle Meets AI Demand</a></h3>
+        <p>Wall Street analysts are coalescing around a striking thesis: Micron, the last major US-based DRAM and HBM memory manufacturer, is the most credible "next Nvidia" as the AI infrastructure cycle broadens from compute into memory bandwidth. The HBM (high-bandwidth memory) market is structurally short, every advanced packaging line is sold out through 2027, and Micron is the only US player positioned to benefit from export-control-driven onshoring incentives. The bull case puts Micron's HBM revenue at multiples of current consensus within 24 months as Nvidia, AMD, and the hyperscalers keep absorbing every qualified HBM3E and HBM4 die. The bear case is cyclicality — memory is historically boom-bust — but the AI demand profile looks structurally different from past cycles.</p>
+        <div class="news-tags"><span>Micron</span><span>HBM</span><span>Nvidia</span><span>Memory</span><span>Wall Street</span><span>AI Infrastructure</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 27</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/" target="_blank">Apple Vision Pro Exec Paul Meade Reportedly Leaves for OpenAI Hardware — Talent Drain Continues</a></h3>
+        <p>Paul Meade, Apple's vice president in charge of the Vision Pro headset, is reportedly leaving Apple to join OpenAI's hardware team — the latest in a string of senior Apple hardware leaders moving to OpenAI's growing consumer devices group. Meade's departure is significant: he was one of the longest-tenured executives on the Vision Pro program and a known operator in Apple's hardware-software integration culture. OpenAI has been quietly assembling a consumer hardware organization, with previous hires from Apple's industrial design and silicon teams. The move raises fresh questions about Apple's ability to retain its hardware talent in the face of well-funded AI labs willing to pay premium compensation, and whether Apple's cautious AI hardware roadmap can keep pace with rivals willing to ship more aggressively.</p>
+        <div class="news-tags"><span>Apple</span><span>OpenAI</span><span>Vision Pro</span><span>Hardware</span><span>Talent</span><span>Consumer Devices</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 27</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/" target="_blank">Asian AI Startups Launch Mythos-Like Models as Anthropic's Export Ban Drags On — US Labs May Never Reclaim the Market</a></h3>
+        <p>A wave of Asian AI startups is launching models with Mythos-class capabilities specifically architected to operate outside US export controls, accelerating the fragmentation of the global frontier-model market. With Anthropic's Mythos still gated behind US government review and OpenAI's GPT-5.6 similarly restricted, the demand vacuum in Asia is being filled by labs in South Korea, Japan, India, and Singapore that face no comparable constraints. Industry observers warn that once enterprise workflows are built on non-US model APIs, switching costs become prohibitive — meaning US labs may permanently lose the Asian enterprise market even after export controls ease. The pattern mirrors what happened to US cloud providers in China a decade earlier, and policy makers in Washington are now openly debating whether the controls are achieving their stated security aims or simply ceding ground.</p>
+        <div class="news-tags"><span>Asia</span><span>Anthropic</span><span>Mythos</span><span>Export Controls</span><span>Frontier Models</span><span>Geopolitics</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/" target="_blank">Trump Admin Releases Anthropic Mythos to 100+ US Companies and Agencies — Including Non-American Employees</a></h3>
+        <p>The Trump administration has formally authorized more than 100 US companies and government agencies to deploy Anthropic's Mythos 5 model, with the unusual stipulation that authorized use extends to non-American employees of those organizations. The broad authorization is the largest single-model deployment approval of the current administration and effectively makes Mythos 5 the de facto federal AI standard alongside OpenAI's offerings. The decision caps a months-long interagency review that had been criticized by both AI safety advocates (for moving too fast) and AI labs (for being too restrictive on competing models). The inclusion of foreign employees suggests the administration is treating model deployment as a competitive race against China rather than a strictly domestic policy question, a notable shift from the Biden-era framework.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Mythos</span><span>Trump</span><span>Federal AI</span><span>Policy</span><span>Government</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/" target="_blank">OpenAI Limits GPT-5.6 Rollout After Government Request — "Restrictions Shouldn't Be the Long-Term Default"</a></h3>
+        <p>OpenAI has confirmed it is gating the rollout of its newest flagship model, GPT-5.6 (and the GPT-5.6 "Sol" variant), to a small group of partners at the request of the US government, which flagged unresolved safety concerns. In a statement, the company warned: "We don't believe this kind of government access process should become the long-term default. It keeps the best tools from users, developers, enterprises, cyber defenders, and global partners who need them." The framing is notable: OpenAI is publicly accepting the constraint while actively pushing back on its permanence, drawing a line between ad-hoc safety cooperation and structural pre-deployment review. The episode is the clearest articulation yet of the tension between frontier-model deployment velocity and government safety oversight, and will likely be cited in the next round of AI policy debate.</p>
+        <div class="news-tags"><span>OpenAI</span><span>GPT-5.6</span><span>Policy</span><span>Safety</span><span>Frontier Models</span><span>Regulation</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/26/its-not-about-anthropic-vs-openai-anymore/" target="_blank">"It's Not About Anthropic vs. OpenAI Anymore" — Frontier AI Capabilities Now Have Real Political Consequences</a></h3>
+        <p>A new TechCrunch analysis argues that the Anthropic vs. OpenAI framing has outlived its usefulness: AI capabilities have progressed to the point where the consequences are no longer internal to the industry but political, geopolitical, and civilizational. The piece tracks how every major frontier-model release now triggers federal review, export-control debates, lobbying by competing labs, and increasingly urgent statements from civil society. The shift means the "AI race" is no longer best understood as a competition between companies but as a coordination problem between governments, labs, and the public — and the current US framework, designed for a world with two clear frontier players, is straining. The conclusion: collective action, not company-vs-company positioning, will define the next phase of AI governance.</p>
+        <div class="news-tags"><span>Anthropic</span><span>OpenAI</span><span>Policy</span><span>Governance</span><span>Frontier Models</span><span>Geopolitics</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 24</div>
+      <div class="news-content">
+        <h3><a href="https://www.technologyreview.com/2026/06/24/1139202/the-emergence-of-the-web-data-infrastructure-layer-for-ai/" target="_blank">The Emerging Web Data Infrastructure Layer for AI — Why 60% of AI Projects Will Fail Without It</a></h3>
+        <p>MIT Technology Review profiles the rise of a dedicated "web data infrastructure" layer for AI — the missing plumbing between frontier models and the live, structured, real-time information they need to stay useful. According to Bright Data CEO Or Lenchner, 60% of AI projects will be abandoned by year-end for lack of AI-ready data, and 90% of AI organizations feel "boxed in" by data restrictions. The piece argues the AI industry is now hitting a fundamental bottleneck: scaling training data and model size hit a wall, and retrieval-augmented generation alone doesn't solve the problem when the underlying knowledge layer is stale or unstructured. Companies like Bright Data are positioning to be the "fresh data" backbone — emulating real human browsing at 80 billion requests per day, with sub-second latency, and packaging the output as clean structured feeds for downstream RAG systems.</p>
+        <div class="news-tags"><span>Data Infrastructure</span><span>RAG</span><span>Bright Data</span><span>Web Scraping</span><span>Enterprise AI</span><span>MIT</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://arxiv.org/abs/2606.28270" target="_blank">'Agent-Native Immune System' (ANIS) — A Biologically-Inspired Defense Architecture Embedded in the Agent's Cognitive Loop</a></h3>
+        <p>A new paper introduces the Agent-Native Immune System (ANIS), a six-layer defense architecture embedded directly inside an AI agent's reasoning loop rather than bolted on as perimeter security. The framework distinguishes "Agent Viruses" (runtime hijacking via memory poisoning, tool-chain manipulation, multi-agent protocol attacks) from "Agent Vaccines" (parametric defenses that adapt to novel threats), and proposes a "Harness Triad" (Meta, Self, Auto) for continual immune learning. A key conceptual contribution is the formal separation between model alignment (static, training-time) and agent immunity (dynamic, runtime "law enforcement") — a distinction the authors argue is essential as agents accumulate persistent memory and tool-use capabilities. The paper also introduces the "Autoimmunity Rate" metric (false-positive intervention rate) as a critical new evaluation target. Open problem: immune protocol standardization across multi-agent ecosystems.</p>
+        <div class="news-tags"><span>Agent Security</span><span>AI Safety</span><span>Memory Poisoning</span><span>Alignment</span><span>Multi-Agent</span><span>Research</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://arxiv.org/abs/2606.28277" target="_blank">Google's 'Paper Assistant Tool' (PAT) — Agentic AI for Scientific Peer Review, 34% Better at Catching Math Errors Than Zero-Shot</a></h3>
+        <p>Google Research has introduced the Paper Assistant Tool (PAT), an agentic AI framework for deep scientific review and verification. PAT ingests full manuscripts and produces comprehensive evaluations — checking theoretical results, validating experiments, suggesting improvements, and flagging potential flaws. Through inference-scaling techniques, PAT achieves a 34% improvement over zero-shot recall on mathematical errors in the SPOT benchmark. Pilot deployments as a pre-submission tool at STOC and ICML — co-authored by Rajesh Jayaram, Corinna Cortes, Yossi Matias, and others — have already caught critical errors in submitted papers. The work sits inside a proposed four-level taxonomy of human-AI collaboration in scientific evaluation, and positions AI-assisted peer review as an emerging solution to the systemic bottleneck of human review capacity not scaling with the flood of AI-assisted submissions.</p>
+        <div class="news-tags"><span>Google Research</span><span>Scientific Review</span><span>AI for Science</span><span>Agentic AI</span><span>STOC</span><span>ICML</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://arxiv.org/abs/2606.28323" target="_blank">'DexCompose' — Reusing Dexterous Policies for Multi-Task Manipulation via Finger-Level Action Ownership (77.4% Composite Success)</a></h3>
+        <p>A robotics paper introduces DexCompose, a framework that lets dexterous manipulation policies compose into multi-task skills by assigning finger-level action ownership rather than naively chaining policies. The key insight: naively stacking two full-hand policies causes destructive interference when their desired actions overlap, but explicitly partitioning fingers between "preserve existing skill state" and "execute new task" lets both succeed. DexCompose trains two asymmetric residual modules — a bounded stabilizer for task preservation, and a context-aware adapter for the new task — operating only within their assigned finger subspace. On 16 composite dexterous tasks spanning four object-retention skills and four downstream interactions, DexCompose hits 77.4% average composite success, substantially outperforming prior policy-chaining baselines. The result is a step toward general-purpose manipulation without retraining from scratch for every new task combination.</p>
+        <div class="news-tags"><span>Robotics</span><span>Dexterous Manipulation</span><span>Policy Composition</span><span>Reinforcement Learning</span><span>Research</span><span>Embodied AI</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jun 26</div>
+      <div class="news-content">
+        <h3><a href="https://github.com/XiaomiMiMo/MiMo-Code" target="_blank">Xiaomi's 'MiMo-Code' Crosses 11K GitHub Stars in 19 Days — Open-Source Models and Agents Co-Evolving</a></h3>
+        <p>MiMo-Code, Xiaomi's open-source "models and agents co-evolve" coding framework, has crossed 11,000 GitHub stars and 1,000 forks since its June 10 launch. The project's pitch: rather than train a single super-agent, MiMo-Code couples a model trained on agentic trajectories with a tool harness designed specifically to make that model more effective — the two are iteratively refined against each other. The repo includes 1,065 forks, 657 open issues, and an active discussions board, suggesting genuine developer traction rather than vanity numbers. MiMo-Code joins a growing class of "model + harness co-designed" agent frameworks (Anthropic's Claude Code, OpenAI's Codex CLI, Cursor) that treat the boundary between model weights and tool scaffolding as a single optimization target. The MIT license and aggressive release cadence make it a credible open-source alternative for teams wary of vendor lock-in.</p>
+        <div class="news-tags"><span>Xiaomi</span><span>MiMo</span><span>Open Source</span><span>AI Agents</span><span>Code Generation</span><span>Developer Tools</span></div>
+      </div>
+    </div>
+
+
 
     <div class="news-item">
       <div class="news-date">Jun 26</div>
