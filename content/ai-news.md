@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-06-29
+date: 2026-07-01
 draft: false
 ShowToc: false
 ---
@@ -119,12 +119,114 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated June 29, 2026 — 11:00 UTC</div>
+    <div class="last-updated">Updated July 1, 2026 — 11:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
 
-  <div class="news-section-title">Monday's Headlines</div>
+  <div class="news-section-title">Wednesday's Headlines</div>
+  <div class="news-grid">
+
+    <div class="news-item">
+      <div class="news-date">Jul 01</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/" target="_blank">Trump Drops Restrictions on Anthropic's Mythos and Fable Models — End of Two-Month Federal Review</a></h3>
+        <p>The Trump administration has lifted the federal restrictions on Anthropic's Mythos and Fable models, ending a roughly two-month interagency review that had gated deployment across more than 100 US companies and government agencies. The decision drops the unusual "non-American employees" clause that was part of the original authorization and signals the administration's pivot from safety-first gating to a "deploy and compete with China" posture. Industry observers read this as a green light for accelerated enterprise adoption of Mythos-class models through 2H 2026, with downstream effects on OpenAI and Google's positioning. The political timing matters: the move lands weeks after the same administration leaned on OpenAI to slow-roll GPT-5.6 over Mythos-comparable safety concerns, creating a visible asymmetry that the labs and their lobbyists are already exploiting in public.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Mythos</span><span>Fable</span><span>Trump</span><span>Policy</span><span>Federal AI</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 01</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/" target="_blank">Anthropic Launches Claude Sonnet 5 — Cheaper, Faster, Optimized for Long-Running Agents</a></h3>
+        <p>Anthropic has shipped Claude Sonnet 5, a new mid-tier model priced and tuned specifically for long-horizon agent workloads. The pitch: Sonnet 5 sits below Opus in raw capability but offers dramatically better economics for high-volume agentic use — lower per-token cost, faster time-to-first-token, and explicit context-window behavior designed for the multi-thousand-turn trajectories that real agent harnesses generate. Anthropic is positioning Sonnet 5 as the "default workhorse" for production agent deployments where Opus would be over-spec. The move tightens the squeeze on OpenAI's mid-tier (GPT-5 mini) and Google Gemini Flash, and signals that the next phase of the frontier-model race is shifting from raw benchmark numbers to total-cost-of-ownership for agentic workloads. Expect downstream effects on agent-framework pricing and a wave of "we switched to Sonnet 5 and our costs dropped 40%" case studies.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Claude Sonnet 5</span><span>Agents</span><span>Pricing</span><span>Frontier Models</span><span>Inference</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 01</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/" target="_blank">Nvidia Competitor Etched Hits $5B Valuation, $1B in Sales for AI Chip Built Around a Single Transformer</a></h3>
+        <p>Etched, the Nvidia-competitor building an AI chip purpose-built for transformer inference, has closed a funding round valuing the company at $5B on $1B in committed sales — an eye-popping 5x revenue multiple for a chip startup that has not yet shipped a product at scale. The bet: by burning an entire SoC around a single transformer architecture, Etched can deliver 10x the inference throughput per dollar for the dominant workload class (LLM serving, agent loops, code generation) and undercut Nvidia's general-purpose GPUs on cost-per-token. The risk is concentration — if the industry shifts to a new dominant architecture (state-space models, JEPA-style world models, mixture-of-experts hybrids), Etched's bet looks like ASIC-era circa 2018. With $1B in sales already committed before volume shipping, the market is voting that the transformer architecture will remain the workload for at least the next 3-5 years.</p>
+        <div class="news-tags"><span>Etched</span><span>Nvidia</span><span>AI Chips</span><span>Transformers</span><span>Hardware</span><span>AI Infrastructure</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 01</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/30/wayve-launches-85m-employee-tender-offer-at-8-5b-valuation/" target="_blank">Wayve Launches $85M Employee Tender at $8.5B Valuation — UK Autonomous Driving Holds the Line</a></h3>
+        <p>UK-based autonomous-driving startup Wayve has launched an $85M employee tender offer at an $8.5B valuation, giving staff liquidity without a traditional exit and signaling continued investor conviction in the UK self-driving stack. Wayve's approach — end-to-end neural networks trained on raw sensor data, no HD maps, no hand-coded rules — has made it a European counterweight to Tesla FSD and Waymo. The valuation is a meaningful jump from the company's last reported mark and reflects the broader recovery in autonomous-vehicle funding after a brutal 2024-2025 winter. The tender structure (employees sell a portion of their equity to investors) is a retention tool in a hot talent market and a sign that an IPO is still on the roadmap but not imminent. Expect more autonomous-vehicle tender offers through 2H 2026 as late-stage AV startups mature toward public-market readiness.</p>
+        <div class="news-tags"><span>Wayve</span><span>Autonomous Driving</span><span>UK</span><span>Valuation</span><span>Tender Offer</span><span>Self-Driving</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 01</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/30/google-introduces-a-faster-cheaper-image-generator-with-nano-banana-2-lite/" target="_blank">Google Launches Nano Banana 2 Lite — Faster, Cheaper Image Generator Targeting Volume Creators</a></h3>
+        <p>Google has introduced Nano Banana 2 Lite, a faster and cheaper tier of its image generation model aimed squarely at volume creators, agencies, and embedded product use cases. The Lite variant trades some prompt-fidelity and max resolution for sub-second generation times and a per-image cost that undercuts both OpenAI's image tools and Midjourney. The move is a clear play for the "image generation as a feature in your app" market — the same positioning that made Stable Diffusion the default for indie devs a few years back. With Google's broader stack (Gemini API, Vertex AI, Workspace) the distribution advantage is significant: any developer already on Google Cloud can drop Nano Banana 2 Lite into a product with a few lines of code and a credit-card signup. Expect a pricing war in image generation through Q3 2026 as OpenAI and Midjourney respond.</p>
+        <div class="news-tags"><span>Google</span><span>Nano Banana 2</span><span>Image Generation</span><span>Generative AI</span><span>Vertex AI</span><span>Pricing</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 01</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/06/30/the-deepmind-trio-who-built-a-poker-ai-are-now-making-money-for-quant-hedge-funds/" target="_blank">DeepMind's Poker AI Trio Now Making Money for Quant Hedge Funds — Game-Theoretic ML Goes Wall Street</a></h3>
+        <p>The trio of DeepMind researchers who built Libratus and Pluribus — the first AIs to beat top human players at heads-up and multi-player no-limit poker — have reportedly left to start their own shop applying game-theoretic machine learning to quantitative hedge fund strategies. The pitch: the same counterfactual regret minimization and equilibrium-finding techniques that conquered imperfect-information games translate directly to market-making, options pricing, and competitive multi-agent scenarios where multiple rational actors are simultaneously bidding. The move is a notable brain-drain signal for DeepMind's research division and a sign that Wall Street's appetite for academic-AI talent remains insatiable. If the venture produces alpha, expect a wave of similar ex-DeepMind / ex-Fair / ex-Anthropic "game theory meets finance" spinouts through 2026-2027. The deep irony: an AI beat poker, now the AI is playing the biggest poker game of all — capital markets.</p>
+        <div class="news-tags"><span>DeepMind</span><span>Poker AI</span><span>Game Theory</span><span>Quant Funds</span><span>Hedge Funds</span><span>Talent</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 01</div>
+      <div class="news-content">
+        <h3><a href="https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/" target="_blank">Claude Science Is Anthropic's Newest Flagship Product — Workflow, Not Model, Is the Bet</a></h3>
+        <p>Anthropic has launched Claude Science as its newest flagship product — but unlike previous launches, the centerpiece is not a new model but a workflow layer that wraps Claude for the specific needs of working scientists. The product integrates literature search, experimental design review, code generation for analysis pipelines, manuscript drafting, and peer-review simulation into a single environment. The strategic implication: the frontier-model differentiation race is shifting from raw capability (which is converging) to vertical productization (which is not). Anthropic is betting that the same playbook that made Claude Code a default for developers — deep workflow integration, not just a chat box — will work for the much larger scientific-research market. The launch is a direct shot at OpenAI's enterprise push and a signal that Anthropic sees vertical products, not just the next model, as the path to durable revenue.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Claude Science</span><span>Vertical AI</span><span>Workflow</span><span>Scientific Research</span><span>Enterprise</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 01</div>
+      <div class="news-content">
+        <h3><a href="https://www.technologyreview.com/2026/06/29/1139849/ai-agents-are-not-your-coworkers/" target="_blank">"AI Agents Are Not Your Coworkers" — MIT Tech Review Pushes Back on the Anthropomorphic Framing</a></h3>
+        <p>MIT Technology Review has published a pointed essay arguing that the increasingly common framing of AI agents as "coworkers" or "teammates" is misleading and potentially dangerous. The piece walks through the actual technical and economic properties of current agent systems — their lack of persistent context across sessions, their inability to refuse unethical requests, their dependence on tool scaffolding that is itself brittle — and argues that treating them as autonomous colleagues obscures the real responsibility question (who is accountable when the agent makes a mistake?) and inflates user expectations in ways that lead to harmful over-reliance. The argument lands in a moment when "agent coworker" is the marketing pitch from every major lab, and will likely intensify the policy debate around agent liability, disclosure requirements, and the role of human-in-the-loop mandates in high-stakes deployments. Worth reading for anyone shipping an agent product.</p>
+        <div class="news-tags"><span>MIT</span><span>AI Agents</span><span>Policy</span><span>Accountability</span><span>Human-in-the-Loop</span><span>Ethics</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 01</div>
+      <div class="news-content">
+        <h3><a href="http://arxiv.org/abs/2606.32026v1" target="_blank">'AdaJEPA' — An Adaptive Latent World Model from Yann LeCun's Group (JEPA Family Gets Test-Time Adaptation)</a></h3>
+        <p>A new paper from Ying Wang, Oumayma Bounou, and Yann LeCun introduces AdaJEPA, an adaptive latent world model in the JEPA (Joint Embedding Predictive Architecture) family. The key contribution: AdaJEPA can update its latent-prediction module at test time, addressing a long-standing weakness of latent world models — that they are typically frozen after training and lose fidelity as the environment drifts. The architecture combines a frozen encoder with a small, fast-adapting predictor that learns online from observed state transitions, and the authors show meaningful improvements on long-horizon planning tasks in simulated robotics and game environments. The work continues LeCun's campaign to position JEPA-style models as a path to more general world understanding than the generative-transformer paradigm can deliver, and the test-time adaptation angle is directly responsive to industry complaints that latent world models are static and brittle. A meaningful step in the JEPA research program.</p>
+        <div class="news-tags"><span>JEPA</span><span>LeCun</span><span>World Models</span><span>Latent Prediction</span><span>Test-Time Adaptation</span><span>Research</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 01</div>
+      <div class="news-content">
+        <h3><a href="http://arxiv.org/abs/2606.32032v1" target="_blank">RL with Metacognitive Feedback Elicits Faithful Uncertainty Expression in LLMs — A Path Past the Hallucination Tax</a></h3>
+        <p>A new paper from Gabrielle Kaili-May Liu, Avi Caciularu, and Gal Yona (likely Google Research / Technion) introduces a reinforcement learning method that trains LLMs to faithfully express their own uncertainty, using metacognitive feedback signals derived from the model's internal confidence estimates. The work directly targets one of the most-cited failure modes of current LLMs: confidently asserting wrong answers, which makes them unreliable in agentic settings where overconfidence cascades into bad downstream actions. The result: models trained with the metacognitive-reward signal are measurably better calibrated (lower expected calibration error on held-out benchmarks) while maintaining capability on standard accuracy metrics. The technique is model-agnostic and composes with existing RLHF / DPO pipelines. Practical implication: agent frameworks that rely on LLM self-confidence for tool selection and routing can now get a stronger signal at lower inference cost, without an external verifier.</p>
+        <div class="news-tags"><span>Uncertainty</span><span>Metacognition</span><span>Reinforcement Learning</span><span>Calibration</span><span>Hallucinations</span><span>Research</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 01</div>
+      <div class="news-content">
+        <h3><a href="https://github.com/Pluviobyte/video-production-skills" target="_blank">'video-production-skills' Hits 489 GitHub Stars in 6 Days — Reusable AI Video Pipelines Go Modular</a></h3>
+        <p>Pluviobyte's video-production-skills repo has hit 489 GitHub stars in six days, emerging as a credible open-source library of reusable AI video production modules — creation, recreation, motion design, openers, and QA — designed to be composed into agent-driven pipelines. The pitch: rather than building a monolithic AI video tool, expose a library of single-purpose "skills" (each a small composable function with clear inputs/outputs) that any agent harness can call. The architecture is in the same family as Anthropic's Skills system and the AGENTS.md convention. The traction suggests growing demand for modular, swappable AI tooling as opposed to all-in-one platforms — a sign that the agent-ecosystem plumbing is maturing past the point where every project rolls its own. Worth watching as a leading indicator of where the next wave of agent-framework infrastructure will be built.</p>
+        <div class="news-tags"><span>Video Production</span><span>Open Source</span><span>AI Skills</span><span>Agent Frameworks</span><span>GitHub</span><span>Developer Tools</span></div>
+      </div>
+    </div>
+
+  <div class="news-section-title">Last Cycle — June 28-29 Headlines</div>
   <div class="news-grid">
 
     <div class="news-item">
