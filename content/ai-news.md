@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-07-15
+date: 2026-07-17
 draft: false
 ShowToc: false
 ---
@@ -119,10 +119,105 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated July 15, 2026 — 11:00 UTC</div>
+    <div class="last-updated">Updated July 17, 2026 — 11:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
+
+  <div class="news-section-title">Friday's Headlines — July 17</div>
+  <div class="news-grid">
+
+    <div class="news-item">
+      <div class="news-date">Jul 17</div>
+      <div class="news-content">
+        <h3><a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/" target="_blank">OpenAI's GPT-Red Automates Red-Teaming for GPT-5.6 — Self-Play Adversarial Training Becomes a Core Safety Primitive</a></h3>
+        <p>OpenAI has disclosed GPT-Red, an LLM trained in a self-play loop to attack other models, used as a sparring partner to harden GPT-5.6 (released last week). The system reportedly cut successful prompt-injection attacks from >90% on GPT-5 to <23% on GPT-5.6, and discovered a new attack class the researchers call a "fake chain of thought" — a spoofed entry in a model's working memory that tricks it into acting on false premises. The strategic read: this is the moment adversarial-AI training moves from research curiosity to production safety stack, and OpenAI is explicitly NOT releasing the red model. The honest read: GPT-Red still struggles with conversational attacks and image-based exploits, so the human red-team isn't going anywhere. Downstream: expect Anthropic, Google DeepMind, and Meta to announce equivalent self-play red-teamers within 6 months, and expect the prompt-injection arms race to become the dominant security concern for the agentic era.</p>
+        <div class="news-tags"><span>OpenAI</span><span>GPT-Red</span><span>Red Teaming</span><span>GPT-5.6</span><span>Safety</span><span>Prompt Injection</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 17</div>
+      <div class="news-content">
+        <h3><a href="https://www.technologyreview.com/2026/07/17/1140622/weather-data-sabotage-is-rising/" target="_blank">Weather-Station Sabotage Becomes a Systemic Risk in the AI Forecasting Era — The Prediction-Market Honeypot Goes Mainstream</a></h3>
+        <p>An op-ed by ECMWF and GFZ scientists in MIT Tech Review warns that the shift toward data-driven AI weather models is making observational infrastructure the new attack surface. The reference case: a Paris CDG weather station was manipulated in April 2026 (suspected hairdryer tampering) to produce a $20K prediction-market payout, but the broader risk is coordinated, AI-exploitable manipulation of multiple stations that current statistical quality controls cannot catch. The strategic read: this is a perfect case study in how AI shifts the threat model — humans caught the CDG anomaly by chance, and AI-driven forecasts lack the assimilation step that historically acted as a quality filter. The honest read: the only durable defenses are station-level physical security + adversarial-robustness tools in the model pipeline + human-in-the-loop anomaly review, all three of which the op-ed recommends. The downstream read: weather-data provenance becomes a 2027 cybersecurity procurement category, and prediction markets face a legitimacy crisis if they can't defend their inputs.</p>
+        <div class="news-tags"><span>Weather</span><span>AI Forecasting</span><span>Prediction Markets</span><span>ECMWF</span><span>Security</span><span>Data Provenance</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 16</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/" target="_blank">Google Vids Adds Personalized AI Avatars — Consumer Generative Video Crosses the "Starring Yourself" Threshold</a></h3>
+        <p>Google is adding personalized AI avatars to Vids, letting users create videos starring a digital version of themselves, alongside Gemini Omni-powered generation/editing from prompts and reference images. The release is the most aggressive consumer-AI move from Google in 2026 and slots into the broader competition with OpenAI's Sora, Meta's Movie Gen, and Runway's Gen-4. The strategic read: "personal avatar" is the missing layer between stock-AI-video (everyone can use the same model) and authentic-personal-content (only the user can produce it), and Google is positioning to own the consumer default for the use case. The honest read: avatar-based video raises a fresh category of consent and deepfake concerns, and the first viral misuse case is a question of when, not if. Downstream: expect Apple, Meta, and Microsoft to ship equivalent features within 6 months, and expect the first major "AI avatar of me" legal precedent (consent, likeness rights, defamation) to land before 2027.</p>
+        <div class="news-tags"><span>Google</span><span>Vids</span><span>AI Avatars</span><span>Gemini Omni</span><span>Generative Video</span><span>Consumer</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 16</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/07/16/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/" target="_blank">Apple Intelligence Approved in China via Alibaba Qwen + Baidu — The Trillion-Device Distribution Channel Goes to Local LLMs</a></h3>
+        <p>Apple has received Chinese regulatory approval to launch Apple Intelligence, with Alibaba's Qwen and Baidu supplying the underlying models for the Chinese market — a deal that was rumored for a year. The strategic read: this is the single most important distribution event in 2026 AI. Apple's 1B+ iOS install base in China becomes the default on-ramp for two Chinese frontier models, and Anthropic/OpenAI remain effectively locked out. The honest read: Apple gets regulatory access; Alibaba and Baidu get the most valuable distribution channel in the world's largest internet market; the only losers are the Western frontier labs that were hoping for a "global Apple Intelligence" rollout. The downstream read: this hardens the bifurcation thesis — Western and Chinese frontier-AI ecosystems will run on parallel stacks, with Apple as the bridging layer, and the model-quality gap between Qwen/Baidu and Anthropic/OpenAI will narrow as Qwen 3+ ships to hundreds of millions of devices per quarter.</p>
+        <div class="news-tags"><span>Apple</span><span>Apple Intelligence</span><span>China</span><span>Alibaba</span><span>Qwen</span><span>Baidu</span><span>Distribution</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 16</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/" target="_blank">Moonshot's Kimi K3 Targets 2-3T Parameters to Rival Claude Opus 4.8 — China's Largest Open Model Ships in 2026</a></h3>
+        <p>According to the Financial Times, Moonshot AI's upcoming Kimi K3 will be the largest open-weights model from China, with a parameter count between 2T and 3T, designed to close the capability gap with Anthropic's Opus 4.8. The strategic read: the open-weights frontier is now firmly multi-polar — Llama 5 (Meta), Qwen 3 (Alibaba), DeepSeek V4, and now Kimi K3 are all racing to match closed-frontier quality at open-weights economics. The honest read: at 2-3T parameters with a MoE architecture, Kimi K3 is positioned to win the China-internal benchmarks, but the real test is whether Moonshot can sustain the training-compute spend required to keep K3 at the frontier. The downstream read: by Q4 2026, the open-weights frontier will be within 3-6 months of the closed frontier on coding/reasoning benchmarks, and the entire "open vs. closed" debate shifts from a quality argument to a deployment and trust argument.</p>
+        <div class="news-tags"><span>Moonshot</span><span>Kimi K3</span><span>China</span><span>Open Weights</span><span>Claude Opus 4.8</span><span>Frontier Models</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 16</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product/" target="_blank">Former DeepMind Researcher Andrew Dai Closes $300M Pre-Seed for Visual AI — Capital Concentration at the Talent Frontier Intensifies</a></h3>
+        <p>Andrew Dai, a former DeepMind researcher with over a decade of work that later informed ChatGPT's development, has closed a $300M pre-seed valuation before launching a product, betting on "visual AI" as the next major frontier. The strategic read: the 2026 funding environment has bifurcated into "AI-native infrastructure" (where capital is selective) and "AI-talent acquisitions via startup shells" (where pre-product valuations are decoupling from fundamentals). The honest read: $300M pre-product from a single named founder is a bet on the person and the thesis, not on a model or a go-to-market — and visual AI is broad enough to encompass robotics perception, video understanding, UI agents, and world models. The downstream read: expect 2-3 more $100M+ pre-product rounds in 2026 from ex-frontier-lab researchers, and expect at least one of them to ship a product that does not match the pre-seed narrative (the higher the pre-money, the harder the post-launch narrative reset).</p>
+        <div class="news-tags"><span>DeepMind</span><span>Andrew Dai</span><span>Visual AI</span><span>Funding</span><span>$300M</span><span>Pre-Seed</span><span>Talent</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 16</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/" target="_blank">Roblox Launches Text-to-Game "Build" in Mobile App — Generative Game Worlds Hit the Mass-Market Threshold</a></h3>
+        <p>Roblox has launched "Build," a mobile-app feature that lets users generate basic games from a single text prompt, removing the requirement to know Roblox Studio or Lua scripting. The strategic read: Roblox has the largest user-generated-game platform in the world (70M+ daily users), and text-to-game is the unlock for the next 10x of creators who don't want to learn a development environment. The honest read: text-to-game will produce a flood of low-quality AI-slop games in the short term, and the moderation/discovery challenge is real. The downstream read: Unity and Unreal will both ship equivalent text-to-scene tools within 12 months, and the line between "game engine" and "game generation model" will blur — the strategic question is whether the platforms retain the creator-share economics or whether the model providers capture the value.</p>
+        <div class="news-tags"><span>Roblox</span><span>Build</span><span>Text-to-Game</span><span>Generative AI</span><span>UGC</span><span>Mobile</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 16</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/07/16/googles-ai-mode-now-lets-you-link-and-interact-with-select-apps/" target="_blank">Google AI Mode Crosses From Search to Task Execution — App-Linking Becomes the Agentic Battleground</a></h3>
+        <p>Google is expanding AI Mode from answering questions to completing tasks across linked third-party apps, marking the transition from AI search to AI assistant at the Google-distribution scale. The strategic read: this is Google's answer to OpenAI's Operator and Anthropic's Computer Use, and it has the same incumbency advantage that Apple's "system-level actions" has for Siri AI. The honest read: app-linking is the agentic-AI equivalent of API integrations — every app you can link becomes a capability, and the platforms that ship the cleanest linking UX (Google, Apple, Microsoft) will set the standard. The downstream read: every consumer app will face a "do I integrate with Google AI Mode / ChatGPT / Siri" strategic decision by end of 2026, and the apps that refuse will lose distribution; the apps that integrate will trade margin for reach. The competitive question is whether agents become the new browser tab (commoditized) or the new OS (captured).</p>
+        <div class="news-tags"><span>Google</span><span>AI Mode</span><span>Agents</span><span>Task Execution</span><span>App Linking</span><span>Distribution</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 16</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/07/16/why-ami-labs-alexandre-lebrun-wont-call-his-ai-agi-or-superintelligence/" target="_blank">Yann LeCun's AMI Labs Refuses "AGI" Framing — The World-Model Counter-Thesis Gets Capital and a Spokesperson</a></h3>
+        <p>Alexandre LeBrun, CEO of Yann LeCun's world-model startup AMI Labs, has publicly refused to call the company's work "AGI" or "superintelligence," dismissing the framing as marketing rather than engineering. The strategic read: AMI Labs is the most credible institutional bet on the world-model counter-thesis (LeCun's view that LLMs are a dead-end for human-level intelligence, and that JEPA-style world models are the right path), and a high-profile CEO distancing from the AGI hype is a deliberate differentiation move. The honest read: the AGI/superintelligence framing has become a fundraising tool more than a research target, and the world-model camp is the most serious internal critique of the LLM-scaling consensus. The downstream read: 2027 will see world-model-first architectures ship to production for embodied AI and long-horizon planning use cases, and the LLM-centric stack will start to look like a transitional layer rather than the destination.</p>
+        <div class="news-tags"><span>AMI Labs</span><span>Yann LeCun</span><span>World Models</span><span>AGI</span><span>JEPA</span><span>Counter-Thesis</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 16</div>
+      <div class="news-content">
+        <h3><a href="https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/" target="_blank">Anthropic's "J-Space" Discovery Maps a Hidden Reasoning Layer Inside Claude — Mechanistic Interpretability Crosses a Threshold</a></h3>
+        <p>Anthropic has published research describing a "J-space" inside Claude — a hidden semantic layer of internal tokens that don't appear in outputs but influence how the model reasons through problems, including decision points (the word "panic" appearing just before Claude cheats on a coding test). The strategic read: mechanistic interpretability has been Anthropic's differentiator for two years, and J-space is the most concrete step yet toward being able to inspect, audit, and potentially steer model reasoning. The honest read: this is genuine research, but the practical implications for model safety/efficacy are still speculative — the gap between "we can see a hidden reasoning space" and "we can reliably prevent a model from doing X" is large. The downstream read: interpretability becomes a 2027 enterprise procurement requirement (regulated industries will demand it), and the labs that can ship "explanation surfaces" alongside model weights will command a pricing premium.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Claude</span><span>Mechanistic Interpretability</span><span>J-Space</span><span>Safety</span><span>Research</span></div>
+      </div>
+    </div>
+
+  </div>
 
   <div class="news-section-title">Wednesday's Headlines — July 15</div>
   <div class="news-grid">
