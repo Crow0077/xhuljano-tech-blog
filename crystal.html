@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Stellated Nexus</title>
+<style>
+:root{--bg:#08080c}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);display:flex;align-items:center;justify-content:center;min-height:100vh;overflow:hidden;font-family:'Fira Code',monospace;cursor:grab}
+body:active{cursor:grabbing}
+canvas{position:fixed;inset:0;z-index:1}
+.hint{position:fixed;bottom:30px;left:0;right:0;text-align:center;z-index:2;color:rgba(255,255,255,0.25);font-size:12px;pointer-events:none;letter-spacing:2px}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div class="hint">drag to rotate · double‑click to shatter · scroll to zoom</div>
+<script>
+const C=document.getElementById("c"),X=C.getContext("2d");
+let W,H,DPR,time=0,dt=0.016,lastT=0,rotX=0.4,rotY=0,autoSpin=0.25,targetRX=0.4,targetRY=0,zoom=1,targetZoom=1;
+let mouse={x:0,y:0,down:!1,px:0,py:0},shattered=!1,shatterProgress=0,shatterTarget=0,hueShift=0;
+let bgParticles=[],sparkles=[];
+
+const phi=(1+Math.sqrt(5))/2;
+const icoV=[[-1,phi,0],[1,phi,0],[-1,-phi,0],[3,-phi,0],[0,-1,phi],[0,1,phi],[0,-1,-phi],[0,1,-phi],[phi,0,-1],[phi,0,1],[-phi,0,-1],[-phi,0,1]].map(v=>{const m=Math.sqrt(v[0]**2+v[1]**2+v[2]**2);return[v[0]/m,v[1]/m,v[2]/m]});
+const icoF=[[0,11,5],[0,5,1],[0,1,7],[0,7,10],[0,10,11],[1,5,9],[5,11,4],[11,10,2],[10,7,6],[7,1,8],[3,9,4],[3,4,2],[3,2,6],[3,6,8],[3,8,9],[4,5,9],[2,4,11],[6,2,10],[8,6,7],[9,8,1]];
+function crs(a,b){return[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]]}
+function sb(a,b){return[a[0]-b[0],a[1]-b[1],a[2]-b[2]]}
+function nm(v){const m=Math.sqrt(v[0]**2+v[1]**2+v[2]**2);return[v[0]/m,v[1]/m,v[2]/m]}
+const icoFN=icoF.map(f=>nm(crs(sb(icoV[f[1]],icoV[f[0]]),sb(icoV[f[2]],icoV[f[0]]))));
+const icoFC=icoF.map(f=>{const cx=(icoV[f[0]][0]+icoV[f[1]][0]+icoV[f[2]][0])/3,cy=(icoV[f[0]][1]+icoV[f[1]][1]+icoV[f[2]][1])/3,cz=(icoV[f[0]][2]+icoV[f[1]][2]+icoV[f[2]][2])/3;return nm([cx,cy,cz])});
+const tetV=[[1,1,1],[1,-1,-1],[-1,1,-1],[-1,-1,1]].map(v=>{const m=Math.sqrt(3);return[v[0]/m,v[1]/m,v[2]/m]});
+const tetF=[[0,1,2],[0,2,3],[0,3,1],[1,3,2]];
+const tetFN=tetF.map(f=>nm(crs(sb(tetV[f[1]],tetV[f[0]]),sb(tetV[f[2]],tetV[f[0]]))));
+const tetFC=tetF.map(f=>{const cx=(tetV[f[0]][0]+tetV[f[1]][0]+tetV[f[2]][0])/3,cy=(tetV[f[0]][1]+tetV[f[1]][1]+tetV[f[2]][1])/3,cz=(tetV[f[0]][2]+tetV[f[1]][2]+tetV[f[2]][2])/3;return nm([cx,cy,cz])});
+const orbiters=[{dist:2.5,tiltX:0.3,tiltY:0,speed:0.7,size:0.35,hue:190},{dist:2.8,tiltX:-0.5,tiltY:0.8,speed:-0.55,size:0.28,hue:220},{dist:3.0,tiltX:0.7,tiltY:-0.4,speed:0.9,size:0.22,hue:250},{dist:2.4,tiltX:-0.2,tiltY:-0.7,speed:-0.65,size:0.32,hue:175}];
+const L1=nm([0.4,0.7,0.35]),L2=nm([-0.3,-0.45,0.25]),L3=nm([0.1,0.2,0.8]),AMB=0.06;
+
+function rY(x,y,z,a){const c=Math.cos(a),s=Math.sin(a);return[x*c+z*s,y,-x*s+z*c]}
+function rX(x,y,z,a){const c=Math.cos(a),s=Math.sin(a);return[x,y*c-z*s,y*s+z*c]}
+function rZ(x,y,z,a){const c=Math.cos(a),s=Math.sin(a);return[x*c-y*s,x*s+y*c,z]}
+function project(v,cx,cy,sz,tx,ty){let[x,y,z]=rY(v[0],v[1],v[2],ty);[x,y,z]=rX(x,y,z,tx);const d=z+5;return[cx+x*sz/d,cy-y*sz/d,z/sz]}
+function projectN(n,tx,ty){let[nx,ny,nz]=rY(n[0],n[1],n[2],ty);[nx,ny,nz]=rX(nx,ny,nz,tx);return[nx,ny,nz]}
+
+for(let i=0;i<200;i++){const a=Math.random()*Math.PI*2,b=Math.acos(2*Math.random()-1),r=3+Math.random()*8;bgParticles.push({ba:a,bb:b,br:r,size:0.5+Math.random()*1.5,hue:180+Math.random()*80,alpha:0.15+Math.random()*0.35,speed:0.1+Math.random()*0.3})}
+
+function addSparkle(x,y,z,color){sparkles.push({x,y,z,life:1,decay:0.4+Math.random()*0.8,size:1+Math.random()*3,color:color||'#fff',phase:Math.random()*Math.PI*2})}
+function drawSparkle(sx,sy,s,life,color,phase){
+  if(life<0.02)return;const fk=0.6+0.4*Math.sin(phase+time*3),a=life*0.8*fk;
+  const g=X.createRadialGradient(sx,sy,0,sx,sy,s*2.5);g.addColorStop(0,`rgba(255,255,255,${a})`);g.addColorStop(0.3,`${color}${(a*0.6).toFixed(2)})`);g.addColorStop(1,'rgba(0,0,0,0)');X.fillStyle=g;X.beginPath();X.arc(sx,sy,s*2.5,0,Math.PI*2);X.fill();
+  X.strokeStyle=`rgba(255,255,255,${a})`;X.lineWidth=0.6;X.beginPath();X.moveTo(sx,sy-s);X.lineTo(sx,sy+s);X.stroke();X.beginPath();X.moveTo(sx-s,sy);X.lineTo(sx+s,sy);X.stroke();
+  X.fillStyle=`rgba(255,255,255,${a*1.2})`;X.beginPath();X.arc(sx,sy,s*0.2,0,Math.PI*2);X.fill()
+}
+
+function renderPoly(verts,faces,fnorm,fcent,cx,cy,sz,tx,ty,hueBase,shatterAmt){
+  const pts=verts.map(v=>project(v,cx,cy,sz,tx,ty));
+  const fd=faces.map((f,i)=>{const pn=projectN(fnorm[i],tx,ty);let za=(pts[f[0]][2]+pts[f[1]][2]+pts[f[2]][2])/3;
+    if(shatterAmt>0.001){const cn=projectN(fcent[i],tx,ty);za+=shatterAmt*3;const pushX=cn[0]*shatterAmt*sz*0.6,pushY=-cn[1]*shatterAmt*sz*0.6;for(let j=0;j<3;j++){pts[f[j]][0]+=pushX;pts[f[j]][1]+=pushY}}
+    const d1=Math.max(0,pn[0]*L1[0]+pn[1]*L1[1]+pn[2]*L1[2]),d2=Math.max(0,pn[0]*L2[0]+pn[1]*L2[1]+pn[2]*L2[2]),d3=Math.max(0,pn[0]*L3[0]+pn[1]*L3[1]+pn[2]*L3[2]);
+    const diff=d1*0.5+d2*0.3+d3*0.15+AMB,rx=2*d1*pn[0]-L1[0],ry=2*d1*pn[1]-L1[1],rz=2*d1*pn[2]-L1[2],sp=Math.pow(Math.max(0,rx*0.3+ry*0.2+rz*0.6),25);
+    return{f,lit:Math.min(1,diff+sp*0.45),z:za}});
+  fd.sort((a,b)=>b.z-a.z);
+  for(const f of fd){const l=f.lit,r=Math.round(20+(hueBase>200?40:30)+l*80),g=Math.round(40+(hueBase>200?30:50)+l*120),b=Math.round(50+(hueBase>200?60:40)+l*100);
+    X.fillStyle=`rgba(${r},${g},${b},${0.5+l*0.4})`;X.strokeStyle=`rgba(${Math.round(r*1.3)},${Math.round(g*1.3)},${Math.round(b*1.3)},${0.12+l*0.18})`;X.lineWidth=0.5;
+    X.beginPath();X.moveTo(pts[f.f[0]][0],pts[f.f[0]][1]);X.lineTo(pts[f.f[1]][0],pts[f.f[1]][1]);X.lineTo(pts[f.f[2]][0],pts[f.f[2]][1]);X.closePath();X.fill();X.stroke()}
+  return fcent.map(fc=>project(fc,cx,cy,sz,tx,ty))
+}
+
+function drawRing(cx,cy,sz,tx,ty,dist,segments,hue){
+  X.strokeStyle=`rgba(${Math.round(hue*0.6)},${Math.round(120+hue*0.3)},${Math.round(180+hue*0.2)},0.15)`;X.lineWidth=0.7;X.beginPath();
+  let first=!0;for(let i=0;i<=segments;i++){const a=(i/segments)*Math.PI*2;const[sx,sy]=project([Math.cos(a)*dist,0,Math.sin(a)*dist],cx,cy,sz,tx,ty);if(first){X.moveTo(sx,sy);first=!1}else X.lineTo(sx,sy)}X.stroke()
+}
+
+function dThread(x1,y1,x2,y2,alpha,hue){
+  const midX=(x1+x2)/2,midY=(y1+y2)/2-15;X.strokeStyle=`rgba(${Math.round(100+hue*0.4)},${Math.round(180+hue*0.3)},${Math.round(230)},${alpha})`;X.lineWidth=0.5;X.beginPath();X.moveTo(x1,y1);X.quadraticCurveTo(midX,midY,x2,y2);X.stroke()
+}
+
+function resize(){DPR=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;C.width=W*DPR;C.height=H*DPR;X.setTransform(DPR,0,0,DPR,0,0)}
+function frame(now){
+  dt=lastT?Math.min((now-lastT)/1000,0.1):0.016;lastT=now;time+=dt;
+  rotX+=(targetRX-rotX)*Math.min(dt*5,1);rotY+=(targetRY-rotY)*Math.min(dt*5,1);zoom+=(targetZoom-zoom)*Math.min(dt*4,1);
+  if(!mouse.down)targetRY+=autoSpin*dt;
+  const sd=shatterTarget-shatterProgress;if(Math.abs(sd)>0.001)shatterProgress+=Math.sign(sd)*Math.min(Math.abs(sd),1.8*dt);
+  hueShift+=dt*0.08;const baseHue=190+Math.sin(hueShift)*30;
+  X.clearRect(0,0,W,H);
+  const cx=W/2,cy=H/2,sz=Math.min(W,H)*0.18*zoom;
+  for(const p of bgParticles){p.ba+=p.speed*dt;const px=Math.sin(p.bb)*Math.cos(p.ba)*p.br,py=Math.sin(p.bb)*Math.sin(p.ba)*p.br,pz=Math.cos(p.bb)*p.br;const[sx,sy,z]=project([px,py,pz],cx,cy,sz,rotX,rotY);if(z<0.01)continue;const alpha=p.alpha*(0.4+0.6*((z*sz+3)/8));X.fillStyle=`hsla(${p.hue},60%,70%,${alpha})`;X.beginPath();X.arc(sx,sy,p.size,0,Math.PI*2);X.fill();if(Math.random()<0.0008&&z>0.03)addSparkle(sx,sy,z,'#80d0ff')}
+  for(const o of orbiters)drawRing(cx,cy,sz,rotX+o.tiltX,rotY+o.tiltY,o.dist,120,o.hue);
+  const orbPositions=[];for(const o of orbiters){const angle=time*o.speed;let[wx,wy,wz]=rX(Math.cos(angle)*o.dist,0,Math.sin(angle)*o.dist,o.tiltX);[wx,wy,wz]=rY(wx,wy,wz,o.tiltY);const[osx,osy,osz]=project([wx,wy,wz],cx,cy,sz,rotX,rotY);orbPositions.push({sx:osx,sy:osy,sz:osz,hue:o.hue});renderPoly(tetV,tetF,tetFN,tetFC,osx,osy,sz*o.size,rotX+o.tiltX,rotY+o.tiltY,o.hue,0)}
+  const anchors=renderPoly(icoV,icoF,icoFN,icoFC,cx,cy,sz,rotX,rotY,baseHue,shatterProgress);
+  if(shatterProgress<1)for(const op of orbPositions)dThread(cx,cy,op.sx,op.sy,(1-shatterProgress)*0.15,op.hue);
+  if(!shattered&&Math.random()<0.06&&sparkles.length<12){const ai=Math.floor(Math.random()*anchors.length);if(!sparkles.some(s=>s.ai===ai))addSparkle(anchors[ai][0],anchors[ai][1],anchors[ai][2],'#c0f0ff')}
+  if(shatterProgress>0.1&&Math.random()<0.3){const ri=Math.floor(Math.random()*anchors.length);addSparkle(anchors[ri][0]+(Math.random()-0.5)*40,anchors[ri][1]+(Math.random()-0.5)*40,0.5,'#ffd0a0')}
+  for(let i=sparkles.length-1;i>=0;i--){const s=sparkles[i];s.life-=s.decay*dt;if(s.life<=0){sparkles.splice(i,1);continue}drawSparkle(s.x,s.y,s.size,s.life,s.color,s.phase)}
+  requestAnimationFrame(frame)
+}
+
+resize();addEventListener("resize",resize);
+C.addEventListener("mousedown",e=>{mouse.down=!0;mouse.px=e.clientX;mouse.py=e.clientY;e.preventDefault()});
+C.addEventListener("mousemove",e=>{mouse.x=e.clientX;mouse.y=e.clientY;if(mouse.down){targetRY+=(e.clientX-mouse.px)*0.005;targetRX-=(e.clientY-mouse.py)*0.005;targetRX=Math.max(-1.2,Math.min(1.2,targetRX));mouse.px=e.clientX;mouse.py=e.clientY}});
+C.addEventListener("mouseup",()=>{mouse.down=!1});C.addEventListener("mouseleave",()=>{mouse.down=!1});
+C.addEventListener("dblclick",e=>{e.preventDefault();shattered=!shattered;shatterTarget=shattered?1:0;autoSpin=shattered?0.15:0.25});
+C.addEventListener("wheel",e=>{e.preventDefault();targetZoom=Math.max(0.6,Math.min(2.5,targetZoom-e.deltaY*0.001))},{passive:!1});
+C.addEventListener("touchstart",e=>{if(e.touches.length===1){mouse.down=!0;mouse.px=e.touches[0].clientX;mouse.py=e.touches[0].clientY}e.preventDefault()});
+C.addEventListener("touchmove",e=>{if(mouse.down&&e.touches.length===1){targetRY+=(e.touches[0].clientX-mouse.px)*0.005;targetRX-=(e.touches[0].clientY-mouse.py)*0.005;targetRX=Math.max(-1.2,Math.min(1.2,targetRX));mouse.px=e.touches[0].clientX;mouse.py=e.touches[0].clientY}if(e.touches.length===2){const d=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);targetZoom=Math.max(0.6,Math.min(2.5,1+(d-150)*0.003))}e.preventDefault()},{passive:!1});
+C.addEventListener("touchend",()=>{mouse.down=!1});
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>
