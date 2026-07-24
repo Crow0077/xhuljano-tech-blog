@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-07-22
+date: 2026-07-24
 draft: false
 ShowToc: false
 ---
@@ -119,14 +119,122 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated July 20, 2026 — 11:00 UTC</div>
+    <div class="last-updated">Updated July 24, 2026 — 11:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
 
 
-  <div class="news-section-title">Monday's Headlines — July 20</div>
+  <div class="news-section-title">Friday's Headlines — July 24</div>
   <div class="news-grid">
+
+    <div class="news-item">
+      <div class="news-date">Jul 24</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/" target="_blank">AMD's Helios Rack-Scale System Lands as the First Credible NVIDIA Alternative — The "AI Factory" Compute Wars Heat Up</a></h3>
+        <p>AMD unveiled Helios, a rack-scale AI system designed to compete head-to-head with NVIDIA's HGX/DGX platform, marking the first time AMD has shipped a complete integrated stack (silicon, networking, software) rather than selling GPUs into NVIDIA-shaped systems. The strategic read: NVIDIA's pricing power depends on the assumption that the AI factory stack is a closed loop — and AMD just opened a credible second loop with hyperscaler-friendly economics. The honest read: the first-generation Helios will underperform NVLink on tightest-coupled training jobs (frontier-model training, not inference), and the software ecosystem (ROCm, JAX, PyTorch paths) still has 12-18 months of catch-up work. The downstream read: Meta, Microsoft, and Oracle are likely first customers; expect AMD to take 8-12% of hyperscaler accelerator spend by 2027 vs. today's ~3%, and watch for the "AI factory" marketing war to shift from GPU-compute-per-watt to total-system-compute-per-dollar.</p>
+        <div class="news-tags"><span>AMD</span><span>Helios</span><span>NVIDIA</span><span>Hardware</span><span>Hyperscaler</span><span>Compute</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 24</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/" target="_blank">Anthropic Upgrades Claude Voice Mode with Frontier-Model Backbone — Voice Becomes the Default UI for Long-Form Reasoning</a></h3>
+        <p>Anthropic rolled out a significant voice-mode upgrade to Claude, swapping the underlying voice model for a more capable backbone tuned for long-form reasoning, multi-turn context, and real-time interruption handling. The strategic read: the voice-AI category is bifurcating into "fast and shallow" (GPT-4o realtime, Gemini Live) and "slow and deep" (Claude's new mode), and Anthropic is positioning as the latter — the Siri-for-thought work that requires the model to hold nuance over a 10-minute conversation. The honest read: voice quality is still the gating factor for consumer adoption, and a "deep" mode that occasionally mishears 2-3 words in a 10-minute session will lose to "shallow" modes that just stay responsive. The downstream read: expect OpenAI to ship a competing "long-context voice" mode within 60 days, and watch for the first enterprise voice-AI procurement RFPs to start specifying "reasoning depth" alongside latency.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Claude</span><span>Voice</span><span>Multimodal</span><span>Reasoning</span><span>UI</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 24</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/" target="_blank">AegisAI Lands $36M to Defend Against AI-Generated Spear Phishing — Former Google Security Execs Build the Anti-LLM-Fraud Stack</a></h3>
+        <p>AegisAI, founded by former Google security executives, raised $36M to build detection and defense tooling against AI-driven spear phishing — a category that has exploded in 2026 as LLM-generated personalized attacks became indistinguishable from human-written emails. The strategic read: the AI-vs-AI arms race in security is now a two-sided market, and AegisAI is the rare startup that gets to sell to both the enterprise (defense) and the insurance market (underwriting signals). The honest read: $36M is small for the category — most "AI security" startups from 2024-25 raised $80M-$200M — and the runway suggests the team is betting on a fast Series B, not a long bootstrap. The downstream read: expect a wave of M&A in AI-defense (Palo Alto, CrowdStrike, Zscaler shopping) by Q4 2026, and expect the first cyber-insurance carrier to require AI-defense tooling as a policy condition by 2027.</p>
+        <div class="news-tags"><span>AegisAI</span><span>Security</span><span>Phishing</span><span>Funding</span><span>$36M</span><span>Google</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 24</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/" target="_blank">Etched Defies Skeptics at $10.3B Valuation — The Transformer-ASIC Bet Pays Off, and the AI Chip Middle Tier Is Now a Two-Horse Race</a></h3>
+        <p>AI chip startup Etched raised at a $10.3B valuation from major institutional investors, validating the bet that a transformer-specific ASIC can compete with general-purpose GPUs for inference at scale. The strategic read: the AI chip market is now structurally tri-tier — NVIDIA (general-purpose frontier), AMD + Groq + Etched (specialized inference), and Cerebras + SambaNova (datacenter-scale training alternatives) — and Etched just secured the inference-specialty slot. The honest read: at $10.3B the company is priced for shipping hundreds of thousands of units, and the next 12 months are make-or-break on hyperscaler design wins. The downstream read: every general-purpose GPU roadmap is now being questioned — the "we need one chip that does everything" thesis is dying in real time, and NVIDIA's moat is increasingly its software ecosystem, not its silicon.</p>
+        <div class="news-tags"><span>Etched</span><span>AI Chips</span><span>ASIC</span><span>Valuation</span><span>$10.3B</span><span>Inference</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 24</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/07/23/google-closes-in-on-another-billion-user-product-with-gemini/" target="_blank">Google's Gemini Closes in on a Billion Users — The Second AI-Native Product to Cross the Line, but Distribution Alone Doesn't Equal Margin</a></h3>
+        <p>Google's Gemini is approaching the billion-user mark, becoming the second AI-native product (after ChatGPT) to reach the threshold and the first to do so primarily through Android-default distribution rather than direct subscription. The strategic read: Google's distribution advantage is showing up in the numbers — a billion users is 3-5x ahead of any standalone AI app — but the unit-economics story (Gemini serving Search-deflecting queries inside Android) is still a margin headwind, not a tailwind. The honest read: user counts overstate value when the "user" is a single embedded prompt rather than a paying relationship, and Google still has to convert Gemini-Android-default into Search-revenue-retention or new enterprise ARR. The downstream read: the antitrust pressure on Google's Android-default deals will intensify now that there's a billion-user AI product on the other side, and the DOJ's 2024 remedies case becomes a 2026-27 live-fire test for "AI distribution through OS bundling."</p>
+        <div class="news-tags"><span>Google</span><span>Gemini</span><span>1B Users</span><span>Android</span><span>Distribution</span><span>Antitrust</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 24</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/" target="_blank">OpenAI Opens ChatGPT Health to All US Users — The Consumer Health-AI Category Leaves the Waitlist and Enters the Liability Era</a></h3>
+        <p>OpenAI made ChatGPT Health available to all US users, ending the waitlist that began with the feature's launch earlier in 2026. The move takes a $3-5B consumer health-AI TAM from "waitlist-segmented" to "mainstream-elevated" overnight. The strategic read: OpenAI is deliberately stepping into the FDA-adjacent zone where a hallucinated medication interaction is a tort case waiting to happen, and the company's bet is that scale + a medical-license-trained sub-model is enough to defer the regulatory reckoning. The honest read: the safety case for consumer health-AI is materially weaker than the marketing suggests, and one high-profile misdiagnosis will trigger Congressional hearings within 90 days. The downstream read: expect a wave of health-system partnerships (Cleveland Clinic, Mayo, Kaiser) to rush out as liability shields, and expect the FDA to formally claim software-as-a-medical-device jurisdiction over the category by 2027.</p>
+        <div class="news-tags"><span>OpenAI</span><span>ChatGPT Health</span><span>Consumer</span><span>Health</span><span>FDA</span><span>Liability</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 24</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded/" target="_blank">Runway Launches an AI Model Router for Generative Media — The "Model-Agnostic UI" Becomes the Real Product in a 30-Model World</a></h3>
+        <p>Runway shipped an AI model router that lets users pick which underlying model powers their generative-media output, formalizing a pattern that has been informal (prompt-and-pray) across the category. The strategic read: as the generative-media model count crosses 30 distinct frontier and open-weight options, the value migrates from "the model" to "the routing layer that knows which model to use for which task" — Runway is positioning as the Adobe-for-AI-media. The honest read: model-routing is a real product category but a thin moat — every model API is a few months from shipping first-party routing, and the value capture depends on whether Runway can become the user-default before the model labs do. The downstream read: expect Pika, Luma, and Krea to ship similar router UX in 60-90 days, and expect Adobe to acquire one of the smaller players (or build it) to defend its creative-pro market.</p>
+        <div class="news-tags"><span>Runway</span><span>Generative Media</span><span>Model Router</span><span>UI</span><span>Video</span><span>Adobe</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 24</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/" target="_blank">AI Guardrails Are Impeding Offensive Security Research — The Defensive-Bias of Model Labs Creates an Asymmetric Vulnerability Disclosure Problem</a></h3>
+        <p>A new wave of offensive cybersecurity researchers report that AI model guardrails are blocking legitimate security work — refusing to generate exploit code, walk through CVE reproduction steps, or discuss specific malware families — even when the researcher is operating in a sanctioned red-team context. The strategic read: the defensive-bias of consumer-facing model labs (OpenAI, Anthropic, Google) is now creating a structural disadvantage for the defensive security community, which has historically relied on the same model capabilities that the labs are now restricting. The honest read: the labs are responding to a real dual-use risk, but the implementation (broad refusals rather than researcher-tier access) is a blunt instrument that punishes the defenders more than the attackers. The downstream read: expect a formal "researcher access tier" announcement from at least one major lab by Q4 2026, and expect CVE-disclosure timelines to lengthen as researchers turn to open-weight models for the work that the closed labs refuse.</p>
+        <div class="news-tags"><span>Cybersecurity</span><span>Guardrails</span><span>Offensive Research</span><span>Red Team</span><span>Dual Use</span><span>Policy</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 24</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/07/23/nvidia-is-sending-gpus-to-the-moon/" target="_blank">NVIDIA Sends GPUs to the Moon — The "Compute Anywhere" Frontier Opens, and the Lunar Edge-AI Market Suddenly Has a Real Anchor Customer</a></h3>
+        <p>NVIDIA announced it is shipping GPUs to the moon as part of a lunar-edge-compute payload, marking the first time a commercial AI accelerator has been designed for off-Earth deployment. The strategic read: the "compute anywhere" framing — space, undersea, arctic, battlefield — is now a real product category for NVIDIA, and lunar-edge-AI becomes a flagship anchor that pulls adjacent terrestrial-edge demand along. The honest read: lunar-edge is a tiny near-term market (a handful of payloads per decade), but the marketing and signaling value for the broader "edge AI that works anywhere" thesis is enormous. The downstream read: expect a wave of "edge AI for harsh environments" RFPs from defense, mining, and remote-infrastructure operators by Q1 2027, and watch for the first "compute-as-a-service" lunar offering to ship by 2028.</p>
+        <div class="news-tags"><span>NVIDIA</span><span>GPUs</span><span>Lunar</span><span>Edge AI</span><span>Space</span><span>Defense</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 24</div>
+      <div class="news-content">
+        <h3><a href="https://www.technologyreview.com/2026/07/23/1140346/how-ai-helps-scientists-design-the-next-generation-of-medicines/" target="_blank">MIT Tech Review: How AI Is Designing the Next Generation of Medicines — Protein-Folding-First Drug Discovery Crosses Into Clinical Trials</a></h3>
+        <p>MIT Technology Review's lead feature this week surveys how AI-designed medicines — from protein-structure prediction to generative chemistry to clinical-trial optimization — have moved from "promising research" to "compounds actually in human trials." The strategic read: the 2026 drug-discovery pipeline has more AI-designed candidates in Phase 1 than at any point in history, and the question is no longer "can AI design drugs" but "which labs can run the wet-lab validation fast enough to capture the value." The honest read: clinical success rates for AI-designed candidates are still unproven — a single high-profile Phase 3 failure would reset the hype cycle by 18 months. The downstream read: expect the first AI-designed drug approval application in 2027-28, expect pharma giants (Pfizer, Merck, Roche) to acquire AI-native discovery platforms in 2026-27, and watch for the "AI-native pharma" category to become a top-3 biotech investment theme by end of 2026.</p>
+        <div class="news-tags"><span>AI Drug Discovery</span><span>Medicine</span><span>Pharma</span><span>MIT</span><span>Clinical Trials</span><span>Biotech</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 24</div>
+      <div class="news-content">
+        <h3><a href="https://www.technologyreview.com/2026/07/20/1140675/chinas-ai-models-have-trumps-ai-world-at-war-with-itself/" target="_blank">MIT Tech Review: China's AI Models Have Trump's AI World at War with Itself — The "Two AI Blocs" Thesis Fractures US Policy into Open-Weights vs. Closed-Frontier Camps</a></h3>
+        <p>MIT Technology Review's deep-dive on the US-China AI competition this week argues that China's progress in open-weights models (Kimi, Qwen, DeepSeek variants) has created a self-inflicted fracture in US AI policy — the open-weights community (Meta, Mistral, Databricks allies) is now publicly at odds with the closed-frontier consensus (OpenAI, Anthropic, Google) on export controls, CHIPS funding, and research collaboration. The strategic read: the open-weights vs. closed-frontier split is no longer a technical debate but a political one, and the next 12 months of US AI policy will be shaped by which camp wins the policy fight in Washington. The honest read: both camps have a point — the open-weights camp is correct that the export-control regime is leaky and the closed-frontier camp is correct that frontier-capability compute is genuinely a national-security asset. The downstream read: expect a formal White House AI policy framework by Q1 2027, and expect the open-weights coalition to formalize as a lobbying entity (the rumored "Open Weights Alliance" with a legal-defense fund) by Q4 2026.</p>
+        <div class="news-tags"><span>China</span><span>US Policy</span><span>Open Weights</span><span>Export Controls</span><span>Geopolitics</span><span>MIT</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jul 24</div>
+      <div class="news-content">
+        <h3><a href="http://arxiv.org/abs/2607.21557v1" target="_blank">arXiv: OpenForgeRL — Train Harness-Native Agents in Any Environment, and the RL-for-Agents Stack Matures Past the Toy-Task Era</a></h3>
+        <p>OpenForgeRL, published to arXiv this week, is an open-source training harness for building reinforcement-learning-trained agents that work inside arbitrary tool-using environments (browser, code interpreter, file systems) rather than the toy-gridworld and game benchmarks that have dominated the RL-for-agents research literature. The strategic read: the RL-for-agents field has been stuck between "research demos" and "production-grade agent training" for 18 months, and OpenForgeRL is the first open-source attempt to bridge that gap with a harness that mirrors what the frontier labs actually do internally. The honest read: the reproducibility crisis in RL-for-agents is real — most published results are tied to proprietary environments and bespoke reward functions — and OpenForgeRL's biggest contribution may be the environment-spec standard, not the training code. The downstream read: expect the first open-source RL-trained agent to beat frontier closed-source baselines on a benchmark task within 6 months, and expect "harness-native" to become a standard term in agent-engineering job postings by 2027.</p>
+        <div class="news-tags"><span>arXiv</span><span>RL</span><span>Agents</span><span>OpenForgeRL</span><span>Open Source</span><span>Research</span></div>
+      </div>
+    </div>
 
     <div class="news-item">
       <div class="news-date">Jul 20</div>
