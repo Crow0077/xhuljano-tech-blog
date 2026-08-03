@@ -1,6 +1,6 @@
 ---
 title: "AI News"
-date: 2026-07-31
+date: 2026-08-03
 draft: false
 ShowToc: false
 ---
@@ -119,7 +119,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated July 31, 2026 — 11:00 UTC</div>
+    <div class="last-updated">Updated August 3, 2026 — 11:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
