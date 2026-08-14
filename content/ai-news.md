@@ -119,10 +119,123 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated August 12, 2026 — 11:15 UTC</div>
+    <div class="last-updated">Updated August 14, 2026 — 11:15 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
+
+  <div class="news-section-title">Friday's Headlines — August 14</div>
+  <div class="news-grid">
+
+    <div class="news-item">
+      <div class="news-date">Aug 12</div>
+      <div class="news-content">
+        <h3><a href="https://x.ai/news/grok-4-6" target="_blank">SpaceXAI Releases Grok 4.6 — Matching GPT-5.6 Sol on the Artificial Analysis Intelligence Index</a></h3>
+        <p>SpaceXAI (formerly xAI) launched Grok 4.6, a flagship model tuned for long-running agents, coding, and multi-step interactive tasks. It matches GPT-5.6 Sol on the Artificial Analysis Intelligence Index — ranked world's third-best, ahead of Kimi K3 — and shows gains over Grok 4.5 across coding and knowledge benchmarks, trained with extended runs, higher-quality engineering data, and improved optimizers. Pricing stays aggressive at $2/$6 per million input/output tokens, with availability in Cursor, Grok Build, the API, and partners like OpenRouter, Vercel, and Cloudflare.</p>
+        <div class="news-tags"><span>SpaceXAI</span><span>Grok 4.6</span><span>Model Release</span><span>Benchmarks</span><span>AI Agents</span><span>Frontier Models</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 13</div>
+      <div class="news-content">
+        <h3><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/" target="_blank">Google Ships Gemini 3.7 Flash — 'Most Intelligent Workhorse Model' With Better Reasoning and First-Pass Code</a></h3>
+        <p>Google released Gemini 3.7 Flash, the next iteration of the Gemini 3 family, built around algorithmic improvements to its core reasoning foundation and positioned for fast agentic workflows, coding, and complex multi-step tasks. Google touts higher first-pass code accuracy and improved production-ready code generation as measured on FrontierCode 1.1, with the model card framing it as the workhorse tier that undercuts the flagship for latency-sensitive workloads. Early third-party benchmark chatter puts it ahead of Claude Sonnet-class models on reasoning-heavy evals.</p>
+        <div class="news-tags"><span>Google</span><span>Gemini 3.7 Flash</span><span>Model Release</span><span>Reasoning</span><span>Coding</span><span>Benchmarks</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 13</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/" target="_blank">OpenAI's 'Ultrafast' Mode Runs GPT-5.6 Sol at 14x Speed — Up to 750 Tokens Per Second</a></h3>
+        <p>OpenAI rolled out Ultrafast, a preview mode that runs its most powerful model, GPT-5.6 Sol, at 14x standard processing speed — up to 750 output tokens per second — powered by a partnership with Cerebras. The company frames it as "more useful work per second" rather than a smaller specialized model, targeting incident response, customer service, financial market analysis, and e-commerce workflows. Access is currently limited to a small group of customers, expanding as capacity grows, and it lands as Anthropic's Claude fast mode trails on raw throughput.</p>
+        <div class="news-tags"><span>OpenAI</span><span>GPT-5.6 Sol</span><span>Ultrafast</span><span>Cerebras</span><span>Inference Speed</span><span>Enterprise AI</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 12</div>
+      <div class="news-content">
+        <h3><a href="https://arstechnica.com/security/2026/08/terabytes-of-credentials-leaked-in-massive-supply-chain-attack/" target="_blank">Terabytes of Credentials Leaked in LiteLLM Supply-Chain Attack — 434,000 CI/CD Pipelines Exposed</a></h3>
+        <p>Security firms CloudSEK and Hudson Rock revealed that a 40-minute window in March, when compromised versions of the popular AI gateway LiteLLM (1.82.7/1.82.8) were downloaded from PyPI, led to the exfiltration of a 195TB file containing credentials from 2,500+ organizations — Microsoft, AWS, Nvidia, Samsung, Salesforce, Cisco, Siemens, LSEG, FedEx, and X Corp among the high-confidence victims. The malware scraped machine memory and shipped secrets through an attacker-controlled channel; the teenage TeamPCP gang took credit as part of a campaign that also infected Trivy, KICS, and the Telnyx SDK. Researchers are urging "aggressive credential revocation," noting the breach is a DevOps-security failure more than an AI-threat one.</p>
+        <div class="news-tags"><span>Security</span><span>Supply Chain</span><span>LiteLLM</span><span>Credentials</span><span>CI/CD</span><span>Incident</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 13</div>
+      <div class="news-content">
+        <h3><a href="https://arstechnica.com/tech-policy/2026/08/claudes-new-scarlet-letter-watermark-is-invisible-for-now/" target="_blank">Anthropic's 'Scarlet Letter' Watermark Flags Everything Claude Processed — Even Light Edits</a></h3>
+        <p>Anthropic revealed its EU AI Act compliance watermarks go further than required: Claude will mark content it merely processed — including human writing it only proofread or grammar-checked — using a "nuke it from orbit" approach, with invisible text watermarks that survive copy-paste and some editing, plus C2PA metadata for files. Security analysts note the marks are trivially bypassable (pasting into another chatbot or light rewriting destroys them), and users are already complaining the watermark will tag them for using Claude at work or school. Anthropic says a text detection API is planned and acknowledges marks "may appear on content that was not generated by Claude."</p>
+        <div class="news-tags"><span>Anthropic</span><span>Watermarking</span><span>EU AI Act</span><span>Provenance</span><span>Privacy</span><span>Backlash</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 13</div>
+      <div class="news-content">
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-08-13/anthropic-said-in-talks-to-buy-ai-startup-decart-for-6-billion" target="_blank">Anthropic in Talks to Acquire Decart AI for ~$6B — Its Largest Known Deal, Ahead of a Possible IPO</a></h3>
+        <p>Anthropic is negotiating to buy Israeli startup Decart AI for roughly $6 billion, according to Bloomberg — what would be the Claude maker's largest known acquisition, though talks remain early-stage and could fall through. Decart specializes in real-time generative video, world models for simulated environments, and GPU optimization, and previously raised $300 million with Nvidia as an investor. Its team would fold into Anthropic's inference organization, a bet on cutting inference costs and absorbing rising demand as the lab gears up for a potential public listing.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Decart AI</span><span>M&A</span><span>Inference</span><span>World Models</span><span>IPO</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 13</div>
+      <div class="news-content">
+        <h3><a href="https://www.reuters.com/legal/transactional/vantage-data-centers-explores-ipo-100-billion-valuation-or-sale-sources-say-2026-08-13/" target="_blank">Vantage Data Centers Explores a $100B IPO — the Compute Boom Reaches the Public Markets</a></h3>
+        <p>Reuters reports Vantage Data Centers, the Silver Lake- and DigitalBridge-backed hyperscale operator, is exploring strategic options including an IPO valuing it near $100 billion — potentially raising around $10 billion — with a sale or minority investment also on the table and any transaction still early-stage. The company has raised roughly $11 billion since late 2023 and is tied to the OpenAI/Oracle Stargate buildout at its Wisconsin campus. A listing at that size would make Vantage one of the largest pure-play data center stocks, putting a public-market benchmark on the AI infrastructure boom.</p>
+        <div class="news-tags"><span>Vantage</span><span>Data Centers</span><span>IPO</span><span>Infrastructure</span><span>Stargate</span><span>AI Compute</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 12</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/" target="_blank">Cognition, Maker of Devin, in Talks to Raise at a $40B+ Valuation — Months After a $26B Round</a></h3>
+        <p>Bloomberg reports the AI coding startup Cognition is in early discussions with investors for a round valuing the company at $40 billion or more — a >50% jump from the $26 billion valuation it closed just a few months ago, when it raised $1 billion. The company behind the Devin coding agent is approaching a roughly $1 billion annualized revenue run-rate, per reports, as AI coding becomes one of the most aggressively financed software markets. Terms remain preliminary, but the trajectory puts Devin-class coding agents in the same valuation conversation as the frontier labs themselves.</p>
+        <div class="news-tags"><span>Cognition</span><span>Devin</span><span>Coding Agents</span><span>Funding</span><span>Valuation</span><span>Developer Tools</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 13</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/08/13/microsoft-kills-off-unsuccessful-ai-features-while-merging-its-separate-copilot-apps/" target="_blank">Microsoft Kills Unsuccessful Copilot Features and Merges Its Split Consumer/Business Apps</a></h3>
+        <p>Microsoft is merging its consumer Copilot app with the Microsoft 365 Copilot app and, by August 18, killing Group Chats, AI-generated podcasts, Copilot Labs experimental features, and Deep Research (with Researcher as the replacement for paying pro users) — and dropping the Mico mascot entirely. The consolidation follows The Information's report that Copilot's EVP Jacob Andreou told staff the app must earn "the right to exist," and mirrors a broader industry move to unify AI surfaces (Claude Cowork into Chat, OpenAI's Operator into ChatGPT). It's an admission that two years of a scattered Copilot strategy failed to dent ChatGPT, Claude, and Gemini.</p>
+        <div class="news-tags"><span>Microsoft</span><span>Copilot</span><span>Feature Cuts</span><span>Consumer AI</span><span>Consolidation</span><span>Strategy</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 13</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/08/13/openai-hires-new-cro-as-executive-shake-up-continues/" target="_blank">OpenAI's CRO Denise Dresser Exits After Months in Role — Second Major Executive Departure This Week</a></h3>
+        <p>OpenAI's chief revenue officer Denise Holland Dresser, the former Slack CEO hired less than a year ago, is leaving "in the coming weeks," and the company has already hired a replacement — the second major executive departure this week after COO Brad Lightcap's exit. The churn has Fortune tallying a wave of senior female executives hired two years ago, almost all now gone, as OpenAI reshuffles its top ranks ahead of a blockbuster IPO. The pattern suggests the post-IPO incentive structure is being set before the company goes public, with revenue leadership in flux at exactly the moment growth is the pitch.</p>
+        <div class="news-tags"><span>OpenAI</span><span>Denise Dresser</span><span>Executives</span><span>Leadership</span><span>IPO</span><span>Churn</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 13</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push/" target="_blank">IBM Partners With OpenAI — a Dedicated Practice and Tens of Thousands of Consultants Trained on Codex</a></h3>
+        <p>IBM announced a partnership to bring OpenAI's models to enterprise customers through IBM Consulting, including a dedicated OpenAI practice, joint go-to-market for financial services, government, telecom, and retail, and certification of tens of thousands of consultants on Codex, the API, and cybersecurity credentials over the coming months. IBM will integrate GPT-5.6, Codex, and ChatGPT Work into IBM Consulting Advantage, while keeping its model-agnostic stance alongside Granite and its existing Anthropic alliance. For OpenAI it's another systems-integrator distribution win after Infosys and TCS; for IBM, a growth lever after it cut its 2026 revenue forecast last month.</p>
+        <div class="news-tags"><span>IBM</span><span>OpenAI</span><span>Enterprise</span><span>Partnership</span><span>Codex</span><span>Consulting</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 13</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/08/13/apple-in-talks-to-pay-publishers-to-provide-siri-with-current-news-report/" target="_blank">Apple in Talks to Pay Publishers for News to Power Siri AI — on a Pay-Per-Use Model</a></h3>
+        <p>Apple has approached publishers in recent months about licensing content to keep the revamped Siri AI current on news, per The Wall Street Journal — proposing a variable compensation model that pays publishers when their content is used rather than a fixed licensing fee, with a nine-figure budget reportedly under consideration. The usage-based structure departs from the industry-standard guaranteed-fee deals Apple struck for Apple News and would extend to the AI assistant expected to roll out later this year. It's an early test of how the AI-news licensing market prices itself when usage, not access, is the unit.</p>
+        <div class="news-tags"><span>Apple</span><span>Siri AI</span><span>Publishers</span><span>Licensing</span><span>News</span><span>Media</span></div>
+      </div>
+    </div>
+
+  </div>
 
   <div class="news-section-title">Wednesday's Headlines — August 12</div>
   <div class="news-grid">
