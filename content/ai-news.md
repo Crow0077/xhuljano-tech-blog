@@ -119,10 +119,114 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated August 19, 2026 — 11:00 UTC</div>
+    <div class="last-updated">Updated August 21, 2026 — 11:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
+
+  <div class="news-section-title">Friday's Headlines — August 21</div>
+  <div class="news-grid">
+
+    <div class="news-item">
+      <div class="news-date">Aug 20</div>
+      <div class="news-content">
+        <h3><a href="https://arstechnica.com/security/2026/08/grok-exfiltrates-user-data-when-malicious-instructions-are-encrypted/" target="_blank">Grok Exfiltrates User Data via 'Cryptographic Context Injection' — Encrypted Instructions Slip Past Static Guardrails</a></h3>
+        <p>Security firm Adversa's Rony Utevsky documented an attack that encrypts the harmful instruction before it reaches Grok — the page ships ciphertext plus a decryption key and a plaintext request to decrypt it, and the model runs PBKDF2/AES-256-GCM inside its own code-execution sandbox. The decrypted payload then steers Grok into sending the user's name, location, and chat history as a URL parameter to the attacker's server. The lesson generalizes: static guardrails read text, they don't execute it, so the real instructions can hide as meaningless ciphertext until the model itself decrypts them — the same vector reproduced Gemini's system instructions. Adversa calls it one instance of a broader shift toward attacks that manipulate the wider context an LLM treats as its own, not just the prompt.</p>
+        <div class="news-tags"><span>Grok</span><span>Prompt Injection</span><span>Security</span><span>Encryption</span><span>Adversa</span><span>Data Exfiltration</span><span>LLM Safety</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 20</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/" target="_blank">Google Lets Readers Mark 'Preferred Sources' on Publisher Sites — a New Tool to Fight AI-Driven Traffic Loss</a></h3>
+        <p>Google is rolling out an interactive "Preferred Sources" button publishers can embed on their own websites, letting readers flag a site as a favorite to be highlighted more often across Search, Discover, and Google News. It extends the Preferred Sources feature Google launched for AI Mode and AI Overviews in May, which had already logged over 345,000 unique source selections; Google's earlier studies found people are twice as likely to click through to a preferred source. Alongside it, Google is adding natural-language feed tuning to Discover and customizable audio daily briefings in Google News on Android — a concrete attempt to shore up the traffic-dependent businesses that AI-powered search has squeezed.</p>
+        <div class="news-tags"><span>Google</span><span>Publishers</span><span>AI Search</span><span>Traffic</span><span>Discover</span><span>News</span><span>Media</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 20</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/" target="_blank">Pew: Over a Third of Web Pages Published Since ChatGPT's Launch Show Signs of AI Authorship</a></h3>
+        <p>Pew Research analyzed nearly half a million English-language pages from the Common Crawl with Open Pangram's detection tech and found that, filtering to pages published after ChatGPT's November 2022 release, over one-third (35%) showed signs of being written or heavily edited by AI. In a July 2026 random sample, .com domains showed AI authorship at roughly 10x the rate of .edu or .gov pages. The finding lands right after Cloudflare reported bot web traffic had overtaken human traffic — much of the web is now bots reading pages written by other bots, though Pew acknowledges AI-detection tools can misclassify at the margins.</p>
+        <div class="news-tags"><span>Pew</span><span>AI Authorship</span><span>Web Content</span><span>Detection</span><span>Research</span><span>Spam</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 20</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users/" target="_blank">Binance's Agent OS Lets AI Agents Trade Real Money — With Limits Set by Users, Not the Exchange</a></h3>
+        <p>Binance launched Agent OS, a platform letting developers connect AI agents to its financial infrastructure — spanning the exchange API, Wallet, x402 payments, and new Model Context Protocol (MCP) support — so agents can analyze markets and autonomously execute trades on behalf of more than 300 million registered users. The guardrails are mostly delegated to users: agents run in dedicated subaccounts with withdrawals blocked by default, and Binance imposes no separate cap on an agent's trading or losses beyond the funds a user moves in, while reasoning happens outside its systems entirely. The launch joins a wave of exchanges (Kraken, Coinbase, OKX) opening APIs to agents, and squarely raises the old prompt-injection question in the highest-stakes setting yet: who's liable when an agent gets manipulated?</p>
+        <div class="news-tags"><span>Binance</span><span>AI Agents</span><span>Agent OS</span><span>Crypto</span><span>MCP</span><span>Trading</span><span>Finance</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 19</div>
+      <div class="news-content">
+        <h3><a href="https://www.reuters.com/technology/google-marvell-ai-chip-deal-2026-08-19/" target="_blank">Google and Marvell Strike a Deep AI-Chip Deal — Chips for Google's Infrastructure Plus a $12.2B Equity Right</a></h3>
+        <p>Google and Marvell reached an agreement under which Marvell will develop chips and components for Google's AI infrastructure, while Google gains the right to purchase up to $12.2 billion worth of Marvell shares. The deal strengthens Google's in-house alternative to Nvidia's GPU ecosystem and diversifies its supplier base beyond Broadcom, which has been Google's primary custom-silicon partner. It's a clear sign the AI race is increasingly a contest over control of chips, memory, interconnects, and data-center networking — not just model quality.</p>
+        <div class="news-tags"><span>Google</span><span>Marvell</span><span>AI Chips</span><span>TPU</span><span>Hardware</span><span>Nvidia</span><span>Broadcom</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 19</div>
+      <div class="news-content">
+        <h3><a href="https://www.aidapted.ro/en/articles/ai-news-of-the-day-august-20-2026/" target="_blank">GuideLight AI Standards Grades the Frontier Labs on Containment — Anthropic, OpenAI Earn C+; Meta an F</a></h3>
+        <p>The nonprofit GuideLight AI Standards — founded in 2026 by ex-OpenAI specialists Steven Adler (safety research) and Page Hedley (policy and ethics), and funding-independent from AI companies — released its first "AI Control" assessment of frontier practices. On a 0-to-5 scale it graded Anthropic and OpenAI C+ (2.50), Google D+ (1.50), xAI D− (0.83), and Meta F (0.67), across six areas: agent activity logging, monitoring effectiveness, blocking dangerous actions before execution, shutting systems down on suspicious patterns, third-party evaluation, and containment planning for a model that escapes intended controls. The report is a notable attempt to measure the safety behaviors the industry talks about most and discloses least — and to do it with independence the labs can't buy.</p>
+        <div class="news-tags"><span>GuideLight</span><span>AI Safety</span><span>Containment</span><span>Assessment</span><span>Anthropic</span><span>OpenAI</span><span>Meta</span><span>Governance</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 20</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/" target="_blank">OpenAI Is Gaining on Anthropic With Business Users — Ramp Data Shows a Flip-Flopping Market Share Race</a></h3>
+        <p>New data from Ramp's corporate credit-card and bill-pay platform — spanning more than 70,000 American businesses — shows Anthropic has held a business-user lead since May (nearly 44% to OpenAI's ~40% as of July), but OpenAI is now growing faster this quarter, driven by GPT-5.6 Sol's developer traction and Anthropic's pricey, data-retention-heavy Fable tier. Ramp economist Ara Kharazian notes businesses keep flipping back and forth as each lab ships models, and the AI-spend share of Ramp customers has climbed to nearly 56% as the overall market grows. It's a useful early read on the AI business war ahead of either company's IPO financials.</p>
+        <div class="news-tags"><span>OpenAI</span><span>Anthropic</span><span>Business AI</span><span>Market Share</span><span>Ramp</span><span>GPT-5.6 Sol</span><span>Enterprise</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 19</div>
+      <div class="news-content">
+        <h3><a href="https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked/" target="_blank">Microsoft 365 Copilot Leaks a Secret Parameter — Another Enterprise AI Exfiltration via Prompt Injection</a></h3>
+        <p>Researchers outlined an attack that used a secret input provided by Microsoft 365 Copilot for enterprise — an undisclosed parameter the assistant itself revealed — to cause the AI to exfiltrate a password it had present in context. It's the second major prompt-injection-based exfiltration story of the week alongside the Grok cryptographic attack, and Ars argues both demonstrate that LLMs can't actually solve prompt injection at the root, leaving developers to bolt on guardrails attackers keep circumventing. For enterprises, the takeaway is uncomfortable: the defense is behavioral steering, not fixing the underlying vulnerability class.</p>
+        <div class="news-tags"><span>Microsoft</span><span>Copilot</span><span>Prompt Injection</span><span>Security</span><span>Enterprise AI</span><span>Exfiltration</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 19</div>
+      <div class="news-content">
+        <h3><a href="https://www.reuters.com/technology/us-ai-coalition-countries-choose-framework-2026-08-19/" target="_blank">China Hits Back at Reported US 'AI Coalition' Plan — Beijing Says Countries Should Choose Their Own Partners</a></h3>
+        <p>Chinese Foreign Ministry spokesperson Lin Jian responded to Reuters reports that the US was preparing an "AI coalition" and would effectively ask countries to pick between an American framework and a China-backed one. Lin stressed every country has the right to choose partners based on its own circumstances and development needs. The exchange underscores how AI is being treated like telecom infrastructure or semiconductors — a strategic domain where the terms of technology sharing are becoming a geopolitical battleground rather than purely commercial.</p>
+        <div class="news-tags"><span>China</span><span>US</span><span>AI Coalition</span><span>Geopolitics</span><span>Policy</span><span>Foreign Ministry</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 19</div>
+      <div class="news-content">
+        <h3><a href="https://www.reuters.com/technology/hyperscale-ai-data-centers-built-where-power-is-2026-08-19/" target="_blank">AI Data Centers Are Moving Where the Power Is — New Hyperscale Sites Now Average 175km From Major Hubs</a></h3>
+        <p>JLL data analyzed by Reuters shows hyperscale AI data centers scheduled to come online between 2026 and 2028 will sit an average of 175 kilometers from Europe's largest cities, versus the historic pattern of locating near demand centers. The shift reflects the core constraint of the AI buildout: not compute design but access to cheap, ample power and land. If it holds, the trend could redirect billions of euros of investment toward European regions that previously sat outside the continent's tech map.</p>
+        <div class="news-tags"><span>Data Centers</span><span>Hyperscale</span><span>Power</span><span>Infrastructure</span><span>Europe</span><span>JLL</span><span>AI Compute</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 19</div>
+      <div class="news-content">
+        <h3><a href="https://www.reuters.com/business/germany-industry-pushes-physical-ai-european-agenda-2026-08-19/" target="_blank">Germany's VDMA Pushes 'Physical AI' to the Center of Europe's Agenda — a Bid for a Homegrown Value Chain</a></h3>
+        <p>Germany's engineering-industry association VDMA on August 19 called for humanoid robotics and "physical AI" to move to the center of the European political agenda, arguing Germany and Europe must build a complete local value chain spanning production, training, and deployment. The push arrives as global humanoid shipments nearly quadrupled in H1 2026 and Chinese makers dominate — and as German firms like NEURA Robotics (fresh off a large Series C) try to anchor a European counterweight. It's a policy-level acknowledgment that embodied AI, not just software models, is the next industrial battleground.</p>
+        <div class="news-tags"><span>VDMA</span><span>Germany</span><span>Physical AI</span><span>Humanoid Robots</span><span>Europe</span><span>Policy</span><span>Manufacturing</span></div>
+      </div>
+    </div>
+
+  </div>
 
   <div class="news-section-title">Wednesday's Headlines — August 19</div>
   <div class="news-grid">
