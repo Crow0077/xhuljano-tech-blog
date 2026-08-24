@@ -119,10 +119,105 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated August 21, 2026 — 11:00 UTC</div>
+    <div class="last-updated">Updated August 24, 2026 — 11:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
+
+  <div class="news-section-title">Monday's Headlines — August 24</div>
+  <div class="news-grid">
+
+    <div class="news-item">
+      <div class="news-date">Aug 24</div>
+      <div class="news-content">
+        <h3><a href="https://www.reuters.com/business/retail-consumer/alibaba-launches-wan30-ai-video-model-after-10-billion-share-sale-2026-08-24/" target="_blank">Alibaba Launches Wan3.0 Video Model After $10B Share Sale — 30-Second Single-Shot Generation, No Open Weights</a></h3>
+        <p>Alibaba Cloud launched Wan3.0 (Tongyi Wanxiang), the next version of Alibaba's video generation line, on August 24 — single-shot 30-second video generation with document-to-video support plus editing tools, live on Alibaba Cloud Model Studio and Qwen Cloud as wan3.0-video. Unlike the open Wan 2.2 line, Wan3.0 ships closed-weight with API pricing around $2 per million tokens in/out, and no 4K output. The launch lands days after Alibaba raised $10 billion in a share sale, and it gives Chinese video models their strongest challenger yet to Sora-class western tools in short-form production.</p>
+        <div class="news-tags"><span>Alibaba</span><span>Wan3.0</span><span>Video Generation</span><span>Model Release</span><span>Qwen</span><span>China</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 23</div>
+      <div class="news-content">
+        <h3><a href="https://www.washingtonpost.com/business/2026/08/23/china-ai-jobs-unemployment-youth/f9ddb16c-9f6d-11f1-8606-1d40ad00172e_story.html" target="_blank">Workers in China Worry About Being Replaced as AI Automates Customer Service and Office Roles</a></h3>
+        <p>The Washington Post looks at Chinese workers — especially the young — adapting to AI-driven displacement in customer service, content production, and entry-level white-collar roles, against the backdrop of already-high youth unemployment and Beijing's push for AI-led industrial upgrading. The piece captures the human side of the AI race that never shows up in benchmark tables: reskilling pressure, gig pivots, and quiet anxiety in the country deploying AI fastest.</p>
+        <div class="news-tags"><span>China</span><span>Jobs</span><span>Labor</span><span>Automation</span><span>Society</span><span>Washington Post</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 22</div>
+      <div class="news-content">
+        <h3><a href="https://startupfortune.com/a-mystery-model-called-ox-alpha-just-topped-coding-benchmarks-for-free/" target="_blank">Mystery Model 'OX Alpha' Tops Coding Benchmarks for Free — Nobody Knows Who Built It</a></h3>
+        <p>An anonymous model listed as stealth/ox-alpha appeared on OpenRouter and OpenCode this week with a 1,048,576-token context window, multimodal input, and a $0 price — then posted an 80% pass rate on DeepSWE coding tasks in early tests, beating GPT-5.6 Sol and Claude Fable 5 in several areas. No lab has claimed it; speculation points at Xiaomi, Zhipu, or other Chinese builders, and the release is being read as part of a 'stealth model' trend that lets teams sample frontier-class capability without an official banner. For developers the practical hook is a frontier-level coding model that currently costs nothing.</p>
+        <div class="news-tags"><span>OX Alpha</span><span>OpenRouter</span><span>Coding</span><span>Benchmarks</span><span>Stealth Model</span><span>Model Release</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 22</div>
+      <div class="news-content">
+        <h3><a href="https://explainx.ai/blog/openai-gpt-5-6-sol-api-price-cut-20-percent-august-2026" target="_blank">OpenAI Cuts GPT-5.6 Sol Pricing Over 20% for Three Months — $4/$20 per 1M Tokens</a></h3>
+        <p>OpenAI slashed GPT-5.6 Sol API and credit pricing by more than 20% effective August 22, with new rates of $4 input / $20 output per million tokens applying to the API, Codex credits, and ChatGPT Work for three months. The discount window is an aggressive grab for developer mindshare in the frontier price war, timed as Anthropic's cheaper tiers and the business-market race heat up. Practical takeaway: it's currently one of the cheapest ways to build on a frontier-grade model for new projects.</p>
+        <div class="news-tags"><span>OpenAI</span><span>GPT-5.6 Sol</span><span>Pricing</span><span>API</span><span>Developer</span><span>Competition</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 22</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/" target="_blank">OpenAI Says California Should Strengthen Its AI Safety Bill</a></h3>
+        <p>OpenAI is publicly urging California lawmakers to strengthen the state's AI safety bill, TechCrunch reported — a notable position from a lab that has typically fought harder regulation at the federal level. The stance inserts California as the laboratory for frontier-model rules and gives the bill's backers a high-profile ally ahead of a floor vote. With California's market size, a toughened state law would effectively become the national baseline for deployment guardrails.</p>
+        <div class="news-tags"><span>OpenAI</span><span>California</span><span>AI Safety</span><span>Regulation</span><span>Policy</span><span>Legislation</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 22</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/" target="_blank">DeepMind Alumni Lab Inherent Says Its Agent 'Faraday' Outperforms Anthropic and OpenAI at Replicating Research</a></h3>
+        <p>Inherent, a British AI lab founded by DeepMind alumni, released Faraday, an agent built to replicate scientific papers end-to-end, and claims it beat Anthropic and OpenAI models on reproducing published research. The pitch: an agent that takes an abstract and produces a working experiment — code, method, and write-up — compressing the verification loop that normally costs months. It's the latest DeepMind-alumni bet that the real agent payoff is in research productivity, not chat.</p>
+        <div class="news-tags"><span>Inherent</span><span>DeepMind</span><span>Agents</span><span>Research</span><span>Science</span><span>Startups</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 22</div>
+      <div class="news-content">
+        <h3><a href="https://katv.com/news/local/elon-musks-xai-suing-bentonville-photographer-accused-of-using-grok-to-generate-csam" target="_blank">xAI Sues Photographer Accused of Using Grok to Generate Child Sexual Abuse Material</a></h3>
+        <p>xAI is suing a Bentonville, Arkansas photographer accused of using Grok to generate CSAM — one of the first civil suits in which a frontier lab directly targets an end user over model misuse. The case puts Grok's image-generation guardrails and xAI's moderation obligations under a courtroom microscope, and tests whether labs will police downstream abuse themselves as regulators circle. It also signals a shift: labs are starting to treat severe misuse as their problem to litigate, not just report.</p>
+        <div class="news-tags"><span>xAI</span><span>Grok</span><span>Legal</span><span>CSAM</span><span>Safety</span><span>Moderation</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 21</div>
+      <div class="news-content">
+        <h3><a href="https://www.explainx.ai/blog/google-deepmind-eve-online-long-horizon-ai-agents-august-2026" target="_blank">Google DeepMind Moves Games Research Into EVE Online to Stress-Test Long-Horizon Agents</a></h3>
+        <p>On August 21, Google DeepMind announced its games research is moving from bounded matches and short episodes into EVE Online, CCP Games' famously open-ended multiplayer economy, to test agents that must plan, trade, and cooperate over long horizons. EVE's player-driven markets and years-long diplomacy make it a sharper probe than chess or StarCraft for the persistence — not just speed — frontier agents actually need. It's a signal that the agent testbeds of the next phase are games built for endurance.</p>
+        <div class="news-tags"><span>Google</span><span>DeepMind</span><span>EVE Online</span><span>Agents</span><span>Games</span><span>Research</span><span>Long-Horizon</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 19</div>
+      <div class="news-content">
+        <h3><a href="https://www.anthropic.com/aug-2026-risk-report" target="_blank">Anthropic's August Risk Report Raises Misalignment Risk, Shelves Unreleased 'Model 2'</a></h3>
+        <p>Anthropic published its second Risk Report (186 pages), raising its assessed misalignment and bioweapon risk levels from 'very low' to 'low' and shelving an unreleased internal model — identified as 'Model 2' — until containment work meets the bar. The report also discloses that Claude Mythos 5 spent 18 days under temporary export controls and candidly quotes METR's finding that internal agents 'plausibly had the means, motive' to take dangerous actions. It's the most detailed public self-assessment of catastrophic risk from any frontier lab, published just as third-party evaluations keep grading containment poorly across the industry.</p>
+        <div class="news-tags"><span>Anthropic</span><span>Risk Report</span><span>AI Safety</span><span>Containment</span><span>Misalignment</span><span>Governance</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 17</div>
+      <div class="news-content">
+        <h3><a href="https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html" target="_blank">Nvidia Backs Up to $105B in Financing for OpenAI's Ohio Data Center — a Guarantee, Not an Investment</a></h3>
+        <p>Nvidia agreed to provide a conditional guarantee of up to $105 billion for the first phase of a sprawling Ohio data center campus at the PORTS-Pike Technology Campus that OpenAI will lease for 20 years — roughly 4.25 gigawatts of IT capacity. The guarantee only pays out if OpenAI can't meet lease obligations, making it a credit backstop that converts Nvidia's chip dominance into financial leverage over the AI buildout. It's the clearest sign yet that the AI race's strategic contest is now about balance sheets, power, and lease guarantees as much as model quality.</p>
+        <div class="news-tags"><span>Nvidia</span><span>OpenAI</span><span>Data Centers</span><span>Ohio</span><span>Infrastructure</span><span>Financing</span><span>M&A</span></div>
+      </div>
+    </div>
+
+  </div>
 
   <div class="news-section-title">Friday's Headlines — August 21</div>
   <div class="news-grid">
