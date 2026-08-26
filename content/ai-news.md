@@ -119,10 +119,105 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated August 24, 2026 — 11:00 UTC</div>
+    <div class="last-updated">Updated August 26, 2026 — 11:00 UTC</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
+
+  <div class="news-section-title">Tuesday's Headlines — August 26</div>
+  <div class="news-grid">
+
+    <div class="news-item">
+      <div class="news-date">Aug 25</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/08/25/openais-jalapeno-chip-is-built-for-fast-inference-at-scale-benchmarks-show/" target="_blank">OpenAI's Jalapeño Chip Is Built for Fast Inference at Scale — First Custom Silicon Taped Out With Broadcom in 16 Months</a></h3>
+        <p>OpenAI's first custom inference chip, Jalapeño, was taped out with Broadcom in just 16 months on TSMC N3P, and published benchmarks show it now outperforms Nvidia's currently available state of the art: on SemiAnalysis' InferenceX benchmark it registered both more tokens per user and more throughput per kilowatt than the competition. The silicon is purpose-built for serving — the exact workload that dominates OpenAI's cost base — and lands OpenAI alongside Google and Amazon as a lab that owns its inference economics. Practical read: frontier inference pricing is about to get a cost floor that doesn't run through Nvidia's margin.</p>
+        <div class="news-tags"><span>OpenAI</span><span>Jalapeño</span><span>Custom Silicon</span><span>Inference</span><span>Broadcom</span><span>Benchmarks</span><span>Chips</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 25</div>
+      <div class="news-content">
+        <h3><a href="https://www.nvidia.com/en-us/data-center/lpx/" target="_blank">Nvidia's Groq 3 LPX Inference Accelerator Enters Full Production — Nebius Is First Customer</a></h3>
+        <p>Nvidia said the Groq 3 LPX, the dedicated inference accelerator born from its $20B Groq acqui-hire, has entered full production and slots into the Vera Rubin platform, with Nebius as the first customer. The LPX is positioned for agentic inference — the long-context, latency-sensitive serving pattern where general-purpose GPUs are least efficient — and Nvidia is pushing it as the answer to the economics question investors keep asking about the AI buildout. It also quietly marks Nvidia absorbing the Groq acquisition into a chip it sells directly, not just software.</p>
+        <div class="news-tags"><span>Nvidia</span><span>Groq 3 LPX</span><span>Inference</span><span>Vera Rubin</span><span>Hardware</span><span>Data Centers</span><span>Nebius</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 25</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/" target="_blank">Robotics Startup Generalist Raises Another $200M, Reaches ~$3B Valuation</a></h3>
+        <p>Generalist, the DeepMind and Boston Dynamics alumni startup focused on the intelligence layer of robotics rather than building humanoids themselves, raised another $200M led by 8VC — about two months after its $400M round — and is now valued near $3B per TechCrunch sources. The rapid-fire raises underscore the emerging split in physical AI: hardware builders race to ship bodies while Generalist bets general robot-brain models will be licensable across platforms, the same separation that shaped the LLM market. Investors are effectively paying for the possibility that the "model layer" of robotics consolidates like it did in language.</p>
+        <div class="news-tags"><span>Generalist</span><span>Robotics</span><span>Funding</span><span>Embodied AI</span><span>8VC</span><span>Physical AI</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 25</div>
+      <div class="news-content">
+        <h3><a href="https://techstartups.com/2026/08/25/top-tech-news-today-august-25-2026-apple-cisco-infineon-openai-meta-nvidia-spacex-more/" target="_blank">Xpeng's Robotics Arm Raises $900M+ at a $6.3B+ Valuation — 1,000 IRON Humanoids a Month by Year-End</a></h3>
+        <p>Chinese EV maker Xpeng closed its robotics unit's first external round at more than $900M, valuing the operation above $6.3B, with IDG Capital leading and Tencent and Alibaba among the strategic investors. Xpeng targets production of around 1,000 IRON humanoid robots per month by end of 2026, starting in retail and industrial settings before broader sales in 2027, with CEO He Xiaopeng personally heading the unit. The round is the clearest sign yet that China's EV ecosystem — batteries, motors, vision stacks, and manufacturing — is converting directly into a humanoid-robot industry.</p>
+        <div class="news-tags"><span>Xpeng</span><span>Humanoid Robots</span><span>Physical AI</span><span>China</span><span>Funding</span><span>EV</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 25</div>
+      <div class="news-content">
+        <h3><a href="https://techstartups.com/2026/08/25/top-tech-news-today-august-25-2026-apple-cisco-infineon-openai-meta-nvidia-spacex-more/" target="_blank">Taiwan Indicts Nine — Including Nvidia and Super Micro Staff — Over Illegal B300 Server Exports to China</a></h3>
+        <p>Taiwanese prosecutors in Keelung indicted nine people, including an Nvidia Taiwan manager and two Super Micro employees, for illegally exporting 74 high-end B300 AI servers with restricted Nvidia chips to Chinese buyers using falsified end-user documentation; customs intercepted 56 more, with shipments routed directly or via Indonesia, Japan, and Hong Kong. Prosecutors are seeking maximum five-year sentences and say defendants knew about U.S. export controls yet colluded for profit. The case shows the diversion risk in the AI chip supply chain is now a courtroom matter, not just a compliance footnote.</p>
+        <div class="news-tags"><span>Taiwan</span><span>Export Controls</span><span>Nvidia</span><span>Super Micro</span><span>China</span><span>Chips</span><span>Legal</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 25</div>
+      <div class="news-content">
+        <h3><a href="https://techstartups.com/2026/08/25/top-tech-news-today-august-25-2026-apple-cisco-infineon-openai-meta-nvidia-spacex-more/" target="_blank">Anima Anandkumar Unveils Accelerated Understanding — Physics AI on Neural Operators That Skips Transformers</a></h3>
+        <p>Caltech's Anima Anandkumar and Benedikt Jenik came out of stealth with Accelerated Understanding Inc., an enterprise physics AI built on neural operators rather than Transformer architectures, which the founders say processed 5 trillion data points in a single prompt — orders of magnitude beyond what language models handle. Instead of predicting text, the system predicts physical phenomena across space and time for robotics, extreme weather, chip design, and energy exploration. It's the strongest public bet yet that the next AI platform may be nature-centric rather than language-centric.</p>
+        <div class="news-tags"><span>Accelerated Understanding</span><span>Anima Anandkumar</span><span>Physics AI</span><span>Neural Operators</span><span>Research</span><span>Startups</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 25</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/" target="_blank">Stability AI Raises $76M in Fresh Funding as Image-Generation Consolidation Continues</a></h3>
+        <p>Stability AI, maker of Stable Diffusion, raised $76M in new funding (TechCrunch, Aug 25), its first meaningful lifeline in a year of churn and leadership changes. The raise keeps one of the two open-weight image-generation names alive as the market consolidates around a handful of labs and API providers. Watch whether the money buys a real product push or just runway — the image-gen category has been brutal to everyone except the platforms with distribution.</p>
+        <div class="news-tags"><span>Stability AI</span><span>Stable Diffusion</span><span>Funding</span><span>Image Generation</span><span>Open Source</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 24</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/" target="_blank">Hugging Face Reportedly in Talks to Be Acquired for $13B</a></h3>
+        <p>TechCrunch reports Hugging Face is in talks to be acquired for around $13B, which would make the open-weights hub one of the largest AI acquisitions ever and put a definitive price tag on the "open ecosystem" that labs and enterprises both depend on. A buyer behind the open-model distribution layer would be a structural shift: whoever owns Hugging Face controls the default distribution channel for open weights, datasets, and model cards. The deal, if real, lands as the industry debates Treasury's threats to sanction open-weight models — a wild juxtaposition the page flagged weeks ago.</p>
+        <div class="news-tags"><span>Hugging Face</span><span>M&A</span><span>Open Source</span><span>Open Weights</span><span>Funding</span><span>Consolidation</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 24</div>
+      <div class="news-content">
+        <h3><a href="https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/" target="_blank">General Intuition Raising at $6B Valuation — Nearly Tripled in Eight Weeks</a></h3>
+        <p>World-model startup General Intuition is raising at a $6B pre-money valuation from Valor Equity Partners, Point72 Ventures, and Seven Seven Six, per TechCrunch — a nearly 3x jump from the $2.3B valuation it had in late June when the page covered its game-trained-agent thesis. The valuation surge tracks the market's sudden willingness to pay for world models and robotics-adjacent AI, even before commercial products ship. Same company, same thesis, radically different price — the clearest single datapoint this month on how hot data-centric AI has become.</p>
+        <div class="news-tags"><span>General Intuition</span><span>World Models</span><span>Funding</span><span>Robotics</span><span>Games AI</span><span>Valuation</span></div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 21</div>
+      <div class="news-content">
+        <h3><a href="https://apnews.com/article/uber-fine-automated-suspensions-netherlands-e64385dc72fd2da440a68babd1ae2fb1" target="_blank">Uber Fined €825M — Nearly $1B — Over Automated Driver Account Suspensions</a></h3>
+        <p>Dutch data protection authorities fined Uber €825M (≈$966M), the second-largest GDPR penalty to date, for using automated software to suspend and permanently deactivate driver accounts with no human review and inadequate notice to affected drivers. The decision, dated August 17 and announced this week, is the strongest enforcement yet of Europe's position that high-stakes algorithmic decisions need a human in the loop. For every AI-automation roadmap, it's the template for what non-compliance costs.</p>
+        <div class="news-tags"><span>Uber</span><span>GDPR</span><span>Netherlands</span><span>Regulation</span><span>Algorithmic Accountability</span><span>Policy</span></div>
+      </div>
+    </div>
+
+  </div>
 
   <div class="news-section-title">Monday's Headlines — August 24</div>
   <div class="news-grid">
@@ -2929,4 +3024,4 @@ new p5(function(p) {
 </script>
 {{< /rawhtml >}}
 
-<!-- update 1786964733 -->
+<!-- update 1787742472 -->
