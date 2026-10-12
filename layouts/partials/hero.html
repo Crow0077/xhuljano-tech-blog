@@ -1,64 +1,20 @@
-<style>
-#hero-wrap{width:100%;height:100vh;max-height:900px;background:#020208;position:relative;overflow:hidden}
-#hero-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:65% 60%;opacity:0.9}
-#hero-overlay{position:absolute;inset:0;
-  background:linear-gradient(to right,rgba(2,2,8,0.8) 0%,rgba(2,2,8,0.08) 35%,rgba(2,2,8,0) 55%,rgba(2,2,8,0.15) 85%,rgba(2,2,8,0.3) 100%);
-}
-#hero-text{position:absolute;top:28%;left:5%;z-index:10;max-width:380px}
-#hero-card{background:rgba(6,6,14,0.4);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
-  border:1px solid rgba(100,180,255,0.05);border-radius:16px;padding:2rem 2.2rem;
-  box-shadow:0 20px 60px rgba(0,0,0,0.5)}
-#hero-card h1{font-family:'SF Mono','Fira Code','JetBrains Mono',monospace;font-size:2.6rem;
-  color:rgba(255,255,255,0.95);margin:0 0 0.6rem 0;letter-spacing:-1px;line-height:1.15}
-#hero-card .subtitle{font-family:'SF Mono','Fira Code','JetBrains Mono',monospace;font-size:0.75rem;
-  color:rgba(180,200,240,0.65);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:1.2rem}
-#hero-card .bio{font-size:0.85rem;color:rgba(160,180,210,0.6);line-height:1.6;margin-bottom:1.5rem}
-#hero-cta{display:inline-flex;align-items:center;gap:8px;padding:0.7rem 1.8rem;
-  font-family:'SF Mono','Fira Code',monospace;font-size:0.8rem;letter-spacing:1.5px;text-transform:uppercase;
-  color:#fff;background:linear-gradient(135deg,rgba(100,180,255,0.18),rgba(100,180,255,0.06));
-  border:1px solid rgba(100,180,255,0.25);border-radius:8px;text-decoration:none;
-  transition:all 0.3s ease}
-#hero-cta:hover{background:linear-gradient(135deg,rgba(100,180,255,0.3),rgba(100,180,255,0.12));
-  border-color:rgba(100,180,255,0.5);transform:translateY(-2px);box-shadow:0 8px 30px rgba(100,180,255,0.12)}
-#hero-cta .arrow{transition:transform 0.3s ease;display:inline-block}
-#hero-cta:hover .arrow{transform:translateX(4px)}
-#hero-credit{position:absolute;bottom:14px;right:18px;z-index:10;font-family:monospace;font-size:0.55rem;color:rgba(255,255,255,0.18);text-transform:uppercase;letter-spacing:1.5px}
-#hero-stats{position:absolute;bottom:80px;right:28px;z-index:10;text-align:right}
-#hero-stats .stat{font-family:monospace;margin-bottom:6px}
-#hero-stats .num{font-size:1.1rem;color:rgba(100,180,255,0.6);font-weight:500}
-#hero-stats .lbl{font-size:0.55rem;color:rgba(140,170,210,0.3);text-transform:uppercase;letter-spacing:2px;margin-left:6px}
-#scroll-indicator{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);z-index:10;
-  display:flex;flex-direction:column;align-items:center;gap:4px;opacity:0.35;animation:float 2s ease-in-out infinite}
-#scroll-indicator span{display:block;width:1px;height:20px;background:linear-gradient(to bottom,rgba(180,200,240,0.5),transparent)}
-@keyframes float{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
-
-@media (max-width:768px){
-  #hero-text{left:5%;right:5%;max-width:none}
-  #hero-card{padding:1.5rem}
-  #hero-card h1{font-size:1.8rem}
-  #hero-credit{display:none}
-}
-</style>
-<div id="hero-wrap">
-  <video id="hero-video" autoplay loop muted playsinline preload="auto">
-    <source src="{{ "solar-hero.mp4" | relURL }}" type="video/mp4">
-  </video>
-  <div id="hero-overlay"></div>
-  <div id="hero-text">
-    <div id="hero-card">
-      <h1>Building with<br>AI Agents</h1>
-      <div class="subtitle">Cloud Engineering Student · AI Agents · MCP · Homelab</div>
-      <p class="bio">I design and deploy autonomous AI infrastructure — 8 MCP servers on RKE2 K8s, Blender 3D pipelines driven by agents, and self-healing homelab systems. CompTIA A+ certified.</p>
-      <a href="{{ "projects/" | absURL }}" id="hero-cta">
-        Explore My Work <span class="arrow">→</span>
-      </a>
+<section class="portfolio-hero" aria-labelledby="intro-title">
+  <div class="hero-shell">
+    <div class="hero-intro">
+      <p class="hero-kicker">Xhuljano Caushllari / agent-directed engineering</p>
+      <h1 id="intro-title">A small lab.<br><span>A lot of leverage.</span></h1>
+      <p class="hero-lead">I set the direction. Hermes Agent and other AI agents build the systems. I test what comes back and decide what ships.</p>
+      <p class="hero-disclosure">That distinction matters: the systems shown here were built through my direction and agent execution. My WGU coursework is my own.</p>
+      <div class="hero-actions">
+        <a class="primary-action" href="{{ "projects/" | relURL }}">Explore the work <span aria-hidden="true">↗</span></a>
+        <a class="quiet-action" href="{{ "about/" | relURL }}">How I work <span aria-hidden="true">→</span></a>
+      </div>
+      <p class="hero-aside">The machine at right is an interactive architecture model. It does not claim live status or publish private telemetry.</p>
     </div>
+    <div class="lab-visual">
+      <iframe src="{{ "lab-machine/" | relURL }}" title="Interactive isometric model of the three-machine homelab" loading="eager" referrerpolicy="no-referrer" scrolling="no"></iframe>
+      <div class="lab-caption"><span>01 / THE HOMELAB</span><a href="{{ "lab-machine/" | relURL }}" target="_blank" rel="noopener">Open interactive view ↗</a></div>
+    </div>
+    <p class="mobile-disclosure">The agents do much of the implementation; I direct and review it. My WGU coursework is my own. This diagram is interactive but not live infrastructure telemetry.</p>
   </div>
-  <div id="hero-credit">3D Render — Blender 5.1 · MCP Server · RTX 4080 Super</div>
-  <div id="hero-stats">
-    <div class="stat"><span class="num">8</span><span class="lbl">MCP servers</span></div>
-    <div class="stat"><span class="num">60+</span><span class="lbl">tools</span></div>
-    <div class="stat"><span class="num">56</span><span class="lbl">K8s pods</span></div>
-  </div>
-  <div id="scroll-indicator"><span></span></div>
-</div>
+</section>

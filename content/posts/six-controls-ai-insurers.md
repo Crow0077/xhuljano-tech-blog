@@ -1,7 +1,7 @@
 ---
 title: "The 6 Controls AI Insurers Will Require — And How to Build Them Now"
 date: 2026-05-10
-draft: false
+draft: true
 tags: ["ai-agents", "security", "insurance", "infrastructure", "career"]
 categories: ["AI Infrastructure"]
 summary: "Every company deploying AI agents is uninsured. Standard policies now exclude AI damages. The $40M AI insurance market projects to $5B by 2032. Here are the six controls insurers will demand — and the concrete products you can build to meet them."

@@ -1,16 +1,14 @@
-# Building in Public — Xhuljano Tech Blog
+# Xhuljano — agent-directed systems portfolio
 
-Personal tech blog documenting homelab experiments, AI agents, MCP servers, and cloud engineering.
+Hugo/PaperMod site at https://crow0077.github.io/xhuljano-tech-blog/. The portfolio describes Xhuljano's role accurately: he directs, prompts, reviews and decides; Hermes Agent and other agents implement substantial code, configuration and creative artifacts. WGU coursework is his own. It does not publish the private wiki or live homelab telemetry.
 
-Built with [Hugo](https://gohugo.io/) + [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
+## Build
 
-## Posts
+```sh
+node site-tools/lab/build.mjs  # builds the Anatomy isometric homelab figure
+hugo --gc --minify --destination "$HOME/.hermes/cache/scratch/portfolio-preview"
+```
 
-- [I Turned a Dell OptiPlex Into a 24/7 AI-Powered Homelab](https://crow0077.github.io/xhuljano-tech-blog/posts/homelab-dell-optiplex/)
-- [What Are MCP Servers? A Hands-On Guide](https://crow0077.github.io/xhuljano-tech-blog/posts/what-are-mcp-servers/)
-- [MCP Server for a Flooring Business on Cloudflare](https://crow0077.github.io/xhuljano-tech-blog/posts/mcp-server-flooring-business/)
-- [Six Controls AI Insurers Will Demand](https://crow0077.github.io/xhuljano-tech-blog/posts/six-controls-ai-insurers/)
+`site-tools/lab/` vendors the minimal Anatomy SVG geometry module and inline script helper under MIT license. The generated self-contained file at `static/lab-machine/index.html` is committed so GitHub Pages needs only Hugo. `static/token-press/index.html` is a separately tested interactive study. The homepage embeds the lab figure in an iframe and links to a full-page view.
 
-## Deploy
-
-Push to `main` → GitHub Actions builds and deploys to GitHub Pages automatically.
+GitHub Actions on `main` builds and deploys with Hugo. Drafted legacy posts remain in source history but are not published. The old static particle/crystal/video demos were removed. Public site copy avoids claims about current live health, metrics or Node B availability.

@@ -1,7 +1,7 @@
 ---
 title: "What Are MCP Servers? A Hands-On Guide From Someone Running 8 of Them"
 date: 2026-05-10
-draft: false
+draft: true
 tags: ["mcp", "ai-agents", "python", "tool-calling", "hermes"]
 categories: ["AI"]
 summary: "MCP (Model Context Protocol) lets AI agents use real tools. Here's what it is, how it works, and how I run 8 MCP servers across K8s and systemd that manage my entire homelab."

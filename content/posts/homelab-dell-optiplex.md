@@ -1,7 +1,7 @@
 ---
 title: "I Turned a Dell OptiPlex Into a 24/7 AI-Powered Homelab"
 date: 2026-05-10
-draft: false
+draft: true
 tags: ["homelab", "self-hosted", "fedora", "kubernetes", "rke2", "ai-agents"]
 categories: ["Homelab"]
 summary: "How I built a production-grade homelab on a used Dell OptiPlex 7090 SFF — running AI agents, RKE2 Kubernetes, MCP servers on K8s, and self-healing infrastructure 24/7 for under $200."

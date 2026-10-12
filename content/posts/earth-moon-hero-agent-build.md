@@ -1,7 +1,7 @@
 ---
 title: "How I Built a 3D Earth Hero With an AI Agent Doing the Actual Work"
 date: 2026-05-21
-draft: false
+draft: true
 tags: ["blender", "mcp", "ai-agents", "3d-rendering", "portfolio", "cycles", "homelab"]
 categories: ["Projects"]
 summary: "I directed. Hermes executed. Together we built a cinematic Earth+Moon animation in Blender 5.1 using NASA textures and 218 MCP tools — from a blank scene to a deployed portfolio hero."

@@ -1,7 +1,7 @@
 ---
 title: "Particle Network — Generative Art"
 date: 2026-05-27
-draft: false
+draft: true
 ShowToc: false
 tags: ["generative-art", "p5js", "creative-coding", "portfolio"]
 ---

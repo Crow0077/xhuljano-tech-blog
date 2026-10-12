@@ -5,35 +5,28 @@ draft: false
 ShowToc: false
 ---
 
-## Who I Am
+# Xhuljano Caushllari
 
-I'm Xhuljano — a cloud engineering student building real infrastructure with AI agents, MCP servers, and a single-node RKE2 Kubernetes cluster.
+I'm studying Cloud and Network Engineering at WGU and building a small, useful homelab around AI agents. The two tracks have different authorship: **my WGU study and coursework are my own**; the systems and creative projects I feature here were largely implemented by agents I prompted, directed and reviewed.
 
-**Current:** Amazon Fulfillment (2022-present)
-**Education:** WGU Cloud and Network Engineering (expected late 2027)
-**Certifications:** CompTIA A+ (May 2026)
-**Location:** Jacksonville, FL
+## How I work
 
-## What I'm Building
+I set the goal and constraints, ask Hermes Agent or another agent to investigate and build, then judge what came back. I push for tests, source links, failure handling and a real readback before I call something finished. I don't describe agent-written code as something I personally hand-coded.
 
-- **Homelab infrastructure** — Fedora Server, RKE2 Kubernetes cluster (56 pods), Longhorn storage, MetalLB, Traefik
-- **MCP servers** — 8 MCP servers (6 on K8s + 2 systemd) with Streamable HTTP transport — arxiv, backup, firecrawl, homelab, sentinel, youtube, immune, logs
-- **AI agents** — Autonomous workflows for homelab monitoring, security auditing, and content ingestion via Hermes Agent
-- **3D + AI** — Blender MCP pipeline: agent-driven 3D scene creation, Cycles rendering on RTX 4080 Super, portfolio hero videos
-- **Portfolio projects** — Real infrastructure, not tutorials
+The lab has three roles:
 
-## Tech Stack
+- **Node A / control:** daily workstation and Hermes gateway. It handles conversations, research, agent-directed changes and scheduled local workflows.
+- **Node B / compute:** an RTX 4080 Super workstation used for local model serving, rendering and media experiments when available. A local model is an alternative lane, not a promise that every job runs there.
+- **Pavilion / durable services:** a separate, always-on host for services and backups.
 
-- **OS:** Fedora Linux (Server + Workstation)
-- **Orchestration:** RKE2 Kubernetes, kubectl, k9s (no Prometheus/Grafana)
-- **MCP deployment:** 6 servers on K8s (Streamable HTTP), 2 on systemd
-- **AI/ML:** Ollama, vLLM, local LLM inference on RTX 4080
-- **Automation:** Hermes Agent cron jobs, systemd, autonomous agents
-- **Network:** Tailscale mesh VPN, Traefik Ingress, Vaultwarden secrets
-- **Security:** iptables, self-healing immune system, CVE scanning
+The current Node A conversation uses an **OpenAI Codex subscription**. Other work can take a local GPU lane or another model/provider when the task and resources warrant it. Model choice is part of the workflow; results are judged by evidence, not by model branding.
+
+## What the site shows—and doesn't
+
+The [homelab figure](../lab-machine/) is an interactive architectural representation. It isn't a live monitor. Public pages don't expose private IPs, agent logs, prompts, customer data or operational telemetry. Project notes distinguish working systems from experiments and simulations.
 
 ## Contact
 
-- GitHub: [Crow0077](https://github.com/Crow0077)
-- LinkedIn: [xhuljanocaushllari](https://linkedin.com/in/xhuljanocaushllari)
-- Email: xcaushlari@gmail.com
+- [GitHub](https://github.com/Crow0077)
+- [LinkedIn](https://www.linkedin.com/in/xhuljano-caushllari-125076157/)
+- [Email](mailto:xcaushlari@gmail.com)

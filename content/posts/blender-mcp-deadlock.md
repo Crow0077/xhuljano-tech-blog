@@ -1,7 +1,7 @@
 ---
 title: "The Bug That Took 218 Tools and Made Them All Useless"
 date: 2026-05-21
-draft: false
+draft: true
 tags: ["mcp", "blender", "debugging", "python", "linux", "systemd", "homelab"]
 categories: ["Engineering"]
 summary: "Blender registered all 218 MCP tools successfully. Every single one timed out. Here's the root cause, the dead giveaway, and the threaded fix."

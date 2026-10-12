@@ -1,7 +1,7 @@
 ---
 title: "I Built a Cross-MCP Pipeline Pattern — One Server Feeds Another"
 date: 2026-05-19
-draft: false
+draft: true
 tags: ["mcp", "security", "automation", "github", "pipeline"]
 categories: ["Projects"]
 summary: "The cross-MCP pipeline pattern: one MCP server scans, a bridge script parses results, and GitHub gets structured issues automatically. This pattern works for Sentinel->Issues, Screener->Trades, Firecrawl->Wiki, and more."
