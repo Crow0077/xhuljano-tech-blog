@@ -1,0 +1,13 @@
+{{- $wire := site.Data.latest_news -}}
+<section class="news-wire" aria-label="Latest source headlines">
+  {{- if $wire }}
+  <p class="news-wire-status">Feed checked <time datetime="{{ $wire.generated_at }}">{{ $wire.generated_display }}</time> · {{ $wire.sources_succeeded }} sources reached</p>
+  {{- if $wire.items }}
+  <ol class="news-wire-list">
+  {{- range $wire.items }}
+    <li class="news-wire-item"><div class="news-wire-meta"><span>{{ .source }}</span><time datetime="{{ .published_at }}">{{ .display_date }}</time></div><h2><a href="{{ .url | safeURL }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a></h2></li>
+  {{- end }}
+  </ol>
+  {{- else }}<p>No headlines passed the freshness and source checks this run. This is a quiet feed, not a claim that nothing happened.</p>{{- end }}
+  {{- else }}<p>News feed has not been generated yet. No old headlines are being passed off as current.</p>{{- end }}
+</section>

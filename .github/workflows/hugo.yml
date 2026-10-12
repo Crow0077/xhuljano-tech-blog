@@ -3,6 +3,8 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches: ["main"]
+  schedule:
+    - cron: "17 12,20 * * *"
   workflow_dispatch:
 
 permissions:
@@ -34,6 +36,10 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Verify news collector
+        run: python3 -m unittest discover -s scripts -p 'test_update_news.py' -v
+      - name: Refresh dated news wire
+        run: python3 scripts/update_news.py
 
       - name: Setup Pages
         id: pages

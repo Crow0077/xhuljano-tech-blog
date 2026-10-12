@@ -18,15 +18,9 @@ Three machines, different jobs: Node A is the daily-driver control machine runni
 The model is an architectural illustration, **not live infrastructure telemetry**. It exposes no private systems or runtime metrics.
 
 
-## Anatomy: interactive system figures
-
-The [token press](../token-press/) is an agent-authored figure explaining a five-token rate limiter. Click to send a request, exhaust the bucket, then watch it refill. The visible counters and needle share the same simulation. Browser interaction and line-end checks passed; full collision certification was not completed.
-
-The [three-node homelab model](../lab-machine/) uses the same Anatomy geometry kit. Selecting a node moves the carriage and changes the explanation. It deliberately does **not** animate pretend live jobs.
-
 ## Agent-directed creative work
 
-The lab has also been used for Blender rendering and local AI image/video experiments. My role is creative direction, reference selection and judging results; agents handle substantial scripting and execution. Prototype quality varies, so I show finished artifacts rather than treating every experiment as a shipped product.
+The [Earth-and-Moon animation](../) at the top of the site is an agent-built Blender render I directed and reviewed. The lab has also been used for local AI image/video experiments. My role is creative direction, reference selection and judging results; agents handle substantial scripting and execution. Prototype quality varies, so I show finished artifacts rather than treating every experiment as a shipped product.
 
 ---
 

@@ -15,3 +15,7 @@ Thumbs.db
 
 # Node
 node_modules/
+
+# Generated on every Pages build; timestamp must reflect a successful feed check
+data/latest_news.json
+scripts/__pycache__/
