@@ -47,7 +47,7 @@ buildDrafts = false
     url = "/projects/"
     weight = 10
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 20
+    identifier = "ai-news"
+    name = "AI News"
+    url = "/ai-news/"
+    weight = 15

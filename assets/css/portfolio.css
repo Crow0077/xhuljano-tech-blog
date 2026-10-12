@@ -14,11 +14,19 @@ body.dark,html[data-theme="dark"]{--theme:var(--p-bg);--entry:var(--p-surface);-
 body{font-family:var(--p-body)}
 .header{border-bottom:1px solid var(--p-rule);background:var(--p-bg)}
 .logo{font-family:var(--p-display);font-size:1.32rem;font-weight:400;letter-spacing:-.03em}
-#menu a{font-family:var(--p-mono);font-size:.71rem;letter-spacing:.065em;text-transform:uppercase}
+#menu a{font-family:var(--p-mono);font-size:.71rem;letter-spacing:.065em;text-transform:uppercase;white-space:nowrap}
 #menu a:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--p-focus);outline-offset:4px}
 a{transition:color .18s var(--ease-out)}
 a:hover{color:var(--p-accent)}
 .is-home .main{max-width:none;padding:0}
+.earth-stage{position:relative;min-height:clamp(390px,58vw,690px);background:var(--p-bg);overflow:hidden;border-bottom:1px solid var(--p-rule)}
+.earth-stage-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:57% 51%}
+.earth-stage-shade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,var(--p-bg) 0%,transparent 20%,transparent 72%,var(--p-bg) 100%);opacity:.78}
+.earth-stage-caption,.earth-stage-next{position:absolute;z-index:1;color:var(--p-ink);text-decoration:none;font-family:var(--p-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+.earth-stage-caption{left:clamp(20px,5vw,72px);bottom:28px;display:flex;flex-direction:column;gap:5px}
+.earth-stage-caption span:last-child{color:var(--p-subtle);font-size:.62rem;letter-spacing:.04em;text-transform:none}
+.earth-stage-next{right:clamp(20px,5vw,72px);bottom:28px;display:inline-flex;gap:12px;align-items:center;border-bottom:1px solid var(--p-rule);padding-bottom:7px}
+.earth-stage-next:hover{color:var(--p-accent)}
 .portfolio-hero{background:var(--p-bg);border-bottom:1px solid var(--p-rule)}
 .hero-shell{max-width:1480px;margin:auto;display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(16px,4vw,64px);padding:clamp(28px,5vw,76px) clamp(20px,5vw,72px) clamp(36px,5vw,72px);align-items:center}
 .hero-intro{min-width:0;max-width:520px}
@@ -66,6 +74,6 @@ a:hover{color:var(--p-accent)}
 @media(max-width:1050px){.hero-shell{grid-template-columns:minmax(0,1fr);max-width:850px}.hero-intro{max-width:730px}.hero-intro h1{font-size:clamp(3.4rem,9vw,5.8rem)}.lab-visual iframe{height:720px}}
 @media(max-width:800px){.lab-visual iframe{height:810px}}
 @media(max-width:700px){.method-strip,.role-grid{grid-template-columns:minmax(0,1fr)}.method-copy,.role-grid>div{padding-top:0}.work-item{grid-template-columns:36px minmax(0,1fr);gap:14px}.work-state{grid-column:2;text-align:left;padding:0}.lab-visual iframe{height:760px}.hero-disclosure,.hero-aside{display:none}.mobile-disclosure{display:block;margin:0;color:var(--p-subtle);font-size:.82rem;line-height:1.65}}
-@media(max-width:430px){.hero-shell{padding:22px 14px 36px;gap:22px}.hero-kicker{margin-bottom:17px}.hero-intro h1{font-size:clamp(2.75rem,13vw,4rem);margin-bottom:22px}.hero-lead{font-size:1.02rem;margin-bottom:20px}.lab-visual iframe{height:710px}.lab-caption{font-size:.55rem;padding:10px}.portfolio-home section{padding:56px 16px}.work-item{padding:27px 0}.work-content p{font-size:.88rem}}
+@media(max-width:430px){#menu a{font-size:.65rem;letter-spacing:.03em}.earth-stage{min-height:340px}.earth-stage-video{object-position:62% 50%}.earth-stage-caption{bottom:22px;left:14px}.earth-stage-next{top:16px;bottom:auto;right:14px;font-size:.57rem}.hero-shell{padding:22px 14px 36px;gap:22px}.hero-kicker{margin-bottom:17px}.hero-intro h1{font-size:clamp(2.75rem,13vw,4rem);margin-bottom:22px}.hero-lead{font-size:1.02rem;margin-bottom:20px}.lab-visual iframe{height:710px}.lab-caption{font-size:.55rem;padding:10px}.portfolio-home section{padding:56px 16px}.work-item{padding:27px 0}.work-content p{font-size:.88rem}}
 @media(max-width:350px){.lab-visual iframe{height:755px}.lab-caption{flex-direction:column;align-items:flex-start}.hero-actions{gap:6px}.primary-action,.quiet-action{font-size:.74rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.primary-action,.quiet-action,.all-work,.text-link{transition:opacity .1s var(--ease-out)}.primary-action:hover{transform:none}}

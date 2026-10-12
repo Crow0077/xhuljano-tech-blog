@@ -1,10 +1,19 @@
+<section class="earth-stage" aria-label="Agent-directed Earth and Moon animation">
+  <video class="earth-stage-video" autoplay muted loop playsinline preload="metadata" poster="{{ "solar-hero-poster.webp" | relURL }}" aria-hidden="true">
+    <source src="{{ "solar-hero.mp4" | relURL }}" type="video/mp4">
+  </video>
+  <div class="earth-stage-shade"></div>
+  <div class="earth-stage-caption"><span>EARTH / MOON</span><span>Blender render · agent-built, human-directed</span></div>
+  <a class="earth-stage-next" href="#intro-title">Explore the lab <span aria-hidden="true">↓</span></a>
+</section>
+<script>if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){document.querySelector('.earth-stage-video')?.pause()}</script>
 <section class="portfolio-hero" aria-labelledby="intro-title">
   <div class="hero-shell">
     <div class="hero-intro">
       <p class="hero-kicker">Xhuljano Caushllari / agent-directed engineering</p>
       <h1 id="intro-title">A small lab.<br><span>A lot of leverage.</span></h1>
       <p class="hero-lead">I set the direction. Hermes Agent and other AI agents build the systems. I test what comes back and decide what ships.</p>
-      <p class="hero-disclosure">That distinction matters: the systems shown here were built through my direction and agent execution. My WGU coursework is my own.</p>
+      <p class="hero-disclosure">The systems shown here were built through my direction and agent execution. I don't present agent-written code as something I hand-coded.</p>
       <div class="hero-actions">
         <a class="primary-action" href="{{ "projects/" | relURL }}">Explore the work <span aria-hidden="true">↗</span></a>
         <a class="quiet-action" href="{{ "about/" | relURL }}">How I work <span aria-hidden="true">→</span></a>
@@ -15,6 +24,6 @@
       <iframe src="{{ "lab-machine/" | relURL }}" title="Interactive isometric model of the three-machine homelab" loading="eager" referrerpolicy="no-referrer" scrolling="no"></iframe>
       <div class="lab-caption"><span>01 / THE HOMELAB</span><a href="{{ "lab-machine/" | relURL }}" target="_blank" rel="noopener">Open interactive view ↗</a></div>
     </div>
-    <p class="mobile-disclosure">The agents do much of the implementation; I direct and review it. My WGU coursework is my own. This diagram is interactive but not live infrastructure telemetry.</p>
+    <p class="mobile-disclosure">The agents do much of the implementation; I direct and review it. This diagram is interactive but not live infrastructure telemetry.</p>
   </div>
 </section>

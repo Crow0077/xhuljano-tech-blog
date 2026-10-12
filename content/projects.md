@@ -7,7 +7,7 @@ ShowToc: false
 
 # Systems I directed agents to build
 
-**Attribution:** I set goals, constraints and acceptance criteria; Hermes Agent and other agents did much of the research, code, configuration and tool operation. I reviewed results, pushed back on weak output and decided what to keep. These are not claims that I hand-coded everything. My WGU coursework is separate and my own work.
+**Attribution:** I set goals, constraints and acceptance criteria; Hermes Agent and other agents did much of the research, code, configuration and tool operation. I reviewed results, pushed back on weak output and decided what to keep. These are not claims that I hand-coded everything.
 
 ## The homelab as an agent workbench
 
@@ -17,11 +17,6 @@ Three machines, different jobs: Node A is the daily-driver control machine runni
 
 The model is an architectural illustration, **not live infrastructure telemetry**. It exposes no private systems or runtime metrics.
 
-## Permit Scout
-
-An agent-built local scanner for **official St. Johns County residential roofing permits**. It checks freshness and source completeness, deduplicates records, links to original details and stores first-seen dates in SQLite. A daily timer runs it on Node A; the report remains offline. No outreach is automated. A permit is only a potential project signal, not a verified customer request. Jacksonville/Duval coverage is **not** implemented.
-
-**What I directed:** a narrow, working first market; official records over scraped snippets; fail closed rather than invent missing leads. **What the agents implemented:** adapters, tests, reports, deduplication and the unattended local run.
 
 ## Anatomy: interactive system figures
 

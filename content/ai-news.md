@@ -1,7 +1,7 @@
 ---
 title: "AI News"
 date: 2026-08-12
-draft: true
+draft: false
 ShowToc: false
 ---
 
@@ -119,7 +119,7 @@ ShowToc: false
 <div class="ainews-wrap">
   <div class="ainews-header">
     <h1>AI Pulse</h1>
-    <div class="last-updated">Updated August 28, 2026 — 11:00 UTC</div>
+    <div class="last-updated">Archive · Last updated August 28, 2026 — 11:00 UTC · Not a live feed</div>
   </div>
 
   <div class="ainews-art" id="news-art"></div>
@@ -457,14 +457,6 @@ ShowToc: false
       </div>
     </div>
 
-    <div class="news-item">
-      <div class="news-date">Aug 20</div>
-      <div class="news-content">
-        <h3><a href="https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users/" target="_blank">Binance's Agent OS Lets AI Agents Trade Real Money — With Limits Set by Users, Not the Exchange</a></h3>
-        <p>Binance launched Agent OS, a platform letting developers connect AI agents to its financial infrastructure — spanning the exchange API, Wallet, x402 payments, and new Model Context Protocol (MCP) support — so agents can analyze markets and autonomously execute trades on behalf of more than 300 million registered users. The guardrails are mostly delegated to users: agents run in dedicated subaccounts with withdrawals blocked by default, and Binance imposes no separate cap on an agent's trading or losses beyond the funds a user moves in, while reasoning happens outside its systems entirely. The launch joins a wave of exchanges (Kraken, Coinbase, OKX) opening APIs to agents, and squarely raises the old prompt-injection question in the highest-stakes setting yet: who's liable when an agent gets manipulated?</p>
-        <div class="news-tags"><span>Binance</span><span>AI Agents</span><span>Agent OS</span><span>Crypto</span><span>MCP</span><span>Trading</span><span>Finance</span></div>
-      </div>
-    </div>
 
     <div class="news-item">
       <div class="news-date">Aug 19</div>
@@ -1162,14 +1154,6 @@ ShowToc: false
       </div>
     </div>
 
-    <div class="news-item">
-      <div class="news-date">Aug 6</div>
-      <div class="news-content">
-        <h3><a href="https://9to5mac.com/2026/08/06/gpt-5-turning-one-as-openai-shares-new-agent-plugins-standard/" target="_blank">OpenAI, Amazon, Microsoft, Cursor and Vercel Ship Agent Plugins 1.0 — a Shared Format for Agent Skills</a></h3>
-        <p>A vendor-neutral Agent Plugins 1.0 spec was published, bundling Agent Skills and MCP servers into a single portable directory with a plugin.json manifest. The initial Technical Steering Committee includes Amazon, Cursor, Microsoft, OpenAI and Vercel, with Google joining as a core maintainer. The strategic read: this is the interoperability moment the agent ecosystem needed — the big labs agreeing on how a skill travels between harnesses, which is the difference between agents as platform lock-in and agents as a portable standard. The honest read: a spec with a steering committee and a manifest is the easy 20%; the hard 80% is runtime trust (what a plugin is allowed to do on your machine), which the spec only gestures at. The downstream read: expect plugin marketplaces to form around the spec within a quarter, expect MCP to fold in as one layer rather than be replaced, and watch whether Anthropic — absent from the founding committee — adopts it or keeps Claude skills proprietary.</p>
-        <div class="news-tags"><span>Agent Plugins</span><span>OpenAI</span><span>Microsoft</span><span>Amazon</span><span>Standard</span><span>MCP</span></div>
-      </div>
-    </div>
 
     <div class="news-item">
       <div class="news-date">Aug 6</div>
@@ -2163,14 +2147,6 @@ ShowToc: false
       </div>
     </div>
 
-    <div class="news-item">
-      <div class="news-date">Jul 15</div>
-      <div class="news-content">
-        <h3><a href="https://github.com/William-Lu-stack/Flawless" target="_blank">Flawless Crosses 600 Stars — AI SRE AgenticOps Becomes a Real GitHub Category</a></h3>
-        <p>Flawless, a new AI SRE (Site Reliability Engineering) AgenticOps platform for Kubernetes and cloud infrastructure, has crossed 619 GitHub stars in five days. The project sits in the rapidly-growing AI-for-SRE / AI-for-platform-engineering category that includes the better-funded incumbents (Resolve, Shoreline's AI features, the Datadog AI SRE beta) but distinguishes itself with an explicit MCP-based, agent-first design. The strategic read: SRE is one of the most tractable high-value AI use cases because the underlying data (logs, metrics, traces, runbooks) is already machine-readable, the success criteria are well-defined (MTTR, false-positive rate), and the cost of a bad AI decision is bounded (you can roll back, you can page a human). The downstream read: expect every observability vendor (Datadog, New Relic, Dynatrace, Splunk) to ship an "AI SRE" tier in 2H 2026, and expect the open-source category to consolidate around 2-3 leading frameworks within 12 months. The honest read: most AI SRE tools still struggle with the "novel incident" case (anything not in the runbook), and the next 12 months of progress will be about retrieval-augmented incident response rather than pure end-to-end automation.</p>
-        <div class="news-tags"><span>Flawless</span><span>SRE</span><span>AgenticOps</span><span>Kubernetes</span><span>DevOps</span><span>MCP</span><span>Open Source</span></div>
-      </div>
-    </div>
 
     <div class="news-item">
       <div class="news-date">Jul 15</div>

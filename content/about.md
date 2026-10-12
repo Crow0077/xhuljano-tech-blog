@@ -7,7 +7,7 @@ ShowToc: false
 
 # Xhuljano Caushllari
 
-I'm studying Cloud and Network Engineering at WGU and building a small, useful homelab around AI agents. The two tracks have different authorship: **my WGU study and coursework are my own**; the systems and creative projects I feature here were largely implemented by agents I prompted, directed and reviewed.
+I direct agents to build useful systems on a small homelab. The systems and creative projects I feature here were largely implemented by agents I prompted, directed and reviewed.
 
 ## How I work
 
