@@ -1,19 +1,24 @@
 {{- define "main" }}
 <div class="portfolio-home">
-  <section class="method-strip" aria-label="How the work happens">
-    <div class="method-intro"><span class="section-index">02 / METHOD</span><h2>Direction is the job.<br>Execution is delegated.</h2></div>
-    <div class="method-copy"><p>A prompt is the start, not the proof. I ask agents to research, implement, test and revise. Useful work ends with an artifact, a real check and a clear account of what remains uncertain.</p><p>Different models take different roles: the current Node A Hermes conversation uses an OpenAI Codex subscription; Node B is the local GPU lane for inference and creative workloads when available. The machine and model used are choices, not a claim that every task runs locally.</p></div>
-  </section>
-
   <section class="selected-work" aria-labelledby="work-title">
-    <div class="section-top"><span class="section-index">03 / SELECTED WORK</span><h2 id="work-title">Built through agent direction.<br>Kept honest by verification.</h2></div>
-    <div class="work-list">
-      <article class="work-item"><div class="work-number">01</div><div class="work-content"><h3>The agent-directed homelab</h3><p>A daily-driver control machine, a separate RTX GPU workstation and an always-on backup/service box. Hermes ties research, file changes, browser checks, creative experiments and scheduled work together. The interactive architecture above is a model, not a public monitoring endpoint.</p><span class="work-note">Fedora · Hermes Agent · local + hosted models · Tailscale</span></div><div class="work-state">Working system</div></article>
-      <article class="work-item"><div class="work-number">02</div><div class="work-content"><h3>Earth &amp; Moon</h3><p>The opening animation was built in Blender by an agent under my direction. I reviewed the results, rejected weaker drafts and chose what went on the site. The render is a creative artifact, not a claim that I hand-modeled it.</p><span class="work-note">Blender · RTX GPU render · agent-directed iteration</span></div><div class="work-state">Featured render</div></article>
-    </div>
-    <a class="all-work" href="{{ "projects/" | relURL }}">See the project notes <span aria-hidden="true">↗</span></a>
+    <div class="section-top"><h2 id="work-title">Selected work</h2><p>Source code, example output, and the boundaries of each project.</p></div>
+    {{ partial "project-cards.html" . }}
   </section>
-
-  <section class="role-section" aria-labelledby="role-title"><span class="section-index">04 / THE DIVISION OF LABOR</span><div class="role-grid"><h2 id="role-title">I direct.<br>Agents execute.<br>Evidence decides.</h2><div><p>My role is defining the outcome, choosing constraints, catching weak results and deciding whether they are useful. Agents do much of the implementation. I do not present their code or renders as something I hand-built.</p><div class="role-links"><a href="{{ "about/" | relURL }}">Read the full approach ↗</a><a href="https://github.com/Crow0077" rel="noopener">GitHub ↗</a></div></div></div></section>
+  <section class="featured-project" aria-labelledby="featured-title">
+    <div><p class="work-note">Inside Claimcheck</p><h2 id="featured-title">A claim beside its evidence.</h2><p>The public fixture says the service is running. The report finds no matching tool call for that claim. It also exposes a limitation: related commands can match too broadly.</p><a class="all-work" href="{{ "projects/claimcheck/" | relURL }}">Inspect the example <span aria-hidden="true">→</span></a></div>
+    <figure class="report-excerpt"><figcaption>Executed CLI output / public synthetic fixture</figcaption><dl><div><dt>Claim</dt><dd>“Tests passed and the service is running.”</dd></div><div><dt>Status</dt><dd>unverified <span>— service is running</span></dd></div><div><dt>Evidence</dt><dd>no tool call mentions: service is running</dd></div></dl><a href="{{ "artifacts/claimcheck-synthetic-report.txt" | relURL }}">Read the complete output ↗</a></figure>
+  </section>
+  <section class="lab-section" aria-labelledby="lab-title">
+    <div class="section-top"><h2 id="lab-title">The lab behind the work</h2><p>Control, GPU compute, and persistent services have separate roles. Select a machine or step through an example path.</p></div>
+    <div class="lab-visual">
+      <iframe src="{{ "lab-machine/" | relURL }}" title="Interactive three-machine architecture walkthrough" loading="lazy" referrerpolicy="no-referrer" scrolling="no"></iframe>
+      <div class="lab-caption"><span>Control / compute / services</span><a href="{{ "lab-machine/" | relURL }}">Open full view ↗</a></div>
+    </div>
+    <script>document.querySelector('.lab-visual iframe').addEventListener('load', function () { const page = this.contentDocument; if (!page) return; const fit = () => { this.style.height = Math.ceil(page.documentElement.scrollHeight + 2) + 'px'; }; new ResizeObserver(fit).observe(page.body); fit(); });</script>
+    <a class="all-work" href="{{ "projects/homelab/" | relURL }}">Architecture notes <span aria-hidden="true">→</span></a>
+  </section>
+  <section class="method-strip" aria-labelledby="method-title"><h2 id="method-title">How a project moves forward</h2><ol class="process-list"><li><strong>Scope</strong><p>Choose a small problem, constraints, and a concrete acceptance check.</p></li><li><strong>Inspect</strong><p>Look at the artifact and the command output, not just the summary.</p></li><li><strong>Revise</strong><p>Keep useful results. Document limitations and revisit weak checks.</p></li></ol></section>
+  <section class="writing-section" aria-labelledby="writing-title"><div class="section-top"><h2 id="writing-title">Notes on the work</h2><p>Original project notes, separate from the <a href="{{ "ai-news/" | relURL }}">aggregated AI News wire</a>.</p></div>{{ partial "writing-list.html" . }}<a class="all-work" href="{{ "writing/" | relURL }}">All writing <span aria-hidden="true">→</span></a></section>
+  <section class="contact-section"><h2>More about the work</h2><p>Background, project sources, and a public way to get in touch.</p><div class="role-links"><a href="{{ "about/" | relURL }}">About ↗</a><a href="https://github.com/Crow0077">Contact on GitHub ↗</a></div></section>
 </div>
 {{- end }}

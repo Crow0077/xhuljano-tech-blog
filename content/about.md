@@ -5,25 +5,21 @@ draft: false
 ShowToc: false
 ---
 
-# Xhuljano Caushllari
-
-I direct agents to build useful systems on a small homelab. The systems and creative projects I feature here were largely implemented by agents I prompted, directed and reviewed.
+I’m Xhuljano Caushllari. My independent projects focus on agent behavior, local systems, and checking whether an output supports the claim made about it.
 
 ## How I work
 
-I set the goal and constraints, ask Hermes Agent or another agent to investigate and build, then judge what came back. I push for tests, source links, failure handling and a real readback before I call something finished. I don't describe agent-written code as something I personally hand-coded.
+My role is goals, constraints, direction, review, and acceptance; agents handle much of the research and implementation. I ask for source links, useful tests, and a readback of the result. The project pages show what each tool does and where its checks stop.
 
 The lab has three roles:
 
 - **Node A / control:** daily workstation and Hermes gateway. It handles conversations, research, agent-directed changes and scheduled local workflows.
 - **Node B / compute:** an RTX 4080 Super workstation used for local model serving, rendering and media experiments when available. A local model is an alternative lane, not a promise that every job runs there.
-- **Pavilion / durable services:** a separate, always-on host for services and backups.
+- **Pavilion / durable services:** a separate host intended for persistent services and backups.
 
-The current Node A conversation uses an **OpenAI Codex subscription**. Other work can take a local GPU lane or another model/provider when the task and resources warrant it. Model choice is part of the workflow; results are judged by evidence, not by model branding.
+Hosted models and local compute are both options. The [homelab case study](../projects/homelab/) describes the architecture rather than reporting its current availability.
 
-## What the site shows—and doesn't
-
-The [homelab figure](../lab-machine/) is an interactive architectural representation. It isn't a live monitor. Public pages don't expose private IPs, agent logs, prompts, customer data or operational telemetry. Project notes distinguish working systems from experiments and simulations.
+Outside the audit tools, I direct rendering experiments. The Earth-and-Moon animation on the homepage is an agent-built Blender render selected through direction and review. Other creative experiments are not presented as finished products.
 
 ## Contact
 

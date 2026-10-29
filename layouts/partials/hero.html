@@ -1,29 +1,34 @@
-<section class="earth-stage" aria-label="Agent-directed Earth and Moon animation">
-  <video class="earth-stage-video" autoplay muted loop playsinline preload="metadata" poster="{{ "solar-hero-poster.webp" | relURL }}" aria-hidden="true">
-    <source src="{{ "solar-hero.mp4" | relURL }}" type="video/mp4">
-  </video>
-  <div class="earth-stage-shade"></div>
-  <div class="earth-stage-caption"><span>EARTH / MOON</span><span>Blender render · agent-built, human-directed</span></div>
-  <a class="earth-stage-next" href="#intro-title">Explore the lab <span aria-hidden="true">↓</span></a>
-</section>
-<script>if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){document.querySelector('.earth-stage-video')?.pause()}</script>
 <section class="portfolio-hero" aria-labelledby="intro-title">
   <div class="hero-shell">
     <div class="hero-intro">
-      <p class="hero-kicker">Xhuljano Caushllari / agent-directed engineering</p>
-      <h1 id="intro-title">A small lab.<br><span>A lot of leverage.</span></h1>
-      <p class="hero-lead">I set the direction. Hermes Agent and other AI agents build the systems. I test what comes back and decide what ships.</p>
-      <p class="hero-disclosure">The systems shown here were built through my direction and agent execution. I don't present agent-written code as something I hand-coded.</p>
+      <p class="hero-kicker">Independent projects / Xhuljano Caushllari</p>
+      <h1 id="intro-title">Agent tools.<br>Local systems.</h1>
+      <p class="hero-lead">I’m Xhuljano. I direct work on tools that inspect agent behavior, alongside a homelab for local compute and services.</p>
+      <p class="hero-disclosure">I set goals and constraints, review results, and decide what to keep. Agents do much of the implementation.</p>
       <div class="hero-actions">
         <a class="primary-action" href="{{ "projects/" | relURL }}">Explore the work <span aria-hidden="true">↗</span></a>
-        <a class="quiet-action" href="{{ "about/" | relURL }}">How I work <span aria-hidden="true">→</span></a>
+        <a class="quiet-action" href="https://github.com/Crow0077">GitHub <span aria-hidden="true">↗</span></a>
       </div>
-      <p class="hero-aside">The machine at right is an interactive architecture model. It does not claim live status or publish private telemetry.</p>
     </div>
-    <div class="lab-visual">
-      <iframe src="{{ "lab-machine/" | relURL }}" title="Interactive isometric model of the three-machine homelab" loading="eager" referrerpolicy="no-referrer" scrolling="no"></iframe>
-      <div class="lab-caption"><span>01 / THE HOMELAB</span><a href="{{ "lab-machine/" | relURL }}" target="_blank" rel="noopener">Open interactive view ↗</a></div>
-    </div>
-    <p class="mobile-disclosure">The agents do much of the implementation; I direct and review it. This diagram is interactive but not live infrastructure telemetry.</p>
+    <figure class="earth-stage">
+      <video class="earth-stage-video" muted loop playsinline preload="metadata" poster="{{ "solar-hero-poster.webp" | relURL }}" aria-label="Earth and Moon Blender animation">
+        <source src="{{ "solar-hero.mp4" | relURL }}" type="video/mp4">
+      </video>
+      <figcaption><span>Earth &amp; Moon / Blender</span><button class="video-toggle" type="button" aria-pressed="false">Play animation</button><small>Agent-built under Xhuljano’s direction and review.</small></figcaption>
+    </figure>
   </div>
 </section>
+<script>
+(() => {
+  const video = document.querySelector('.earth-stage-video');
+  const toggle = document.querySelector('.video-toggle');
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  const update = () => { toggle.textContent = video.paused ? 'Play animation' : 'Pause animation'; toggle.setAttribute('aria-pressed', String(!video.paused)); };
+  const play = () => video.play().catch(update);
+  toggle.addEventListener('click', () => { if (video.paused) play(); else video.pause(); });
+  video.addEventListener('play', update);
+  video.addEventListener('pause', update);
+  reduced.addEventListener('change', () => { if (reduced.matches) video.pause(); });
+  if (!reduced.matches) play();
+})();
+</script>

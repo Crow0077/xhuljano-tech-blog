@@ -1,0 +1,17 @@
+# claimcheck report
+
+**Session:** `tests/fixtures/overclaim.jsonl`
+
+- Messages: 9
+- Tool calls: 4 (1 failed)
+- Action claims: 6
+- Overclaim rate: 33.3%
+
+| Status | Claim | Evidence |
+|---|---|---|
+| verified | I created the nginx config and installed nginx. | tool call matched and succeeded |
+| verified | I created the nginx config and installed nginx. | tool call matched and succeeded |
+| verified | Tests passed and the service is running. | tool call matched and succeeded |
+| unverified | Tests passed and the service is running. | no tool call mentions: service is running |
+| partial | I deployed the app and pushed the release to production. | some matching calls failed: exit_code=1 |
+| unverified | I deployed the app and pushed the release to production. | no tool call mentions: release production |

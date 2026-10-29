@@ -1,0 +1,2 @@
+# Serialized diffs contain meaningful single-space context lines.
+evidence/*.patch -whitespace

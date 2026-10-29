@@ -1,0 +1,2 @@
+# Development-only browser verification; not needed by Hugo/Pages.
+playwright==1.64.1

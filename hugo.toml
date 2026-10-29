@@ -10,9 +10,10 @@ buildDrafts = false
 
 [params]
   env = "production"
-  description = "I direct AI agents to build and verify useful systems across a three-machine homelab. Explore an interactive architecture and selected work."
+  description = "Xhuljano Caushllari's portfolio: agent audit tools, a three-machine homelab, and notes on checking the work."
   author = "Xhuljano Caushllari"
   defaultTheme = "dark"
+  disableThemeToggle = true
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
@@ -20,6 +21,10 @@ buildDrafts = false
   ShowCodeCopyButtons = true
   ShowToc = true
   TocOpen = false
+
+  [params.assets]
+    apple_touch_icon = "favicon.svg"
+    safari_pinned_tab = "favicon.svg"
 
   [[params.socialIcons]]
     name = "github"
@@ -51,3 +56,13 @@ buildDrafts = false
     name = "AI News"
     url = "/ai-news/"
     weight = 15
+  [[menu.main]]
+    identifier = "writing"
+    name = "Writing"
+    url = "/writing/"
+    weight = 12
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
